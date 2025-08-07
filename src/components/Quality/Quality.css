@@ -1,0 +1,32 @@
+.quality-hero {
+  height: 65vh;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.process-step {
+  width: 60px;
+  height: 60px;
+  background-color: #447D9B;
+  color: white;
+  border-radius: 50%;
+  line-height: 60px;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.certificate-thumb {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.certificate-thumb:hover {
+  transform: scale(1.05);
+}
+
+.quality-process{
+  background-color: #fe774335;
+}

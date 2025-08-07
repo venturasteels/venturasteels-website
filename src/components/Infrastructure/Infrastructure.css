@@ -1,0 +1,118 @@
+/* Infrastructure Section Layout */
+
+/* Hero Banner with Overlay */
+.bg-overlay-section {
+  position: relative;
+  min-height: 55vh;
+  background: linear-gradient(rgba(39, 63, 79, 0.6), rgba(39, 63, 79, 0.5)),
+              url("/image/konsond img.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay-content {
+  z-index: 2;
+  padding: 2rem;
+  max-width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Heading */
+.text-heading h2 {
+  color: #273F4F;
+  font-size: 2.5rem;
+}
+
+.text-heading hr {
+  width: 80px;
+  height: 4px;
+  background: #FE7743;
+  margin: 1rem auto;
+  opacity: 1;
+}
+
+.text-heading p {
+  font-size: 1.2rem;
+  color: #447D9B;
+  font-weight: 500;
+}
+
+/* Highlight Cards Section */
+.infra-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem auto;
+}
+
+.infra-card {
+  background: #D7D7D7;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.infra-card:hover {
+  transform: translateY(-8px);
+  background: #FE7743;
+  color: #fff;
+}
+
+.infra-card i {
+  font-size: 2rem;
+  color: #273F4F;
+  margin-bottom: 1rem;
+}
+
+.infra-card:hover i {
+  color: #fff;
+}
+
+/* Feature List Grid */
+.feature-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-left: 5px solid #447D9B;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.features i {
+  color: #273F4F;
+  font-size: 1.8rem;
+}
+
+.features:hover {
+  background: #447D9B;
+  color: #fff;
+}
+
+.features:hover i {
+  color: #FE7743;
+}
+
+@media (max-width: 768px) {
+  .overlay-content {
+    font-size: 1rem;
+  }
+  .text-heading h2 {
+    font-size: 2rem;
+  }
+}

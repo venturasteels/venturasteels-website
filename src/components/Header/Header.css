@@ -1,0 +1,259 @@
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100vh;
+  background-color: #447d9b;
+  padding-top: 70px;
+  z-index: 1050;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section {
+  width: 100%;
+  z-index: 9999;
+}
+
+/* social + contyact-info */
+.bg-social {
+  background-color: #fff;
+  color: #273f4f;
+  position: relative;
+  z-index: 998;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 20px;
+}
+
+.bg-social.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.bg-social i {
+  color: #273f4f;
+}
+.bg-social i:hover {
+  color: #393185;
+}
+.bg-social a {
+  color: #273f4f;
+}
+
+/* navbar */
+.bg-navbar {
+  width: 100%;
+  position: sticky !important;
+  top: 0;
+  z-index: 999 !important;
+  background-color: #447d9b;
+}
+.navbar-section .nav-link {
+  font-size: 20px;
+}
+
+.contact-info {
+  flex-wrap: wrap;
+}
+/* droipdown menu */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background: #ffffff;
+  padding: 20px 40px;
+  z-index: 1050;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.mega-column {
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.dropdown-item {
+  color: #273f4f;
+  background-color: transparent;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #fe7743;
+  color: #ffffff;
+}
+
+.dropdown-item.active {
+  background-color: #447d9b;
+  color: #ffffff;
+}
+
+.text-heading {
+  color: #fe7743;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #fe7743;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.nav-item.dropdown:hover .dropdown-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .mega-dropdown {
+    position: static;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .mega-column {
+    width: 100%;
+  }
+}
+
+/* responsive */
+@media only screen and (max-width: 480px) {
+  .contact-info {
+    font-size: 14px;
+  }
+}
+
+/* Responsive: Top Contact + Social */
+@media (max-width: 992px) {
+  .bg-social {
+    padding: 0.5rem 0;
+  }
+
+  .contact-info {
+    align-items: center;
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+
+  .contact-info span,
+  .contact-info a {
+    margin-bottom: 0rem !important;
+    display: inline-block;
+  }
+
+  .bg-social .d-flex {
+    justify-content: center !important;
+  }
+  .bg-social .gap-3 {
+    gap: 0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 230px;
+    padding-top: 60px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 16px;
+    padding: 0.8rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+}
+
+/* Smaller Mobile (Below 480px) */
+@media (max-width: 480px) {
+  .bg-social {
+    font-size: 14px;
+  }
+  .bg-social i {
+    font-size: 1rem;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 18px;
+    padding: 0.7rem;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1857px) {
+  .fs-3 {
+    font-size: 1.1rem !important;
+  }
+  img {
+    height: 35px;
+  }
+  .gap-4 {
+    gap: 1rem !important;
+  }
+  .navbar-section .nav-link{
+    font-size: 17px;
+  }
+  .navbar-section{
+    width: 70%;
+  }
+}
+
+@media (max-width: 1237px) {
+  .fs-3 {
+    font-size: 0.97rem !important;
+  }
+  img {
+    height: 32px;
+  }
+  .gap-4 {
+    gap: 0.5rem !important;
+  }
+  .navbar-section .nav-link{
+    font-size: 14px;
+  }
+  
+}

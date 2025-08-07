@@ -1,0 +1,162 @@
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+  flex: 1 1 50%;
+}
+
+.contact-form h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #273f4f;
+  margin-bottom: 20px;
+}
+.contact-subtitle {
+  font-size: 19px;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.error-input {
+  border: 1px solid red !important;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.submit-btn {
+  background-color: #fe7743;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e9622e;
+}
+
+.product-enquiry-banner {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+}
+
+.product-enquiry-banner h4 {
+  color: #273f4f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-enquiry-banner p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.enquiry-btn {
+  background-color: #fe7743;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.enquiry-btn:hover {
+  background-color: #e9602a;
+  text-decoration: none;
+}
+
+
+.contact-info {
+  flex: 1 1 40%;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  color: #273f4f;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #555;
+}
+
+.contact-info i {
+  color: #fe7743;
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 22px;
+  color: #273f4f;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fe7743;
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+}
