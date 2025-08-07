@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate, useLocation } from "react-router-dom";
+import SearchBar from "../searchBar";
 import "./Header.css";
 
 export default function Header() {
@@ -53,6 +54,28 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // products for search bar
+ const productData = [
+  {
+    id: 1,
+    name: "H13 Tool Steel",
+    path: "/products/hot-work/H13",
+    keywords: ["hot work steel", "tool steel", "die steel", "H13", "mould"]
+  },
+  {
+    id: 2,
+    name: "DB6 Die Steel",
+    path: "/products/hot-work/DB6",
+    keywords: ["DB6", "plastic mold steel", "die block", "hot work"]
+  },
+  {
+    id: 3,
+    name: "EN24 Alloy Steel",
+    path: "/products/alloy-steel/EN24",
+    keywords: ["EN24", "high tensile", "alloy steel", "round bar"]
+  },
+];
 
   return (
     <>
@@ -111,7 +134,7 @@ export default function Header() {
       </div>
 
       {/* Navbar */}
-      <nav  className="navbar navbar-dark bg-navbar d-lg-none">
+      <nav className="navbar navbar-dark bg-navbar d-lg-none">
         <div className="container d-flex justify-content-between align-items-center">
           <button
             className="navbar-toggler"
@@ -163,24 +186,27 @@ export default function Header() {
         </ul>
       </div>
 
+    
+
       {/* Desktop Nav */}
-      <nav className="bg-navbar d-none d-lg-flex py- px-2">
-        <div className="py-3 text-center d-flex align-items-center rounded ">
-          {/* <img src="/image/ventura-logo.jpg" alt="Ventura Logo" className="rounded mx-2" height={50}/> */}
-          <img
+      <nav className="bg-navbar d-none d-lg-block">
+          {/* middle logo */}
+         <div className="py-3 text-center d-flex align-items-center justify-content-center bg-white ">
+          <img src="/image/ventura-logo.jpg" alt="Ventura Logo" className=" " height={60}/>
+          {/* <img
             src="/image/logo-v.png"
             alt="Ventura Logo"
-            height={40}
+            height={38}
             className="rounded  mx-3"
           />
           <a
             href="/"
-            className="text-decoration-none text-white fs-3 fw-bold px-2 "
+            className="text-decoration-none text-white fs-4 fw-bold px-2 "
           >
             Ventura Alloy & Steels Pvt. Ltd
-          </a>
+          </a> */}
         </div>
-        <div className="container d-flex justify-content-center gap-4 py-2 align-items-center navbar-section">
+        <div className="container-fluid d-flex gap-4 py-2 px-4 align-items-center navbar-section">
           <a href="/" className="text-white text-decoration-none nav-link">
             Home
           </a>
@@ -496,6 +522,10 @@ export default function Header() {
           >
             Contact Us
           </button>
+          {/* Search Bar Here */}
+          <div className="d-flex ms-auto">
+            <SearchBar data={productData} />
+          </div>
         </div>
       </nav>
     </>

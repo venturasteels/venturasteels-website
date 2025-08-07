@@ -76,6 +76,7 @@ const ContactUs = () => {
     <section className="contact-section">
       <div className="container">
         <div className="contact-wrapper">
+          {/* contact form */}
           <div className="contact-form">
             <h2>Contact Us</h2>
             <h5 className="contact-subtitle">
