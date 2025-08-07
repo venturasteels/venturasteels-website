@@ -56,26 +56,26 @@ export default function Header() {
   }, []);
 
   // products for search bar
- const productData = [
-  {
-    id: 1,
-    name: "H13 Tool Steel",
-    path: "/products/hot-work/H13",
-    keywords: ["hot work steel", "tool steel", "die steel", "H13", "mould"]
-  },
-  {
-    id: 2,
-    name: "DB6 Die Steel",
-    path: "/products/hot-work/DB6",
-    keywords: ["DB6", "plastic mold steel", "die block", "hot work"]
-  },
-  {
-    id: 3,
-    name: "EN24 Alloy Steel",
-    path: "/products/alloy-steel/EN24",
-    keywords: ["EN24", "high tensile", "alloy steel", "round bar"]
-  },
-];
+  const productData = [
+    {
+      id: 1,
+      name: "H13 Tool Steel",
+      path: "/products/hot-work/H13",
+      keywords: ["hot work steel", "tool steel", "die steel", "H13", "mould"],
+    },
+    {
+      id: 2,
+      name: "DB6 Die Steel",
+      path: "/products/hot-work/DB6",
+      keywords: ["DB6", "plastic mold steel", "die block", "hot work"],
+    },
+    {
+      id: 3,
+      name: "EN24 Alloy Steel",
+      path: "/products/alloy-steel/EN24",
+      keywords: ["EN24", "high tensile", "alloy steel", "round bar"],
+    },
+  ];
 
   return (
     <>
@@ -186,13 +186,16 @@ export default function Header() {
         </ul>
       </div>
 
-    
-
       {/* Desktop Nav */}
       <nav className="bg-navbar d-none d-lg-block">
-          {/* middle logo */}
-         <div className="py-3 text-center d-flex align-items-center justify-content-center bg-white ">
-          <img src="/image/ventura-logo.jpg" alt="Ventura Logo" className=" " height={60}/>
+        {/* middle logo */}
+        <div className="py-3 text-center d-flex align-items-center justify-content-center bg-white ">
+          <img
+            src="/image/ventura-logo.jpg"
+            alt="Ventura Logo"
+            className=" "
+            height={60}
+          />
           {/* <img
             src="/image/logo-v.png"
             alt="Ventura Logo"

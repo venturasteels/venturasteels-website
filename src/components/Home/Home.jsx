@@ -1,7 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { FaCalendarCheck, FaBoxOpen, FaMedal, FaUsers } from "react-icons/fa";
+import { Container, Row, Col } from "react-bootstrap";
+import {
+  FaCar,
+  FaIndustry,
+  FaTools,
+  FaGasPump,
+  FaPlane,
+  FaMicroscope,
+} from "react-icons/fa";
 
 import "./Home.css";
 
@@ -85,8 +94,69 @@ const Home = () => {
     },
   ];
 
+  const industries = [
+    { icon: <FaCar />, name: "Automotive" },
+    { icon: <FaIndustry />, name: "Construction & Engineering" },
+    { icon: <FaTools />, name: "Toolmaking & Die Mould" },
+    { icon: <FaGasPump />, name: "Oil, Gas & Mining" },
+    { icon: <FaPlane />, name: "Aerospace" },
+    { icon: <FaMicroscope />, name: "Medical Technology" },
+  ];
+
   return (
     <>
+      <HelmetProvider>
+        <Helmet>
+          {/* Basic Meta */}
+          <title>Home | Ventura Alloy and Steels Pvt. Ltd.</title>
+          <meta
+            name="description"
+            content="Ventura Alloy and Steels Pvt. Ltd. is a leading supplier of high-quality alloy steels, tool steels, and engineering steels for various industries including automotive, aerospace, oil & gas, and construction."
+          />
+          <meta
+            name="keywords"
+            content="Alloy Steel, Tool Steel, Ventura Steels, Hot Work Steel, Cold Work Steel, Plastic Mould Steel, Spring Steel, Carbon Steel, Boron Steel, Steel Manufacturer India, Steel Supplier, Die Steel, Engineering Steels"
+          />
+          <meta name="author" content="Ventura Alloy and Steels Pvt. Ltd." />
+          {/* Open Graph for Social Sharing */}
+          <meta
+            property="og:title"
+            content="Ventura Alloy and Steels Pvt. Ltd."
+          />
+          <meta
+            property="og:description"
+            content="Premium alloy and tool steel solutions for industries like automotive, aerospace, oil & gas, and construction."
+          />
+          <meta
+            property="og:image"
+            content="https://ventura-website.onrender.com/og-image.jpg"
+          />
+          {/* Replace with your actual image URL */}
+          <meta
+            property="og:url"
+            content="https://ventura-website.onrender.com/"
+          />
+          <meta property="og:type" content="website" />
+          {/* Twitter Card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:title"
+            content="Ventura Alloy and Steels Pvt. Ltd."
+          />
+          <meta
+            name="twitter:description"
+            content="Explore high-performance alloy steels for industrial applications. Ventura is trusted by leading industries."
+          />
+          <meta
+            name="twitter:image"
+            content="https://ventura-website.onrender.com/og-image.jpg"
+          />
+          {/* Replace this */}
+          {/* Canonical URL */}
+          <link rel="canonical" href="https://ventura-website.onrender.com/" />
+        </Helmet>
+      </HelmetProvider>
+
       {/* video-banner */}
       <div className="video-banner">
         <video autoPlay loop muted className="bg-video w-100">
@@ -118,6 +188,39 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <section
+        className="industries-section py-5"
+        style={{ backgroundColor: "#f9f9f9" }}
+      >
+        <Container>
+          <h2 className="text-center mb-4" style={{ color: "#273F4F" }}>
+            Industries We Serve
+          </h2>
+          <p
+            className="text-center mb-5"
+            style={{ maxWidth: "700px", margin: "0 auto", color: "#555" }}
+          >
+            Ventura Alloy & Steels serves a wide spectrum of industries by
+            delivering high-performance steel solutions for advanced
+            applications.
+          </p>
+          <Row className="g-4 text-center">
+            {industries.map((industry, idx) => (
+              <Col md={4} sm={6} key={idx}>
+                <div className="industry-card p-4 shadow-sm bg-white h-100 rounded">
+                  <div
+                    className="icon mb-3"
+                    style={{ fontSize: "2rem", color: "#FE7743" }}
+                  >
+                    {industry.icon}
+                  </div>
+                  <h5 style={{ color: "#273F4F" }}>{industry.name}</h5>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
 
       {/* about-ventura */}
       <section className="about-section py-5 bg-light">
@@ -231,6 +334,52 @@ const Home = () => {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* certified section */}
+      <section className="py-5 bg-light trusted-certificates" data-aos="fade-up" >
+        <div className="container text-center">
+          <h3 className="mb-4 text-dark fw-bold">Trusted & Certified</h3>
+          <p className="mb-4 text-muted">
+            Our steel meets the highest international standards. Certified for
+            quality, reliability, and sustainability.
+          </p>
+          <div className="row justify-content-center align-items-center g-4 mt-4">
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/ahk_india.svg"
+                alt="ISO Certified"
+                height={50}
+              />
+            </div>
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/AIFI-1.png"
+                alt="PED Approved"
+                height={50}
+              />
+            </div>
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/DAS-uPdated-logo-02-1-scaled-e1753696127812.avif"
+                alt="MSME Registered"
+                height={50}
+              />
+            </div>
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/sufi.png"
+                alt="Startup India"
+                height={50}
+              />
+            </div>
+          </div>
+          <div className="mt-5">
+            <a href="/certificates" className="btn btn-outline-primary">
+              View All Certificates
+            </a>
           </div>
         </div>
       </section>

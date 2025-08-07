@@ -115,6 +115,15 @@
   color: #111;
 }
 
+/* industries we serve */
+.industry-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
 /* about-ventura */
 .about-section h2 {
   font-size: 2rem;
@@ -211,6 +220,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* certified section */
+.trusted-certificates {
+  background-color: #f8f9fa; 
+  padding: 60px 0;
+}
+
+.trusted-certificates h3 {
+  color: #273F4F; 
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.trusted-certificates p {
+  font-size: 1.3rem;
+  max-width: 100%;
+  margin: 0 auto 30px;
+}
+
+.trusted-certificates .btn {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+}
+
+.trusted-certificates .btn-outline-primary {
+  color: #273F4F;
+  border-color: #273F4F;
+}
+
+.trusted-certificates .btn-outline-primary:hover {
+  background-color: #273F4F;
+  color: #fff;
 }
 
 /* suppliers  */
