@@ -30,8 +30,8 @@
 
 .overlay h1 {
   font-size: 3rem;
+  margin: 0px 20px 20px 20px;
   font-weight: bold;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -224,12 +224,12 @@
 
 /* certified section */
 .trusted-certificates {
-  background-color: #f8f9fa; 
+  background-color: #f8f9fa;
   padding: 60px 0;
 }
 
 .trusted-certificates h3 {
-  color: #273F4F; 
+  color: #273f4f;
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -249,12 +249,12 @@
 }
 
 .trusted-certificates .btn-outline-primary {
-  color: #273F4F;
-  border-color: #273F4F;
+  color: #273f4f;
+  border-color: #273f4f;
 }
 
 .trusted-certificates .btn-outline-primary:hover {
-  background-color: #273F4F;
+  background-color: #273f4f;
   color: #fff;
 }
 
@@ -308,6 +308,11 @@
     flex: 1 1 100%;
     max-width: 100%;
   }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /* product categories */
   .product-showcase .row {
     flex-direction: column !important;
@@ -340,8 +345,8 @@
     height: auto;
     margin: 0 auto;
   }
-   .about-section h2 {
-    margin-top: 20px ;
+  .about-section h2 {
+    margin-top: 20px;
   }
 }
 
@@ -353,15 +358,66 @@
   .overlay p {
     font-size: 0.9rem;
   }
-
+  /* stats-card */
+  .stat-card .icon {
+    font-size: 2rem;
+  }
+  .stat-card .value {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .stat-card .label {
+    font-size: 0.8rem;
+  }
   .btn-outline-light {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
+  /* why ventura */
+  .why-ventura-section{
+    padding: 0px !important;
+  }
   .why-ventura-section .gy-5 {
     --bs-gutter-y: 1.5rem;
   }
+  /* about-section */
   .about-section h2 {
+    font-size: 23px;
+    text-align: center;
     margin-top: 20px;
+  }
+  .about-section p {
+    font-size: 0.86rem;
+    text-align: center;
+  }
+  /* product categories */
+  .product-showcase {
+    padding: 10px 0px !important ;
+  }
+  .product-showcase h2 {
+    font-size: 1.7rem;
+    margin: 15px 0px !important;
+  }
+  .product-showcase p {
+    font-size: 0.89rem;
+  }
+  /* why choose ventura */
+  .why-ventura-section h2 {
+    font-size: 1.5rem;
+  }
+  .feature-box h6 {
+    font-size: 0.85rem;
+  }
+  .trusted-certificates{
+    padding: 20px !important;
+  }
+  .trusted-certificates h3 {
+    font-size: 1.5rem;
+  }
+  .trusted-certificates p {
+    font-size: 1rem;
+  }
+  .supplier-logo {
+    max-width: 85px;
   }
 }

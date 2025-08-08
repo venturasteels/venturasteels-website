@@ -169,7 +169,7 @@ export default function Header() {
             { to: "/certifications", text: "Certifications" },
             { to: "/blog", text: "Blogs" },
             { to: "/careers", text: "Careers" },
-            { to: "/contact", text: "Contact Us" },
+            { to: "/contactUs", text: "Contact Us" },
           ].map(({ to, text }) => (
             <li key={to} className="nav-item">
               <button
@@ -196,18 +196,6 @@ export default function Header() {
             className=" "
             height={60}
           />
-          {/* <img
-            src="/image/logo-v.png"
-            alt="Ventura Logo"
-            height={38}
-            className="rounded  mx-3"
-          />
-          <a
-            href="/"
-            className="text-decoration-none text-white fs-4 fw-bold px-2 "
-          >
-            Ventura Alloy & Steels Pvt. Ltd
-          </a> */}
         </div>
         <div className="container-fluid d-flex gap-4 py-2 px-4 align-items-center navbar-section">
           <a href="/" className="text-white text-decoration-none nav-link">

@@ -233,7 +233,7 @@ const Home = () => {
                 className="img-fluid rounded"
               />
             </div>
-            <div className="col-md-6" data-aos="fade-left">
+            <div className="col-md-6 about-content" data-aos="fade-left">
               <h2 className="fw-bold mb-3">About Ventura Alloys & Steels</h2>
               <p className="text-muted">
                 Ventura Alloys & Steels is a leading supplier of quality tool

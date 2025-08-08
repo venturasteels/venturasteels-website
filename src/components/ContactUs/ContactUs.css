@@ -106,7 +106,6 @@
   text-decoration: none;
 }
 
-
 .contact-info {
   flex: 1 1 40%;
 }
@@ -158,5 +157,18 @@
   .contact-form,
   .contact-info {
     flex: 1 1 100%;
+  }
+}
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 0px 0px;
+    background-color: #f8f9fa;
+  }
+  .contact-wrapper {
+    border-radius: 0px;
+  }
+  .contact-wrapper form {
+    display: flex;
+    flex-direction: column;
   }
 }
