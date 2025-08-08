@@ -172,6 +172,174 @@ section {
 }
 /* process routes ends*/
 
+/* Steel properties */
+.steel-properties {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8fafc;
+  border-left: 4px solid #0f4c81;
+  border-radius: 8px;
+}
+
+.steel-properties h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #0f4c81;
+}
+
+.steel-properties p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* applications */
+.applications {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8fafc; /* light background */
+  border-left: 4px solid #0f4c81;
+  border-radius: 8px;
+}
+
+.applications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #0f4c81;
+}
+
+.applications p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* thermal properties */
+.thermal-properties {
+  padding: 2rem;
+  background: linear-gradient(135deg, #273f4f, #447d9b);
+  border-radius: 10px;
+  color: white;
+}
+
+.thermal-properties .thermal-section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fe7743;
+}
+
+.property-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #273f4f;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(254, 119, 67, 0.4); /* orange glow */
+}
+
+.property-card h4 {
+  color: #447d9b;
+  margin-bottom: 1rem;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: #447d9b;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #fe7743;
+  color: white;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #d7d7d7;
+}
+
+/* heat treatment */
+.heat-treatment {
+  padding: 2rem;
+  background: linear-gradient(135deg, #273f4f, #447d9b);
+  border-radius: 10px;
+  color: white;
+  margin-top: 2rem;
+}
+
+.heat-treatment .section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fe7743;
+}
+
+.heat-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #273f4f;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.heat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(254, 119, 67, 0.4);
+}
+
+.table thead {
+  background-color: #447d9b;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #fe7743;
+  color: white;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #d7d7d7;
+}
+
+/* stocking partners */
+.stocking-partners {
+  background-color: #f8f9fa;
+}
+
+.stocking-partners .section-title {
+  color: #273f4f;
+  font-weight: bold;
+}
+
+.stocking-partners .lead {
+  font-size: 1.1rem;
+  color: #273f4f;
+}
+
+.stocking-partners .flag-img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 6px;
+}
+
+.stocking-partners .flag-img:hover {
+  transform: scale(1.1);
+}
+
 /* media queries */
 @media (max-width: 768px) {
   .grade-details {
@@ -285,5 +453,58 @@ section {
   .name-table {
     width: 100%;
     margin: 0px auto;
+  }
+  .db6-img {
+    text-align: center;
+  }
+  .db6-img img {
+    height: auto;
+    width: 90%;
+  }
+  .heat-treatment {
+    padding: 1rem;
+  }
+
+  .heat-treatment .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .heat-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .heat-card table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .heat-card table th,
+  .heat-card table td {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .heat-treatment .row {
+    flex-direction: column;
+  }
+
+  .heat-treatment .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hotwork-container {
+    padding: 0rem !important;
+  }
+  .grade-details {
+    padding: 0rem !important;
+  }
+  .thermal-properties .row > * {
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
+    padding-bottom: 20px;
   }
 }

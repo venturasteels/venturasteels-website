@@ -173,3 +173,11 @@
     width: 100%;
   }
 }
+@media (max-width: 480px) {
+  .hotwork-hero {
+    padding: 10px;
+  }
+  .hotwork-sidebar {
+    margin: 0px 20px;
+  }
+}

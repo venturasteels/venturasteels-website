@@ -90,13 +90,19 @@
   .site-footer .footer-logo {
     max-width: 100px;
   }
+  .site-footer {
+    padding: 0rem 0.5rem;
+  }
+  .site-footer .row > div {
+    margin-bottom: 1rem;
+  }
 }
-@media (min-width:993px) and (max-width: 1237px) {
+@media (min-width: 993px) and (max-width: 1237px) {
   .site-footer p,
   .site-footer a.footer-link {
     font-size: 0.8rem;
   }
- .site-footer .col-md-4 {
+  .site-footer .col-md-4 {
     width: 16.333333%;
   }
 }

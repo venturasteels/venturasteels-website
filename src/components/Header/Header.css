@@ -219,7 +219,7 @@
   .fs-3 {
     font-size: 1.1rem !important;
   }
-  img {
+  .navbar-brand img {
     height: 35px;
   }
   .gap-4 {
@@ -228,17 +228,12 @@
   .navbar-section .nav-link{
     font-size: 17px;
   }
-  .navbar-section{
-    width: 70%;
-  }
+ 
 }
 
 @media (max-width: 1237px) {
   .fs-3 {
     font-size: 0.97rem !important;
-  }
-  img {
-    height: 32px;
   }
   .gap-4 {
     gap: 0.5rem !important;
