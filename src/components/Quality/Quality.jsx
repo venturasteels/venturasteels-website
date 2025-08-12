@@ -4,14 +4,27 @@ import "./Quality.css";
 const Quality = () => {
   return (
     <>
-      <section
-        className="quality-hero text-white d-flex align-items-center"
-        style={{ backgroundImage: "url(/image/ISO-9001-img.jpg)" }}
-      >
-        <div className="container text-center">
+      <section className="quality-hero ">
+        {/* <div className="container text-center">
           <h1 className="display-4 fw-bold">
             Delivering Certified Steel with Precision & Quality
           </h1>
+        </div> */}
+        {/* video-banner */}
+        <div className="video-banner-quality">
+          <video autoPlay loop muted className="bg-video w-100">
+            <source
+              src="/videoes/Website Quality Page.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="overlay-quality">
+            <h1 className="text-center">
+              Delivering Certified Steel with Precision & Quality
+            </h1>
+          </div>
         </div>
       </section>
 

@@ -6,52 +6,52 @@ import "./Certificates.css";
 const certificates = [
   {
     title: "ISO 9001:2015 Certificate",
-    image: "/image/director.jpg",
+    image: "/image/certificates/ISO-Certificate-1.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Indo-German Chamber of Commerce (IGCC)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/IGCC.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Association of Indian Forging Industry (AIFI)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/AIFI-CERTIFICATE.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Darukhana Iron Steel & Scrap Merchants Association (DISMA)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/DISMA.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Metal and Stainless Steel Merchants Association (MASSMA)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/MASSMA-2.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Thane Small Scale Industries Association (TSSIA)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/TSSIA-Membership.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Steel Chamber of India (SCI)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/SCI.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Tools and Gage Manufacturers Association of India (TAGMA)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/TAGMA.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Steel Users Federation of India (SUFI)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/SUFI.jpg",
     description: "Certified for Quality Management System",
   },
   {
     title: "Chamber of Association of Maharashtra Industry & Trade (CAMIT)",
-    image: "/image/director.jpg",
+    image: "/image/certificates/CAMIT.jpg",
     description: "Certified for Quality Management System",
   },
 ];
@@ -66,13 +66,12 @@ export default function Certifications() {
   };
 
   return (
-    <div className="container certification-container py-5">
+    <div className="container certification-container py-4">
       <h2 className="text-center mb-4">Certifications</h2>
       <p className="certifications-description text-muted">
-        At Ventura Steels, our certifications reflect our commitment to global
-        quality standards. Each certification stands as a testament to our
-        compliance, consistency, and continuous improvement across all
-        operations.
+        Our certifications reflect our dedication to quality, compliance and
+        trustworthy sourcing, ensuring all materials we supply meet global
+        industry standards.
       </p>
       <hr className="mb-5" />
       <div className="row g-5">

@@ -29,6 +29,9 @@ section {
     transform: translateY(0);
   }
 }
+.overview-content p{
+  text-align: justify;
+}
 /* grades details section ends */
 
 /* standards section */
@@ -176,7 +179,7 @@ section {
 .steel-properties {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #f8fafc;
+  background-color: #fe774320;
   border-left: 4px solid #0f4c81;
   border-radius: 8px;
 }
@@ -188,6 +191,7 @@ section {
 }
 
 .steel-properties p {
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
@@ -197,7 +201,7 @@ section {
 .applications {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #f8fafc; /* light background */
+  background-color: #fe774320; 
   border-left: 4px solid #0f4c81;
   border-radius: 8px;
 }
@@ -209,6 +213,7 @@ section {
 }
 
 .applications p {
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
@@ -334,6 +339,7 @@ section {
   height: auto;
   transition: transform 0.3s ease;
   border-radius: 6px;
+  margin: 5px;
 }
 
 .stocking-partners .flag-img:hover {
@@ -366,6 +372,7 @@ section {
     font-size: 14px;
     white-space: nowrap;
   }
+
   /* Hide scrollbar for Chrome, Edge, Safari */
   .standards-inner-scroll::-webkit-scrollbar {
     display: none;

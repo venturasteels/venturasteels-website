@@ -5,7 +5,7 @@ import "./H13.css";
 export default function H13() {
   return (
     <div className="grade-details">
-      <h2 className="text-center"> H13 / 2344</h2>
+      <h2 className="text-center"> H13 / AISI H 13 / DIN 2344 </h2>
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
@@ -63,7 +63,18 @@ export default function H13() {
             fatigue, glorious through-hardening properties and shows very
             limited distortion during hardening.
           </p>
-          <p>H3 ESR is the most purified material with the conventional VD route. The nature of material increase the strength, exceptionally increase the micro-cleanness level. H13 ESR tool steel is most refined, has greater homogeneity and an exceptionally fine structure, resulting in improved machinability, polishing & high temperature tensile strength. Exceptionally suggest the use of AISI-H13 ESR grade for Aluminium Pressure Die Casting and other part subjected to high working temperatures and high weight quality. H13 steel is completely ultrasonic examined with 100% positive outcomes according to NDT standards.</p>
+          <p>
+            H3 ESR is the most purified material with the conventional VD route.
+            The nature of material increase the strength, exceptionally increase
+            the micro-cleanness level. H13 ESR tool steel is most refined, has
+            greater homogeneity and an exceptionally fine structure, resulting
+            in improved machinability, polishing & high temperature tensile
+            strength. Exceptionally suggest the use of AISI-H13 ESR grade for
+            Aluminium Pressure Die Casting and other part subjected to high
+            working temperatures and high weight quality. H13 steel is
+            completely ultrasonic examined with 100% positive outcomes according
+            to NDT standards.
+          </p>
         </div>
         <div className="db6-img">
           <img
@@ -199,7 +210,7 @@ export default function H13() {
             <tr>
               <td>FLATS </td>
               <td>
-                Thickness: 20 - 400 MM MAX 
+                Thickness: 20 - 400 MM MAX
                 <br />
                 Width: 40 - 700 MM MAX
               </td>
@@ -208,53 +219,31 @@ export default function H13() {
         </table>
       </section>
 
-      {/* process routes */}
-      <section className="process-route">
-        <h3>Process Route</h3>
-        <div className="process-flow">
-          <div className="step">EAF</div>
-          <span className="arrow">→</span>
-          <div className="step">LF</div>
-          <span className="arrow">→</span>
-          <div className="step">VD</div>
-          <span className="arrow">→</span>
-          <div className="step">UPSET</div>
-          <span className="arrow">→</span>
-          <div className="step">FORGED</div>
-          <span className="arrow">→</span>
-          <div className="step">ANNEALED</div>
-          <span className="arrow">→</span>
-          <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-          <span className="arrow">→</span>
-          <div className="step">OIL QUENCHED</div>
-          <span className="arrow">→</span>
-          <div className="step">DOUBLE TEMPERED</div>
-          <span className="arrow">→</span>
-          <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-        </div>
-      </section>
-
-    {/* Steel properties */}
+      {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>
-        <p>
-          The exceptional hot work pre-solidified tool steel has great toughness
-          and high wear resistance. DB6 die steel is generally provided in hard,
-          quenched, tempered, and annealed condition, and in strengthened
-          condition in exceptional cases. Normally its working hardness is
-          <strong> 360–430 BHN</strong>. This steel grade is the updated type of
-          DIN 2713 for higher efficiency and performance.
-        </p>
+        <ul>
+          <li>Great toughness</li>
+          <li>Thermal conductivity</li>
+          <li>High hot-wear resistance</li>
+          <li>Hot tensile strength</li>
+          <li>Insusceptible for hot cracking (Hot Crack resistant)</li>
+          <li>Can be water-cooled to a restricted degree</li>
+          <li>High Hardenability</li>
+        </ul>
       </section>
 
       {/* applications */}
       <section className="applications">
         <h2>Applications</h2>
         <p>
-          Dies for specially drop and close die forgings for hammers &
-          mechanical presses, die moulds, shoe blocks, die holder, piston rods,
-          bolster, cranks, cassettes, plastic moulds, shearing blades, tools,
-          etc.
+          This steel is especially used for ejector pins, tool holders and
+          shrink work chucks. It is majorly widely utilized for manufacture of
+          hot forging die & inserts, hot gripper dies, hot nut tools, hot header
+          dies, brass forging and pressing dies, hot forging aluminium base
+          dies, aluminium casting and extrusion dies, zinc die casting dies,
+          extrusion mandrels, cores, die holder blocks, hot press dies, hot work
+          punches, etc.
         </p>
       </section>
 
@@ -276,27 +265,31 @@ export default function H13() {
                 <tbody>
                   <tr>
                     <td>20-100</td>
-                    <td>12.1</td>
+                    <td>10.8</td>
                   </tr>
                   <tr>
                     <td>20-200</td>
-                    <td>13.1</td>
+                    <td>12</td>
                   </tr>
                   <tr>
                     <td>20-300</td>
-                    <td>13.2</td>
+                    <td>12.4</td>
                   </tr>
                   <tr>
                     <td>20-400</td>
-                    <td>13.5</td>
+                    <td>12.7</td>
                   </tr>
                   <tr>
                     <td>20-500</td>
-                    <td>14.1</td>
+                    <td>13.1</td>
                   </tr>
                   <tr>
                     <td>20-600</td>
-                    <td>14.3</td>
+                    <td>13.3</td>
+                  </tr>
+                  <tr>
+                    <td>20-700</td>
+                    <td>13.5</td>
                   </tr>
                 </tbody>
               </table>
@@ -310,21 +303,25 @@ export default function H13() {
                 <thead>
                   <tr>
                     <th>Temperature (°C)</th>
-                    <th>W / (m*K)</th>
+                    <th>W / (m*K) Annealed</th>
+                    <th>W / (m*K) Quenched & Tempered</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>20</td>
-                    <td>35.0</td>
+                    <td>27.1</td>
+                    <td>25.4</td>
                   </tr>
                   <tr>
                     <td>350</td>
-                    <td>39.0</td>
+                    <td>30.4</td>
+                    <td>27.7</td>
                   </tr>
                   <tr>
                     <td>700</td>
-                    <td>36.0</td>
+                    <td>33.2</td>
+                    <td>30.4</td>
                   </tr>
                 </tbody>
               </table>
@@ -346,7 +343,7 @@ export default function H13() {
                 <tbody>
                   <tr>
                     <th>Soft Annealing °C</th>
-                    <td>650-710</td>
+                    <td>760-810</td>
                   </tr>
                   <tr>
                     <th>Cooling</th>
@@ -357,16 +354,20 @@ export default function H13() {
                     <td>max. 240</td>
                   </tr>
                   <tr>
+                    <th>Stress-Relief Annealing °C</th>
+                    <td>approx. 610-660</td>
+                  </tr>
+                  <tr>
                     <th>Hardening °C</th>
-                    <td>840-880 / 860-900</td>
+                    <td>1030-1060</td>
                   </tr>
                   <tr>
                     <th>Quenching</th>
-                    <td>Oil / Air</td>
+                    <td>Air, Oil, Salt Bath 500-550°C</td>
                   </tr>
                   <tr>
                     <th>Hardness after Quenching HRC</th>
-                    <td>57 / 55</td>
+                    <td>55</td>
                   </tr>
                 </tbody>
               </table>
@@ -381,55 +382,45 @@ export default function H13() {
                 <thead>
                   <tr>
                     <th>Temp (°C)</th>
-                    <th>In Oil – HRC</th>
-                    <th>In Air – HRC</th>
+                    <th>HRC</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>100</td>
-                    <td>56</td>
                     <td>54</td>
                   </tr>
                   <tr>
-                    <td>200</td>
-                    <td>54</td>
-                    <td>52</td>
+                    <td>210</td>
+                    <td>53</td>
                   </tr>
                   <tr>
                     <td>300</td>
-                    <td>52</td>
-                    <td>50</td>
+                    <td>53</td>
                   </tr>
                   <tr>
                     <td>400</td>
-                    <td>49</td>
-                    <td>47</td>
-                  </tr>
-                  <tr>
-                    <td>450</td>
-                    <td>47</td>
-                    <td>45</td>
+                    <td>55</td>
                   </tr>
                   <tr>
                     <td>500</td>
-                    <td>46</td>
-                    <td>43</td>
+                    <td>56</td>
                   </tr>
                   <tr>
                     <td>550</td>
-                    <td>43</td>
-                    <td>40</td>
+                    <td>54</td>
                   </tr>
                   <tr>
                     <td>600</td>
-                    <td>38</td>
-                    <td>36</td>
+                    <td>51</td>
                   </tr>
                   <tr>
                     <td>650</td>
+                    <td>43</td>
+                  </tr>
+                  <tr>
+                    <td>700</td>
                     <td>34</td>
-                    <td>32</td>
                   </tr>
                 </tbody>
               </table>
@@ -443,23 +434,17 @@ export default function H13() {
         <div className="container text-center">
           <h2 className="section-title mb-4">Stocking Partners</h2>
           <p className="lead">
-            We keep the materials from <strong>Germany</strong>,
-            <strong> Japan</strong> and <strong>China</strong>.
+            We keep the materials from <strong>Europe</strong> and <strong>China</strong>.
           </p>
           <div className="partner-flags mt-4">
             <img
-              src="/image/german-flag.jpg"
-              alt="Germany"
-              className="flag-img mx-3"
-            />
-            <img
-              src="/image/japan-flag.jpeg"
-              alt="Japan"
+              src="/image/europe-flag.jpeg"
+              alt="Europe Flag"
               className="flag-img mx-3"
             />
             <img
               src="/image/china-flag.png"
-              alt="China"
+              alt="China Flag"
               className="flag-img mx-3"
             />
           </div>

@@ -188,6 +188,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      {/* Industries we serve */}
       <section
         className="industries-section py-5"
         style={{ backgroundColor: "#f9f9f9" }}

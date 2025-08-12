@@ -1,43 +1,64 @@
-/* Infrastructure Section Layout */
-
-/* Hero Banner with Overlay */
-.bg-overlay-section {
-  position: relative;
-  min-height: 55vh;
-  background: linear-gradient(rgba(39, 63, 79, 0.6), rgba(39, 63, 79, 0.5)),
-              url("/image/konsond img.png") center/cover no-repeat;
+.overlay-infrastructure {
+  height: 80vh;
+  width: 30%;
+  padding: 10px;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
   color: #fff;
 }
 
-.overlay-content {
-  z-index: 2;
-  padding: 2rem;
-  max-width: 100%;
-  font-size: 1.2rem;
-  font-weight: 500;
+.video-banner-infrastructure {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
+.video-banner-infrastructure .bg-video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.overlay-infrastructure h1 {
+  font-size: 3rem;
+  margin: 0px 20px 20px 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overlay-infrastructure p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
 /* Heading */
 .text-heading h2 {
-  color: #273F4F;
+  color: #273f4f;
   font-size: 2.5rem;
 }
 
 .text-heading hr {
   width: 80px;
   height: 4px;
-  background: #FE7743;
+  background: #fe7743;
   margin: 1rem auto;
   opacity: 1;
 }
 
 .text-heading p {
   font-size: 1.2rem;
-  color: #447D9B;
+  color: #447d9b;
   font-weight: 500;
 }
 
@@ -50,7 +71,7 @@
 }
 
 .infra-card {
-  background: #D7D7D7;
+  background: #fe774370;
   padding: 1.5rem;
   text-align: center;
   border-radius: 12px;
@@ -60,13 +81,13 @@
 
 .infra-card:hover {
   transform: translateY(-8px);
-  background: #FE7743;
+  background: #fe7743;
   color: #fff;
 }
 
 .infra-card i {
   font-size: 2rem;
-  color: #273F4F;
+  color: #273f4f;
   margin-bottom: 1rem;
 }
 
@@ -89,30 +110,79 @@
   gap: 1rem;
   padding: 1rem;
   background: #f9f9f9;
-  border-left: 5px solid #447D9B;
+  border-left: 5px solid #447d9b;
   border-radius: 10px;
   transition: background 0.3s ease;
 }
 
 .features i {
-  color: #273F4F;
+  color: #273f4f;
   font-size: 1.8rem;
 }
 
 .features:hover {
-  background: #447D9B;
+  background: #447d9b;
   color: #fff;
 }
 
 .features:hover i {
-  color: #FE7743;
+  color: #fe7743;
 }
 
 @media (max-width: 768px) {
-  .overlay-content {
-    font-size: 1rem;
+   .overlay-infrastructure {
+    width: 60%;
+  }
+  .overlay-infrastructure h1 {
+    font-size: 2.3rem;
+  }
+  .overlay-infrastructure p {
+    font-size: 1.04rem;
   }
   .text-heading h2 {
     font-size: 2rem;
   }
+  .text-heading p {
+    font-size: 1.2rem;
+  }
+  .infra-highlights h5 {
+    font-size: 1.2rem;
+  }
+  .infra-highlights i {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-infrastructure {
+    width: 75% !important;
+  }
+  .overlay-infrastructure h1 {
+    font-size: 2rem;
+  }
+  .overlay-infrastructure p {
+    font-size: 0.9rem;
+  }
+  .text-heading h2 {
+    font-size: 1.9rem;
+  }
+  .text-heading p {
+    font-size: 1rem;
+  }
+  .infra-highlights h5 {
+    font-size: 1.05rem;
+  }
+  .infra-highlights i {
+    font-size: 1.5rem;
+  }
+  .infrastructure-container {
+    padding-bottom: 0rem !important;
+  }
+}
+
+@media  (min-width:769px) and (max-width: 1192px) {
+  .overlay-infrastructure {
+  width: 47%;
+}
+
 }

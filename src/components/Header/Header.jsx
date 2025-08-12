@@ -248,31 +248,31 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/hot-work/H13")}
                     className="dropdown-item "
                   >
-                    H13 / 2344
+                    H13 / AISI H 13 / DIN 2344 
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H11")}
                     className="dropdown-item "
                   >
-                    H11 / 2343
+                    H11 / AISI H 11 / DIN 2343
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H21")}
                     className="dropdown-item "
                   >
-                    H21 / 2581
+                    H21 / AISI H21 /  DIN  1.2581
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H10")}
                     className="dropdown-item "
                   >
-                    H10 / 2365 / SKD7
+                    H10 / AISI H10 / DIN  1.2365 / SKD7
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H12")}
                     className="dropdown-item "
                   >
-                    H12 / 2606
+                    H12 / AISI H12 / DIN  1.2606
                   </button>
                 </div>
 

@@ -11,6 +11,7 @@ import Products from "./components/Products/Products.jsx";
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
 import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
 import H13 from "./components/Products/Hot-Work/Grades/H13/H13.jsx";
+import H11 from "./components/Products/Hot-Work/Grades/H11/H11.jsx";
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
 import Certifications from "./components/Certificates/Certificates.jsx";
@@ -37,17 +38,18 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/certifications" element={<Certifications />} />
           <Route path="/contactUs" element={<ContactUs />} />
-
           <Route path="/enquiry" element={<EnquiryForm />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/products/hot-work" element={<HotWork />}>
             <Route path="DB6" element={<DB6 />} />
             <Route path="H13" element={<H13 />} />
-            {/* <Route path="H11" element={<H11 />} />
-            <Route path="H21" element={<H21 />} /> */}
+            <Route path="H11" element={<H11 />} />
+            {/* <Route path="H21" element={<H21 />} /> */}
           </Route>
           {/* 
           <Route path="/quality" element={<Quality />} />

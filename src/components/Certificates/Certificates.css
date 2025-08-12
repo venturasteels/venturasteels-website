@@ -1,9 +1,5 @@
-.certification-container {
-  margin-top: 9rem;
-}
-
 .certification-container h2 {
-  color: #393185;
+  color: #273f4f;
 }
 
 .certifications-description {
@@ -15,8 +11,8 @@
 }
 
 .certification-container hr {
-  color: #393185;
-  border: 1px solid #393185;
+  color: #fe7743;
+  border: 1px solid #fe7743;
 }
 
 .certificate-card {
@@ -26,17 +22,21 @@
   box-shadow: 0 6px 20px rgba(57, 49, 133, 0.07);
   transition: transform 0.3s ease;
   cursor: pointer;
-}
-
-.certificate-card:hover {
-  transform: scale(1.03);
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #447d9b50;
+  border: 1px solid #fe7743;
 }
 
 .cert-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
   display: block;
-  border-radius: 10px;
 }
 
 .cert-overlay {
@@ -44,8 +44,8 @@
   bottom: -40%;
   left: 0;
   width: 100%;
-  height: 40%;
-  background: rgba(57, 49, 133, 0.85);
+  height: auto;
+  background: #fe7743;
   color: #fff;
   padding: 1rem;
   display: flex;
@@ -79,23 +79,46 @@
 }
 
 @media (max-width: 768px) {
-  .cert-overlay {
-    bottom: 0;
-    opacity: 1;
-    height: auto;
-    padding: 0.75rem;
+  .certifications-description {
+    font-size: 1rem;
   }
 
   .cert-overlay h6 {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 
   .cert-overlay p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
   }
 
   .magnify-icon {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .certifications-description {
+    font-size: 1rem;
+  }
+
+  .cert-overlay h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .cert-overlay p {
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+  }
+
+  .magnify-icon {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  .certification-container .col-6 {
+    flex: 0 0 100%;
+    width: 50%;
   }
 }

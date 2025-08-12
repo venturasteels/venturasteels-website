@@ -11,15 +11,19 @@ const Infrastructure = () => {
   return (
     <>
       <section className="infrastructure-container pb-5">
-        {/* Hero Banner with Overlay */}
-        <div className="bg-overlay-section">
-          <div className="overlay-content text-white">
-            <h1 className="display-4 fw-bold mb-4" data-aos="fade-down">
-              Infrastructure
-            </h1>
-            <p className="lead mx-auto fw-bold" style={{ maxWidth: "800px"}} data-aos="fade-up">
-              Ventura Alloy & Steels' 12,000 sq. ft. facility is designed for efficiency,
-              reliability, and future scalability, ensuring smooth operations and timely deliveries across India.
+        {/* video-banner */}
+        <div className="video-banner-infrastructure">
+          <video autoPlay loop muted className="bg-video w-100">
+            <source src="/videoes/Website Infrastructure Page.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="overlay-infrastructure">
+            <h1 className="text-center">Infrastructure</h1>
+            <p className="text-center">
+              Ventura Alloy & Steels' 12,000 sq. ft. facility is designed for
+              efficiency, reliability, and future scalability, ensuring smooth
+              operations and timely deliveries across India.
             </p>
           </div>
         </div>
