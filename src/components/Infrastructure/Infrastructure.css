@@ -1,3 +1,4 @@
+/* Video Banner */
 .overlay-infrastructure {
   height: 80vh;
   width: 30%;
@@ -25,6 +26,7 @@
   height: 80vh;
   object-fit: cover;
 }
+
 .hero-text {
   position: relative;
   z-index: 2;
@@ -42,7 +44,8 @@
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
-/* Heading */
+
+/* Section Heading */
 .text-heading h2 {
   color: #273f4f;
   font-size: 2.5rem;
@@ -112,7 +115,7 @@
   background: #f9f9f9;
   border-left: 5px solid #447d9b;
   border-radius: 10px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .features i {
@@ -129,8 +132,9 @@
   color: #fe7743;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-   .overlay-infrastructure {
+  .overlay-infrastructure {
     width: 60%;
   }
   .overlay-infrastructure h1 {
@@ -180,9 +184,8 @@
   }
 }
 
-@media  (min-width:769px) and (max-width: 1192px) {
+@media (min-width: 769px) and (max-width: 1192px) {
   .overlay-infrastructure {
-  width: 47%;
-}
-
+    width: 47%;
+  }
 }
