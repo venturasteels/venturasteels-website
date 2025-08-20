@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import Products from "./components/Products/Products.jsx";
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
 import Boron from "./components/Products/Boron-Steel/boron-steel.jsx";
-import ColdWork from "./components/Products/Cold-Work/Cold-Work.jsx";
+import ColdWork from "./components/Products/Cold-Work/cold-work.jsx";
 import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
 import H13 from "./components/Products/Hot-Work/Grades/H13/H13.jsx";
 import H11 from "./components/Products/Hot-Work/Grades/H11/H11.jsx";
