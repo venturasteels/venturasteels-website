@@ -9,9 +9,12 @@ import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Products from "./components/Products/Products.jsx";
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
+import Boron from "./components/Products/Boron-Steel/boron-steel.jsx";
+import ColdWork from "./components/Products/Cold-Work/Cold-Work.jsx";
 import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
 import H13 from "./components/Products/Hot-Work/Grades/H13/H13.jsx";
 import H11 from "./components/Products/Hot-Work/Grades/H11/H11.jsx";
+import H21 from "./components/Products/Hot-Work/Grades/H21/H21.jsx";
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
 import Certifications from "./components/Certificates/Certificates.jsx";
@@ -19,6 +22,11 @@ import EnquiryForm from "./components/Enquiry/Enquiry.jsx";
 import Careers from "./components/Careers/Careers.jsx";
 import ContactUs from "./components/ContactUs/ContactUs.jsx";
 import Blogs from "./components/Blogs/Blogs.jsx";
+import Automotive from "./components/Industries/Automative/Automative.jsx";
+import Aerospace from "./components/Industries/Aerospace/Aerospace.jsx";
+import Tooling from "./components/Industries/Tooling/Tooling.jsx";
+import InfrastructureEnergy from "./components/Industries/Infrastructure/Infrastructure-energy.jsx";
+import Plastics from "./components/Industries/Plastics/Plastics.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -45,20 +53,27 @@ const App = () => {
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/enquiry" element={<EnquiryForm />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/products/hot-work" element={<HotWork />}>
             <Route path="DB6" element={<DB6 />} />
             <Route path="H13" element={<H13 />} />
             <Route path="H11" element={<H11 />} />
+            <Route path="H21" element={<H21 />} />
             {/* <Route path="H21" element={<H21 />} /> */}
           </Route>
-          {/* 
-          <Route path="/quality" element={<Quality />} />
-          <Route path="/infrastructure" element={<Infrastructure />} />
-          <Route path="/certifications" element={<Certifications />} />
-          <Route path="/enquiry" element={<EnquiryForm />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/blogs" element={<Blogs />} /> */}
+          <Route path="/products/cold-work" element={<ColdWork />}>
+            {/* <Route path="DB6" element={<DB6 />} />
+            <Route path="H21" element={<H21 />} /> */}
+          </Route>
+          <Route path="/products/boron-steel" element={<Boron />}>
+            {/* <Route path="DB6" element={<DB6 />} />
+            <Route path="H21" element={<H21 />} /> */}
+          </Route>
+          <Route path="/products/automotive" element={<Automotive />} />
+          <Route path="/products/aerospace" element={<Aerospace />} />
+          <Route path="/products/tooling" element={<Tooling />} />
+          <Route path="/products/infrastructure-energy" element={<InfrastructureEnergy />} />
+          <Route path="/products/plastics" element={<Plastics />} />
         </Routes>
         <Footer />
       </Router>

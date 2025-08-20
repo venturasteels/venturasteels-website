@@ -23,7 +23,7 @@ const Infrastructure = () => {
     "Hardness Testing Machines",
     "Barracks for batch-wise storage",
     "Material loading capacity per hour: 50–70 Tonnes",
-    "5–7 vehicles can be loaded at a time"
+    "5–7 vehicles can be loaded at a time",
   ];
 
   return (
@@ -42,10 +42,10 @@ const Infrastructure = () => {
           <div className="overlay-infrastructure">
             <h1 className="text-center">Infrastructure</h1>
             <p className="text-center">
-              Our Mumbai – Stocking & Machining Center in Bhiwandi spans 60,000 sq. ft.,
-              equipped with advanced handling, cutting, and testing facilities
-              to ensure high precision, efficient operations, and rapid
-              dispatches.
+              Our Mumbai – Stocking & Machining Center in Bhiwandi spans 60,000
+              sq. ft., equipped with advanced handling, cutting, and testing
+              facilities to ensure high precision, efficient operations, and
+              rapid dispatches.
             </p>
           </div>
         </div>
@@ -54,30 +54,50 @@ const Infrastructure = () => {
         <div className="text-center text-heading mt-5" data-aos="fade-up">
           <h2 className="fw-bold">Mumbai – Stocking & Machining Center</h2>
           <hr />
-          <p>Reliable. Scalable. Ready for the Future.</p>
+          <p></p>
         </div>
 
         {/* Highlights */}
-        <div className="container infra-highlights mt-5">
-          {["60,000 Sq. Ft. Facility", "Advanced Handling Equipment", "High-Capacity Storage", "Cutting-edge Machining"].map(
-            (item, idx) => (
-              <div className="infra-card" key={idx} data-aos="zoom-in">
-                <i className="bi bi-check2-circle"></i>
-                <h5 className="fw-bold">{item}</h5>
+        <section className="infrReliable. Scalable. Ready for the Future.a-highlights-section py-5">
+          <div className="container infra-highlights">
+            {[
+              { icon: "bi-building", title: "60,000 Sq. Ft. Facility" },
+              {
+                icon: "bi-gear-wide-connected",
+                title: "Advanced Handling Equipment",
+              },
+              { icon: "bi-box-seam", title: "High-Capacity Storage" },
+              { icon: "bi-hammer", title: "Cutting-edge Machining" },
+            ].map((item, idx) => (
+              <div
+                className="infra-card"
+                key={idx}
+                data-aos="zoom-in"
+                data-aos-delay={idx * 150}
+              >
+                <i className={`bi ${item.icon}`}></i>
+                <h5 className="fw-bold mt-3">{item.title}</h5>
               </div>
-            )
-          )}
-        </div>
+            ))}
+          </div>
+        </section>
 
         {/* Feature List */}
-        <div className="container feature-container mt-5">
-          {features.map((feature, i) => (
-            <div className="features" key={i} data-aos="fade-up">
-              <i className="bi bi-tools"></i>
-              <span>{feature}</span>
-            </div>
-          ))}
-        </div>
+        <section className="feature-list-section py-5">
+          <div className="container feature-container">
+            {features.map((feature, i) => (
+              <div
+                className="features"
+                key={i}
+                data-aos="fade-up"
+                data-aos-delay={i * 50}
+              >
+                <i className="bi bi-check-circle-fill"></i>
+                <span>{feature}</span>
+              </div>
+            ))}
+          </div>
+        </section>
       </section>
     </>
   );

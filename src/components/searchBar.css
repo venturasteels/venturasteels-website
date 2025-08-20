@@ -1,15 +1,21 @@
 .search-wrapper {
-  width: 250px;
+  width: 100%;
+  max-width: 400px; 
 }
 
 .search-dropdown {
   position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
   width: 100%;
-  background: white;
-  border: 1px solid #ccc;
-  max-height: 200px;
-  overflow-y: auto;
+  top: 100%;
+  z-index: 1000;
+}
+
+.search-dropdown .active {
+  background-color: #FE7743;
+  color: white;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #273F4F; 
 }

@@ -1,3 +1,6 @@
+.careers-banner img {
+  border: 2px solid #fe7743;
+}
 /* intro section */
 .careers-intro {
   background: linear-gradient(135deg, #fe774320, #ffffff);
@@ -96,7 +99,7 @@
 
 /* modals */
 .job-detail-modal .modal-header {
-  background-color: #447D9B;
+  background-color: #447d9b;
   color: white;
 }
 
@@ -105,7 +108,7 @@
 }
 
 .apply-form-modal .modal-header {
-  background-color: #FE7743;
+  background-color: #fe7743;
   color: white;
 }
 
@@ -115,7 +118,7 @@
 
 /* buttons */
 button.btn-primary {
-  background-color: #273F4F;
+  background-color: #273f4f;
   border: none;
   border-radius: 25px;
   padding: 8px 18px;
@@ -123,11 +126,11 @@ button.btn-primary {
 }
 
 button.btn-primary:hover {
-  background-color: #FE7743;
+  background-color: #fe7743;
 }
 
 button.btn-success {
-  background-color: #447D9B;
+  background-color: #447d9b;
   border: none;
   border-radius: 25px;
   padding: 8px 18px;
@@ -135,5 +138,15 @@ button.btn-success {
 }
 
 button.btn-success:hover {
-  background-color: #273F4F;
+  background-color: #273f4f;
+}
+
+@media screen and (max-width: 560px) {
+  .careers-banner img {
+    height: 35vh;
+    margin-top: 10px;
+  }
+  .careers-banner {
+    margin-bottom: 1.98rem !important;
+  }
 }

@@ -61,7 +61,6 @@
 .navbar-section .nav-link {
   font-size: 20px;
 }
-
 .contact-info {
   flex-wrap: wrap;
 }
@@ -91,6 +90,7 @@
 }
 
 .dropdown-item {
+  font-size: 14px;
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.4s ease;
@@ -228,7 +228,13 @@
   .navbar-section .nav-link{
     font-size: 17px;
   }
- 
+ .dropdown-item{
+  font-size: 12px;
+ }
+ .mega-column {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+}
 }
 
 @media (max-width: 1237px) {

@@ -5,11 +5,6 @@ const Quality = () => {
   return (
     <>
       <section className="quality-hero ">
-        {/* <div className="container text-center">
-          <h1 className="display-4 fw-bold">
-            Delivering Certified Steel with Precision & Quality
-          </h1>
-        </div> */}
         {/* video-banner */}
         <div className="video-banner-quality">
           <video autoPlay loop muted className="bg-video w-100">

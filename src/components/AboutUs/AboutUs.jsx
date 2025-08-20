@@ -56,10 +56,14 @@ const AboutUs = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>AboutUs | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <title>About Us | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Ventura Steels is a trusted steel manufacturer."
+            content="Ventura Steels is a trusted special steel supplier in India. We stock alloy steel, tool steel, hot work steel, cold work steel, and plastic mould steel with machining centers in Mumbai and Rajkot, serving automotive, aerospace, oil & gas, and engineering industries."
+          />
+          <meta
+            name="keywords"
+            content="About Ventura Steels, Ventura Steels, Special steel supplier India, Alloy steel stockist, Tool steel supplier India, Engineering steel distributor, Die & mould steel supplier, Hot work steel stockist, Cold work steel supplier, Plastic mould steel supplier, Steel machining center Mumbai, Steel machining center Rajkot, Automotive steel supplier India, Aerospace steel supplier India"
           />
         </Helmet>
       </HelmetProvider>
@@ -69,9 +73,9 @@ const AboutUs = () => {
         <section className="about-hero d-flex align-items-center">
           <div className="overlay"></div>
           <div className="container text-center text-white position-relative z-1">
-            <h2 className="display-4 fw-bold mb-3" data-aos="fade-down">
-              About Us
-            </h2>
+            <h1 className="display-4 fw-bold mb-3" data-aos="fade-down">
+              About Us – Ventura Alloy & Steels Pvt. Ltd.
+            </h1>
             <p className="lead" data-aos="fade-up" data-aos-delay="200">
               Building Trust with Quality Steel Solutions Since 2014.
             </p>
@@ -107,7 +111,7 @@ const AboutUs = () => {
               <div className="col-md-6 text-center">
                 <img
                   src="/image/about-us-img.jpg"
-                  alt="About Ventura Steels"
+                  alt="Ventura Steels industrial steel supplier in India – About Us page"
                   className="img-fluid rounded shadow-lg"
                 />
               </div>
@@ -118,14 +122,16 @@ const AboutUs = () => {
         {/* vision-mission-values */}
         <section className="vision-mission-modern py-5">
           <div className="container">
-            <h2 className="text-center fw-bold mb-5">Vision & Mission</h2>
+            <h2 className="text-center fw-bold mb-5">
+              Vision, Mission & Values
+            </h2>
             <div className="timeline">
               <div className="timeline-item" data-aos="fade-right">
                 <div className="timeline-icon">
                   <FaBullseye size={28} />
                 </div>
                 <div className="timeline-content">
-                  <h4 className="fw-semibold">Our Vision</h4>
+                  <h3 className="fw-semibold">Our Vision</h3>
                   <p>
                     To be a one stop destination for all Tool Steel , Spring
                     Steel and Die Steel product requirements, Pan India and
@@ -140,7 +146,7 @@ const AboutUs = () => {
                   <FaFlagCheckered size={28} />
                 </div>
                 <div className="timeline-content">
-                  <h4 className="fw-semibold">Our Mission</h4>
+                  <h3 className="fw-semibold">Our Mission</h3>
                   <ul>
                     <li>
                       To provide world class supply of high-quality steel
@@ -171,7 +177,7 @@ const AboutUs = () => {
                   <FaHandshake size={24} />
                 </div>
                 <div className="timeline-content">
-                  <h4 className="fw-semibold">Our Vision</h4>
+                  <h3 className="fw-semibold">Our Vision</h3>
                   <p>
                     Integrity, Commitment, Customer First, Continuous
                     Improvement.

@@ -1,85 +1,140 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Container, Row, Col, Button, Offcanvas } from "react-bootstrap";
 import "./Blogs.css";
 
-const blogsData = [
+const blogs = [
   {
     id: 1,
-    title: "The Future of Steel in Industrial Manufacturing",
+    title: "The Future of Alloy & Tool Steels",
+    date: "Aug 10, 2025",
+    category: "Industry Insights",
     image: "/image/quality.jpg",
-    category: "Industry",
-    summary: "Explore how Ventura is innovating in the steel sector with new alloys and processing techniques.",
-    date: "July 30, 2025",
+    short: "Exploring the latest innovations in alloy and tool steel manufacturing.",
+    content: "Full detailed blog content here..."
   },
-  {
-    id: 2,
-    title: "Heat Treatment Best Practices",
-    image:  "/image/quality.jpg",
-    category: "Technical",
-    summary: "Proper heat treatment ensures better durability and performance of tool steels.",
-    date: "July 20, 2025",
-  },
-  {
-    id: 3,
-    title: "Why Quality Control Matters in Tool Steel",
-    image:  "/image/quality.jpg",
-    category: "Quality",
-    summary: "Discover how strict quality control at Ventura sets our materials apart in high-performance applications.",
-    date: "July 15, 2025",
-  },
+  // {
+  //   id: 2,
+  //   title: "Why Quality Testing Matters in Steel Production",
+  //   date: "Aug 5, 2025",
+  //   category: "Quality",
+  //   image: "https://via.placeholder.com/900x500",
+  //   short: "Quality assurance ensures performance, durability, and reliability.",
+  //   content: "Full detailed blog content here..."
+  // },
+  // {
+  //   id: 3,
+  //   title: "Sustainability in the Steel Industry",
+  //   date: "Jul 30, 2025",
+  //   category: "Sustainability",
+  //   image: "https://via.placeholder.com/900x500",
+  //   short: "How the steel industry is adapting to eco-friendly practices.",
+  //   content: "Full detailed blog content here..."
+  // },
+  // {
+  //   id: 4,
+  //   title: "Advanced Forging Techniques",
+  //   date: "Jul 25, 2025",
+  //   category: "Manufacturing",
+  //   image: "https://via.placeholder.com/900x500",
+  //   short: "Next-gen forging processes to improve durability and cost efficiency.",
+  //   content: "Full detailed blog content here..."
+  // }
 ];
 
-const categories = ["All", "Industry", "Technical", "Quality"];
+export default function BlogPage() {
+  const [category, setCategory] = useState("All");
+  const [show, setShow] = useState(false);
+  const [activeBlog, setActiveBlog] = useState(null);
 
-const Blogs = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const categories = ["All", ...new Set(blogs.map(b => b.category))];
 
   const filteredBlogs =
-    activeCategory === "All"
-      ? blogsData
-      : blogsData.filter((b) => b.category === activeCategory);
+    category === "All" ? blogs : blogs.filter(b => b.category === category);
+
+  const openBlog = (blog) => {
+    setActiveBlog(blog);
+    setShow(true);
+  };
 
   return (
-    <div className="blogs-wrapper container">
+    <div className="ventura-blog-page">
       {/* Hero Section */}
-      <div className="blogs-hero text-center">
-        <h1 className="fw-bold">Industry Insights & Updates</h1>
-        <p className="text-muted fs-5">
-          Explore articles, case studies, and technical insights from Ventura’s expert team.
-        </p>
+      <div
+        className="hero-section"
+        style={{ backgroundImage: `url(${blogs[0].image})` }}
+      >
+        <div className="hero-overlay">
+          <h1>{blogs[0].title}</h1>
+          <p>{blogs[0].date} | {blogs[0].category}</p>
+          <Button variant="light" onClick={() => openBlog(blogs[0])}>
+            Read More
+          </Button>
+        </div>
       </div>
 
-      {/* Category Filters */}
-      <div className="category-tabs d-flex flex-wrap justify-content-center mb-4">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            className={`cat-btn ${activeCategory === cat ? "active" : ""}`}
-            onClick={() => setActiveCategory(cat)}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+      <Container>
+        {/* Filter Bar */}
+        <div className="filter-bar text-center my-4">
+          {categories.map((cat, i) => (
+            <Button
+              key={i}
+              variant={category === cat ? "primary" : "outline-primary"}
+              className="mx-1"
+              onClick={() => setCategory(cat)}
+            >
+              {cat}
+            </Button>
+          ))}
+        </div>
 
-      {/* Blog Cards Grid */}
-      <div className="row g-4">
-        {filteredBlogs.map((blog) => (
-          <div className="col-md-6 col-lg-4" key={blog.id}>
-            <div className="blog-card h-100 shadow-sm">
-              <img src={blog.image} alt={blog.title} className="img-fluid rounded-top" />
-              <div className="p-3">
-                <small className="text-muted">{blog.date} | {blog.category}</small>
-                <h5 className="fw-bold mt-2">{blog.title}</h5>
-                <p className="text-muted">{blog.summary}</p>
-                <Link to={`/blogs/${blog.id}`} className="read-link">Read More →</Link>
+        {/* Masonry Grid */}
+        <Row className="masonry-grid">
+          {filteredBlogs.map((b) => (
+            <Col md={6} lg={4} key={b.id} className="mb-4">
+              <div
+                className="blog-tile"
+                style={{ backgroundImage: `url(${b.image})` }}
+              >
+                <div className="tile-overlay">
+                  <h5>{b.title}</h5>
+                  <p className="small">{b.date} | {b.category}</p>
+                  <p className="short-desc">{b.short}</p>
+                  <Button
+                    variant="light"
+                    size="sm"
+                    onClick={() => openBlog(b)}
+                  >
+                    Read More
+                  </Button>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+
+      {/* Side Panel Blog Viewer */}
+      <Offcanvas
+        show={show}
+        onHide={() => setShow(false)}
+        placement="end"
+        className="blog-offcanvas"
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>{activeBlog?.title}</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <img
+            src={activeBlog?.image}
+            alt={activeBlog?.title}
+            className="img-fluid mb-3"
+          />
+          <p className="text-muted small">
+            {activeBlog?.date} | {activeBlog?.category}
+          </p>
+          <p>{activeBlog?.content}</p>
+        </Offcanvas.Body>
+      </Offcanvas>
     </div>
   );
-};
-
-export default Blogs;
+}

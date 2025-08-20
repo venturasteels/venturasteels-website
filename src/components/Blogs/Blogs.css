@@ -1,68 +1,76 @@
-.blogs-wrapper {
-  margin-top: 12rem;
-  margin-bottom: 5rem;
-  color: #333;
+/* Hero Section */
+.hero-section {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.blogs-hero h1 {
-  color: #393185;
-  font-size: 2.8rem;
-}
-
-.blogs-hero p {
-  max-width: 700px;
-  margin: auto;
-}
-
-.category-tabs {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  gap: 1rem;
-}
-
-.cat-btn {
-  border: 1px solid #ccc;
-  background: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 25px;
-  font-weight: 500;
-  color: #393185;
-  transition: 0.3s;
-}
-
-.cat-btn:hover,
-.cat-btn.active {
-  background-color: #393185;
+.hero-overlay {
+  background: rgba(39, 63, 79, 0.7);
   color: white;
-  border-color: #393185;
-}
-
-.blog-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #e0e0e0;
-}
-
-.blog-card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-}
-
-.blog-card img {
-  height: 200px;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
   width: 100%;
-  object-fit: cover;
 }
 
-.read-link {
-  color: #393185;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
+.hero-overlay h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.read-link:hover {
-  color: #2e2c6a;
+/* Filter Bar */
+.filter-bar button {
+  border-radius: 20px;
+}
+
+/* Masonry Grid */
+.masonry-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-tile {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.blog-tile:hover {
+  transform: translateY(-5px);
+}
+
+.tile-overlay {
+  /* background: rgba(39, 63, 79, 0.7); */
+  background: linear-gradient(
+    to top,
+    rgba(39, 63, 79, 0.8),
+    rgba(39, 63, 79, 0.3)
+  );
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.blog-tile:hover .tile-overlay {
+  background: rgba(39, 63, 79, 0.9);
+}
+
+.short-desc {
+  font-size: 0.9rem;
+}
+
+/* Side Panel */
+.blog-offcanvas {
+  width: 500px;
+  max-width: 100%;
 }

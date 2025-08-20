@@ -182,6 +182,13 @@
   .infrastructure-container {
     padding-bottom: 0rem !important;
   }
+  .feature-list-section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .infra-highlights-section{
+    padding-bottom: 1rem !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1192px) {

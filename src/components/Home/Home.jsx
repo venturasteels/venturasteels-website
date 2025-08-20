@@ -11,7 +11,7 @@ import {
   FaPlane,
   FaMicroscope,
 } from "react-icons/fa";
-
+import IndustriesSection from "../Industries/Industries";
 import "./Home.css";
 
 const Home = () => {
@@ -92,15 +92,6 @@ const Home = () => {
       image: "/image/Plastic Mould Steels/P 20 Flat bars.png",
       link: "/products/boron-steel",
     },
-  ];
-
-  const industries = [
-    { icon: <FaCar />, name: "Automotive" },
-    { icon: <FaIndustry />, name: "Construction & Engineering" },
-    { icon: <FaTools />, name: "Toolmaking & Die Mould" },
-    { icon: <FaGasPump />, name: "Oil, Gas & Mining" },
-    { icon: <FaPlane />, name: "Aerospace" },
-    { icon: <FaMicroscope />, name: "Medical Technology" },
   ];
 
   return (
@@ -190,39 +181,7 @@ const Home = () => {
       </div>
 
       {/* Industries we serve */}
-      <section
-        className="industries-section py-5"
-        style={{ backgroundColor: "#f9f9f9" }}
-      >
-        <Container>
-          <h2 className="text-center mb-4" style={{ color: "#273F4F" }}>
-            Industries We Serve
-          </h2>
-          <p
-            className="text-center mb-5"
-            style={{ maxWidth: "700px", margin: "0 auto", color: "#555" }}
-          >
-            Ventura Alloy & Steels serves a wide spectrum of industries by
-            delivering high-performance steel solutions for advanced
-            applications.
-          </p>
-          <Row className="g-4 text-center">
-            {industries.map((industry, idx) => (
-              <Col md={4} sm={6} key={idx}>
-                <div className="industry-card p-4 shadow-sm bg-white h-100 rounded">
-                  <div
-                    className="icon mb-3"
-                    style={{ fontSize: "2rem", color: "#FE7743" }}
-                  >
-                    {industry.icon}
-                  </div>
-                  <h5 style={{ color: "#273F4F" }}>{industry.name}</h5>
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
+      <IndustriesSection />
 
       {/* about-ventura */}
       <section className="about-section py-5 bg-light">
@@ -341,7 +300,10 @@ const Home = () => {
       </section>
 
       {/* certified section */}
-      <section className="py-5 bg-light trusted-certificates" data-aos="fade-up" >
+      <section
+        className="py-5 bg-light trusted-certificates"
+        data-aos="fade-up"
+      >
         <div className="container text-center">
           <h3 className="mb-4 text-dark fw-bold">Trusted & Certified</h3>
           <p className="mb-4 text-muted">
@@ -379,7 +341,7 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-5">
-            <a href="/certificates" className="btn btn-outline-primary">
+            <a href="/certifications" className="btn btn-outline-primary">
               View All Certificates
             </a>
           </div>
