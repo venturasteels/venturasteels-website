@@ -32,7 +32,7 @@ const SearchBar = ({ data }) => {
     navigate(path);
   };
 
-  // Close dropdown when clicking outside
+  // On click close dropdown
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {

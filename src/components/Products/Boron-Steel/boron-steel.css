@@ -181,4 +181,7 @@
   .boron-sidebar {
     margin: 0px 20px;
   }
+  .boron-container {
+    padding: 0.5rem;
+}
 }

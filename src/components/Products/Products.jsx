@@ -19,30 +19,30 @@ const productCategories = [
   {
     title: "Cold Work Steel",
     image: "/image/Cold Work Tool Steels/D2 Round Bar.png",
-    path: "products/cold-work",
+    path: "/products/cold-work",
   },
   {
     title: "Plastic Mould Steel",
     image: "/image/Plastic Mould Steels/P 20 Flat bars.png",
-    path: "products/plastic-mould",
+    path: "/products/plastic-mould",
   },
   { title: "Spring Steel", image: "/image/Spring Steels/SAE 52100.png",
-    path: "products/spring-steel",
+    path: "/products/spring-steel",
    },
   {
     title: "Alloy Steel",
     image: "/image/Alloy Steels/41Cr4 Alloy Steel Round Bars.png",
-    path: "products/alloy-steel",
+    path: "/products/alloy-steel",
   },
   {
     title: "Carbon Steel",
     image: "/image/Carbon Steels/C45 Carbon Steel Round Bars.png",
-    path: "products/carbon-steel",
+    path: "/products/carbon-steel",
   },
   {
     title: "Boron Steel",
-    image: "/image/Plastic Mould Steels/Plastic Mould 3.png",
-    path: "products/boron-steel",
+    image: "/image/Boron Steels/15B25 Round bars.png",
+    path: "/products/boron-steel",
   },
 ];
 

@@ -41,7 +41,6 @@ const ContactUs = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Live validation
     const error = validate(name, value);
     setErrors({ ...errors, [name]: error });
   };
@@ -59,7 +58,6 @@ const ContactUs = () => {
     if (Object.keys(validationErrors).length === 0) {
       console.log("Form Data:", formData);
       alert("Form Submitted Successfully!");
-      // Clear Form
       setFormData({
         name: "",
         email: "",

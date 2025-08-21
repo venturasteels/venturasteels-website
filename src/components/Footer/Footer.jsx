@@ -15,6 +15,8 @@ const Footer = () => {
                 alt="Ventura Steels"
                 className="mb-3 footer-logo rounded"
               />
+              <h3>ISO 9001 Certified</h3>
+              <p>Strict adherence to ISO 9001:2015 Quality Standards.</p>
               <p>
                 Ventura Alloy and Steels Pvt. Ltd. is a leading supplier of
                 high-performance steels, offering unmatched quality and service
@@ -32,6 +34,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+            
             {/* Quick Links */}
             <div className="col-md-2">
               <h5 className="mb-3">Quick Links</h5>
@@ -73,6 +76,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
             {/* Contact - Head Office */}
             <div className="col-md-3">
               <h5 className="mb-3">Head Office</h5>

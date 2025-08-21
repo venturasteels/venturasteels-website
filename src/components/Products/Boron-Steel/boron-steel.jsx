@@ -14,7 +14,7 @@ const Boron = () => {
   return (
     <div className="boron-container">
       <div className="boron-hero">
-        <h1>Boron Tool Steels</h1>
+        <h1>Boron Steels</h1>
         <p>
           Boron steel refers to steel alloyed with a small amount of boron,
           usually less than 1%. The addition of boron to steel greatly increases
