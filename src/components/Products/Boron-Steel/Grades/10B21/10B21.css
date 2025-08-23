@@ -128,7 +128,6 @@ section {
   color: #333;
 }
 
-
 /* media queries */
 @media (max-width: 768px) {
   .grade-details {

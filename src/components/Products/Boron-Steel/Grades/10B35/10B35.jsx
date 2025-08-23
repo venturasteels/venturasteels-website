@@ -1,35 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./10B21.css";
 
-export default function Boron10B21() {
+export default function Boron10B35() {
   return (
     <div className="grade-details">
-      <h2 className="text-center"> 10B21</h2>
+      <h2 className="text-center"> 10B35</h2>
       <p className="subtitle text-center">
-        High-strength, tough alloy that responds well to carburizing and
-        carbonitriding.
+        High-strength boron steel with excellent toughness, suitable for
+        heavy-load industrial applications.
       </p>
       <hr className="m-5" />
       {/* Overview */}
       <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
         <div className="overview-content">
           <p>
-            It is a carbon steel alloy that contains boron, manganese, and
-            carbon. It's known for its high strength and toughness, and is often
-            used in automotive parts and fasteners.
-          </p>
-          <p>
-            It’s properties are it responds well to carburizing and
-            carbonitriding. This can be heat treated to achieve a hardness & has
-            good plasticity.
+            It is an industrial material with excellent performance. It has high
+            tensile strength and yield strength, can withstand large external
+            forces and loads, and at the same time, maintains good toughness, is
+            not prone to brittle fracture, and can meet the use requirements
+            under complex working conditions.
           </p>
         </div>
         <div className="Boron15B25-img">
           <img
-            src="/image/Boron Steels/10B21 Round Bars 2.png"
+            src="/image/Boron Steels/10B35 Boron Steel Round Bars 3.png"
             alt="10B21"
-            width={300}
+            width={250}
           />
         </div>
       </section>
@@ -51,23 +47,23 @@ export default function Boron10B21() {
               <tbody>
                 <tr>
                   <td>C</td>
-                  <td>0.18-0.23</td>
+                  <td>0.32-0.38</td>
                 </tr>
                 <tr>
                   <td>Si</td>
-                  <td>Max 0.03</td>
+                  <td>0.10-0.30</td>
                 </tr>
                 <tr>
                   <td>Mn</td>
-                  <td>0.70-1.10</td>
+                  <td>0.60-0.90</td>
                 </tr>
                 <tr>
                   <td>P</td>
-                  <td>Max 0.03</td>
+                  <td>Max 0.04</td>
                 </tr>
                 <tr>
                   <td>S</td>
-                  <td>Max 0.035</td>
+                  <td>Max 0.05</td>
                 </tr>
                 <tr>
                   <td>B</td>
@@ -98,8 +94,8 @@ export default function Boron10B21() {
       <section className="applications">
         <h2>Applications</h2>
         <p>
-          Automotive fasteners and seat mechanisms, tools, ships, machines,
-          buildings, and infrastructure.
+          Automotive industry, machinery, structural applications etc.
+
         </p>
       </section>
 
