@@ -1,30 +1,30 @@
 /* chemical composition */
-.h21-composition table {
+.h11-composition table {
   width: 100%;
   border-collapse: collapse;
 }
-.h21-composition th,
-.h21-composition td {
+.h11-composition th,
+.h11-composition td {
   padding: 0.6rem ;
   border: 1px solid #fe774360;
   text-align: center;
   font-size: 18px;
 }
-.h21-name-table th, .h21-name-table td {
-    padding: 0.78rem ;
+.h11-name-table th, .h11-name-table td {
+    padding: 0.6rem ;
 }
 
-.h21-chemical-composition {
+.h11-chemical-composition {
   width: 40%;
 }
 .table-data {
   flex-wrap: wrap;
 }
-.h21-name-table {
+.h11-name-table {
   width: 45%;
 }
 .spec-block,
-.h21-composition table,
+.h11-composition table,
 .applications ul {
   background: #447d9b20;
   padding: 1rem;

@@ -63,33 +63,35 @@ section {
 /* standards section ends*/
 
 /* chemical composition */
-.composition table {
+.db6-composition table {
   width: 100%;
   border-collapse: collapse;
 }
-.name-table th,
-.name-table td {
+.db6-name-table th,
+.db6-name-table td {
   padding: 0.6rem;
   border: 1px solid #fe774360;
   text-align: center;
   font-size: 18px;
 }
-.composition-table th,
-.composition-table td {
-  padding: 0.78rem !important ;
+.db6-composition-table th,
+.db6-composition-table td {
+  border: 1px solid #fe774360;
+  text-align: center;
+  padding: 0.87rem !important;
 }
-.chemical-composition {
+.db6-chemical-composition {
   width: 40%;
 }
 .table-data {
   flex-wrap: wrap;
 }
-.name-table {
+.db6-name-table {
   width: 45%;
 }
 
 .spec-block,
-.composition table,
+.db6-composition table,
 .applications ul {
   background: #447d9b20;
   padding: 1rem;
@@ -97,7 +99,7 @@ section {
 }
 
 .spec-block h4,
-.composition h3,
+.db6-composition h3,
 .applications h3 {
   color: #393185;
   margin-bottom: 0.6rem;
@@ -397,8 +399,8 @@ section {
     padding: 0.6rem;
   }
 
-  .chemical-composition,
-  .name-table {
+  .db6-chemical-composition,
+  .db6-name-table {
     width: 100%;
     margin-bottom: 1rem;
   }
@@ -425,8 +427,8 @@ section {
   .subtitle {
     font-size: 1rem;
   }
-  .composition th,
-  .composition td {
+  .db6-composition th,
+  .db6-composition td {
     padding: 0.6rem;
     border: 1px solid #fe774360;
     text-align: center;
@@ -453,11 +455,11 @@ section {
     font-size: 0.85rem;
     padding: 0.4rem;
   }
-  .chemical-composition {
+  .db6-chemical-composition {
     width: 100%;
   }
 
-  .name-table {
+  .db6-name-table {
     width: 100%;
     margin: 0px auto;
   }
