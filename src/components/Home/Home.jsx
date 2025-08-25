@@ -51,12 +51,6 @@ const Home = () => {
     },
   ];
 
-  const [highlightsRef, highlightsInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.4,
-    rootMargin: "0px 0px -100px 0px",
-  });
-
   const products = [
     {
       title: "Hot Work Steel",
@@ -109,16 +103,6 @@ const Home = () => {
   });
 
   const swiperRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-
-    window.addEventListener("load", () => {
-      AOS.refresh();
-    });
-
-    return () => window.removeEventListener("load", AOS.refresh);
-  }, []);
 
   return (
     <>
@@ -201,7 +185,6 @@ const Home = () => {
               key={index}
               className={`stat-card ${item.className}`}
               data-aos="fade-right"
-              data-aos-delay={index * 200}
             >
               <div className="icon">{item.icon}</div>
               <div className="value">{item.value}</div>
