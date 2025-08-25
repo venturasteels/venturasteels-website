@@ -112,7 +112,7 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
       once: true,
     });
     AOS.refresh();
@@ -195,8 +195,12 @@ const Home = () => {
       <div className="stats-section">
         <div className="stats-container">
           {stats.map((item, index) => (
-            <div key={index} className={`stat-card ${item.className}`} data-aos="fade-right"
-            data-aos-delay={index * 200}>
+            <div
+              key={index}
+              className={`stat-card ${item.className}`}
+              data-aos="fade-right"
+              data-aos-delay={index * 200}
+            >
               <div className="icon">{item.icon}</div>
               <div className="value">{item.value}</div>
               <div className="label">{item.label}</div>
