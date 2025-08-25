@@ -64,13 +64,13 @@
 .stats-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2.5rem;
   justify-content: center;
 }
 
 .stat-card {
-  flex: 1 1 200px;
-  max-width: 270px;
+  flex: 1 1 180px;
+  max-width: 240px;
   background-color: #e9e9f7;
   border-radius: 12px;
   text-align: center;
@@ -80,12 +80,12 @@
 }
 
 .stat-card .icon {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
 .stat-card .value {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -129,51 +129,139 @@
   background-color: #fe7743;
 }
 
-/* product categories */
-.product-showcase {
-  background: #f8f9fa;
+/* product section */
+.product-container {
+  width: 75%;
+  margin: 0px auto;
+  overflow: visible !important;
 }
-
-.section-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
+.product-container h2 {
   color: #273f4f;
 }
 
-.product-showcase h3 {
-  color: #393185;
+.product-container hr {
+  color: #273f4f;
+  width: 10%;
+  border: 2px solid #273f4f;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.product-showcase p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
+.heading-product {
+  width: 120px;
+  margin: 0px auto;
+  border: 2px solid #273f4f;
+  opacity: 0.82;
 }
 
-.product-img {
-  border-radius: 1rem;
-  transition: transform 0.4s ease;
+.product-swiper {
+  width: 100%;
+  padding-bottom: 6.2rem;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
-.product-img:hover {
-  transform: scale(1.03);
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  height: auto !important;
 }
 
-.btn-primary {
-  background-color: #fe7743;
-  border: none;
-  padding: 0.6rem 1.4rem;
-  border-radius: 50px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+.product-tile {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #447d9b;
+.product-tile:hover {
+  transform: translateY(-6px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-product {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.overlay-product h5 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.overlay-product p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
   color: #fff;
 }
-.text-justify {
-  text-align: justify;
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #447d9b !important;
+  top: 40%;
+  width: 50px !important;
+  height: 50px !important;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.swiper-button-prev {
+  left: 32% !important;
+}
+
+.swiper-button-next {
+  right: 32% !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px !important;
+  font-weight: bold;
+}
+.swiper-pagination-bullets {
+  bottom: 20px !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 86% !important;
+}
+.swiper-container,
+.swiper {
+  width: 100%;
+  overflow: visible;
+}
+.swiper-horizontal {
+  height: 300px;
+}
+.product-view {
+  margin: 0px auto;
+  width: 60%;
+  border: 2px solid #fff;
+  padding: 0.55rem 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 /*why choose ventura  */
@@ -277,6 +365,19 @@
 }
 
 /* Responsive */
+@media (min-width: 769px) and (max-width: 945px) {
+  .overlay-product h5 {
+    font-size: 1.05rem;
+  }
+
+  .overlay-product p {
+    font-size: 0.95rem;
+  }
+  .product-view {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   /* video-banner */
   .overlay h1 {
@@ -305,19 +406,17 @@
     justify-content: center;
   }
   /* product categories */
-  .product-showcase .row {
-    flex-direction: column !important;
-    text-align: center;
+  .swiper-button-prev {
+    left: 10% !important;
   }
 
-  .product-img {
-    width: 100%;
-    height: auto;
+  .swiper-button-next {
+    right: 10% !important;
+  }
+  .product-container {
+    width: 87%;
   }
 
-  .product-showcase .col-md-6 {
-    padding: 0 1rem;
-  }
   /* why choose us */
   .why-ventura-section .col-sm-6 {
     flex: 0 0 100%;
@@ -341,7 +440,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .overlay h1 {
     font-size: 1.2rem;
   }
@@ -365,7 +464,7 @@
     font-size: 0.8rem;
   }
   /* why ventura */
-  .why-ventura-section{
+  .why-ventura-section {
     padding: 0px !important;
   }
   .why-ventura-section .gy-5 {
@@ -381,17 +480,21 @@
     font-size: 0.86rem;
     text-align: center;
   }
+
   /* product categories */
-  .product-showcase {
-    padding: 10px 0px !important ;
+  .overlay-product h1 {
+    font-size: 2.2rem;
   }
-  .product-showcase h2 {
-    font-size: 1.7rem;
-    margin: 15px 0px !important;
+  .overlay-product h1 span {
+    font-size: 1.5rem;
   }
-  .product-showcase p {
-    font-size: 0.89rem;
+  .swiper-button-prev {
+    left: 12% !important;
   }
+  .swiper-button-next {
+    right: 12% !important;
+  }
+
   /* why choose ventura */
   .why-ventura-section h2 {
     font-size: 1.5rem;
@@ -399,7 +502,7 @@
   .feature-box h6 {
     font-size: 0.85rem;
   }
-  .trusted-certificates{
+  .trusted-certificates {
     padding: 20px !important;
   }
   .trusted-certificates h3 {

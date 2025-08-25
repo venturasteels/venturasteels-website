@@ -12,6 +12,13 @@ import {
   FaMicroscope,
 } from "react-icons/fa";
 import IndustriesSection from "../Industries/Industries";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
 import "./Home.css";
 
 const Home = () => {
@@ -93,6 +100,65 @@ const Home = () => {
       link: "/products/boron-steel",
     },
   ];
+
+  const [highlightsRef, highlightsInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+    rootMargin: "0px 0px -100px 0px",
+  });
+
+  const products = [
+    {
+      title: "Hot Work Steel",
+      desc: "For high-temperature tools and dies.",
+      img: "/image/Hot Work Tool Steels/Hot Work Tool Steel 1.2344 Round Bars.png",
+      link: "/products/hot-work",
+    },
+    {
+      title: "Cold Work Steel",
+      desc: "Perfect for cutting & forming tools.",
+      img: "/image/Cold Work Tool Steels/Cold Work - D2.png",
+      link: "/products/cold-work",
+    },
+    {
+      title: "Spring Steel",
+      desc: "Flexible & strong for industrial use.",
+      img: "/image/Spring Steels/EN 31 Rods.png",
+      link: "/products/spring",
+    },
+    {
+      title: "Alloy Steel",
+      desc: "Enhanced strength and corrosion resistance.",
+      img: "/image/Alloy Steels/EN 31 Round Bars.png",
+      link: "/products/alloy",
+    },
+    {
+      title: "Plastic Mould Steel",
+      desc: "Best suited for mould manufacturing.",
+      img: "/image/Plastic Mould Steels/Plastic Mould 2.png",
+      link: "/products/plastic",
+    },
+    {
+      title: "Carbon Steel",
+      desc: "Durable for metal stamping dies.",
+      img: "/image/Carbon Steels/C45 Carbon Steel Round Bars.png",
+      link: "/products/die",
+    },
+    {
+      title: "Boron Steel",
+      desc: "Hard steel for cutting & shaping tools.",
+      img: "/image/product.jpeg",
+      link: "/products/tool",
+    },
+  ];
+
+  const [productsRef, productsInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px",
+  });
+
+  const swiperRef = useRef(null);
 
   return (
     <>
@@ -210,43 +276,64 @@ const Home = () => {
         </div>
       </section>
 
-      {/* product categories */}
-      <section className="product-showcase py-5">
-        <div className="container">
-          <h2 className="section-heading text-center mb-5" data-aos="fade-up">
-            Our Product Categories
-          </h2>
+      {/* Products section */}
+      <div className="product-container py-5" ref={productsRef}>
+        <h2 className="text-center fw-bold mb-3">Product Types</h2>
+        <hr className="mb-5 text-center" />
 
-          {categories.map((category, idx) => (
-            <div
-              key={idx}
-              className={`row align-items-center mb-5 gap-5 justify-content-center ${
-                idx % 2 !== 0 ? "flex-row-reverse" : ""
-              }`}
-              data-aos="fade-up"
-              data-aos-delay={idx * 100}
-            >
-              <div className="col-md-4">
-                <img
-                  src={category.image}
-                  alt={category.title}
-                  className="img-fluid rounded shadow-sm product-img"
-                  width={400}
-                />
-              </div>
-              <div className="col-md-6">
-                <h3 className="fw-bold text-dark mb-3">{category.title}</h3>
-                <p className="text-muted text-justify">
-                  {category.description}
-                </p>
-                <Link to={category.link} className="btn btn-primary mt-3">
-                  Explore
-                </Link>
-              </div>
-            </div>
-          ))}
+        {productsInView && (
+          <div
+          className="product-swiper-wrapper"
+          onMouseEnter={() => swiperRef.current?.autoplay.stop()} // ✅ Stop on hover
+          onMouseLeave={() => swiperRef.current?.autoplay.start()} 
+        >
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            onSwiper={(swiper) => (swiperRef.current = swiper)} 
+            slidesPerView={"auto"}
+            spaceBetween={50}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            pagination={{ clickable: true }}
+            navigation={true}
+            breakpoints={{
+              0: { slidesPerView: 1, spaceBetween: 20 },
+              576: { slidesPerView: 2, spaceBetween: 25 },
+              768: { slidesPerView: 2.5, spaceBetween: 30 },
+              992: { slidesPerView: 3, spaceBetween: 35 },
+              1200: { slidesPerView: 3, spaceBetween: 40 },
+              1400: { slidesPerView: 4, spaceBetween: 40 },
+            }}
+            className="product-swiper"
+          >
+            {products.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="product-tile" data-aos="zoom-in-down">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="product-image"
+                  />
+                  <div className="overlay-product">
+                    <h5 className="text-center">{item.title}</h5>
+                    <p className="text-center">{item.desc}</p>
+                    <a
+                      href={item.link}
+                      className="btn btn-outline-light product-view mt-2"
+                    >
+                      View Product
+                    </a>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </section>
+        )}
+      </div>
 
       {/* why choose us */}
       <section className="why-ventura-section py-5">
