@@ -43,7 +43,7 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="industries-section container py-5 my-5">
+    <section className="industries-section container py-5 my-5" data-aos="fade-right">
       <h2 className="text-center mb-4 fw-bold">
         Trusted in Industries Worldwide
       </h2>

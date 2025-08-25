@@ -191,7 +191,7 @@ const AboutUs = () => {
         {/* management-section */}
         <section className="management-section py-5">
           <div className="container">
-            <h2 className="fw-bold text-center mb-5">Our Management</h2>
+            <h2 className="fw-bold text-center mb-5">Our Management </h2>
             <div className="row g-4">
               {managementData.map((member, idx) => (
                 <div
