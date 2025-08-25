@@ -111,11 +111,13 @@ const Home = () => {
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
+    AOS.init({ duration: 1000, once: true });
+
+    window.addEventListener("load", () => {
+      AOS.refresh();
     });
-    AOS.refresh();
+
+    return () => window.removeEventListener("load", AOS.refresh);
   }, []);
 
   return (
