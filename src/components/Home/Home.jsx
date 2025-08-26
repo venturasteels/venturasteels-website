@@ -166,7 +166,7 @@ const Home = () => {
         </video>
 
         <div className="overlay">
-          <h1>Explore Our Premium Steel Product Range</h1>
+          <h1>Ventura is a complete steel service centre.</h1>
           <p>
             From Hot Work to Spring Steel – built for industrial excellence and
             reliability.

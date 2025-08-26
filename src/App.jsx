@@ -76,12 +76,15 @@ const App = () => {
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
             <Route path="15B25" element={<Boron15B25 />} />
-            {/* <Route path="10B35" element={<Boron10B35 />} /> */}
+            <Route path="10B35" element={<Boron10B35 />} />
           </Route>
           <Route path="/products/automotive" element={<Automotive />} />
           <Route path="/products/aerospace" element={<Aerospace />} />
           <Route path="/products/tooling" element={<Tooling />} />
-          <Route path="/products/infrastructure-energy" element={<InfrastructureEnergy />} />
+          <Route
+            path="/products/infrastructure-energy"
+            element={<InfrastructureEnergy />}
+          />
           <Route path="/products/plastics" element={<Plastics />} />
         </Routes>
         <Footer />
