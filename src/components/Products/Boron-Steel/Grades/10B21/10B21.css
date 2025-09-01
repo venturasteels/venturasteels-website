@@ -67,7 +67,19 @@ section {
   padding: 1rem;
   border-radius: 8px;
 }
-
+.name-table th,
+.name-table td {
+  padding: 0.6rem;
+  border: 1px solid #fe774360;
+  text-align: center;
+  font-size: 18px;
+}
+.composition-table th,
+.composition-table td {
+  border: 1px solid #fe774360;
+  text-align: center;
+  padding: 0.87rem !important;
+}
 .applications ul {
   list-style: disc;
   margin-left: 1rem;

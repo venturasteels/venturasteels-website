@@ -53,7 +53,7 @@ const ColdWork = () => {
                     location.pathname.includes("D2") ? "active-grade" : ""
                   }
                 >
-                  D2 / 2379 / HCHCR D2
+                  D2 / 1.2379 / HCHCR D2
                 </Link>
               </li>
               <li>
@@ -63,7 +63,7 @@ const ColdWork = () => {
                     location.pathname.includes("D3") ? "active-grade" : ""
                   }
                 >
-                  D3 / 2080 / HCHCR D3
+                  D3 / 1.2080 / HCHCR D3
                 </Link>
               </li>
               <li>
@@ -73,7 +73,7 @@ const ColdWork = () => {
                     location.pathname.includes("D5") ? "active-grade" : ""
                   }
                 >
-                  D5 / Cr12MoV / 2601    
+                  D5 / Cr12MoV / 1.2601    
                 </Link>
               </li>
               <li>
@@ -83,7 +83,7 @@ const ColdWork = () => {
                     location.pathname.includes("A2") ? "active-grade" : ""
                   }
                 >
-                  A2 / 2363
+                  A2 / 1.2363
                 </Link>
               </li>
               <li>

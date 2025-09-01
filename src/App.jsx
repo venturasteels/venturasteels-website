@@ -14,6 +14,8 @@ import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
 import H13 from "./components/Products/Hot-Work/Grades/H13/H13.jsx";
 import H11 from "./components/Products/Hot-Work/Grades/H11/H11.jsx";
 import H21 from "./components/Products/Hot-Work/Grades/H21/H21.jsx";
+import H10 from "./components/Products/Hot-Work/Grades/H10/H10.jsx";
+import H12 from "./components/Products/Hot-Work/Grades/H12/H12.jsx";
 
 // Boron
 import Boron from "./components/Products/Boron-Steel/boron-steel.jsx";
@@ -23,6 +25,9 @@ import Boron10B35 from "./components/Products/Boron-Steel/Grades/10B35/10B35.jsx
 
 // ColdWork
 import ColdWork from "./components/Products/Cold-Work/cold-work.jsx";
+import D2 from "./components/Products/Cold-Work/Grades/D2/D2.jsx";
+import D3 from "./components/Products/Cold-Work/Grades/D3/D3.jsx";
+
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
 import Certifications from "./components/Certificates/Certificates.jsx";
@@ -67,11 +72,12 @@ const App = () => {
             <Route path="H13" element={<H13 />} />
             <Route path="H11" element={<H11 />} />
             <Route path="H21" element={<H21 />} />
-            {/* <Route path="H21" element={<H21 />} /> */}
+            <Route path="H10" element={<H10 />} />
+            <Route path="H12" element={<H12/>} />
           </Route>
           <Route path="/products/cold-work" element={<ColdWork />}>
-            {/* <Route path="DB6" element={<DB6 />} />
-            <Route path="H21" element={<H21 />} /> */}
+            <Route path="D2" element={<D2 />} />
+            <Route path="D3" element={<D3 />} />
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./DB6.css";
+import "./D2.css";
 
-export default function DB6() {
+export default function D2() {
   return (
     <div className="grade-details">
-      <h2 className="text-center"> DB6 / DIN 2714 / AISI L6</h2>
+      <h2 className="text-center">D2 / 1.2379 / HCHCR D2</h2>
       <p className="subtitle text-center">
-        Premium Hot Work Tool Steel with high toughness & wear resistance.
+       High-carbon, high-chromium tool steel with wear resistance and toughness.
       </p>
       {/* standards  */}
       <div className="standards-scroll-wrapper mb-4">
@@ -18,12 +18,12 @@ export default function DB6() {
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>55NiCrMoV7</td>
-                <td>DB6</td>
-                <td>DIN 2714</td>
-                <td>AISI L6</td>
-                <td>AFNOR 55NCDVV7</td>
-                <td>JIS SKT4</td>
+                <td>X153CrMoV12</td>
+                <td>HCHCR-D2</td>
+                <td>DIN 2379</td>
+                <td>AISI D2</td>
+                <td>AFNOR Z160CDV12</td>
+                <td>JIS SKD10</td>
               </tr>
             </tbody>
           </table>
@@ -34,38 +34,37 @@ export default function DB6() {
       <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3">
         <div className="overview-content">
           <p>
-            Ventura Alloy and Steels Stocks and Supplies Die Block Steel DB6 /
-            DIN 2714 in India and abroad. DB6 tool steel is an extreme pass on
-            steel with high treating resistance and great through-solidifying
-            properties. Its nickel substance has it uncommonly effect safe – a
-            highly recommendable element for vast mallet & press bites the dust
-            alike. This evaluation is generally supplied in toughened condition
-            or extinguished and tempered to 1300 N/mm² & a working hardness of
-            370 to 410 HB (round) or 355 to 400 HB (square, level).
-          </p>
-          <p>
-            Utilized as standard die block steel for manufacturing passes on of
-            different kinds, press bites the dust, expulsion kicks the bucket,
-            retainer plates, heavily clad trim bites the dust, hot shear
-            sharpened pieces of steels and instrument holder.
+            Ventura Alloy and Steels Supplies and Stocks HCHCR D2 steel in India
+            and abroad. D2 steel is an air hardening, high-carbon, high-chromium
+            tool steel. It has high wear and abrasion resistant properties. It
+            is heat treatable and will offer a hardness in the range 55-62 HRC,
+            and is machinable in the annealed condition. It tends to be used as
+            threading rolls and dies, icy trimming, cutting & stamping tools for
+            sheet thickness up to 6mm, accuracy cutting instruments for sheet
+            thicknesses up to 12 mm.
           </p>
         </div>
-        <div className="db6-img">
+        <div className="d2-img d-flex gap-3">
           <img
-            src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
-            alt="DB6 Image"
-            width={350}
+            src="/image/Cold Work Tool Steels/D2 Round Bar.png"
+            alt="D2 Image"
+            width={300}
+          />
+          <img
+            src="/image/Cold Work Tool Steels/Cold Work Steel 1.2379 Flat Bars.png"
+            alt="D2 Image"
+            width={300}
           />
         </div>
       </section>
 
       {/* Chemical Composition */}
-      <section className="db6-composition">
+      <section className="composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center gap-5">
-          <div className="db6-chemical-composition db6-composition-table">
+        <div className="table-data d-flex justify-content-center">
+          <div className="chemical-composition composition-table">
             <table>
               <thead>
                 <tr>
@@ -76,85 +75,35 @@ export default function DB6() {
               <tbody>
                 <tr>
                   <td>C</td>
-                  <td>0.50 – 0.60</td>
+                  <td>1.40-1.60</td>
                 </tr>
                 <tr>
                   <td>Si</td>
-                  <td>0.10 – 0.40</td>
+                  <td>0.10-0.60</td>
                 </tr>
                 <tr>
                   <td>Mn</td>
-                  <td>0.65 – 0.95</td>
+                  <td>0.20-0.60</td>
+                </tr>
+                <tr>
+                  <td>P</td>
+                  <td>0.030 max</td>
+                </tr>
+                <tr>
+                  <td>S</td>
+                  <td>0.030 max</td>
                 </tr>
                 <tr>
                   <td>Cr</td>
-                  <td>1.00 – 1.20</td>
-                </tr>
-                <tr>
-                  <td>Ni</td>
-                  <td>1.50 – 1.80</td>
+                  <td>11.00-13.00</td>
                 </tr>
                 <tr>
                   <td>Mo</td>
-                  <td>0.45 – 0.55</td>
+                  <td> 0.70-1.00</td>
                 </tr>
                 <tr>
-                  <td>V</td>
-                  <td>0.07 – 0.12</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="db6-name-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Country</th>
-                  <th>Standards</th>
-                  <th>Grades's Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>USA</td>
-                  <td>AISI / SAE</td>
-                  <td>A681 L6</td>
-                </tr>
-                <tr>
-                  <td>Europe</td>
-                  <td>En</td>
-                  <td>55NiCrMoV7</td>
-                </tr>
-                <tr>
-                  <td>Germany</td>
-                  <td>DIN, WNr</td>
-                  <td>56NiCrMoV7</td>
-                </tr>
-                <tr>
-                  <td>China</td>
-                  <td>GB</td>
-                  <td>5CrNiMo </td>
-                </tr>
-                <tr>
-                  <td>Japan </td>
-                  <td>JIS</td>
-                  <td>SKT4</td>
-                </tr>
-                <tr>
-                  <td>India</td>
-                  <td>IS</td>
-                  <td>T55Ni7Cr4Mo5V1</td>
-                </tr>
-                <tr>
-                  <td>R. of Korea</td>
-                  <td>KS</td>
-                  <td>STF4</td>
-                </tr>
-                <tr>
-                  <td>Russia</td>
-                  <td>GOST</td>
-                  <td>4ChMNFS</td>
+                  <td> V</td>
+                  <td>0.80-1.20</td>
                 </tr>
               </tbody>
             </table>
@@ -175,14 +124,14 @@ export default function DB6() {
           <tbody>
             <tr>
               <td>Rounds</td>
-              <td>Diameter: 60 – 1000 mm</td>
+              <td>20 to 450 MM | SQUARE – 50 to 155 MM</td>
             </tr>
             <tr>
               <td>Blocks</td>
               <td>
-                Thickness: 125 – 1000 mm
+                Thickness: 20 - 150 mm
                 <br />
-                Width: 130 – 1600 mm
+                Width: 40 – 450 mm
               </td>
             </tr>
           </tbody>
@@ -190,7 +139,7 @@ export default function DB6() {
       </section>
 
       {/* process routes */}
-      <section className="process-route">
+      {/* <section className="process-route">
         <h3>Process Route</h3>
         <div className="process-flow">
           <div className="step">EAF</div>
@@ -213,29 +162,33 @@ export default function DB6() {
           <span className="arrow">→</span>
           <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
         </div>
-      </section>
+      </section> */}
 
       {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>
-        <p>
-          The exceptional hot work pre-solidified tool steel has great toughness
-          and high wear resistance. DB6 die steel is generally provided in hard,
-          quenched, tempered, and annealed condition, and in strengthened
-          condition in exceptional cases. Normally its working hardness is
-          <strong> 360–430 BHN</strong>. This steel grade is the updated type of
-          DIN 2713 for higher efficiency and performance.
-        </p>
+        <ul>
+          <li>High Carbon High Chromium contents.</li>
+          <li>
+            High wear resistant and toughness due to Vanadium addition of 0.90%.
+          </li>
+          <li>
+            Supply condition is an Annealed which offer hardness to reach 57-59
+            HRC.
+          </li>
+          <li>Machinable in annealed condition.</li>
+          <li>Better than D3 steel due to high alloy properties.</li>
+        </ul>
       </section>
 
       {/* applications */}
       <section className="applications">
         <h2>Applications</h2>
         <p>
-          Dies for specially drop and close die forgings for hammers &
-          mechanical presses, die moulds, shoe blocks, die holder, piston rods,
-          bolster, cranks, cassettes, plastic moulds, shearing blades, tools,
-          etc.
+          HCHCR D2 cold work tool steel can be utilized for cold stamping or
+          forming dies, cold forming rolls, slitters, shear blades, tools,
+          chipper knives, tyre shredders, punches, trimming, cutting threading
+          dies, stamping tools and more.
         </p>
       </section>
 
@@ -257,27 +210,19 @@ export default function DB6() {
                 <tbody>
                   <tr>
                     <td>20-100</td>
-                    <td>12.1</td>
+                    <td>10.6</td>
                   </tr>
                   <tr>
                     <td>20-200</td>
-                    <td>13.1</td>
+                    <td>11.5</td>
                   </tr>
                   <tr>
                     <td>20-300</td>
-                    <td>13.2</td>
+                    <td>11.8</td>
                   </tr>
                   <tr>
                     <td>20-400</td>
-                    <td>13.5</td>
-                  </tr>
-                  <tr>
-                    <td>20-500</td>
-                    <td>14.1</td>
-                  </tr>
-                  <tr>
-                    <td>20-600</td>
-                    <td>14.3</td>
+                    <td>12.3</td>
                   </tr>
                 </tbody>
               </table>
@@ -297,15 +242,15 @@ export default function DB6() {
                 <tbody>
                   <tr>
                     <td>20</td>
-                    <td>35.0</td>
+                    <td>16.7</td>
                   </tr>
                   <tr>
                     <td>350</td>
-                    <td>39.0</td>
+                    <td>20.5</td>
                   </tr>
                   <tr>
                     <td>700</td>
-                    <td>36.0</td>
+                    <td>24.2</td>
                   </tr>
                 </tbody>
               </table>
@@ -327,7 +272,7 @@ export default function DB6() {
                 <tbody>
                   <tr>
                     <th>Soft Annealing °C</th>
-                    <td>650-710</td>
+                    <td>840-870</td>
                   </tr>
                   <tr>
                     <th>Cooling</th>
@@ -335,19 +280,23 @@ export default function DB6() {
                   </tr>
                   <tr>
                     <th>Hardness HB</th>
-                    <td>max. 240</td>
+                    <td>max. 250</td>
+                  </tr>
+                  <tr>
+                    <th>Stress-relief Annealing °C</th>
+                    <td>approx. 660-710</td>
                   </tr>
                   <tr>
                     <th>Hardening °C</th>
-                    <td>840-880 / 860-900</td>
+                    <td>1000-1050</td>
                   </tr>
                   <tr>
                     <th>Quenching</th>
-                    <td>Oil / Air</td>
+                    <td>Air, Oil, Salt Bath 500-550°C</td>
                   </tr>
                   <tr>
-                    <th>Hardness after Quenching HRC</th>
-                    <td>57 / 55</td>
+                    <th>Hardness after quenching HRC</th>
+                    <td>63</td>
                   </tr>
                 </tbody>
               </table>
@@ -362,55 +311,41 @@ export default function DB6() {
                 <thead>
                   <tr>
                     <th>Temp (°C)</th>
-                    <th>In Oil – HRC</th>
-                    <th>In Air – HRC</th>
+                    <th>HRC</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>100</td>
-                    <td>56</td>
-                    <td>54</td>
+                    <td>64</td>
                   </tr>
                   <tr>
                     <td>200</td>
-                    <td>54</td>
-                    <td>52</td>
+                    <td>61.5</td>
                   </tr>
                   <tr>
                     <td>300</td>
-                    <td>52</td>
-                    <td>50</td>
+                    <td>58.5</td>
                   </tr>
                   <tr>
                     <td>400</td>
-                    <td>49</td>
-                    <td>47</td>
-                  </tr>
-                  <tr>
-                    <td>450</td>
-                    <td>47</td>
-                    <td>45</td>
+                    <td>58.5</td>
                   </tr>
                   <tr>
                     <td>500</td>
-                    <td>46</td>
-                    <td>43</td>
+                    <td>59</td>
+                  </tr>
+                  <tr>
+                    <td>525</td>
+                    <td>60</td>
                   </tr>
                   <tr>
                     <td>550</td>
-                    <td>43</td>
-                    <td>40</td>
+                    <td>57</td>
                   </tr>
                   <tr>
                     <td>600</td>
-                    <td>38</td>
-                    <td>36</td>
-                  </tr>
-                  <tr>
-                    <td>650</td>
-                    <td>34</td>
-                    <td>32</td>
+                    <td>50</td>
                   </tr>
                 </tbody>
               </table>
@@ -424,20 +359,9 @@ export default function DB6() {
         <div className="container text-center">
           <h2 className="section-title mb-4">Stocking Partners</h2>
           <p className="lead">
-            We keep the materials from <strong>Germany</strong>,
-            <strong> Japan</strong> and <strong>China</strong>.
+            We keep the materials from <strong>China</strong>.
           </p>
           <div className="partner-flags mt-4">
-            <img
-              src="/image/german-flag.jpg"
-              alt="Germany"
-              className="flag-img mx-3"
-            />
-            <img
-              src="/image/japan-flag.jpeg"
-              alt="Japan"
-              className="flag-img mx-3"
-            />
             <img
               src="/image/china-flag.png"
               alt="China"
@@ -452,7 +376,7 @@ export default function DB6() {
         <Link to="/enquiry" className="btn btn-primary">
           Request an Enquiry
         </Link>
-        {/* <span>MOQ: 200 kg | Price: ₹135/kg*</span> */}
+        <span>MOQ: 200 kg</span>
       </div>
     </div>
   );

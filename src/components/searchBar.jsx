@@ -105,7 +105,7 @@ const SearchBar = ({ data }) => {
           )}
         </ul>
       )}
-    </div>
+    </div>  
   );
 };
 
