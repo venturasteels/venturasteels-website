@@ -30,7 +30,7 @@ export default function H12() {
       </div>
 
       {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5">
+      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
         <div className="overview-content">
           <p>
             H12 Hot Work Die Steel could be a five-hitter Cr, general hot work
@@ -50,7 +50,7 @@ export default function H12() {
           <img
             src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
             alt="DB6 Image"
-            width={350}
+            width={300}
           />
         </div>
       </section>

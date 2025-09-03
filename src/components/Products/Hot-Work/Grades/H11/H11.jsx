@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./H11.css"
+import "./H11.css";
 
 export default function H11() {
   return (
@@ -34,39 +34,45 @@ export default function H11() {
       <section className="overview d-flex justify-content-center align-items-center gap-5">
         <div className="overview-content">
           <p>
-            Ventura Alloy and Steels Supplies and Stocks AISI H11 tool steel is
-            a 5% chromium hot work tool steel that is represented by its
-            excellent impact toughness. Chromium hot-work tool steels are
-            designated as group H steels according to the AISI classification
-            system, and specified in ASTM A681 standard. The most commonly used
-            chromium hot-work steels are H11 tool steel, H12 tool steel, and H13
-            steel, within the series from H1 to H19
+            AISI H11 tool steel, a 5% chromium hot-work steel with exceptional
+            impact toughness, is stocked and supplied by Ventura Alloy & Steels.
+            According to ASTM A681 and AISI classification, H11 is a member of
+            the H-series of chromium hot-work steels (H1–H19).
           </p>
+          <h4>Important attributes:</h4>
+          <ul>
+            <li>
+              High toughness: Superior impact resistance with marginally lower
+              wear resistance due to less vanadium than H13.
+            </li>
+            <li>
+              Deep hardening: Heat-treatable steel that air-hardens with little
+              size change.
+            </li>
+            <li>
+              Thermal resistance: Outstanding defense against thermal shock,
+              thermal fatigue, and gross cracking, even when water cooling is
+              used.
+            </li>
+            <li>
+              Durability: Outstanding resistance to hot cracking, stiffness, and
+              heat conductivity.
+            </li>
+            <li>
+              Applications: Perfect for shrink-fit chucks, ejector pins, and
+              apparatus holders.
+            </li>
+          </ul>
           <p>
-            If we compare between H11 and H13, H11 tool steel consists of less
-            vanadium than the commonly used H13 hot work tool steel. This gives
-            H11 steels the higher toughness, with some reduction in wear
-            resistance and tamper resistance. H11 tool steel is a
-            deep-hardening, air-hardening steel and H11 alloy steel could be
-            deep hardened by heat treatment and air-quenching. That gives
-            minimal size change during heat treatment. H11 how work steel also
-            has super resistance to thermal fatigue cracking and superb
-            resistance to gross cracking and thermal shock when water cooled in
-            service.
-          </p>
-          <p>
-            H11 steel is inclusive of all hot work tool steel with excellent
-            rigidity and durability along with great thermal conductivity and
-            invulnerability to hot cracking and can be water cooled to a
-            constrained degree. H11 is primarily used for apparatus holders ,
-            ejector pins and shrink fit chucks.
+            For components needing toughness, durability, and thermal stability
+            in hot-work applications, H11 is the recommended option.
           </p>
         </div>
         <div className="db6-img">
           <img
             src="/image/Hot Work Tool Steels/H 11 Hot Work Tool Steel Round Bars.png"
             alt="DB6 Image"
-            width={400}
+            width={300}
           />
         </div>
       </section>

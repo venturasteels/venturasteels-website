@@ -31,8 +31,8 @@ export default function H21() {
       </div>
 
       {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5">
-        <div className="overview-content">
+      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
+        <div className="overview-content ">
           <p>
             H21 Steel is a hot work tool steel for oil or air hardening to
             develop high hot quality, support of hardness, and warmth checking

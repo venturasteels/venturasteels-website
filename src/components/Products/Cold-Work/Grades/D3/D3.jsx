@@ -122,32 +122,6 @@ export default function D3() {
         </table>
       </section>
 
-      {/* process routes */}
-      {/* <section className="process-route">
-        <h3>Process Route</h3>
-        <div className="process-flow">
-          <div className="step">EAF</div>
-          <span className="arrow">→</span>
-          <div className="step">LF</div>
-          <span className="arrow">→</span>
-          <div className="step">VD</div>
-          <span className="arrow">→</span>
-          <div className="step">UPSET</div>
-          <span className="arrow">→</span>
-          <div className="step">FORGED</div>
-          <span className="arrow">→</span>
-          <div className="step">ANNEALED</div>
-          <span className="arrow">→</span>
-          <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-          <span className="arrow">→</span>
-          <div className="step">OIL QUENCHED</div>
-          <span className="arrow">→</span>
-          <div className="step">DOUBLE TEMPERED</div>
-          <span className="arrow">→</span>
-          <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-        </div>
-      </section> */}
-
       {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>

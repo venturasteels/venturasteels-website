@@ -284,6 +284,56 @@ const Home = () => {
         )}
       </div>
 
+      {/* Quality & Infrastructure */}
+      <div className="container-fluid quality-infra-clean py-5 mb-5">
+        <h2 className="text-center fw-bold mb-5" data-aos="fade-up">
+          Quality & <span>Infrastructure</span>
+        </h2>
+
+        <div className="row justify-content-center g-4">
+          {/* Quality Card */}
+          <div className="col-md-6 col-lg-5" data-aos="fade-right">
+            <div className="card h-100 shadow-sm border-0 p-4 text-center">
+              <img
+                src="image/quality-banner.jpg"
+                alt="Quality"
+                className="mb-3"
+              />
+              <p className="text-muted">
+                At Ventura Alloy, every step from sourcing to delivery is
+                carefully monitored to ensure certified, traceable, and premium
+                quality steel.
+              </p>
+              <Link to="/quality" className="btn btn-color-bg btn-sm mt-3">
+                See more
+              </Link>
+            </div>
+          </div>
+
+          {/* Infrastructure Card */}
+          <div className="col-md-6 col-lg-5" data-aos="fade-left">
+            <div className="card h-100 shadow-sm border-0 p-4 text-center">
+              <img
+                src="/image/infrastructure-4.png"
+                alt="Infrastructure"
+                className="mb-3"
+              />
+              <p className="text-muted">
+                Our 12,000 sq. ft HQ, 1,500 tons storage, and dual EOT cranes
+                ensure smooth logistics and timely dispatch for all
+                requirements.
+              </p>
+              <Link
+                to="/infrastructure"
+                className="btn btn-color-bg btn-sm mt-3"
+              >
+                See more
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* why choose us */}
       <section className="why-ventura-section py-5">
         <div className="container">

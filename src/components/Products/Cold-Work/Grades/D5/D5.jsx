@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./D2.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Table from "react-bootstrap/Table"; 
+import "./D5.css";
 
-export default function D2() {
+export default function D5() {
   return (
     <div className="grade-details">
-      <h2 className="text-center">D2 / 1.2379 / HCHCR D2</h2>
+      <h2 className="text-center">D5 / Cr12MoV / 1.2601 </h2>
       <p className="subtitle text-center">
-        High-carbon, high-chromium tool steel with wear resistance and
-        toughness.
+        High-carbon, high-chromium tool steel with good wear resistance,
+        toughness, and stability, suitable for thread rolling and cold work
+        dies.
       </p>
       {/* standards  */}
       <div className="standards-scroll-wrapper mb-4">
@@ -19,12 +22,11 @@ export default function D2() {
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X153CrMoV12</td>
-                <td>HCHCR-D2</td>
-                <td>DIN 2379</td>
-                <td>AISI D2</td>
-                <td>AFNOR Z160CDV12</td>
-                <td>JIS SKD10</td>
+                <td>Cr12MoV</td>
+                <td>KNL D2</td>
+                <td>DIN 2601</td>
+                <td>AISI D5</td>
+                <td>D5</td>
               </tr>
             </tbody>
           </table>
@@ -32,29 +34,19 @@ export default function D2() {
       </div>
 
       {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3">
+      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
         <div className="overview-content">
           <p>
-            Ventura Alloy and Steels Supplies and Stocks HCHCR D2 steel in India
-            and abroad. D2 steel is an air hardening, high-carbon, high-chromium
-            tool steel. It has high wear and abrasion resistant properties. It
-            is heat treatable and will offer a hardness in the range 55-62 HRC,
-            and is machinable in the annealed condition. It tends to be used as
-            threading rolls and dies, icy trimming, cutting & stamping tools for
-            sheet thickness up to 6mm, accuracy cutting instruments for sheet
-            thicknesses up to 12 mm.
+            Ventura Alloy and Steels Supplies and Stocks HCHCR D5 steel in India
+            and abroad. D5 steel is an air hardening, high-carbon, high-chromium
+            tool steel.
           </p>
         </div>
         <div className="d2-img d-flex gap-3">
           <img
-            src="/image/Cold Work Tool Steels/D2 Round Bar.png"
-            alt="D2 Image"
-            width={300}
-          />
-          <img
-            src="/image/Cold Work Tool Steels/Cold Work Steel 1.2379 Flat Bars.png"
-            alt="D2 Image"
-            width={300}
+            src="/image/Cold Work Tool Steels/Cold Work steel - Cr12Mov.png"
+            alt="Cr12MoV"
+            width={250}
           />
         </div>
       </section>
@@ -140,7 +132,7 @@ export default function D2() {
       </section>
 
       {/* process routes */}
-      <section className="process-route">
+      {/* <section className="process-route">
         <h3>Process Route</h3>
         <div className="process-flow">
           <div className="step">EAF</div>
@@ -163,38 +155,18 @@ export default function D2() {
           <span className="arrow">→</span>
           <div className="step">FINISHED (Ground / Machined)</div>
         </div>
-      </section>
-
-      {/* Steel properties */}
-      <section className="steel-properties">
-        <h2>Steel Properties</h2>
-        <ul>
-          <li>High Carbon High Chromium contents.</li>
-          <li>
-            High wear resistant and toughness due to Vanadium addition of 0.90%.
-          </li>
-          <li>
-            Supply condition is an Annealed which offer hardness to reach 57-59
-            HRC.
-          </li>
-          <li>Machinable in annealed condition.</li>
-          <li>Better than D3 steel due to high alloy properties.</li>
-        </ul>
-      </section>
+      </section> */}
 
       {/* applications */}
       <section className="applications">
         <h2>Applications</h2>
         <p>
-          HCHCR D2 cold work tool steel can be utilized for cold stamping or
-          forming dies, cold forming rolls, slitters, shear blades, tools,
-          chipper knives, tyre shredders, punches, trimming, cutting threading
-          dies, stamping tools and more.
+       Applications of D5 steels include thread rolling, blanking or forming dies operating at temperatures below 482°C (900°F).
         </p>
       </section>
 
       {/* Thermal properties */}
-      <section className="thermal-properties">
+      {/* <section className="thermal-properties">
         <h2 className="thermal-section-title">Thermal Properties</h2>
 
         <div className="row">
@@ -258,102 +230,52 @@ export default function D2() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* heat treatment */}
-      <section className="heat-treatment">
-        <h2 className="section-title">Heat Treatment</h2>
-
-        <div className="row">
-          {/* Basic Heat Treatment Data */}
-          <div className="col-md-6">
-            <div className="heat-card mb-3">
-              <h4>Heat Treatment Steps</h4>
-              <table className="table table-bordered">
-                <tbody>
-                  <tr>
-                    <th>Soft Annealing °C</th>
-                    <td>840-870</td>
-                  </tr>
-                  <tr>
-                    <th>Cooling</th>
-                    <td>Furnace</td>
-                  </tr>
-                  <tr>
-                    <th>Hardness HB</th>
-                    <td>max. 250</td>
-                  </tr>
-                  <tr>
-                    <th>Stress-relief Annealing °C</th>
-                    <td>approx. 660-710</td>
-                  </tr>
-                  <tr>
-                    <th>Hardening °C</th>
-                    <td>1000-1050</td>
-                  </tr>
-                  <tr>
-                    <th>Quenching</th>
-                    <td>Air, Oil, Salt Bath 500-550°C</td>
-                  </tr>
-                  <tr>
-                    <th>Hardness after quenching HRC</th>
-                    <td>63</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          {/* Tempering Data */}
-          <div className="col-md-6">
-            <div className="heat-card mb-3">
-              <h4>Tempering (°C after quenching)</h4>
-              <table className="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Temp (°C)</th>
-                    <th>HRC</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>100</td>
-                    <td>64</td>
-                  </tr>
-                  <tr>
-                    <td>200</td>
-                    <td>61.5</td>
-                  </tr>
-                  <tr>
-                    <td>300</td>
-                    <td>58.5</td>
-                  </tr>
-                  <tr>
-                    <td>400</td>
-                    <td>58.5</td>
-                  </tr>
-                  <tr>
-                    <td>500</td>
-                    <td>59</td>
-                  </tr>
-                  <tr>
-                    <td>525</td>
-                    <td>60</td>
-                  </tr>
-                  <tr>
-                    <td>550</td>
-                    <td>57</td>
-                  </tr>
-                  <tr>
-                    <td>600</td>
-                    <td>50</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="heat-treatment-data my-4">
+      <h3 className="text-center mb-3">Heat Treatment Data</h3>
+      <Table bordered hover responsive className="text-center align-middle">
+        <thead className="custom-header">
+          <tr>
+            <th>Process</th>
+            <th>Temperature Range</th>
+            <th>Details / Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Preheating</td>
+            <td>815 °C (1500 °F)</td>
+            <td>Heat very slowly before raising temperature further</td>
+          </tr>
+          <tr>
+            <td>Hardening (Austenitizing)</td>
+            <td>1009 °C (1850 °F)</td>
+            <td>Hold for 20–45 minutes, then <strong>air quench</strong></td>
+          </tr>
+          <tr>
+            <td>Forging</td>
+            <td>1065 °C (1950 °F) → 926 °C (1700 °F)</td>
+            <td>Do not forge below 926 °C (1700 °F)</td>
+          </tr>
+          <tr>
+            <td>Annealing</td>
+            <td>886 °C (1627 °F)</td>
+            <td>Slow furnace cooling at ≤ 4 °C (40 °F) per hour</td>
+          </tr>
+          <tr>
+            <td>Tempering</td>
+            <td>204 °C (400 °F) → 537 °C (1000 °F)</td>
+            <td>
+              Rockwell C Hardness: <br />
+              <strong>61 HRC</strong> at 204 °C <br />
+              <strong>54 HRC</strong> at 537 °C
+            </td>
+          </tr>
+        </tbody>
+      </Table>
+    </div>
 
       {/* stocking partner */}
       <section className="stocking-partners py-5">

@@ -27,6 +27,8 @@ import Boron10B35 from "./components/Products/Boron-Steel/Grades/10B35/10B35.jsx
 import ColdWork from "./components/Products/Cold-Work/cold-work.jsx";
 import D2 from "./components/Products/Cold-Work/Grades/D2/D2.jsx";
 import D3 from "./components/Products/Cold-Work/Grades/D3/D3.jsx";
+import D5 from "./components/Products/Cold-Work/Grades/D5/D5.jsx";
+import A2 from "./components/Products/Cold-Work/Grades/A2/A2.jsx";
 
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
@@ -78,6 +80,8 @@ const App = () => {
           <Route path="/products/cold-work" element={<ColdWork />}>
             <Route path="D2" element={<D2 />} />
             <Route path="D3" element={<D3 />} />
+            <Route path="D5" element={<D5 />} />
+            <Route path="A2" element={<A2 />} />
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />

@@ -35,52 +35,23 @@ export default function H13() {
       <section className="overview d-flex justify-content-center align-items-center gap-5">
         <div className="overview-content">
           <p>
-            Ventura Alloy and Steels supplies and stocks H13 steel in flat,
-            square and round bar. We provide steel in all sizes as your
-            requirements. Consult our team who will assist you for any query
-            related to H13 steel.
+           SAE/AISI H13 is a high-performance tool steel that is comparable to DIN 1.2344, GB 4Cr5MoSiV1, and JIS SKD61. It has outstanding toughness, heat resistance, and hardenability due to the presence of chromium, molybdenum, and vanadium.
           </p>
-          <p>
-            SAE/ AISI H13 tool steel equivalent with JIS SKD61, GB 4Cr5MoSiV1
-            and DIN 1.2344 Tool Steel. AISI H13 steel consists of chromium,
-            molybdenum and vanadium and is known for its high hardenability and
-            great toughness.
-          </p>
-          <p>
-            The molybdenum and vanadium act as strengthening agents while the
-            chromium content helps the AISI H13 steel to withstand softening
-            when used at high temperatures. It also combines shock and abrasion
-            resistance, has good red hardness, can resist rapid cooling and
-            withstand premature heat checking.
-          </p>
-          <p>
-            H13 Tool Steel has high hot-wear resistance abilities along with
-            great strength, heat conductivity and invulnerability to hot
-            cracking. It has good resistance to abrasion at each low and high
-            temperature. It displays high level of toughness and ductility. The
-            H13 steel has Uniform and high level of machinability and polish
-            ability. It has high-temperature strength and resistance to thermal
-            fatigue, glorious through-hardening properties and shows very
-            limited distortion during hardening.
-          </p>
-          <p>
-            H3 ESR is the most purified material with the conventional VD route.
-            The nature of material increase the strength, exceptionally increase
-            the micro-cleanness level. H13 ESR tool steel is most refined, has
-            greater homogeneity and an exceptionally fine structure, resulting
-            in improved machinability, polishing & high temperature tensile
-            strength. Exceptionally suggest the use of AISI-H13 ESR grade for
-            Aluminium Pressure Die Casting and other part subjected to high
-            working temperatures and high weight quality. H13 steel is
-            completely ultrasonic examined with 100% positive outcomes according
-            to NDT standards.
-          </p>
+          <h4>Important attributes:</h4>
+         <ul>
+          <li>High-temperature performance: Prevents thermal fatigue, hot cracking, and softening.</li>
+          <li>Durability: combines high wear resistance, abrasion resistance, and shock resistance.</li>
+          <li>Machinability and polishability: Easy machining and finishing due to uniform structure.</li>
+          <li>ESR grade (H13 ESR): A refined, uniform steel with outstanding micro-cleanliness that is perfect for high-temperature and aluminum pressure die casting applications.</li>
+          <li>100% ultrasonic testing in accordance with NDT standards ensures quality.</li>
+         </ul>
+         <p>Applications needing strength, heat resistance, toughness, and exact dimensional stability are best suited for H13 steel.</p>
         </div>
         <div className="db6-img">
           <img
             src="/image/Hot Work Tool Steels/Hot Work Tool Steel H13 Round Bars.png"
             alt="DB6 Image"
-            width={400}
+            width={300}
           />
         </div>
       </section>

@@ -29,7 +29,7 @@ export default function H10() {
       </div>
 
       {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5">
+      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
         <div className="overview-content">
           <p>
             Ventura Alloy and Steels Supplies & Stocks H10 Steel in India and
@@ -44,7 +44,7 @@ export default function H10() {
           <img
             src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
             alt="DB6 Image"
-            width={350}
+            width={300}
           />
         </div>
       </section>
