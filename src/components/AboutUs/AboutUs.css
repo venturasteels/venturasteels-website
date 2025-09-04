@@ -252,8 +252,7 @@
   }
 
   /* hero-section */
-  .about-hero h1
-   {
+  .about-hero h1 {
     font-size: 3.5rem;
   }
 
@@ -270,8 +269,20 @@
   }
 }
 @media (max-width: 480px) {
- .who-we-are .col-md-6{
-  display: flex;
-  flex-direction: column;
- }
+  .who-we-are .col-md-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  .who-we-are .img-fluid {
+    margin: 0px auto;
+  }
+  .overlay p {
+    width: 80%;
+  }
+  .btn-color-bg {
+    width: 45%;
+  }
 }

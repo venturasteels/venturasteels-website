@@ -39,7 +39,7 @@ const Home = () => {
     },
     {
       icon: <FaMedal />,
-      value: "70+",
+      value: "100+",
       label: "Grades",
       className: "card-orange",
     },
@@ -167,9 +167,9 @@ const Home = () => {
 
         <div className="overlay">
           <h1>Ventura is a complete steel service centre.</h1>
-          <p>
-            From Hot Work to Spring Steel – built for industrial excellence and
-            reliability.
+          <p className="text-center">
+            Industrial excellence in every grade – strength, precision, and
+            reliability you can trust.
           </p>
           <a href="/enquiry" className="btn btn-outline-light">
             Enquire Now

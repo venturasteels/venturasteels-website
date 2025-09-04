@@ -8,48 +8,51 @@ const industries = [
     icon: "🚗",
     title: "Automotive",
     steels: "Boron, Alloy, Spring",
-    desc: "Fasteners, chassis, suspensions, gears, axles",
+    desc: "Axles, gears, suspensions, fasteners, and chassis",
     link: "/products/automotive",
   },
   {
     icon: "✈️",
     title: "Aerospace",
     steels: "Alloy, Carbon",
-    desc: "Landing gears, engine mounts, structural parts",
+    desc: "Engine mounts, landing gears, and structural components",
     link: "/products/aerospace",
   },
   {
     icon: "⚙️",
     title: "Machinery & Tooling",
     steels: "Hot Work, Cold Work",
-    desc: "Forging dies, stamping tools, cutting dies",
+    desc: "Cutting dies, stamping tools, and forging dies",
     link: "/products/tooling",
   },
   {
     icon: "🔋",
     title: "Energy & Infrastructure",
     steels: "Alloy, Carbon",
-    desc: "Oil & gas equipment, pipelines, shafts, couplings",
+    desc: "Shafts, couplings, pipelines, and oil and gas equipment",
     link: "/products/infrastructure-energy",
   },
   {
     icon: "🧩",
     title: "Plastics & Moulding",
     steels: "Plastic Mould, Hot Work",
-    desc: "Injection moulds, extrusion tools, die-casting",
+    desc: "Die-casting, extrusion tools, and injection molds",
     link: "/products/plastics",
   },
 ];
 
 export default function IndustriesSection() {
   return (
-    <section className="industries-section container py-5 my-5" data-aos="fade-right">
+    <section
+      className="industries-section  py-5 my-5"
+      data-aos="fade-right"
+    >
       <h2 className="text-center mb-4 fw-bold">
-        Trusted in Industries Worldwide
+        Reliable in Global Industries
       </h2>
       <p className="text-center mb-5 section-subtitle">
-        Ventura Steels serves critical industries with high-performance steels,
-        trusted by manufacturers and engineers worldwide.
+        Manufacturers and engineers around the world rely on Ventura Steels to
+        supply high-performance steels to vital industries.
       </p>
 
       {/* Grid for Desktop */}
@@ -60,7 +63,7 @@ export default function IndustriesSection() {
               <div className="industry-card text-center shadow-sm">
                 <div className="industry-icon">{item.icon}</div>
                 <h5 className="fw-bold">{item.title}</h5>
-                <p className="steel-tags">Steel Types: {item.steels}</p>
+                <p className="steel-tags">Types of Automotive Steel:  {item.steels}</p>
                 <p className="industry-desc">{item.desc}</p>
               </div>
             </Link>
