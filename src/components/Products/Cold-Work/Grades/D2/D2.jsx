@@ -139,32 +139,6 @@ export default function D2() {
         </table>
       </section>
 
-      {/* process routes */}
-      <section className="process-route">
-        <h3>Process Route</h3>
-        <div className="process-flow">
-          <div className="step">EAF</div>
-          <span className="arrow">→</span>
-          <div className="step">LF</div>
-          <span className="arrow">→</span>
-          <div className="step">VD / VOD</div>
-          <span className="arrow">→</span>
-          <div className="step">ESR (Optional – Premium Grades)</div>
-          <span className="arrow">→</span>
-          <div className="step">FORGING / ROLLING</div>
-          <span className="arrow">→</span>
-          <div className="step">ANNEALED (Soft Anneal / Spheroidize)</div>
-          <span className="arrow">→</span>
-          <div className="step">ROUGH TURNED / MILLED</div>
-          <span className="arrow">→</span>
-          <div className="step">HARDENED (Oil / Air Quench)</div>
-          <span className="arrow">→</span>
-          <div className="step">DOUBLE / TRIPLE TEMPERED</div>
-          <span className="arrow">→</span>
-          <div className="step">FINISHED (Ground / Machined)</div>
-        </div>
-      </section>
-
       {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>

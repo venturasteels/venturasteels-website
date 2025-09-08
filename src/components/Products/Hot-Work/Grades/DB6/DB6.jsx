@@ -175,7 +175,7 @@ export default function DB6() {
           <tbody>
             <tr>
               <td>Rounds</td>
-              <td>Diameter: 60 – 1000 mm</td>
+              <td>Diameter: 102 - 710 mm</td>
             </tr>
             <tr>
               <td>Blocks</td>
@@ -187,32 +187,6 @@ export default function DB6() {
             </tr>
           </tbody>
         </table>
-      </section>
-
-      {/* process routes */}
-      <section className="process-route">
-        <h3>Process Route</h3>
-        <div className="process-flow">
-          <div className="step">EAF</div>
-          <span className="arrow">→</span>
-          <div className="step">LF</div>
-          <span className="arrow">→</span>
-          <div className="step">VD</div>
-          <span className="arrow">→</span>
-          <div className="step">UPSET</div>
-          <span className="arrow">→</span>
-          <div className="step">FORGED</div>
-          <span className="arrow">→</span>
-          <div className="step">ANNEALED</div>
-          <span className="arrow">→</span>
-          <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-          <span className="arrow">→</span>
-          <div className="step">OIL QUENCHED</div>
-          <span className="arrow">→</span>
-          <div className="step">DOUBLE TEMPERED</div>
-          <span className="arrow">→</span>
-          <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-        </div>
       </section>
 
       {/* Steel properties */}
@@ -452,7 +426,7 @@ export default function DB6() {
         <Link to="/enquiry" className="btn btn-primary">
           Request an Enquiry
         </Link>
-        {/* <span>MOQ: 200 kg | Price: ₹135/kg*</span> */}
+        <span>MOQ: 0.33 Tonnes</span>
       </div>
     </div>
   );

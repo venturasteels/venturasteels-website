@@ -1,11 +1,11 @@
 /* Industries Section */
 .industries-section {
-  background: #447D9B27;
+  background: #447d9b27;
   padding: 60px 20px;
 }
 
 .industries-section h2 {
-  color: #273F4F;
+  color: #273f4f;
   font-size: 2rem;
 }
 
@@ -35,7 +35,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(254, 119, 67, 0.15), rgba(68, 125, 155, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(254, 119, 67, 0.15),
+    rgba(68, 125, 155, 0.15)
+  );
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
   border-radius: 16px;
@@ -59,25 +63,25 @@
 .industry-icon {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  color: #FE7743;
+  color: #fe7743;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .industry-card:hover .industry-icon {
   transform: scale(1.2);
-  color: #273F4F;
+  color: #273f4f;
 }
 
 .industry-card h5 {
   font-size: 1.15rem;
-  color: #273F4F;
+  color: #273f4f;
   margin-bottom: 8px;
 }
 
 .steel-tags {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #447D9B;
+  color: #447d9b;
   margin-bottom: 6px;
 }
 
@@ -90,4 +94,27 @@
 .carousel .industry-card {
   margin: 0 auto;
   max-width: 85%;
-}   
+}
+
+@media screen and (max-width: 480px) {
+  .industries-section h2 {
+    font-size: 1.5rem;
+  }
+  .industries-section .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+  .carousel-control-next-icon {
+    left: 35%;
+    position: relative;
+  }
+  .carousel-control-prev-icon {
+    position: relative;
+    right: 45%;
+    color: #447d9b;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    height: 50px;
+    top: 50%;
+  }
+}

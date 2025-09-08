@@ -16,29 +16,50 @@ const ColdWork = () => {
       <div className="coldwork-hero">
         <h1>Cold Work Tool Steels</h1>
         <p>
-          Cold work steels fall into five groups: water hardening, oil
-          hardening, medium alloy air hardening, high carbon-high chromium and
-          shock resisting. As their name implies, these steels are used in low
-          to medium temperature applications. Highly wear resistant due to the
-          high volume of carbides in the microstructure.
+          Cold work steels provide exceptional wear resistance and are intended
+          for low to medium temperature applications because of their high
+          carbide content. While dimensional changes during hardening are kept
+          to a minimum, high levels of carbon and chromium guarantee deep
+          hardening, which is further enhanced by trace amounts of tungsten and
+          molybdenum.
         </p>
         <p>
-          The high carbon and chromium content promotes deep hardening.
-          Hardenability is accentuated by small amounts of tungsten and
-          molybdenum. Dimensional change in hardening is extremely low.
+          For cold processing of steel, cast iron, and non-ferrous metals, such
+          as cutting, bending, forming, coining, extrusion, wire drawing,
+          woodworking, ceramic pressing, pigment grinding, rock drilling, paper
+          cutting, and more, these steels are perfect.
         </p>
         <p>
-          Cold work Steel is used in the manufacturing of tools used in cold
-          processing of other steels like cast irons and non-ferrous metals. The
-          operations are diversified as cutting, bending, forming, coining,
-          extrusion, steel wire drawings, wooden work, ceramic pressing, pigment
-          grinding, rock drilling, paper cutting and various other applications.
+          In order to lower tooling costs, minimize maintenance, and minimize
+          downtime, we assist you in choosing the appropriate steel and heat
+          treatment.
         </p>
-        <p>
-          We can help you choose the right steel and heat treatment for the
-          application. What you gain – lower tooling costs, lower maintenance
-          costs and less downtime.
-        </p>
+
+        {/* process routes */}
+        <section className="process-route mt-3">
+          <h3>Process Route</h3>
+          <div className="process-flow">
+            <div className="step">EAF</div>
+            <span className="arrow">→</span>
+            <div className="step">LF</div>
+            <span className="arrow">→</span>
+            <div className="step">VD / VOD</div>
+            <span className="arrow">→</span>
+            <div className="step">ESR (Optional – Premium Grades)</div>
+            <span className="arrow">→</span>
+            <div className="step">FORGING / ROLLING</div>
+            <span className="arrow">→</span>
+            <div className="step">ANNEALED (Soft Anneal / Spheroidize)</div>
+            <span className="arrow">→</span>
+            <div className="step">ROUGH TURNED / MILLED</div>
+            <span className="arrow">→</span>
+            <div className="step">HARDENED (Oil / Air Quench)</div>
+            <span className="arrow">→</span>
+            <div className="step">DOUBLE / TRIPLE TEMPERED</div>
+            <span className="arrow">→</span>
+            <div className="step">FINISHED (Ground / Machined)</div>
+          </div>
+        </section>
       </div>
 
       <div className={`coldwork-main ${isGradeSelected ? "active" : ""}`}>
@@ -73,7 +94,7 @@ const ColdWork = () => {
                     location.pathname.includes("D5") ? "active-grade" : ""
                   }
                 >
-                  D5 / Cr12MoV / 1.2601    
+                  D5 / Cr12MoV / 1.2601
                 </Link>
               </li>
               <li>

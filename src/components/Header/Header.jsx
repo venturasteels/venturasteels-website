@@ -310,7 +310,7 @@ export default function Header() {
                     A2 / 1.2363
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work/01")}
+                    onClick={() => handleNavClick("/products/cold-work/O1")}
                     className="dropdown-item "
                   >
                     O1/ 2510/ OHNS O1

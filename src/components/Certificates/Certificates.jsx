@@ -6,22 +6,22 @@ import "./Certificates.css";
 const certificates = [
   {
     title: "ISO 9001:2015 Certificate",
-    image: "/image/certificates/ISO-Certificate-1.jpg",
+    image: "/image/certificates/BSCIC-ISO.png",
     description: "Certified for Quality Management System",
   },
   {
     title: "Indo-German Chamber of Commerce (IGCC)",
-    image: "/image/certificates/IGCC.jpg",
+    image: "/image/certificates/AHK-membership.png",
     description: "Certified for Quality Management System",
   },
   {
     title: "Association of Indian Forging Industry (AIFI)",
-    image: "/image/certificates/AIFI-CERTIFICATE.jpg",
+    image: "/image/certificates/CII-membership.png",
     description: "Certified for Quality Management System",
   },
   {
     title: "Darukhana Iron Steel & Scrap Merchants Association (DISMA)",
-    image: "/image/certificates/DISMA.jpg",
+    image: "/image/certificates/TAGMA-updated.png",
     description: "Certified for Quality Management System",
   },
   {
@@ -37,11 +37,6 @@ const certificates = [
   {
     title: "Steel Chamber of India (SCI)",
     image: "/image/certificates/SCI.jpg",
-    description: "Certified for Quality Management System",
-  },
-  {
-    title: "Tools and Gage Manufacturers Association of India (TAGMA)",
-    image: "/image/certificates/TAGMA.jpg",
     description: "Certified for Quality Management System",
   },
   {

@@ -203,7 +203,7 @@ const Home = () => {
           <div className="row align-items-center ">
             <div className="col-md-6" data-aos="fade-right">
               <img
-                src="/image/konsond img.png"
+                src="/image/about-ventura.png"
                 alt="About Ventura"
                 className="img-fluid rounded"
               />

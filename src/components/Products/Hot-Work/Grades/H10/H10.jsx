@@ -336,7 +336,7 @@ export default function H10() {
         <Link to="/enquiry" className="btn btn-primary">
           Request an Enquiry
         </Link>
-        {/* <span>MOQ: 200 kg | Price: ₹135/kg*</span> */}
+        <span>MOQ: 5 Tonnes </span>
       </div>
     </div>
   );

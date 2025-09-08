@@ -68,7 +68,7 @@ const AboutUs = () => {
         </Helmet>
       </HelmetProvider>
 
-      <div className="about-section">
+      <div className="aboutus-section">
         {/* Hero Banner */}
         <section className="about-hero d-flex align-items-center">
           <div className="overlay"></div>
@@ -89,18 +89,20 @@ const AboutUs = () => {
               {/* Left Column - Text */}
               <div className="col-md-6 mb-4 mb-md-0">
                 <h2 className="fw-bold mb-4">Who We Are</h2>
-                <p className="lead text-muted">
-                  Ventura Alloy & Steels Pvt. Ltd. is a leading supplier and
-                  stockist of premium quality industrial steel products. With
-                  decades of experience in the industry, we have built a
-                  reputation for delivering reliable, high-grade steel solutions
-                  tailored to the needs of diverse industries including
-                  automotive, tooling, and manufacturing.
+                <p className=" text-muted">
+                  One of the top suppliers and stockists of premium industrial
+                  steel products is
+                  <strong> Ventura Alloy & Steels Pvt. Ltd </strong> . Throughout
+                  the years, we have established a solid reputation for
+                  providing dependable, superior steel solutions that are suited
+                  to the requirements of various industries, such as
+                  manufacturing, tooling, and automotive.
                 </p>
                 <p className="text-muted">
-                  Our commitment to excellence, customer satisfaction, and
-                  continuous improvement has positioned us as a trusted partner
-                  for businesses seeking superior steel products and services.
+                  Our commitment to quality, customer satisfaction, and
+                  continuous improvement has established us as a trustworthy
+                  partner for companies looking for superior steel products and
+                  services.
                 </p>
                 <a href="/infrastructure" className="btn btn-primary mt-3">
                   Explore Our Facilities
@@ -132,7 +134,7 @@ const AboutUs = () => {
                 </div>
                 <div className="timeline-content">
                   <h3 className="fw-semibold">Our Vision</h3>
-                  <p>
+                  <p className="text-justify">
                     To be a one stop destination for all Tool Steel , Spring
                     Steel and Die Steel product requirements, Pan India and
                     International Markets with Quality, Commitment & best of
@@ -148,23 +150,23 @@ const AboutUs = () => {
                 <div className="timeline-content">
                   <h3 className="fw-semibold">Our Mission</h3>
                   <ul>
-                    <li>
+                    <li className="text-justify">
                       To provide world class supply of high-quality steel
                       products.
                     </li>
-                    <li>
+                    <li className="text-justify">
                       Creating a right fit – client expectations with products
                       supplied.
                     </li>
-                    <li>
+                    <li className="text-justify">
                       To provide the best value proposition in terms of cost and
                       quality of products and systems.
                     </li>
-                    <li>
+                    <li className="text-justify">
                       To provide support in terms of consultation, to enable our
                       clients choose what’s best for their needs.
                     </li>
-                    <li>
+                    <li className="text-justify">
                       To earn the trust and confidence of all stakeholders,
                       exceeding their expectations.
                     </li>
@@ -178,7 +180,7 @@ const AboutUs = () => {
                 </div>
                 <div className="timeline-content">
                   <h3 className="fw-semibold">Our Vision</h3>
-                  <p>
+                  <p className="text-justify">
                     Integrity, Commitment, Customer First, Continuous
                     Improvement.
                   </p>

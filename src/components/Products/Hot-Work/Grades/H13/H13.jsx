@@ -5,7 +5,7 @@ import "./H13.css";
 export default function H13() {
   return (
     <div className="grade-details">
-      <h2 className="text-center"> H13 / AISI H 13 / DIN 2344 </h2>
+      <h2 className="text-center"> H13 / AISI H13 / DIN 2344 </h2>
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
