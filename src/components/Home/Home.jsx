@@ -33,7 +33,7 @@ const Home = () => {
     },
     {
       icon: <FaBoxOpen />,
-      value: "10,000+ Tonnes",
+      value: "25,000+ Tonnes",
       label: "Stock Capacity",
       className: "card-dark",
     },
