@@ -26,9 +26,11 @@ const productCategories = [
     image: "/image/Plastic Mould Steels/P 20 Flat bars.png",
     path: "/products/plastic-mould",
   },
-  { title: "Spring Steel", image: "/image/Spring Steels/SAE 52100.png",
+  {
+    title: "Spring Steel",
+    image: "/image/Spring Steels/SAE 52100.png",
     path: "/products/spring-steel",
-   },
+  },
   {
     title: "Alloy Steel",
     image: "/image/Alloy Steels/41Cr4 Alloy Steel Round Bars.png",

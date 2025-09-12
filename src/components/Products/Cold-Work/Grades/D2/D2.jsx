@@ -5,7 +5,7 @@ import "./D2.css";
 export default function D2() {
   return (
     <div className="grade-details">
-      <h2 className="text-center">D2 / 1.2379 / HCHCR D2</h2>
+      <h2 className="text-center"><strong>D2 / 1.2379  </strong> / HCHCR D2</h2>
       <p className="subtitle text-center">
         High-carbon, high-chromium tool steel with wear resistance and
         toughness.
@@ -137,6 +137,32 @@ export default function D2() {
             </tr>
           </tbody>
         </table>
+      </section>
+
+      {/* process routes */}
+      <section className="process-route mt-3">
+        <h3>Process Route</h3>
+        <div className="process-flow">
+          <div className="step">EAF </div>
+          <span className="arrow">→</span>
+          <div className="step">LF</div>
+          <span className="arrow">→</span>
+          <div className="step">VD / VOD </div>
+          <span className="arrow">→</span>
+          <div className="step">ESR (Optional – Premium Grades)</div>
+          <span className="arrow">→</span>
+          <div className="step">FORGING / ROLLING</div>
+          <span className="arrow">→</span>
+          <div className="step">ANNEALED (Soft Anneal / Spheroidize)</div>
+          <span className="arrow">→</span>
+          <div className="step">ROUGH TURNED / MILLED</div>
+          <span className="arrow">→</span>
+          <div className="step">HARDENED (Oil Quench)</div>
+          <span className="arrow">→</span>
+          <div className="step">DOUBLE / TRIPLE TEMPERED</div>
+          <span className="arrow">→</span>
+          <div className="step">FINISHED (Ground / Machined / Polished)</div>
+        </div>
       </section>
 
       {/* Steel properties */}
@@ -342,6 +368,27 @@ export default function D2() {
               alt="China"
               className="flag-img mx-3"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="availability-info my-4">
+        <div className="container">
+          <h4 className="mb-3">Availability</h4>
+          <p>
+            <strong>Grades in Bold (e.g. D2 / 1.2379  )</strong> are kept in
+            stock and supplied on a regular basis. <br />
+            For other grades, we accept <strong>advance orders</strong> on MOQ
+            basis as per size requirements.
+          </p>
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              We also source forgings as per the required grades, size, and
+              supply specifications. Additionally, we have an in-house cutting
+              facility to meet customized requirements.
+            </p>
           </div>
         </div>
       </section>

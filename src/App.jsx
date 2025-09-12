@@ -31,6 +31,9 @@ import D5 from "./components/Products/Cold-Work/Grades/D5/D5.jsx";
 import A2 from "./components/Products/Cold-Work/Grades/A2/A2.jsx";
 import O1 from "./components/Products/Cold-Work/Grades/O1/O1.jsx";
 
+// Plastic Mould
+import PlaticMould from "./components/Products/Plastic-Mould/plastic-mould.jsx";
+
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
 import Certifications from "./components/Certificates/Certificates.jsx";
@@ -84,6 +87,13 @@ const App = () => {
             <Route path="D5" element={<D5 />} />
             <Route path="A2" element={<A2 />} />
             <Route path="O1" element={<O1 />} />
+          </Route>
+          <Route path="/products/plastic-mould" element={<PlaticMould />}>
+            {/* <Route path="D2" element={<D2 />} />
+            <Route path="D3" element={<D3 />} />
+            <Route path="D5" element={<D5 />} />
+            <Route path="A2" element={<A2 />} />
+            <Route path="O1" element={<O1 />} /> */}
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />

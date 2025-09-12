@@ -1,30 +1,68 @@
 /* Hot work detail section */
-.coldwork-container {
+.plastic-mould-container {
   background: #fff;
   padding: 2rem;
   color: #2c2c2c;
 }
 
-.coldwork-hero {
+.plastic-mould-hero {
   text-align: justify;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #fe7743;
 }
 
-.coldwork-hero h1 {
+.plastic-mould-hero h1 {
   text-align: center;
   color: #273f4f;
   font-size: 2.2rem;
 }
 
-.coldwork-hero p {
+.plastic-mould-hero p {
   font-size: 18px;
   color: #666;
   width: 90%;
   margin: 0 auto;
 }
+.plastic-mould-hero .process-route{
+  width: 90%;
+}
 
-.coldwork-main {
+/* process routes */
+.process-route h3 {
+  text-align: center;
+  color: #273f4f;
+  margin-bottom: 1rem;
+}
+
+.process-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #447d9b20;
+  border: 1px solid #fe774360;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.plastic-mould-hero 
+.step {
+  background: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  color: #273f4f;
+  font-weight: 500;
+}
+
+.arrow {
+  color: #666;
+  font-size: 1rem;
+}
+/* process routes ends*/
+
+.plastic-mould-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -45,12 +83,12 @@
   transform: translateX(50%);
 }
 
-.coldwork-main.active .sidebar-wrapper {
+.plastic-mould-main.active .sidebar-wrapper {
   min-width: 22%;
   transform: translateX(0);
 }
 
-.coldwork-sidebar {
+.plastic-mould-sidebar {
   width: 100%;
   background: #fe774310;
   border: 1px solid #fe7743;
@@ -62,17 +100,17 @@
   transition: all 1s ease;
 }
 
-.coldwork-main.active .coldwork-sidebar {
+.plastic-mould-main.active .plastic-mould-sidebar {
   text-align: left;
 }
 
-.coldwork-sidebar ul {
+.plastic-mould-sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.coldwork-sidebar li a {
+.plastic-mould-sidebar li a {
   display: block;
   color: #273f4f;
   padding: 0.5rem;
@@ -82,16 +120,14 @@
   transition: background 0.3s, transform 0.3s;
 }
 
-.coldwork-sidebar li a:hover {
+.plastic-mould-sidebar li a:hover {
   background: #fe774390;
   color: #fff;
   font-weight: 500;
   transform: translateX(4px);
 }
-.coldwork-sidebar li strong {
-  color: #273f4f;
-}
-.coldwork-details {
+
+.plastic-mould-details {
   flex: 1;
   opacity: 0;
   transform: translateY(20px);
@@ -103,7 +139,7 @@
   box-shadow: 0 8px 30px rgba(57, 49, 133, 0.07);
 }
 
-.coldwork-main.active .coldwork-details {
+.plastic-mould-main.active .plastic-mould-details {
   opacity: 1;
   transform: translateY(0);
 }
@@ -116,7 +152,7 @@
 }
 
 @media (min-width: 768px) {
-  .coldwork-main.active .sidebar-wrapper {
+  .plastic-mould-main.active .sidebar-wrapper {
     display: flex;
     align-items: start;
     height: 75vh;
@@ -124,13 +160,13 @@
     top: 0;
   }
 
-  .coldwork-sidebar {
+  .plastic-mould-sidebar {
     margin: auto 0;
   }
 }
 
 @media (max-width: 768px) {
-  .coldwork-container {
+  .plastic-mould-container {
     margin-top: 0rem;
   }
   .why-ventura h2 {
@@ -143,44 +179,44 @@
     margin-bottom: 1.5rem;
   }
 
-  .coldwork-main.active .sidebar-wrapper {
+  .plastic-mould-main.active .sidebar-wrapper {
     min-width: 100%;
   }
 
-  .coldwork-sidebar {
+  .plastic-mould-sidebar {
     text-align: center !important;
     padding: 1rem;
   }
 
-  .coldwork-sidebar h3 {
+  .plastic-mould-sidebar h3 {
     margin-bottom: 1rem;
   }
 
-  .coldwork-sidebar li a {
+  .plastic-mould-sidebar li a {
     padding: 0.7rem;
     font-size: 1rem;
   }
 
-  .coldwork-details {
+  .plastic-mould-details {
     max-width: 100%;
     padding: 1rem;
   }
 
-  .coldwork-hero h1 {
+  .plastic-mould-hero h1 {
     margin-top: 0.3rem;
     font-size: 1.8rem;
   }
 
-  .coldwork-hero p {
+  .plastic-mould-hero p {
     font-size: 16px;
     width: 100%;
   }
 }
 @media (max-width: 480px) {
-  .coldwork-hero {
+  .plastic-mould-hero {
     padding: 10px;
   }
-  .coldwork-sidebar {
+  .plastic-mould-sidebar {
     margin: 0px 20px;
   }
 }

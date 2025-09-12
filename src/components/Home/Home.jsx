@@ -11,7 +11,6 @@ import {
   FaPlane,
   FaMicroscope,
 } from "react-icons/fa";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import IndustriesSection from "../Industries/Industries";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -33,13 +32,13 @@ const Home = () => {
     },
     {
       icon: <FaBoxOpen />,
-      value: "25,000+ Tonnes",
+      value: "10,000+ Tonnes",
       label: "Stock Capacity",
       className: "card-dark",
     },
     {
       icon: <FaMedal />,
-      value: "100+",
+      value: "25+",
       label: "Grades",
       className: "card-orange",
     },
@@ -195,7 +194,7 @@ const Home = () => {
       </div>
 
       {/* Industries we serve */}
-      <IndustriesSection />
+      {/* <IndustriesSection /> */}
 
       {/* about-ventura */}
       <section className="about-section py-5 bg-light">

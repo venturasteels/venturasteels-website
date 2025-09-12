@@ -5,13 +5,14 @@
 }
 .h21-composition th,
 .h21-composition td {
-  padding: 0.6rem ;
+  padding: 0.6rem;
   border: 1px solid #fe774360;
   text-align: center;
   font-size: 18px;
 }
-.h21-name-table th, .h21-name-table td {
-    padding: 0.78rem ;
+.h21-name-table th,
+.h21-name-table td {
+  padding: 0.78rem;
 }
 
 .h21-chemical-composition {
@@ -30,3 +31,5 @@
   padding: 1rem;
   border-radius: 8px;
 }
+
+

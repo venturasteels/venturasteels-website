@@ -25,32 +25,6 @@ const HotWork = () => {
           high heat resistance and medium wear resistance, Distortion in
           hardening is low.
         </p>
-        
-        {/* process routes */}
-        <section className="process-route mx-auto mt-3">
-          <h3>Process Route</h3>
-          <div className="process-flow">
-            <div className="step">EAF</div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD</div>
-            <span className="arrow">→</span>
-            <div className="step">UPSET</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGED</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED</div>
-            <span className="arrow">→</span>
-            <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-            <span className="arrow">→</span>
-            <div className="step">OIL QUENCHED</div>
-            <span className="arrow">→</span>
-            <div className="step">DOUBLE TEMPERED</div>
-            <span className="arrow">→</span>
-            <div className="step">ROUGH TURNED FOR ROUNDS/MILLED FOR FLATS</div>
-          </div>
-        </section>
       </div>
 
       <div className={`hotwork-main ${isGradeSelected ? "active" : ""}`}>
@@ -65,7 +39,7 @@ const HotWork = () => {
                     location.pathname.includes("DB6") ? "active-grade" : ""
                   }
                 >
-                  DB6 / DIN 2714 / AISI L6
+                  <strong> DB6 / DIN 2714 </strong>/ AISI L6
                 </Link>
               </li>
               <li>
@@ -75,7 +49,7 @@ const HotWork = () => {
                     location.pathname.includes("H13") ? "active-grade" : ""
                   }
                 >
-                  H13 / AISI H 13 / DIN 2344
+                  <strong>H13 </strong> / AISI H 13 / DIN 2344
                 </Link>
               </li>
               <li>
@@ -85,7 +59,7 @@ const HotWork = () => {
                     location.pathname.includes("H11") ? "active-grade" : ""
                   }
                 >
-                  H11 / AISI H 11 / DIN 2343
+                  <strong>H11 </strong> / AISI H 11 / DIN 2343
                 </Link>
               </li>
               <li>
@@ -95,7 +69,7 @@ const HotWork = () => {
                     location.pathname.includes("H21") ? "active-grade" : ""
                   }
                 >
-                  H21 / AISI H21 / DIN 1.2581
+                  H21 / AISI H21 / DIN 1.2581 
                 </Link>
               </li>
               <li>

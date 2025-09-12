@@ -109,9 +109,6 @@ export default function Header() {
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <i className="bi bi-twitter"></i>
-            </a>
           </div>
           <div className="d-flex justify-content-center gap-3 small contact-info">
             <a
@@ -119,7 +116,7 @@ export default function Header() {
               className="text-decoration-none"
             >
               <span>
-                <i className="bi bi-envelope me-1"></i>
+                <i className="bi bi-envelope-fill me-1" aria-hidden="true"></i>
                 sales@venturasteels.com
               </span>
             </a>
@@ -128,15 +125,17 @@ export default function Header() {
               className="text-decoration-none "
             >
               <span>
-                <i className="bi bi-envelope me-1"></i>
+                <i className="bi bi-envelope-fill me-1" aria-hidden="true"></i>
                 enquiry@venturasteels.com
               </span>
             </a>
             <span>
-              <i className="bi bi-telephone me-1"></i>Tel.: +91 22 2869 3824
+              <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
+              Tel.: +91 22 2869 3824
             </span>
             <span>
-              <i className="bi bi-telephone me-1"></i>Cell: +91 9819225666
+              <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
+              Cell: +91 9819225666
             </span>
           </div>
         </div>
@@ -321,7 +320,7 @@ export default function Header() {
               {/* Plastic Mould Steel */}
               <div className="dropdown-submenu">
                 <button
-                  onClick={() => handleNavClick("/products/plastic")}
+                  onClick={() => handleNavClick("/products/plastic-mould")}
                   className="dropdown-item"
                 >
                   Plastic Mould Steel ▸

@@ -70,7 +70,7 @@ export default function H10() {
                 </tr>
                 <tr>
                   <td>Si</td>
-                  <td>0.10-0.400000	</td>
+                  <td>0.10-0.400000 </td>
                 </tr>
                 <tr>
                   <td>Mn</td>
@@ -139,21 +139,23 @@ export default function H10() {
       {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>
-      <ul>
-        <li>Hot Work Steel H10 is equivalent steel of DIN 2365</li>
-        <li>Great tempering resistance</li>
-        <li>Less susceptible for high hot cracking</li>
-        <li>Excellent thermal conductivity</li>
-        <li>High-temperature durability</li>
-        <li>Can be water-cooled to a constrained degree</li>
-      </ul>
+        <ul>
+          <li>Hot Work Steel H10 is equivalent steel of DIN 2365</li>
+          <li>Great tempering resistance</li>
+          <li>Less susceptible for high hot cracking</li>
+          <li>Excellent thermal conductivity</li>
+          <li>High-temperature durability</li>
+          <li>Can be water-cooled to a constrained degree</li>
+        </ul>
       </section>
 
       {/* applications */}
       <section className="applications">
         <h2>Applications</h2>
         <p>
-          This tool steel is used for hot press and mandrels, press die inserts and forging die, remarkable hot metal die casting tools, die-casting moulds for non-ferrous overwhelming metal pressure die-casting.
+          This tool steel is used for hot press and mandrels, press die inserts
+          and forging die, remarkable hot metal die casting tools, die-casting
+          moulds for non-ferrous overwhelming metal pressure die-casting.
         </p>
       </section>
 
@@ -327,6 +329,28 @@ export default function H10() {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="availability-info my-4">
+        <div className="container">
+          <h4 className="mb-3">Availability</h4>
+          <p>
+            All grades of H10 / AISI H10 / DIN 1.2365 / SKD7 
+            are available on
+            <strong> advance order</strong> basis on <strong>MOQ</strong> as per
+            size requirements.
+          </p>
+
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              We also source forgings as per the required grades, size, and
+              supply specifications. Additionally, we have an in-house cutting
+              facility to meet customized requirements.
+            </p>
           </div>
         </div>
       </section>

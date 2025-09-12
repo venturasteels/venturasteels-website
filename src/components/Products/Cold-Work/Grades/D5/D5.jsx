@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Table from "react-bootstrap/Table"; 
+import "bootstrap/dist/css/bootstrap.min.css";
+import Table from "react-bootstrap/Table";
 import "./D5.css";
 
 export default function D5() {
   return (
     <div className="grade-details">
-      <h2 className="text-center">D5 / Cr12MoV / 1.2601 </h2>
+      <h2 className="text-center">
+        D5 / <strong>Cr12MoV </strong> / 1.2601{" "}
+      </h2>
       <p className="subtitle text-center">
         High-carbon, high-chromium tool steel with good wear resistance,
         toughness, and stability, suitable for thread rolling and cold work
@@ -132,14 +134,14 @@ export default function D5() {
       </section>
 
       {/* process routes */}
-      {/* <section className="process-route">
+      <section className="process-route">
         <h3>Process Route</h3>
         <div className="process-flow">
           <div className="step">EAF</div>
           <span className="arrow">→</span>
           <div className="step">LF</div>
           <span className="arrow">→</span>
-          <div className="step">VD / VOD</div>
+          <div className="step">VD / VOD </div>
           <span className="arrow">→</span>
           <div className="step">ESR (Optional – Premium Grades)</div>
           <span className="arrow">→</span>
@@ -149,19 +151,20 @@ export default function D5() {
           <span className="arrow">→</span>
           <div className="step">ROUGH TURNED / MILLED</div>
           <span className="arrow">→</span>
-          <div className="step">HARDENED (Oil / Air Quench)</div>
+          <div className="step">HARDENED (Oil Quench)</div>
           <span className="arrow">→</span>
           <div className="step">DOUBLE / TRIPLE TEMPERED</div>
           <span className="arrow">→</span>
-          <div className="step">FINISHED (Ground / Machined)</div>
+          <div className="step">FINISHED (Ground / Machined / Polished)</div>
         </div>
-      </section> */}
+      </section>
 
       {/* applications */}
       <section className="applications">
         <h2>Applications</h2>
         <p>
-       Applications of D5 steels include thread rolling, blanking or forming dies operating at temperatures below 482°C (900°F).
+          Applications of D5 steels include thread rolling, blanking or forming
+          dies operating at temperatures below 482°C (900°F).
         </p>
       </section>
 
@@ -234,48 +237,50 @@ export default function D5() {
 
       {/* heat treatment */}
       <div className="heat-treatment-data my-4">
-      <h3 className="text-center mb-3">Heat Treatment Data</h3>
-      <Table bordered hover responsive className="text-center align-middle">
-        <thead className="custom-header">
-          <tr>
-            <th>Process</th>
-            <th>Temperature Range</th>
-            <th>Details / Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Preheating</td>
-            <td>815 °C (1500 °F)</td>
-            <td>Heat very slowly before raising temperature further</td>
-          </tr>
-          <tr>
-            <td>Hardening (Austenitizing)</td>
-            <td>1009 °C (1850 °F)</td>
-            <td>Hold for 20–45 minutes, then <strong>air quench</strong></td>
-          </tr>
-          <tr>
-            <td>Forging</td>
-            <td>1065 °C (1950 °F) → 926 °C (1700 °F)</td>
-            <td>Do not forge below 926 °C (1700 °F)</td>
-          </tr>
-          <tr>
-            <td>Annealing</td>
-            <td>886 °C (1627 °F)</td>
-            <td>Slow furnace cooling at ≤ 4 °C (40 °F) per hour</td>
-          </tr>
-          <tr>
-            <td>Tempering</td>
-            <td>204 °C (400 °F) → 537 °C (1000 °F)</td>
-            <td>
-              Rockwell C Hardness: <br />
-              <strong>61 HRC</strong> at 204 °C <br />
-              <strong>54 HRC</strong> at 537 °C
-            </td>
-          </tr>
-        </tbody>
-      </Table>
-    </div>
+        <h3 className="text-center mb-3">Heat Treatment Data</h3>
+        <Table bordered hover responsive className="text-center align-middle">
+          <thead className="custom-header">
+            <tr>
+              <th>Process</th>
+              <th>Temperature Range</th>
+              <th>Details / Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Preheating</td>
+              <td>815 °C (1500 °F)</td>
+              <td>Heat very slowly before raising temperature further</td>
+            </tr>
+            <tr>
+              <td>Hardening (Austenitizing)</td>
+              <td>1009 °C (1850 °F)</td>
+              <td>
+                Hold for 20–45 minutes, then <strong>air quench</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Forging</td>
+              <td>1065 °C (1950 °F) → 926 °C (1700 °F)</td>
+              <td>Do not forge below 926 °C (1700 °F)</td>
+            </tr>
+            <tr>
+              <td>Annealing</td>
+              <td>886 °C (1627 °F)</td>
+              <td>Slow furnace cooling at ≤ 4 °C (40 °F) per hour</td>
+            </tr>
+            <tr>
+              <td>Tempering</td>
+              <td>204 °C (400 °F) → 537 °C (1000 °F)</td>
+              <td>
+                Rockwell C Hardness: <br />
+                <strong>61 HRC</strong> at 204 °C <br />
+                <strong>54 HRC</strong> at 537 °C
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
 
       {/* stocking partner */}
       <section className="stocking-partners py-5">
@@ -290,6 +295,27 @@ export default function D5() {
               alt="China"
               className="flag-img mx-3"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="availability-info my-4">
+        <div className="container">
+          <h4 className="mb-3">Availability</h4>
+          <p>
+            <strong>Grades in Bold (e.g. Cr12MoV )</strong> are kept in stock
+            and supplied on a regular basis. <br />
+            For other grades, we accept <strong>advance orders</strong> on MOQ
+            basis as per size requirements.
+          </p>
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              We also source forgings as per the required grades, size, and
+              supply specifications. Additionally, we have an in-house cutting
+              facility to meet customized requirements.
+            </p>
           </div>
         </div>
       </section>

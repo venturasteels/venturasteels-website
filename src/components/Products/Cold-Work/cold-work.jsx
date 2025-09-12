@@ -34,32 +34,6 @@ const ColdWork = () => {
           downtime, we assist you in choosing the appropriate steel and heat
           treatment.
         </p>
-
-        {/* process routes */}
-        <section className="process-route mt-3">
-          <h3>Process Route</h3>
-          <div className="process-flow">
-            <div className="step">EAF</div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD / VOD</div>
-            <span className="arrow">→</span>
-            <div className="step">ESR (Optional – Premium Grades)</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGING / ROLLING</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED (Soft Anneal / Spheroidize)</div>
-            <span className="arrow">→</span>
-            <div className="step">ROUGH TURNED / MILLED</div>
-            <span className="arrow">→</span>
-            <div className="step">HARDENED (Oil / Air Quench)</div>
-            <span className="arrow">→</span>
-            <div className="step">DOUBLE / TRIPLE TEMPERED</div>
-            <span className="arrow">→</span>
-            <div className="step">FINISHED (Ground / Machined)</div>
-          </div>
-        </section>
       </div>
 
       <div className={`coldwork-main ${isGradeSelected ? "active" : ""}`}>
@@ -74,7 +48,7 @@ const ColdWork = () => {
                     location.pathname.includes("D2") ? "active-grade" : ""
                   }
                 >
-                  D2 / 1.2379 / HCHCR D2
+                  <strong>D2 / 1.2379 </strong>/ HCHCR D2
                 </Link>
               </li>
               <li>
@@ -84,7 +58,7 @@ const ColdWork = () => {
                     location.pathname.includes("D3") ? "active-grade" : ""
                   }
                 >
-                  D3 / 1.2080 / HCHCR D3
+                  <strong>D3 / 1.2080 </strong> / HCHCR D3
                 </Link>
               </li>
               <li>
@@ -94,7 +68,7 @@ const ColdWork = () => {
                     location.pathname.includes("D5") ? "active-grade" : ""
                   }
                 >
-                  D5 / Cr12MoV / 1.2601
+                  D5 / <strong> Cr12MoV </strong> / 1.2601
                 </Link>
               </li>
               <li>

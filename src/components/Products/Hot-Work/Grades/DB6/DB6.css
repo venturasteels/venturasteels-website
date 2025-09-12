@@ -143,6 +143,44 @@ section {
 }
 /* size-range ends*/
 
+
+/* process routes */
+.process-route h3 {
+  text-align: center;
+  color: #273f4f;
+  margin-bottom: 1rem;
+}
+.process-route p{
+  font-size: 1.1rem;
+}
+.process-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #447d9b20;
+  border: 1px solid #fe774360;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.hotwork-hero 
+.step {
+  background: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  color: #273f4f;
+  font-weight: 500;
+}
+
+.arrow {
+  color: #666;
+  font-size: 1rem;
+}
+/* process routes ends*/
+
 /* Steel properties */
 .steel-properties {
   margin-top: 2rem;
@@ -312,6 +350,23 @@ section {
 
 .stocking-partners .flag-img:hover {
   transform: scale(1.1);
+}
+
+/* availability */
+.availability-info {
+  border-top: 2px solid #FE7743; 
+  padding-top: 1rem;
+}
+
+.note-box {
+  background: #f8f9fa;
+  border-left: 4px solid #273F4F; 
+}
+
+.note-title {
+  color: #273F4F;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 /* media queries */

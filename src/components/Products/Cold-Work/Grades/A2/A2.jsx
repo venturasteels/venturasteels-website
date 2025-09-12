@@ -1,7 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Table from "react-bootstrap/Table";
 
 export default function A2() {
   return (
@@ -130,38 +128,36 @@ export default function A2() {
       {/* Thermal properties */}
       <section className="thermal-properties">
         <h2 className="thermal-section-title">Physical Properties</h2>
-          <div className="col-md-7 mx-auto">
-            <div className="property-card mb-3">
-              <h4>Thermal Conductivity</h4>
-              <table className="table table-bordered ">
-                <thead>
-                  <tr>
-                    <th>Temperature (°C)</th>
-                    <th>W / (m*K)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20</td>
-                    <td>15.9</td>
-                  </tr>
-                  <tr>
-                    <td>350</td>
-                    <td>26.8</td>
-                  </tr>
-                  <tr>
-                    <td>700</td>
-                    <td>29.8</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+        <div className="col-md-7 mx-auto">
+          <div className="property-card mb-3">
+            <h4>Thermal Conductivity</h4>
+            <table className="table table-bordered ">
+              <thead>
+                <tr>
+                  <th>Temperature (°C)</th>
+                  <th>W / (m*K)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20</td>
+                  <td>15.9</td>
+                </tr>
+                <tr>
+                  <td>350</td>
+                  <td>26.8</td>
+                </tr>
+                <tr>
+                  <td>700</td>
+                  <td>29.8</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        
+        </div>
       </section>
 
       {/* heat treatment */}
-   v  {/* heat treatment */}
       <section className="heat-treatment">
         <h2 className="section-title">Heat Treatment</h2>
 
@@ -244,6 +240,27 @@ export default function A2() {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="availability-info my-4">
+        <div className="container">
+          <h4 className="mb-3">Availability</h4>
+          <p>
+            All grades of A2 / 1.2363 are available on
+            <strong> advance order</strong> basis on <strong>MOQ</strong> as per
+            size requirements.
+          </p>
+
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              We also source forgings as per the required grades, size, and
+              supply specifications. Additionally, we have an in-house cutting
+              facility to meet customized requirements.
+            </p>
           </div>
         </div>
       </section>

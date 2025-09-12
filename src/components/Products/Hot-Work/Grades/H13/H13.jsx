@@ -5,7 +5,10 @@ import "./H13.css";
 export default function H13() {
   return (
     <div className="grade-details">
-      <h2 className="text-center"> H13 / AISI H13 / DIN 2344 </h2>
+      <h2 className="text-center">
+        {" "}
+        <strong>H13 </strong> / AISI H13 / DIN 2344{" "}
+      </h2>
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
@@ -35,17 +38,39 @@ export default function H13() {
       <section className="overview d-flex justify-content-center align-items-center gap-5">
         <div className="overview-content">
           <p>
-           SAE/AISI H13 is a high-performance tool steel that is comparable to DIN 1.2344, GB 4Cr5MoSiV1, and JIS SKD61. It has outstanding toughness, heat resistance, and hardenability due to the presence of chromium, molybdenum, and vanadium.
+            SAE/AISI H13 is a high-performance tool steel that is comparable to
+            DIN 1.2344, GB 4Cr5MoSiV1, and JIS SKD61. It has outstanding
+            toughness, heat resistance, and hardenability due to the presence of
+            chromium, molybdenum, and vanadium.
           </p>
           <h4>Important attributes:</h4>
-         <ul>
-          <li>High-temperature performance: Prevents thermal fatigue, hot cracking, and softening.</li>
-          <li>Durability: combines high wear resistance, abrasion resistance, and shock resistance.</li>
-          <li>Machinability and polishability: Easy machining and finishing due to uniform structure.</li>
-          <li>ESR grade (H13 ESR): A refined, uniform steel with outstanding micro-cleanliness that is perfect for high-temperature and aluminum pressure die casting applications.</li>
-          <li>100% ultrasonic testing in accordance with NDT standards ensures quality.</li>
-         </ul>
-         <p>Applications needing strength, heat resistance, toughness, and exact dimensional stability are best suited for H13 steel.</p>
+          <ul>
+            <li>
+              High-temperature performance: Prevents thermal fatigue, hot
+              cracking, and softening.
+            </li>
+            <li>
+              Durability: combines high wear resistance, abrasion resistance,
+              and shock resistance.
+            </li>
+            <li>
+              Machinability and polishability: Easy machining and finishing due
+              to uniform structure.
+            </li>
+            <li>
+              ESR grade (H13 ESR): A refined, uniform steel with outstanding
+              micro-cleanliness that is perfect for high-temperature and
+              aluminum pressure die casting applications.
+            </li>
+            <li>
+              100% ultrasonic testing in accordance with NDT standards ensures
+              quality.
+            </li>
+          </ul>
+          <p>
+            Applications needing strength, heat resistance, toughness, and exact
+            dimensional stability are best suited for H13 steel.
+          </p>
         </div>
         <div className="db6-img">
           <img
@@ -188,6 +213,35 @@ export default function H13() {
             </tr>
           </tbody>
         </table>
+      </section>
+
+      {/* process route */}
+      <section className="process-route mx-auto mt-3">
+        <h3>Process Route</h3>
+        <p className="text-muted text-center">
+          Applicable for <strong>H13 / AISI H13 / DIN 2344</strong>
+        </p>
+        <div className="process-flow">
+          <div className="step">EAF</div>
+          <span className="arrow">→</span>
+          <div className="step">LF</div>
+          <span className="arrow">→</span>
+          <div className="step">VD</div>
+          <span className="arrow">→</span>
+          <div className="step">ESR</div>
+          <span className="arrow">→</span>
+          <div className="step">FORGED</div>
+          <span className="arrow">→</span>
+          <div className="step">ANNEALED</div>
+          <span className="arrow">→</span>
+          <div className="step">ROUGH TURNED FOR ROUNDS / MILLED FOR FLATS</div>
+          <span className="arrow">→</span>
+          <div className="step">OIL / AIR QUENCHED</div>
+          <span className="arrow">→</span>
+          <div className="step">DOUBLE TEMPERED</div>
+          <span className="arrow">→</span>
+          <div className="step">MACHINED TO SIZE</div>
+        </div>
       </section>
 
       {/* Steel properties */}
@@ -405,7 +459,8 @@ export default function H13() {
         <div className="container text-center">
           <h2 className="section-title mb-4">Stocking Partners</h2>
           <p className="lead">
-            We keep the materials from <strong>Europe</strong> and <strong>China</strong>.
+            We keep the materials from <strong>Europe</strong> and{" "}
+            <strong>China</strong>.
           </p>
           <div className="partner-flags mt-4">
             <img
@@ -418,6 +473,27 @@ export default function H13() {
               alt="China Flag"
               className="flag-img mx-3"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="availability-info my-4">
+        <div className="container">
+          <h4 className="mb-3">Availability</h4>
+          <p>
+            <strong>Grades in Bold (e.g. H13)</strong> are kept in stock and supplied on a
+            regular basis. <br />
+            For other grades, we accept <strong>advance orders</strong> on
+            MOQ basis as per size requirements.
+          </p>
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              We also source forgings as per the required grades, size, and
+              supply specifications. Additionally, we have an in-house cutting
+              facility to meet customized requirements.
+            </p>
           </div>
         </div>
       </section>
