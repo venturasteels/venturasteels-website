@@ -89,20 +89,24 @@ const AboutUs = () => {
               {/* Left Column - Text */}
               <div className="col-md-6 mb-4 mb-md-0">
                 <h2 className="fw-bold mb-4">Who We Are</h2>
-                <p className=" text-muted">
-                  One of the top suppliers and stockists of premium industrial
-                  steel products is
-                  <strong> Ventura Alloy & Steels Pvt. Ltd </strong> . Throughout
-                  the years, we have established a solid reputation for
-                  providing dependable, superior steel solutions that are suited
-                  to the requirements of various industries, such as
-                  manufacturing, tooling, and automotive.
+                <p className=" text-muted text-justify">
+                  Recognised as a brand synonymous with quality and expertise,
+                  <strong> Ventura Alloy & Steels Pvt. Ltd. </strong> has been a
+                  trusted name in the Tool & Alloy Steels industry since 1965.
+                  Founded by <strong> Mr. Bharat Dipchand Shah </strong> and
+                  later strengthened under the leadership of
+                  <strong> Mr. Aashish Bharat Shah </strong> , the company has
+                  grown into a multi-crore enterprise with a strong PAN India
+                  presence.
                 </p>
-                <p className="text-muted">
-                  Our commitment to quality, customer satisfaction, and
-                  continuous improvement has established us as a trustworthy
-                  partner for companies looking for superior steel products and
-                  services.
+                <p className="text-muted text-justify">
+                  Over the years, Ventura has built a reputation as a leading
+                  Importer, Exporter, Stockist, Distributor, and Supplier of
+                  premium Tool & Alloy Steel products. With
+                  <strong> ISO 9001:2015 certification </strong> and a
+                  commitment to continuous innovation, we deliver solutions that
+                  meet the exacting needs of industries such as automotive,
+                  engineering, petrochemicals, forging, extrusion, and tooling.
                 </p>
                 <a href="/infrastructure" className="btn btn-primary mt-3">
                   Explore Our Facilities

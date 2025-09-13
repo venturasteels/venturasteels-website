@@ -398,30 +398,30 @@ const Home = () => {
           <div className="row justify-content-center align-items-center g-4 mt-4">
             <div className="col-6 col-md-2">
               <img
-                src="/image/certificate-logo/ahk_india.svg"
+                src="/image/certificate-logo/BSCIC-icon.png"
                 alt="ISO Certified"
-                height={50}
+                height={90}
               />
             </div>
             <div className="col-6 col-md-2">
               <img
-                src="/image/certificate-logo/AIFI-1.png"
+                src="/image/certificate-logo/cii-logo.jpeg"
                 alt="PED Approved"
-                height={50}
+                height={90}
               />
             </div>
             <div className="col-6 col-md-2">
               <img
-                src="/image/certificate-logo/DAS-uPdated-logo-02-1-scaled-e1753696127812.avif"
+                src="/image/certificate-logo/tagma-india-logo.webp"
                 alt="MSME Registered"
                 height={50}
               />
             </div>
             <div className="col-6 col-md-2">
               <img
-                src="/image/certificate-logo/sufi.png"
+                src="/image/certificate-logo/images.jpeg"
                 alt="Startup India"
-                height={50}
+                height={90}
               />
             </div>
           </div>
