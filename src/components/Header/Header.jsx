@@ -106,7 +106,11 @@ export default function Header() {
             >
               <i className="bi bi-instagram"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/company/venturasteels/posts/?feedView=all"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="bi bi-linkedin"></i>
             </a>
           </div>
@@ -199,12 +203,14 @@ export default function Header() {
       <nav className="bg-navbar d-none d-lg-block">
         {/* middle logo */}
         <div className="py-3 text-center d-flex align-items-center justify-content-center bg-white ">
-          <img
-            src="/image/ventura-logo.jpg"
-            alt="Ventura Logo"
-            className=" "
-            height={60}
-          />
+          <a href="/">
+            <img
+              src="/image/ventura-logo.jpg"
+              alt="Ventura Logo"
+              className=" "
+              height={60}
+            />
+          </a>
         </div>
         <div className="container-fluid d-flex gap-4 py-2 px-4 align-items-center navbar-section">
           <a href="/" className="text-white text-decoration-none nav-link">
