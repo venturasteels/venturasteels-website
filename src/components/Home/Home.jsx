@@ -160,7 +160,7 @@ const Home = () => {
       {/* video-banner */}
       <div className="video-banner">
         <video autoPlay loop muted className="bg-video w-100">
-          <source src="/videoes/background-video.mp4" type="video/mp4" />
+          <source src="/videoes/ventura-home-bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -395,7 +395,7 @@ const Home = () => {
             Our steel meets the highest international standards. Certified for
             quality, reliability, and sustainability.
           </p>
-          <div className="row justify-content-center align-items-center g-4 mt-4">
+          <div className="row justify-content-center align-items-center g-4 gap-3 mt-4">
             <div className="col-6 col-md-2">
               <img
                 src="/image/certificate-logo/BSCIC-icon.png"

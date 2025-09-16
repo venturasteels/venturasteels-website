@@ -82,24 +82,32 @@ export default function DB6() {
                   <td>0.50 – 0.60</td>
                 </tr>
                 <tr>
-                  <td>Si</td>
-                  <td>0.10 – 0.40</td>
-                </tr>
-                <tr>
                   <td>Mn</td>
                   <td>0.65 – 0.95</td>
+                </tr>
+                <tr>
+                  <td>Si</td>
+                  <td>0.10 – 0.40</td>
                 </tr>
                 <tr>
                   <td>Cr</td>
                   <td>1.00 – 1.20</td>
                 </tr>
                 <tr>
-                  <td>Ni</td>
-                  <td>1.50 – 1.80</td>
+                  <td>P</td>
+                  <td>Max 0.03</td>
+                </tr>
+                <tr>
+                  <td>S</td>
+                  <td>Max 0.03</td>
                 </tr>
                 <tr>
                   <td>Mo</td>
                   <td>0.45 – 0.55</td>
+                </tr>
+                <tr>
+                  <td>Ni</td>
+                  <td>1.50 – 1.80</td>
                 </tr>
                 <tr>
                   <td>V</td>

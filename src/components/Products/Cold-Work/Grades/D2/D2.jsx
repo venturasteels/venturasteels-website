@@ -5,7 +5,9 @@ import "./D2.css";
 export default function D2() {
   return (
     <div className="grade-details">
-      <h2 className="text-center"><strong>D2 / 1.2379  </strong> / HCHCR D2</h2>
+      <h2 className="text-center">
+        <strong>D2 / 1.2379 </strong> / HCHCR D2
+      </h2>
       <p className="subtitle text-center">
         High-carbon, high-chromium tool steel with wear resistance and
         toughness.
@@ -377,7 +379,7 @@ export default function D2() {
         <div className="container">
           <h4 className="mb-3">Availability</h4>
           <p>
-            <strong>Grades in Bold (e.g. D2 / 1.2379  )</strong> are kept in
+            <strong>Grades in Bold (e.g. D2 / 1.2379 )</strong> are kept in
             stock and supplied on a regular basis. <br />
             For other grades, we accept <strong>advance orders</strong> on MOQ
             basis as per size requirements.

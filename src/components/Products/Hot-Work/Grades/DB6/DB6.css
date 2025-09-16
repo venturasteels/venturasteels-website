@@ -69,16 +69,15 @@ section {
 }
 .db6-name-table th,
 .db6-name-table td {
-  padding: 0.6rem;
+  padding: 0.75rem;
   border: 1px solid #fe774360;
   text-align: center;
-  font-size: 18px;
 }
 .db6-composition-table th,
 .db6-composition-table td {
   border: 1px solid #fe774360;
   text-align: center;
-  padding: 0.87rem !important;
+  padding: 0.6rem !important;
 }
 .db6-chemical-composition {
   width: 40%;
