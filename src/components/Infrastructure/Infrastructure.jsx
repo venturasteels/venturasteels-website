@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "aos/dist/aos.css";
 import "./Infrastructure.css";
 
@@ -28,6 +29,20 @@ const Infrastructure = () => {
 
   return (
     <>
+      <HelmetProvider>
+        <Helmet>
+          <title>Infrastructure | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <meta
+            name="description"
+            content="Discover Ventura Alloy & Steels' advanced infrastructure with modern stocking facilities in Mumbai and Rajkot, equipped with machining centers to deliver precision-engineered steel solutions."
+          />
+          <meta
+            name="keywords"
+            content="Ventura Steels Infrastructure, Steel Stocking Centers Mumbai, Steel Machining Bhiwandi, Alloy Steel Facilities, Tool Steel Processing, Steel Cutting Services, Steel Distribution India"
+          />
+        </Helmet>
+      </HelmetProvider>
+
       <section className="infrastructure-container pb-5">
         {/* Video Banner */}
         <div className="video-banner-infrastructure">

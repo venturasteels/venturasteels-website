@@ -23,18 +23,39 @@ const Footer = () => {
                 for decades.
               </p>
               <div className="d-flex gap-3 mt-3">
-                <a href="#" className="text-white">
+                <a
+                  href="https://www.facebook.com/VenturaSteels"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Visit Ventura Steels on Facebook"
+                  title="Ventura Steels Facebook"
+                  className="text-white"
+                >
                   <i className="bi bi-facebook fs-5"></i>
                 </a>
-                <a href="#" className="text-white">
+                <a
+                  href="https://www.linkedin.com/company/venturasteels/posts/?feedView=all"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Visit Ventura Steels on LinkedIn"
+                  title="Ventura Steels LinkedIn"
+                  className="text-white"
+                >
                   <i className="bi bi-linkedin fs-5"></i>
                 </a>
-                <a href="#" className="text-white">
+                <a
+                  href="https://www.instagram.com/venturasteels/?__pwa=1"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Visit Ventura Steels on Instagram"
+                  title="Ventura Steels Instagram"
+                  className="text-white"
+                >
                   <i className="bi bi-instagram fs-5"></i>
                 </a>
               </div>
             </div>
-            
+
             {/* Quick Links */}
             <div className="col-md-2">
               <h5 className="mb-3">Quick Links</h5>
@@ -111,11 +132,11 @@ const Footer = () => {
                 <i className="bi bi-phone-fill me-2"></i> +91 7977097655
               </p>
               <p>
-                <i className="bi bi-envelope-fill me-2"></i>{" "}
+                <i className="bi bi-envelope-fill me-2"></i>
                 sales@venturasteels.com
               </p>
               <p>
-                <i className="bi bi-envelope-fill me-2"></i>{" "}
+                <i className="bi bi-envelope-fill me-2"></i>
                 enquiry@venturasteels.com
               </p>
             </div>

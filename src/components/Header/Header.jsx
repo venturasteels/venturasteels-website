@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate, useLocation } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 import SearchBar from "../searchBar";
 import "./Header.css";
 
@@ -86,6 +87,8 @@ export default function Header() {
     },
   ];
 
+  const [showSearch, setShowSearch] = useState(false);
+
   return (
     <>
       {/* Top-Contact + Social */}
@@ -96,6 +99,8 @@ export default function Header() {
               href="https://www.facebook.com/VenturaSteels"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit Ventura Steels on Facebook"
+              title="Ventura Steels Facebook"
             >
               <i className="bi bi-facebook"></i>
             </a>
@@ -103,6 +108,8 @@ export default function Header() {
               href="https://www.instagram.com/venturasteels/?__pwa=1"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit Ventura Steels on Instagram"
+              title="Ventura Steels Instagram"
             >
               <i className="bi bi-instagram"></i>
             </a>
@@ -110,6 +117,8 @@ export default function Header() {
               href="https://www.linkedin.com/company/venturasteels/posts/?feedView=all"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit Ventura Steels on LinkedIn"
+              title="Ventura Steels LinkedIn"
             >
               <i className="bi bi-linkedin"></i>
             </a>
@@ -212,7 +221,7 @@ export default function Header() {
             />
           </a>
         </div>
-        <div className="container-fluid d-flex gap-4 py-2 px-4 align-items-center navbar-section">
+        <div className="container-fluid d-flex gap-4 py-2 px-4 align-items-center justify-content-center navbar-section">
           <a href="/" className="text-white text-decoration-none nav-link">
             Home
           </a>
@@ -637,9 +646,21 @@ export default function Header() {
           >
             Contact Us
           </button>
+
           {/* Search Bar */}
-          <div className="d-flex ms-auto">
-            <SearchBar data={productData} />
+          <div className="header-search d-flex align-items-center">
+            {/* Magnify Icon */}
+            <FaSearch
+              className="search-icon"
+              onClick={() => setShowSearch(!showSearch)}
+            />
+
+            {/* Search Bar */}
+            {showSearch && (
+              <div className="search-container">
+                <SearchBar data={productData} />
+              </div>
+            )}
           </div>
         </div>
       </nav>

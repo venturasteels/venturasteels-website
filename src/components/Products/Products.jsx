@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import "./Products.css";
 
@@ -58,6 +59,20 @@ const whyChoose = [
 export default function ProductLanding() {
   return (
     <>
+      <HelmetProvider>
+        <Helmet>
+          <title>Products | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <meta
+            name="description"
+            content="Ventura ia a complete steel service center. Explore Ventura Alloy & Steels' wide range of premium Tool Steels, Alloy Steels, and Engineering Steels. We stock and supply Hot Work Steel, Cold Work Steel, Plastic Mould Steel, and more with cutting-edge machining facilities to meet diverse industrial needs across India."
+          />
+          <meta
+            name="keywords"
+            content="Tool Steels, Ventura Steels Products, Hot Work Steels, Cold Work Steels, Plastic Mould Steel, Spring Steel, Alloy Steel, Carbon Steel, Boron Steel, "
+          />
+        </Helmet>
+      </HelmetProvider>
+
       {/* Hero Section with Carousel */}
       <section className="hero-carousel position-relative">
         <Carousel

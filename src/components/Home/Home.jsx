@@ -20,31 +20,36 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useInView } from "react-intersection-observer";
 import { useRef } from "react";
+import CountUp from "react-countup";
 import "./Home.css";
 
 const Home = () => {
   const stats = [
     {
       icon: <FaCalendarCheck />,
-      value: "2,014",
+      value: 2014,
+      suffix: "",
       label: "Established",
       className: "card-blue",
     },
     {
       icon: <FaBoxOpen />,
-      value: "10,000+ Tonnes",
+      value: 10000,
+      suffix: "+ Tonnes",
       label: "Stock Capacity",
       className: "card-dark",
     },
     {
       icon: <FaMedal />,
-      value: "25+",
+      value: 25,
+      suffix: "+",
       label: "Grades",
       className: "card-orange",
     },
     {
       icon: <FaUsers />,
-      value: "1,700+",
+      value: 1700,
+      suffix: "+",
       label: "Customers",
       className: "card-gray",
     },
@@ -107,7 +112,6 @@ const Home = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          {/* Basic Meta */}
           <title>Home | Ventura Alloy and Steels Pvt. Ltd.</title>
           <meta
             name="description"
@@ -137,22 +141,6 @@ const Home = () => {
             content="https://ventura-website.onrender.com/"
           />
           <meta property="og:type" content="website" />
-          {/* Twitter Card */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta
-            name="twitter:title"
-            content="Ventura Alloy and Steels Pvt. Ltd."
-          />
-          <meta
-            name="twitter:description"
-            content="Explore high-performance alloy steels for industrial applications. Ventura is trusted by leading industries."
-          />
-          <meta
-            name="twitter:image"
-            content="https://ventura-website.onrender.com/og-image.jpg"
-          />
-          {/* Replace this */}
-          {/* Canonical URL */}
           <link rel="canonical" href="https://ventura-website.onrender.com/" />
         </Helmet>
       </HelmetProvider>
@@ -184,9 +172,20 @@ const Home = () => {
               key={index}
               className={`stat-card ${item.className}`}
               data-aos="fade-right"
+              data-aos-delay={index * 200}
             >
               <div className="icon">{item.icon}</div>
-              <div className="value">{item.value}</div>
+              <div className="value">
+                <CountUp
+                  end={item.value}
+                  duration={2.9}
+                  separator=","
+                  suffix={item.suffix}
+                  enableScrollSpy
+                  scrollSpyOnce
+                  scrollSpyDelay={100}
+                />
+              </div>
               <div className="label">{item.label}</div>
             </div>
           ))}

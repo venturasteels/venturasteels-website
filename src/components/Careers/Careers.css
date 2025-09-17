@@ -1,5 +1,6 @@
 .careers-banner img {
-  border: 2px solid #fe7743;
+  height: 60vh;
+  width: 100%;
 }
 /* intro section */
 .careers-intro {

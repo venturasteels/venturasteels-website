@@ -1,17 +1,28 @@
-import React from "react";
 import "./Quality.css";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Quality = () => {
   return (
     <>
+      <HelmetProvider>
+        <Helmet>
+          <title>Quality | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <meta
+            name="description"
+            content="Ventura Alloy & Steels Pvt. Ltd. is ISO 9001:2015 certified, ensuring strict quality control, precision machining, and reliable steel solutions that meet global standards."
+          />
+          <meta
+            name="keywords"
+            content="Ventura Steels Quality, ISO 9001:2015 Certified Steel Supplier, Quality Assurance, Steel Testing, Alloy Steel Quality, Tool Steel Standards, Steel Inspection, Reliable Steel Supplier India"
+          />
+        </Helmet>
+      </HelmetProvider>
+
       <section className="quality-hero ">
         {/* video-banner */}
         <div className="video-banner-quality">
           <video autoPlay loop muted className="bg-video w-100">
-            <source
-              src="/videoes/Website Quality Page.mp4"
-              type="video/mp4"
-            />
+            <source src="/videoes/Website Quality Page.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 

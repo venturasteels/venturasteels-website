@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import Fuse from "fuse.js";
 import "./searchBar.css";
@@ -10,41 +10,45 @@ const SearchBar = ({ data }) => {
   const navigate = useNavigate();
   const wrapperRef = useRef(null);
 
-  const fuse = new Fuse(data, {
-    keys: ["name", "keywords"],
-    threshold: 0.3,
-    minMatchCharLength: 2,
-  });
+  const fuse = useMemo(
+    () =>
+      new Fuse(data, {
+        keys: ["name", "keywords"],
+        threshold: 0.3,
+        minMatchCharLength: 1, // allow 1 character searches
+      }),
+    [data]
+  );
 
   useEffect(() => {
     if (query.trim()) {
       const searchResults = fuse.search(query).map((res) => res.item);
+      console.log("🔍 Query:", query, "➡️ Results:", searchResults);
       setResults(searchResults);
     } else {
       setResults([]);
     }
-  }, [query]);
+  }, [query, fuse]); // ✅ added fuse
 
   const handleSelect = (path) => {
     setQuery("");
     setResults([]);
     setActiveIndex(-1);
-    navigate(path);
+    if (path) navigate(path);
   };
 
-  // On click close dropdown
+  const handleClickOutside = (e) => {
+    if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+      setResults([]);
+      setActiveIndex(-1);
+    }
+  };
+
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
-        setResults([]);
-        setActiveIndex(-1);
-      }
-    };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Keyboard navigation
   const handleKeyDown = (e) => {
     if (!results.length) return;
 
@@ -57,9 +61,10 @@ const SearchBar = ({ data }) => {
     }
   };
 
+  const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const highlightMatch = (text) => {
     if (!query) return text;
-    const regex = new RegExp(`(${query})`, "gi");
+    const regex = new RegExp(`(${escapeRegex(query)})`, "gi");
     return text.split(regex).map((part, i) =>
       regex.test(part) ? (
         <span key={i} className="highlight">
@@ -75,27 +80,28 @@ const SearchBar = ({ data }) => {
     <div className="search-wrapper position-relative" ref={wrapperRef}>
       <input
         type="text"
+        id="searchProducts"
+        name="searchProducts"
         placeholder="Search Products..."
+        autoComplete="off"
         value={query}
-        onChange={(e) => {
-          setQuery(e.target.value);
-          setActiveIndex(-1);
-        }}
+        onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
         className="form-control"
       />
 
       {query && (
-        <ul className="search-dropdown list-group shadow-sm">
+        <ul className="search-dropdown list-group shadow-sm" role="listbox">
           {results.length > 0 ? (
             results.map((item, index) => (
               <li
-                key={item.id}
+                key={item.id || index}
                 className={`list-group-item list-group-item-action ${
                   index === activeIndex ? "active" : ""
                 }`}
                 onClick={() => handleSelect(item.path)}
                 style={{ cursor: "pointer" }}
+                role="option"
               >
                 {highlightMatch(item.name)}
               </li>
@@ -105,7 +111,7 @@ const SearchBar = ({ data }) => {
           )}
         </ul>
       )}
-    </div>  
+    </div>
   );
 };
 

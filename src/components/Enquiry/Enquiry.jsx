@@ -261,7 +261,15 @@ export default function EnquiryForm() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Enquiry | Ventura Steels</title>
+          <title>Enquiry | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <meta
+            name="description"
+            content="Send us your enquiry for premium Tool Steels, Alloy Steels, and Engineering Steels. Ventura Alloy & Steels Pvt. Ltd. ensures quick responses and customized solutions to meet your industrial needs."
+          />
+          <meta
+            name="keywords"
+            content="Ventura Steels Enquiry, Steel Enquiry Form, Alloy Steel Supplier India, Tool Steel Enquiry, Engineering Steel Quote, Steel Stockist Contact, Industrial Steel Solutions"
+          />
         </Helmet>
       </HelmetProvider>
 

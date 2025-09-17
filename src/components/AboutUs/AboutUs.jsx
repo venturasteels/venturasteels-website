@@ -63,7 +63,7 @@ const AboutUs = () => {
           />
           <meta
             name="keywords"
-            content="About Ventura Steels, Ventura Steels, Special steel supplier India, Alloy steel stockist, Tool steel supplier India, Engineering steel distributor, Die & mould steel supplier, Hot work steel stockist, Cold work steel supplier, Plastic mould steel supplier, Steel machining center Mumbai, Steel machining center Rajkot, Automotive steel supplier India, Aerospace steel supplier India"
+            content="About Ventura Steels, About Ventura Alloy And Steels Pvt. Ltd.,  Ventura Steels, Complete steel service center, Special steel supplier India, Alloy steel stockist, Tool steel supplier India, Engineering steel distributor, Die & mould steel supplier, Hot work steel stockist, Cold work steel supplier, Plastic mould steel supplier, Steel machining center Mumbai,  Automotive steel supplier India"
           />
         </Helmet>
       </HelmetProvider>

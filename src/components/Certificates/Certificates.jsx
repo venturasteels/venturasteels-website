@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Modal } from "react-bootstrap";
 import { FaSearchPlus } from "react-icons/fa";
 import "./Certificates.css";
@@ -61,53 +62,69 @@ export default function Certifications() {
   };
 
   return (
-    <div className="container certification-container py-4">
-      <h2 className="text-center mb-4">Certifications</h2>
-      <p className="certifications-description text-muted">
-        Our certifications reflect our dedication to quality, compliance and
-        trustworthy sourcing, ensuring all materials we supply meet global
-        industry standards.
-      </p>
-      <hr className="mb-5" />
-      <div className="row g-5">
-        {certificates.map((cert, index) => (
-          <div key={index} className="col-6 col-md-4 col-lg-3">
-            <div
-              className="certificate-card"
-              onClick={() => handleOpenModal(cert.image)}
-            >
-              <img
-                src={cert.image}
-                alt={cert.title}
-                className="img-fluid cert-image"
-              />
-              <div className="cert-overlay">
-                <FaSearchPlus className="magnify-icon" />
-                <h6>{cert.title}</h6>
-                <p>{cert.description}</p>
+    <>
+      <HelmetProvider>
+        <Helmet>
+          <title>Certifications | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <meta
+            name="description"
+            content="Ventura Alloy & Steels Pvt. Ltd. is ISO 9001:2015 certified, demonstrating our commitment to quality, reliability, and global standards in steel supply and services."
+          />
+          <meta
+            name="keywords"
+            content="Ventura Steels Certifications, ISO 9001:2015 Steel Supplier, Certified Steel Stockist, Quality Certifications, Steel Industry Standards, Trusted Steel Supplier India"
+          />
+        </Helmet>
+      </HelmetProvider>
+
+      <div className="container certification-container py-4">
+        <h2 className="text-center mb-4">Certifications</h2>
+        <p className="certifications-description text-muted">
+          Our certifications reflect our dedication to quality, compliance and
+          trustworthy sourcing, ensuring all materials we supply meet global
+          industry standards.
+        </p>
+        <hr className="mb-5" />
+        <div className="row g-5">
+          {certificates.map((cert, index) => (
+            <div key={index} className="col-6 col-md-4 col-lg-3">
+              <div
+                className="certificate-card"
+                onClick={() => handleOpenModal(cert.image)}
+              >
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="img-fluid cert-image"
+                />
+                <div className="cert-overlay">
+                  <FaSearchPlus className="magnify-icon" />
+                  <h6>{cert.title}</h6>
+                  <p>{cert.description}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* Modal */}
-      <Modal
-        show={showModal}
-        onHide={() => setShowModal(false)}
-        centered
-        size="lg"
-      >
-        <Modal.Body className="p-0">
-          {activeImage && (
-            <img
-              src={activeImage}
-              alt="Certificate"
-              className="img-fluid w-100"
-            />
-          )}
-        </Modal.Body>
-      </Modal>
-    </div>
+        {/* Modal */}
+        <Modal
+          show={showModal}
+          onHide={() => setShowModal(false)}
+          centered
+          size="lg"
+        >
+          <Modal.Body className="p-0">
+            {activeImage && (
+              <img
+                src={activeImage}
+                alt="Certificate"
+                className="img-fluid w-100"
+              />
+            )}
+          </Modal.Body>
+        </Modal>
+      </div>
+    </>
   );
 }

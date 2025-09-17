@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Modal, Form, Card, Row, Col, Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./Careers.css";
 
 const jobOpenings = [
@@ -71,16 +72,29 @@ export default function Careers() {
 
   return (
     <>
-     
+      <HelmetProvider>
+        <Helmet>
+          <title>Careers | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <meta
+            name="description"
+            content="Build your career with Ventura Alloy & Steels Pvt. Ltd. Explore opportunities to work with a leading steel supplier in India, fostering growth, innovation, and excellence."
+          />
+          <meta
+            name="keywords"
+            content="Ventura Steels Careers, Steel Industry Jobs India, Alloy Steel Company Careers, Tool Steel Jobs, Engineering Steel Careers, Work with Ventura Steels, Job Openings Steel Supplier"
+          />
+        </Helmet>
+      </HelmetProvider>
+
       <div className="careers-container container pb-5 ">
         {/* Intro Section */}
-         <div className="w-100 mb-5 careers-banner">
-        <img
-          src="/image/careers-background.webp"
-          alt="Careers Banner Image"
-          className="img-fluid"
-        />
-      </div>
+        <div className="w-100 mb-5 careers-banner">
+          <img
+            src="/image/career-bg2.jpg"
+            alt="Careers Banner Image"
+            className="img-fluid"
+          />
+        </div>
         <Card className="careers-intro shadow-sm border-0 mb-5">
           <Card.Body>
             <Row>
