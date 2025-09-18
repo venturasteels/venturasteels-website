@@ -508,6 +508,11 @@
   .product-container {
     width: 87%;
   }
+  .quality-infra h5 {
+    width: 100%;
+    font-size: 18px;
+    text-align: justify !important;
+  }
 
   /* why choose us */
   .why-ventura-section .col-sm-6 {

@@ -456,12 +456,17 @@ export default function H11() {
         <div className="container text-center">
           <h2 className="section-title mb-4">Stocking Partners</h2>
           <p className="lead">
-            We keep the materials from <strong>China</strong>.
+            We keep the materials from <strong>India</strong>  and <strong>China</strong>.
           </p>
           <div className="partner-flags mt-4">
+                 <img
+              src="/image/india-flag.png"
+              alt="India Flag"
+              className="flag-img mx-3"
+            />
             <img
               src="/image/china-flag.png"
-              alt="China Flag"
+              alt="China"
               className="flag-img mx-3"
             />
           </div>

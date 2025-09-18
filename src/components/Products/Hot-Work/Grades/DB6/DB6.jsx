@@ -6,7 +6,6 @@ export default function DB6() {
   return (
     <div className="grade-details">
       <h2 className="text-center">
-        {" "}
         <strong>DB6 / DIN 2714 </strong> / AISI L6
       </h2>
       <p className="subtitle text-center">
@@ -432,29 +431,29 @@ export default function DB6() {
           </div>
         </div>
       </section>
-      
+
       {/* stocking partner */}
       <section className="stocking-partners py-5">
         <div className="container text-center">
           <h2 className="section-title mb-4">Stocking Partners</h2>
           <p className="lead">
-            We keep the materials from <strong>Germany</strong>,
-            <strong> Japan</strong> and <strong>China</strong>.
+            We keep the materials from <strong>India</strong>,
+            <strong> China</strong> and <strong>Europe</strong>.
           </p>
           <div className="partner-flags mt-4">
             <img
-              src="/image/german-flag.jpg"
-              alt="Germany"
-              className="flag-img mx-3"
-            />
-            <img
-              src="/image/japan-flag.jpeg"
-              alt="Japan"
+              src="/image/india-flag.png"
+              alt="India Flag"
               className="flag-img mx-3"
             />
             <img
               src="/image/china-flag.png"
               alt="China"
+              className="flag-img mx-3"
+            />
+            <img
+              src="/image/europe-flag.jpeg"
+              alt="Europe Flag"
               className="flag-img mx-3"
             />
           </div>
@@ -466,10 +465,10 @@ export default function DB6() {
         <div className="container">
           <h4 className="mb-3">Availability</h4>
           <p>
-            <strong>Grades in Bold (e.g. DB6 / DIN 2714 )</strong> are kept in stock and supplied on a
-            regular basis. <br />
-            For other grades, we accept <strong>advance orders</strong> on
-            MOQ basis as per size requirements.
+            <strong>Grades in Bold (e.g. DB6 / DIN 2714 )</strong> are kept in
+            stock and supplied on a regular basis. <br />
+            For other grades, we accept <strong>advance orders</strong> on MOQ
+            basis as per size requirements.
           </p>
           <div className="note-box mt-3 p-3 rounded">
             <h5 className="note-title">Additional Services</h5>
