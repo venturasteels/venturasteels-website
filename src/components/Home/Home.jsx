@@ -133,7 +133,7 @@ const Home = () => {
           />
           <meta
             property="og:image"
-            content="https://ventura-website.onrender.com/og-image.jpg"
+            content="/image/ogimage.png"
           />
           {/* Replace with your actual image URL */}
           <meta
