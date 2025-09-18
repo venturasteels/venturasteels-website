@@ -270,25 +270,90 @@
 }
 
 /* quality & infrastructure */
-.quality-infra-clean {
+.quality-infra {
+  background: #447d9b20;
+}
+
+.quality-infra h2 {
+  color: #273f4f;
+  font-weight: 700;
+}
+
+.heading-line {
+  width: 250px;
+  color: #273f4f;
+  border: 2px solid #273f4f;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quality-infra h5 {
   margin: 0px auto;
-  padding: 1rem;
-  background-color: #fe774310;
-  width: 90%;
+  width: 82%;
+  color: #000;
 }
-.quality-infra-clean h2 span {
-  color: #FE7743; 
+
+.quality-card,
+.infras-card {
+  position: relative;
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  border-radius: 12px;
 }
-.btn-color-bg{
-  background-color: #fff;
-  border: 1px solid #fe7743;
-  padding: 0.5rem 1rem;
-  font-size: 17px;
-  font-weight: 500;
-  margin: 0px auto;
+
+.quality-card {
+  background-image: url("/image/quality-banner.jpg");
 }
-.btn-color-bg:hover{
-  background-color: #fe7743;color: #fff;
+
+.quality-card .quality-link,
+.infras-card .infra-link {
+  background-color: #273f4f;
+  border-radius: 7px;
+}
+.quality-card .quality-link:hover {
+  background-color: transparent;
+  border: 1px solid #273f4f;
+}
+
+.infras-card .infra-link:hover {
+  background-color: transparent;
+  border: 1px solid #273f4f;
+}
+
+.infras-card {
+  background-image: url("/image/infrastructure-4.png");
+}
+
+.quality-card::before,
+.infras-card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.quality-card:hover,
+.infras-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-overlay {
+  text-align: justify;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 50%;
 }
 
 /*why choose ventura  */
@@ -521,7 +586,10 @@
   .swiper-button-next {
     right: 12% !important;
   }
-
+  .product-container {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
   /* why choose ventura */
   .why-ventura-section h2 {
     font-size: 1.5rem;
@@ -540,5 +608,48 @@
   }
   .supplier-logo {
     max-width: 85px;
+  }
+
+  /* quality infrastructure */
+  .quality-infra {
+    width: 100%;
+  }
+  .heading-line {
+    width: 200px;
+    border: 1px solid #273f4f;
+  }
+  .quality-infra h5 {
+    width: 100%;
+    font-size: 15px;
+    text-align: justify !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .quality-card,
+  .infras-card {
+    height: 250px;
+  }
+  .card-overlay {
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+    height: 80%;
+    width: 100%;
+  }
+  .quality-card::before,
+  .infras-card::before {
+    width: 100%;
+    height: 80%;
+  }
+  .quality-card .fs-2,
+  .infras-card .fs-2 {
+    font-size: calc(0.925rem + 0.9vw) !important;
+  }
+  .quality-card .fs-6,
+  .infras-card .fs-6 {
+    font-weight: bolder;
+    font-size: calc(0.625rem + 0.9vw) !important;
+  }
+  .quality-infra-cards {
+    margin-bottom: 0rem !important;
   }
 }

@@ -303,7 +303,7 @@ export default function EnquiryForm() {
           </div>
           <div className="col-md-6 text-center" data-aos="fade-left">
             <img
-              src="/image/enquiry-2.jpg"
+              src="/image/enquiry-card.jpg"
               alt="Steel Enquiry"
               className="img-fluid"
               style={{ maxHeight: "340px" }}

@@ -283,50 +283,65 @@ const Home = () => {
       </div>
 
       {/* Quality & Infrastructure */}
-      <div className="container-fluid quality-infra-clean py-5 mb-5">
-        <h2 className="text-center fw-bold mb-5" data-aos="fade-up">
-          Quality & <span>Infrastructure</span>
+      <div className="container-fluid quality-infra ">
+        <h2 className="text-center mt-5 pt-5 " data-aos="fade-right">
+          Quality & Infrastructure
         </h2>
+        <hr className="heading-line mt-3 mb-2" data-aos="fade-right" />
+        <h5 className="text-center mt-4 mb-5" data-aos="fade-right">
+          At Ventura Alloy, quality is our cornerstone and more than just a
+          promise. Only reputable mills provide our steel materials, which are
+          fully traceable and certified by third parties (EN, ASTM, DIN
+          standards). No matter the size or complexity of your requirement, we
+          guarantee smooth logistics, a strong inventory, and timely dispatch
+          from our corporate office in Mumbai and a strategically placed
+          warehouse in Bhiwandi.
+        </h5>
 
-        <div className="row justify-content-center g-4">
+        <div className="quality-infra-cards mb-5 pb-5 row justify-content-center g-4">
           {/* Quality Card */}
-          <div className="col-md-6 col-lg-5" data-aos="fade-right">
-            <div className="card h-100 shadow-sm border-0 p-4 text-center">
-              <img
-                src="image/quality-banner.jpg"
-                alt="Quality"
-                className="mb-3"
-              />
-              <p className="text-muted">
-                At Ventura Alloy, every step from sourcing to delivery is
-                carefully monitored to ensure certified, traceable, and premium
-                quality steel.
-              </p>
-              <Link to="/quality" className="btn btn-color-bg btn-sm mt-3">
-                See more
-              </Link>
+          <div className="col-12 col-md-6 col-lg-5 " data-aos="fade-right">
+            <div className="card quality-card text-white border-0">
+              <div className="card-overlay d-flex flex-column justify-content-center align-items-start p-4">
+                <h4 className="fw-semibold fs-2 mb-2">Quality</h4>
+                <p className="fs-6">
+                  At Ventura Alloy & Steels, every member of our team—from
+                  sourcing agents and metallurgists to quality engineers,
+                  logistics coordinators.
+                </p>
+                <Link
+                  to="/quality"
+                  className="text-white text-decoration-none quality-link p-2"
+                >
+                  See more
+                  <span className="visually-hidden">
+                    about our Quality Standards
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* Infrastructure Card */}
-          <div className="col-md-6 col-lg-5" data-aos="fade-left">
-            <div className="card h-100 shadow-sm border-0 p-4 text-center">
-              <img
-                src="/image/infrastructure-4.png"
-                alt="Infrastructure"
-                className="mb-3"
-              />
-              <p className="text-muted">
-                Our 12,000 sq. ft HQ, 1,500 tons storage, and dual EOT cranes
-                ensure smooth logistics and timely dispatch for all
-                requirements.
-              </p>
-              <Link
-                to="/infrastructure"
-                className="btn btn-color-bg btn-sm mt-3"
-              >
-                See more
-              </Link>
+          <div className="col-12 col-md-6 col-lg-5" data-aos="fade-left">
+            <div className="card infras-card text-white border-0">
+              <div className="card-overlay d-flex flex-column justify-content-center align-items-start p-4">
+                <h4 className="fw-semibold fs-2 mb-2">Infrastructure</h4>
+                <p className="fs-6">
+                  Our 12,000-square-foot headquarters in Bhiwandi is equipped
+                  with 1,500 tons of dedicated storage space, dual EOT cranes
+                  (5-ton and 25-ton capacities).
+                </p>
+                <Link
+                  to="/infrastructure"
+                  className="text-white text-decoration-none infra-link p-2"
+                >
+                  See more
+                  <span className="visually-hidden">
+                    about our Infrastructure
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
