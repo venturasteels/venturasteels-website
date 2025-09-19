@@ -21,6 +21,7 @@ export default function DB6() {
                   <strong>COUNTRY </strong>
                 </td>
                 <td>India</td>
+                <td>Europe</td>
                 <td>Germany</td>
                 <td>USA</td>
                 <td>France</td>
@@ -34,6 +35,7 @@ export default function DB6() {
                   <strong>STANDARDS</strong>
                 </td>
                 <td>IS</td>
+                <td>En</td>
                 <td>DIN / WNr</td>
                 <td>AISI</td>
                 <td>AFNOR</td>
@@ -47,6 +49,7 @@ export default function DB6() {
                   <strong>EQUIVALENT NAME</strong>
                 </td>
                 <td>DB6 or directly <br /> as 55CrNiMoV7</td>
+                <td>55NiCrMoV7</td>
                 <td>1.2714 / X38CrMoV5-1</td>
                 <td>L6</td>
                 <td>55NCDV7</td>
