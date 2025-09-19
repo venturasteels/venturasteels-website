@@ -35,20 +35,20 @@ section {
 /* grades details section ends */
 
 /* standards section */
-.standards-scroll-wrapper {
+.hot-work-standards-scroll-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.standards-inner-scroll {
+.hot-work-standards-inner-scroll {
   overflow-x: auto;
   width: 100%;
-  max-width: 1016px;
+  max-width: 100%;
 }
 
 .standards-table {
-  min-width: 800px;
+  margin: 0px auto;
   border-collapse: collapse;
   color: #273f4f;
 }

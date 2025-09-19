@@ -12,14 +12,15 @@ export default function DB6() {
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="hot-work-standards-scroll-wrapper mb-4">
+        <div className="hot-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
                   <strong>COUNTRY </strong>
                 </td>
+                <td>India</td>
                 <td>Germany</td>
                 <td>USA</td>
                 <td>France</td>
@@ -27,12 +28,12 @@ export default function DB6() {
                 <td>UK</td>
                 <td>China</td>
                 <td>Russia</td>
-                <td>India</td>
               </tr>
               <tr>
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
+                <td>IS</td>
                 <td>DIN / WNr</td>
                 <td>AISI</td>
                 <td>AFNOR</td>
@@ -40,12 +41,12 @@ export default function DB6() {
                 <td>BS</td>
                 <td>GB</td>
                 <td>GOST</td>
-                <td>IS</td>
               </tr>
               <tr>
                 <td>
                   <strong>EQUIVALENT NAME</strong>
                 </td>
+                <td>DB6 or directly <br /> as 55CrNiMoV7</td>
                 <td>1.2714 / X38CrMoV5-1</td>
                 <td>L6</td>
                 <td>55NCDV7</td>
@@ -53,7 +54,6 @@ export default function DB6() {
                 <td>BH224-5</td>
                 <td>5CrNiMo</td>
                 <td>5KHNM</td>
-                <td>DB6 or directly <br /> as 55CrNiMoV7</td>
               </tr>
             </tbody>
           </table>
