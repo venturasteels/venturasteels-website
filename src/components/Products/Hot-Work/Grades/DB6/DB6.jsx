@@ -18,14 +18,42 @@ export default function DB6() {
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>Germany</td>
+                <td>USA</td>
+                <td>France</td>
+                <td>Japan</td>
+                <td>UK</td>
+                <td>China</td>
+                <td>Russia</td>
+                <td>India</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>55NiCrMoV7</td>
-                <td>DB6</td>
-                <td>DIN 2714</td>
-                <td>AISI L6</td>
-                <td>AFNOR 55NCDVV7</td>
-                <td>JIS SKT4</td>
+                <td>DIN / WNr</td>
+                <td>AISI</td>
+                <td>AFNOR</td>
+                <td>JIS</td>
+                <td>BS</td>
+                <td>GB</td>
+                <td>GOST</td>
+                <td>IS</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
+                <td>1.2714 / X38CrMoV5-1</td>
+                <td>L6</td>
+                <td>55NCDV7</td>
+                <td>SKT4</td>
+                <td>BH224-5</td>
+                <td>5CrNiMo</td>
+                <td>5KHNM</td>
+                <td>DB6 or directly <br /> as 55CrNiMoV7</td>
               </tr>
             </tbody>
           </table>
@@ -66,105 +94,35 @@ export default function DB6() {
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center gap-5">
-          <div className="db6-chemical-composition db6-composition-table">
+        <div className="table-data d-flex justify-content-center">
+          <div className="db6-chemical-composition db6-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Mn</th>
+                  <th>Si</th>
+                  <th>Cr</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Mo</th>
+                  <th>Ni</th>
+                  <th>V</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
-                  <td>0.50 – 0.60</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
-                  <td>0.65 – 0.95</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
-                  <td>0.10 – 0.40</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
-                  <td>1.00 – 1.20</td>
-                </tr>
-                <tr>
-                  <td>P</td>
+                  <td>Range</td>
+                  <td>0.50 – 0.60</td>
+                  <td>0.65 – 0.95</td>
+                  <td>0.10 – 0.40</td>
+                  <td>1.00 – 1.20</td>
                   <td>Max 0.03</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>Max 0.03</td>
-                </tr>
-                <tr>
-                  <td>Mo</td>
-                  <td>0.45 – 0.55</td>
-                </tr>
-                <tr>
-                  <td>Ni</td>
-                  <td>1.50 – 1.80</td>
-                </tr>
-                <tr>
-                  <td>V</td>
-                  <td>0.07 – 0.12</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="db6-name-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Country</th>
-                  <th>Standards</th>
-                  <th>Grades's Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>USA</td>
-                  <td>AISI / SAE</td>
-                  <td>A681 L6</td>
-                </tr>
-                <tr>
-                  <td>Europe</td>
-                  <td>En</td>
-                  <td>55NiCrMoV7</td>
-                </tr>
-                <tr>
-                  <td>Germany</td>
-                  <td>DIN, WNr</td>
-                  <td>56NiCrMoV7</td>
-                </tr>
-                <tr>
-                  <td>China</td>
-                  <td>GB</td>
-                  <td>5CrNiMo </td>
-                </tr>
-                <tr>
-                  <td>Japan </td>
-                  <td>JIS</td>
-                  <td>SKT4</td>
-                </tr>
-                <tr>
-                  <td>India</td>
-                  <td>IS</td>
-                  <td>T55Ni7Cr4Mo5V1</td>
-                </tr>
-                <tr>
-                  <td>R. of Korea</td>
-                  <td>KS</td>
-                  <td>STF4</td>
-                </tr>
-                <tr>
-                  <td>Russia</td>
-                  <td>GOST</td>
-                  <td>4ChMNFS</td>
+                  <td>0.45 – 0.55</td>
+                  <td>1.50 – 1.80</td>
+                  <td>0.07 – 0.12</td>
                 </tr>
               </tbody>
             </table>
@@ -253,7 +211,7 @@ export default function DB6() {
       </section>
 
       {/* Thermal properties */}
-      <section className="thermal-properties">
+      <section className="hotwork-thermal-properties">
         <h2 className="thermal-section-title">Thermal Properties</h2>
 
         <div className="row">

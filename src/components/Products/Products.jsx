@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import GradesTable from "./GradesTable/GradesTable";
 
 import "./Products.css";
 
@@ -146,6 +147,12 @@ export default function ProductLanding() {
           </div>
         </div>
       </section>
+
+      {/* Grades data table */}
+      <div className="container grades-data my-5">
+        <h2 className="text-center mb-4">Our Product Grades</h2>
+        <GradesTable />
+      </div>
     </>
   );
 }

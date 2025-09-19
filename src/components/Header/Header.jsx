@@ -549,7 +549,7 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/carbon/EN1A")}
                     className="dropdown-item "
                   >
-                    SAE 1117 /ASTM A108
+                    SAE 1117 / ASTM A108
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/carbon/EN1A")}

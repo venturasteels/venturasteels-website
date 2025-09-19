@@ -29,7 +29,7 @@ section {
     transform: translateY(0);
   }
 }
-.overview-content p{
+.overview-content p {
   text-align: justify;
 }
 /* grades details section ends */
@@ -44,7 +44,7 @@ section {
 .standards-inner-scroll {
   overflow-x: auto;
   width: 100%;
-  max-width: 900px;
+  max-width: 1016px;
 }
 
 .standards-table {
@@ -63,30 +63,28 @@ section {
 /* standards section ends*/
 
 /* chemical composition */
+.table-responsive-custom {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .db6-composition table {
+  min-width: 800px;
   width: 100%;
   border-collapse: collapse;
 }
-.db6-name-table th,
-.db6-name-table td {
-  padding: 0.75rem;
-  border: 1px solid #fe774360;
-  text-align: center;
-}
+
 .db6-composition-table th,
 .db6-composition-table td {
   border: 1px solid #fe774360;
   text-align: center;
   padding: 0.6rem !important;
+  white-space: nowrap;
 }
-.db6-chemical-composition {
-  width: 40%;
-}
+
 .table-data {
   flex-wrap: wrap;
-}
-.db6-name-table {
-  width: 45%;
 }
 
 .spec-block,
@@ -142,14 +140,13 @@ section {
 }
 /* size-range ends*/
 
-
 /* process routes */
 .process-route h3 {
   text-align: center;
   color: #273f4f;
   margin-bottom: 1rem;
 }
-.process-route p{
+.process-route p {
   font-size: 1.1rem;
 }
 .process-flow {
@@ -163,8 +160,7 @@ section {
   border-radius: 10px;
   padding: 1rem;
 }
-.hotwork-hero 
-.step {
+.hotwork-hero .step {
   background: #fff;
   padding: 0.5rem 0.8rem;
   border-radius: 8px;
@@ -206,7 +202,7 @@ section {
 .applications {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #fe774320; 
+  background-color: #fe774320;
   border-left: 4px solid #0f4c81;
   border-radius: 8px;
 }
@@ -225,19 +221,19 @@ section {
 }
 
 /* thermal properties */
-.thermal-properties {
+.hotwork-thermal-properties {
   padding: 2rem;
-  background: linear-gradient(135deg, #273f4f, #447d9b);
+  background: #447d9b30;
   border-radius: 10px;
   color: white;
 }
 
-.thermal-properties .thermal-section-title {
+.hotwork-thermal-properties .thermal-section-title {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
-  color: #fe7743;
+  color: #273f4f;
 }
 
 .property-card {
@@ -251,7 +247,7 @@ section {
 
 .property-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(254, 119, 67, 0.4); /* orange glow */
+  box-shadow: 0 6px 15px rgba(20, 20, 20, 0.4);
 }
 
 .property-card h4 {
@@ -353,17 +349,17 @@ section {
 
 /* availability */
 .availability-info {
-  border-top: 2px solid #FE7743; 
+  border-top: 2px solid #fe7743;
   padding-top: 1rem;
 }
 
 .note-box {
   background: #f8f9fa;
-  border-left: 4px solid #273F4F; 
+  border-left: 4px solid #273f4f;
 }
 
 .note-title {
-  color: #273F4F;
+  color: #273f4f;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }

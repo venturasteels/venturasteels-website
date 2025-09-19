@@ -17,15 +17,26 @@ export default function H11() {
           <table className="standards-table">
             <tbody>
               <tr>
+                <td> <strong>Country </strong> </td>
+                <td>Germany</td>
+                <td>USA</td>
+                <td>France</td>
+                <td>Japan</td>
+                <td>UK</td>
+                <td>China</td>
+                <td>Russia</td>
+              </tr>
+              <tr>
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X37CrMoV5</td>
-                <td>H11</td>
-                <td>DIN 2343</td>
-                <td>AISI H11</td>
-                <td>AFNOR Z38CDV5</td>
-                <td>JIS SKD6</td>
+                <td>DIN / WNr</td>
+                <td>AISI</td>
+                <td>AFNOR</td>
+                <td>JIS</td>
+                <td>BS</td>
+                <td>GB</td>
+                <td>GOST</td>
               </tr>
             </tbody>
           </table>

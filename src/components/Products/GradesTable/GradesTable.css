@@ -1,0 +1,29 @@
+/* src/components/GradesTable.css */
+.grades-table {
+  font-size: 14px;
+  border-collapse: collapse;
+}
+
+.grades-table th {
+  background-color: #273f4f; /* dark blue */
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+.grades-table td {
+  vertical-align: middle;
+  padding: 8px;
+}
+
+.grade-link {
+  text-decoration: none;
+  color: #fe7743; /* orange */
+  font-weight: 500;
+}
+
+.grade-link:hover {
+  color: #273f4f; /* dark blue */
+  text-decoration: underline;
+}
