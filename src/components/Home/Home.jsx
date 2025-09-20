@@ -41,7 +41,7 @@ const Home = () => {
     },
     {
       icon: <FaMedal />,
-      value: 25,
+      value: 27,
       suffix: "+",
       label: "Grades",
       className: "card-orange",
