@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import emailjs from "@emailjs/browser";
 import "./ContactUs.css";
 
 const ContactUs = () => {
+  const formRef = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,8 +12,8 @@ const ContactUs = () => {
     company: "",
     message: "",
   });
-
   const [errors, setErrors] = useState({});
+  const [statusMsg, setStatusMsg] = useState("");
 
   const validate = (field, value) => {
     let error = "";
@@ -44,33 +46,74 @@ const ContactUs = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
     const error = validate(name, value);
     setErrors({ ...errors, [name]: error });
   };
 
-  const handleSubmit = (e) => {
+  const [showModal, setShowModal] = useState(false);
+  const [modalType, setModalType] = useState("success"); // "success" or "error"
+  const [modalMessage, setModalMessage] = useState(""); // dynamic message
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // 1️⃣ Validate all fields
     let validationErrors = {};
     Object.keys(formData).forEach((field) => {
       const error = validate(field, formData[field]);
       if (error) validationErrors[field] = error;
     });
-
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      console.log("Form Data:", formData);
-      alert("Form Submitted Successfully!");
-      setFormData({
-        name: "",
-        email: "",
-        mobile: "",
-        company: "",
-        message: "",
-      });
+      try {
+        // Send email via EmailJS
+        await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          {
+            ...formData,
+            createdAt: new Date().toLocaleString(),
+          },
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        );
+
+        // Save to backend MongoDB
+        const res = await fetch("http://localhost:5000/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+
+        if (!res.ok) throw new Error("Backend failed");
+
+        // Show success modal
+        setModalType("success");
+        setModalMessage(
+          "Thank you for reaching out! Our team will contact you shortly."
+        );
+        setShowModal(true);
+
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          mobile: "",
+          company: "",
+          message: "",
+        });
+        setErrors({});
+        setStatusMsg("");
+      } catch (err) {
+        console.error("Submission error:", err);
+
+        // Show error modal
+        setModalType("error");
+        setModalMessage("Failed to send message ❌ Please try again later.");
+        setShowModal(true);
+      }
     } else {
-      console.log("Validation Errors:", validationErrors);
+      setStatusMsg("");
     }
   };
 
@@ -93,14 +136,13 @@ const ContactUs = () => {
       <section className="contact-section">
         <div className="container">
           <div className="contact-wrapper">
-            {/* contact form */}
             <div className="contact-form">
               <h2>Contact Us</h2>
               <h5 className="contact-subtitle">
                 Feel free to reach out to us for any general enquiries or
                 assistance.
               </h5>
-              <form onSubmit={handleSubmit} noValidate>
+              <form ref={formRef} onSubmit={handleSubmit} noValidate>
                 {["name", "email", "mobile", "company", "message"].map(
                   (field) => (
                     <div className="form-group" key={field}>
@@ -138,7 +180,38 @@ const ContactUs = () => {
                 <button type="submit" className="submit-btn">
                   Submit
                 </button>
+                {statusMsg && <p className="success-text">{statusMsg}</p>}
               </form>
+
+              {/* B2B-style success popup */}
+              {showModal && (
+                <div className="modal-overlay">
+                  <div
+                    className="modal-content"
+                    style={{
+                      background:
+                        modalType === "success" ? "#a6e0a4" : "#f8b4b4",
+                      color: modalType === "success" ? "#000" : "#000",
+                    }}
+                  >
+                    <h3>
+                      {modalType === "success"
+                        ? "Submission Successful ✅"
+                        : "Submission Failed ❌"}
+                    </h3>
+                    <p>{modalMessage}</p>
+                    <button
+                      className="close-btn"
+                      onClick={() => {
+                        setShowModal(false);
+                        window.location.reload();
+                      }}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              )}
 
               <section className="product-enquiry-banner">
                 <div className="container text-center">
@@ -154,7 +227,6 @@ const ContactUs = () => {
               </section>
             </div>
 
-            {/* Right Side - Info & Map */}
             <div className="contact-info">
               <h3>Head Office</h3>
               <p>

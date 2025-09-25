@@ -430,30 +430,24 @@
 }
 
 /* suppliers  */
-.suppliers-section {
-  background-color: #f8f9fa;
-}
-.suppliers-section h2 {
-  color: #273f4f;
-}
-
 .supplier-card {
-  transition: all 0.3s ease;
-  border: 1px solid #eee;
-  border: 1px solid #273f4f;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .supplier-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-.supplier-logo {
-  transition: 0.3s ease;
+.logo-wrapper {
+  transition: transform 0.3s;
+}
+.supplier-card:hover .logo-wrapper {
+  transform: scale(1.05);
 }
 
-.supplier-card:hover .supplier-logo {
-  filter: grayscale(0%) brightness(1.05);
+.supplier-name {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
 /* Responsive */

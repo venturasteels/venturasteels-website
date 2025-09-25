@@ -240,7 +240,7 @@ const Home = () => {
               slidesPerView={"auto"}
               spaceBetween={50}
               autoplay={{
-                delay: 2500,
+                delay: 1500,
                 disableOnInteraction: false,
               }}
               loop={true}
@@ -450,22 +450,39 @@ const Home = () => {
       {/* Suppliers Section */}
       <section className="suppliers-section py-5 bg-light" data-aos="fade-up">
         <div className="container text-center">
-          <h2 className="fw-bold mb-5 ">Trusted Suppliers</h2>
-          <div className="row justify-content-center g-4">
+          <h2 className="fw-bold mb-5">Trusted Suppliers</h2>
+          <div className="suppliers-flex d-flex flex-wrap justify-content-center gap-4">
             {[
-              "/image/jsw-logo.png",
-              "/image/RL steels logo.png",
-              "/image/dongbe-logo.png",
-              "/image/bhushan-logo.png",
-              "/image/superforgings logo.png",
-            ].map((logo, idx) => (
-              <div className="col-6 col-sm-4 col-md-2" key={idx}>
-                <div className="supplier-card shadow-sm p-3 bg-white rounded-3">
-                  <img
-                    src={logo}
-                    alt={`Supplier ${idx}`}
-                    className="img-fluid d-block supplier-logo"
-                  />
+              { logo: "/image/jsw-logo.png", name: "JSW" },
+              { logo: "/image/RL steels logo.png", name: "RL Steels" },
+              { logo: "/image/dongbe-logo.png", name: "Dongbei" },
+              { logo: "/image/bhushan-logo.png", name: "Bhushan" },
+              { logo: "/image/superforgings logo.png", name: "Super Forgings" },
+              {
+                logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp",
+                name: "Jiangsu Zhuhong",
+              },
+              { logo: "/image/taihe.webp", name: "Taihe" },
+            ].map((supplier, idx) => (
+              <div
+                key={idx}
+                className="supplier-item d-flex flex-column align-items-center"
+              >
+                <div className="supplier-card text-center p-3 bg-white rounded-4 shadow-sm border border-light hover-shadow transition">
+                  <div
+                    className="logo-wrapper mb-2 d-flex align-items-center justify-content-center rounded-circle bg-light"
+                    style={{ width: "100px", height: "100px" }}
+                  >
+                    <img
+                      src={supplier.logo}
+                      alt={supplier.name}
+                      className="img-fluid"
+                      style={{ maxHeight: "70%", objectFit: "contain" }}
+                    />
+                  </div>
+                  <p className="supplier-name mb-0 text-dark fw-semibold">
+                    {supplier.name}
+                  </p>
                 </div>
               </div>
             ))}

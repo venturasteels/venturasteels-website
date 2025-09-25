@@ -15,7 +15,7 @@ const SearchBar = ({ data }) => {
       new Fuse(data, {
         keys: ["name", "keywords"],
         threshold: 0.3,
-        minMatchCharLength: 1, // allow 1 character searches
+        minMatchCharLength: 1, 
       }),
     [data]
   );
