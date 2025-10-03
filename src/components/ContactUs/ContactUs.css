@@ -149,7 +149,8 @@
 }
 
 /* modal pop up */
-.modal-overlay {
+/* B2B modal pop up */
+.b2b-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -162,7 +163,7 @@
   z-index: 1000;
 }
 
-.modal-content {
+.b2b-modal-content {
   background: #a6e0a4;
   padding: 2rem;
   border-radius: 12px;
@@ -172,17 +173,17 @@
   font-family: "Arial", sans-serif;
 }
 
-.modal-content h3 {
+.b2b-modal-content h3 {
   color: #000;
   margin-bottom: 1rem;
 }
 
-.modal-content p {
+.b2b-modal-content p {
   color: #000;
   line-height: 1.5;
 }
 
-.close-btn {
+.b2b-close-btn {
   margin-top: 1.5rem;
   background: #fff !important;
   color: #000;
@@ -192,7 +193,7 @@
   cursor: pointer;
   font-weight: bold;
 }
-.close-btn:hover {
+.b2b-close-btn:hover {
   background: #e9602a;
 }
 

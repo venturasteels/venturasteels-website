@@ -1,28 +1,112 @@
-/* Sidebar Styles */
+/* ---------------- Sidebar & Overlay ---------------- */
+
+/* Overlay behind sidebar */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  backdrop-filter: blur(2px); /* optional blur effect */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1040; /* below sidebar */
+}
+
+.sidebar-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sidebar container */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -260px;
-  width: 250px;
+  left: -280px; /* hidden initially */
+  width: 260px;
   height: 100vh;
-  background-color: #447d9b;
-  padding-top: 70px;
+  background: linear-gradient(180deg, #273f4f, #447d9b);
+  padding: 80px 20px 30px;
   z-index: 1050;
   transition: all 0.3s ease;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Sidebar open state */
 .sidebar.open {
   left: 0;
 }
 
-.sidebar .nav-link {
-  padding: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+/* Logo */
+.sidebar-logo {
+  height: 90px;
+  object-fit: contain;
 }
-.header-section {
+
+/* Close Button */
+.sidebar-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-close-btn:hover {
+  transform: rotate(90deg) scale(1.1);
+  color: #fe7743; /* orange accent */
+}
+
+/* ---------------- Sidebar Menu ---------------- */
+
+/* Menu list */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
   width: 100%;
-  z-index: 9999;
+}
+
+/* Menu items */
+.sidebar-item {
+  margin: 12px 0;
+}
+
+/* Menu buttons (tiles) */
+.sidebar-tile {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Hover effect for tiles */
+.sidebar-tile:hover {
+  background: #fe7743;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active menu item */
+.sidebar-tile.active {
+  background: #fe7743;
+  color: #fff;
 }
 
 /* social + contyact-info */
@@ -269,3 +353,4 @@
     font-size: 14px;
   }
 }
+

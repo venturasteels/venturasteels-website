@@ -57,7 +57,7 @@ const Infrastructure = () => {
           <div className="overlay-infrastructure">
             <h1 className="text-center">Infrastructure</h1>
             <p className="text-center">
-              Our Mumbai – Stocking & Machining Center in Bhiwandi spans 60,000
+              Our Mumbai – Stocking & Machining Center in Bhiwandi spans 72,000
               sq. ft., equipped with advanced handling, cutting, and testing
               facilities to ensure high precision, efficient operations, and
               rapid dispatches.

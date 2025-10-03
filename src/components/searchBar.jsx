@@ -15,7 +15,7 @@ const SearchBar = ({ data }) => {
       new Fuse(data, {
         keys: ["name", "keywords"],
         threshold: 0.3,
-        minMatchCharLength: 1, 
+        minMatchCharLength: 1,
       }),
     [data]
   );
@@ -28,7 +28,7 @@ const SearchBar = ({ data }) => {
     } else {
       setResults([]);
     }
-  }, [query, fuse]); // ✅ added fuse
+  }, [query, fuse]);
 
   const handleSelect = (path) => {
     setQuery("");

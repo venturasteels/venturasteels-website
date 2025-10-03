@@ -112,14 +112,21 @@ export default function Certifications() {
           show={showModal}
           onHide={() => setShowModal(false)}
           centered
-          size="lg"
+          size="xl"
+          dialogClassName="certificate-modal"
+          fullscreen
         >
-          <Modal.Body className="p-0">
+          {/* Custom Close Button */}
+          <button className="close-btns" onClick={() => setShowModal(false)}>
+            ✕
+          </button>
+
+          <Modal.Body className="p-0 d-flex justify-content-center align-items-center">
             {activeImage && (
               <img
                 src={activeImage}
                 alt="Certificate"
-                className="img-fluid w-100"
+                className="modal-full-image"
               />
             )}
           </Modal.Body>

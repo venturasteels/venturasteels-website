@@ -428,6 +428,10 @@
   background-color: #273f4f;
   color: #fff;
 }
+.trusted-certificates .col-md-2 {
+  flex: 0 0 auto;
+  width: 21.666667%;
+}
 
 /* suppliers  */
 .supplier-card {
@@ -462,6 +466,9 @@
   .product-view {
     font-size: 1rem;
   }
+  .quality-infra-cards .fs-6 {
+    font-size: 0.9rem !important;
+}
 }
 
 @media (max-width: 768px) {
@@ -529,6 +536,11 @@
   .about-section h2 {
     margin-top: 20px;
   }
+  /* trusted & certified section */
+  .trusted-certificates .col-md-2 {
+    flex: 0 0 auto;
+    width: 33.666667%;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -651,4 +663,9 @@
   .quality-infra-cards {
     margin-bottom: 0rem !important;
   }
+  /* trusted certified section */
+  .trusted-certificates .col-md-2 {
+    flex: 0 0 auto;
+    width: 50.666667%;
+}
 }

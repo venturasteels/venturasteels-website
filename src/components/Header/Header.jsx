@@ -315,7 +315,7 @@ export default function Header() {
       ],
     },
   ];
- 
+
   const [showSearch, setShowSearch] = useState(false);
 
   return (
@@ -404,12 +404,30 @@ export default function Header() {
         </div>
       </nav>
 
+      {/* Overlay */}
+      {isSidebarOpen && (
+        <div
+          className="sidebar-overlay show"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
       {/* Sidebar */}
       <div
         className={`sidebar ${isSidebarOpen ? "open" : ""}`}
         ref={sidebarRef}
       >
-        <ul className="nav flex-column text-center">
+        {/* Header with Logo*/}
+        <div className="sidebar-header d-flex justify-content-between align-items-center">
+          <img
+            src="/image/Semi Circle Logo.jpg"
+            alt="Ventura Steels"
+            className="sidebar-logo rounded mb-2"
+          />
+        </div>
+
+        {/* Sidebar Menu Tiles */}
+        <ul className="sidebar-nav">
           {[
             { to: "/", text: "Home" },
             { to: "/about", text: "About Us" },
@@ -422,13 +440,13 @@ export default function Header() {
             { to: "/careers", text: "Careers" },
             { to: "/contactUs", text: "Contact Us" },
           ].map(({ to, text }) => (
-            <li key={to} className="nav-item">
+            <li key={to} className="sidebar-item">
               <button
                 onClick={() => {
                   handleNavClick(to);
                   setIsSidebarOpen(false);
                 }}
-                className="nav-link text-white"
+                className="sidebar-tile"
               >
                 {text}
               </button>

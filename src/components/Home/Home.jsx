@@ -178,7 +178,7 @@ const Home = () => {
               <div className="value">
                 <CountUp
                   end={item.value}
-                  duration={2.9}
+                  duration={Math.max(2.9, (item.value / 10000) * 3)}
                   separator=","
                   suffix={item.suffix}
                   enableScrollSpy
@@ -328,8 +328,8 @@ const Home = () => {
               <div className="card-overlay d-flex flex-column justify-content-center align-items-start p-4">
                 <h4 className="fw-semibold fs-2 mb-2">Infrastructure</h4>
                 <p className="fs-6">
-                  Our 12,000-square-foot headquarters in Bhiwandi is equipped
-                  with 1,500 tons of dedicated storage space, dual EOT cranes
+                  Our 72,000-square-foot headquarters in Bhiwandi is equipped
+                  with 10,000 tons of dedicated storage space, dual EOT cranes
                   (5-ton and 25-ton capacities).
                 </p>
                 <Link
@@ -456,8 +456,7 @@ const Home = () => {
               { logo: "/image/jsw-logo.png", name: "JSW" },
               { logo: "/image/RL steels logo.png", name: "RL Steels" },
               { logo: "/image/dongbe-logo.png", name: "Dongbei" },
-              { logo: "/image/bhushan-logo.png", name: "Bhushan" },
-              { logo: "/image/superforgings logo.png", name: "Super Forgings" },
+              { logo: "/image/logo-bhushan.png", name: "Bhushan" },
               {
                 logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp",
                 name: "Jiangsu Zhuhong",
