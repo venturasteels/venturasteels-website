@@ -56,10 +56,6 @@ const ContactUs = () => {
   const [modalType, setModalType] = useState("success");
   const [modalMessage, setModalMessage] = useState("");
 
-  console.log("Service ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
-  console.log("Template ID:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-  console.log("Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -78,11 +74,13 @@ const ContactUs = () => {
           {
             ...formData,
             createdAt: new Date().toLocaleString(),
-          }
+          },
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         );
 
+        const backendUrl = import.meta.env.VITE_BACKEND_URL;
         // backend MongoDB
-        const res = await fetch("http://localhost:5000/api/contact", {
+        const res = await fetch(`${backendUrl}/api/contact`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
