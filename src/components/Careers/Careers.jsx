@@ -107,15 +107,15 @@ export default function Careers() {
               </Col>
               <Col md={3} className="text-end careers-stats">
                 <div>
-                  <span className="stat-number">15+</span>{" "}
+                  <span className="stat-number">15+</span>
                   <span className="stat-label">Years</span>
                 </div>
                 <div>
-                  <span className="stat-number">70+</span>{" "}
+                  <span className="stat-number">70+</span>
                   <span className="stat-label">Employees</span>
                 </div>
                 <div>
-                  <span className="stat-number">300+</span>{" "}
+                  <span className="stat-number">1700+</span>
                   <span className="stat-label">Clients</span>
                 </div>
               </Col>
