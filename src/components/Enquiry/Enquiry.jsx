@@ -60,6 +60,9 @@ export default function EnquiryForm() {
   const [confirmGrades, setConfirmGrades] = useState(false);
   const [touchedFields, setTouchedFields] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState(""); // dynamic message
+  const [modalType, setModalType] = useState("success"); // "success" or "error"
 
   const [formData, setFormData] = useState({
     name: "",
@@ -174,7 +177,7 @@ export default function EnquiryForm() {
       [grade]: {
         shape,
         ...(shape === "Round Bar"
-          ? { diameter: "", quantity: "", pieces: "" }
+          ? { diameter: "", quantity: "" }
           : { thickness: "", width: "", quantity: "" }),
       },
     }));
@@ -206,7 +209,7 @@ export default function EnquiryForm() {
     return allFieldsFilled && gradesConfirmed;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitted(true);
     setTouchedFields({
@@ -218,6 +221,7 @@ export default function EnquiryForm() {
       message: true,
       grades: true,
     });
+
     validateForm();
 
     if (!isFormValid()) {
@@ -225,36 +229,97 @@ export default function EnquiryForm() {
       return;
     }
 
+    //grades with specifications for EmailJS
+    const gradesWithSpecs = selectedGrades
+      .map((grade) => {
+        const specs = gradeShapes[grade];
+        if (!specs) return grade;
+        if (specs.shape === "Round Bar") {
+          return `${grade} - Shape: ${specs.shape}, Diameter: ${specs.diameter}, Quantity: ${specs.quantity}`;
+        }
+        if (specs.shape === "Block") {
+          return `${grade} - Shape: ${specs.shape}, Thickness: ${specs.thickness}, Width: ${specs.width}, Quantity: ${specs.quantity}`;
+        }
+        return grade;
+      })
+      .join("\n");
+
     const templateParams = {
-      ...formData,
-      selectedGrades: selectedGrades.join(", "),
-      gradeShapes: JSON.stringify(gradeShapes),
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      companyname: formData.companyname,
+      userType: formData.userType,
+      product: formData.product,
+      selectedGrades: gradesWithSpecs,
+      message: formData.message,
+      createdAt: new Date().toLocaleString(),
     };
 
-    emailjs
-      .send(
-        "your_service_id",
-        "your_template_id",
+    try {
+      //EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_ENQUIRY_TEMPLATE_ID,
         templateParams,
-        "your_user_token"
-      )
-      .then(() => {
-        toast.success("Enquiry submitted successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          product: "",
-          message: "",
-          companyname: "",
-          userType: "",
-        });
-        setSelectedGrades([]);
-        setGradeShapes({});
-        setConfirmGrades(false);
-        setTouchedFields({});
-      })
-      .catch(() => toast.error("Error sending enquiry."));
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      //MongoDB
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/enquiry`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...formData, selectedGrades, gradeShapes }),
+        }
+      );
+
+      if (!response.ok) throw new Error("Failed to save enquiry");
+
+      //Show success modal
+      const gradesWithSpecs = selectedGrades
+        .map((grade) => {
+          const specs = gradeShapes[grade];
+          if (!specs) return grade;
+          if (specs.shape === "Round Bar")
+            return `${grade} - Shape: ${specs.shape}, Diameter: ${specs.diameter}, Quantity: ${specs.quantity}`;
+          if (specs.shape === "Block")
+            return `${grade} - Shape: ${specs.shape}, Thickness: ${specs.thickness}, Width: ${specs.width}, Quantity: ${specs.quantity}`;
+          return grade;
+        })
+        .join("\n");
+
+      setModalType("success");
+      setModalMessage(
+        `Thank you! Your enquiry has been submitted successfully.\n\nGrades:\n${gradesWithSpecs}`
+      );
+      setShowModal(true);
+
+      resetForm();
+    } catch (err) {
+      console.error(err);
+      setModalType("error");
+      setModalMessage("Error submitting enquiry. Please try again.");
+      setShowModal(true);
+    }
+  };
+
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      product: "",
+      message: "",
+      companyname: "",
+      userType: "",
+    });
+    setSelectedGrades([]);
+    setGradeShapes({});
+    setConfirmGrades(false);
+    setTouchedFields({});
+    setSubmitted(false);
   };
 
   return (
@@ -503,8 +568,13 @@ export default function EnquiryForm() {
             </div>
           </form>
         </div>
-        <ToastContainer />
       </div>
+      <InfoModal
+        show={showModal}
+        type={modalType}
+        message={modalMessage}
+        onClose={() => setShowModal(false)}
+      />
     </>
   );
 }
@@ -515,10 +585,10 @@ const ShapeFields = ({ grade, data, onChange }) => {
   if (data.shape === "Round Bar") {
     return (
       <div className="row g-2 mt-2">
-        <div className="col-md-4">
+        <div className="col-md-5">
           <input
             type="number"
-            className="form-control"
+            className="form-control text-center"
             placeholder="Diameter (mm)"
             value={data.diameter}
             onChange={(e) => onChange(grade, "diameter", e.target.value)}
@@ -526,24 +596,13 @@ const ShapeFields = ({ grade, data, onChange }) => {
             step="1"
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-5">
           <input
             type="number"
             className="form-control"
             placeholder="Quantity"
             value={data.quantity}
             onChange={(e) => onChange(grade, "quantity", e.target.value)}
-            min="1"
-            step="1"
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="No. of Pieces"
-            value={data.pieces}
-            onChange={(e) => onChange(grade, "pieces", e.target.value)}
             min="1"
             step="1"
           />
@@ -646,3 +705,47 @@ const SelectField = ({
     {error && <div className="invalid-feedback">{error}</div>}
   </div>
 );
+
+const InfoModal = ({ show, type, message, onClose }) => {
+  if (!show) return null;
+
+  const isSuccess = type === "success";
+
+  return (
+    <div className="modal-backdrop">
+      <div className="modal-container">
+        <h2 style={{ color: isSuccess ? "#28a745" : "#dc3545" }}>
+          {isSuccess ? "Enquiry Submitted!" : "Submission Failed"}
+        </h2>
+        <p style={{ whiteSpace: "pre-wrap" }}>{message}</p>
+        <button className="btn btn-primary mt-3" onClick={onClose}>
+          Close
+        </button>
+      </div>
+
+      <style jsx>{`
+        .modal-backdrop {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        }
+        .modal-container {
+          background: #fff;
+          padding: 2rem;
+          border-radius: 10px;
+          max-width: 500px;
+          width: 90%;
+          text-align: center;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+      `}</style>
+    </div>
+  );
+};

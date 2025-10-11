@@ -1,18 +1,16 @@
-/* ---------------- Sidebar & Overlay ---------------- */
-
-/* Overlay behind sidebar */
+/*sidebar */
 .sidebar-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-  backdrop-filter: blur(2px); /* optional blur effect */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 1040; /* below sidebar */
+  z-index: 1040;
 }
 
 .sidebar-overlay.show {
@@ -24,11 +22,11 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: -280px; /* hidden initially */
+  left: -280px;
   width: 260px;
   height: 100vh;
   background: linear-gradient(180deg, #273f4f, #447d9b);
-  padding: 80px 20px 30px;
+  padding: 20px 20px 30px;
   z-index: 1050;
   transition: all 0.3s ease;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.25);
@@ -61,10 +59,8 @@
 
 .sidebar-close-btn:hover {
   transform: rotate(90deg) scale(1.1);
-  color: #fe7743; /* orange accent */
+  color: #fe7743;
 }
-
-/* ---------------- Sidebar Menu ---------------- */
 
 /* Menu list */
 .sidebar-nav {
@@ -78,7 +74,7 @@
   margin: 12px 0;
 }
 
-/* Menu buttons (tiles) */
+/* Menu buttons */
 .sidebar-tile {
   display: block;
   width: 100%;
@@ -95,7 +91,7 @@
   border: none;
 }
 
-/* Hover effect for tiles */
+/* Hover */
 .sidebar-tile:hover {
   background: #fe7743;
   color: #fff;
@@ -109,7 +105,7 @@
   color: #fff;
 }
 
-/* social + contyact-info */
+/* social + contact-info */
 .bg-social {
   background-color: #fff;
   color: #273f4f;
@@ -282,7 +278,6 @@
 @media (max-width: 768px) {
   .sidebar {
     width: 230px;
-    padding-top: 60px;
   }
 
   .sidebar .nav-link {
@@ -353,4 +348,3 @@
     font-size: 14px;
   }
 }
-
