@@ -33,6 +33,13 @@ import O1 from "./components/Products/Cold-Work/Grades/O1/O1.jsx";
 
 // Plastic Mould
 import PlaticMould from "./components/Products/Plastic-Mould/plastic-mould.jsx";
+import P20Ni from "./components/Products/Plastic-Mould/Grades/P20+Ni/P20+Ni.jsx";
+import P20 from "./components/Products/Plastic-Mould/Grades/P20/P20.jsx";
+import PlasticMould2316 from "./components/Products/Plastic-Mould/Grades/1.2316/1.2316.jsx";
+
+// Spring Steels
+import SpringSteel from "./components/Products/Spring-Steel/spring-steel.jsx";
+import SpringSteelEN47 from "./components/Products/Spring-Steel/Grades/EN47/EN47.jsx";
 
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
@@ -89,12 +96,13 @@ const App = () => {
             <Route path="O1" element={<O1 />} />
           </Route>
           <Route path="/products/plastic-mould" element={<PlaticMould />}>
-            {/* <Route path="D2" element={<D2 />} />
-            <Route path="D3" element={<D3 />} />
-            <Route path="D5" element={<D5 />} />
-            <Route path="A2" element={<A2 />} />
-            <Route path="O1" element={<O1 />} /> */}
+            <Route path="P20Ni" element={<P20Ni />} />
+            <Route path="P20/1.2311" element={<P20 />} />
+            <Route path="1.2316" element={<PlasticMould2316 />} />
           </Route>
+          {/* <Route path="/products/spring-steel" element={<SpringSteel />}>
+            <Route path="EN47" element={<SpringSteelEN47 />} />
+          </Route> */}
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
             <Route path="15B25" element={<Boron15B25 />} />

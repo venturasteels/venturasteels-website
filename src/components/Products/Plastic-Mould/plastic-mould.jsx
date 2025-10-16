@@ -7,7 +7,7 @@ const PlasticMould = () => {
   const [isGradeSelected, setIsGradeSelected] = useState(false);
 
   React.useEffect(() => {
-    const gradePattern = /^\/products\/hot-work\/(P20+Ni|P20|1.2316)/;
+    const gradePattern = /^\/products\/plastic-mould\/(P20Ni|P20|1.2316)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -30,30 +30,6 @@ const PlasticMould = () => {
           automotive, consumer goods, packaging, and industrial mould-making,
           where precision and consistency are essential.
         </p>
-
-        {/* process routes */}
-        <section className="process-route mx-auto mt-3">
-          <h3>Process Route</h3>
-          <div className="process-flow">
-            <div className="step">EAF</div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD</div>
-            <span className="arrow">→</span>
-            <div className="step">CONTINUOUS CASTING / INGOT</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGED / ROLLED</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED</div>
-            <span className="arrow">→</span>
-            <div className="step">MACHINED (Rounds / Flats)</div>
-            <span className="arrow">→</span>
-            <div className="step">PRE-HARDENED (Approx. 28–34 HRC)</div>
-            <span className="arrow">→</span>
-            <div className="step">FINISH MACHINED / POLISHED</div>
-          </div>
-        </section>
       </div>
 
       <div className={`plastic-mould-main ${isGradeSelected ? "active" : ""}`}>
@@ -63,9 +39,9 @@ const PlasticMould = () => {
             <ul>
               <li>
                 <Link
-                  to="DB6"
+                  to="P20Ni"
                   className={
-                    location.pathname.includes("P20+Ni") ? "active-grade" : ""
+                    location.pathname.includes("P20Ni") ? "active-grade" : ""
                   }
                 >
                   P20+Ni / 1.2738
@@ -73,9 +49,11 @@ const PlasticMould = () => {
               </li>
               <li>
                 <Link
-                  to="H13"
+                  to="P20/1.2311"
                   className={
-                    location.pathname.includes("P20") ? "active-grade" : ""
+                    location.pathname.includes("P20/1.2311")
+                      ? "active-grade"
+                      : ""
                   }
                 >
                   P20 / 1.2311
@@ -83,7 +61,7 @@ const PlasticMould = () => {
               </li>
               <li>
                 <Link
-                  to="H11"
+                  to="1.2316"
                   className={
                     location.pathname.includes("1.2316") ? "active-grade" : ""
                   }

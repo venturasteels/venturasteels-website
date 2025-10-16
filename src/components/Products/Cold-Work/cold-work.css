@@ -46,7 +46,8 @@
 }
 
 .coldwork-main.active .sidebar-wrapper {
-  min-width: 22%;
+  min-width: 15%;
+  width: 15%;
   transform: translateX(0);
 }
 

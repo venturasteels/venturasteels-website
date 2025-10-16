@@ -158,7 +158,7 @@ const Home = () => {
             Industrial excellence in every grade – strength, precision, and
             reliability you can trust.
           </p>
-          <a href="/enquiry" className="btn btn-outline-light">
+          <a href="/enquiry" className="btn btn-outline-light overlay-enquiry-btn">
             Enquire Now
           </a>
         </div>

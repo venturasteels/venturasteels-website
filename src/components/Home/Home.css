@@ -42,18 +42,19 @@
   width: 50%;
 }
 
-.btn-outline-light {
+.overlay-enquiry-btn {
   border: 2px solid #fff;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   text-decoration: none;
-  color: white;
+  background-color: #fff;
+  color: #273f4f;
   transition: all 0.3s ease;
 }
 
-.btn-outline-light:hover {
-  background-color: #fff;
-  color: #273f4f;
+.overlay-enquiry-btn:hover {
+  background-color: transparent;
+  color: #fff;
   border-color: #fff;
 }
 
@@ -468,7 +469,7 @@
   }
   .quality-infra-cards .fs-6 {
     font-size: 0.9rem !important;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -540,7 +541,7 @@
   .trusted-certificates .col-md-2 {
     flex: 0 0 auto;
     width: 33.666667%;
-}
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -553,10 +554,10 @@
   }
   /* stats-card */
   .stat-card .icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .stat-card .value {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
   .stat-card .label {
@@ -565,6 +566,18 @@
   .btn-outline-light {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
+  }
+  .stat-card {
+    flex: 1 1 100%;
+    max-width: 40%;
+    padding: 1rem 1rem;
+  }
+  .stats-section {
+    padding: 2.5rem 2rem;
+    background-color: #f6f6ff;
+  }
+  .stats-container {
+    gap: 1.5rem;
   }
   /* why ventura */
   .why-ventura-section {
@@ -580,7 +593,7 @@
     margin-top: 20px;
   }
   .about-section p {
-    font-size: 0.86rem;
+    font-size: 0.88rem;
     text-align: center;
   }
 
@@ -667,5 +680,5 @@
   .trusted-certificates .col-md-2 {
     flex: 0 0 auto;
     width: 50.666667%;
-}
+  }
 }

@@ -589,19 +589,25 @@ export default function Header() {
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/plastic/P20N1")}
+                    onClick={() =>
+                      handleNavClick("/products/plastic-mould/P20Ni")
+                    }
                     className="dropdown-item "
                   >
                     P20+Ni / 1.2738
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/plastic/P20")}
+                    onClick={() =>
+                      handleNavClick("/products/plastic-mould/P20/1.2311")
+                    }
                     className="dropdown-item "
                   >
                     P20 / 1.2311
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/plastic/2316")}
+                    onClick={() =>
+                      handleNavClick("/products/plastic-mould/1.2316")
+                    }
                     className="dropdown-item "
                   >
                     1.2316
@@ -612,62 +618,80 @@ export default function Header() {
               {/* Spring Steel */}
               <div className="dropdown-submenu">
                 <button
-                  onClick={() => handleNavClick("/products/spring")}
+                  onClick={() => handleNavClick("/products/spring-steel")}
                   className="dropdown-item"
                 >
                   Spring Steel ▸
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/spring/EN47")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/EN47")
+                    }
                     className="dropdown-item "
                   >
                     EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/SUP9")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/SUP9")
+                    }
                     className="dropdown-item "
                   >
                     SUP 9
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/SAE9254")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/SAE9254")
+                    }
                     className="dropdown-item "
                   >
                     SAE 9254 / SUP 11A
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/EN31")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/EN31")
+                    }
                     className="dropdown-item "
                   >
                     EN 31 / SAE 52100 / 100Cr6
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/EN45")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/EN45")
+                    }
                     className="dropdown-item "
                   >
                     EN45 / SAE 9260 / 60Si7
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/SAE5160")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/SAE5160")
+                    }
                     className="dropdown-item "
                   >
                     SAE 5160
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/SAE5160")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/52CrMoV4")
+                    }
                     className="dropdown-item "
                   >
                     52CrMoV4 / 50Cr4MoV2
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/SAE5160")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/52CrV4")
+                    }
                     className="dropdown-item "
                   >
                     52CrV4 / 51CrV4 / AISI 4150
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/spring/SAE5160")}
+                    onClick={() =>
+                      handleNavClick("/products/spring-steel/55Si7")
+                    }
                     className="dropdown-item "
                   >
                     55Si7 / 56Si7 / SAE 9255
