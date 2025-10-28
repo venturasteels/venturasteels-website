@@ -83,7 +83,7 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE9254"
+                  to="SAE5160"
                   className={
                     location.pathname.includes("SAE5160") ? "active-grade" : ""
                   }
@@ -108,7 +108,7 @@ const SpringSteel = () => {
                     location.pathname.includes("52CrV4") ? "active-grade" : ""
                   }
                 >
-                  52CrV4 / 51CrV4 / AISI 4150
+                  52CrV4 / 51CrV4 / AISI 4150   
                 </Link>
               </li>
               <li>

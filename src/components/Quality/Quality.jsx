@@ -88,20 +88,32 @@ const Quality = () => {
 
       <section className="certificates-gallery py-5">
         <div className="container text-center">
-          <h2 className="fw-bold mb-4">Our Certification</h2>
-          {/* <div className="row g-4">
-            {["/image/konsond img.png", "/image/konsond img.png", "/image/konsond img.png", "/image/konsond img.png"].map(
-              (img, idx) => (
-                <div className="col-md-3" key={idx}>
-                  <img
-                    src={img}
-                    alt="Certificate"
-                    className="img-fluid rounded shadow-sm certificate-thumb"
-                  />
-                </div>
-              )
-            )}
-          </div> */}
+          <h2 className="fw-bold mb-4 section-title">Our Certification</h2>
+          <div className="certificate-wrapper d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
+            <div className="certificate-image position-relative">
+              <img
+                src="/image/certificates/BSCIC-ISO.png"
+                alt="ISO Certificate"
+                className="img-fluid shadow-lg rounded-4 certificate-img"
+              />
+              <div className="certificate-overlay">
+                <i className="bi bi-patch-check-fill"></i>
+              </div>
+            </div>
+
+            <div className="certificate-text text-start">
+              <h4 className="fw-semibold mb-3 text-uppercase">
+                ISO 9001:2015 Certified
+              </h4>
+              <p className="text-muted">
+                Ventura Alloy & Steels Pvt. Ltd. has been recognized for
+                maintaining international quality standards across all
+                operations. Our certification reflects our ongoing commitment to
+                excellence, reliability, and customer satisfaction in every
+                product we deliver.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>

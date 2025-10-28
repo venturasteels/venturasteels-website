@@ -34,25 +34,25 @@ const gradesData = [
     grades: [
       {
         name: " EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10",
-        link: "/products/spring-steel/50crv4",
+        link: "/products/spring-steel/EN47",
       },
-      { name: " SUP 9", link: "/products/spring-steel/51crv4" },
+      { name: " SUP 9", link: "/products/spring-steel/SUP9" },
       { name: "SAE 9254 / SUP 11A", link: "/products/spring-steel/en47" },
       {
         name: "EN 31 / SAE 52100 / 100Cr6",
-        link: "/products/spring-steel/aisi6150",
+        link: "/products/spring-steel/EN31",
       },
       {
         name: "EN45 / SAE 9260 / 60Si7",
-        link: "/products/spring-steel/din8159",
+        link: "/products/spring-steel/EN45",
       },
-      { name: " SAE 5160", link: "/products/spring-steel/sup10" },
-      { name: " 52CrMoV4 / 50Cr4MoV2", link: "/products/spring-steel/sup10" },
+      { name: " SAE 5160", link: "/products/spring-steel/SAE5160" },
+      { name: " 52CrMoV4 / 50Cr4MoV2", link: "/products/spring-steel/50CrMoV4" },
       {
         name: " 52CrV4 / 51CrV4 / AISI 4150",
-        link: "/products/spring-steel/sup10",
+        link: "/products/spring-steel/52CrV4",
       },
-      { name: " 55Si7 / 56Si7 / SAE 9255", link: "/products/spring/SAE5160" },
+      { name: " 55Si7 / 56Si7 / SAE 9255", link: "/products/spring-steel/" },
     ],
   },
   {

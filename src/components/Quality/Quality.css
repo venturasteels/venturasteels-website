@@ -35,17 +35,92 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-.certificate-thumb {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.certificate-thumb:hover {
-  transform: scale(1.05);
-}
-
 .quality-process {
   background-color: #fe774335;
+}
+.quality-process h2{
+color: #273f4f;
+}
+
+.certificates-gallery {
+  background-color: #447d9b35;
+  position: relative;
+}
+
+.section-title {
+  color: #273f4f;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.certificate-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.certificate-image {
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.certificate-img {
+  width: 280px;
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.certificate-image:hover .certificate-img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: rgba(39, 63, 79, 0.45);
+  border-radius: 15px;
+}
+
+.certificate-overlay i {
+  font-size: 3rem;
+  color: #fe7743;
+}
+
+.certificate-image:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-text {
+  width: 60%;
+  color: #273f4f;
+}
+
+.certificate-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #447d9b;
+}
+
+@media (max-width: 768px) {
+  .certificate-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .certificate-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .certificate-img {
+    width: 220px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -57,7 +132,7 @@
 @media screen and (max-width: 768px) {
   .overlay-quality {
     height: 80vh;
-    width: 40% ;
+    width: 40%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1530px) {
