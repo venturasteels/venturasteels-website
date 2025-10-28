@@ -109,11 +109,11 @@ const App = () => {
           <Route path="/products/spring-steel" element={<SpringSteel />}>
             <Route path="EN47" element={<SpringSteelEN47 />} />
             <Route path="SUP9" element={<SUP9 />} />
-            <Route path="SAE9254" element={<SpringSteelSAE9254 />} />
+            {/* <Route path="SAE9254" element={<SpringSteelSAE9254 />} />
             <Route path="EN31" element={<EN31 />} />
             <Route path="EN45" element={<EN45 />} />
             <Route path="SAE5160" element={<SAE5160 />} />
-            <Route path="52CrMoV4" element={<SpringSteel52CrMoV4 />} />
+            <Route path="52CrMoV4" element={<SpringSteel52CrMoV4 />} /> */}
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
