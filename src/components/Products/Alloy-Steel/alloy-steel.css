@@ -1,0 +1,188 @@
+/* Hot work detail section */
+.alloy-steel-container {
+  background: #fff;
+  padding: 2rem;
+  color: #2c2c2c;
+}
+
+.alloy-steel-hero {
+  text-align: justify;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #fe7743;
+}
+
+.alloy-steel-hero h1 {
+  text-align: center;
+  color: #273f4f;
+  font-size: 2.2rem;
+}
+
+.alloy-steel-hero p {
+  font-size: 18px;
+  color: #666;
+  width: 90%;
+  margin: 0 auto;
+}
+.alloy-steel-hero .process-route {
+  width: 90%;
+}
+
+.alloy-steel-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+/* Grades section */
+.sidebar-wrapper {
+  flex-shrink: 0;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  transition: transform 1s ease-in-out, min-width 1s ease-in-out;
+  transform: translateX(50%);
+}
+
+.alloy-steel-main.active .sidebar-wrapper {
+  min-width: 15%;
+  width: 18%;
+  transform: translateX(0);
+}
+
+.alloy-steel-sidebar {
+  width: 100%;
+  background: #fe774310;
+  border: 1px solid #fe7743;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.alloy-steel-main.active .alloy-steel-sidebar {
+  text-align: left;
+}
+
+.alloy-steel-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alloy-steel-sidebar li a {
+  display: block;
+  color: #273f4f;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.alloy-steel-sidebar li a:hover {
+  background: #fe774390;
+  color: #fff;
+  font-weight: 500;
+  transform: translateX(4px);
+}
+
+.alloy-steel-details {
+  flex: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(57, 49, 133, 0.07);
+}
+
+.alloy-steel-main.active .alloy-steel-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.active-grade {
+  color: #fff !important;
+  background: #fe774390;
+  font-weight: 500;
+  transform: translateX(4px);
+}
+
+@media (min-width: 768px) {
+  .alloy-steel-main.active .sidebar-wrapper {
+    display: flex;
+    align-items: start;
+    height: 75vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .alloy-steel-sidebar {
+    margin: auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .alloy-steel-container {
+    margin-top: 0rem;
+  }
+  .why-ventura h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem !important;
+  }
+  .sidebar-wrapper {
+    min-width: 100%;
+    transform: translateX(0) !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .alloy-steel-main.active .sidebar-wrapper {
+    min-width: 100%;
+  }
+
+  .alloy-steel-sidebar {
+    text-align: center !important;
+    padding: 1rem;
+  }
+
+  .alloy-steel-sidebar h3 {
+    margin-bottom: 1rem;
+  }
+
+  .alloy-steel-sidebar li a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .alloy-steel-details {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .alloy-steel-hero h1 {
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
+  }
+
+  .alloy-steel-hero p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .alloy-steel-hero {
+    padding: 10px;
+  }
+  .alloy-steel-sidebar {
+    margin: 0px 20px;
+  }
+}

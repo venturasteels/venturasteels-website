@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./EN47.css";
 
-export default function SpringSteelEN47() {
+export default function SpringSteel55Si7() {
   return (
     <div className="grade-details">
       <h2 className="text-center">
-        EN47 / 50CrV4 / 51CrV4 / AISI 6150 / SUP10 / DIN 1.8159
+        55Si7 / 56Si7 / SAE 9255 
       </h2>
       <p className="subtitle text-center">
-        A chromium-vanadium spring steel with high resilience, fatigue strength,
-        and shock resistance.
+        Silicon–manganese spring steel with high strength, excellent elasticity,
+        and superior fatigue resistance — ideal for heavy-duty spring and
+        suspension applications.
       </p>
 
-      {/* Standards / Equivalents */}
+      {/* Standards */}
       <div className="hot-work-standards-scroll-wrapper mb-4">
         <div className="hot-work-standards-inner-scroll">
           <table className="standards-table">
@@ -26,27 +26,27 @@ export default function SpringSteelEN47() {
                 <td>Germany / Europe</td>
                 <td>Japan</td>
                 <td>China</td>
-                <td>UK</td>
+                <td>UK / India</td>
               </tr>
               <tr>
                 <td>
-                  <strong>STANDARD </strong>
+                  <strong>STANDARD</strong>
                 </td>
-                <td>AISI / SAE</td>
-                <td>DIN / EN </td>
+                <td>SAE / AISI</td>
+                <td>DIN / EN</td>
                 <td>JIS</td>
                 <td>GB</td>
-                <td>BS</td>
+                <td>BS / IS</td>
               </tr>
               <tr>
                 <td>
                   <strong>Equivalent Grades</strong>
                 </td>
-                <td>AISI 6150</td>
-                <td>1.8159 / EN 47 / 50CrV4 / 51CrV4</td>
-                <td>SUP 10</td>
-                <td>50CrVA / 51CrV4</td>
-                <td>735A51 (or 735A50)</td>
+                <td>SAE 9255</td>
+                <td>55Si7 / 56Si7</td>
+                <td>SUP9 / SUP9A</td>
+                <td>55SiMnVB / 55Si7</td>
+                <td>250A53 / IS 4454 Gr.2</td>
               </tr>
             </tbody>
           </table>
@@ -57,28 +57,27 @@ export default function SpringSteelEN47() {
       <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3">
         <div className="overview-content">
           <p>
-            50CrV4 (also known as 51CrV4) is a chromium–vanadium alloy spring
-            steel, commonly referred to as EN47 or DIN 1.8159. It offers very
-            good hardenability, high fatigue strength, and excellent resilience.
-            The vanadium addition refines grain structure and enhances toughness
-            and resistance to overheating. This grade is usually oil-quenched
-            and tempered to achieve its characteristic strength and durability,
-            making it suitable for cyclically stressed components such as
-            springs, torsion bars, and shafts.
+            55Si7 (also known as SAE 9255 or 56Si7) is a silicon–manganese
+            spring steel widely used for manufacturing heavy-duty coil and leaf
+            springs. It offers excellent elasticity, toughness, and resistance
+            to fatigue, even under dynamic loads. Silicon increases strength and
+            hardenability, while manganese enhances toughness and wear
+            resistance. It performs well under cyclic stress in automotive,
+            railways, and industrial machinery applications.
           </p>
         </div>
-        <div className="db6-img d-flex">
+        {/* <div className="db6-img d-flex">
           <img
-            src="/image/Spring Steels/50CrV4 Round Bars.png"
-            alt="50CrV4 Spring Steel"
+            src="/image/Spring Steels/55Si7 Round Bars.png"
+            alt="55Si7 Round Bars"
             width={250}
           />
           <img
-            src="/image/Spring Steels/EN 47 Wire Rod.png"
-            alt="50CrV4 Spring Steel"
+            src="/image/Spring Steels/55Si7 Flat Bars.png"
+            alt="55Si7 Flat Bars"
             width={250}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}
@@ -93,8 +92,6 @@ export default function SpringSteelEN47() {
                   <th>C</th>
                   <th>Si</th>
                   <th>Mn</th>
-                  <th>Cr</th>
-                  <th>V</th>
                   <th>P</th>
                   <th>S</th>
                 </tr>
@@ -102,13 +99,11 @@ export default function SpringSteelEN47() {
               <tbody>
                 <tr>
                   <td>Range</td>
-                  <td>0.47 – 0.55</td>
-                  <td>≤ 0.40</td>
-                  <td>0.70 – 1.10</td>
-                  <td>0.90 – 1.20</td>
-                  <td>0.10 – 0.25</td>
-                  <td>≤ 0.025</td>
-                  <td>≤ 0.025</td>
+                  <td>0.52 – 0.60</td>
+                  <td>1.50 – 2.00</td>
+                  <td>0.60 – 0.90</td>
+                  <td>≤ 0.035</td>
+                  <td>≤ 0.035</td>
                 </tr>
               </tbody>
             </table>
@@ -131,31 +126,31 @@ export default function SpringSteelEN47() {
               <td>
                 Tensile Strength, R<sub>m</sub>
               </td>
-              <td>1350 – 1650 MPa</td>
+              <td>1200 – 1500 MPa</td>
             </tr>
             <tr>
               <td>
                 Yield Strength, R<sub>p0.2</sub>
               </td>
-              <td>≈ 1200 MPa (for small cross-sections)</td>
+              <td>≈ 900 – 1100 MPa</td>
             </tr>
             <tr>
               <td>
                 Elongation, A<sub>5</sub>
               </td>
-              <td>≥ 6%</td>
+              <td>≥ 10 %</td>
             </tr>
             <tr>
               <td>Reduction of Area, Z</td>
-              <td>≈ 30%</td>
+              <td>≈ 45 %</td>
             </tr>
             <tr>
-              <td>Hardness (HB) in Annealed State</td>
-              <td>≤ 248 HB</td>
+              <td>Hardness (Annealed)</td>
+              <td>≤ 230 HB</td>
             </tr>
             <tr>
-              <td>Impact Energy (Notched)</td>
-              <td>≈ 8 J (small cross-section)</td>
+              <td>Hardness (Q & T)</td>
+              <td>≈ 42 – 48 HRC</td>
             </tr>
           </tbody>
         </table>
@@ -165,15 +160,15 @@ export default function SpringSteelEN47() {
       <section className="process-route mx-auto mt-3">
         <h3>Process & Heat Treatment</h3>
         <div className="process-flow">
-          <div className="step">Melting / Refining (EAF / LF / ESR)</div>
+          <div className="step">Melting / Refining (EAF / LF / VD)</div>
           <span className="arrow">→</span>
           <div className="step">Forging / Rolling</div>
           <span className="arrow">→</span>
-          <div className="step">Normalizing / Annealing</div>
+          <div className="step">Normalising / Annealing</div>
           <span className="arrow">→</span>
-          <div className="step">Final Machining</div>
+          <div className="step">Oil Quenching</div>
           <span className="arrow">→</span>
-          <div className="step">Quenching & Tempering</div>
+          <div className="step">Tempering</div>
         </div>
 
         <div className="heat-card mt-4">
@@ -181,20 +176,20 @@ export default function SpringSteelEN47() {
           <table className="table table-bordered">
             <tbody>
               <tr>
-                <th>Preheat / Normalizing</th>
-                <td>830 – 900 °C</td>
+                <th>Normalising Temperature</th>
+                <td>830 – 870 °C</td>
               </tr>
               <tr>
-                <th>Quenching Temperature</th>
-                <td>≈ 850 °C (oil quench)</td>
+                <th>Hardening Temperature</th>
+                <td>850 – 880 °C (oil quench)</td>
               </tr>
               <tr>
                 <th>Tempering Range</th>
-                <td>400 – 500 °C (based on required strength)</td>
+                <td>400 – 520 °C (as per hardness required)</td>
               </tr>
               <tr>
                 <th>Resulting Hardness</th>
-                <td>≈ 38.5 – 52.5 HRC</td>
+                <td>≈ 42 – 48 HRC</td>
               </tr>
             </tbody>
           </table>
@@ -205,31 +200,29 @@ export default function SpringSteelEN47() {
       <section className="applications">
         <h2>Applications</h2>
         <p>
-          Commonly used for coil and leaf springs, torsion bars, shafts, pins,
-          automobile suspension parts, hand tools, gears, fasteners, and other
-          components subject to repeated stress and shock loads.
+          Extensively used for automotive and railway springs, suspension coils,
+          and industrial spring components subjected to heavy shock loads.
+          Suitable for leaf springs, coil springs, torsion bars, and similar
+          dynamic parts.
         </p>
       </section>
 
       {/* Availability */}
-      {/* Availability & Stock Info */}
       <section className="availability-info my-4">
         <div className="container">
-          <h3 className="mb-3">Availability & Supply</h3>
+          <h4 className="mb-3">Availability & Supply</h4>
           <p>
-            <strong>50CrV4 / 51CrV4:</strong> Round bars available from 16 mm to
-            90 mm with MOQ 300 Kgs and wire rods from 5.5 mm to 32 mm with MOQ
-            2.2 – 3.0 Tonnes — all in <strong>ready stock</strong>.
+            55Si7 / SAE 9255 spring steel is available in annealed or quenched &
+            tempered condition in the form of rounds, flats, and coils. Custom
+            sizes and heat treatment options are available upon request.
           </p>
-          <p>
-            <strong>EN47 / AISI 6150 / DIN 1.8159:</strong> Available on
-            <strong>advance order</strong>
-            in both round bar and wire rod form.
-          </p>
-          <p>
-            Customized cut lengths, surface finishing, heat treatment, and
-            testing services are offered on request.
-          </p>
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              Saw cutting, hardness testing, ultrasonic inspection, and heat
+              treatment services offered as per customer specifications.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -238,6 +231,7 @@ export default function SpringSteelEN47() {
         <Link to="/enquiry" className="btn btn-primary">
           Request an Enquiry
         </Link>
+        <span>MOQ: 5 Tonnes</span>
       </div>
     </div>
   );

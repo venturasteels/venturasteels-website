@@ -61,7 +61,7 @@ export default function SpringSteel52CrMoV4() {
             resistance.
           </p>
         </div>
-        <div className="db6-img d-flex">
+        {/* <div className="db6-img d-flex">
           <img
             src="/image/Spring Steels/52CrMoV4 Round Bar.png"
             alt="52CrMoV4 Spring Steel"
@@ -72,7 +72,7 @@ export default function SpringSteel52CrMoV4() {
             alt="50Cr4MoV2 Spring Steel"
             width={250}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}

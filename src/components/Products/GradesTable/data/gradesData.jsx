@@ -47,12 +47,18 @@ const gradesData = [
         link: "/products/spring-steel/EN45",
       },
       { name: " SAE 5160", link: "/products/spring-steel/SAE5160" },
-      { name: " 52CrMoV4 / 50Cr4MoV2", link: "/products/spring-steel/50CrMoV4" },
+      {
+        name: " 52CrMoV4 / 50Cr4MoV2",
+        link: "/products/spring-steel/50CrMoV4",
+      },
       {
         name: " 52CrV4 / 51CrV4 / AISI 4150",
         link: "/products/spring-steel/52CrV4",
       },
-      { name: " 55Si7 / 56Si7 / SAE 9255", link: "/products/spring-steel/" },
+      {
+        name: " 55Si7 / 56Si7 / SAE 9255",
+        link: "/products/spring-steel/55Si7",
+      },
     ],
   },
   {

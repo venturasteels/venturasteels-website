@@ -46,6 +46,11 @@ import EN31 from "./components/Products/Spring-Steel/Grades/EN31/EN31.jsx";
 import EN45 from "./components/Products/Spring-Steel/Grades/EN45/EN45.jsx";
 import SAE5160 from "./components/Products/Spring-Steel/Grades/SAE5160/SAE5160.jsx";
 import SpringSteel52CrMoV4 from "./components/Products/Spring-Steel/Grades/52CrMoV4/52CrMoV4.jsx";
+import SpringSteel52CrV4 from "./components/Products/Spring-Steel/Grades/52CrV4/52CrV4.jsx";
+import SpringSteel55Si7 from "./components/Products/Spring-Steel/Grades/55Si7/55Si7.jsx";
+
+// Alloy Steel
+import AlloySteel from "./components/Products/Alloy-Steel/alloy-steel.jsx";
 
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
@@ -109,12 +114,17 @@ const App = () => {
           <Route path="/products/spring-steel" element={<SpringSteel />}>
             <Route path="EN47" element={<SpringSteelEN47 />} />
             <Route path="SUP9" element={<SUP9 />} />
-            {/* <Route path="SAE9254" element={<SpringSteelSAE9254 />} />
+            <Route path="SAE9254" element={<SpringSteelSAE9254 />} />
             <Route path="EN31" element={<EN31 />} />
-            <Route path="EN45" element={<EN45 />} />
+            {/* <Route path="EN45" element={<EN45 />} />
             <Route path="SAE5160" element={<SAE5160 />} />
-            <Route path="52CrMoV4" element={<SpringSteel52CrMoV4 />} /> */}
+            <Route path="52CrMoV4" element={<SpringSteel52CrMoV4 />} />
+            <Route path="52CrV4" element={<SpringSteel52CrV4 />} />
+            <Route path="55sI7" element={<SpringSteel55Si7 />} /> */}
           </Route>
+          {/* <Route path="/products/alloy-steel" element={<AlloySteel />}>
+            <Route path="EN47" element={<SpringSteelEN47 />} />
+          </Route> */}
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
             <Route path="15B25" element={<Boron15B25 />} />

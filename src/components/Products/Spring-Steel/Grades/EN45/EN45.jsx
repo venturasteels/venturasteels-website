@@ -66,13 +66,13 @@ export default function EN45() {
             applications.
           </p>
         </div>
-        <div className="db6-img d-flex">
+        {/* <div className="db6-img d-flex">
           <img
             src="/image/Spring Steels/Spring Steel Round Bars.png"
             alt="EN45 Spring Steel"
             width={250}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}

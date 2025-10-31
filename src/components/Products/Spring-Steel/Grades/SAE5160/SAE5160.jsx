@@ -63,13 +63,13 @@ export default function SAE5160() {
             both quenched & tempered and oil-hardened conditions.
           </p>
         </div>
-        <div className="db6-img d-flex">
+        {/* <div className="db6-img d-flex">
           <img
             src="/image/Spring Steels/Spring Steel Round Bars.png"
             alt="SAE 5160 Spring Steel"
             width={250}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}
