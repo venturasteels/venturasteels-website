@@ -8,7 +8,7 @@ const AlloySteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/alloy-steel\/(20MnCr5|SAE4140|SAE1020|41Cr5|EN41B|EN24|SAE4130|EN36C|SAE8620)/;
+      /^\/products\/alloy-steel\/(20MnCr5|SAE4140|SAE1020|41Cr4|EN41B|EN24|SAE4130|EN36C|SAE8620)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 

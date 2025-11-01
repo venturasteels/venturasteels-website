@@ -21,16 +21,22 @@
   <meta property="og:url" content="https://venturasteels.onrender.com/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Optional: Theme and App info -->
-  <meta name="theme-color" content="#0d6efd" />
+  <!--Theme and App info -->
+  <meta name="theme-color" content="#273F4F" />
 
-  <link rel="stylesheet" href="./src/index.css">
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="./src/index.css" as="style" />
+  <link rel="stylesheet" href="./src/index.css" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <script type="module" src="/src/main.jsx" defer></script>
 </body>
 
 </html>

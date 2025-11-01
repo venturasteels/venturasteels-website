@@ -51,6 +51,10 @@ import SpringSteel55Si7 from "./components/Products/Spring-Steel/Grades/55Si7/55
 
 // Alloy Steel
 import AlloySteel from "./components/Products/Alloy-Steel/alloy-steel.jsx";
+import AlloySteel20MnCr5 from "./components/Products/Alloy-Steel/Grades/20MnCr5/20MnCr5.jsx";
+import AlloySteelSAE4140 from "./components/Products/Alloy-Steel/Grades/SAE4140/SAE4140.jsx";
+import AlloySteelSAE1020 from "./components/Products/Alloy-Steel/Grades/SAE1020/SAE1020.jsx";
+import AlloySteel41Cr4 from "./components/Products/Alloy-Steel/Grades/41Cr4/41Cr4.jsx";
 
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
@@ -116,15 +120,18 @@ const App = () => {
             <Route path="SUP9" element={<SUP9 />} />
             <Route path="SAE9254" element={<SpringSteelSAE9254 />} />
             <Route path="EN31" element={<EN31 />} />
-            {/* <Route path="EN45" element={<EN45 />} />
-            <Route path="SAE5160" element={<SAE5160 />} />
+            <Route path="EN45" element={<EN45 />} />
+            {/* <Route path="SAE5160" element={<SAE5160 />} />
             <Route path="52CrMoV4" element={<SpringSteel52CrMoV4 />} />
             <Route path="52CrV4" element={<SpringSteel52CrV4 />} />
             <Route path="55sI7" element={<SpringSteel55Si7 />} /> */}
           </Route>
-          {/* <Route path="/products/alloy-steel" element={<AlloySteel />}>
-            <Route path="EN47" element={<SpringSteelEN47 />} />
-          </Route> */}
+          <Route path="/products/alloy-steel" element={<AlloySteel />}>
+            <Route path="20MnCr5" element={<AlloySteel20MnCr5 />} />
+            <Route path="SAE4140" element={<AlloySteelSAE4140 />} />
+            <Route path="SAE1020" element={<AlloySteelSAE1020 />} />
+            <Route path="41Cr4" element={<AlloySteel41Cr4 />} />
+          </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
             <Route path="15B25" element={<Boron15B25 />} />

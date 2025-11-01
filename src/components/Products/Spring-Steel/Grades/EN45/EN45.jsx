@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 export default function EN45() {
   return (
     <div className="grade-details">
-      <h2 className="text-center">
-        EN45 / 60Si7 / SAE 9260 / SUP6 / DIN 1.7108
-      </h2>
+      <h2 className="text-center">EN45 / SAE 9260 / 60Si7</h2>
       <p className="subtitle text-center">
         A silicon-manganese spring steel offering excellent resilience, fatigue
         strength, and shock resistance for heavy-duty applications.

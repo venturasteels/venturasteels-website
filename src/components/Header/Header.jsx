@@ -709,55 +709,55 @@ export default function Header() {
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN24")}
+                    onClick={() => handleNavClick("/products/alloy-steel/20MnCr5")}
                     className="dropdown-item "
                   >
                     20MnCr5 / 16MnCr5
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN19")}
+                    onClick={() => handleNavClick("/products/alloy-steel/SAE4140")}
                     className="dropdown-item "
                   >
                     SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    onClick={() => handleNavClick("/products/alloy-steel/SAE1020")}
                     className="dropdown-item "
                   >
                     SAE 1020
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    onClick={() => handleNavClick("/products/alloy-steel/41Cr4")}
                     className="dropdown-item "
                   >
                     41Cr4 / EN18 / 40Cr4B
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    onClick={() => handleNavClick("/products/alloy-steel/EN41B")}
                     className="dropdown-item "
                   >
                     EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    onClick={() => handleNavClick("/products/alloy-steel/EN24")}
                     className="dropdown-item "
                   >
                     EN 24 / 18CrNiMo6
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    onClick={() => handleNavClick("/products/alloy-steel/SAE4130")}
                     className="dropdown-item "
                   >
                     SAE4130
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    onClick={() => handleNavClick("/products/alloy-steel/EN36C")}
                     className="dropdown-item "
                   >
                     EN36C
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    onClick={() => handleNavClick("/products/alloy-steel/SAE8620")}
                     className="dropdown-item "
                   >
                     SAE 8620 / EN353 / SAE 9310
