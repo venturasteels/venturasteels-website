@@ -208,11 +208,11 @@ const AboutUs = () => {
                 >
                   <div className="card shadow-sm h-100 border-0 position-relative">
                     <div className={`color-bar ${member.color}`}></div>
-                    <img
+                    {/* <img
                       src={member.image}
                       alt={member.name}
                       className="card-img-top profile-img"
-                    />
+                    /> */}
                     <div className="card-body text-center">
                       <h5 className="fw-semibold mt-3">{member.name}</h5>
                       <p className="small text-muted">{member.role}</p>

@@ -55,6 +55,14 @@ import AlloySteel20MnCr5 from "./components/Products/Alloy-Steel/Grades/20MnCr5/
 import AlloySteelSAE4140 from "./components/Products/Alloy-Steel/Grades/SAE4140/SAE4140.jsx";
 import AlloySteelSAE1020 from "./components/Products/Alloy-Steel/Grades/SAE1020/SAE1020.jsx";
 import AlloySteel41Cr4 from "./components/Products/Alloy-Steel/Grades/41Cr4/41Cr4.jsx";
+import AlloySteelEN41B from "./components/Products/Alloy-Steel/Grades/EN41B/EN41B.jsx";
+import AlloySteelEN24 from "./components/Products/Alloy-Steel/Grades/EN24/EN24.jsx";
+import AlloySteelSAE4130 from "./components/Products/Alloy-Steel/Grades/SAE4130/SAE4130.jsx";
+import AlloySteelEN36C from "./components/Products/Alloy-Steel/Grades/EN36C/EN36C.jsx";
+import AlloySteelSAE8620 from "./components/Products/Alloy-Steel/Grades/SAE8620/SAE8620.jsx";
+
+// Carbon Steel
+import CarbonSteel from "./components/Products/Carbon-Steel/carbon-steel.jsx";
 
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
@@ -131,6 +139,14 @@ const App = () => {
             <Route path="SAE4140" element={<AlloySteelSAE4140 />} />
             <Route path="SAE1020" element={<AlloySteelSAE1020 />} />
             <Route path="41Cr4" element={<AlloySteel41Cr4 />} />
+            <Route path="EN41B" element={<AlloySteelEN41B />} />
+            <Route path="EN24" element={<AlloySteelEN24 />} />
+            <Route path="SAE4130" element={<AlloySteelSAE4130 />} />
+            <Route path="EN36C" element={<AlloySteelEN36C />} />
+            <Route path="SAE8620" element={<AlloySteelSAE8620 />} />
+          </Route>
+          <Route path="/products/carbon-steel" element={<CarbonSteel />}>
+            {/* <Route path="10B21" element={<Boron10B21 />} /> */}
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
