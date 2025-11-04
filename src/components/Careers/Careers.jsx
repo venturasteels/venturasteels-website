@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal, Form, Card, Row, Col, Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import CareerApplicationModal from "./CareersForm";
 import "./Careers.css";
 
 const jobOpenings = [
@@ -254,57 +255,13 @@ export default function Careers() {
         </Modal>
 
         {/* Application Form Modal */}
-        <Modal
-          show={showForm}
-          onHide={() => setShowForm(false)}
-          size="lg"
-          centered
-          className="apply-form-modal"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>Application Form</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Form>
-              {!isQuickApply ? (
-                <Form.Group className="mb-3">
-                  <Form.Label>Position</Form.Label>
-                  <Form.Control
-                    type="text"
-                    value={selectedJob?.title || ""}
-                    readOnly
-                  />
-                </Form.Group>
-              ) : (
-                <Form.Group className="mb-3">
-                  <Form.Label>Position</Form.Label>
-                  <Form.Select>
-                    {jobOpenings.map((job) => (
-                      <option key={job.id} value={job.title}>
-                        {job.title}
-                      </option>
-                    ))}
-                  </Form.Select>
-                </Form.Group>
-              )}
-              <Form.Group className="mb-3">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter your name" />
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter your email" />
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label>Resume</Form.Label>
-                <Form.Control type="file" />
-              </Form.Group>
-            </Form>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="success">Submit Application</Button>
-          </Modal.Footer>
-        </Modal>
+        <CareerApplicationModal
+          showForm={showForm}
+          setShowForm={setShowForm}
+          selectedJob={selectedJob}
+          jobOpenings={jobOpenings}
+          isQuickApply={isQuickApply}
+        />
       </div>
     </>
   );

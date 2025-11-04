@@ -63,6 +63,16 @@ import AlloySteelSAE8620 from "./components/Products/Alloy-Steel/Grades/SAE8620/
 
 // Carbon Steel
 import CarbonSteel from "./components/Products/Carbon-Steel/carbon-steel.jsx";
+import CarbonSteelC45 from "./components/Products/Carbon-Steel/Grades/C45/C45.jsx";
+import CarbonSteelSAE1018 from "./components/Products/Carbon-Steel/Grades/SAE1018/SAE1018.jsx";
+import CarbonSteelST52 from "./components/Products/Carbon-Steel/Grades/ST52.3/ST52.3.jsx";
+import CarbonSteelEN1A from "./components/Products/Carbon-Steel/Grades/EN1A/EN1A.jsx";
+import CarbonSteel35C8 from "./components/Products/Carbon-Steel/Grades/35C8/35C8.jsx";
+import CarbonSteelSAE1541 from "./components/Products/Carbon-Steel/Grades/SAE1541/SAE1541.jsx";
+import CarbonSteel27C15 from "./components/Products/Carbon-Steel/Grades/27C15/27C15.jsx";
+import CarbonSteelSAE1117 from "./components/Products/Carbon-Steel/Grades/SAE1117/SAE1117.jsx";
+import CarbonSteelEN43BCr from "./components/Products/Carbon-Steel/Grades/EN43BCr/EN43BCr.jsx";
+import CarbonSteelSAE1141 from "./components/Products/Carbon-Steel/Grades/SAE1141/SAE1141.jsx";
 
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
@@ -129,10 +139,10 @@ const App = () => {
             <Route path="SAE9254" element={<SpringSteelSAE9254 />} />
             <Route path="EN31" element={<EN31 />} />
             <Route path="EN45" element={<EN45 />} />
-            {/* <Route path="SAE5160" element={<SAE5160 />} />
+            <Route path="SAE5160" element={<SAE5160 />} />
             <Route path="52CrMoV4" element={<SpringSteel52CrMoV4 />} />
             <Route path="52CrV4" element={<SpringSteel52CrV4 />} />
-            <Route path="55sI7" element={<SpringSteel55Si7 />} /> */}
+            <Route path="55Si7" element={<SpringSteel55Si7 />} />
           </Route>
           <Route path="/products/alloy-steel" element={<AlloySteel />}>
             <Route path="20MnCr5" element={<AlloySteel20MnCr5 />} />
@@ -146,7 +156,16 @@ const App = () => {
             <Route path="SAE8620" element={<AlloySteelSAE8620 />} />
           </Route>
           <Route path="/products/carbon-steel" element={<CarbonSteel />}>
-            {/* <Route path="10B21" element={<Boron10B21 />} /> */}
+            <Route path="C45" element={<CarbonSteelC45 />} />
+            <Route path="SAE1018" element={<CarbonSteelSAE1018 />} />
+            <Route path="ST52.3" element={<CarbonSteelST52 />} />
+            <Route path="EN1A" element={<CarbonSteelEN1A />} />
+            <Route path="35C8" element={<CarbonSteel35C8 />} />
+            <Route path="SAE1541" element={<CarbonSteelSAE1541 />} />
+            <Route path="27C15" element={<CarbonSteel27C15 />} />
+            <Route path="SAE1117" element={<CarbonSteelSAE1117 />} />
+            <Route path="EN43BCr" element={<CarbonSteelEN43BCr />} />
+            <Route path="SAE1141" element={<CarbonSteelSAE1141 />} />
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
