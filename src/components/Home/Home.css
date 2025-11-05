@@ -397,20 +397,50 @@
 /* certified section */
 .trusted-certificates {
   background-color: #f8f9fa;
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .trusted-certificates h3 {
   color: #273f4f;
   font-weight: 700;
-  margin-bottom: 20px;
   font-size: 2rem;
 }
 
 .trusted-certificates p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.certificates-logo-carousel .certificate-logo-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-logo-card {
+  background: linear-gradient(145deg, #ffffff, #e8eef2);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(39, 63, 79, 0.1);
+  padding: 20px;
+  width: 180px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.certificate-logo-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(39, 63, 79, 0.2);
+  background: linear-gradient(145deg, #ffffff, #dce6eb);
+}
+
+.certificate-img {
   max-width: 100%;
-  margin: 0 auto 30px;
+  max-height: 70px;
+  object-fit: contain;
 }
 
 .trusted-certificates .btn {
@@ -418,20 +448,24 @@
   font-weight: 500;
   padding: 10px 25px;
   transition: 0.3s ease;
-}
-
-.trusted-certificates .btn-outline-primary {
-  color: #273f4f;
   border-color: #273f4f;
+  color: #273f4f;
 }
 
-.trusted-certificates .btn-outline-primary:hover {
+.trusted-certificates .btn:hover {
   background-color: #273f4f;
   color: #fff;
 }
-.trusted-certificates .col-md-2 {
-  flex: 0 0 auto;
-  width: 21.666667%;
+
+/* Slick spacing fix */
+.slick-slide {
+  padding: 10px;
+}
+
+
+/* Optional: slick-specific spacing */
+.slick-slide {
+  padding: 10px;
 }
 
 /* suppliers  */

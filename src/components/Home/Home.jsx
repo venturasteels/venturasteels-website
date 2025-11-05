@@ -21,6 +21,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useInView } from "react-intersection-observer";
 import { useRef } from "react";
 import CountUp from "react-countup";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
 
 const Home = () => {
@@ -48,7 +51,7 @@ const Home = () => {
     },
     {
       icon: <FaUsers />,
-      value: 1700,
+      value: 1800,
       suffix: "+",
       label: "Customers",
       className: "card-gray",
@@ -99,6 +102,42 @@ const Home = () => {
       link: "/products/tool",
     },
   ];
+
+  const certificates = [
+    { src: "/image/certificate-logo/BSCIC-icon.png", alt: "BSCIC" },
+    { src: "/image/certificate-logo/cii-logo.jpeg", alt: "CII" },
+    {
+      src: "/image/certificate-logo/tagma-india-logo1.png",
+      alt: "TAGMA INDIA",
+    },
+    { src: "/image/certificate-logo/images.jpeg", alt: "AHK" },
+    { src: "/image/certificate-logo/Alucast-logo.png", alt: "ALUCAST" },
+    { src: "/image/certificate-logo/DISMA-logo.png", alt: "DISMA" },
+    { src: "/image/certificate-logo/MASSMA-logo.png", alt: "MASSMA" },
+    { src: "/image/certificate-logo/SUFI-logo.png", alt: "SUFI" },
+    { src: "/image/certificate-logo/TSSIA.png", alt: "TSSIA" },
+    { src: "/image/certificate-logo/AIFI-logo.png", alt: "AIFI" },
+  ];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000, // Longer speed = smoother continuous effect
+    autoplaySpeed: 0, // Key: no delay between slides
+    cssEase: "linear", // Key: makes it slide smoothly without stop
+    arrows: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    responsive: [
+      { breakpoint: 1200, settings: { slidesToShow: 5 } },
+      { breakpoint: 992, settings: { slidesToShow: 4 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
+      { breakpoint: 576, settings: { slidesToShow: 2 } },
+    ],
+  };
 
   const [productsRef, productsInView] = useInView({
     triggerOnce: true,
@@ -158,7 +197,10 @@ const Home = () => {
             Industrial excellence in every grade – strength, precision, and
             reliability you can trust.
           </p>
-          <a href="/enquiry" className="btn btn-outline-light overlay-enquiry-btn">
+          <a
+            href="/enquiry"
+            className="btn btn-outline-light overlay-enquiry-btn"
+          >
             Enquire Now
           </a>
         </div>
@@ -212,7 +254,7 @@ const Home = () => {
                 Ventura Alloys & Steels, a leading supplier of premium tool
                 steel, die steel, and engineering steel, is well-known for its
                 large inventory, quick delivery, and unmatched customer service.
-                Since 2014, we have provided services to over 1,700 clients
+                Since 2014, we have provided services to over 1,800 clients
                 globally.
               </p>
               <Link to="/about" className="btn btn-color mt-3">
@@ -404,41 +446,28 @@ const Home = () => {
         data-aos="fade-up"
       >
         <div className="container text-center">
-          <h3 className="mb-4 text-dark fw-bold">Trusted & Certified</h3>
-          <p className="mb-4 text-muted">
-            Our steel meets the highest international standards. Certified for
-            quality, reliability, and sustainability.
+          <h3 className="mb-3 text-dark fw-bold">Certified & Proud Members</h3>
+          <p className="mb-5 text-muted">
+            Ventura Steels is recognized by leading industry associations and
+            accredited certification bodies. Our memberships and quality
+            certifications reflect our commitment to excellence, reliability,
+            and international manufacturing standards.
           </p>
-          <div className="row justify-content-center align-items-center g-4 gap-3 mt-4">
-            <div className="col-6 col-md-2">
-              <img
-                src="/image/certificate-logo/BSCIC-icon.png"
-                alt="ISO Certified"
-                height={90}
-              />
-            </div>
-            <div className="col-6 col-md-2">
-              <img
-                src="/image/certificate-logo/cii-logo.jpeg"
-                alt="PED Approved"
-                height={90}
-              />
-            </div>
-            <div className="col-6 col-md-2">
-              <img
-                src="/image/certificate-logo/tagma-india-logo.webp"
-                alt="MSME Registered"
-                height={50}
-              />
-            </div>
-            <div className="col-6 col-md-2">
-              <img
-                src="/image/certificate-logo/images.jpeg"
-                alt="Startup India"
-                height={90}
-              />
-            </div>
-          </div>
+
+          <Slider {...settings} className="certificates-logo-carousel">
+            {certificates.map((cert, index) => (
+              <div key={index} className="certificate-logo-slide text-center">
+                <div className="certificate-logo-card mx-auto">
+                  <img
+                    src={cert.src}
+                    alt={cert.alt}
+                    className="certificate-img mx-auto"
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
+
           <div className="mt-5">
             <a href="/certifications" className="btn btn-outline-primary">
               View All Certificates
@@ -453,15 +482,14 @@ const Home = () => {
           <h2 className="fw-bold mb-5">Trusted Suppliers</h2>
           <div className="suppliers-flex d-flex flex-wrap justify-content-center gap-4">
             {[
-              { logo: "/image/jsw-logo.png", name: "JSW" },
-              { logo: "/image/RL steels logo.png", name: "RL Steels" },
-              { logo: "/image/dongbe-logo.png", name: "Dongbei" },
-              { logo: "/image/logo-bhushan.png", name: "Bhushan" },
+              { logo: "/image/jsw-logo.png" },
+              { logo: "/image/logo-bhushan.png" },
+              { logo: "/image/RL steels logo.png" },
+              { logo: "/image/dongbe-logo.png" },
               {
                 logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp",
-                name: "Jiangsu Zhuhong",
               },
-              { logo: "/image/taihe.webp", name: "Taihe" },
+              { logo: "/image/taihe.webp" },
             ].map((supplier, idx) => (
               <div
                 key={idx}
