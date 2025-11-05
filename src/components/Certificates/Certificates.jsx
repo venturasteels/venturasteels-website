@@ -7,6 +7,16 @@ import "./Certificates.css";
 const certificates = [
   {
     title: "ISO 9001:2015 Certificate",
+    image: "/image/certificates/alucast certificate-1.png",
+    description: "Certified for Quality Management System",
+  },
+  {
+    title: "ISO 9001:2015 Certificate",
+    image: "/image/certificates/(Sept) A Membership Certificate FY 25-26-6-1.png",
+    description: "Certified for Quality Management System",
+  },
+  {
+    title: "ISO 9001:2015 Certificate",
     image: "/image/certificates/BSCIC-ISO.png",
     description: "Certified for Quality Management System",
   },
@@ -23,6 +33,11 @@ const certificates = [
   {
     title: "Darukhana Iron Steel & Scrap Merchants Association (DISMA)",
     image: "/image/certificates/TAGMA-updated.png",
+    description: "Certified for Quality Management System",
+  },
+  {
+    title: "Darukhana Iron Steel & Scrap Merchants Association (DISMA)",
+    image: "/image/certificates/DISMA.jpg",
     description: "Certified for Quality Management System",
   },
   {
