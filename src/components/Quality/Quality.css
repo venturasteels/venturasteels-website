@@ -38,8 +38,8 @@
 .quality-process {
   background-color: #fe774335;
 }
-.quality-process h2{
-color: #273f4f;
+.quality-process h2 {
+  color: #273f4f;
 }
 
 .certificates-gallery {
@@ -59,18 +59,18 @@ color: #273f4f;
   margin: 0 auto;
 }
 
-.certificate-image {
+.certificate-quality-image {
   position: relative;
   transition: all 0.4s ease;
 }
 
-.certificate-img {
+.certificate-quality-img {
   width: 280px;
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.certificate-image:hover .certificate-img {
+.certificate-quality-image:hover .certificate-quality-img {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
@@ -92,7 +92,7 @@ color: #273f4f;
   color: #fe7743;
 }
 
-.certificate-image:hover .certificate-overlay {
+.certificate-quality-image:hover .certificate-overlay {
   opacity: 1;
 }
 

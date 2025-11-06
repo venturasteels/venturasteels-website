@@ -116,7 +116,7 @@ export default function Careers() {
                   <span className="stat-label">Employees</span>
                 </div>
                 <div>
-                  <span className="stat-number">1700+</span>
+                  <span className="stat-number">1800+</span>
                   <span className="stat-label">Clients</span>
                 </div>
               </Col>

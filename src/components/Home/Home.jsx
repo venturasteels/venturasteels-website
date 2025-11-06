@@ -21,9 +21,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useInView } from "react-intersection-observer";
 import { useRef } from "react";
 import CountUp from "react-countup";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 
 const Home = () => {
@@ -119,25 +117,26 @@ const Home = () => {
     { src: "/image/certificate-logo/AIFI-logo.png", alt: "AIFI" },
   ];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 5000, // Longer speed = smoother continuous effect
-    autoplaySpeed: 0, // Key: no delay between slides
-    cssEase: "linear", // Key: makes it slide smoothly without stop
-    arrows: false,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    responsive: [
-      { breakpoint: 1200, settings: { slidesToShow: 5 } },
-      { breakpoint: 992, settings: { slidesToShow: 4 } },
-      { breakpoint: 768, settings: { slidesToShow: 3 } },
-      { breakpoint: 576, settings: { slidesToShow: 2 } },
-    ],
-  };
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const scrollContainer = carouselRef.current;
+    let scrollAmount = 0;
+
+    const scrollSpeed = 0.8;
+    const scroll = () => {
+      if (scrollContainer) {
+        scrollContainer.scrollLeft += scrollSpeed;
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+          scrollContainer.scrollLeft = 0;
+        }
+      }
+      requestAnimationFrame(scroll);
+    };
+    scroll();
+
+    return () => cancelAnimationFrame(scroll);
+  }, []);
 
   const [productsRef, productsInView] = useInView({
     triggerOnce: true,
@@ -454,19 +453,22 @@ const Home = () => {
             and international manufacturing standards.
           </p>
 
-          <Slider {...settings} className="certificates-logo-carousel">
-            {certificates.map((cert, index) => (
-              <div key={index} className="certificate-logo-slide text-center">
-                <div className="certificate-logo-card mx-auto">
-                  <img
-                    src={cert.src}
-                    alt={cert.alt}
-                    className="certificate-img mx-auto"
-                  />
+          {/* Continuous Carousel */}
+          <div className="certificates-carousel-wrapper" ref={carouselRef}>
+            <div className="certificates-carousel-track">
+              {[...certificates, ...certificates].map((cert, index) => (
+                <div key={index} className="certificate-logo-slide text-center">
+                  <div className="certificate-logo-card mx-auto">
+                    <img
+                      src={cert.src}
+                      alt={cert.alt}
+                      className="certificate-img mx-auto"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </div>
+          </div>
 
           <div className="mt-5">
             <a href="/certifications" className="btn btn-outline-primary">
@@ -489,7 +491,7 @@ const Home = () => {
               {
                 logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp",
               },
-              { logo: "/image/taihe.webp" },
+              { logo: "/image/taihe-logo.png" },
             ].map((supplier, idx) => (
               <div
                 key={idx}

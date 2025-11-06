@@ -12,19 +12,19 @@ const Infrastructure = () => {
   const features = [
     "10,000 Tonnes storage capacity",
     "Weighing Scales – 5 tonnes (4 Nos), 10 tonnes (1 No), plus 2 platform scales of 2 tonnes each",
-    "7 Cranes – 1×5T, 4×10T, 2×25T",
-    "7 Bandsaw Fully Automatic Servo Cutting Machines (250 / 400 / 450 / 600 / 700 / 830 MM capacity)",
-    "Permanent Magnetic Lifters – 1 to 25 Tonnes",
-    "Cutting facility in Tonnes and Inches – 3 Fully Automatic Servo cutting machines",
-    "New Bandsaw Fully Automatic Servo Cutting Machines (Wagon type & Angle cutting) coming this year",
-    "Horizontal Bandsaw Machine Sizes – 300MM (3), 460MM (3), 650MM (2), 650×850MM (1), 1000×1500MM (1)",
-    "Vertical Bandsaw Machine Sizes – 600H×2500W MM (3, Transversal), 600H×6000L MM (Longitudinal)",
-    "CNC Turning Facility up to 6M length & 600MM dia",
-    "MPI Testing Machine",
-    "Hardness Testing Machines",
-    "Barracks for batch-wise storage",
-    "Material loading capacity per hour: 50–70 Tonnes",
-    "5–7 vehicles can be loaded at a time",
+    "Cranes – 1×5T, 4×10T, 2×25T (total 7 cranes)",
+    "7 Bandsaw Fully Automatic Servo Cutting Machines – cutting capacity up to 830 MM",
+    "3 Fully Automatic Servo Cutting Machines for precise tonnage and inch cutting",
+    "New Wagon Type & Angle Cutting Bandsaw Machines – coming this year",
+    "Horizontal Bandsaw Machine Sizes – 300MM (3 Nos), 460MM (3 Nos), 650MM (2 Nos), 650×850MM (1 No), 1000×1500MM (1 No)",
+    "Vertical Bandsaw Machine Sizes – 600H×2500W MM (3 Nos, Transversal), 600H×6000L MM (1 No, Longitudinal)",
+    "Permanent Magnetic Lifters – 1 to 25 Tonnes lifting capacity",
+    "CNC Turning Facility – up to 6M length & 600MM dia",
+    "MPI Testing Machine for surface and internal flaw detection",
+    "Hardness Testing Machines for material quality assurance",
+    "Barracks for batch-wise storage and organized inventory management",
+    "Material loading capacity: 50–70 Tonnes per hour",
+    "Simultaneous loading capacity for 5–7 vehicles",
   ];
 
   return (
@@ -76,7 +76,7 @@ const Infrastructure = () => {
         <section className="infrReliable. Scalable. Ready for the Future.a-highlights-section py-5">
           <div className="container infra-highlights">
             {[
-              { icon: "bi-building", title: "60,000 Sq. Ft. Facility" },
+              { icon: "bi-building", title: "72,000 Sq. Ft. Facility" },
               {
                 icon: "bi-gear-wide-connected",
                 title: "Advanced Handling Equipment",

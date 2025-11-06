@@ -6,64 +6,66 @@ import "./Certificates.css";
 
 const certificates = [
   {
-    title: "ISO 9001:2015 Certificate",
+    title: "ALUCAST (Life Member)",
     image: "/image/certificates/alucast certificate-1.png",
-    description: "Certified for Quality Management System",
+    description:
+      "Life Member (Corporate) of Aluminium Casters’ Association, India.",
   },
   {
-    title: "ISO 9001:2015 Certificate",
-    image: "/image/certificates/(Sept) A Membership Certificate FY 25-26-6-1.png",
-    description: "Certified for Quality Management System",
+    title: "AIFI (2025–2026)",
+    image:
+      "/image/certificates/(Sept) A Membership Certificate FY 25-26-6-1.png",
+    description:
+      "Associate Member of the Association of Indian Forging Industry.",
   },
   {
-    title: "ISO 9001:2015 Certificate",
+    title: "BSCIC ISO 9001:2015 (2024–2027)",
     image: "/image/certificates/BSCIC-ISO.png",
-    description: "Certified for Quality Management System",
+    description:
+      "Certified for Quality Management System – Importer & Stockist of Alloy & Die Steels.",
   },
   {
-    title: "Indo-German Chamber of Commerce (IGCC)",
+    title: "IGCC (2025)",
     image: "/image/certificates/AHK-membership.png",
-    description: "Certified for Quality Management System",
+    description: "Member of the Indo-German Chamber of Commerce (IGCC).",
   },
   {
-    title: "Association of Indian Forging Industry (AIFI)",
+    title: "CII (2025)",
     image: "/image/certificates/CII-membership.png",
-    description: "Certified for Quality Management System",
+    description: "Member of the Confederation of Indian Industry (CII).",
   },
   {
-    title: "Darukhana Iron Steel & Scrap Merchants Association (DISMA)",
+    title: "TAGMA India Membership",
     image: "/image/certificates/TAGMA-updated.png",
-    description: "Certified for Quality Management System",
+    description:
+      "Membership certificate for Ventura Alloy And Steels Pvt. Ltd., Mumbai (2025–2026).",
   },
   {
-    title: "Darukhana Iron Steel & Scrap Merchants Association (DISMA)",
+    title: "DISMA Life Membership",
     image: "/image/certificates/DISMA.jpg",
-    description: "Certified for Quality Management System",
+    description:
+      "Life Membership certificate from The Darukhana Iron Steel & Scrap Merchants Association.",
   },
   {
-    title: "Metal and Stainless Steel Merchants Association (MASSMA)",
+    title: "MASSMA Life Membership",
     image: "/image/certificates/MASSMA-2.jpg",
-    description: "Certified for Quality Management System",
+    description:
+      "Life Membership certificate from the Metal and Stainless Steel Merchants’ Association.",
   },
   {
-    title: "Thane Small Scale Industries Association (TSSIA)",
+    title: "TSSIA (Life Member)",
     image: "/image/certificates/TSSIA-Membership.jpg",
-    description: "Certified for Quality Management System",
+    description: "Life Member of Thane Small Scale Industries Association.",
   },
   {
-    title: "Steel Chamber of India (SCI)",
+    title: "Steel Chamber of India (Permanent Member)",
     image: "/image/certificates/SCI.jpg",
-    description: "Certified for Quality Management System",
+    description: "Permanent Member of the Steel Chamber of India.",
   },
   {
-    title: "Steel Users Federation of India (SUFI)",
+    title: "SUFI (2016)",
     image: "/image/certificates/SUFI.jpg",
-    description: "Certified for Quality Management System",
-  },
-  {
-    title: "Chamber of Association of Maharashtra Industry & Trade (CAMIT)",
-    image: "/image/certificates/CAMIT.jpg",
-    description: "Certified for Quality Management System",
+    description: "Member of the Steel Users Federation of India (SUFI).",
   },
 ];
 

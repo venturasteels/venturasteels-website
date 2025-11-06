@@ -484,7 +484,7 @@ export default function EnquiryForm() {
                         className="selected-grade-tag d-flex flex-column gap-2 mb-2"
                       >
                         <div className="d-flex align-items-center gap-3">
-                          <span className="badge bg-secondary">{grade}</span>
+                          <span className="badge bg-secondary py-3">{grade}</span>
                           {!confirmGrades && (
                             <button
                               type="button"
@@ -505,9 +505,9 @@ export default function EnquiryForm() {
                                 handleShapeChange(grade, e.target.value)
                               }
                             >
-                              <option value="">Select Shape</option>
-                              <option value="Round Bar">Round Bar</option>
-                              <option value="Block">Block</option>
+                              <option value="" className="text-center">Select Shape</option>
+                              <option value="Round Bar" className="text-center">Round Bar</option>
+                              <option value="Block" className="text-center">Block</option>
                             </select>
                           )}
                           {errors[grade] && (
@@ -599,7 +599,7 @@ const ShapeFields = ({ grade, data, onChange }) => {
         <div className="col-md-5">
           <input
             type="number"
-            className="form-control"
+            className="form-control text-center"
             placeholder="Quantity"
             value={data.quantity}
             onChange={(e) => onChange(grade, "quantity", e.target.value)}
@@ -617,7 +617,7 @@ const ShapeFields = ({ grade, data, onChange }) => {
         <div className="col-md-4">
           <input
             type="number"
-            className="form-control"
+            className="form-control text-center"
             placeholder="Thickness (mm)"
             value={data.thickness}
             onChange={(e) => onChange(grade, "thickness", e.target.value)}
@@ -628,7 +628,7 @@ const ShapeFields = ({ grade, data, onChange }) => {
         <div className="col-md-4">
           <input
             type="number"
-            className="form-control"
+            className="form-control text-center"
             placeholder="Width (mm)"
             value={data.width}
             onChange={(e) => onChange(grade, "width", e.target.value)}
@@ -639,7 +639,7 @@ const ShapeFields = ({ grade, data, onChange }) => {
         <div className="col-md-4">
           <input
             type="number"
-            className="form-control"
+            className="form-control text-center"
             placeholder="Quantity"
             value={data.quantity}
             onChange={(e) => onChange(grade, "quantity", e.target.value)}

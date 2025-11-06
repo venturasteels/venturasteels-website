@@ -90,11 +90,11 @@ const Quality = () => {
         <div className="container text-center">
           <h2 className="fw-bold mb-4 section-title">Our Certification</h2>
           <div className="certificate-wrapper d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
-            <div className="certificate-image position-relative">
+            <div className="certificate-quality-image position-relative">
               <img
                 src="/image/certificates/BSCIC-ISO.png"
                 alt="ISO Certificate"
-                className="img-fluid shadow-lg rounded-4 certificate-img"
+                className="img-fluid shadow-lg rounded-4 certificate-quality-img"
               />
               <div className="certificate-overlay">
                 <i className="bi bi-patch-check-fill"></i>

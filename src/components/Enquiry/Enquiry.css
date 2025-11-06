@@ -155,9 +155,12 @@
   .enquiry-form input,
   .enquiry-form select,
   .enquiry-form textarea {
-    padding-left: 2rem;
-    font-size: 14px;
+    padding-left: 0rem;
+    font-size: 13px;
   }
+  .badge {
+    font-size: 14px;
+}
   .enquiry-form label {
     font-size: 0.78rem;
   }
