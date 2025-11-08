@@ -130,7 +130,8 @@ export default function Careers() {
             <h2 className="mb-4 careers-heading text-center mb-2 mt-3 ">
               Join Our Team
             </h2>
-            <Row>
+            <p className="text-center fs-3 text-muted "> No job found</p>
+            {/* <Row>
               {jobOpenings.map((job) => (
                 <Col md={6} key={job.id} className="mb-4">
                   <Card className="job-card shadow-sm h-100">
@@ -153,7 +154,7 @@ export default function Careers() {
                   </Card>
                 </Col>
               ))}
-            </Row>
+            </Row> */}
           </Col>
 
           {/* Sidebar Quick Apply */}
@@ -181,12 +182,12 @@ export default function Careers() {
                 </Button>
               </div>
 
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <strong>Competitive Pay</strong>
                 <p className="text-muted small mb-2">
                   Market-aligned compensation & benefits
                 </p>
-              </div>
+              </div> */}
               <div className="mb-3">
                 <strong>Career Growth</strong>
                 <p className="text-muted small mb-2">
