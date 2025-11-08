@@ -186,7 +186,10 @@ const Home = () => {
       {/* video-banner */}
       <div className="video-banner">
         <video autoPlay loop muted className="bg-video w-100">
-          <source src="/videoes/ventura-home-bg.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto/ventura-home-bg_cpbnxi.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
 
@@ -479,39 +482,40 @@ const Home = () => {
       </section>
 
       {/* Suppliers Section */}
-      <section className="suppliers-section py-5 bg-light" data-aos="fade-up">
+      <section
+        className="suppliers-section py-5 position-relative"
+        data-aos="fade-up"
+      >
         <div className="container text-center">
-          <h2 className="fw-bold mb-5">Trusted Suppliers</h2>
-          <div className="suppliers-flex d-flex flex-wrap justify-content-center gap-4">
+          <h2 className="fw-bold mb-5 text-uppercase text-dark">
+            Trusted Suppliers
+          </h2>
+
+          <div className="suppliers-row d-flex justify-content-center align-items-center flex-wrap gap-4">
             {[
               { logo: "/image/jsw-logo.png" },
               { logo: "/image/logo-bhushan.png" },
-              { logo: "/image/RL steels logo.png" },
+              { logo: "/image/RL-Logonew.png" },
               { logo: "/image/dongbe-logo.png" },
-              {
-                logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp",
-              },
+              { logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp" },
               { logo: "/image/taihe-logo.png" },
             ].map((supplier, idx) => (
               <div
                 key={idx}
-                className="supplier-item d-flex flex-column align-items-center"
+                className="supplier-card bg-white border-0 rounded-4 shadow-sm p-3"
               >
-                <div className="supplier-card text-center p-3 bg-white rounded-4 shadow-sm border border-light hover-shadow transition">
-                  <div
-                    className="logo-wrapper mb-2 d-flex align-items-center justify-content-center rounded-circle bg-light"
-                    style={{ width: "100px", height: "100px" }}
-                  >
-                    <img
-                      src={supplier.logo}
-                      alt={supplier.name}
-                      className="img-fluid"
-                      style={{ maxHeight: "70%", objectFit: "contain" }}
-                    />
-                  </div>
-                  <p className="supplier-name mb-0 text-dark fw-semibold">
-                    {supplier.name}
-                  </p>
+                <div className="logo-wrapper d-flex align-items-center justify-content-center rounded-3">
+                  <img
+                    src={supplier.logo}
+                    alt={`Supplier ${idx + 1}`}
+                    className="img-fluid"
+                    style={{
+                      maxWidth: "70%",
+                      maxHeight: "70%",
+                      objectFit: "contain",
+                      mixBlendMode: "multiply",
+                    }}
+                  />
                 </div>
               </div>
             ))}

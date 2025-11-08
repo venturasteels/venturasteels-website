@@ -534,24 +534,52 @@
 
 
 /* suppliers  */
+/* Section background */
+.suppliers-section {
+  background: linear-gradient(135deg, #f9fafc, #eef2f5);
+  border-top: 1px solid #e3e7eb;
+  border-bottom: 1px solid #e3e7eb;
+}
+
+/* Supplier Row */
+.suppliers-row {
+  flex-wrap: nowrap; /* keeps in one line */
+  overflow-x: auto; /* enables horizontal scroll if too many */
+  scrollbar-width: none; /* hides scrollbar for Firefox */
+}
+
+.suppliers-row::-webkit-scrollbar {
+  display: none; /* hides scrollbar for Chrome */
+}
+
+/* Supplier card */
 .supplier-card {
-  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 0 0 auto;
+  width: 150px;
+  height: 120px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e0e0e0;
+  background: #fff;
 }
+
 .supplier-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(39, 63, 79, 0.15);
+  border-color: #447d9b;
 }
 
+/* Logo container */
 .logo-wrapper {
-  transition: transform 0.3s;
-}
-.supplier-card:hover .logo-wrapper {
-  transform: scale(1.05);
+  background: #f0f4f7; 
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.supplier-name {
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
+.supplier-card:hover .logo-wrapper {
+  background: #e8f2f8;
+  transform: scale(1.05);
 }
 
 /* Responsive */
@@ -623,18 +651,15 @@
   }
 
   /* suppliers section */
-  .supplier-card {
-    padding: 1rem;
+  .suppliers-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
   }
 
-  .supplier-logo {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .about-section h2 {
-    margin-top: 20px;
+  .supplier-card {
+    width: 120px;
+    height: 100px;
   }
 }
 
