@@ -28,7 +28,7 @@ const Home = () => {
   const stats = [
     {
       icon: <FaCalendarCheck />,
-      value: 2014,
+      value: "2014",
       suffix: "",
       label: "Established",
       className: "card-blue",
@@ -223,7 +223,7 @@ const Home = () => {
                 <CountUp
                   end={item.value}
                   duration={Math.max(2.9, (item.value / 10000) * 3)}
-                  separator=","
+                  separator={item.label === "Established" ? "" : ","}
                   suffix={item.suffix}
                   enableScrollSpy
                   scrollSpyOnce
@@ -486,7 +486,7 @@ const Home = () => {
         className="suppliers-section py-5 position-relative"
         data-aos="fade-up"
       >
-        <div className="container text-center">
+        <div className="text-center">
           <h2 className="fw-bold mb-5 text-uppercase text-dark">
             Trusted Suppliers
           </h2>
@@ -499,6 +499,7 @@ const Home = () => {
               { logo: "/image/dongbe-logo.png" },
               { logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp" },
               { logo: "/image/taihe-logo.png" },
+              { logo: "/image/machael-logo.png" },
             ].map((supplier, idx) => (
               <div
                 key={idx}

@@ -373,7 +373,7 @@ export default function Header() {
             </a>
             <span>
               <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
-              Tel.: +91 22 2869 3824
+              Tel.: 022-35034301-21
             </span>
             <span>
               <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
@@ -709,31 +709,41 @@ export default function Header() {
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/20MnCr5")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/20MnCr5")
+                    }
                     className="dropdown-item "
                   >
                     20MnCr5 / 16MnCr5
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/SAE4140")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/SAE4140")
+                    }
                     className="dropdown-item "
                   >
                     SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/SAE1020")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/SAE1020")
+                    }
                     className="dropdown-item "
                   >
                     SAE 1020
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/41Cr4")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/41Cr4")
+                    }
                     className="dropdown-item "
                   >
                     41Cr4 / EN18 / 40Cr4B
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/EN41B")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/EN41B")
+                    }
                     className="dropdown-item "
                   >
                     EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84
@@ -745,19 +755,25 @@ export default function Header() {
                     EN 24 / 18CrNiMo6
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/SAE4130")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/SAE4130")
+                    }
                     className="dropdown-item "
                   >
                     SAE4130
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/EN36C")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/EN36C")
+                    }
                     className="dropdown-item "
                   >
                     EN36C
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/SAE8620")}
+                    onClick={() =>
+                      handleNavClick("/products/alloy-steel/SAE8620")
+                    }
                     className="dropdown-item "
                   >
                     SAE 8620 / EN353 / SAE 9310
@@ -781,55 +797,73 @@ export default function Header() {
                     C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/SAE1141")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/SAE1141")
+                    }
                     className="dropdown-item "
                   >
                     SAE 1018 / ASTM A36 / ASTM A29 / SAE 1137 / SAE 1138
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/ST52.3")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/ST52.3")
+                    }
                     className="dropdown-item "
                   >
                     ST 52.3
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/EN1A")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/EN1A")
+                    }
                     className="dropdown-item "
                   >
                     EN 1A / EN 1A_PB / EN 1A_L / 230M07 PB
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/35C8")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/35C8")
+                    }
                     className="dropdown-item "
                   >
                     35C8 / C35 / EN8 / SAE 1035 / 45C8
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/SAE1541")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/SAE1541")
+                    }
                     className="dropdown-item "
                   >
                     SAE 1541 / EN 15
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/27C15")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/27C15")
+                    }
                     className="dropdown-item "
                   >
                     27C15 / SAE 1527
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/SAE1117")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/SAE1117")
+                    }
                     className="dropdown-item "
                   >
                     SAE 1117 / ASTM A108
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/EN43BCr")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/EN43BCr")
+                    }
                     className="dropdown-item "
                   >
                     EN43BCr / SAE 1050 / EN43A
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/SAE1141")}
+                    onClick={() =>
+                      handleNavClick("/products/carbon-steel/SAE1141")
+                    }
                     className="dropdown-item "
                   >
                     SAE 1141

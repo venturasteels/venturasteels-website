@@ -24,27 +24,154 @@
   height: 80vh;
   object-fit: cover;
 }
-.process-step {
-  width: 60px;
-  height: 60px;
-  background-color: #447d9b;
-  color: white;
-  border-radius: 50%;
-  line-height: 60px;
-  margin: 0 auto 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+/* ========== Premium B2B Quality Section ========== */
+.quality-premium-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
 }
-.quality-process {
-  background-color: #fe774335;
+
+.text-orange {
+  color: #fe7743;
 }
-.quality-process h2 {
+
+.text-dark-blue {
   color: #273f4f;
 }
 
-.certificates-gallery {
-  background-color: #447d9b35;
+.divider-line {
+  width: 80px;
+  height: 3px;
+  background: #fe7743;
+  border-radius: 3px;
+}
+
+.quality-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.quality-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(39, 63, 79, 0.08);
+  transition: all 0.4s ease;
+  border-left: 5px solid transparent;
+}
+
+.quality-item:hover {
+  transform: translateX(6px);
+  border-left-color: #fe7743;
+  box-shadow: 0 6px 18px rgba(39, 63, 79, 0.15);
+}
+
+.icon-box {
+  width: 55px;
+  height: 55px;
+  background: rgba(68, 125, 155, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #273f4f;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.quality-item:hover .icon-box {
+  background: rgba(254, 119, 67, 0.15);
+  color: #fe7743;
+}
+
+.quality-item h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.quality-item p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .quality-premium-section {
+    text-align: center;
+  }
+  .quality-grid {
+    align-items: center;
+  }
+  .quality-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .icon-box {
+    margin-bottom: 10px;
+  }
+}
+
+/* ========== Quality Process ========== */
+.quality-process {
+  background: #fe774335;
   position: relative;
+  overflow: hidden;
+}
+.quality-process::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 200px;
+  height: 100%;
+  background: radial-gradient(circle, #fe7743 10%, transparent 70%);
+  opacity: 0.15;
+  z-index: 0;
+}
+.section-heading {
+  color: #273f4f;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+.process-step {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #447d9b, #273f4f);
+  color: white;
+  border-radius: 50%;
+  line-height: 65px;
+  margin: 0 auto 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(68, 125, 155, 0.4);
+  transition: all 0.3s ease;
+}
+.process-step:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #fe7743, #273f4f);
+}
+
+/* ========== Certificates Section ========== */
+.certificates-gallery {
+  background: linear-gradient(145deg, #f0f6fa, #ffffff);
+  position: relative;
+  padding-bottom: 6rem !important;
+}
+.certificates-gallery::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: radial-gradient(circle at center, #fe7743 10%, transparent 70%);
+  opacity: 0.2;
 }
 
 .section-title {
@@ -62,17 +189,17 @@
 .certificate-quality-image {
   position: relative;
   transition: all 0.4s ease;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
 }
-
 .certificate-quality-img {
-  width: 280px;
+  width: 300px;
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-
 .certificate-quality-image:hover .certificate-quality-img {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .certificate-overlay {
@@ -83,15 +210,13 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.4s ease;
-  background: rgba(39, 63, 79, 0.45);
+  background: rgba(39, 63, 79, 0.5);
   border-radius: 15px;
 }
-
 .certificate-overlay i {
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: #fe7743;
 }
-
 .certificate-quality-image:hover .certificate-overlay {
   opacity: 1;
 }
@@ -100,11 +225,21 @@
   width: 60%;
   color: #273f4f;
 }
-
 .certificate-text p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #447d9b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificate-text {
+    width: 100%;
+    text-align: center;
+  }
+  .certificate-quality-img {
+    width: 240px;
+  }
 }
 
 @media (max-width: 768px) {

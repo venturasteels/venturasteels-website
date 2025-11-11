@@ -90,23 +90,31 @@ const AboutUs = () => {
               <div className="col-md-6 mb-4 mb-md-0">
                 <h2 className="fw-bold mb-4">Who We Are</h2>
                 <p className=" text-muted text-justify">
-                  Recognised as a brand synonymous with quality and expertise,
-                  <strong> Ventura Alloy & Steels Pvt. Ltd. </strong> has been a
-                  trusted name in the Tool & Alloy Steels industry since 1965.
-                  Founded by <strong> Mr. Bharat Dipchand Shah </strong> and
-                  later strengthened under the leadership of
-                  <strong> Mr. Aashish Bharat Shah </strong> , the company has
-                  grown into a multi-crore enterprise with a strong PAN India
-                  presence.
+                  Under the leadership of Mr. Bharat Dipchand Shah, whose rich
+                  industry experience dates back to 1965, and the
+                  forward-looking guidance of Mr. Aashish Bharat Shah, Ventura
+                  Alloy & Steels was founded in 2014 with a vision to bring
+                  reliability, integrity, and technical excellence to the steel
+                  industry. Over the years, the company has grown into a trusted
+                  steel service centre and a leading supplier of specialty
+                  steels, valued for its commitment to quality and long-term
+                  partnerships.
                 </p>
                 <p className="text-muted text-justify">
-                  Over the years, Ventura has built a reputation as a leading
-                  Importer, Exporter, Stockist, Distributor, and Supplier of
-                  premium Tool & Alloy Steel products. With
-                  <strong> ISO 9001:2015 certification </strong> and a
-                  commitment to continuous innovation, we deliver solutions that
-                  meet the exacting needs of industries such as automotive,
-                  engineering, petrochemicals, forging, extrusion, and tooling.
+                  Our portfolio spans hot work, cold work, and plastic mould
+                  steels, along with a comprehensive range of carbon, boron,
+                  alloy, and spring steels, allowing us to cater to diverse
+                  industrial applications. Ventura is renowned for its quality
+                  standards, technical expertise, and efficient service,
+                  consistently delivering reliable, result-oriented solutions
+                  backed by modern facilities and strong infrastructure.
+                </p>
+                <p className="text-muted text-justify">
+                  Driven by a genuine customer-first approach, the company
+                  continues to expand its footprint, strengthen relationships,
+                  and reinforce its leadership within the industry—guided by a
+                  commitment to serve with trust, transparency, and
+                  unwavering dedication.
                 </p>
                 <a href="/infrastructure" className="btn btn-primary mt-3">
                   Explore Our Facilities

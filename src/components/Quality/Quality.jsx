@@ -1,7 +1,14 @@
+import React, { useEffect } from "react";
 import "./Quality.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Quality = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true, offset: 100 });
+  }, []);
+
   return (
     <>
       <HelmetProvider>
@@ -34,62 +41,144 @@ const Quality = () => {
         </div>
       </section>
 
-      <section className="quality-highlights py-5">
+      {/* QUALITY HIGHLIGHTS */}
+      {/* QUALITY HIGHLIGHTS - PREMIUM B2B STYLE */}
+      <section className="quality-premium-section py-5">
         <div className="container">
-          <div className="row g-4 text-center">
-            <div className="col-md-4">
-              <i className="bi bi-shield-check display-4 text-primary"></i>
-              <h4 className="fw-semibold mt-3">ISO 9001 Certified</h4>
-              <p>Strict adherence to ISO 9001:2015 Quality Standards.</p>
-            </div>
-            <div className="col-md-4">
-              <i className="bi bi-file-earmark-text display-4 text-success"></i>
-              <h4 className="fw-semibold mt-3">Test Certificates</h4>
-              <p>Each supply includes detailed chemical & hardness reports.</p>
-            </div>
-            <div className="col-md-4">
-              <i className="bi bi-tools display-4 text-warning"></i>
-              <h4 className="fw-semibold mt-3">Quality Lab</h4>
-              <p>
-                Advanced testing equipment ensures top-grade steel products.
+          <div className="row align-items-center">
+            {/* Left Text Block */}
+            <div className="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+              <h2 className="fw-bold mb-3 text-dark-blue">
+                Our <span className="text-orange">Quality Promise</span>
+              </h2>
+              <p className="text-muted mb-4">
+                At Ventura Steels, quality is engineered into every process —
+                from material selection to final inspection. Our commitment
+                ensures precision, reliability, and global standards.
               </p>
+              <div className="divider-line"></div>
+              <h5 className="mt-4 fw-semibold text-dark">
+                Excellence is not an act — it’s our culture.
+              </h5>
+            </div>
+
+            {/* Right Highlights Panel */}
+            <div className="col-lg-7">
+              <div className="quality-grid">
+                <div
+                  className="quality-item"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div className="icon-box">
+                    <i className="bi bi-shield-check"></i>
+                  </div>
+                  <div>
+                    <h5>ISO 9001 Certified</h5>
+                    <p>
+                      Adherence to ISO 9001:2015 ensures total quality
+                      management and process reliability.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  className="quality-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div className="icon-box">
+                    <i className="bi bi-file-earmark-text"></i>
+                  </div>
+                  <div>
+                    <h5>Comprehensive Test Reports</h5>
+                    <p>
+                      Each batch comes with detailed chemical, mechanical, and
+                      hardness certificates.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  className="quality-item"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <div className="icon-box">
+                    <i className="bi bi-tools"></i>
+                  </div>
+                  <div>
+                    <h5>In-house Testing Lab</h5>
+                    <p>
+                      Equipped with spectrometers, hardness testers, and
+                      ultrasonic inspection systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* QUALITY PROCESS */}
       <section className="quality-process py-5">
         <div className="container">
-          <h2 className="text-center fw-bold mb-5">Our Quality Process</h2>
+          <h2
+            className="text-center fw-bold mb-5 section-heading"
+            data-aos="zoom-in"
+          >
+            Our Quality Process
+          </h2>
           <div className="row text-center">
-            <div className="col-md-3">
-              <div className="process-step">1</div>
-              <h5>Material Sourcing</h5>
-              <p>Procured from trusted & reputed mills.</p>
-            </div>
-            <div className="col-md-3">
-              <div className="process-step">2</div>
-              <h5>Testing & Verification</h5>
-              <p>Hardness & micro-structure tests performed in-house.</p>
-            </div>
-            <div className="col-md-3">
-              <div className="process-step">3</div>
-              <h5>Certification</h5>
-              <p>QAP approved test reports for every batch.</p>
-            </div>
-            <div className="col-md-3">
-              <div className="process-step">4</div>
-              <h5>Final Dispatch</h5>
-              <p>Checked & packed as per client’s requirement.</p>
-            </div>
+            {[
+              {
+                step: "1",
+                title: "Material Sourcing",
+                desc: "Procured from trusted & reputed mills.",
+              },
+              {
+                step: "2",
+                title: "Testing & Verification",
+                desc: "Hardness & micro-structure tests performed in-house.",
+              },
+              {
+                step: "3",
+                title: "Certification",
+                desc: "QAP approved test reports for every batch.",
+              },
+              {
+                step: "4",
+                title: "Final Dispatch",
+                desc: "Checked & packed as per client’s requirement.",
+              },
+            ].map((item, index) => (
+              <div
+                className="col-md-3"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 200}
+              >
+                <div className="process-step">{item.step}</div>
+                <h5>{item.title}</h5>
+                <p>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* CERTIFICATES */}
       <section className="certificates-gallery py-5">
         <div className="container text-center">
-          <h2 className="fw-bold mb-4 section-title">Our Certification</h2>
-          <div className="certificate-wrapper d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
+          <h2 className="fw-bold mb-4 section-title" data-aos="zoom-in-up">
+            Our Certification
+          </h2>
+          <div
+            className="certificate-wrapper d-flex flex-column flex-md-row align-items-center justify-content-center gap-5"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="certificate-quality-image position-relative">
               <img
                 src="/image/certificates/BSCIC-ISO.png"
@@ -105,7 +194,7 @@ const Quality = () => {
               <h4 className="fw-semibold mb-3 text-uppercase">
                 ISO 9001:2015 Certified
               </h4>
-              <p className="text-muted">
+              <p>
                 Ventura Alloy & Steels Pvt. Ltd. has been recognized for
                 maintaining international quality standards across all
                 operations. Our certification reflects our ongoing commitment to

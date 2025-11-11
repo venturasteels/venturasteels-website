@@ -42,7 +42,9 @@
   color: #273f4f;
   font-size: 2.5rem;
 }
-
+.who-we-are p{
+  font-size: 1rem;
+}
 .who-we-are .btn-primary {
   background-color: #447d9b;
   border-color: #447d9b;
@@ -58,7 +60,7 @@
 }
 
 .who-we-are img {
-  max-width: 95%;
+  max-width: 100%;
   border-radius: 1rem;
   transition: transform 0.4s ease;
 }

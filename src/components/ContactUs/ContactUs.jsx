@@ -16,6 +16,7 @@ const ContactUs = () => {
   });
   const [errors, setErrors] = useState({});
   const [statusMsg, setStatusMsg] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validate = (field, value) => {
     let error = "";
@@ -67,6 +68,7 @@ const ContactUs = () => {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
+      setIsSubmitting(true);
       try {
         await emailjs.send(
           import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -111,9 +113,9 @@ const ContactUs = () => {
         setModalType("error");
         setModalMessage("Failed to send message ❌ Please try again later.");
         setShowModal(true);
+      } finally {
+        setIsSubmitting(false);
       }
-    } else {
-      setStatusMsg("");
     }
   };
 
@@ -160,6 +162,7 @@ const ContactUs = () => {
                           value={formData[field]}
                           onChange={handleChange}
                           className={errors[field] ? "error-input" : ""}
+                          disabled={isSubmitting}
                         />
                       ) : (
                         <textarea
@@ -169,6 +172,7 @@ const ContactUs = () => {
                           value={formData.message}
                           onChange={handleChange}
                           className={errors.message ? "error-input" : ""}
+                          disabled={isSubmitting}
                         ></textarea>
                       )}
                       {errors[field] && (
@@ -177,8 +181,13 @@ const ContactUs = () => {
                     </div>
                   )
                 )}
-                <button type="submit" className="submit-btn">
-                  Submit
+                {/* 🌀 Button with loader */}
+                <button
+                  type="submit"
+                  className="submit-btn"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? <span className="loader"></span> : "Submit"}
                 </button>
                 {statusMsg && <p className="success-text">{statusMsg}</p>}
               </form>

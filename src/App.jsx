@@ -8,6 +8,8 @@ import Home from "./components/Home/Home.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Products from "./components/Products/Products.jsx";
+import ReactGA from "react-ga4";
+import usePageTracking from "./hooks/usePageTracking.jsx";
 // HotWork
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
 import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
@@ -87,6 +89,8 @@ import Tooling from "./components/Industries/Tooling/Tooling.jsx";
 import InfrastructureEnergy from "./components/Industries/Infrastructure/Infrastructure-energy.jsx";
 import Plastics from "./components/Industries/Plastics/Plastics.jsx";
 
+ReactGA.initialize("G-PNNRG2K7VQ");
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -100,6 +104,7 @@ const App = () => {
   return (
     <>
       <Router>
+         <PageTrackerWrapper />
         <ScrollToTop />
         <Header />
         <Routes>
@@ -186,5 +191,10 @@ const App = () => {
     </>
   );
 };
+
+function PageTrackerWrapper() {
+  usePageTracking(); 
+  return null;
+}
 
 export default App;

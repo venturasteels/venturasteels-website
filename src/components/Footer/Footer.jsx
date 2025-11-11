@@ -81,17 +81,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/infrastructure" className="footer-link">
+                  <a href="/enquiry" className="footer-link">
                     Enquiry
                   </a>
                 </li>
                 <li>
-                  <a href="/infrastructure" className="footer-link">
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a href="/infrastructure" className="footer-link">
+                  <a href="/contact" className="footer-link">
                     ContactUs
                   </a>
                 </li>
@@ -109,12 +104,11 @@ const Footer = () => {
                 Kandivali (West), Mumbai – 400067.
               </p>
               <p>
-                <i className="bi bi-telephone-fill me-2"></i> +91 22 2869 3824 /
+                <i className="bi bi-telephone-fill me-2"></i>  022-35034301-21 /
                 9324959833
               </p>
               <p>
-                <i className="bi bi-phone-fill me-2"></i> +91 9819225666 /
-                9322266999
+                <i className="bi bi-phone-fill me-2"></i> +91 9819225666 
               </p>
             </div>
 
