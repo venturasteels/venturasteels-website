@@ -6,7 +6,12 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Quality = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, offset: 100 });
+    AOS.init({
+      duration: 1500,
+      easing: "ease-in-out",
+      once: true,
+      offset: 100,
+    });
   }, []);
 
   return (
@@ -41,7 +46,6 @@ const Quality = () => {
         </div>
       </section>
 
-      {/* QUALITY HIGHLIGHTS */}
       {/* QUALITY HIGHLIGHTS - PREMIUM B2B STYLE */}
       <section className="quality-premium-section py-5">
         <div className="container">
@@ -121,47 +125,166 @@ const Quality = () => {
         </div>
       </section>
 
-      {/* QUALITY PROCESS */}
-      <section className="quality-process py-5">
+      {/* QUALITY PROCESS - B2B PREMIUM VERSION */}
+      {/* <section className="quality-process-section py-5">
+  <div className="container">
+    <div className="text-center mb-5" data-aos="fade-up">
+      <h2 className="fw-bold text-dark-blue section-heading">
+        Our <span className="text-orange">Quality Process</span>
+      </h2>
+      <p className="text-muted mt-2">
+        Every stage of our process is designed for precision, traceability, and consistency.
+      </p>
+      <div className="underline mx-auto mt-3"></div>
+    </div>
+
+    <div className="timeline">
+      {[
+        {
+          step: "01",
+          title: "Material Sourcing",
+          desc: "Raw materials procured from globally trusted and reputed mills with full traceability.",
+        },
+        {
+          step: "02",
+          title: "Testing & Verification",
+          desc: "In-house spectrometer, hardness, and micro-structure tests ensure metallurgical integrity.",
+        },
+        {
+          step: "03",
+          title: "Certification",
+          desc: "QAP-approved test certificates are issued for each batch before dispatch.",
+        },
+        {
+          step: "04",
+          title: "Final Dispatch",
+          desc: "Materials packed and inspected per client requirements to guarantee delivery quality.",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
+          data-aos="fade-up"
+          data-aos-delay={index * 200}
+        >
+          <div className="timeline-content">
+            <div className="step-number">{item.step}</div>
+            <h5>{item.title}</h5>
+            <p>{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section> */}
+      {/* QUALITY PROCESS – MODERN HORIZONTAL FLOW */}
+      {/* <section className="quality-process-modern py-5">
         <div className="container">
-          <h2
-            className="text-center fw-bold mb-5 section-heading"
-            data-aos="zoom-in"
-          >
-            Our Quality Process
-          </h2>
-          <div className="row text-center">
+          <div className="text-center mb-5" data-aos="fade-up">
+            <h2 className="fw-bold text-dark-blue">
+              Our <span className="text-orange">Quality Process</span>
+            </h2>
+            <p className="text-muted mt-2">
+              A streamlined, precision-driven process ensuring reliability and
+              excellence in every batch.
+            </p>
+            <div className="underline mx-auto mt-3"></div>
+          </div>
+
+          <div className="process-flow">
             {[
               {
-                step: "1",
+                icon: "bi-box-seam",
                 title: "Material Sourcing",
-                desc: "Procured from trusted & reputed mills.",
+                desc: "Procured from reputed mills with complete traceability.",
               },
               {
-                step: "2",
+                icon: "bi-search",
                 title: "Testing & Verification",
-                desc: "Hardness & micro-structure tests performed in-house.",
+                desc: "Hardness, microstructure & spectrometer tests performed in-house.",
               },
               {
-                step: "3",
+                icon: "bi-file-earmark-check",
                 title: "Certification",
-                desc: "QAP approved test reports for every batch.",
+                desc: "QAP-approved reports and certificates accompany each batch.",
               },
               {
-                step: "4",
+                icon: "bi-truck",
                 title: "Final Dispatch",
-                desc: "Checked & packed as per client’s requirement.",
+                desc: "Inspected, packed, and delivered as per client’s exact specifications.",
               },
             ].map((item, index) => (
               <div
-                className="col-md-3"
+                className="process-card"
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
               >
-                <div className="process-step">{item.step}</div>
+                <div className="icon-circle">
+                  <i className={`bi ${item.icon}`}></i>
+                </div>
                 <h5>{item.title}</h5>
                 <p>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+      {/* QUALITY PROCESS - PIPELINE STYLE */}
+      <section className="quality-pipeline py-5">
+        <div className="container">
+          <div className="text-center mb-5" data-aos="zoom-in">
+            <h2 className="fw-bold text-dark-blue">
+              Our <span className="text-orange">Quality Process</span>
+            </h2>
+            <p className="text-muted mt-2">
+              Each phase is executed with precision, traceability, and technical
+              excellence.
+            </p>
+            <div className="underline mx-auto mt-3"></div>
+          </div>
+
+          <div className="pipeline-container">
+            {[
+              {
+                icon: "bi-box-seam",
+                title: "Material Sourcing",
+                desc: "Raw materials sourced from reputed and certified steel mills.",
+              },
+              {
+                icon: "bi-clipboard-check",
+                title: "Testing & Verification",
+                desc: "Comprehensive mechanical, chemical & microstructure testing in-house.",
+              },
+              {
+                icon: "bi-file-earmark-text",
+                title: "Certification",
+                desc: "Every batch includes full documentation & QAP-approved reports.",
+              },
+              {
+                icon: "bi-truck",
+                title: "Final Dispatch",
+                desc: "Packed and shipped under controlled supervision to ensure integrity.",
+              },
+            ].map((item, index) => (
+              <div
+                className="pipeline-step"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 200}
+              >
+                <div className="pipeline-icon">
+                  <i className={`bi ${item.icon}`}></i>
+                </div>
+                <div className="pipeline-content">
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
+                </div>
+                {index < 3 && (
+                  <div className="pipeline-arrow">
+                    <i className="bi bi-arrow-right-short"></i>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -169,38 +292,70 @@ const Quality = () => {
       </section>
 
       {/* CERTIFICATES */}
+      {/* CERTIFICATES - NEW MODERN LAYOUT */}
+      {/* CERTIFICATE SECTION - SINGLE CERTIFICATE LAYOUT */}
       <section className="certificates-gallery py-5">
-        <div className="container text-center">
-          <h2 className="fw-bold mb-4 section-title" data-aos="zoom-in-up">
-            Our Certification
-          </h2>
-          <div
-            className="certificate-wrapper d-flex flex-column flex-md-row align-items-center justify-content-center gap-5"
+        <div className="container">
+          <h2
+            className="fw-bold mb-4 text-center section-title"
             data-aos="fade-up"
-            data-aos-delay="200"
           >
-            <div className="certificate-quality-image position-relative">
-              <img
-                src="/image/certificates/BSCIC-ISO.png"
-                alt="ISO Certificate"
-                className="img-fluid shadow-lg rounded-4 certificate-quality-img"
-              />
-              <div className="certificate-overlay">
-                <i className="bi bi-patch-check-fill"></i>
+            Our <span className="highlight-text">Certification</span>
+          </h2>
+
+          <div className="row align-items-center justify-content-center">
+            {/* LEFT: Certificate Image */}
+            <div
+              className="col-lg-5 col-md-6 text-center"
+              data-aos="fade-right"
+            >
+              <div className="certificate-quality-image position-relative mx-auto">
+                <img
+                  src="/image/certificates/BSCIC-ISO.png"
+                  alt="BSCIC ISO 9001 Certificate"
+                  className="img-fluid certificate-quality-img"
+                />
+                <div className="certificate-overlay">
+                  <i className="bi bi-zoom-in"></i>
+                </div>
               </div>
             </div>
 
-            <div className="certificate-text text-start">
-              <h4 className="fw-semibold mb-3 text-uppercase">
-                ISO 9001:2015 Certified
+            {/* RIGHT: Description */}
+            <div
+              className="col-lg-6 col-md-6 certificate-text"
+              data-aos="fade-left"
+            >
+              <h4 className="fw-semibold text-uppercase mb-3">
+                BSCIC ISO 9001:2015 Certified
               </h4>
               <p>
-                Ventura Alloy & Steels Pvt. Ltd. has been recognized for
-                maintaining international quality standards across all
-                operations. Our certification reflects our ongoing commitment to
-                excellence, reliability, and customer satisfaction in every
-                product we deliver.
+                Ventura Alloy & Steels Pvt. Ltd. is proud to be certified by
+                <strong> BSCIC for ISO 9001:2015,</strong> demonstrating our
+                commitment to quality management, process consistency, and
+                continuous improvement across all operations.
               </p>
+
+              <ul className="certificate-points mt-3">
+                <li>
+                  <i className="bi bi-check-circle-fill text-success me-2"></i>
+                  Certified for Quality Management System
+                </li>
+                <li>
+                  <i className="bi bi-check-circle-fill text-success me-2"></i>
+                  Ensuring Product Reliability and Customer Satisfaction
+                </li>
+                <li>
+                  <i className="bi bi-check-circle-fill text-success me-2"></i>
+                  Audited and Approved by BSCIC
+                </li>
+              </ul>
+
+              <div className="mt-4">
+                <button className="btn btn-outline-primary rounded-pill px-4 py-2">
+                  View Certificate
+                </button>
+              </div>
             </div>
           </div>
         </div>

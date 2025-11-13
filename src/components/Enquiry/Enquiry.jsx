@@ -14,6 +14,7 @@ import {
   FaThList,
   FaCommentDots,
 } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const productOptions = {
   "Hot Work Steel": [
@@ -322,6 +323,32 @@ export default function EnquiryForm() {
     setSubmitted(false);
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state) {
+      const { selectedGrade, selectedProduct } = location.state;
+
+      // Prefill product dropdown and grades
+      setFormData((prev) => ({ ...prev, product: selectedProduct }));
+      setGrades(productOptions[selectedProduct] || []);
+      setSelectedGrades(selectedGrade ? [selectedGrade] : []);
+      setConfirmGrades(true); 
+    }
+  }, [location.state]);
+
+  // Auto-scroll to form 
+  useEffect(() => {
+    if (location.state?.selectedGrade) {
+      setTimeout(() => {
+        const formSection = document.getElementById("enquiry-form-section");
+        if (formSection) {
+          formSection.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 500); 
+    }
+  }, [location.state]);
+
   return (
     <>
       <HelmetProvider>
@@ -376,7 +403,11 @@ export default function EnquiryForm() {
           </div>
         </div>
 
-        <div className="card enquiry-form shadow-lg p-4" data-aos="fade-up">
+        <div
+          className="card enquiry-form shadow-lg p-4"
+          data-aos="fade-up"
+          id="enquiry-form-section"
+        >
           <h2 className="text-center">Enquiry Form</h2>
           <hr className="line-hr mb-5 text-center" />
 
@@ -484,7 +515,9 @@ export default function EnquiryForm() {
                         className="selected-grade-tag d-flex flex-column gap-2 mb-2"
                       >
                         <div className="d-flex align-items-center gap-3">
-                          <span className="badge bg-secondary py-3">{grade}</span>
+                          <span className="badge bg-secondary py-3">
+                            {grade}
+                          </span>
                           {!confirmGrades && (
                             <button
                               type="button"
@@ -505,9 +538,15 @@ export default function EnquiryForm() {
                                 handleShapeChange(grade, e.target.value)
                               }
                             >
-                              <option value="" className="text-center">Select Shape</option>
-                              <option value="Round Bar" className="text-center">Round Bar</option>
-                              <option value="Block" className="text-center">Block</option>
+                              <option value="" className="text-center">
+                                Select Shape
+                              </option>
+                              <option value="Round Bar" className="text-center">
+                                Round Bar
+                              </option>
+                              <option value="Block" className="text-center">
+                                Block
+                              </option>
                             </select>
                           )}
                           {errors[grade] && (

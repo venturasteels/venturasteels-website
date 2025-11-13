@@ -8,7 +8,7 @@ import "./Careers.css";
 const jobOpenings = [
   {
     id: 1,
-    title: "Web Developer",
+    title: "Sales & Marketing",
     location: "Mumbai",
     experience: "3+ Years",
     department: "Engineering",
@@ -18,7 +18,7 @@ const jobOpenings = [
   },
   {
     id: 2,
-    title: "Sales Executive",
+    title: "Reserch & developement",
     location: "Mumbai",
     experience: "2+ Years",
     department: "Sales",
@@ -28,7 +28,7 @@ const jobOpenings = [
   },
   {
     id: 3,
-    title: "Digital Marketing Executive",
+    title: "Finance & Management",
     location: "Mumbai",
     experience: "0–3 Years",
     department: "Marketing",
@@ -38,7 +38,27 @@ const jobOpenings = [
   },
   {
     id: 4,
-    title: "Marketing Manager",
+    title: "IT",
+    location: "Mumbai",
+    experience: "5+ Years",
+    department: "Marketing",
+    description:
+      "Own brand strategy, campaigns and lead funnels for industrial audiences. Strong experience in B2B marketing required.",
+    skills: ["SEO/SEM", "Campaigns", "Analytics"],
+  },
+  {
+    id: 4,
+    title: "HR & Admin",
+    location: "Mumbai",
+    experience: "5+ Years",
+    department: "Marketing",
+    description:
+      "Own brand strategy, campaigns and lead funnels for industrial audiences. Strong experience in B2B marketing required.",
+    skills: ["SEO/SEM", "Campaigns", "Analytics"],
+  },
+  {
+    id: 4,
+    title: "Logistics",
     location: "Mumbai",
     experience: "5+ Years",
     department: "Marketing",

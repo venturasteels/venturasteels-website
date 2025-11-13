@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
+import SmartEmailLink from "../SmartEmailLink";
 import "./ContactUs.css";
 
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
@@ -245,12 +246,41 @@ const ContactUs = () => {
                 Mumbai – 400067.
               </p>
               <p>
-                <i className="bi bi-telephone-fill"></i> Tel.: +91 22 2869 3824
-                / 9324959833
+                <span>
+                  <i
+                    className="bi bi-telephone-fill me-2"
+                    aria-hidden="true"
+                  ></i>
+                  <a
+                    href="tel:+912235034301 "
+                    className="text-decoration-none  px-1 text-muted"
+                    title="Call Ventura Steels Office"
+                  >
+                    022-35034301-21
+                  </a>
+                </span>
+                /
+                <span>
+                  <a
+                    href="tel:+919324959833"
+                    className="text-decoration-none  px-1 text-muted"
+                    title="Call Ventura Steels Office"
+                  >
+                    9324959833
+                  </a>
+                </span>
               </p>
               <p>
-                <i className="bi bi-phone-fill"></i> Cell: +91 9819225666 /
-                9322266999
+                <i className="bi bi-phone-fill"></i>
+                <span>
+                  <a
+                    href="tel:+919819225666"
+                    className="text-decoration-none text-muted px-1"
+                    title="Call Ventura Steels Office"
+                  >
+                    +91 9819225666
+                  </a>
+                </span>
               </p>
 
               <h3 className="mt-4">Stocking & Machining Centre</h3>
@@ -260,15 +290,35 @@ const ContactUs = () => {
                 (Mankoli – Phata), Dapoda, Taluka – Bhiwandi – 421302.
               </p>
               <p>
-                <i className="bi bi-phone-fill"></i> Cell: +91 7977097655
+                <i className="bi bi-phone-fill"></i> 
+                <span>
+                  <a
+                    href="tel:+917977097655"
+                    className="text-decoration-none text-muted px-1"
+                    title="Call Ventura Steels Office"
+                  >
+                    +91 7977097655
+                  </a>
+                </span>
               </p>
 
               <p>
-                <i className="bi bi-envelope-fill"></i> sales@venturasteels.com
+                <span className="d-block mb-1">
+                  <SmartEmailLink
+                    email="sales@venturasteels.com"
+                    label="sales@venturasteels.com"
+                    className="text-muted"
+                  />
+                </span>
               </p>
               <p>
-                <i className="bi bi-envelope-fill"></i>{" "}
-                enquiry@venturasteels.com
+                <span className="d-block mb-1">
+                  <SmartEmailLink
+                    email="enquiry@venturasteels.com"
+                    label="enquiry@venturasteels.com"
+                    className="text-muted"
+                  />
+                </span>
               </p>
 
               <div className="social-icons">

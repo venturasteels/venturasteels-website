@@ -10,6 +10,8 @@ import Footer from "./components/Footer/Footer.jsx";
 import Products from "./components/Products/Products.jsx";
 import ReactGA from "react-ga4";
 import usePageTracking from "./hooks/usePageTracking.jsx";
+import FloatingContact from "./components/FloatingContact/FloatingContact.jsx";
+// import "./App.css";
 // HotWork
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
 import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
@@ -92,6 +94,27 @@ import Plastics from "./components/Industries/Plastics/Plastics.jsx";
 ReactGA.initialize("G-PNNRG2K7VQ");
 
 const App = () => {
+  // disable copy, right click and f12
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => e.preventDefault();
+  //   document.addEventListener("contextmenu", handleContextMenu);
+
+  //   const handleKeyDown = (e) => {
+  //     if (
+  //       (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
+  //       e.key === "F12"
+  //     ) {
+  //       e.preventDefault();
+  //     }
+  //   };
+  //   document.addEventListener("keydown", handleKeyDown);
+
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //     document.removeEventListener("keydown", handleKeyDown);
+  //   };
+  // }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -104,7 +127,8 @@ const App = () => {
   return (
     <>
       <Router>
-         <PageTrackerWrapper />
+        {/* <FloatingContact /> */}
+        <PageTrackerWrapper />
         <ScrollToTop />
         <Header />
         <Routes>
@@ -193,7 +217,7 @@ const App = () => {
 };
 
 function PageTrackerWrapper() {
-  usePageTracking(); 
+  usePageTracking();
   return null;
 }
 

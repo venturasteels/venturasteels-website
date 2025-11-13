@@ -1,0 +1,32 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+img,
+.protected-img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.protected-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.protected-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  z-index: 2;
+}

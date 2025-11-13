@@ -4,6 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import SearchBar from "../searchBar";
+import SmartEmailLink from "../SmartEmailLink";
 import "./Header.css";
 
 export default function Header() {
@@ -352,32 +353,44 @@ export default function Header() {
               <i className="bi bi-linkedin"></i>
             </a>
           </div>
-          <div className="d-flex justify-content-center gap-3 small contact-info">
-            <a
-              href="mailto:sales@venturasteels.com"
-              className="text-decoration-none"
-            >
-              <span>
-                <i className="bi bi-envelope-fill me-1" aria-hidden="true"></i>
-                sales@venturasteels.com
-              </span>
-            </a>
-            <a
-              href="mailto:sales@venturasteels.com"
-              className="text-decoration-none "
-            >
-              <span>
-                <i className="bi bi-envelope-fill me-1" aria-hidden="true"></i>
-                enquiry@venturasteels.com
-              </span>
-            </a>
-            <span>
-              <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
-              Tel.: 022-35034301-21
+          <div className="d-flex justify-content-center gap-3 small social-info">
+            {/* Sales Email */}
+            <span className="d-block mb-1">
+              <SmartEmailLink
+                email="sales@venturasteels.com"
+                label="sales@venturasteels.com"
+              />
             </span>
-            <span>
-              <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
-              Cell: +91 9819225666
+
+            <span className="d-block mb-1">
+              <SmartEmailLink
+                email="enquiry@venturasteels.com"
+                label="enquiry@venturasteels.com"
+              />
+            </span>
+
+            {/* Landline */}
+            <span className="d-block mb-1">
+              <i className="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+              <a
+                href="tel:+912235034301"
+                className="contact-link"
+                title="Call Ventura Steels Office"
+              >
+                022-35034301-21
+              </a>
+            </span>
+
+            {/* Mobile */}
+            <span className="d-block">
+              <i className="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+              <a
+                href="tel:+919819225666"
+                className="contact-link"
+                title="Call Ventura Steels Team"
+              >
+                +91 98192 25666
+              </a>
             </span>
           </div>
         </div>
@@ -798,7 +811,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/SAE1141")
+                      handleNavClick("/products/carbon-steel/SAE1018")
                     }
                     className="dropdown-item "
                   >

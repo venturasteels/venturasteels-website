@@ -124,10 +124,13 @@
   color: #273f4f;
 }
 .bg-social i:hover {
-  color: #393185;
+  color: #fe7743;
 }
 .bg-social a {
   color: #273f4f;
+}
+.contact-link{
+  text-decoration: none;
 }
 
 /* navbar */
@@ -141,7 +144,7 @@
 .navbar-section .nav-link {
   font-size: 20px;
 }
-.contact-info {
+.social-info {
   flex-wrap: wrap;
 }
 
@@ -255,14 +258,14 @@
     padding: 0.5rem 0;
   }
 
-  .contact-info {
+  .social-info {
     align-items: center;
     font-size: 14px;
     margin-top: 0.5rem;
   }
 
-  .contact-info span,
-  .contact-info a {
+  .social-info span,
+  .social-info a {
     margin-bottom: 0rem !important;
     display: inline-block;
   }
@@ -310,7 +313,7 @@
   .sidebar {
     width: 200px;
   }
-  .contact-info {
+  .social-info {
     font-size: 14px;
   }
   .sidebar .nav-link {

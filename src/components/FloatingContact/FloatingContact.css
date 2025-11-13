@@ -1,0 +1,172 @@
+.floating-container {
+  position: fixed;
+  right: 25px;
+  bottom: 90px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.floating-btn.main-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #273f4f;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
+  transition: all 0.3s ease;
+  /* animation: smoothBlink 2s ease-in-out infinite; */
+  animation: breathingGlow 3s ease-in-out infinite;
+  box-shadow: 0 0 15px rgba(254, 119, 67, 0.3);
+}
+
+.floating-btn.main-btn:hover {
+  background-color: #fe7743;
+  transform: scale(1.05);
+}
+
+.floating-btn.main-btn.active {
+  background-color: #fe7743;
+  transform: rotate(90deg);
+  animation: none;
+}
+
+.floating-menu {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: all 0.4s ease;
+  margin-bottom: 10px;
+}
+
+.floating-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.floating-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.floating-item {
+  background-color: #447d9b;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.enquiry-f-btn {
+  width: 55px;
+  height: 55px;
+}
+
+.contact-btn {
+  width: 52px;
+  height: 52px;
+}
+
+.floating-item:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.floating-label {
+  background-color: #273f4f;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  width: 90px;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.floating-item-wrapper:hover .floating-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- Blinking --- */
+/* @keyframes smoothBlink {
+  0% {
+    box-shadow: 0 0 0 0 rgba(254, 119, 67, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 15px 5px rgba(254, 119, 67, 0.5);
+    transform: scale(1.07);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(254, 119, 67, 0.7);
+    transform: scale(1);
+  }
+} */
+
+/* --- Premium Smooth Breathing Glow Animation --- */
+@keyframes breathingGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(254, 119, 67, 0.6),
+      0 0 10px 2px rgba(254, 119, 67, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px 10px rgba(254, 119, 67, 0.4),
+      0 0 15px 4px rgba(254, 119, 67, 0.2);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(254, 119, 67, 0.6),
+      0 0 10px 2px rgba(254, 119, 67, 0.3);
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .floating-container {
+    right: 15px;
+    bottom: 70px;
+  }
+
+  .floating-btn.main-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .floating-item {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+
+  .floating-label {
+    width: 80px;
+    font-size: 12px;
+  }
+}

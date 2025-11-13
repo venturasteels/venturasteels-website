@@ -1,8 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./DB6.css";
 
 export default function DB6() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "DB6 / 2714 / AISI L6",
+        selectedProduct: "Hot Work Steel",
+      },
+    });
+  };
+
   return (
     <div className="grade-details">
       <h2 className="text-center">
@@ -446,9 +458,9 @@ export default function DB6() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 0.33 Tonnes</span>
       </div>
     </div>

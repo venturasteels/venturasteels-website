@@ -1,4 +1,5 @@
 import React from "react";
+import SmartEmailLink from "../SmartEmailLink";
 import "./Footer.css";
 
 const Footer = () => {
@@ -104,11 +105,41 @@ const Footer = () => {
                 Kandivali (West), Mumbai – 400067.
               </p>
               <p>
-                <i className="bi bi-telephone-fill me-2"></i>  022-35034301-21 /
-                9324959833
+                <span>
+                   <i
+                    className="bi bi-telephone-fill me-2"
+                    aria-hidden="true"
+                  ></i>
+                  <a
+                    href="tel:+912235034301 "
+                    className="text-decoration-none text-white px-1"
+                    title="Call Ventura Steels Office"
+                  >
+                    022-35034301-21
+                  </a>
+                </span>
+                /
+                <span>
+                  <a
+                    href="tel:+919324959833"
+                    className="text-decoration-none text-white px-1"
+                    title="Call Ventura Steels Office"
+                  >
+                    9324959833
+                  </a>
+                </span>
               </p>
               <p>
-                <i className="bi bi-phone-fill me-2"></i> +91 9819225666 
+                <i className="bi bi-phone-fill me-2"></i>
+                <span>
+                  <a
+                    href="tel:+919819225666"
+                    className="text-decoration-none text-white px-1"
+                    title="Call Ventura Steels Office"
+                  >
+                    +91 9819225666
+                  </a>
+                </span>
               </p>
             </div>
 
@@ -123,15 +154,37 @@ const Footer = () => {
                 Dapoda, Taluka – Bhiwandi – 421302.
               </p>
               <p>
-                <i className="bi bi-phone-fill me-2"></i> +91 7977097655
+                <span className="d-block mb-1">
+                  <i
+                    className="bi bi-telephone-fill me-2"
+                    aria-hidden="true"
+                  ></i>
+                  <a
+                    href="tel:+917977097655"
+                    className="text-decoration-none text-white"
+                    title="Call Ventura Steels Office"
+                  >
+                    +91 7977097655
+                  </a>
+                </span>
               </p>
               <p>
-                <i className="bi bi-envelope-fill me-2"></i>
-                sales@venturasteels.com
+                <span className="d-block mb-1">
+                  <SmartEmailLink
+                    email="sales@venturasteels.com"
+                    label="sales@venturasteels.com"
+                    className="text-white"
+                  />
+                </span>
               </p>
               <p>
-                <i className="bi bi-envelope-fill me-2"></i>
-                enquiry@venturasteels.com
+                <span className="d-block mb-1">
+                  <SmartEmailLink
+                    email="enquiry@venturasteels.com"
+                    label="enquiry@venturasteels.com"
+                    className="text-white"
+                  />
+                </span>
               </p>
             </div>
           </div>
