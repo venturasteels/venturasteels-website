@@ -333,11 +333,11 @@ export default function EnquiryForm() {
       setFormData((prev) => ({ ...prev, product: selectedProduct }));
       setGrades(productOptions[selectedProduct] || []);
       setSelectedGrades(selectedGrade ? [selectedGrade] : []);
-      setConfirmGrades(true); 
+      setConfirmGrades(true);
     }
   }, [location.state]);
 
-  // Auto-scroll to form 
+  // Auto-scroll to form
   useEffect(() => {
     if (location.state?.selectedGrade) {
       setTimeout(() => {
@@ -345,7 +345,7 @@ export default function EnquiryForm() {
         if (formSection) {
           formSection.scrollIntoView({ behavior: "smooth", block: "center" });
         }
-      }, 500); 
+      }, 500);
     }
   }, [location.state]);
 
@@ -362,6 +362,7 @@ export default function EnquiryForm() {
             name="keywords"
             content="Ventura Steels Enquiry, Steel Enquiry Form, Alloy Steel Supplier India, Tool Steel Enquiry, Engineering Steel Quote, Steel Stockist Contact, Industrial Steel Solutions"
           />
+          <link rel="canonical" href="https://venturasteels.com/enquiry" />
         </Helmet>
       </HelmetProvider>
 

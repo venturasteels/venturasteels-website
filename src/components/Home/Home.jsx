@@ -171,15 +171,15 @@ const Home = () => {
           />
           <meta
             property="og:image"
-            content="https://venturasteels.onrender.com/image/ogimage.png"
+            content="https://venturasteels.com/image/ogimage.png"
           />
           {/* Replace with your actual image URL */}
-          <meta
-            property="og:url"
-            content="https://venturasteels.onrender.com/"
-          />
+          <meta property="og:url" content="https://venturasteels.com/" />
           <meta property="og:type" content="website" />
-          <link rel="canonical" href="https://venturasteels.onrender.com/" />
+          <link
+            rel="canonical"
+            href="https://venturasteels.com/"
+          />
         </Helmet>
       </HelmetProvider>
 

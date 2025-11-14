@@ -25,7 +25,7 @@ const gradesData = [
     category: "Plastic Mould Steel",
     grades: [
       { name: "P20+Ni / 1.2738", link: "/products/plastic-mould/P20Ni" },
-      { name: "P20 / 1.2311", link: "/products/plastic-mould/P20/1.2311" },
+      { name: "P20 / 1.2311", link: "/products/plastic-mould/P20-1.2311" },
       { name: "1.2316", link: "/products/plastic-mould/1.2316" },
     ],
   },

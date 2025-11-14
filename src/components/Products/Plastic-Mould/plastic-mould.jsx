@@ -7,7 +7,7 @@ const PlasticMould = () => {
   const [isGradeSelected, setIsGradeSelected] = useState(false);
 
   React.useEffect(() => {
-    const gradePattern = /^\/products\/plastic-mould\/(P20Ni|P20|1.2316)/;
+    const gradePattern = /^\/products\/plastic-mould\/(P20Ni|P20-1.2311|1.2316)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -49,9 +49,9 @@ const PlasticMould = () => {
               </li>
               <li>
                 <Link
-                  to="P20/1.2311"
+                  to="P20-1.2311"
                   className={
-                    location.pathname.includes("P20/1.2311")
+                    location.pathname.includes("P20-1.2311")
                       ? "active-grade"
                       : ""
                   }

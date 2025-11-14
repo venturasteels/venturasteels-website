@@ -27,6 +27,7 @@ const Quality = () => {
             name="keywords"
             content="Ventura Steels Quality, ISO 9001:2015 Certified Steel Supplier, Quality Assurance, Steel Testing, Alloy Steel Quality, Tool Steel Standards, Steel Inspection, Reliable Steel Supplier India"
           />
+          <link rel="canonical" href="https://venturasteels.com/quality" />
         </Helmet>
       </HelmetProvider>
 

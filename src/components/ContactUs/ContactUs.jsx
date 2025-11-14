@@ -133,6 +133,7 @@ const ContactUs = () => {
             name="keywords"
             content="Ventura Steels Contact, Steel Supplier India, Alloy Steel Enquiry, Tool Steel Contact, Engineering Steel Supplier, Steel Stockist Support, Ventura Alloy & Steels Contact Details"
           />
+          <link rel="canonical" href="https://venturasteels.com/contact-us" />
         </Helmet>
       </HelmetProvider>
 
@@ -290,7 +291,7 @@ const ContactUs = () => {
                 (Mankoli – Phata), Dapoda, Taluka – Bhiwandi – 421302.
               </p>
               <p>
-                <i className="bi bi-phone-fill"></i> 
+                <i className="bi bi-phone-fill"></i>
                 <span>
                   <a
                     href="tel:+917977097655"

@@ -44,7 +44,7 @@ const FloatingContact = () => {
         <div className="floating-item-wrapper">
           <span className="floating-label">Contact Us</span>
           <a
-            href="/contactus"
+            href="/contact-us"
             className="floating-item contact-btn"
             aria-label="Contact Us"
           >

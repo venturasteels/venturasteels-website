@@ -611,7 +611,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/plastic-mould/P20/1.2311")
+                      handleNavClick("/products/plastic-mould/P20-1.2311")
                     }
                     className="dropdown-item "
                   >
@@ -959,7 +959,7 @@ export default function Header() {
             Careers
           </button>
           <button
-            onClick={() => handleNavClick("/contactUs")}
+            onClick={() => handleNavClick("/contact-us")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
           >
             Contact Us

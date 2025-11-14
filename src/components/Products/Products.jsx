@@ -71,6 +71,7 @@ export default function ProductLanding() {
             name="keywords"
             content="Tool Steels, Ventura Steels Products, Hot Work Steels, Cold Work Steels, Plastic Mould Steel, Spring Steel, Alloy Steel, Carbon Steel, Boron Steel, "
           />
+          <link rel="canonical" href="https://venturasteels.com/products" />
         </Helmet>
       </HelmetProvider>
 

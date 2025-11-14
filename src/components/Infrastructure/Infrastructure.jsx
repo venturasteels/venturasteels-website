@@ -40,6 +40,7 @@ const Infrastructure = () => {
             name="keywords"
             content="Ventura Steels Infrastructure, Steel Stocking Centers Mumbai, Steel Machining Bhiwandi, Alloy Steel Facilities, Tool Steel Processing, Steel Cutting Services, Steel Distribution India"
           />
+          <link rel="canonical" href="https://venturasteels.com/infrastructure" />
         </Helmet>
       </HelmetProvider>
 

@@ -65,6 +65,7 @@ const AboutUs = () => {
             name="keywords"
             content="About Ventura Steels, About Ventura Alloy And Steels Pvt. Ltd.,  Ventura Steels, Complete steel service center, Special steel supplier India, Alloy steel stockist, Tool steel supplier India, Engineering steel distributor, Die & mould steel supplier, Hot work steel stockist, Cold work steel supplier, Plastic mould steel supplier, Steel machining center Mumbai,  Automotive steel supplier India"
           />
+           <link rel="canonical" href="https://venturasteels.com/about" />
         </Helmet>
       </HelmetProvider>
 
@@ -191,7 +192,7 @@ const AboutUs = () => {
                   <FaHandshake size={24} />
                 </div>
                 <div className="timeline-content">
-                  <h3 className="fw-semibold">Our Vision</h3>
+                  <h3 className="fw-semibold">Our Values</h3>
                   <p className="text-justify">
                     Integrity, Commitment, Customer First, Continuous
                     Improvement.

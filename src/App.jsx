@@ -127,7 +127,7 @@ const App = () => {
   return (
     <>
       <Router>
-        {/* <FloatingContact /> */}
+        <FloatingContact />
         <PageTrackerWrapper />
         <ScrollToTop />
         <Header />
@@ -138,7 +138,7 @@ const App = () => {
           <Route path="/quality" element={<Quality />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/certifications" element={<Certifications />} />
-          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/enquiry" element={<EnquiryForm />} />
           <Route path="/careers" element={<Careers />} />
           {/* <Route path="/blogs" element={<Blogs />} /> */}
@@ -159,7 +159,7 @@ const App = () => {
           </Route>
           <Route path="/products/plastic-mould" element={<PlaticMould />}>
             <Route path="P20Ni" element={<P20Ni />} />
-            <Route path="P20/1.2311" element={<P20 />} />
+            <Route path="P20-1.2311" element={<P20 />} />
             <Route path="1.2316" element={<PlasticMould2316 />} />
           </Route>
           <Route path="/products/spring-steel" element={<SpringSteel />}>
