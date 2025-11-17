@@ -616,44 +616,56 @@ export default function Header() {
               {/* Hot Work */}
               <div className="dropdown-submenu">
                 <button
-                  onClick={() => handleNavClick("/products/hot-work")}
+                  onClick={() => handleNavClick("/products/hot-work-steel")}
                   className="dropdown-item"
                 >
                   Hot Work Steel ▸
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/hot-work/DB6")}
+                    onClick={() =>
+                      handleNavClick("/products/hot-work-steel/db6")
+                    }
                     className="dropdown-item "
                   >
                     DB6 / DIN 1.2714 / AISI L6
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/hot-work/H13")}
+                    onClick={() =>
+                      handleNavClick("/products/hot-work-steel/h13")
+                    }
                     className="dropdown-item "
                   >
                     H13 / AISI H13 / DIN 1.2344
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/hot-work/H11")}
+                    onClick={() =>
+                      handleNavClick("/products/hot-work-steel/h11")
+                    }
                     className="dropdown-item "
                   >
                     H11 / AISI H 11 / DIN 1.2343
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/hot-work/H21")}
+                    onClick={() =>
+                      handleNavClick("/products/hot-work-steel/h21")
+                    }
                     className="dropdown-item "
                   >
                     H21 / AISI H21 / DIN 1.2581
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/hot-work/H10")}
+                    onClick={() =>
+                      handleNavClick("/products/hot-work-steel/h10")
+                    }
                     className="dropdown-item "
                   >
                     H10 / AISI H10 / DIN 1.2365 / SKD7
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/hot-work/H12")}
+                    onClick={() =>
+                      handleNavClick("/products/hot-work-steel/h12")
+                    }
                     className="dropdown-item "
                   >
                     H12 / AISI H12 / DIN 1.2606

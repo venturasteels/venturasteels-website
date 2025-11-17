@@ -1,8 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./D2.css";
 
 export default function D2() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "D2 / 1.2379 / HCHCR D2 ",
+        selectedProduct: "Cold Work Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">
@@ -397,9 +407,9 @@ export default function D2() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 200 kg</span>
       </div>
     </div>

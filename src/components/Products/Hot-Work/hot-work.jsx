@@ -7,7 +7,8 @@ const HotWork = () => {
   const [isGradeSelected, setIsGradeSelected] = useState(false);
 
   React.useEffect(() => {
-    const gradePattern = /^\/products\/hot-work\/(DB6|H13|H11|H21|H10|H12)/;
+    const gradePattern =
+      /^\/products\/hot-work-steel\/(db6|h13|h11|h21|h10|h12)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -34,9 +35,9 @@ const HotWork = () => {
             <ul>
               <li>
                 <Link
-                  to="DB6"
+                  to="db6"
                   className={
-                    location.pathname.includes("DB6") ? "active-grade" : ""
+                    location.pathname.includes("db6") ? "active-grade" : ""
                   }
                 >
                   <strong> DB6 / DIN 2714 </strong>/ AISI L6
@@ -44,9 +45,9 @@ const HotWork = () => {
               </li>
               <li>
                 <Link
-                  to="H13"
+                  to="h13"
                   className={
-                    location.pathname.includes("H13") ? "active-grade" : ""
+                    location.pathname.includes("h13") ? "active-grade" : ""
                   }
                 >
                   <strong>H13 </strong> / AISI H 13 / DIN 2344
@@ -54,9 +55,9 @@ const HotWork = () => {
               </li>
               <li>
                 <Link
-                  to="H11"
+                  to="h11"
                   className={
-                    location.pathname.includes("H11") ? "active-grade" : ""
+                    location.pathname.includes("h11") ? "active-grade" : ""
                   }
                 >
                   <strong>H11 </strong> / AISI H 11 / DIN 2343
@@ -64,19 +65,19 @@ const HotWork = () => {
               </li>
               <li>
                 <Link
-                  to="H21"
+                  to="h21"
                   className={
-                    location.pathname.includes("H21") ? "active-grade" : ""
+                    location.pathname.includes("h21") ? "active-grade" : ""
                   }
                 >
-                  H21 / AISI H21 / DIN 1.2581 
+                  H21 / AISI H21 / DIN 1.2581
                 </Link>
               </li>
               <li>
                 <Link
-                  to="H10"
+                  to="h10"
                   className={
-                    location.pathname.includes("H10") ? "active-grade" : ""
+                    location.pathname.includes("h10") ? "active-grade" : ""
                   }
                 >
                   H10 / AISI H10 / DIN 1.2365 / SKD7
@@ -84,9 +85,9 @@ const HotWork = () => {
               </li>
               <li>
                 <Link
-                  to="H12"
+                  to="h12"
                   className={
-                    location.pathname.includes("H12") ? "active-grade" : ""
+                    location.pathname.includes("h12") ? "active-grade" : ""
                   }
                 >
                   H12 / AISI H12 / DIN 1.2606

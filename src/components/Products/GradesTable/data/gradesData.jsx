@@ -3,12 +3,12 @@ const gradesData = [
   {
     category: "Hot Work Tool Steel",
     grades: [
-      { name: "DB6 / 1.2714 / AISI L6", link: "/products/hot-work/DB6" },
-      { name: "H13 / 1.2344", link: "/products/hot-work/H13" },
-      { name: "H11 / 1.2343", link: "/products/hot-work/H11" },
-      { name: "H21 / 1.2581", link: "/products/hot-work/H21" },
-      { name: "H10 / 1.2365 / SKD7", link: "/products/hot-work/H10" },
-      { name: "H12 / 1.2606", link: "/products/hot-work/H12" },
+      { name: "DB6 / 1.2714 / AISI L6", link: "/products/hot-work-steel/db6" },
+      { name: "H13 / 1.2344", link: "/products/hot-work-steel/h13" },
+      { name: "H11 / 1.2343", link: "/products/hot-work-steel/h11" },
+      { name: "H21 / 1.2581", link: "/products/hot-work-steel/h21" },
+      { name: "H10 / 1.2365 / SKD7", link: "/products/hot-work-steel/h10" },
+      { name: "H12 / 1.2606", link: "/products/hot-work-steel/h12" },
     ],
   },
   {

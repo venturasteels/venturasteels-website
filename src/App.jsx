@@ -142,13 +142,13 @@ const App = () => {
           <Route path="/enquiry" element={<EnquiryForm />} />
           <Route path="/careers" element={<Careers />} />
           {/* <Route path="/blogs" element={<Blogs />} /> */}
-          <Route path="/products/hot-work" element={<HotWork />}>
-            <Route path="DB6" element={<DB6 />} />
-            <Route path="H13" element={<H13 />} />
-            <Route path="H11" element={<H11 />} />
-            <Route path="H21" element={<H21 />} />
-            <Route path="H10" element={<H10 />} />
-            <Route path="H12" element={<H12 />} />
+          <Route path="/products/hot-work-steel" element={<HotWork />}>
+            <Route path="db6" element={<DB6 />} />
+            <Route path="h13" element={<H13 />} />
+            <Route path="h11" element={<H11 />} />
+            <Route path="h21" element={<H21 />} />
+            <Route path="h10" element={<H10 />} />
+            <Route path="h12" element={<H12 />} />
           </Route>
           <Route path="/products/cold-work" element={<ColdWork />}>
             <Route path="D2" element={<D2 />} />

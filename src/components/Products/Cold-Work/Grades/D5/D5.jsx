@@ -1,14 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Table from "react-bootstrap/Table";
 import "./D5.css";
 
 export default function D5() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "D5 / Cr12MoV / 1.2601 ",
+        selectedProduct: "Cold Work Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">
-        D5 / <strong>Cr12MoV </strong> / 1.2601{" "}
+        D5 / <strong>Cr12MoV </strong> / 1.2601
       </h2>
       <p className="subtitle text-center">
         High-carbon, high-chromium tool steel with good wear resistance,
@@ -322,9 +332,9 @@ export default function D5() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 200 kg</span>
       </div>
     </div>

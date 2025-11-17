@@ -1,7 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function A2() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "A2 / 1.2363 ",
+        selectedProduct: "Cold Work Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">A2 / 1.2363 </h2>
@@ -267,9 +277,9 @@ export default function A2() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 200 kg</span>
       </div>
     </div>
