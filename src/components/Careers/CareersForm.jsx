@@ -59,9 +59,10 @@ export default function CareerApplicationModal({
     if (!formData.position) newErrors.position = "Position is required";
     if (!formData.name.trim()) newErrors.name = "Full name is required";
     if (!formData.email) newErrors.email = "Email is required";
+    if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
     else if (!/\S+@\S+\.\S+/.test(formData.email))
       newErrors.email = "Invalid email format";
-    if (!formData.resume) newErrors.resume = "Resume is required";
+    // if (!formData.resume) newErrors.resume = "Resume is required";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -257,7 +258,8 @@ export default function CareerApplicationModal({
               name="resume"
               accept=".pdf,.doc,.docx"
               onChange={handleFileChange}
-              isInvalid={!!errors.resume}
+              // isInvalid={!!errors.resume}
+              isInvalid={false}
             />
             <Form.Control.Feedback type="invalid">
               {errors.resume}

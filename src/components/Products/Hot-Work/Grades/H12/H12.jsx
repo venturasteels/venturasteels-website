@@ -1,7 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function H12() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "H12 / AISI H12 / DIN 1.2606",
+        selectedProduct: "Hot Work Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">H12 / AISI H12 / DIN 1.2606</h2>
@@ -310,9 +320,9 @@ export default function H12() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

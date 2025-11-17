@@ -1,15 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./H11.css";
 
 export default function H11() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "H11 / AISI H 11 / DIN 2343",
+        selectedProduct: "Hot Work Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">
-        <strong>H11</strong> / AISI H 11 / DIN 2343{" "}
+        <strong>H11</strong> / AISI H 11 / DIN 2343
       </h2>
       <p className="subtitle text-center">
-        Premium Hot Work Tool Steel with high toughness & wear resistance.
+        Premium Hot Work Tool Steel with high toughness & wear resistance. 
       </p>
       {/* standards  */}
       <div className="standards-scroll-wrapper mb-4">
@@ -17,7 +28,10 @@ export default function H11() {
           <table className="standards-table">
             <tbody>
               <tr>
-                <td> <strong>Country </strong> </td>
+                <td>
+                  {" "}
+                  <strong>Country </strong>{" "}
+                </td>
                 <td>Germany</td>
                 <td>USA</td>
                 <td>France</td>
@@ -467,10 +481,11 @@ export default function H11() {
         <div className="container text-center">
           <h2 className="section-title mb-4">Stocking Partners</h2>
           <p className="lead">
-            We keep the materials from <strong>India</strong>  and <strong>China</strong>.
+            We keep the materials from <strong>India</strong> and{" "}
+            <strong>China</strong>.
           </p>
           <div className="partner-flags mt-4">
-                 <img
+            <img
               src="/image/india-flag.png"
               alt="India Flag"
               className="flag-img mx-3"
@@ -491,8 +506,8 @@ export default function H11() {
           <p>
             <strong>Grades in Bold (e.g. H11)</strong> are kept in stock and
             supplied on a regular basis. <br />
-            For other grades, we accept <strong>advance orders</strong> on
-            MOQ basis as per size requirements.
+            For other grades, we accept <strong>advance orders</strong> on MOQ
+            basis as per size requirements.
           </p>
           <div className="note-box mt-3 p-3 rounded">
             <h5 className="note-title">Additional Services</h5>
@@ -507,9 +522,9 @@ export default function H11() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

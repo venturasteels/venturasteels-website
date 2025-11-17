@@ -1,7 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function H10() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "H10 / AISI H10 / DIN 1.2365 / SKD7",
+        selectedProduct: "Hot Work Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center"> H10 / AISI H10 / DIN 1.2365 / SKD7</h2>
@@ -338,8 +349,7 @@ export default function H10() {
         <div className="container">
           <h4 className="mb-3">Availability</h4>
           <p>
-            All grades of H10 / AISI H10 / DIN 1.2365 / SKD7 
-            are available on
+            All grades of H10 / AISI H10 / DIN 1.2365 / SKD7 are available on
             <strong> advance order</strong> basis on <strong>MOQ</strong> as per
             size requirements.
           </p>
@@ -357,9 +367,9 @@ export default function H10() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes </span>
       </div>
     </div>

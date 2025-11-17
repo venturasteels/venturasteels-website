@@ -121,7 +121,7 @@
 .select-shape {
   padding: 5px 10px;
 }
-.badge{
+.badge {
   font-size: 18px;
 }
 .close-btn {
@@ -159,8 +159,8 @@
     font-size: 13px;
   }
   .badge {
-    font-size: 14px;
-}
+    font-size: 11px;
+  }
   .enquiry-form label {
     font-size: 0.78rem;
   }
@@ -169,12 +169,18 @@
   }
   .horizontal-heading {
     margin: 0px auto;
-}
-.enquiry-container .mb-5 {
+  }
+  .enquiry-container .mb-5 {
     margin-bottom: 1.5rem !important;
-}
-.enquiry-container{
+  }
+  .enquiry-container {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-}
+  }
+  .enquiry-form select option {
+    font-size: 12px;
+  }
+  .enquiry-form button {
+    padding: 0.3rem 0.6rem;
+  }
 }

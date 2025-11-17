@@ -1,4 +1,6 @@
-/*sidebar */
+/* -----------------------------
+   SIDEBAR OVERLAY
+------------------------------ */
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -18,7 +20,9 @@
   visibility: visible;
 }
 
-/* Sidebar container */
+/* -----------------------------
+   SIDEBAR MAIN CONTAINER
+------------------------------ */
 .sidebar {
   position: fixed;
   top: 0;
@@ -35,18 +39,43 @@
   align-items: center;
 }
 
-/* Sidebar open state */
 .sidebar.open {
   left: 0;
 }
 
-/* Logo */
+/* Scrollable menu area */
+.sidebar-scroll {
+  overflow-y: auto;
+  width: 100%;
+  max-height: calc(100vh - 150px);
+  padding-right: 6px;
+}
+
+/* Custom Scrollbar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #ffffff40;
+  border-radius: 10px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* -----------------------------
+   LOGO
+------------------------------ */
 .sidebar-logo {
   height: 90px;
   object-fit: contain;
 }
 
-/* Close Button */
+/* -----------------------------
+   CLOSE BUTTON
+------------------------------ */
 .sidebar-close-btn {
   background: transparent;
   border: none;
@@ -62,19 +91,24 @@
   color: #fe7743;
 }
 
-/* Menu list */
+/* -----------------------------
+   NAV LIST
+------------------------------ */
 .sidebar-nav {
   list-style: none;
   padding: 0;
+  margin: 0;
   width: 100%;
+  color: #fff;
 }
 
-/* Menu items */
 .sidebar-item {
   margin: 12px 0;
 }
 
-/* Menu buttons */
+/* -----------------------------
+   SIDEBAR TILE (MAIN MENU ITEM)
+------------------------------ */
 .sidebar-tile {
   display: block;
   width: 100%;
@@ -84,14 +118,17 @@
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
   cursor: pointer;
   border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Hover */
 .sidebar-tile:hover {
   background: #fe7743;
   color: #fff;
@@ -99,10 +136,65 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Active menu item */
-.sidebar-tile.active {
+/* Active main item */
+.sidebar-item.active .sidebar-tile {
   background: #fe7743;
   color: #fff;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   DROPDOWN ARROW ICON
+------------------------------ */
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* -----------------------------
+   SUBMENU (ANIMATED DROPDOWN)
+------------------------------ */
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease-in-out;
+  padding-left: 20px;
+}
+
+/* Submenu visible state is controlled by inline style */
+
+.submenu-item {
+  background: none;
+  border: none;
+  text-align: left;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  display: block;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submenu-item:hover {
+  opacity: 0.75;
+  transform: translateX(4px);
+}
+
+/* Active submenu item */
+.submenu-item.active-sub {
+  color: #fe7743;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   OPEN DROPDOWN BUTTON STYLE
+------------------------------ */
+.dropdown-btn.open {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* social + contact-info */
@@ -129,7 +221,7 @@
 .bg-social a {
   color: #273f4f;
 }
-.contact-link{
+.contact-link {
   text-decoration: none;
 }
 

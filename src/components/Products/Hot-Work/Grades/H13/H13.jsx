@@ -1,13 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./H13.css";
 
 export default function H13() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "H13 / AISI H13 / DIN 2344",
+        selectedProduct: "Hot Work Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">
-        {" "}
-        <strong>H13 </strong> / AISI H13 / DIN 2344{" "}
+        <strong>H13 </strong> / AISI H13 / DIN 2344
       </h2>
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
@@ -459,11 +468,12 @@ export default function H13() {
         <div className="container text-center">
           <h2 className="section-title mb-4">Stocking Partners</h2>
           <p className="lead">
-            We keep the materials from <strong>India</strong> , <strong>China</strong> and
+            We keep the materials from <strong>India</strong> ,{" "}
+            <strong>China</strong> and
             <strong>Europe</strong>.
           </p>
           <div className="partner-flags mt-4">
-              <img
+            <img
               src="/image/india-flag.png"
               alt="India Flag"
               className="flag-img mx-3"
@@ -487,10 +497,10 @@ export default function H13() {
         <div className="container">
           <h4 className="mb-3">Availability</h4>
           <p>
-            <strong>Grades in Bold (e.g. H13)</strong> are kept in stock and supplied on a
-            regular basis. <br />
-            For other grades, we accept <strong>advance orders</strong> on
-            MOQ basis as per size requirements.
+            <strong>Grades in Bold (e.g. H13)</strong> are kept in stock and
+            supplied on a regular basis. <br />
+            For other grades, we accept <strong>advance orders</strong> on MOQ
+            basis as per size requirements.
           </p>
           <div className="note-box mt-3 p-3 rounded">
             <h5 className="note-title">Additional Services</h5>
@@ -505,9 +515,9 @@ export default function H13() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         {/* <span>MOQ: 200 kg | Price: ₹135/kg*</span> */}
       </div>
     </div>

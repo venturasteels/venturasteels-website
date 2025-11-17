@@ -30,6 +30,7 @@ export default function Header() {
 
   const navigate = useNavigate();
   const location = useLocation();
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
 
   const handleNavClick = (path) => {
     if (location.pathname === path) {
@@ -318,6 +319,14 @@ export default function Header() {
   ];
 
   const [showSearch, setShowSearch] = useState(false);
+  const [openDropdowns, setOpenDropdowns] = useState({
+    products: false,
+    // future dropdowns: services: false, categories: false, etc.
+  });
+
+  const toggleDropdown = (key) => {
+    setOpenDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
 
   return (
     <>
@@ -439,33 +448,135 @@ export default function Header() {
           />
         </div>
 
-        {/* Sidebar Menu Tiles */}
-        <ul className="sidebar-nav">
-          {[
-            { to: "/", text: "Home" },
-            { to: "/about", text: "About Us" },
-            { to: "/products", text: "Products" },
-            { to: "/quality", text: "Quality" },
-            { to: "/infrastructure", text: "Infrastructure" },
-            { to: "/certifications", text: "Certifications" },
-            { to: "/enquiry", text: "Enquiry" },
-            { to: "/blogs", text: "Blogs" },
-            { to: "/careers", text: "Careers" },
-            { to: "/contactUs", text: "Contact Us" },
-          ].map(({ to, text }) => (
-            <li key={to} className="sidebar-item">
-              <button
-                onClick={() => {
-                  handleNavClick(to);
-                  setIsSidebarOpen(false);
-                }}
-                className="sidebar-tile"
-              >
-                {text}
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div
+          className={`sidebar ${isSidebarOpen ? "open" : ""}`}
+          ref={sidebarRef}
+        >
+          <div className="sidebar-header d-flex justify-content-between align-items-center">
+            <img
+              src="/image/Semi Circle Logo.jpg"
+              alt="Ventura Steels"
+              className="sidebar-logo rounded mb-2"
+            />
+          </div>
+
+          {/* Scrollable container */}
+          <div className="sidebar-scroll">
+            <ul className="sidebar-nav">
+              {/* SINGLE ITEMS */}
+              {[
+                { to: "/", text: "Home" },
+                { to: "/about", text: "About Us" },
+              ].map(({ to, text }) => (
+                <li
+                  key={to}
+                  className={`sidebar-item ${
+                    location.pathname === to ? "active" : ""
+                  }`}
+                >
+                  <button
+                    className="sidebar-tile"
+                    onClick={() => {
+                      handleNavClick(to);
+                      setIsSidebarOpen(false);
+                    }}
+                  >
+                    {text}
+                  </button>
+                </li>
+              ))}
+
+              {/* PRODUCTS DROPDOWN */}
+              <li className="sidebar-item">
+                <button
+                  className={`sidebar-tile dropdown-btn ${
+                    openDropdowns.products ? "open" : ""
+                  }`}
+                  onClick={() => toggleDropdown("products")}
+                >
+                  <span>Products</span>
+
+                  {/* SVG Arrow */}
+                  <svg
+                    className={`dropdown-arrow ${
+                      openDropdowns.products ? "rotate" : ""
+                    }`}
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="white" d="M7 10l5 5 5-5z" />
+                  </svg>
+                </button>
+
+                {/* Animated Dropdown */}
+                <ul
+                  className="submenu"
+                  style={{
+                    maxHeight: openDropdowns.products ? "500px" : "0px",
+                  }}
+                >
+                  {[
+                    { to: "/products/hot-work", text: "Hot Work Steel" },
+                    {
+                      to: "/products/cold-work",
+                      text: "Cold Work Steel",
+                    },
+                    {
+                      to: "/products/spring-steel",
+                      text: "Spring Steel",
+                    },
+                    { to: "/products/alloy-steel", text: "Alloy Steel" },
+                    { to: "/products/carbon-steel", text: "Carbon Steel" },
+                    { to: "/products/boron-steel", text: "Boron Steel" },
+                  ].map(({ to, text }) => (
+                    <li key={to}>
+                      <button
+                        className={`submenu-item ${
+                          location.pathname === to ? "active-sub" : ""
+                        }`}
+                        onClick={() => {
+                          handleNavClick(to);
+                          setIsSidebarOpen(false);
+                        }}
+                      >
+                        {text}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+
+              {/* REMAINING ITEMS */}
+              {[
+                { to: "/quality", text: "Quality" },
+                { to: "/infrastructure", text: "Infrastructure" },
+                { to: "/certifications", text: "Certifications" },
+                { to: "/enquiry", text: "Enquiry" },
+                { to: "/blogs", text: "Blogs" },
+                { to: "/careers", text: "Careers" },
+                { to: "/contactUs", text: "Contact Us" },
+              ].map(({ to, text }) => (
+                <li
+                  key={to}
+                  className={`sidebar-item ${
+                    location.pathname === to ? "active" : ""
+                  }`}
+                >
+                  <button
+                    className="sidebar-tile"
+                    onClick={() => {
+                      handleNavClick(to);
+                      setIsSidebarOpen(false);
+                    }}
+                  >
+                    {text}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* Desktop Nav */}
@@ -587,7 +698,7 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/cold-work/O1")}
                     className="dropdown-item "
                   >
-                    O1/ 2510/ OHNS O1
+                    O1 / 2510 / OHNS O1
                   </button>
                 </div>
               </div>

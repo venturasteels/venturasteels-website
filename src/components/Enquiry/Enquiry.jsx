@@ -18,40 +18,56 @@ import { useLocation } from "react-router-dom";
 
 const productOptions = {
   "Hot Work Steel": [
-    "DB6 / 2714 / AISI L6",
-    "H13 / 2344",
-    "H11 / 2343",
-    "H10 / 2365 / SKD7",
-    "H12 / 2606",
+    "DB6 / DIN 1.2714 / AISI L6",
+    "H13 / AISI H13 / DIN 1.2344",
+    "H11 / AISI H 11 / DIN 1.2343",
+    "H21 / AISI H21 / DIN 1.2581",
+    "H10 / AISI H10 / DIN 1.2365 / SKD7",
+    "H12 / AISI H12 / DIN 1.2606",
   ],
   "Cold Work Steel": [
-    "D2 / 2379 / HCHCR D2",
-    "D3 / 2080 / HCHCR D3",
-    "5 / Cr12MoV / 2601",
-    "A2 / 2363",
-    "O1 / 2510 / OHNS O1",
+    "D2 / 1.2379 / HCHCR D2",
+    "D3 / 1.2080 / HCHCR D3",
+    "D5 / Cr12MoV / 1.2601",
+    "A2 / 1.2363",
+    "O1/ 2510 / OHNS O1",
   ],
-  "Plastic Mould Steel": ["P20+N1 / 2738", " P20 / 2311", "2316"],
+  "Plastic Mould Steel": ["P20+Ni / 1.2738", " P20 / 1.2311", "1.2316"],
   "Spring Steel": [
-    "EN 47 / 50CrV4 / 51CrV4 / AISI 6150",
+    "EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10",
     "SUP 9",
-    "SAE 9254",
+    "SAE 9254 / SUP 11A",
     "EN 31 / SAE 52100 / 100Cr6",
-    "EN 45 / SAE 9260",
+    "EN45 / SAE 9260 / 60Si7",
     "SAE 5160",
+    "52CrMoV4 / 50Cr4MoV2 ",
+    "52CrV4 / 51CrV4 / AISI 4150 ",
+    "55Si7 / 56Si7 / SAE 9255 ",
   ],
   "Alloy Steel": [
-    " EN 24 / SAE 4340 / 40NiCrMo84 / EN 41B / EN14 / BM",
-    "EN 19 / SAE 4140 / DIN 42CrMo4",
-    " EN18 / 41Cr4",
+    "20MnCr5 / 16MnCr5",
+    "SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D",
+    "SAE 1020",
+    "41Cr4 / EN18 / 40Cr4B ",
+    "EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84 ",
+    "EN 24 / 18CrNiMo6 ",
+    "SAE4130 ",
+    "EN36C ",
+    "SAE 8620 / EN353 / SAE 9310 ",
   ],
   "Carbon Steel": [
-    "C45 / SAE 1018 / EN9 / EN8D",
-    "SAE 1141",
+    "C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045",
+    "SAE 1018 / ASTM A36 / ASTM A29 / SAE 1137 / SAE 1138",
     "ST 52.3",
-    "EN 1A / PB / 230M07 PB",
+    "EN 1A / EN 1A_PB / EN 1A_L / 230M07 PB",
+    "35C8 / C35 / EN8 / SAE 1035 / 45C8 ",
+    "SAE 1541 / EN 15 ",
+    "27C15 / SAE 1527 ",
+    "SAE 1117 / ASTM A108 ",
+    "EN43BCr / SAE 1050 / EN43A ",
+    "SAE 1141 ",
   ],
-  "Boron Steel": ["10B21/ 15B25 / 10B35"],
+  "Boron Steel": ["10B21", "15B25", "10B35"],
 };
 
 export default function EnquiryForm() {
@@ -279,17 +295,17 @@ export default function EnquiryForm() {
       if (!response.ok) throw new Error("Failed to save enquiry");
 
       //Show success modal
-      const gradesWithSpecs = selectedGrades
-        .map((grade) => {
-          const specs = gradeShapes[grade];
-          if (!specs) return grade;
-          if (specs.shape === "Round Bar")
-            return `${grade} - Shape: ${specs.shape}, Diameter: ${specs.diameter}, Quantity: ${specs.quantity}`;
-          if (specs.shape === "Block")
-            return `${grade} - Shape: ${specs.shape}, Thickness: ${specs.thickness}, Width: ${specs.width}, Quantity: ${specs.quantity}`;
-          return grade;
-        })
-        .join("\n");
+      // const gradesWithSpecs = selectedGrades
+      //   .map((grade) => {
+      //     const specs = gradeShapes[grade];
+      //     if (!specs) return grade;
+      //     if (specs.shape === "Round Bar")
+      //       return `${grade} - Shape: ${specs.shape}, Diameter: ${specs.diameter}, Quantity: ${specs.quantity}`;
+      //     if (specs.shape === "Block")
+      //       return `${grade} - Shape: ${specs.shape}, Thickness: ${specs.thickness}, Width: ${specs.width}, Quantity: ${specs.quantity}`;
+      //     return grade;
+      //   })
+      //   .join("\n");
 
       setModalType("success");
       setModalMessage(
@@ -513,9 +529,9 @@ export default function EnquiryForm() {
                     {selectedGrades.map((grade) => (
                       <div
                         key={grade}
-                        className="selected-grade-tag d-flex flex-column gap-2 mb-2"
+                        className="selected-grade-tag d-flex flex-column gap-2 mb-2 fs-2"
                       >
-                        <div className="d-flex align-items-center gap-3">
+                        <div className="d-flex align-items-center gap-3 flex-wrap">
                           <span className="badge bg-secondary py-3">
                             {grade}
                           </span>
