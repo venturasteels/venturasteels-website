@@ -36,7 +36,7 @@ export default function DB6() {
 
         <link
           rel="canonical"
-          href="https://venturasteels.com/products/hot-work/db6"
+          href="https://venturasteels.com/products/hot-work-steel/db6"
         />
 
         {/* FAQ Schema for SEO Rich Results */}
@@ -525,8 +525,22 @@ export default function DB6() {
       </div>
       <p className="text-center fs-4">
         Explore more Hot Work Tool Steel grades like
-        <Link to="/products/hot-work-steel/h13" className="text-decoration-none text-muted"> H13</Link>, 
-        <Link to="/products/hot-work-steel/h21" className="text-decoration-none text-muted"> H21</Link>.
+        <Link
+          to="/products/hot-work-steel/h13"
+          className="text-decoration-none text-muted"
+        >
+          {" "}
+          H13
+        </Link>
+        ,
+        <Link
+          to="/products/hot-work-steel/h21"
+          className="text-decoration-none text-muted"
+        >
+          {" "}
+          H21
+        </Link>
+        .
       </p>
     </>
   );
