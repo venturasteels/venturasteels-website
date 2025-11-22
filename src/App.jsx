@@ -11,6 +11,7 @@ import Products from "./components/Products/Products.jsx";
 import ReactGA from "react-ga4";
 import usePageTracking from "./hooks/usePageTracking.jsx";
 import FloatingContact from "./components/FloatingContact/FloatingContact.jsx";
+import NotFound from "./components/Pages/NotFound.jsx";
 // import "./App.css";
 // HotWork
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
@@ -209,6 +210,7 @@ const App = () => {
             element={<InfrastructureEnergy />}
           />
           <Route path="/products/plastics" element={<Plastics />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>

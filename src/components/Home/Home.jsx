@@ -61,19 +61,19 @@ const Home = () => {
       title: "Hot Work Steel",
       desc: "For high-temperature tools and dies.",
       img: "/image/Hot Work Tool Steels/Hot Work Tool Steel 1.2344 Round Bars.png",
-      link: "/products/hot-work",
+      link: "/products/hot-work-steel",
     },
     {
       title: "Cold Work Steel",
       desc: "Perfect for cutting & forming tools.",
       img: "/image/Cold Work Tool Steels/Cold Work - D2.png",
-      link: "/products/cold-work",
+      link: "/products/cold-work-steel",
     },
     {
       title: "Spring Steel",
       desc: "Flexible & strong for industrial use.",
       img: "/image/Spring Steels/EN 31 Rods.png",
-      link: "/products/spring-steel",
+      link: "/products/spring-steel-steel",
     },
     {
       title: "Alloy Steel",
@@ -183,7 +183,7 @@ const Home = () => {
       {/* video-banner */}
       <div className="video-banner">
         <video
-        preload="none"
+          preload="none"
           autoPlay
           loop
           muted
