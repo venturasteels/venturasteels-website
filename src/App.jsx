@@ -150,16 +150,16 @@ const App = () => {
             <Route path="h10" element={<H10 />} />
             <Route path="h12" element={<H12 />} />
           </Route>
-          <Route path="/products/cold-work" element={<ColdWork />}>
-            <Route path="D2" element={<D2 />} />
-            <Route path="D3" element={<D3 />} />
-            <Route path="D5" element={<D5 />} />
-            <Route path="A2" element={<A2 />} />
-            <Route path="O1" element={<O1 />} />
+          <Route path="/products/cold-work-steel" element={<ColdWork />}>
+            <Route path="d2" element={<D2 />} />
+            <Route path="d3" element={<D3 />} />
+            <Route path="d5" element={<D5 />} />
+            <Route path="a2" element={<A2 />} />
+            <Route path="o1" element={<O1 />} />
           </Route>
-          <Route path="/products/plastic-mould" element={<PlaticMould />}>
-            <Route path="P20Ni" element={<P20Ni />} />
-            <Route path="P20-1.2311" element={<P20 />} />
+          <Route path="/products/plastic-mould-steel" element={<PlaticMould />}>
+            <Route path="p20ni" element={<P20Ni />} />
+            <Route path="p20-1.2311" element={<P20 />} />
             <Route path="1.2316" element={<PlasticMould2316 />} />
           </Route>
           <Route path="/products/spring-steel" element={<SpringSteel />}>

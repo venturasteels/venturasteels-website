@@ -517,7 +517,7 @@ export default function Header() {
                   }}
                 >
                   {[
-                    { to: "/products/hot-work", text: "Hot Work Steel" },
+                    { to: "/products/hot-work-steel", text: "Hot Work Steel" },
                     {
                       to: "/products/cold-work",
                       text: "Cold Work Steel",
@@ -676,38 +676,38 @@ export default function Header() {
               {/* Cold Work */}
               <div className="dropdown-submenu">
                 <button
-                  onClick={() => handleNavClick("/products/cold-work")}
+                  onClick={() => handleNavClick("/products/cold-work-steel")}
                   className="dropdown-item"
                 >
                   Cold Work Steel ▸
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/cold-work/D2")}
+                    onClick={() => handleNavClick("/products/cold-work-steel/d2")}
                     className="dropdown-item "
                   >
                     D2 / 1.2379 / HCHCR D2
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work/D3")}
+                    onClick={() => handleNavClick("/products/cold-work-steel/d3")}
                     className="dropdown-item "
                   >
                     D3 / 1.2080 / HCHCR D3
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work/D5")}
+                    onClick={() => handleNavClick("/products/cold-work-steel/d5")}
                     className="dropdown-item "
                   >
                     D5 / Cr12MoV / 1.2601
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work/A2")}
+                    onClick={() => handleNavClick("/products/cold-work-steel/a2")}
                     className="dropdown-item "
                   >
                     A2 / 1.2363
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work/O1")}
+                    onClick={() => handleNavClick("/products/cold-work-steel/o1")}
                     className="dropdown-item "
                   >
                     O1 / 2510 / OHNS O1
@@ -718,7 +718,7 @@ export default function Header() {
               {/* Plastic Mould Steel */}
               <div className="dropdown-submenu">
                 <button
-                  onClick={() => handleNavClick("/products/plastic-mould")}
+                  onClick={() => handleNavClick("/products/plastic-mould-steel")}
                   className="dropdown-item"
                 >
                   Plastic Mould Steel ▸
@@ -726,7 +726,7 @@ export default function Header() {
                 <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() =>
-                      handleNavClick("/products/plastic-mould/P20Ni")
+                      handleNavClick("/products/plastic-mould-steel/p20ni")
                     }
                     className="dropdown-item "
                   >
@@ -734,7 +734,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/plastic-mould/P20-1.2311")
+                      handleNavClick("/products/plastic-mould-steel/p20-1.2311")
                     }
                     className="dropdown-item "
                   >
@@ -742,7 +742,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/plastic-mould/1.2316")
+                      handleNavClick("/products/plastic-mould-steel/1.2316")
                     }
                     className="dropdown-item "
                   >

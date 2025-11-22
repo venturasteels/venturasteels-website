@@ -182,7 +182,17 @@ const Home = () => {
 
       {/* video-banner */}
       <div className="video-banner">
-        <video autoPlay loop muted className="bg-video w-100">
+        <video
+        preload="none"
+          autoPlay
+          loop
+          muted
+          playsInline
+          title="Ventura Steels Quality Standards – Steel Round Bars Manufacturing"
+          aria-label="Ventura Steels quality video showcasing steel round bars and manufacturing process"
+          poster="/image/home-bg.png"
+          className="bg-video w-100"
+        >
           <source
             src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto/ventura-home-bg_cpbnxi.mp4"
             type="video/mp4"
@@ -242,9 +252,10 @@ const Home = () => {
           <div className="row align-items-center ">
             <div className="col-md-6" data-aos="fade-right">
               <img
-                src="/image/about-ventura.png"
+                src="/image/about-ventura.jpg"
                 alt="About Ventura"
                 className="img-fluid rounded"
+                loading="lazy"
               />
             </div>
             <div className="col-md-6 about-content" data-aos="fade-left">
@@ -304,6 +315,7 @@ const Home = () => {
                       src={item.img}
                       alt={item.title}
                       className="product-image"
+                      loading="lazy"
                     />
                     <div className="overlay-product">
                       <h5 className="text-center">{item.title}</h5>
@@ -397,6 +409,7 @@ const Home = () => {
                 src="/image/why-choose-us.jpg"
                 alt="Why Ventura Steels"
                 className="img-fluid rounded-4 shadow"
+                loading="lazy"
               />
             </div>
             <div className="col-lg-6" data-aos="fade-left">
@@ -463,6 +476,7 @@ const Home = () => {
                       src={cert.src}
                       alt={cert.alt}
                       className="certificate-img mx-auto"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -507,6 +521,7 @@ const Home = () => {
                     src={supplier.logo}
                     alt={`Supplier ${idx + 1}`}
                     className="img-fluid"
+                    loading="lazy"
                     style={{
                       maxWidth: "70%",
                       maxHeight: "70%",

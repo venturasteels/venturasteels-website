@@ -34,10 +34,10 @@ section {
   border: 1px solid #fe7743;
 }
 
-.overview {
+/* .overview {
   width: 82%;
   margin: 0px auto;
-}
+} */
 
 .overview-content p {
   text-align: justify;

@@ -14,19 +14,22 @@ const gradesData = [
   {
     category: "Cold Work Tool Steel",
     grades: [
-      { name: "D2 / 1.2379 / HCHCR D2", link: "/products/cold-work/D2" },
-      { name: "D3 / 1.2080 / HCHCR D3", link: "/products/cold-work/D3" },
-      { name: "D5 / Cr12MoV / 1.2601", link: "/products/cold-work/D5" },
-      { name: "A2 / 1.2363", link: "/products/cold-work/A2" },
-      { name: "O1/ 2510/ OHNS O1", link: "/products/cold-work/O1" },
+      { name: "D2 / 1.2379 / HCHCR D2", link: "/products/cold-work-steel/d2" },
+      { name: "D3 / 1.2080 / HCHCR D3", link: "/products/cold-work-steel/d3" },
+      { name: "D5 / Cr12MoV / 1.2601", link: "/products/cold-work-steel/d5" },
+      { name: "A2 / 1.2363", link: "/products/cold-work-steel/d2" },
+      { name: "O1/ 2510/ OHNS O1", link: "/products/cold-work-steel/o1" },
     ],
   },
   {
     category: "Plastic Mould Steel",
     grades: [
-      { name: "P20+Ni / 1.2738", link: "/products/plastic-mould/P20Ni" },
-      { name: "P20 / 1.2311", link: "/products/plastic-mould/P20-1.2311" },
-      { name: "1.2316", link: "/products/plastic-mould/1.2316" },
+      { name: "P20+Ni / 1.2738", link: "/products/plastic-mould-steel/p20ni" },
+      {
+        name: "P20 / 1.2311",
+        link: "/products/plastic-mould-steel/p20-1.2311",
+      },
+      { name: "1.2316", link: "/products/plastic-mould-steel/1.2316" },
     ],
   },
   {

@@ -7,7 +7,8 @@ const PlasticMould = () => {
   const [isGradeSelected, setIsGradeSelected] = useState(false);
 
   React.useEffect(() => {
-    const gradePattern = /^\/products\/plastic-mould\/(P20Ni|P20-1.2311|1.2316)/;
+    const gradePattern =
+      /^\/products\/plastic-mould-steel\/(p20ni|p20-1.2311|1.2316)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -39,9 +40,9 @@ const PlasticMould = () => {
             <ul>
               <li>
                 <Link
-                  to="P20Ni"
+                  to="p20ni"
                   className={
-                    location.pathname.includes("P20Ni") ? "active-grade" : ""
+                    location.pathname.includes("p20ni") ? "active-grade" : ""
                   }
                 >
                   P20+Ni / 1.2738
@@ -49,9 +50,9 @@ const PlasticMould = () => {
               </li>
               <li>
                 <Link
-                  to="P20-1.2311"
+                  to="p20-1.2311"
                   className={
-                    location.pathname.includes("P20-1.2311")
+                    location.pathname.includes("p20-1.2311")
                       ? "active-grade"
                       : ""
                   }

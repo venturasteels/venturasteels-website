@@ -7,7 +7,7 @@ const ColdWork = () => {
   const [isGradeSelected, setIsGradeSelected] = useState(false);
 
   React.useEffect(() => {
-    const gradePattern = /^\/products\/cold-work\/(D2|D3|D5|A2|O1)/;
+    const gradePattern = /^\/products\/cold-work-steel\/(d2|d3|d5|a2|o1)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -43,9 +43,9 @@ const ColdWork = () => {
             <ul>
               <li>
                 <Link
-                  to="D2"
+                  to="d2"
                   className={
-                    location.pathname.includes("D2") ? "active-grade" : ""
+                    location.pathname.includes("d2") ? "active-grade" : ""
                   }
                 >
                   <strong>D2 / 1.2379 </strong>/ HCHCR D2
@@ -53,9 +53,9 @@ const ColdWork = () => {
               </li>
               <li>
                 <Link
-                  to="D3"
+                  to="d3"
                   className={
-                    location.pathname.includes("D3") ? "active-grade" : ""
+                    location.pathname.includes("d3") ? "active-grade" : ""
                   }
                 >
                   <strong>D3 / 1.2080 </strong> / HCHCR D3
@@ -63,9 +63,9 @@ const ColdWork = () => {
               </li>
               <li>
                 <Link
-                  to="D5"
+                  to="d5"
                   className={
-                    location.pathname.includes("D5") ? "active-grade" : ""
+                    location.pathname.includes("d5") ? "active-grade" : ""
                   }
                 >
                   D5 / <strong> Cr12MoV </strong> / 1.2601
@@ -73,9 +73,9 @@ const ColdWork = () => {
               </li>
               <li>
                 <Link
-                  to="A2"
+                  to="a2"
                   className={
-                    location.pathname.includes("A2") ? "active-grade" : ""
+                    location.pathname.includes("a2") ? "active-grade" : ""
                   }
                 >
                   A2 / 1.2363
@@ -83,9 +83,9 @@ const ColdWork = () => {
               </li>
               <li>
                 <Link
-                  to="O1"
+                  to="o1"
                   className={
-                    location.pathname.includes("O1") ? "active-grade" : ""
+                    location.pathname.includes("o1") ? "active-grade" : ""
                   }
                 >
                   O1 / 2510 / OHNS O1

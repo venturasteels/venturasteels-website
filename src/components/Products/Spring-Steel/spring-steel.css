@@ -186,3 +186,12 @@
     margin: 0px 20px;
   }
 }
+@media (min-width: 769px) and (max-width: 1117px) {
+  .spring-steel-main.active .sidebar-wrapper {
+    width: 70%;
+  }
+  .overview {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
