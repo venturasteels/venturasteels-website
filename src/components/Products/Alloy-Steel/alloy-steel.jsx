@@ -8,7 +8,7 @@ const AlloySteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/alloy-steel\/(20MnCr5|SAE4140|SAE1020|41Cr4|EN41B|EN24|SAE4130|EN36C|SAE8620)/;
+      /^\/products\/alloy-steel\/(20mncr5|sae4140|sae1020|41cr4|en41b|en24|sae4130|en36c|sae8620)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -35,9 +35,9 @@ const AlloySteel = () => {
             <ul>
               <li>
                 <Link
-                  to="20MnCr5"
+                  to="20mncr5"
                   className={
-                    location.pathname.includes("EN47") ? "active-grade" : ""
+                    location.pathname.includes("20mncr5") ? "active-grade" : ""
                   }
                 >
                   20MnCr5 / 16MnCr5
@@ -45,9 +45,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE4140"
+                  to="sae4140"
                   className={
-                    location.pathname.includes("SAE4140") ? "active-grade" : ""
+                    location.pathname.includes("sae4140") ? "active-grade" : ""
                   }
                 >
                   SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D
@@ -55,9 +55,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE1020"
+                  to="sae1020"
                   className={
-                    location.pathname.includes("SAE1020") ? "active-grade" : ""
+                    location.pathname.includes("sae1020") ? "active-grade" : ""
                   }
                 >
                   SAE 1020
@@ -65,9 +65,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="41Cr4"
+                  to="41cr4"
                   className={
-                    location.pathname.includes("41Cr4") ? "active-grade" : ""
+                    location.pathname.includes("41cr4") ? "active-grade" : ""
                   }
                 >
                   41Cr4 / EN18 / 40Cr4B
@@ -75,9 +75,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="EN41B"
+                  to="en41b"
                   className={
-                    location.pathname.includes("EN41B") ? "active-grade" : ""
+                    location.pathname.includes("en41b") ? "active-grade" : ""
                   }
                 >
                   EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84
@@ -85,9 +85,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="EN24"
+                  to="en24"
                   className={
-                    location.pathname.includes("EN24") ? "active-grade" : ""
+                    location.pathname.includes("en24") ? "active-grade" : ""
                   }
                 >
                   EN 24 / 18CrNiMo6
@@ -95,9 +95,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE4130"
+                  to="sae4130"
                   className={
-                    location.pathname.includes("SAE4130") ? "active-grade" : ""
+                    location.pathname.includes("sae4130") ? "active-grade" : ""
                   }
                 >
                   SAE4130
@@ -105,9 +105,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="EN36C"
+                  to="en36c"
                   className={
-                    location.pathname.includes("EN36C") ? "active-grade" : ""
+                    location.pathname.includes("en36c") ? "active-grade" : ""
                   }
                 >
                   EN36C
@@ -115,9 +115,9 @@ const AlloySteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE8620"
+                  to="sae8620"
                   className={
-                    location.pathname.includes("SAE8620") ? "active-grade" : ""
+                    location.pathname.includes("sae8620") ? "active-grade" : ""
                   }
                 >
                   SAE 8620 / EN353 / SAE 9310

@@ -762,7 +762,7 @@ export default function Header() {
                 <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/EN47")
+                      handleNavClick("/products/spring-steel/en47")
                     }
                     className="dropdown-item "
                   >
@@ -770,7 +770,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/SUP9")
+                      handleNavClick("/products/spring-steel/sup9")
                     }
                     className="dropdown-item "
                   >
@@ -778,7 +778,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/SAE9254")
+                      handleNavClick("/products/spring-steel/sae9254")
                     }
                     className="dropdown-item "
                   >
@@ -786,7 +786,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/EN31")
+                      handleNavClick("/products/spring-steel/en31")
                     }
                     className="dropdown-item "
                   >
@@ -794,7 +794,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/EN45")
+                      handleNavClick("/products/spring-steel/en45")
                     }
                     className="dropdown-item "
                   >
@@ -802,7 +802,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/SAE5160")
+                      handleNavClick("/products/spring-steel/sae5160")
                     }
                     className="dropdown-item "
                   >
@@ -810,7 +810,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/52CrMoV4")
+                      handleNavClick("/products/spring-steel/52crmov4")
                     }
                     className="dropdown-item "
                   >
@@ -818,7 +818,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/52CrV4")
+                      handleNavClick("/products/spring-steel/52crv4")
                     }
                     className="dropdown-item "
                   >
@@ -826,7 +826,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/55Si7")
+                      handleNavClick("/products/spring-steel/55si7")
                     }
                     className="dropdown-item "
                   >
@@ -846,7 +846,7 @@ export default function Header() {
                 <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/20MnCr5")
+                      handleNavClick("/products/alloy-steel/20mncr5")
                     }
                     className="dropdown-item "
                   >
@@ -854,7 +854,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/SAE4140")
+                      handleNavClick("/products/alloy-steel/sae4140")
                     }
                     className="dropdown-item "
                   >
@@ -862,7 +862,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/SAE1020")
+                      handleNavClick("/products/alloy-steel/sae1020")
                     }
                     className="dropdown-item "
                   >
@@ -870,7 +870,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/41Cr4")
+                      handleNavClick("/products/alloy-steel/41cr4")
                     }
                     className="dropdown-item "
                   >
@@ -878,21 +878,21 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/EN41B")
+                      handleNavClick("/products/alloy-steel/en41b")
                     }
                     className="dropdown-item "
                   >
                     EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel/EN24")}
+                    onClick={() => handleNavClick("/products/alloy-steel/en24")}
                     className="dropdown-item "
                   >
                     EN 24 / 18CrNiMo6
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/SAE4130")
+                      handleNavClick("/products/alloy-steel/sae4130")
                     }
                     className="dropdown-item "
                   >
@@ -900,7 +900,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/EN36C")
+                      handleNavClick("/products/alloy-steel/en36c")
                     }
                     className="dropdown-item "
                   >
@@ -908,7 +908,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/alloy-steel/SAE8620")
+                      handleNavClick("/products/alloy-steel/sae8620")
                     }
                     className="dropdown-item "
                   >
@@ -927,14 +927,14 @@ export default function Header() {
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/carbon-steel/C45")}
+                    onClick={() => handleNavClick("/products/carbon-steel/c45")}
                     className="dropdown-item "
                   >
                     C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/SAE1018")
+                      handleNavClick("/products/carbon-steel/sae1018")
                     }
                     className="dropdown-item "
                   >
@@ -942,7 +942,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/ST52.3")
+                      handleNavClick("/products/carbon-steel/st52.3")
                     }
                     className="dropdown-item "
                   >
@@ -950,7 +950,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/EN1A")
+                      handleNavClick("/products/carbon-steel/en1a")
                     }
                     className="dropdown-item "
                   >
@@ -958,7 +958,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/35C8")
+                      handleNavClick("/products/carbon-steel/35c8")
                     }
                     className="dropdown-item "
                   >
@@ -966,7 +966,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/SAE1541")
+                      handleNavClick("/products/carbon-steel/sae1541")
                     }
                     className="dropdown-item "
                   >
@@ -974,7 +974,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/27C15")
+                      handleNavClick("/products/carbon-steel/27c15")
                     }
                     className="dropdown-item "
                   >
@@ -982,7 +982,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/SAE1117")
+                      handleNavClick("/products/carbon-steel/sae1117")
                     }
                     className="dropdown-item "
                   >
@@ -990,7 +990,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/EN43BCr")
+                      handleNavClick("/products/carbon-steel/en43bcr")
                     }
                     className="dropdown-item "
                   >
@@ -998,7 +998,7 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/carbon-steel/SAE1141")
+                      handleNavClick("/products/carbon-steel/sae1141")
                     }
                     className="dropdown-item "
                   >
@@ -1018,7 +1018,7 @@ export default function Header() {
                 <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() =>
-                      handleNavClick("/products/boron-steel/10B21")
+                      handleNavClick("/products/boron-steel/10b21")
                     }
                     className="dropdown-item "
                   >
@@ -1026,15 +1026,15 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/boron-steel/15B25")
+                      handleNavClick("/products/boron-steel/15b25")
                     }
-                    className="dropdown-item "
+                    className="dropdown-item"
                   >
                     15B25
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/boron-steel/10B35")
+                      handleNavClick("/products/boron-steel/10b35")
                     }
                     className="dropdown-item "
                   >

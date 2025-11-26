@@ -164,43 +164,43 @@ const App = () => {
             <Route path="1.2316" element={<PlasticMould2316 />} />
           </Route>
           <Route path="/products/spring-steel" element={<SpringSteel />}>
-            <Route path="EN47" element={<SpringSteelEN47 />} />
-            <Route path="SUP9" element={<SUP9 />} />
-            <Route path="SAE9254" element={<SpringSteelSAE9254 />} />
-            <Route path="EN31" element={<EN31 />} />
-            <Route path="EN45" element={<EN45 />} />
-            <Route path="SAE5160" element={<SAE5160 />} />
-            <Route path="52CrMoV4" element={<SpringSteel52CrMoV4 />} />
-            <Route path="52CrV4" element={<SpringSteel52CrV4 />} />
-            <Route path="55Si7" element={<SpringSteel55Si7 />} />
+            <Route path="en47" element={<SpringSteelEN47 />} />
+            <Route path="sup9" element={<SUP9 />} />
+            <Route path="sae9254" element={<SpringSteelSAE9254 />} />
+            <Route path="en31" element={<EN31 />} />
+            <Route path="en45" element={<EN45 />} />
+            <Route path="sae5160" element={<SAE5160 />} />
+            <Route path="52crmov4" element={<SpringSteel52CrMoV4 />} />
+            <Route path="52crv4" element={<SpringSteel52CrV4 />} />
+            <Route path="55si7" element={<SpringSteel55Si7 />} />
           </Route>
           <Route path="/products/alloy-steel" element={<AlloySteel />}>
-            <Route path="20MnCr5" element={<AlloySteel20MnCr5 />} />
-            <Route path="SAE4140" element={<AlloySteelSAE4140 />} />
-            <Route path="SAE1020" element={<AlloySteelSAE1020 />} />
-            <Route path="41Cr4" element={<AlloySteel41Cr4 />} />
-            <Route path="EN41B" element={<AlloySteelEN41B />} />
-            <Route path="EN24" element={<AlloySteelEN24 />} />
-            <Route path="SAE4130" element={<AlloySteelSAE4130 />} />
-            <Route path="EN36C" element={<AlloySteelEN36C />} />
-            <Route path="SAE8620" element={<AlloySteelSAE8620 />} />
+            <Route path="20mncr5" element={<AlloySteel20MnCr5 />} />
+            <Route path="sae4140" element={<AlloySteelSAE4140 />} />
+            <Route path="sae1020" element={<AlloySteelSAE1020 />} />
+            <Route path="41cr4" element={<AlloySteel41Cr4 />} />
+            <Route path="en41b" element={<AlloySteelEN41B />} />
+            <Route path="en24" element={<AlloySteelEN24 />} />
+            <Route path="sae4130" element={<AlloySteelSAE4130 />} />
+            <Route path="en36C" element={<AlloySteelEN36C />} />
+            <Route path="sae8620" element={<AlloySteelSAE8620 />} />
           </Route>
           <Route path="/products/carbon-steel" element={<CarbonSteel />}>
-            <Route path="C45" element={<CarbonSteelC45 />} />
-            <Route path="SAE1018" element={<CarbonSteelSAE1018 />} />
-            <Route path="ST52.3" element={<CarbonSteelST52 />} />
-            <Route path="EN1A" element={<CarbonSteelEN1A />} />
-            <Route path="35C8" element={<CarbonSteel35C8 />} />
-            <Route path="SAE1541" element={<CarbonSteelSAE1541 />} />
-            <Route path="27C15" element={<CarbonSteel27C15 />} />
-            <Route path="SAE1117" element={<CarbonSteelSAE1117 />} />
-            <Route path="EN43BCr" element={<CarbonSteelEN43BCr />} />
-            <Route path="SAE1141" element={<CarbonSteelSAE1141 />} />
+            <Route path="c45" element={<CarbonSteelC45 />} />
+            <Route path="sae1018" element={<CarbonSteelSAE1018 />} />
+            <Route path="st52.3" element={<CarbonSteelST52 />} />
+            <Route path="en1a" element={<CarbonSteelEN1A />} />
+            <Route path="35c8" element={<CarbonSteel35C8 />} />
+            <Route path="sae1541" element={<CarbonSteelSAE1541 />} />
+            <Route path="27c15" element={<CarbonSteel27C15 />} />
+            <Route path="sae1117" element={<CarbonSteelSAE1117 />} />
+            <Route path="en43bcr" element={<CarbonSteelEN43BCr />} />
+            <Route path="sae1141" element={<CarbonSteelSAE1141 />} />
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
-            <Route path="10B21" element={<Boron10B21 />} />
-            <Route path="15B25" element={<Boron15B25 />} />
-            <Route path="10B35" element={<Boron10B35 />} />
+            <Route path="10b21" element={<Boron10B21 />} />
+            <Route path="15b25" element={<Boron15B25 />} />
+            <Route path="10b35" element={<Boron10B35 />} />
           </Route>
           <Route path="/products/automotive" element={<Automotive />} />
           <Route path="/products/aerospace" element={<Aerospace />} />

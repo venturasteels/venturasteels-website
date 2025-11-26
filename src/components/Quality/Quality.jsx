@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Quality.css";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -292,8 +293,6 @@ const Quality = () => {
         </div>
       </section>
 
-      {/* CERTIFICATES */}
-      {/* CERTIFICATES - NEW MODERN LAYOUT */}
       {/* CERTIFICATE SECTION - SINGLE CERTIFICATE LAYOUT */}
       <section className="certificates-gallery py-5">
         <div className="container">
@@ -353,9 +352,12 @@ const Quality = () => {
               </ul>
 
               <div className="mt-4">
-                <button className="btn btn-outline-primary rounded-pill px-4 py-2">
+                <Link
+                  to="/certifications"
+                  className="btn btn-outline-primary rounded-pill px-4 py-2"
+                >
                   View Certificate
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -60,44 +60,44 @@ const Home = () => {
     {
       title: "Hot Work Steel",
       desc: "For high-temperature tools and dies.",
-      img: "/image/Hot Work Tool Steels/Hot Work Tool Steel 1.2344 Round Bars.png",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051069/Hot_Work_Tool_Steel_1.2344_Round_Bars_iepksj.png",
       link: "/products/hot-work-steel",
     },
     {
       title: "Cold Work Steel",
       desc: "Perfect for cutting & forming tools.",
-      img: "/image/Cold Work Tool Steels/Cold Work - D2.png",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051164/Cold_Work_-_D2_md1s8f.png",
       link: "/products/cold-work-steel",
     },
     {
       title: "Spring Steel",
       desc: "Flexible & strong for industrial use.",
-      img: "/image/Spring Steels/EN 31 Rods.png",
-      link: "/products/spring-steel-steel",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051209/EN_31_Rods_jmdbdq.png",
+      link: "/products/spring-steel",
     },
     {
       title: "Alloy Steel",
       desc: "Enhanced strength and corrosion resistance.",
-      img: "/image/Alloy Steels/EN 31 Round Bars.png",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051248/EN_31_Round_Bars_fd49nw.png",
       link: "/products/alloy-steel",
     },
     {
       title: "Plastic Mould Steel",
       desc: "Best suited for mould manufacturing.",
-      img: "/image/Plastic Mould Steels/Plastic Mould 2.png",
-      link: "/products/plastic-mould",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051192/Plastic_Mould_2_houlpv.png",
+      link: "/products/plastic-mould-steel",
     },
     {
       title: "Carbon Steel",
       desc: "Durable for metal stamping dies.",
-      img: "/image/Carbon Steels/C45 Carbon Steel Round Bars.png",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051224/C45_Carbon_Steel_Round_Bars_zcwh1o.png",
       link: "/products/carbon-steel",
     },
     {
       title: "Boron Steel",
       desc: "Hard steel for cutting & shaping tools.",
-      img: "/image/Boron Steels/10B35 Boron Steel Round Bars.png",
-      link: "/products/tool",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051261/10B35_Boron_Steel_Round_Bars_mzkyft.png",
+      link: "/products/boron-steel",
     },
   ];
 
@@ -190,25 +190,39 @@ const Home = () => {
           playsInline
           title="Ventura Steels Quality Standards – Steel Round Bars Manufacturing"
           aria-label="Ventura Steels quality video showcasing steel round bars and manufacturing process"
-          poster="/image/home-bg.png"
+          poster="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764048075/home-bg_zwi4ic.png"
           className="bg-video w-100"
         >
-          <source
-            src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto/ventura-home-bg_cpbnxi.mp4"
-            type="video/mp4"
-          />
+          <source src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto,w_1280/Ventura-Home-Bg_ty9rdc.mp4" />
           Your browser does not support the video tag.
         </video>
 
         <div className="overlay">
-          <h1>Ventura is a complete steel service centre.</h1>
-          <p className="text-center">
+          <h1
+            data-aos="fade-down"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+            data-aos-easing="ease-out-cubic"
+          >
+            Ventura is a complete steel service centre.
+          </h1>
+          <p
+            className="text-center "
+            data-aos="fade-down"
+            data-aos-delay="550"
+            data-aos-duration="1200"
+            data-aos-easing="ease-out-cubic"
+          >
             Industrial excellence in every grade – strength, precision, and
             reliability you can trust.
           </p>
           <a
             href="/enquiry"
             className="btn btn-outline-light overlay-enquiry-btn"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1200"
+            data-aos-easing="ease-out-cubic"
           >
             Enquire Now
           </a>
@@ -252,7 +266,7 @@ const Home = () => {
           <div className="row align-items-center ">
             <div className="col-md-6" data-aos="fade-right">
               <img
-                src="/image/about-ventura.jpg"
+                src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764048630/about-ventura_vl8wyv.jpg"
                 alt="About Ventura"
                 className="img-fluid rounded"
                 loading="lazy"
@@ -283,7 +297,7 @@ const Home = () => {
         {productsInView && (
           <div
             className="product-swiper-wrapper"
-            onMouseEnter={() => swiperRef.current?.autoplay.stop()} // ✅ Stop on hover
+            onMouseEnter={() => swiperRef.current?.autoplay.stop()} 
             onMouseLeave={() => swiperRef.current?.autoplay.start()}
           >
             <Swiper
@@ -406,7 +420,7 @@ const Home = () => {
           <div className="row g-5 align-items-center why-choose">
             <div className="col-lg-6 " data-aos="fade-right">
               <img
-                src="/image/why-choose-us.jpg"
+                src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764133911/why-choose-us_giknms.jpg"
                 alt="Why Ventura Steels"
                 className="img-fluid rounded-4 shadow"
                 loading="lazy"

@@ -309,7 +309,7 @@
 }
 
 .quality-card {
-  background-image: url("/image/quality-banner.jpg");
+  background-image: url("https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764132579/quality-banner_b4cyqx.jpg");
 }
 
 .quality-card .quality-link,
@@ -328,7 +328,7 @@
 }
 
 .infras-card {
-  background-image: url("/image/infrastructure-4.png");
+  background-image: url("https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764132431/infrastructure-4_gvgbb3.png");
 }
 
 .quality-card::before,
@@ -532,7 +532,6 @@
   }
 }
 
-
 /* suppliers  */
 /* Section background */
 .suppliers-section {
@@ -543,13 +542,13 @@
 
 /* Supplier Row */
 .suppliers-row {
-  flex-wrap: nowrap; /* keeps in one line */
-  overflow-x: auto; /* enables horizontal scroll if too many */
-  scrollbar-width: none; /* hides scrollbar for Firefox */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .suppliers-row::-webkit-scrollbar {
-  display: none; /* hides scrollbar for Chrome */
+  display: none;
 }
 
 /* Supplier card */
@@ -570,7 +569,7 @@
 
 /* Logo container */
 .logo-wrapper {
-  background: #f0f4f7; 
+  background: #f0f4f7;
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -736,6 +735,7 @@
   /* why choose ventura */
   .why-ventura-section h2 {
     font-size: 1.5rem;
+    text-align: center;
   }
   .feature-box h6 {
     font-size: 0.85rem;
@@ -795,6 +795,4 @@
   .quality-infra-cards {
     margin-bottom: 0rem !important;
   }
-  /* trusted certified section */
-  
 }

@@ -8,7 +8,7 @@ const CarbonSteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/carbon-steel\/(C45|SAE1018|ST52.3|EN1A|35C8|SAE1541|27C15|SAE1117|EN43BCr|SAE1141)/;
+      /^\/products\/carbon-steel\/(c45|sae1018|st52.3|en1a|35c8|sae1541|27c15|sae1117|en43bcr|sae1141)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -39,19 +39,19 @@ const CarbonSteel = () => {
             <ul>
               <li>
                 <Link
-                  to="C45"
+                  to="c45"
                   className={
-                    location.pathname.includes("C45") ? "active-grade" : ""
+                    location.pathname.includes("c45") ? "active-grade" : ""
                   }
                 >
-                 C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045
+                  C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045
                 </Link>
               </li>
               <li>
                 <Link
-                  to="SAE1018"
+                  to="sae1018"
                   className={
-                    location.pathname.includes("SAE1018") ? "active-grade" : ""
+                    location.pathname.includes("sae1018") ? "active-grade" : ""
                   }
                 >
                   SAE 1018 / ASTM A36 / ASTM A29 / SAE 1137 / SAE 1138
@@ -59,19 +59,19 @@ const CarbonSteel = () => {
               </li>
               <li>
                 <Link
-                  to="ST52.3"
+                  to="st52.3"
                   className={
-                    location.pathname.includes("ST52.3") ? "active-grade" : ""
+                    location.pathname.includes("st52.3") ? "active-grade" : ""
                   }
                 >
-                   ST 52.3
+                  ST 52.3
                 </Link>
               </li>
               <li>
                 <Link
-                  to="EN1A"
+                  to="en1a"
                   className={
-                    location.pathname.includes("EN1A") ? "active-grade" : ""
+                    location.pathname.includes("en1a") ? "active-grade" : ""
                   }
                 >
                   EN 1A / EN 1A_PB / EN 1A_L / 230M07 PB
@@ -79,9 +79,9 @@ const CarbonSteel = () => {
               </li>
               <li>
                 <Link
-                  to="35C8"
+                  to="35c8"
                   className={
-                    location.pathname.includes("35C8") ? "active-grade" : ""
+                    location.pathname.includes("35c8") ? "active-grade" : ""
                   }
                 >
                   35C8 / C35 / EN8 / SAE 1035 / 45C8
@@ -89,39 +89,39 @@ const CarbonSteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE1541"
+                  to="sae1541"
                   className={
-                    location.pathname.includes("SAE1541") ? "active-grade" : ""
+                    location.pathname.includes("sae1541") ? "active-grade" : ""
                   }
                 >
-                SAE 1541 / EN 15
+                  SAE 1541 / EN 15
                 </Link>
               </li>
               <li>
                 <Link
-                  to="27C15"
+                  to="27c15"
                   className={
-                    location.pathname.includes("27C15") ? "active-grade" : ""
+                    location.pathname.includes("27c15") ? "active-grade" : ""
                   }
                 >
-                   27C15 / SAE 1527
+                  27C15 / SAE 1527
                 </Link>
               </li>
               <li>
                 <Link
-                  to="SAE1117"
+                  to="sae1117"
                   className={
-                    location.pathname.includes("SAE1117") ? "active-grade" : ""
+                    location.pathname.includes("sae1117") ? "active-grade" : ""
                   }
                 >
-                   SAE 1117 / ASTM A108
+                  SAE 1117 / ASTM A108
                 </Link>
               </li>
               <li>
                 <Link
-                  to="EN43BCr"
+                  to="en43bcr"
                   className={
-                    location.pathname.includes("EN43BCr") ? "active-grade" : ""
+                    location.pathname.includes("en43bcr") ? "active-grade" : ""
                   }
                 >
                   EN43BCr / SAE 1050 / EN43A
@@ -129,9 +129,9 @@ const CarbonSteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE1141"
+                  to="sae1141"
                   className={
-                    location.pathname.includes("SAE1141") ? "active-grade" : ""
+                    location.pathname.includes("sae1141") ? "active-grade" : ""
                   }
                 >
                   SAE 1141

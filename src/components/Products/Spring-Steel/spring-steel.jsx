@@ -8,7 +8,7 @@ const SpringSteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/spring-steel\/(EN47|SUP9|SAE9254|EN31|EN45|SAE5160|52CrMoV4|52CrV4|55Si7)/;
+      /^\/products\/spring-steel\/(en47|sup9|sae9254|en31|en45|sae5160|52crmov4|52crv4|55si7)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -33,9 +33,9 @@ const SpringSteel = () => {
             <ul>
               <li>
                 <Link
-                  to="EN47"
+                  to="en47"
                   className={
-                    location.pathname.includes("EN47") ? "active-grade" : ""
+                    location.pathname.includes("en47") ? "active-grade" : ""
                   }
                 >
                   EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10
@@ -43,9 +43,9 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="SUP9"
+                  to="sup9"
                   className={
-                    location.pathname.includes("SUP9") ? "active-grade" : ""
+                    location.pathname.includes("sup9") ? "active-grade" : ""
                   }
                 >
                   SUP 9
@@ -53,9 +53,9 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE9254"
+                  to="sae9254"
                   className={
-                    location.pathname.includes("SAE9254") ? "active-grade" : ""
+                    location.pathname.includes("sae9254") ? "active-grade" : ""
                   }
                 >
                   SAE 9254 / SUP 11A
@@ -63,9 +63,9 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="EN31"
+                  to="en31"
                   className={
-                    location.pathname.includes("EN31") ? "active-grade" : ""
+                    location.pathname.includes("en31") ? "active-grade" : ""
                   }
                 >
                   EN 31 / SAE 52100 / 100Cr6
@@ -73,9 +73,9 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="EN45"
+                  to="en45"
                   className={
-                    location.pathname.includes("EN45") ? "active-grade" : ""
+                    location.pathname.includes("en45") ? "active-grade" : ""
                   }
                 >
                   EN45 / SAE 9260 / 60Si7
@@ -83,9 +83,9 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="SAE5160"
+                  to="sae5160"
                   className={
-                    location.pathname.includes("SAE5160") ? "active-grade" : ""
+                    location.pathname.includes("sae5160") ? "active-grade" : ""
                   }
                 >
                   SAE 5160
@@ -93,9 +93,9 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="52CrMoV4"
+                  to="52crmov4"
                   className={
-                    location.pathname.includes("52CrMoV4") ? "active-grade" : ""
+                    location.pathname.includes("52crmov4") ? "active-grade" : ""
                   }
                 >
                   52CrMoV4 / 50Cr4MoV2
@@ -103,19 +103,19 @@ const SpringSteel = () => {
               </li>
               <li>
                 <Link
-                  to="52CrV4"
+                  to="52crv4"
                   className={
-                    location.pathname.includes("52CrV4") ? "active-grade" : ""
+                    location.pathname.includes("52crv4") ? "active-grade" : ""
                   }
                 >
-                  52CrV4 / 51CrV4 / AISI 4150   
+                  52CrV4 / 51CrV4 / AISI 4150
                 </Link>
               </li>
               <li>
                 <Link
-                  to="55Si7"
+                  to="55si7"
                   className={
-                    location.pathname.includes("55Si7") ? "active-grade" : ""
+                    location.pathname.includes("55si7") ? "active-grade" : ""
                   }
                 >
                   55Si7 / 56Si7 / SAE 9255

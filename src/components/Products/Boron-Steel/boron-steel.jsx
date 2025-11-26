@@ -7,7 +7,7 @@ const Boron = () => {
   const [isGradeSelected, setIsGradeSelected] = useState(false);
 
   React.useEffect(() => {
-    const gradePattern = /^\/products\/boron-steel\/(10B21|15B25|10B35)/;
+    const gradePattern = /^\/products\/boron-steel\/(10b21|15b25|10b35)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -36,9 +36,9 @@ const Boron = () => {
             <ul>
               <li>
                 <Link
-                  to="10B21"
+                  to="10b21"
                   className={
-                    location.pathname.includes("10B21") ? "active-grade" : ""
+                    location.pathname.includes("10b21") ? "active-grade" : ""
                   }
                 >
                   10B21
@@ -46,9 +46,9 @@ const Boron = () => {
               </li>
               <li>
                 <Link
-                  to="15B25"
+                  to="15b25"
                   className={
-                    location.pathname.includes("15B25") ? "active-grade" : ""
+                    location.pathname.includes("15b25") ? "active-grade" : ""
                   }
                 >
                   15B25
@@ -56,9 +56,9 @@ const Boron = () => {
               </li>
               <li>
                 <Link
-                  to="10B35"
+                  to="10b35"
                   className={
-                    location.pathname.includes("10B35") ? "active-grade" : ""
+                    location.pathname.includes("10b35") ? "active-grade" : ""
                   }
                 >
                   10B35

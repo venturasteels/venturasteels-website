@@ -65,7 +65,7 @@ const AboutUs = () => {
             name="keywords"
             content="About Ventura Steels, About Ventura Alloy And Steels Pvt. Ltd.,  Ventura Steels, Complete steel service center, Special steel supplier India, Alloy steel stockist, Tool steel supplier India, Engineering steel distributor, Die & mould steel supplier, Hot work steel stockist, Cold work steel supplier, Plastic mould steel supplier, Steel machining center Mumbai,  Automotive steel supplier India"
           />
-           <link rel="canonical" href="https://venturasteels.com/about" />
+          <link rel="canonical" href="https://venturasteels.com/about" />
         </Helmet>
       </HelmetProvider>
 
@@ -89,7 +89,7 @@ const AboutUs = () => {
             <div className="row align-items-center">
               {/* Left Column - Text */}
               <div className="col-md-6 mb-4 mb-md-0">
-                <h2 className="fw-bold mb-4">Who We Are</h2>
+                <h2 className="fw-bold mb-4 ">Who We Are</h2>
                 <p className=" text-muted text-justify">
                   Under the leadership of Mr. Bharat Dipchand Shah, whose rich
                   industry experience dates back to 1965, and the
