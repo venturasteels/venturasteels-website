@@ -221,43 +221,67 @@
   color: #fff;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #447d9b !important;
-  top: 40%;
-  width: 50px !important;
-  height: 50px !important;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.swiper-button-prev {
-  left: 32% !important;
-}
-
+/* ---- Premium Navigation Buttons ---- */
+.swiper-button-prev,
 .swiper-button-next {
-  right: 32% !important;
+  width: 48px !important;
+  height: 48px !important;
+  background: #273f4f;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  top: 89% !important;
+  z-index: 99 !important;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 30px !important;
-  font-weight: bold;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: #e0e0e0 !important;
 }
+
+.swiper-button-prev {
+  left: 33% !important;
+}
+
+.swiper-button-next {
+  right: 33% !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
 .swiper-pagination-bullets {
   bottom: 20px !important;
 }
-.swiper-button-prev,
-.swiper-button-next {
-  top: 86% !important;
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #b8c4cc !important;
+  opacity: 0.5 !important;
+  border-radius: 50px;
+  transition: all 0.3s ease;
 }
+
+.swiper-pagination-bullet-active {
+  background: #273f4f !important;
+  width: 22px;
+  opacity: 1 !important;
+}
+
 .swiper-container,
 .swiper {
   width: 100%;
   overflow: visible;
-}
-.swiper-horizontal {
-  height: 300px;
 }
 .product-view {
   margin: 0px auto;
@@ -498,6 +522,21 @@
     font-size: 0.95rem;
     padding: 8px 20px;
   }
+  .swiper-button-prev {
+    left: 20% !important;
+  }
+  .swiper-button-next {
+    right: 20% !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 18px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -533,7 +572,6 @@
 }
 
 /* suppliers  */
-/* Section background */
 .suppliers-section {
   background: linear-gradient(135deg, #f9fafc, #eef2f5);
   border-top: 1px solid #e3e7eb;

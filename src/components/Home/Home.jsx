@@ -297,7 +297,7 @@ const Home = () => {
         {productsInView && (
           <div
             className="product-swiper-wrapper"
-            onMouseEnter={() => swiperRef.current?.autoplay.stop()} 
+            onMouseEnter={() => swiperRef.current?.autoplay.stop()}
             onMouseLeave={() => swiperRef.current?.autoplay.start()}
           >
             <Swiper

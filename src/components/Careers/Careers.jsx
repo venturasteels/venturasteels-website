@@ -218,7 +218,7 @@ export default function Careers() {
             name="keywords"
             content="Ventura Steels Careers, Steel Industry Jobs India, Alloy Steel Company Careers, Tool Steel Jobs, Engineering Steel Careers, Work with Ventura Steels, Job Openings Steel Supplier"
           />
-          <link rel="canonical" href="https://venturasteels.com/careers" />
+          <link rel="canonical" href="https://venturasteels.com/career" />
         </Helmet>
       </HelmetProvider>
 
@@ -293,7 +293,6 @@ export default function Careers() {
           </Col>
 
           {/* Sidebar Quick Apply */}
-          {/* Right Column: Why Join Us */}
           <Col md={4}>
             <Card className="shadow-sm border-0 p-3 why-join-card">
               <div className="text-center">

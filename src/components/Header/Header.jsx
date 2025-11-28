@@ -1076,7 +1076,7 @@ export default function Header() {
             Blogs
           </button> */}
           <button
-            onClick={() => handleNavClick("/careers")}
+            onClick={() => handleNavClick("/career")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
           >
             Careers
