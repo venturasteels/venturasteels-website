@@ -1,12 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function SpringSteel55Si7() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "55Si7 / 56Si7 / SAE 9255",
+        selectedProduct: "Spring Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
-      <h2 className="text-center">
-        55Si7 / 56Si7 / SAE 9255 
-      </h2>
+      <h2 className="text-center">55Si7 / 56Si7 / SAE 9255</h2>
       <p className="subtitle text-center">
         Silicon–manganese spring steel with high strength, excellent elasticity,
         and superior fatigue resistance — ideal for heavy-duty spring and
@@ -228,9 +235,9 @@ export default function SpringSteel55Si7() {
 
       {/* CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

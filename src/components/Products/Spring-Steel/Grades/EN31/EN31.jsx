@@ -1,12 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function EN31() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "EN 31 / SAE 52100 / 100Cr6",
+        selectedProduct: "Spring Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
-      <h2 className="text-center">
-        EN31 / SAE 52100 / 100Cr6 / SUJ2 / DIN 1.3505
-      </h2>
+      <h2 className="text-center">EN 31 / SAE 52100 / 100Cr6</h2>
       <p className="subtitle text-center">
         High carbon chromium bearing steel known for exceptional hardness, wear
         resistance, and dimensional stability under high stress.
@@ -224,9 +231,9 @@ export default function EN31() {
 
       {/* CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

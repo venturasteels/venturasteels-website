@@ -1,11 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function SpringSteel52CrV4() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "52CrV4 / 51CrV4 / AISI 4150",
+        selectedProduct: "Spring Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">
-        52CrV4 / 51CrV4 / AISI 4150 / EN 1.8159 / DIN 17221
+        52CrV4 / 51CrV4 / AISI 4150
       </h2>
       <p className="subtitle text-center">
         Chromium–vanadium alloy spring steel known for its excellent toughness,
@@ -232,9 +241,9 @@ export default function SpringSteel52CrV4() {
 
       {/* CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

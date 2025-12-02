@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       {/* footer-section */}
       <footer className="site-footer text-white pt-5">
-        <div className="container">
+        <div className="footer-cont">
           <div className="row g-4 footer-container">
             {/* Logo & Description */}
             <div className="col-md-4">
@@ -147,11 +147,14 @@ const Footer = () => {
             <div className="col-md-3">
               <h5 className="mb-3">Stocking & Machining Centre</h5>
               <p>
-                Gala No. 6, Building No. 183, Indian Corporation,
-                <br />
-                Mouje Gundavli (Mankoli – Phata),
-                <br />
-                Dapoda, Taluka – Bhiwandi – 421302.
+                <i className="bi bi-geo-alt-fill"></i>
+                Gala no 3-4, Building no 200, Indian Oil Corporation, Mouje,
+                Gunsavli (Mankoli-Pata), Dapoda Taluk, Bhiwandi-421302
+              </p>
+              <p>
+                Building No. 183, Gala No. 6 | Building No. 183, Gala No. 5 |
+                Building No. 181, Gala No. 8, Indian Corporation, Mankoli Naka,
+                Bhiwandi – 421302.
               </p>
               <p>
                 <span className="d-block mb-1">

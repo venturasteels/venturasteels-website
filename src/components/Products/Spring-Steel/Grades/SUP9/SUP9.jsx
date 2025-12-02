@@ -1,7 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function SUP9() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "SUP9",
+        selectedProduct: "Spring Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">SUP9</h2>
@@ -218,9 +227,9 @@ export default function SUP9() {
 
       {/* CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

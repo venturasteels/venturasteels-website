@@ -1,16 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { FaCalendarCheck, FaBoxOpen, FaMedal, FaUsers } from "react-icons/fa";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  FaCar,
-  FaIndustry,
-  FaTools,
-  FaGasPump,
-  FaPlane,
-  FaMicroscope,
-} from "react-icons/fa";
 import "aos/dist/aos.css";
 import IndustriesSection from "../Industries/Industries";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -153,11 +144,11 @@ const Home = () => {
           <title>Home | Ventura Alloy and Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Ventura Alloy and Steels Pvt. Ltd. is a leading supplier of high-quality alloy steels, tool steels, and engineering steels for various industries including automotive, aerospace, oil & gas, and construction."
+            content="Ventura Alloy & Steels Pvt. Ltd. is a trusted special steel supplier in India offering alloy steel, tool steel, hot work steel, cold work steel, die steel, and engineering steels. Large ready stock, certified material, and nationwide delivery for automotive, aerospace, oil & gas, and industrial applications."
           />
           <meta
             name="keywords"
-            content="Alloy Steel, Tool Steel, Ventura Steels, Hot Work Steel, Cold Work Steel, Plastic Mould Steel, Spring Steel, Carbon Steel, Boron Steel, Steel Manufacturer India, Steel Supplier, Die Steel, Engineering Steels"
+            content="special steel supplier India, alloy steel supplier, tool steel supplier, hot work steel, cold work steel, die steel, plastic mould steel, spring steel, engineering steels, Ventura Steels"
           />
           <meta name="author" content="Ventura Alloy and Steels Pvt. Ltd." />
           {/* Open Graph for Social Sharing */}

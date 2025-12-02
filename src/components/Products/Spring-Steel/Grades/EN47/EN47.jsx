@@ -1,12 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./EN47.css";
 
 export default function SpringSteelEN47() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade:
+          " EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10",
+        selectedProduct: "Spring Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">
-        EN47 / 50CrV4 / 51CrV4 / AISI 6150 / SUP10 / DIN 1.8159
+        EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10
       </h2>
       <p className="subtitle text-center">
         A chromium-vanadium spring steel with high resilience, fatigue strength,
@@ -235,9 +245,9 @@ export default function SpringSteelEN47() {
 
       {/* CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
       </div>
     </div>
   );

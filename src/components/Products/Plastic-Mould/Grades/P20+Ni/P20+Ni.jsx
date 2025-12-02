@@ -1,8 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./P20+Ni.css";
 
 export default function P20Ni() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "P20+Ni / 1.2738",
+        selectedProduct: "Plastic Mould Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">
@@ -391,8 +402,8 @@ export default function P20Ni() {
         <div className="container">
           <h4 className="mb-3">Availability</h4>
           <p>
-            <strong>Grades in Bold (e.g. 1.2738 )</strong> are kept in
-            stock and supplied on a regular basis. <br />
+            <strong>Grades in Bold (e.g. 1.2738 )</strong> are kept in stock and
+            supplied on a regular basis. <br />
             For other grades, we accept <strong>advance orders</strong> on MOQ
             basis as per size requirements.
           </p>
@@ -409,9 +420,9 @@ export default function P20Ni() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

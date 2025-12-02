@@ -287,8 +287,13 @@ const ContactUs = () => {
               <h3 className="mt-4">Stocking & Machining Centre</h3>
               <p>
                 <i className="bi bi-geo-alt-fill"></i>
-                Gala No. 6, Building No. 183, Indian Corporation, Mouje Gundavli
-                (Mankoli – Phata), Dapoda, Taluka – Bhiwandi – 421302.
+                Gala no 3-4, Building no 200, Indian Oil Corporation, Mouje,
+                Gunsavli (Mankoli-Pata), Dapoda Taluk, Bhiwandi-421302
+              </p>
+              <p>
+                Building No. 183, Gala No. 6 | Building No. 183, Gala No. 5 |
+                Building No. 181, Gala No. 8, Indian Corporation, Mankoli Naka,
+                Bhiwandi – 421302.
               </p>
               <p>
                 <i className="bi bi-phone-fill"></i>

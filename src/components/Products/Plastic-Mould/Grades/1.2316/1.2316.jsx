@@ -1,7 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function PlasticMould2316() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "1.2316",
+        selectedProduct: "Plastic Mould Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center">1.2316</h2>
@@ -261,9 +270,9 @@ export default function PlasticMould2316() {
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+          Enquire Now
+        </button>
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>
