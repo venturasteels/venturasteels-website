@@ -1,7 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Boron10B35() {
+  const navigate = useNavigate();
+
+  const handleEnquiryClick = () => {
+    navigate("/enquiry", {
+      state: {
+        selectedGrade: "10B35",
+        selectedProduct: "Boron Steel",
+      },
+    });
+  };
   return (
     <div className="grade-details">
       <h2 className="text-center"> 10B35</h2>
@@ -93,17 +102,14 @@ export default function Boron10B35() {
       {/* applications */}
       <section className="applications">
         <h2>Applications</h2>
-        <p>
-          Automotive industry, machinery, structural applications etc.
-
-        </p>
+        <p>Automotive industry, machinery, structural applications etc.</p>
       </section>
 
       {/* Get Quote CTA */}
       <div className="cta-block">
-        <Link to="/enquiry" className="btn btn-primary">
-          Request an Enquiry
-        </Link>
+        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3 ">
+          Enquire Now
+        </button>
         <span>MOQ: 30 Tonnes </span>
       </div>
     </div>

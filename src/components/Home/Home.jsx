@@ -139,37 +139,35 @@ const Home = () => {
 
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Home | Ventura Alloy and Steels Pvt. Ltd.</title>
-          <meta
-            name="description"
-            content="Ventura Alloy & Steels Pvt. Ltd. is a trusted special steel supplier in India offering alloy steel, tool steel, hot work steel, cold work steel, die steel, and engineering steels. Large ready stock, certified material, and nationwide delivery for automotive, aerospace, oil & gas, and industrial applications."
-          />
-          <meta
-            name="keywords"
-            content="special steel supplier India, alloy steel supplier, tool steel supplier, hot work steel, cold work steel, die steel, plastic mould steel, spring steel, engineering steels, Ventura Steels"
-          />
-          <meta name="author" content="Ventura Alloy and Steels Pvt. Ltd." />
-          {/* Open Graph for Social Sharing */}
-          <meta
-            property="og:title"
-            content="Ventura Alloy and Steels Pvt. Ltd."
-          />
-          <meta
-            property="og:description"
-            content="Premium alloy and tool steel solutions for industries like automotive, aerospace, oil & gas, and construction."
-          />
-          <meta
-            property="og:image"
-            content="https://venturasteels.com/image/ogimage.png"
-          />
-          {/* Replace with your actual image URL */}
-          <meta property="og:url" content="https://venturasteels.com/" />
-          <meta property="og:type" content="website" />
-          <link rel="canonical" href="https://venturasteels.com/" />
-        </Helmet>
-      </HelmetProvider>
+      <Helmet>
+        <title>Home | Ventura Alloy and Steels Pvt. Ltd.</title>
+        <meta
+          name="description"
+          content="Ventura Alloy & Steels Pvt. Ltd. is a trusted special steel supplier in India offering alloy steel, tool steel, hot work steel, cold work steel, die steel, and engineering steels. Large ready stock, certified material, and nationwide delivery for automotive, aerospace, oil & gas, and industrial applications."
+        />
+        <meta
+          name="keywords"
+          content="special steel supplier India, alloy steel supplier, tool steel supplier, hot work steel, cold work steel, die steel, plastic mould steel, spring steel, engineering steels, Ventura Steels"
+        />
+        <meta name="author" content="Ventura Alloy and Steels Pvt. Ltd." />
+        {/* Open Graph for Social Sharing */}
+        <meta
+          property="og:title"
+          content="Ventura Alloy and Steels Pvt. Ltd."
+        />
+        <meta
+          property="og:description"
+          content="Premium alloy and tool steel solutions for industries like automotive, aerospace, oil & gas, and construction."
+        />
+        <meta
+          property="og:image"
+          content="https://venturasteels.com/image/ogimage.png"
+        />
+        {/* Replace with your actual image URL */}
+        <meta property="og:url" content="https://venturasteels.com/" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://venturasteels.com/" />
+      </Helmet>
 
       {/* video-banner */}
       <div className="video-banner">
@@ -198,7 +196,7 @@ const Home = () => {
             Ventura is a complete steel service centre.
           </h1>
           <p
-            className="text-center "
+            className="text-center"
             data-aos="fade-down"
             data-aos-delay="550"
             data-aos-duration="1200"
@@ -249,7 +247,7 @@ const Home = () => {
       </div>
 
       {/* Industries we serve */}
-      {/* <IndustriesSection /> */}
+      {/* <IndustriesSection /> */}          
 
       {/* about-ventura */}
       <section className="about-section py-5 bg-light">

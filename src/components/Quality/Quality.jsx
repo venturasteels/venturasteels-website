@@ -17,20 +17,18 @@ const Quality = () => {
 
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Quality | Ventura Alloy & Steels Pvt. Ltd.</title>
-          <meta
-            name="description"
-            content="Ventura Alloy & Steels Pvt. Ltd. is ISO 9001:2015 certified, ensuring strict quality control, precision machining, and reliable steel solutions that meet global standards."
-          />
-          <meta
-            name="keywords"
-            content="Ventura Steels Quality, ISO 9001:2015 Certified Steel Supplier, Quality Assurance, Steel Testing, Alloy Steel Quality, Tool Steel Standards, Steel Inspection, Reliable Steel Supplier India"
-          />
-          <link rel="canonical" href="https://venturasteels.com/quality" />
-        </Helmet>
-      </HelmetProvider>
+      <Helmet>
+        <title>Quality | Ventura Alloy & Steels Pvt. Ltd.</title>
+        <meta
+          name="description"
+          content="Ventura Alloy & Steels Pvt. Ltd. is ISO 9001:2015 certified, ensuring strict quality control, precision machining, and reliable steel solutions that meet global standards."
+        />
+        <meta
+          name="keywords"
+          content="Ventura Steels Quality, ISO 9001:2015 Certified Steel Supplier, Quality Assurance, Steel Testing, Alloy Steel Quality, Tool Steel Standards, Steel Inspection, Reliable Steel Supplier India"
+        />
+        <link rel="canonical" href="https://venturasteels.com/quality" />
+      </Helmet>
 
       <section className="quality-hero ">
         {/* video-banner */}

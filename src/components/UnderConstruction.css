@@ -1,0 +1,13 @@
+.btn-enquiry {
+  background-color: #273f4f;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn-enquiry:hover {
+  background-color: #fe7743;
+  color: #fff;
+}

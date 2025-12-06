@@ -16,17 +16,17 @@ const productCategories = [
   {
     title: "Hot Work Steel",
     image: "/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png",
-    path: "/products/hot-work",
+    path: "/products/hot-work-steel",
   },
   {
     title: "Cold Work Steel",
     image: "/image/Cold Work Tool Steels/D2 Round Bar.png",
-    path: "/products/cold-work",
+    path: "/products/cold-work-steel",
   },
   {
     title: "Plastic Mould Steel",
     image: "/image/Plastic Mould Steels/P 20 Flat bars.png",
-    path: "/products/plastic-mould",
+    path: "/products/plastic-mould-steel",
   },
   {
     title: "Spring Steel",
