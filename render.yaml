@@ -1,0 +1,8 @@
+static_sites:
+  - name: venturasteels
+    redirects:
+      - source: "/*"
+        destination: "https://venturasteels.com/:splat"
+        type: redirect
+        conditions:
+          - host: "www.venturasteels.com"
