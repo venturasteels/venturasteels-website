@@ -52,13 +52,13 @@ export default function O1() {
             oil hardening tool steel type supplied in the annealed condition.
           </p>
         </div>
-        <div className="d2-img d-flex gap-3">
+        {/* <div className="d2-img d-flex gap-3">
           <img
             src="/image/Cold Work Tool Steels/D2 Round Bar.png"
             alt="D2 Image"
             width={250}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}

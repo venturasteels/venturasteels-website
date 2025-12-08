@@ -56,13 +56,13 @@ export default function H12() {
             extrusion tooling and hot gripper dies.
           </p>
         </div>
-        <div className="db6-img">
+        {/* <div className="db6-img">
           <img
             src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
             alt="DB6 Image"
             width={300}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}

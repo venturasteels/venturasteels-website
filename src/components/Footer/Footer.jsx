@@ -149,7 +149,7 @@ const Footer = () => {
               <p>
                 <i className="bi bi-geo-alt-fill"></i>
                 Gala no 3-4, Building no 200, Indian Oil Corporation, Mouje,
-                Gunsavli (Mankoli-Pata), Dapoda Taluk, Bhiwandi-421302
+                 Gundavli (Mankoli-Pata), Dapoda Taluk, Bhiwandi-421302
               </p>
               <p>
                 Building No. 183, Gala No. 6 | Building No. 183, Gala No. 5 |

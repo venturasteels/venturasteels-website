@@ -54,13 +54,13 @@ export default function H21() {
             tools, forming dies, die inserts, hot shear blades.
           </p>
         </div>
-        <div className="db6-img">
+        {/* <div className="db6-img">
           <img
             src="/image/Hot Work Tool Steels/Hot Work Tool Steel H13 Round Bars.png"
             alt="DB6 Image"
             width={300}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}

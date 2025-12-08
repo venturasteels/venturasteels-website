@@ -51,13 +51,13 @@ export default function H10() {
             mandrels pass on supplements, massive metal die casting tools.
           </p>
         </div>
-        <div className="db6-img">
+        {/* <div className="db6-img">
           <img
             src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
             alt="DB6 Image"
             width={300}
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Chemical Composition */}
