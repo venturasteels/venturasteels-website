@@ -72,7 +72,7 @@ export default function Header() {
     {
       id: 1,
       name: "Hot Work Tool Steel",
-      path: "/products/hot-work",
+      path: "/products/hot-work-steel",
       keywords: [
         "hot work tool steel",
         "hot work steel",
@@ -84,7 +84,7 @@ export default function Header() {
     {
       id: 2,
       name: " DB6 / DIN 1.2714 / AISI L6",
-      path: "/products/hot-work/DB6",
+      path: "/products/hot-work-steel/db6",
       keywords: [
         "DB6",
         "DIN 1.2714",
@@ -103,7 +103,7 @@ export default function Header() {
     {
       id: 3,
       name: "H13 / AISI H13 / DIN 2344",
-      path: "/products/hot-work/H13",
+      path: "/products/hot-work-steel/h13",
       keywords: [
         "H13",
         "AISI H13",
@@ -123,7 +123,7 @@ export default function Header() {
     {
       id: 4,
       name: "H11 / AISI H 11 / DIN 2343",
-      path: "/products/hot-work/H11",
+      path: "/products/hot-work-steel/h11",
       keywords: [
         "H11",
         "AISI H11",
@@ -143,7 +143,7 @@ export default function Header() {
     {
       id: 5,
       name: "H21 / AISI H21 / DIN 1.2581",
-      path: "/products/hot-work/H21",
+      path: "/products/hot-work-steel/h21",
       keywords: [
         "H21",
         "AISI H21",
@@ -163,7 +163,7 @@ export default function Header() {
     {
       id: 6,
       name: "H10 / AISI H10 / DIN 1.2365 / SKD7",
-      path: "/products/hot-work/H10",
+      path: "/products/hot-work-steel/h10",
       keywords: [
         "H10",
         "AISI H10",
@@ -185,7 +185,7 @@ export default function Header() {
     {
       id: 7,
       name: "H12 / AISI H12 / DIN 1.2606",
-      path: "/products/hot-work/H12",
+      path: "/products/hot-work-steel/h12",
       keywords: [
         "H12",
         "AISI H12",
@@ -204,7 +204,7 @@ export default function Header() {
     {
       id: 8,
       name: "Cold Work Tool Steel",
-      path: "/products/cold-work",
+      path: "/products/cold-work-steel",
       keywords: [
         "cold work tool steel",
         "cold work steel",
@@ -219,7 +219,7 @@ export default function Header() {
     {
       id: 9,
       name: "D2 / 1.2379 / HCHCR D2",
-      path: "/products/cold-work/D2",
+      path: "/products/cold-work-steel/d2",
       keywords: [
         "D2",
         "DIN 1.2379",
@@ -240,7 +240,7 @@ export default function Header() {
     {
       id: 10,
       name: "D3 / 1.2080 / HCHCR D3",
-      path: "/products/cold-work/D3",
+      path: "/products/cold-work-steel/d3",
       keywords: [
         "D3",
         "DIN 1.2080",
@@ -261,7 +261,7 @@ export default function Header() {
     {
       id: 11,
       name: "D5 / Cr12MoV / 1.2601",
-      path: "/products/cold-work/D5",
+      path: "/products/cold-work-steel/d5",
       keywords: [
         "D5",
         "Cr12MoV",
@@ -281,7 +281,7 @@ export default function Header() {
     {
       id: 12,
       name: "A2 / 1.2363",
-      path: "/products/cold-work/A2",
+      path: "/products/cold-work-steel/a2",
       keywords: [
         "A2",
         "DIN 1.2363",
@@ -299,7 +299,7 @@ export default function Header() {
     {
       id: 13,
       name: "O1 / 1.2510 / OHNS 01",
-      path: "/products/cold-work/O1",
+      path: "/products/cold-work-steel/o1",
       keywords: [
         "O1",
         "1.2510",
@@ -551,6 +551,7 @@ export default function Header() {
               {[
                 { to: "/quality", text: "Quality" },
                 { to: "/infrastructure", text: "Infrastructure" },
+                { to: "/cutting-services", text: "Cutting Services" },
                 { to: "/certifications", text: "Certifications" },
                 { to: "/enquiry", text: "Enquiry" },
                 { to: "/blogs", text: "Blogs" },
@@ -683,31 +684,41 @@ export default function Header() {
                 </button>
                 <div className="dropdown-menu sub-dropdown">
                   <button
-                    onClick={() => handleNavClick("/products/cold-work-steel/d2")}
+                    onClick={() =>
+                      handleNavClick("/products/cold-work-steel/d2")
+                    }
                     className="dropdown-item "
                   >
                     D2 / 1.2379 / HCHCR D2
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work-steel/d3")}
+                    onClick={() =>
+                      handleNavClick("/products/cold-work-steel/d3")
+                    }
                     className="dropdown-item "
                   >
                     D3 / 1.2080 / HCHCR D3
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work-steel/d5")}
+                    onClick={() =>
+                      handleNavClick("/products/cold-work-steel/d5")
+                    }
                     className="dropdown-item "
                   >
                     D5 / Cr12MoV / 1.2601
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work-steel/a2")}
+                    onClick={() =>
+                      handleNavClick("/products/cold-work-steel/a2")
+                    }
                     className="dropdown-item "
                   >
                     A2 / 1.2363
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work-steel/o1")}
+                    onClick={() =>
+                      handleNavClick("/products/cold-work-steel/o1")
+                    }
                     className="dropdown-item "
                   >
                     O1 / 2510 / OHNS O1
@@ -718,7 +729,9 @@ export default function Header() {
               {/* Plastic Mould Steel */}
               <div className="dropdown-submenu">
                 <button
-                  onClick={() => handleNavClick("/products/plastic-mould-steel")}
+                  onClick={() =>
+                    handleNavClick("/products/plastic-mould-steel")
+                  }
                   className="dropdown-item"
                 >
                   Plastic Mould Steel ▸
@@ -1051,6 +1064,12 @@ export default function Header() {
           >
             Quality
           </button>
+          {/* <button
+            onClick={() => handleNavClick("/cutting-services")}
+            className="text-white text-decoration-none nav-link bg-transparent border-0"
+          >
+            Cutting Services 
+          </button> */}
           <button
             onClick={() => handleNavClick("/infrastructure")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"

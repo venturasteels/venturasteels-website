@@ -1,0 +1,156 @@
+/* 3D Tilt Wrapper */
+.cutting-tilt {
+  perspective: 1200px;
+}
+
+/* Card Container */
+.cutting-card-pro {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  padding-left: 52px;
+
+  /* Animated Gradient Border */
+  border: 2px solid transparent;
+  background-image: linear-gradient(#ffffff20, #ffffff20),
+    linear-gradient(120deg, #273f4f, #fe7743, #447d9b);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: borderGlow 4s linear infinite;
+}
+
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Vertical Industrial Label */
+.cutting-pro-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 100%;
+  background: #273f4f;
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: 700;
+  padding: 16px 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image Wrapper */
+.cutting-pro-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Diagonal Motion */
+.cutting-pro-img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  transition: transform 0.65s ease, filter 0.4s ease;
+}
+
+.cutting-card-pro:hover .cutting-pro-img {
+  transform: scale(1.13) translate(16px, -12px);
+  filter: brightness(0.72);
+}
+
+/* Magnetic Arrow */
+.cutting-pro-arrow {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  z-index: 4;
+  transition: all 0.4s ease;
+}
+
+.cutting-pro-img-wrap:hover .cutting-pro-arrow {
+  background: #fe7743;
+  color: white;
+  transform: translateX(12px) scale(1.2);
+  box-shadow: 0 14px 34px #fe774370;
+}
+
+/* SPLIT OVERLAY */
+.cutting-pro-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.45s ease;
+}
+
+/* Split Panels */
+.left-split,
+.right-split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgba(39, 63, 79, 0.95);
+  transition: transform 0.55s ease;
+}
+
+.left-split {
+  left: 0;
+  transform: translateX(-100%);
+}
+.right-split {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.cutting-pro-img-wrap:hover .cutting-pro-overlay {
+  opacity: 1;
+}
+
+.cutting-pro-img-wrap:hover .left-split {
+  transform: translateX(0);
+}
+.cutting-pro-img-wrap:hover .right-split {
+  transform: translateX(0);
+}
+
+/* Overlay Content */
+.overlay-content {
+  position: relative;
+  z-index: 5;
+  padding: 28px;
+  max-width: 85%;
+  text-align: left;
+}
+
+.cutting-pro-desc {
+  color: white;
+  font-size: 15px;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.cutting-pro-list li {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 6px;
+}

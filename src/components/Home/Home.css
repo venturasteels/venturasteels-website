@@ -294,6 +294,104 @@
   transition: all 0.3s ease;
 }
 
+/* Cutting Services */
+:root {
+  --orange: #fe7743;
+  --orange-dark: #d85f33;
+  --blue: #273f4f;
+  --dark: #0f1d25;
+  --light-gray: #f4f4f4;
+}
+
+/* Section */
+.cutting-preview {
+  margin: 110px auto;
+  padding: 65px 50px;
+  background: linear-gradient(135deg, #e9e9f7, #eef1f3);
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.cutting-preview:hover {
+  transform: translateY(-3px);
+}
+
+/* Title + Text */
+.cutting-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--blue);
+  line-height: 1.2;
+}
+
+.cutting-desc {
+  margin-top: 14px;
+  font-size: 17px;
+  color: #444;
+  max-width: 520px;
+}
+
+/* Premium Bullet List */
+.cutting-list {
+  margin-top: 25px;
+}
+
+.cutting-list-item {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 0.2px;
+}
+
+/* Icon → subtle luxury orange orb */
+.cutting-list-item .icon {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: radial-gradient(circle, var(--orange), #b64824);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Button */
+.cutting-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: var(--orange);
+  padding: 14px 32px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: 0.35s;
+  box-shadow: 0 8px 18px rgba(254, 119, 67, 0.3);
+}
+
+.cutting-btn:hover {
+  background: var(--orange-dark);
+  box-shadow: 0 10px 28px rgba(254, 119, 67, 0.42);
+}
+
+/* Image Styling */
+.cutting-img-wrapper {
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0px 15px 48px rgba(0, 0, 0, 0.15);
+}
+
+.cutting-img {
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.cutting-img:hover {
+  transform: scale(1.05);
+}
+
 /* quality & infrastructure */
 .quality-infra {
   background: #447d9b20;
@@ -680,6 +778,30 @@
     text-align: justify !important;
   }
 
+  /* cutting services */
+  .cutting-preview {
+    margin: 10px auto;
+    padding: 45px 25px;
+  }
+  .cutting-title {
+    text-align: center;
+    font-size: 29px;
+  }
+  .cutting-desc {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .cutting-list-item {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .cutting-btn {
+    margin: 19px auto;
+    padding: 14px 28px;
+    font-size: 16px;
+    text-align: center;
+  }
+
   /* why choose us */
   .why-ventura-section .col-sm-6 {
     flex: 0 0 100%;
@@ -770,6 +892,30 @@
     padding-top: 0rem !important;
     padding-bottom: 0rem !important;
   }
+
+  /* cutting services */
+  .cutting-preview {
+    margin: 70px auto;
+    padding: 30px 20px;
+  }
+  .cutting-title {
+    text-align: center;
+    font-size: 23px;
+  }
+  .cutting-desc {
+    font-size: 14px;
+  }
+  .cutting-list-item {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .cutting-btn {
+    margin: 15px auto;
+    padding: 8px 28px;
+    font-size: 14px;
+    text-align: center;
+  }
+
   /* why choose ventura */
   .why-ventura-section h2 {
     font-size: 1.5rem;
@@ -833,4 +979,7 @@
   .quality-infra-cards {
     margin-bottom: 0rem !important;
   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
 }
