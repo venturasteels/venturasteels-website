@@ -78,8 +78,9 @@ export default function EnquiryForm() {
   const [touchedFields, setTouchedFields] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [modalMessage, setModalMessage] = useState(""); // dynamic message
-  const [modalType, setModalType] = useState("success"); // "success" or "error"
+  const [modalMessage, setModalMessage] = useState("");
+  const [modalType, setModalType] = useState("success");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -246,6 +247,8 @@ export default function EnquiryForm() {
       return;
     }
 
+    setIsSubmitting(true);
+
     //grades with specifications for EmailJS
     const gradesWithSpecs = selectedGrades
       .map((grade) => {
@@ -319,6 +322,8 @@ export default function EnquiryForm() {
       setModalType("error");
       setModalMessage("Error submitting enquiry. Please try again.");
       setShowModal(true);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -611,14 +616,28 @@ export default function EnquiryForm() {
                   <div className="invalid-feedback">{errors.message}</div>
                 )}
               </div>
+              <small className="text-muted fst-italic">
+                * All fields are mandatory
+              </small>
 
               <div className="col-12 text-end">
                 <button
                   type="submit"
-                  className="btn px-4"
-                  disabled={!isFormValid()}
+                  className="btn px-4 d-flex align-items-center gap-2"
+                  disabled={!isFormValid() || isSubmitting}
                 >
-                  Submit Enquiry
+                  {isSubmitting ? (
+                    <>
+                      <span
+                        className="spinner-border spinner-border-sm"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
+                      Submitting...
+                    </>
+                  ) : (
+                    "Submit Enquiry"
+                  )}
                 </button>
               </div>
             </div>
@@ -717,21 +736,25 @@ const InputField = ({
   placeholder,
   error,
   handleChange,
+  required = false,
+  type = "text",
 }) => (
   <div className="col-md-12 position-relative">
     {icon}
+
     <input
-      type="text"
+      type={type}
       name={name}
-      placeholder={placeholder}
       value={value}
+      placeholder={required && !value ? `${placeholder} *` : placeholder}
       className={`form-control ps-5 ${error ? "is-invalid" : ""}`}
       onChange={handleChange}
+      required={required}
     />
+
     {error && <div className="invalid-feedback">{error}</div>}
   </div>
 );
-
 const SelectField = ({
   icon,
   name,

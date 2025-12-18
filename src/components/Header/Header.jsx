@@ -1121,7 +1121,7 @@ export default function Header() {
                 <SearchBar data={productData} />
               </div>
             )}
-          </div>
+          </div> 
         </div>
       </nav>
     </>
