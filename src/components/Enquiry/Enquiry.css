@@ -89,7 +89,7 @@
   opacity: 0.78;
   text-align: center;
 }
-
+  
 .enquiry-form input::placeholder,
 .enquiry-form textarea::placeholder,
 .enquiry-form select {
@@ -150,6 +150,17 @@
   color: white;
   border-color: #fe7743 !important;
 }
+/* ok btn */
+@keyframes softPulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.confirm-hint {
+  animation: softPulse 1.8s infinite;
+}
+
 
 @media screen and (max-width: 480px) {
   .enquiry-form input,

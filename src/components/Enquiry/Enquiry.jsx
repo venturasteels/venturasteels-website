@@ -213,7 +213,7 @@ export default function EnquiryForm() {
   };
 
   const isFormValid = () => {
-    const allFieldsFilled =
+    const basicFieldsValid =
       formData.name &&
       validateEmail(formData.email) &&
       validatePhone(formData.phone) &&
@@ -221,10 +221,21 @@ export default function EnquiryForm() {
       formData.userType &&
       formData.product &&
       formData.message;
-    const gradesConfirmed =
-      selectedGrades.length > 0 &&
-      (!confirmGrades || selectedGrades.every((g) => gradeShapes[g]));
-    return allFieldsFilled && gradesConfirmed;
+
+    // 🚫 Grades selected but not confirmed
+    if (selectedGrades.length > 0 && !confirmGrades) {
+      return false;
+    }
+
+    // 🚫 Shapes missing after confirmation
+    if (
+      confirmGrades &&
+      !selectedGrades.every((grade) => gradeShapes[grade]?.shape)
+    ) {
+      return false;
+    }
+
+    return basicFieldsValid;
   };
 
   const handleSubmit = async (e) => {
@@ -588,13 +599,19 @@ export default function EnquiryForm() {
                     ))}
 
                     {!confirmGrades && (
-                      <button
-                        type="button"
-                        className="btn btn-success btn-sm mt-2"
-                        onClick={handleConfirmGrades}
-                      >
-                        OK
-                      </button>
+                      <div className="d-flex align-items-center gap-3 mt-2">
+                        <button
+                          type="button"
+                          className="btn btn-success btn-sm"
+                          onClick={handleConfirmGrades}
+                        >
+                          OK
+                        </button>
+
+                        <small className="text-warning fst-italic confirm-hint">
+                          Please confirm grade to select shape & size
+                        </small>
+                      </div>
                     )}
                   </div>
                 </div>
