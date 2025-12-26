@@ -161,7 +161,6 @@
   animation: softPulse 1.8s infinite;
 }
 
-
 @media screen and (max-width: 480px) {
   .enquiry-form input,
   .enquiry-form select,

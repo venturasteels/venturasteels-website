@@ -608,7 +608,7 @@ export default function EnquiryForm() {
                           OK
                         </button>
 
-                        <small className="text-warning fst-italic confirm-hint">
+                        <small className="text-danger fst-italic confirm-hint">
                           Please confirm grade to select shape & size
                         </small>
                       </div>

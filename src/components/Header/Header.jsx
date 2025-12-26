@@ -519,8 +519,12 @@ export default function Header() {
                   {[
                     { to: "/products/hot-work-steel", text: "Hot Work Steel" },
                     {
-                      to: "/products/cold-work",
+                      to: "/products/cold-work-steel",
                       text: "Cold Work Steel",
+                    },
+                    {
+                      to: "/products/plastic-mould-steel",
+                      text: "Plastic Mould Steel ",
                     },
                     {
                       to: "/products/spring-steel",
@@ -741,7 +745,7 @@ export default function Header() {
                     onClick={() =>
                       handleNavClick("/products/plastic-mould-steel/p20ni")
                     }
-                    className="dropdown-item "
+                    className="dropdown-item"
                   >
                     P20+Ni / 1.2738
                   </button>
@@ -1085,7 +1089,7 @@ export default function Header() {
           <button
             onClick={() => handleNavClick("/enquiry")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
-          >
+          >0
             Enquiry
           </button>
           {/* <button
@@ -1121,7 +1125,7 @@ export default function Header() {
                 <SearchBar data={productData} />
               </div>
             )}
-          </div> 
+          </div>
         </div>
       </nav>
     </>
