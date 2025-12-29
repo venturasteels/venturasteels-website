@@ -13,7 +13,7 @@ import usePageTracking from "./hooks/usePageTracking.jsx";
 import FloatingContact from "./components/FloatingContact/FloatingContact.jsx";
 import NotFound from "./components/Pages/NotFound.jsx";
 import CuttingServices from "./components/CuttingServices/CuttingServices.jsx";
-// import "./App.css";
+import "./App.css";
 // HotWork
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
 import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
@@ -97,25 +97,25 @@ ReactGA.initialize("G-PNNRG2K7VQ");
 
 const App = () => {
   // disable copy, right click and f12
-  // useEffect(() => {
-  //   const handleContextMenu = (e) => e.preventDefault();
-  //   document.addEventListener("contextmenu", handleContextMenu);
+  useEffect(() => {
+    const handleContextMenu = (e) => e.preventDefault();
+    document.addEventListener("contextmenu", handleContextMenu);
 
-  //   const handleKeyDown = (e) => {
-  //     if (
-  //       (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
-  //       e.key === "F12"
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //   };
-  //   document.addEventListener("keydown", handleKeyDown);
+    const handleKeyDown = (e) => {
+      if (
+        (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
+        e.key === "F12"
+      ) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", handleContextMenu);
-  //     document.removeEventListener("keydown", handleKeyDown);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   useEffect(() => {
     AOS.init({
