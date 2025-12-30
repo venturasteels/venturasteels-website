@@ -420,7 +420,92 @@ const Home = () => {
           </div>
         </div>
       </section>  */}
-      
+      <section className="cutting-preview ">
+        <div className="row align-items-center container">
+          <div
+            className="col-lg-6"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <h2 className="cutting-title" data-aos="fade-up" data-aos-delay="0">
+              High-Precision Cutting Services
+            </h2>
+
+            <p className="cutting-desc" data-aos="fade-up" data-aos-delay="100">
+              Delivering accuracy, consistency and production-ready finish
+              across tool steel, alloy steel, mould steel and high-performance
+              industrial materials.
+            </p>
+
+            <div className="cutting-list">
+              <div
+                className="cutting-list-item"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <span className="icon">⦿</span>
+                CNC Plate Cutting
+              </div>
+
+              <div
+                className="cutting-list-item"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
+                <span className="icon">⦿</span>
+                Shank & Length Precision Cutting
+              </div>
+
+              <div
+                className="cutting-list-item"
+                data-aos="fade-up"
+                data-aos-delay="350"
+              >
+                <span className="icon">⦿</span>
+                Round Bar D-Cut Services
+              </div>
+
+              <div
+                className="cutting-list-item"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                <span className="icon">⦿</span>
+                Retail Cut-to-Size (No MOQ)
+              </div>
+            </div>
+
+            <a
+              href="/cutting-services"
+              className="cutting-btn"
+              data-aos="zoom-in"
+              data-aos-delay="550"
+            >
+              Explore Cutting Services →
+            </a>
+          </div>
+
+          <div className="col-lg-6 text-center">
+            <div
+              className="cutting-img-wrapper"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <video
+                className="cutting-video"
+                src="/videoes/cutting-services-bg.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quality & Infrastructure */}
       <div className="container-fluid quality-infra ">
         <h2 className="text-center mt-5 pt-5 " data-aos="fade-right">

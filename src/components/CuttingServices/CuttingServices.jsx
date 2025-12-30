@@ -4,8 +4,8 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "./CuttingServices.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CuttingCard from "./cutting-card";
-import CuttingCardNew from "./cutting-card-new";
+// import CuttingCard from "./cutting-card";
+// import CuttingCardNew from "./cutting-card-new";
 
 const CuttingServices = () => {
   useEffect(() => {
@@ -155,7 +155,7 @@ const CuttingServices = () => {
       <div className="full-dual-line"></div>
 
       {/* SERVICE SECTIONS */}
-      <div className="cutting-services-section">
+      {/* <div className="cutting-services-section">
         <Container className="services-block">
           {[
             {
@@ -234,15 +234,89 @@ const CuttingServices = () => {
             </div>
           ))}
         </Container>
+      </div> */}
+      {/* CUTTING SERVICES – CARD GRID */}
+      <div className="cutting-services-section">
+        <Container className="services-block">
+          <div className="services-grid">
+            {[
+              {
+                title: "Shank Cutting Services",
+                desc: "Precision cutting engineered for die makers and high-accuracy machining requirements.",
+                list: [
+                  "Smooth, burr-free cutting",
+                  "High-volume consistency",
+                  "Fast turnaround for tooling",
+                  "Ideal for Tool & Die steel",
+                ],
+              },
+              {
+                title: "Plate Cutting Services",
+                desc: "CNC cutting for thick and high-hardness plates without metallurgical compromise.",
+                list: [
+                  "Non-standard dimensions",
+                  "Minimal heat-affected zone",
+                  "Used in mould bases",
+                ],
+              },
+              {
+                title: "D-Cut Services (Round Bars)",
+                desc: "Flat-surface cutting for improved gripping, alignment, and fixture support.",
+                list: [
+                  "Custom width & depth",
+                  "Ideal for fixtures",
+                  "Consistent machining support",
+                ],
+              },
+              {
+                title: "Retail Cutting Services",
+                desc: "Flexible cutting support with no minimum order quantity.",
+                list: [
+                  "Single-piece cutting",
+                  "Wide steel grade availability",
+                  "Instant expert guidance",
+                ],
+              },
+              {
+                title: "Length Cutting Services",
+                desc: "Accurate length cutting for bars, rods, and flats used in production planning.",
+                list: [
+                  "Clean, square edges",
+                  "Batch & retail orders",
+                  "CNC-ready material",
+                ],
+              },
+            ].map((service, index) => (
+              <div
+                className="service-card"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 120}
+              >
+                <div className="service-card-accent"></div>
+
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-desc">{service.desc}</p>
+
+                <ul className="service-list">
+                  {service.list.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Container>
       </div>
 
       {/* FINAL CTA */}
       <section className="cta-section text-center" data-aos="fade-up">
-        <h2>Need Precision Cut Steel?</h2>
+        <h2>Looking for Precision-Cut Steel?</h2>
         <p>
-          Our team delivers accuracy, industry-grade finishing, and rapid
-          turnaround.
+          Partner with Ventura for accurate cutting, consistent quality, and
+          dependable turnaround.
         </p>
+
         <Button
           className="cta-btn"
           href="/enquiry"
@@ -254,7 +328,7 @@ const CuttingServices = () => {
       </section>
 
       {/* Cutting Services Layout2 */}
-      <section className="container py-5">
+      {/* <section className="container py-5">
         <div className="container cutting-services-row">
           <div className="row">
             {data.map((item, index) => (
@@ -262,10 +336,10 @@ const CuttingServices = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Cutting Services Layout3 */}
-      <section className="container py-5">
+      {/* <section className="container py-5">
         <div className="container cutting-services-row">
           <div className="row">
             {data.map((item, index) => (
@@ -273,7 +347,7 @@ const CuttingServices = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

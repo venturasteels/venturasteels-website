@@ -1068,12 +1068,12 @@ export default function Header() {
           >
             Quality
           </button>
-          {/* <button
+          <button
             onClick={() => handleNavClick("/cutting-services")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
           >
             Cutting Services 
-          </button> */}
+          </button>
           <button
             onClick={() => handleNavClick("/infrastructure")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
@@ -1089,7 +1089,7 @@ export default function Header() {
           <button
             onClick={() => handleNavClick("/enquiry")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
-          >0
+          >
             Enquiry
           </button>
           {/* <button
