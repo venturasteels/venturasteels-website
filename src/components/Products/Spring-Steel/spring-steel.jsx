@@ -9,7 +9,7 @@ const SpringSteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/spring-steel\/(en47|sup9|sae9254|en31|en45|sae5160|52crmov4|52crv4|55si7)/;
+      /^\/products\/spring-steel\/(en47|sup9|sae9254|en45|sae5160|52crmov4|52crv4|55si7)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -140,16 +140,6 @@ const SpringSteel = () => {
                     }
                   >
                     SAE 9254 / SUP 11A
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="en31"
-                    className={
-                      location.pathname.includes("en31") ? "active-grade" : ""
-                    }
-                  >
-                    EN 31 / SAE 52100 / 100Cr6
                   </Link>
                 </li>
                 <li>

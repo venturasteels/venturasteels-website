@@ -30,7 +30,7 @@ const productCategories = [
   },
   {
     title: "Spring Steel",
-    image: "/image/Spring Steels/SAE 52100.png",
+    image: "/image/Alloy Steels/EN 31 Rods.png",
     path: "/products/spring-steel",
   },
   {

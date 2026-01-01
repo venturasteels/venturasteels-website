@@ -9,7 +9,7 @@ const AlloySteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/alloy-steel\/(20mncr5|sae4140|sae1020|41cr4|en41b|en24|sae4130|en36c|sae8620)/;
+      /^\/products\/alloy-steel\/(20mncr5|en31|sae4140|sae1020|41cr4|en41b|en24|sae4130|en36c|sae8620)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -119,6 +119,16 @@ const AlloySteel = () => {
                     }
                   >
                     20MnCr5 / 16MnCr5
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="en31"
+                    className={
+                      location.pathname.includes("en31") ? "active-grade" : ""
+                    }
+                  >
+                    EN 31 / SAE 52100 / 100Cr6
                   </Link>
                 </li>
                 <li>

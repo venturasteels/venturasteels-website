@@ -803,14 +803,6 @@ export default function Header() {
                   </button>
                   <button
                     onClick={() =>
-                      handleNavClick("/products/spring-steel/en31")
-                    }
-                    className="dropdown-item "
-                  >
-                    EN 31 / SAE 52100 / 100Cr6
-                  </button>
-                  <button
-                    onClick={() =>
                       handleNavClick("/products/spring-steel/en45")
                     }
                     className="dropdown-item "
@@ -868,6 +860,12 @@ export default function Header() {
                     className="dropdown-item "
                   >
                     20MnCr5 / 16MnCr5
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/alloy-steel/en31")}
+                    className="dropdown-item "
+                  >
+                    EN 31 / SAE 52100 / 100Cr6
                   </button>
                   <button
                     onClick={() =>
@@ -1072,7 +1070,7 @@ export default function Header() {
             onClick={() => handleNavClick("/cutting-services")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
           >
-            Cutting Services 
+            Cutting Services
           </button>
           <button
             onClick={() => handleNavClick("/infrastructure")}

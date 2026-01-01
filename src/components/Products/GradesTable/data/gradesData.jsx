@@ -46,10 +46,6 @@ const gradesData = [
       { name: " SUP 9", link: "/products/spring-steel/sup9" },
       { name: "SAE 9254 / SUP 11A", link: "/products/spring-steel/sae9254" },
       {
-        name: "EN 31 / SAE 52100 / 100Cr6",
-        link: "/products/spring-steel/en31",
-      },
-      {
         name: "EN45 / SAE 9260 / 60Si7",
         link: "/products/spring-steel/en45",
       },
@@ -73,6 +69,10 @@ const gradesData = [
     category: "Alloy Steel",
     grades: [
       { name: "20MnCr5 / 16MnCr5", link: "/products/alloy-steel/20mncr5" },
+       {
+        name: "EN 31 / SAE 52100 / 100Cr6",
+        link: "/products/alloy-steel/en31",
+      },
       {
         name: "SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D",
         link: "/products/alloy-steel/sae4140",

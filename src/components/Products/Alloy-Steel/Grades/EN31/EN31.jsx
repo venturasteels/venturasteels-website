@@ -7,7 +7,7 @@ export default function EN31() {
     navigate("/enquiry", {
       state: {
         selectedGrade: "EN 31 / SAE 52100 / 100Cr6",
-        selectedProduct: "Spring Steel",
+        selectedProduct: "Alloy Steel",
       },
     });
   };
@@ -74,9 +74,16 @@ export default function EN31() {
         </div>
         <div className="db6-img d-flex">
           <img
-            src="/image/Spring Steels/Spring Steel Round Bars.png"
+            src="/image/Alloy Steels/EN 31 Rods.png"
             alt="EN31 Bearing Steel"
-            width={250}
+            width={220}
+          />
+        </div>
+        <div className="db6-img d-flex">
+          <img
+            src="/image/Alloy Steels/SAE 52100.png"
+            alt="SAE 52100 Bearing Steel"
+            width={220} height={220}
           />
         </div>
       </section>

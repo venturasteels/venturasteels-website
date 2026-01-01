@@ -48,7 +48,7 @@ import SpringSteel from "./components/Products/Spring-Steel/spring-steel.jsx";
 import SpringSteelEN47 from "./components/Products/Spring-Steel/Grades/EN47/EN47.jsx";
 import SUP9 from "./components/Products/Spring-Steel/Grades/SUP9/SUP9.jsx";
 import SpringSteelSAE9254 from "./components/Products/Spring-Steel/Grades/SAE9254/SAE9254.jsx";
-import EN31 from "./components/Products/Spring-Steel/Grades/EN31/EN31.jsx";
+import EN31 from "./components/Products/Alloy-Steel/Grades/EN31/EN31.jsx";
 import EN45 from "./components/Products/Spring-Steel/Grades/EN45/EN45.jsx";
 import SAE5160 from "./components/Products/Spring-Steel/Grades/SAE5160/SAE5160.jsx";
 import SpringSteel52CrMoV4 from "./components/Products/Spring-Steel/Grades/52CrMoV4/52CrMoV4.jsx";
@@ -169,7 +169,6 @@ const App = () => {
             <Route path="en47" element={<SpringSteelEN47 />} />
             <Route path="sup9" element={<SUP9 />} />
             <Route path="sae9254" element={<SpringSteelSAE9254 />} />
-            <Route path="en31" element={<EN31 />} />
             <Route path="en45" element={<EN45 />} />
             <Route path="sae5160" element={<SAE5160 />} />
             <Route path="52crmov4" element={<SpringSteel52CrMoV4 />} />
@@ -178,6 +177,7 @@ const App = () => {
           </Route>
           <Route path="/products/alloy-steel" element={<AlloySteel />}>
             <Route path="20mncr5" element={<AlloySteel20MnCr5 />} />
+             <Route path="en31" element={<EN31 />} />
             <Route path="sae4140" element={<AlloySteelSAE4140 />} />
             <Route path="sae1020" element={<AlloySteelSAE1020 />} />
             <Route path="41cr4" element={<AlloySteel41Cr4 />} />

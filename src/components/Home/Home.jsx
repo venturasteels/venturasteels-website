@@ -295,7 +295,7 @@ const Home = () => {
               slidesPerView={"auto"}
               spaceBetween={50}
               autoplay={{
-                delay: 1500,
+                delay: 800,
                 disableOnInteraction: false,
               }}
               loop={true}
