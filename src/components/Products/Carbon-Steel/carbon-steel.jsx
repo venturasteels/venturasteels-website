@@ -76,7 +76,7 @@ const CarbonSteel = () => {
           }
         },
         {
-          "@type":="Question",
+          "@type":"Question",
           "name": "Is Carbon Steel suitable for heat treatment?",
           "acceptedAnswer": {
             "@type": "Answer",
