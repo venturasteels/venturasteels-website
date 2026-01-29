@@ -1,11 +1,20 @@
 static_sites:
   - name: venturasteels
     redirects:
+      # Redirect www → non-www HTTPS
       - source: "/*"
         destination: "https://venturasteels.com/:splat"
         type: redirect
         conditions:
           - host: "www.venturasteels.com"
+
+      # Redirect HTTP → HTTPS
+      - source: "/*"
+        destination: "https://venturasteels.com/:splat"
+        type: redirect
+        conditions:
+          - protocol: "http"
+
     rewrites:
       - source: "/*"
         destination: "/index.html"
