@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import "./Enquiry.css";
 import {
   FaUser,
@@ -81,6 +82,7 @@ export default function EnquiryForm() {
   const [modalMessage, setModalMessage] = useState("");
   const [modalType, setModalType] = useState("success");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -240,6 +242,12 @@ export default function EnquiryForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!executeRecaptcha) {
+      toast.error("Security check not ready. Please try again.");
+      return;
+    }
+
     setSubmitted(true);
     setTouchedFields({
       name: true,
@@ -287,13 +295,15 @@ export default function EnquiryForm() {
       createdAt: new Date().toLocaleString(),
     };
 
+    let captchaToken;
     try {
+      captchaToken = await executeRecaptcha("enquiry_submit");
       //EmailJS
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_ENQUIRY_TEMPLATE_ID,
         templateParams,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
 
       //MongoDB
@@ -302,8 +312,13 @@ export default function EnquiryForm() {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...formData, selectedGrades, gradeShapes }),
-        }
+          body: JSON.stringify({
+            ...formData,
+            selectedGrades,
+            gradeShapes,
+            captchaToken,
+          }),
+        },
       );
 
       if (!response.ok) throw new Error("Failed to save enquiry");
@@ -323,7 +338,7 @@ export default function EnquiryForm() {
 
       setModalType("success");
       setModalMessage(
-        `Thank you! Your enquiry has been submitted successfully.\n\nGrades:\n${gradesWithSpecs}`
+        `Thank you! Your enquiry has been submitted successfully.\n\nGrades:\n${gradesWithSpecs}`,
       );
       setShowModal(true);
 
@@ -636,6 +651,13 @@ export default function EnquiryForm() {
               <small className="text-muted fst-italic">
                 * All fields are mandatory
               </small>
+              <small className="text-muted d-block mt-2 text-center">
+                This site is protected by reCAPTCHA and the Google{" "}
+                <a href="https://policies.google.com/privacy">Privacy Policy</a>{" "}
+                and{" "}
+                <a href="https://policies.google.com/terms">Terms of Service</a>{" "}
+                apply.
+              </small>
 
               <div className="col-12 text-end">
                 <button
@@ -819,7 +841,7 @@ const InfoModal = ({ show, type, message, onClose }) => {
         </button>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .modal-backdrop {
           position: fixed;
           top: 0;
