@@ -71,6 +71,12 @@ const ContactUs = () => {
     if (Object.keys(validationErrors).length === 0) {
       setIsSubmitting(true);
       try {
+        // Get reCAPTCHA token
+        const recaptchaToken = await grecaptcha.execute(
+          import.meta.env.VITE_RECAPTCHA_SITE_KEY,
+          { action: "contact_submit" },
+        );
+
         await emailjs.send(
           import.meta.env.VITE_EMAILJS_SERVICE_ID,
           import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -78,7 +84,7 @@ const ContactUs = () => {
             ...formData,
             createdAt: new Date().toLocaleString(),
           },
-          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         );
 
         const backendUrl = import.meta.env.VITE_BACKEND_URL;
@@ -86,7 +92,10 @@ const ContactUs = () => {
         const res = await fetch(`${backendUrl}/api/contact`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
+          body: JSON.stringify({
+            ...formData,
+            recaptchaToken,
+          }),
         });
 
         if (!res.ok) throw new Error("Backend failed");
@@ -94,7 +103,7 @@ const ContactUs = () => {
         //success modal
         setModalType("success");
         setModalMessage(
-          "Thank you for reaching out! Our team will contact you shortly."
+          "Thank you for reaching out! Our team will contact you shortly.",
         );
         setShowModal(true);
 
@@ -181,7 +190,7 @@ const ContactUs = () => {
                         <span className="error-text">{errors[field]}</span>
                       )}
                     </div>
-                  )
+                  ),
                 )}
                 {/* 🌀 Button with loader */}
                 <button

@@ -70,66 +70,94 @@ export default function CareerApplicationModal({
   //Handle Submit
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!validate()) return;
 
-    const form = new FormData();
-    form.append("position", formData.position);
-    form.append("name", formData.name);
-    form.append("email", formData.email);
-    form.append("phone", formData.phone);
-    form.append("message", formData.message);
-    if (formData.resume) form.append("resume", formData.resume);
+    // Frontend validation
+    if (!validate()) return;
 
     try {
       setSubmitting(true);
       setSubmitMessage("");
 
+      // Execute reCAPTCHA v3
+      const recaptchaToken = await grecaptcha.execute(
+        import.meta.env.VITE_RECAPTCHA_SITE_KEY,
+        { action: "career_apply" },
+      );
+
+      //Prepare FormData (multipart)
+      const form = new FormData();
+      form.append("position", formData.position);
+      form.append("name", formData.name);
+      form.append("email", formData.email);
+      form.append("phone", formData.phone);
+      form.append("message", formData.message);
+      form.append("recaptchaToken", recaptchaToken); // 🔑 IMPORTANT
+
+      if (formData.resume) {
+        form.append("resume", formData.resume);
+      }
+
+      // Send to backend
       const backendURL = import.meta.env.VITE_BACKEND_URL;
 
-      //Send to backend (save file + MongoDB)
       const response = await axios.post(
         `${backendURL}/api/careers/apply`,
         form,
         {
-          headers: { "Content-Type": "multipart/form-data" },
-        }
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        },
       );
 
-      if (response.data.success) {
-        const { position, name, email, phone, message } = formData;
-        const resumeLink = response.data.resumeLink;
-
-        //Send Email
-        await emailjs.send(
-          import.meta.env.VITE_EMAILJS_CAREER_SERVICE_ID,
-          import.meta.env.VITE_EMAILJS_CAREER_TEMPLATE_ID,
-          {
-            name,
-            email,
-            phone,
-            position,
-            message,
-            submittedAt: new Date().toLocaleString("en-IN"),
-            resume_link: resumeLink,
-          },
-          import.meta.env.VITE_EMAILJS_CAREER_PUBLIC_KEY
-        );
-
-        setSubmitMessage("✅ Application submitted successfully!");
-        setFormData({
-          position: selectedJob?.title || "",
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-          resume: null,
-        });
-      } else {
-        setSubmitMessage("⚠️ Something went wrong. Please try again.");
+      // ❌ Backend rejected (reCAPTCHA / server)
+      if (!response.data.success) {
+        throw new Error(response.data.message || "Submission failed");
       }
+
+      // Send EmailJS (only if backend success)
+      const { position, name, email, phone, message } = formData;
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_CAREER_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CAREER_TEMPLATE_ID,
+        {
+          name,
+          email,
+          phone,
+          position,
+          message,
+          resume_link: response.data.resumeLink || "Uploaded",
+          submittedAt: new Date().toLocaleString("en-IN"),
+        },
+        import.meta.env.VITE_EMAILJS_CAREER_PUBLIC_KEY,
+      );
+
+      // ✅ SUCCESS
+      setSubmitMessage("✅ Application submitted successfully!");
+
+      setFormData({
+        position: selectedJob?.title || "",
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        resume: null,
+      });
+
+      // Auto-close modal
+      setTimeout(() => {
+        setShowForm(false);
+        setSubmitMessage("");
+      }, 1500);
     } catch (err) {
-      console.error("Error submitting:", err);
-      setSubmitMessage("❌ Failed to submit application. Try again later.");
+      console.error("Career submit error:", err);
+
+      setSubmitMessage(
+        err?.response?.status === 403
+          ? "⚠️ Suspicious activity detected. Please try again."
+          : "❌ Failed to submit application. Try again later.",
+      );
     } finally {
       setSubmitting(false);
     }
@@ -143,10 +171,11 @@ export default function CareerApplicationModal({
       centered
       className="apply-form-modal"
     >
-      <Modal.Header closeButton>
-        <Modal.Title>Application Form</Modal.Title>
+      <Modal.Header closeButton className="apply-form-header">
+        <Modal.Title>Job Application</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+
+      <Modal.Body className="apply-form-body">
         {submitMessage && (
           <Alert
             variant={submitMessage.startsWith("✅") ? "success" : "danger"}
@@ -160,20 +189,18 @@ export default function CareerApplicationModal({
           onSubmit={handleSubmit}
           encType="multipart/form-data"
         >
-          {/* Position */}
-          {!isQuickApply ? (
-            <Form.Group className="mb-3">
-              <Form.Label>Position</Form.Label>
+          {/* SECTION 1 – POSITION */}
+          <div className="form-section">
+            <h6 className="section-heading">Position Information</h6>
+
+            {!isQuickApply ? (
               <Form.Control
                 type="text"
                 name="position"
                 value={formData.position}
                 readOnly
               />
-            </Form.Group>
-          ) : (
-            <Form.Group className="mb-3">
-              <Form.Label>Position</Form.Label>
+            ) : (
               <Form.Select
                 name="position"
                 value={formData.position}
@@ -187,90 +214,87 @@ export default function CareerApplicationModal({
                   </option>
                 ))}
               </Form.Select>
-              <Form.Control.Feedback type="invalid">
-                {errors.position}
-              </Form.Control.Feedback>
-            </Form.Group>
-          )}
+            )}
+          </div>
 
-          {/* Name */}
-          <Form.Group className="mb-3">
-            <Form.Label>Full Name</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              value={formData.name}
-              onChange={handleChange}
-              isInvalid={!!errors.name}
-            />
-            <Form.Control.Feedback type="invalid">
-              {errors.name}
-            </Form.Control.Feedback>
-          </Form.Group>
+          {/* SECTION 2 – CANDIDATE DETAILS */}
+          <div className="form-section">
+            <h6 className="section-heading">Candidate Details</h6>
 
-          {/* Email */}
-          <Form.Group className="mb-3">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              value={formData.email}
-              onChange={handleChange}
-              isInvalid={!!errors.email}
-            />
-            <Form.Control.Feedback type="invalid">
-              {errors.email}
-            </Form.Control.Feedback>
-          </Form.Group>
+            <div className="two-column">
+              <Form.Group>
+                <Form.Label>Full Name *</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  isInvalid={!!errors.name}
+                />
+              </Form.Group>
 
-          {/* Phone */}
-          <Form.Group className="mb-3">
-            <Form.Label>Phone Number</Form.Label>
-            <Form.Control
-              type="text"
-              name="phone"
-              placeholder="Enter your phone number"
-              value={formData.phone}
-              onChange={handleChange}
-            />
-          </Form.Group>
+              <Form.Group>
+                <Form.Label>Email *</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  isInvalid={!!errors.email}
+                />
+              </Form.Group>
 
-          {/* Message */}
-          <Form.Group className="mb-3">
-            <Form.Label>Message</Form.Label>
+              <Form.Group>
+                <Form.Label>Phone Number *</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+            </div>
+          </div>
+
+          {/* SECTION 3 – MESSAGE */}
+          <div className="form-section">
+            <h6 className="section-heading">Additional Information</h6>
+
             <Form.Control
               as="textarea"
               name="message"
               rows={3}
-              placeholder="Write a short note (optional)"
+              placeholder="Brief note (optional)"
               value={formData.message}
               onChange={handleChange}
             />
-          </Form.Group>
+          </div>
 
-          {/* Resume */}
-          <Form.Group className="mb-3">
-            <Form.Label>Resume (Max 2 MB)</Form.Label>
+          {/* SECTION 4 – DOCUMENT */}
+          <div className="form-section">
+            <h6 className="section-heading">Resume Upload</h6>
+
             <Form.Control
               type="file"
               name="resume"
               accept=".pdf,.doc,.docx"
               onChange={handleFileChange}
-              // isInvalid={!!errors.resume}
-              isInvalid={false}
             />
-            <Form.Control.Feedback type="invalid">
-              {errors.resume}
-            </Form.Control.Feedback>
-          </Form.Group>
+            <small className="text-muted">
+              Accepted formats: PDF, DOC, DOCX (Max 2 MB)
+            </small>
+          </div>
 
-          <Modal.Footer>
-            <Button variant="success" type="submit" disabled={submitting}>
+          {/* FOOTER */}
+          <div className="form-footer">
+            <Button
+              className="submit-application-btn"
+              type="submit"
+              disabled={submitting}
+            >
               {submitting ? "Submitting..." : "Submit Application"}
             </Button>
-          </Modal.Footer>
+          </div>
         </Form>
       </Modal.Body>
     </Modal>
