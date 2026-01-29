@@ -396,6 +396,13 @@ export default function EnquiryForm() {
     }
   }, [location.state]);
 
+  useEffect(() => {
+    document.body.classList.add("show-recaptcha");
+    return () => {
+      document.body.classList.remove("show-recaptcha");
+    };
+  }, []);
+
   return (
     <>
       <HelmetProvider>
@@ -413,7 +420,7 @@ export default function EnquiryForm() {
         </Helmet>
       </HelmetProvider>
 
-      <div className="container enquiry-container py-5">
+      <div className="container enquiry-container py-5 recaptcha-page">
         <div className="row align-items-center mb-5">
           <div className="col-md-6" data-aos="fade-right">
             <h1 className="fw-bold mb-3">Let's Discuss Business</h1>

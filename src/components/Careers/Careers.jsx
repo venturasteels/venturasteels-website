@@ -192,6 +192,16 @@ export default function Careers() {
     });
   }, []);
 
+  useEffect(() => {
+    if (showForm) {
+      document.body.classList.add("show-recaptcha");
+    } else {
+      document.body.classList.remove("show-recaptcha");
+    }
+
+    return () => document.body.classList.remove("show-recaptcha");
+  }, [showForm]);
+
   return (
     <>
       <HelmetProvider>
@@ -209,7 +219,7 @@ export default function Careers() {
         </Helmet>
       </HelmetProvider>
 
-      <div className="careers-container container pb-5 ">
+      <div className="careers-container container pb-5 recaptcha-page">
         {/* Intro Section */}
         <div className="w-100 mb-5 careers-banner" data-aos="fade-down">
           <img

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
 import SmartEmailLink from "../SmartEmailLink";
@@ -129,6 +129,13 @@ const ContactUs = () => {
     }
   };
 
+  useEffect(() => {
+    document.body.classList.add("show-recaptcha");
+    return () => {
+      document.body.classList.remove("show-recaptcha");
+    };
+  }, []);
+
   return (
     <>
       <HelmetProvider>
@@ -146,7 +153,7 @@ const ContactUs = () => {
         </Helmet>
       </HelmetProvider>
 
-      <section className="contact-section">
+      <section className="contact-section recaptcha-page">
         <div className="container">
           <div className="contact-wrapper">
             <div className="contact-form">
