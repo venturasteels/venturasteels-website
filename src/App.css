@@ -30,3 +30,32 @@ img,
   background: transparent;
   z-index: 2;
 }
+
+/* Remove Bootstrap primary flash on click */
+.btn,
+.btn:focus,
+.btn:active,
+.btn:focus-visible {
+  box-shadow: none !important;
+}
+
+/* Override outline-primary active state */
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary:focus,
+.btn-outline-primary:focus-visible {
+  background-color: inherit !important;
+  border-color: inherit !important;
+  color: inherit !important;
+}
+
+/* Hide reCAPTCHA badge everywhere */
+/* Hide badge by default */
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+/* Show only when body has class */
+body.show-recaptcha .grecaptcha-badge {
+  visibility: visible;
+}
