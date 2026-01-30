@@ -1,0 +1,183 @@
+/* ================================
+   Cutting Services – Industrial Hero
+   Ventura Alloy & Steels
+================================ */
+
+:root {
+  --orange: #fe7743;
+  --dark: #0f1d25;
+  --white: #ffffff;
+}
+
+/* Section */
+.cutting-hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Background Video */
+.cutting-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.85) contrast(1.03);
+}
+
+/* Overlay */
+.cutting-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 29, 37, 0.75) 0%,
+    rgba(15, 29, 37, 0.65) 40%,
+    rgba(15, 29, 37, 0.45) 65%,
+    rgba(15, 29, 37, 0.2) 100%
+  );
+  z-index: 2;
+}
+
+/* Container */
+.cutting-container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+/* Content Panel */
+.cutting-panel {
+  max-width: 650px;
+  background: rgba(15, 29, 37, 0.52);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 52px 48px;
+  border-left: 6px solid var(--orange);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55);
+}
+
+/* Tag */
+.cutting-tag {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* Title */
+.cutting-title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  color: var(--white);
+}
+
+/* Description */
+.cutting-desc {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 26px;
+}
+
+/* Points */
+.cutting-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 22px;
+}
+
+.cutting-points li {
+  font-size: 15px;
+  color: #eaeaea;
+  padding-left: 22px;
+  position: relative;
+}
+
+.cutting-points li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--orange);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+/* Button */
+.cutting-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.cutting-btn:hover {
+  background: #d96335;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(254, 119, 67, 0.35);
+}
+
+/* ================================
+   Responsive
+================================ */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .cutting-hero-section {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .cutting-panel {
+    padding: 40px 34px;
+  }
+
+  .cutting-title {
+    font-size: 36px;
+  }
+
+  .cutting-points {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .cutting-panel {
+    padding: 32px 26px;
+  }
+
+  .cutting-title {
+    font-size: 28px;
+  }
+
+  .cutting-desc {
+    font-size: 15px;
+  }
+
+  .cutting-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
