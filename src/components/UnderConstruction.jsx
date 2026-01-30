@@ -13,7 +13,7 @@ export default function UnderConstruction() {
           grade information.
           <br />
           If you have any enquiries regarding
-          <strong>available grades or materials</strong>, feel free to contact
+          <strong> available grades or materials</strong>, feel free to contact
           us.
         </p>
       </div>

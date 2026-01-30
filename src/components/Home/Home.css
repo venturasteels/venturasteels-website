@@ -1,3 +1,12 @@
+#home-about {
+  scroll-margin-top: 80px;
+}
+
+.video-banner {
+  position: relative;
+}
+
+/* 
 .overlay {
   position: absolute;
   inset: 0;
@@ -13,7 +22,7 @@
 .video-banner {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -22,6 +31,7 @@
   height: 80vh;
   object-fit: cover;
 }
+
 .hero-text {
   position: relative;
   z-index: 2;
@@ -56,10 +66,10 @@
   background-color: transparent;
   color: #fff;
   border-color: #fff;
-}
+} */
 
 /* stats card */
-.stats-section {
+/* .stats-section {
   padding: 4rem 2rem;
   background-color: #f6f6ff;
 }
@@ -116,10 +126,10 @@
 .card-gray:hover {
   background-color: #d7d7d7;
   color: #111;
-}
+} */
 
 /* about-ventura */
-.about-section h2 {
+/* .about-section h2 {
   font-size: 2rem;
   color: #273f4f;
 }
@@ -133,7 +143,7 @@
 }
 .text-justify {
   text-align: justify;
-}
+} */
 
 /* product section */
 .product-container {
@@ -294,17 +304,17 @@
   transition: all 0.3s ease;
 }
 
-/* Cutting Services */
+/* Cutting Services
 :root {
   --orange: #fe7743;
   --orange-dark: #d85f33;
   --blue: #273f4f;
   --dark: #0f1d25;
   --light-gray: #f4f4f4;
-}
+} */
 
 /* Section */
-.cutting-preview {
+/* .cutting-preview {
   margin: 110px auto;
   padding: 65px 50px;
   background: linear-gradient(135deg, #e9e9f7, #eef1f3);
@@ -314,10 +324,10 @@
 
 .cutting-preview:hover {
   transform: translateY(-3px);
-}
+} */
 
 /* Title + Text */
-.cutting-title {
+/* .cutting-title {
   font-size: 38px;
   font-weight: 700;
   color: var(--blue);
@@ -329,10 +339,10 @@
   font-size: 17px;
   color: #444;
   max-width: 520px;
-}
+} */
 
 /* Premium Bullet List */
-.cutting-list {
+/* .cutting-list {
   margin-top: 25px;
 }
 
@@ -344,20 +354,20 @@
   font-weight: 500;
   color: #222;
   letter-spacing: 0.2px;
-}
+} */
 
 /* Icon → subtle luxury orange orb */
-.cutting-list-item .icon {
+/* .cutting-list-item .icon {
   width: 10px;
   height: 10px;
   display: inline-block;
   background: radial-gradient(circle, var(--orange), #b64824);
   border-radius: 50%;
   margin-right: 10px;
-}
+} */
 
 /* Button */
-.cutting-btn {
+/* .cutting-btn {
   display: inline-block;
   margin-top: 30px;
   background: var(--orange);
@@ -376,22 +386,6 @@
   box-shadow: 0 10px 28px rgba(254, 119, 67, 0.42);
 }
 
-/* Image Styling */
-/* .cutting-img-wrapper {
-  overflow: hidden;
-  border-radius: 18px;
-  box-shadow: 0px 15px 48px rgba(0, 0, 0, 0.15);
-}
-
-.cutting-img {
-  width: 100%;
-  transition: 0.4s ease-in-out;
-}
-
-.cutting-img:hover {
-  transform: scale(1.05);
-} */
-
 .cutting-img-wrapper {
   position: relative;
   overflow: hidden;
@@ -404,7 +398,7 @@
   height: auto;
   object-fit: cover;
   display: block;
-}
+} */
 
 /* quality & infrastructure */
 .quality-infra {
@@ -426,8 +420,10 @@
 }
 
 .quality-infra h5 {
+  font-size: 17px;
+  font-weight: 400;
   margin: 0px auto;
-  width: 82%;
+  width: 83%;
   color: #000;
 }
 
@@ -494,7 +490,7 @@
 }
 
 /*why choose ventura  */
-.why-ventura-section {
+/* .why-ventura-section {
   background-color: #f8f9fa;
 }
 
@@ -528,7 +524,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* trusted certificates  */
 .trusted-certificates {
@@ -544,7 +540,7 @@
 
 .trusted-certificates p {
   font-size: 1.1rem;
-  max-width: 900px;
+  max-width: 95%;
   margin: 0 auto 40px;
 }
 
@@ -750,7 +746,7 @@
 
 @media (max-width: 768px) {
   /* video-banner */
-  .overlay h1 {
+  /* .overlay h1 {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -764,9 +760,9 @@
   .btn-outline-light {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-  }
+  } */
   /* stats card */
-  .stat-card {
+  /* .stat-card {
     flex: 1 1 100%;
     max-width: 100%;
   }
@@ -774,7 +770,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  } */
   /* product categories */
   .swiper-button-prev {
     left: 10% !important;
@@ -793,7 +789,7 @@
   }
 
   /* cutting services */
-  .cutting-preview {
+  /* .cutting-preview {
     margin: 10px auto;
     padding: 45px 25px;
   }
@@ -814,14 +810,14 @@
     padding: 14px 28px;
     font-size: 16px;
     text-align: center;
-  }
+  } */
 
   /* why choose us */
-  .why-ventura-section .col-sm-6 {
+  /* .why-ventura-section .col-sm-6 {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 1rem;
-  }
+  } */
 
   /* suppliers section */
   .suppliers-row {
@@ -837,15 +833,18 @@
 }
 
 @media only screen and (max-width: 480px) {
+  /* .scroll-indicator {
+    display: none;
+  }
   .overlay h1 {
     font-size: 1.2rem;
   }
 
   .overlay p {
     font-size: 0.9rem;
-  }
+  } */
   /* stats-card */
-  .stat-card .icon {
+  /* .stat-card .icon {
     font-size: 1.5rem;
   }
   .stat-card .value {
@@ -870,16 +869,16 @@
   }
   .stats-container {
     gap: 1.5rem;
-  }
+  } */
   /* why ventura */
-  .why-ventura-section {
+  /* .why-ventura-section {
     padding: 0px !important;
   }
   .why-ventura-section .gy-5 {
     --bs-gutter-y: 1.5rem;
-  }
+  } */
   /* about-section */
-  .about-section h2 {
+  /* .about-section h2 {
     font-size: 23px;
     text-align: center;
     margin-top: 20px;
@@ -887,7 +886,7 @@
   .about-section p {
     font-size: 0.88rem;
     text-align: center;
-  }
+  } */
 
   /* product categories */
   .overlay-product h1 {
@@ -908,7 +907,7 @@
   }
 
   /* cutting services */
-  .cutting-preview {
+  /* .cutting-preview {
     margin: 70px auto;
     padding: 30px 20px;
   }
@@ -928,13 +927,13 @@
     padding: 8px 28px;
     font-size: 14px;
     text-align: center;
-  }
+  } */
 
   /* why choose ventura */
-  .why-ventura-section h2 {
+  /* .why-ventura-section h2 {
     font-size: 1.5rem;
     text-align: center;
-  }
+  } */
   .feature-box h6 {
     font-size: 0.85rem;
   }

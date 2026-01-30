@@ -1,0 +1,243 @@
+:root {
+  --navbar-height: 150px;
+}
+
+/* scroll indicator */
+.scroll-indicator-modern {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+/* Text */
+.scroll-text {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Vertical track */
+.scroll-track {
+  width: 2px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Moving dot */
+.scroll-dot {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: #fe7743;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(254, 119, 67, 0.9);
+  animation: scrollDotMove 1.6s infinite ease-in-out;
+}
+
+@keyframes scrollDotMove {
+  0% {
+    top: -8px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    top: 44px;
+    opacity: 0;
+  }
+}
+
+/* Hide effect */
+.scroll-indicator-modern.hide {
+  opacity: 0;
+}
+
+/* ===============================
+   HOME HERO – PREMIUM B2B
+================================ */
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Video */
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.01);
+  transition: transform 1.5s ease, filter 0.5s ease;
+}
+
+.video-banner:hover .bg-video {
+  transform: scale(1.02);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  overflow: visible;
+}
+
+/* Hero Card */
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  align-self: stretch;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  padding: 36px 32px;
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Thin vertical accent line */
+.hero-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #fe7743, #ff9566);
+}
+
+/* Hover effect */
+.video-banner:hover .hero-content {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Heading */
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-brand {
+  color: #fe7743;
+}
+
+/* Description */
+.hero-content p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* CTA */
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 36px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #fe7743, #ff9566);
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: start;
+}
+
+.hero-cta-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #d96335, #f07444);
+}
+
+.cta-arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.hero-cta-btn:hover .cta-arrow {
+  transform: translateX(6px);
+}
+
+/* Responsive */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-content {
+    max-width: 90%;
+    padding: 28px 24px;
+    text-align: center;
+  }
+  .hero-cta-btn {
+    align-self: center;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content {
+    padding: 20px 16px;
+    border-radius: 10px;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    width: 100% !important;
+  }
+  .hero-cta-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0px;
+    padding-bottom: 0px;
+  }
+  .scroll-indicator-modern {
+    display: none;
+  }
+  .hero-content {
+    max-width: 253px;
+  }
+}

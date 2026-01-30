@@ -62,33 +62,46 @@ const Footer = () => {
               <h5 className="mb-3">Quick Links</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/about" className="footer-link">
-                    About Us
-                  </a>
-                </li>
-                <li>
                   <a href="/products" className="footer-link">
                     Products
                   </a>
                 </li>
                 <li>
-                  <a href="/quality" className="footer-link">
-                    Quality
+                  <a href="/products/hot-work-steel" className="footer-link">
+                    Hot Work Steel
                   </a>
                 </li>
                 <li>
-                  <a href="/infrastructure" className="footer-link">
-                    Infrastructure
+                  <a href="/products/cold-work-steel" className="footer-link">
+                    Cold Work Steel
                   </a>
                 </li>
                 <li>
-                  <a href="/enquiry" className="footer-link">
-                    Enquiry
+                  <a
+                    href="/products/plastic-mould-steel"
+                    className="footer-link"
+                  >
+                    Plastic Mould Steel
                   </a>
                 </li>
                 <li>
-                  <a href="/contact-us" className="footer-link">
-                    ContactUs
+                  <a href="/products/spring-steel" className="footer-link">
+                    Spring Steel
+                  </a>
+                </li>
+                <li>
+                  <a href="/products/alloy-steel" className="footer-link">
+                    Alloy Steel
+                  </a>
+                </li>
+                <li>
+                  <a href="/products/carbon-steel" className="footer-link">
+                    Carbon Steel
+                  </a>
+                </li>
+                <li>
+                  <a href="/products/boron-steel" className="footer-link">
+                    Boron Steel
                   </a>
                 </li>
               </ul>
@@ -97,16 +110,24 @@ const Footer = () => {
             {/* Contact - Head Office */}
             <div className="col-md-3">
               <h5 className="mb-3">Head Office</h5>
-              <p>
-                Unit No. 1201 & 1202, Ghanshyam Enclave P. Co-Op. Soc. Ltd.,
-                <br />
-                New Link Road, Near Laljipada Police Station,
-                <br />
-                Kandivali (West), Mumbai – 400067.
-              </p>
+              <div className="footer-map mb-3">
+
+                 <div className="map-inner">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4522814447635!2d72.8320894!3d19.2030152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c5f6f3b5db%3A0x165eb9f6f4e0b093!2sVENTURA%20ALLOY%20AND%20STEELS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1690467325220!5m2!1sen!2sin"
+                  width="100%"
+                  height="200"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  title="Ventura Steels Location"
+                ></iframe>
+              </div>
+              </div>
+
               <p>
                 <span>
-                   <i
+                  <i
                     className="bi bi-telephone-fill me-2"
                     aria-hidden="true"
                   ></i>
@@ -149,7 +170,7 @@ const Footer = () => {
               <p>
                 <i className="bi bi-geo-alt-fill"></i>
                 Gala no 3-4, Building no 200, Indian Oil Corporation, Mouje,
-                 Gundavli (Mankoli-Pata), Dapoda Taluk, Bhiwandi-421302
+                Gundavli (Mankoli-Pata), Dapoda Taluk, Bhiwandi-421302
               </p>
               <p>
                 Building No. 183, Gala No. 6 | Building No. 183, Gala No. 5 |

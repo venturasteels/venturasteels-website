@@ -11,8 +11,10 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useInView } from "react-intersection-observer";
 import { useRef } from "react";
-import CountUp from "react-countup";
 import "bootstrap/dist/css/bootstrap.min.css";
+import HeroVideoBanner from "./HeroVideoBanner/HeroVideoBanner";
+import VenturaStory from "./VenturaStory/VenturaStory";
+import CuttingServices from "./CuttingServices/CuttingServices";
 import "./Home.css";
 
 const Home = () => {
@@ -169,8 +171,14 @@ const Home = () => {
         <link rel="canonical" href="https://venturasteels.com/" />
       </Helmet>
 
+      {/* Hero Section */}
+      <HeroVideoBanner />
+
+      {/* ventura story section */}
+      <VenturaStory stats={stats} />
+
       {/* video-banner */}
-      <div className="video-banner">
+      {/* <div className="video-banner" id="hero">
         <video
           preload="none"
           autoPlay
@@ -215,11 +223,16 @@ const Home = () => {
           >
             Enquire Now
           </a>
+
+          <div className="scroll-indicator" id="scrollIndicator">
+            <span>Scroll</span>
+            <div className="scroll-line"></div>
+          </div>
         </div>
-      </div>
+      </div> */}
 
       {/* stats - section */}
-      <div className="stats-section">
+      {/* <div className="stats-section">
         <div className="stats-container">
           {stats.map((item, index) => (
             <div
@@ -244,13 +257,13 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Industries we serve */}
       {/* <IndustriesSection /> */}
 
       {/* about-ventura */}
-      <section className="about-section py-5 bg-light">
+      {/* <section className="about-section py-5 bg-light">
         <div className="container about-container">
           <div className="row align-items-center ">
             <div className="col-md-6" data-aos="fade-right">
@@ -276,7 +289,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Products section */}
       <div className="product-container py-5" ref={productsRef}>
@@ -338,89 +351,7 @@ const Home = () => {
         )}
       </div>
 
-      {/* Cutting Services */}
       {/* <section className="cutting-preview ">
-        <div className="row align-items-center container">
-          <div
-            className="col-lg-7"
-            data-aos="fade-right"
-            data-aos-duration="900"
-          >
-            <h2 className="cutting-title" data-aos="fade-up" data-aos-delay="0">
-              High-Precision Cutting Services
-            </h2>
-
-            <p className="cutting-desc" data-aos="fade-up" data-aos-delay="100">
-              Delivering accuracy, consistency and production-ready finish
-              across tool steel, alloy steel, mould steel and high-performance
-              industrial materials.
-            </p>
-
-            <div className="cutting-list">
-              <div
-                className="cutting-list-item"
-                data-aos="fade-up"
-                data-aos-delay="150"
-              >
-                <span className="icon">⦿</span>
-                CNC Plate Cutting
-              </div>
-
-              <div
-                className="cutting-list-item"
-                data-aos="fade-up"
-                data-aos-delay="250"
-              >
-                <span className="icon">⦿</span>
-                Shank & Length Precision Cutting
-              </div>
-
-              <div
-                className="cutting-list-item"
-                data-aos="fade-up"
-                data-aos-delay="350"
-              >
-                <span className="icon">⦿</span>
-                Round Bar D-Cut Services
-              </div>
-
-              <div
-                className="cutting-list-item"
-                data-aos="fade-up"
-                data-aos-delay="450"
-              >
-                <span className="icon">⦿</span>
-                Retail Cut-to-Size (No MOQ)
-              </div>
-            </div>
-
-            <a
-              href="/cutting-services"
-              className="cutting-btn"
-              data-aos="zoom-in"
-              data-aos-delay="550"
-            >
-              Explore Cutting Services →
-            </a>
-          </div>
-
-          <div className="col-lg-5 text-center">
-            <div
-              className="cutting-img-wrapper"
-              data-aos="fade-left"
-              data-aos-delay="200"
-              data-aos-duration="1000"
-            >
-              <img
-                src="/image/quality.jpg"
-                alt="Cutting Services"
-                className="cutting-img"
-              />
-            </div>
-          </div>
-        </div>
-      </section>  */}
-      <section className="cutting-preview ">
         <div className="row align-items-center container">
           <div
             className="col-lg-6"
@@ -504,7 +435,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Cutting Services Video Section */}
+      <CuttingServices />
 
       {/* Quality & Infrastructure */}
       <div className="container-fluid quality-infra ">
@@ -572,7 +506,7 @@ const Home = () => {
       </div>
 
       {/* why choose us */}
-      <section className="why-ventura-section py-5">
+      {/* <section className="why-ventura-section py-5">
         <div className="container">
           <div className="row g-5 align-items-center why-choose">
             <div className="col-lg-6 " data-aos="fade-right">
@@ -621,14 +555,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* certified section */}
       <section
         className="py-5 bg-light trusted-certificates"
         data-aos="fade-up"
       >
-        <div className="container text-center">
+        <div className=" text-center">
           <h3 className="mb-3 text-dark fw-bold">Certified & Proud Members</h3>
           <p className="mb-5 text-muted">
             Ventura Steels is recognized by leading industry associations and
@@ -680,8 +614,7 @@ const Home = () => {
               { logo: "/image/RL-Logonew.png" },
               { logo: "/image/dongbe-logo.png" },
               { logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp" },
-              { logo: "/image/taihe-logo.png" },
-              { logo: "/image/machael-logo.png" },
+              { logo: "/image/taihe-suppliers-logo.png" },
             ].map((supplier, idx) => (
               <div
                 key={idx}
