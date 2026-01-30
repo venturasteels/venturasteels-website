@@ -11,7 +11,6 @@
   border-radius: 20px;
   overflow: hidden;
   padding-left: 52px;
-
   /* Animated Gradient Border */
   border: 2px solid transparent;
   background-image: linear-gradient(#ffffff20, #ffffff20),
