@@ -37,54 +37,24 @@ export default function H13() {
           href="https://venturasteels.com/products/hot-work-steel/h13"
         />
 
-        {/* FAQ Schema for SEO Rich Results */}
+        {/* Product Schema for SEO */}
         <script type="application/ld+json">
           {`
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is H13 / AISI H13 / DIN 1.2344 steel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "H13 (AISI H13 / DIN 1.2344) is a chromium-based hot work tool steel known for high toughness, thermal fatigue resistance, and excellent hardness retention at elevated temperatures. It is widely used in forging dies, die casting tools, extrusion dies, and hot shear blades."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the chemical composition of H13 tool steel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typical chemical composition: 0.32–0.45% C, 4.75–5.50% Cr, 1.10–1.75% Mo, 0.80–1.20% V, 0.20–0.50% Mn, with trace amounts of Si and other elements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is H13 steel used for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "H13 steel is commonly used for die casting dies, forging dies, hot punches, extrusion tooling, hot shear blades, molds, mandrels, and tooling requiring resistance to heat checking and wear under high temperature conditions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is H13 the same as AISI H13 and DIN 1.2344?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. H13 is the generic grade name, AISI H13 is the American standard, and DIN 1.2344 is the German equivalent. All refer to the same hot work tool steel grade with similar chemical and mechanical properties."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is H13 tool steel heat treatable?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. H13 steel can be hardened through proper quenching and tempering. Typical hardness after heat treatment ranges between 48–52 HRC depending on the application and thermal processing."
-      }
-    }
-  ]
+  "@type": "Product",
+  "name": "H13 Hot Work Tool Steel",
+  "description": "H13 / AISI H13 / DIN 1.2344 hot work tool steel with excellent toughness, thermal fatigue resistance and high temperature strength.",
+  "brand": {
+    "@type": "Organization",
+    "name": "Ventura Alloy & Steels Pvt. Ltd."
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Ventura Alloy & Steels Pvt. Ltd."
+  },
+  "material": "Hot Work Tool Steel",
+  "url": "https://venturasteels.com/products/hot-work-steel/h13"
 }
 `}
         </script>
