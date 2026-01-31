@@ -42,29 +42,29 @@ export default function DB6() {
         {/* FAQ Schema for SEO Rich Results */}
         <script type="application/ld+json">
           {`
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is DB6 / DIN 2714 steel?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "DB6 or DIN 2714 is a highly tough hot work tool steel used for forging dies, hammer dies, mould applications, and hot work tooling. It offers excellent impact resistance and wear resistance."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the chemical composition of DB6 steel?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Typical composition: 0.50–0.60% C, 1.00–1.20% Cr, 1.50–1.80% Ni, 0.45–0.55% Mo, 0.65–0.95% Mn, and 0.07–0.12% V."
-            }
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is DB6 / DIN 2714 steel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DB6 or DIN 2714 is a highly tough hot work tool steel used for forging dies, hammer dies, mould applications, and hot work tooling. It offers excellent impact resistance and wear resistance."
       }
-    `}
+    },
+    {
+      "@type": "Question",
+      "name": "What is the chemical composition of DB6 steel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typical composition: 0.50–0.60% C, 1.00–1.20% Cr, 1.50–1.80% Ni, 0.45–0.55% Mo, 0.65–0.95% Mn, and 0.07–0.12% V."
+      }
+    }
+  ]
+}
+`}
         </script>
       </Helmet>
 

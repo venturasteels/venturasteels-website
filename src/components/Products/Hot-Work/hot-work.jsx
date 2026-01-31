@@ -55,49 +55,43 @@ const HotWork = () => {
         />
         <meta property="og:type" content="website" />
 
-        {/* FAQ Schema for Google Rich Snippets */}
-        <script type="application/ld+json">
-          {`
+        {/* FAQ Schema – ONLY for Hot Work landing page */}
+        {!isGradeSelected && (
+          <script type="application/ld+json">
+            {`
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What are Hot Work Tool Steels?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hot Work Tool Steels are special alloy steels designed to maintain strength, hardness, and wear resistance even when exposed to high temperatures. They offer resistance to thermal fatigue, heat checking, shock loads, and distortion during heat treatment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where are Hot Work Tool Steels used?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "These steels are used in forging dies, extrusion dies, die casting tools, hot shear blades, mandrels, molds, and other high-temperature tooling applications where strength and heat resistance are critical."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which hot work steel grades are available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ventura Alloy & Steels supplies DB6 (DIN 2714), H13 (DIN 1.2344), H11 (DIN 1.2343), H21 (DIN 1.2581), H10 (DIN 1.2365 / SKD7), and H12 (DIN 1.2606) in various sizes including rounds, flats, and blocks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Hot Work Tool Steel heat treatable?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, hot work tool steels are heat treatable and can be quenched and tempered to achieve the required toughness, hardness and thermal fatigue resistance depending on the application."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "What are Hot Work Tool Steels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hot Work Tool Steels are special alloy steels designed to maintain strength, hardness, and wear resistance even when exposed to high temperatures. They offer resistance to thermal fatigue, heat checking, shock loads, and distortion during heat treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are Hot Work Tool Steels used?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "These steels are used in forging dies, extrusion dies, die casting tools, hot shear blades, mandrels, molds, and other high-temperature tooling applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which hot work steel grades are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventura Alloy & Steels supplies DB6, H13, H11, H21, H10 and H12 in rounds, flats and blocks."
+      }
     }
-    `}
-        </script>
+  ]
+}
+`}
+          </script>
+        )}
       </Helmet>
 
       <div className="hotwork-container">

@@ -120,6 +120,20 @@ section {
   padding: 0.6rem 1.8rem;
   border-radius: 6px;
 }
+.cta-block .btn:focus,
+.cta-block .btn:active,
+.cta-block .btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #fe7743 !important;
+  border-color: #fe7743 !important;
+}
+
+.cta-block .btn:active {
+  transform: scale(0.97);
+  background-color: #e86636 !important;
+}
+
 .size-table {
   width: 100%;
   border-collapse: collapse;
