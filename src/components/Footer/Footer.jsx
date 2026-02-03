@@ -23,36 +23,38 @@ const Footer = () => {
                 high-performance steels, offering unmatched quality and service
                 for decades.
               </p>
-              <div className="d-flex gap-3 mt-3">
+              <div className="d-flex gap-3 mt-3 footer-social">
                 <a
                   href="https://www.facebook.com/VenturaSteels"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Ventura Steels on Facebook"
                   title="Ventura Steels Facebook"
-                  className="text-white"
+                  className="text-white social-icon"
                 >
-                  <i className="bi bi-facebook fs-5"></i>
+                  <i className="bi bi-facebook"></i>
                 </a>
+
                 <a
                   href="https://www.linkedin.com/company/venturasteels/posts/?feedView=all"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Ventura Steels on LinkedIn"
                   title="Ventura Steels LinkedIn"
-                  className="text-white"
+                  className="text-white social-icon"
                 >
-                  <i className="bi bi-linkedin fs-5"></i>
+                  <i className="bi bi-linkedin"></i>
                 </a>
+
                 <a
                   href="https://www.instagram.com/venturasteels/?__pwa=1"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Ventura Steels on Instagram"
                   title="Ventura Steels Instagram"
-                  className="text-white"
+                  className="text-white social-icon"
                 >
-                  <i className="bi bi-instagram fs-5"></i>
+                  <i className="bi bi-instagram"></i>
                 </a>
               </div>
             </div>
@@ -111,18 +113,17 @@ const Footer = () => {
             <div className="col-md-3">
               <h5 className="mb-3">Head Office</h5>
               <div className="footer-map mb-3">
-
-                 <div className="map-inner">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4522814447635!2d72.8320894!3d19.2030152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c5f6f3b5db%3A0x165eb9f6f4e0b093!2sVENTURA%20ALLOY%20AND%20STEELS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1690467325220!5m2!1sen!2sin"
-                  width="100%"
-                  height="200"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  title="Ventura Steels Location"
-                ></iframe>
-              </div>
+                <div className="map-inner">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4522814447635!2d72.8320894!3d19.2030152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c5f6f3b5db%3A0x165eb9f6f4e0b093!2sVENTURA%20ALLOY%20AND%20STEELS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1690467325220!5m2!1sen!2sin"
+                    width="100%"
+                    height="200"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    title="Ventura Steels Location"
+                  ></iframe>
+                </div>
               </div>
 
               <p>
@@ -132,8 +133,8 @@ const Footer = () => {
                     aria-hidden="true"
                   ></i>
                   <a
-                    href="tel:+912235034301 "
-                    className="text-decoration-none text-white px-1"
+                    href="tel:+912235034301"
+                    className="text-decoration-none text-white px-1 footer-tap-link"
                     title="Call Ventura Steels Office"
                   >
                     022-35034301-21
@@ -143,7 +144,7 @@ const Footer = () => {
                 <span>
                   <a
                     href="tel:+919324959833"
-                    className="text-decoration-none text-white px-1"
+                    className="text-decoration-none text-white px-1 footer-tap-link"
                     title="Call Ventura Steels Office"
                   >
                     9324959833
@@ -155,7 +156,7 @@ const Footer = () => {
                 <span>
                   <a
                     href="tel:+919819225666"
-                    className="text-decoration-none text-white px-1"
+                    className="text-decoration-none text-white px-1 footer-tap-link"
                     title="Call Ventura Steels Office"
                   >
                     +91 9819225666
@@ -185,7 +186,7 @@ const Footer = () => {
                   ></i>
                   <a
                     href="tel:+917977097655"
-                    className="text-decoration-none text-white"
+                    className="text-decoration-none text-white  footer-tap-link"
                     title="Call Ventura Steels Office"
                   >
                     +91 7977097655
@@ -197,7 +198,7 @@ const Footer = () => {
                   <SmartEmailLink
                     email="sales@venturasteels.com"
                     label="sales@venturasteels.com"
-                    className="text-white"
+                    className="text-white footer-tap-link"
                   />
                 </span>
               </p>
@@ -206,7 +207,7 @@ const Footer = () => {
                   <SmartEmailLink
                     email="enquiry@venturasteels.com"
                     label="enquiry@venturasteels.com"
-                    className="text-white"
+                    className="text-white footer-tap-link"
                   />
                 </span>
               </p>
