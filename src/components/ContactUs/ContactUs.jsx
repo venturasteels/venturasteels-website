@@ -140,15 +140,21 @@ const ContactUs = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Contact Us | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <title>
+            Contact Ventura Alloy & Steels Pvt. Ltd. | Steel Supplier India
+          </title>
+
           <meta
             name="description"
-            content="Get in touch with Ventura Alloy & Steels Pvt. Ltd. for enquiries, product details, and support. Our team is here to provide reliable solutions for all your steel requirements."
+            content="Contact Ventura Alloy & Steels Pvt. Ltd., a trusted alloy and tool steel supplier in India. Reach us for enquiries, quotations, and industrial steel solutions."
           />
+
+          {/* Keywords are optional now, but kept clean for legacy support */}
           <meta
             name="keywords"
-            content="Ventura Steels Contact, Steel Supplier India, Alloy Steel Enquiry, Tool Steel Contact, Engineering Steel Supplier, Steel Stockist Support, Ventura Alloy & Steels Contact Details"
+            content="Ventura Steels contact, Ventura Alloy & Steels Pvt Ltd, steel supplier India contact, alloy steel enquiry, tool steel supplier contact, industrial steel supplier India, Ventura Steels Mumbai office"
           />
+
           <link rel="canonical" href="https://venturasteels.com/contact-us" />
         </Helmet>
       </HelmetProvider>
@@ -157,11 +163,18 @@ const ContactUs = () => {
         <div className="container">
           <div className="contact-wrapper">
             <div className="contact-form">
-              <h2>Contact Us</h2>
+              <h1>Contact Ventura Alloy & Steels Pvt. Ltd.</h1>
               <h5 className="contact-subtitle">
-                Feel free to reach out to us for any general enquiries or
-                assistance.
+                Get in touch with Ventura Alloy & Steels Pvt. Ltd., a trusted
+                alloy and tool steel supplier in India, for enquiries,
+                quotations, and support.
               </h5>
+              <p className="visually-hidden">
+                Contact Ventura Alloy & Steels Pvt. Ltd. for alloy steel, tool
+                steel, hot work steel, and cold work steel enquiries. We are a
+                leading industrial steel supplier in India serving B2B customers
+                nationwide.
+              </p>
               <form ref={formRef} onSubmit={handleSubmit} noValidate>
                 {["name", "email", "mobile", "company", "message"].map(
                   (field) => (
@@ -169,7 +182,7 @@ const ContactUs = () => {
                       {field !== "message" ? (
                         <input
                           type={field === "email" ? "email" : "text"}
-                          name={field}
+                          name={field}  
                           placeholder={
                             field === "company"
                               ? "Company Name"
@@ -248,14 +261,14 @@ const ContactUs = () => {
                     enquiry form.
                   </p>
                   <a href="/enquiry" className="enquiry-btn">
-                    Go to Product Enquiry
+                    Product Enquiry – Alloy & Tool Steel
                   </a>
                 </div>
               </section>
             </div>
 
             <div className="contact-info">
-              <h3>Head Office</h3>
+              <h3>Ventura Steels Head Office – Mumbai, India</h3>
               <p>
                 <i className="bi bi-geo-alt-fill"></i>
                 Unit No.1201 & 1202, Ghanshyam Enclave P. Co-Op. Soc. Ltd., New
@@ -300,7 +313,9 @@ const ContactUs = () => {
                 </span>
               </p>
 
-              <h3 className="mt-4">Stocking & Machining Centre</h3>
+              <h3 className="mt-4">
+                Stocking & Machining Centre – Bhiwandi, India
+              </h3>
               <p>
                 <i className="bi bi-geo-alt-fill"></i>
                 Gala no 3-4, Building no 200, Indian Oil Corporation, Mouje,
@@ -371,6 +386,7 @@ const ContactUs = () => {
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
+                  fetchpriority="low"
                   title="Ventura Steels Location"
                 ></iframe>
               </div>
