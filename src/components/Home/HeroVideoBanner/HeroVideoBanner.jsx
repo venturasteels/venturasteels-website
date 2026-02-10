@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import "./HeroVideoBanner.css";
 
 const HeroVideoBanner = () => {
-
   useEffect(() => {
     const hero = document.getElementById("hero");
     const next = document.getElementById("home-about");
@@ -104,7 +103,7 @@ const HeroVideoBanner = () => {
           playsInline
           poster="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764048075/home-bg_zwi4ic.png"
         >
-          <source src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto,w_1280/v1765435146/home-bg-video_mahkr0.mp4" />
+          <source src=" https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto/v1770633815/Home_page_background_dugmla.mp4" />
           Your browser does not support the video tag.
         </video>
 
