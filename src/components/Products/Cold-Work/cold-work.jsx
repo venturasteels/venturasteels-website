@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./cold-work.css";
@@ -6,10 +6,33 @@ import "./cold-work.css";
 const ColdWork = () => {
   const location = useLocation();
   const [isGradeSelected, setIsGradeSelected] = useState(false);
+  const detailsRef = useRef(null);
 
-  React.useEffect(() => {
+  // React.useEffect(() => {
+  //   const gradePattern = /^\/products\/cold-work-steel\/(d2|d3|d5|a2|o1)/;
+  //   setIsGradeSelected(gradePattern.test(location.pathname));
+  // }, [location.pathname]);
+
+  useEffect(() => {
     const gradePattern = /^\/products\/cold-work-steel\/(d2|d3|d5|a2|o1)/;
-    setIsGradeSelected(gradePattern.test(location.pathname));
+
+    const isGrade = gradePattern.test(location.pathname);
+    setIsGradeSelected(isGrade);
+
+    // Scroll only on mobile when grade is selected
+    if (isGrade && window.innerWidth <= 768) {
+      setTimeout(() => {
+        const headerOffset = 80; // Adjust based on your navbar height
+        const elementPosition = detailsRef.current.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }, 150);
+    }
   }, [location.pathname]);
 
   return (
@@ -185,7 +208,7 @@ const ColdWork = () => {
             </aside>
           </div>
 
-          <section className="coldwork-details">
+          <section className="coldwork-details" ref={detailsRef}>
             <Outlet />
           </section>
         </div>

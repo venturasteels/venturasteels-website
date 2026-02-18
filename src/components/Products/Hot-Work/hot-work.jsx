@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./hot-work.css";
@@ -6,11 +6,29 @@ import "./hot-work.css";
 const HotWork = () => {
   const location = useLocation();
   const [isGradeSelected, setIsGradeSelected] = useState(false);
+  const detailsRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const gradePattern =
       /^\/products\/hot-work-steel\/(db6|h13|h11|h21|h10|h12)/;
-    setIsGradeSelected(gradePattern.test(location.pathname));
+
+    const isGrade = gradePattern.test(location.pathname);
+    setIsGradeSelected(isGrade);
+
+    // Scroll only on mobile when grade is selected
+    if (isGrade && window.innerWidth <= 768) {
+      setTimeout(() => {
+        const headerOffset = 80; // Adjust based on your navbar height
+        const elementPosition = detailsRef.current.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }, 150);
+    }
   }, [location.pathname]);
 
   return (
@@ -178,7 +196,7 @@ const HotWork = () => {
             </aside>
           </div>
 
-          <section className="hotwork-details">
+          <section className="hotwork-details" ref={detailsRef}>
             <Outlet />
           </section>
         </div>

@@ -189,3 +189,9 @@
     margin: 0px 20px;
   }
 }
+
+@media (min-width:1105px) and (max-width:1261px){
+  .hotwork-details{
+    width: 79%;
+  }
+}
