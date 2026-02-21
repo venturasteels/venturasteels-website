@@ -268,7 +268,6 @@ export default function EnquiryForm() {
 
     setIsSubmitting(true);
 
-    //grades with specifications for EmailJS
     const gradesWithSpecs = selectedGrades
       .map((grade) => {
         const specs = gradeShapes[grade];
@@ -295,10 +294,10 @@ export default function EnquiryForm() {
       createdAt: new Date().toLocaleString(),
     };
 
-    let captchaToken;
     try {
-      captchaToken = await executeRecaptcha("enquiry_submit");
-      //EmailJS
+      const captchaToken = await executeRecaptcha("enquiry_submit");
+
+      // Send email first
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_ENQUIRY_TEMPLATE_ID,
@@ -306,36 +305,43 @@ export default function EnquiryForm() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
 
-      //MongoDB
+      // Send to backend
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/enquiry`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
+          credentials: "include",
           body: JSON.stringify({
             ...formData,
-            selectedGrades,
-            gradeShapes,
+            grades: selectedGrades.map((grade) => ({
+              gradeName: grade,
+              shape: gradeShapes[grade]?.shape || "",
+              diameter: gradeShapes[grade]?.diameter || "",
+              thickness: gradeShapes[grade]?.thickness || "",
+              width: gradeShapes[grade]?.width || "",
+              quantity: gradeShapes[grade]?.quantity || "",
+            })),
             captchaToken,
           }),
         },
       );
 
-      if (!response.ok) throw new Error("Failed to save enquiry");
+      if (!response.ok) {
+        if (response.status === 429) {
+          // Rate limit reached
+          setModalType("error");
+          setModalMessage(
+            "You have submitted too many enquiries in a short time. Please try again later.",
+          );
+          setShowModal(true);
+          return; // stop further execution
+        } else {
+          throw new Error("Failed to save enquiry");
+        }
+      }
 
-      //Show success modal
-      // const gradesWithSpecs = selectedGrades
-      //   .map((grade) => {
-      //     const specs = gradeShapes[grade];
-      //     if (!specs) return grade;
-      //     if (specs.shape === "Round Bar")
-      //       return `${grade} - Shape: ${specs.shape}, Diameter: ${specs.diameter}, Quantity: ${specs.quantity}`;
-      //     if (specs.shape === "Block")
-      //       return `${grade} - Shape: ${specs.shape}, Thickness: ${specs.thickness}, Width: ${specs.width}, Quantity: ${specs.quantity}`;
-      //     return grade;
-      //   })
-      //   .join("\n");
-
+      // Success modal
       setModalType("success");
       setModalMessage(
         `Thank you! Your enquiry has been submitted successfully.\n\nGrades:\n${gradesWithSpecs}`,
@@ -346,7 +352,9 @@ export default function EnquiryForm() {
     } catch (err) {
       console.error(err);
       setModalType("error");
-      setModalMessage("Error submitting enquiry. Please try again.");
+      setModalMessage(
+        "Error submitting enquiry. The email may have been sent. Please try again if needed.",
+      );
       setShowModal(true);
     } finally {
       setIsSubmitting(false);
