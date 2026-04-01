@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Fuse from "fuse.js";
 import "./searchBar.css";
 
-const SearchBar = ({ data }) => {
+const SearchBar = ({ data, onClose }) => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -17,7 +17,7 @@ const SearchBar = ({ data }) => {
         threshold: 0.3,
         minMatchCharLength: 1,
       }),
-    [data]
+    [data],
   );
 
   useEffect(() => {
@@ -34,6 +34,7 @@ const SearchBar = ({ data }) => {
     setQuery("");
     setResults([]);
     setActiveIndex(-1);
+    if (onClose) onClose();
     if (path) navigate(path);
   };
 
@@ -72,7 +73,7 @@ const SearchBar = ({ data }) => {
         </span>
       ) : (
         part
-      )
+      ),
     );
   };
 

@@ -13,8 +13,9 @@
   padding-left: 52px;
   /* Animated Gradient Border */
   border: 2px solid transparent;
-  background-image: linear-gradient(#ffffff20, #ffffff20),
-    linear-gradient(120deg, #273f4f, #fe7743, #447d9b);
+  background-image:
+    linear-gradient(#ffffff20, #ffffff20),
+    linear-gradient(120deg, #2f2b60, #fe8d37, #2f2b60);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   animation: borderGlow 4s linear infinite;
@@ -36,7 +37,7 @@
   top: 0;
   width: 52px;
   height: 100%;
-  background: #273f4f;
+  background: #2f2b60;
   color: white;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -62,7 +63,9 @@
   width: 100%;
   height: 330px;
   object-fit: cover;
-  transition: transform 0.65s ease, filter 0.4s ease;
+  transition:
+    transform 0.65s ease,
+    filter 0.4s ease;
 }
 
 .cutting-card-pro:hover .cutting-pro-img {
@@ -84,10 +87,10 @@
 }
 
 .cutting-pro-img-wrap:hover .cutting-pro-arrow {
-  background: #fe7743;
+  background: #fe8d37;
   color: white;
   transform: translateX(12px) scale(1.2);
-  box-shadow: 0 14px 34px #fe774370;
+  box-shadow: 0 14px 34px #fe8d3770;
 }
 
 /* SPLIT OVERLAY */

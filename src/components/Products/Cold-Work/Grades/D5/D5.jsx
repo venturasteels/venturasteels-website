@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Table from "react-bootstrap/Table";
-import "./D5.css";
 
 export default function D5() {
   const navigate = useNavigate();
@@ -25,20 +24,50 @@ export default function D5() {
         toughness, and stability, suitable for thread rolling and cold work
         dies.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="cold-work-standards-scroll-wrapper mb-4">
+        <div className="cold-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>Germany / Europe</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+                <td>India</td>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>Cr12MoV</td>
-                <td>KNL D2</td>
-                <td>DIN 2601</td>
-                <td>AISI D5</td>
+                <td>ASTM / AISI</td>
+                <td>DIN / EN</td>
+                <td>JIS</td>
+                <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
+                <td>IS</td>
+                <td>GOST</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
                 <td>D5</td>
+                <td>1.2601 / X165CrMoV12</td>
+                <td>SKD2</td>
+                <td>Cr12MoV1</td>
+                <td>BD5</td>
+                <td>Z160CDV12-1</td>
+                <td>KNL D2 / D5 (as per AISI / DIN 1.2601)</td>
+                <td>Kh12MF1 (Х12МФ1)</td>
               </tr>
             </tbody>
           </table>
@@ -54,60 +83,47 @@ export default function D5() {
             tool steel.
           </p>
         </div>
-        <div className="d2-img d-flex gap-3">
+        <div className="cold-work-img">
           <img
             src="/image/Cold Work Tool Steels/Cold Work steel - Cr12Mov.png"
             alt="Cr12MoV"
+            loading="lazy"
             width={250}
           />
         </div>
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="cold-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center">
-          <div className="chemical-composition composition-table">
+          <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Si</th>
+                  <th>Mn</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Cr</th>
+                  <th>Mo</th>
+                  <th> V</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>Range</td>
                   <td>1.40-1.60</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.10-0.60</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>0.20-0.60</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>11.00-13.00</td>
-                </tr>
-                <tr>
-                  <td>Mo</td>
                   <td> 0.70-1.00</td>
-                </tr>
-                <tr>
-                  <td> V</td>
                   <td>0.80-1.20</td>
                 </tr>
               </tbody>
@@ -178,76 +194,9 @@ export default function D5() {
         </p>
       </section>
 
-      {/* Thermal properties */}
-      {/* <section className="thermal-properties">
-        <h2 className="thermal-section-title">Thermal Properties</h2>
-
-        <div className="row">
-          <div className="col-md-6">
-            <div className="property-card mb-3">
-              <h4>Coefficient of Thermal Expansion</h4>
-              <table className="table table-bordered ">
-                <thead>
-                  <tr>
-                    <th>Temperature (°C)</th>
-                    <th>10¯⁶ m / (m*K)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20-100</td>
-                    <td>10.6</td>
-                  </tr>
-                  <tr>
-                    <td>20-200</td>
-                    <td>11.5</td>
-                  </tr>
-                  <tr>
-                    <td>20-300</td>
-                    <td>11.8</td>
-                  </tr>
-                  <tr>
-                    <td>20-400</td>
-                    <td>12.3</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="col-md-6">
-            <div className="property-card mb-3">
-              <h4>Thermal Conductivity</h4>
-              <table className="table table-bordered ">
-                <thead>
-                  <tr>
-                    <th>Temperature (°C)</th>
-                    <th>W / (m*K)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20</td>
-                    <td>16.7</td>
-                  </tr>
-                  <tr>
-                    <td>350</td>
-                    <td>20.5</td>
-                  </tr>
-                  <tr>
-                    <td>700</td>
-                    <td>24.2</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* heat treatment */}
-      <div className="heat-treatment-data my-4">
-        <h3 className="text-center mb-3">Heat Treatment Data</h3>
+      <div className="heat-treatment my-4">
+        <h3 className="section-title">Heat Treatment Data</h3>
         <Table bordered hover responsive className="text-center align-middle">
           <thead className="custom-header">
             <tr>

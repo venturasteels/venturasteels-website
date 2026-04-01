@@ -27,9 +27,16 @@ const HeroVideoBanner = () => {
 
         // ⏳ allow wheel momentum to settle
         rafId = requestAnimationFrame(() => {
-          next.scrollIntoView({
+          // next.scrollIntoView({
+          //   behavior: "smooth",
+          //   block: "start",
+          // });
+          const elementPosition =
+            next.getBoundingClientRect().top + window.pageYOffset;
+
+          window.scrollTo({
+            top: elementPosition,
             behavior: "smooth",
-            block: "start",
           });
         });
       }

@@ -1,18 +1,24 @@
-.certification-container h2 {
-  color: #273f4f;
+.certification-container {
+  margin-top: 8.2rem !important;
+}
+
+.certification-container h1 {
+  color: #2f2b60;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 
 .certifications-description {
   text-align: center;
-  max-width: 80%;
+  max-width: 93%;
   margin: 0 auto 2rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
 }
 
 .certification-container hr {
-  color: #fdb396;
-  border: 1px solid #fdb396;
+  color: #ffb170;
+  border: 1px solid #ffb170;
 }
 
 .certificate-card {
@@ -27,8 +33,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #447d9b50;
-  border: 1px solid #fdb396;
+  background: #2f2b6050;
+  border: 1px solid #ffb170;
 }
 
 .cert-image {
@@ -45,8 +51,8 @@
   left: 0;
   width: 100%;
   height: auto;
-  background: #fdb396;
-  color: #000;
+  background: #ffb170;
+  color: #2f2b60;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -54,7 +60,9 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  transition: bottom 0.5s ease, opacity 0.3s ease;
+  transition:
+    bottom 0.5s ease,
+    opacity 0.3s ease;
   opacity: 0;
 }
 
@@ -112,7 +120,7 @@
   border: none;
   font-size: 2rem;
   font-weight: bold;
-  color: #273f4f;
+  color: #2f2b60;
   line-height: 1;
   text-align: center;
   cursor: pointer;
@@ -120,8 +128,8 @@
 }
 
 .close-btns:hover {
-  background: #fdb396;
-  color: #000;
+  background: #ffb170;
+  color: #2f2b60;
 }
 
 @media (max-width: 768px) {
@@ -146,7 +154,7 @@
 }
 @media (max-width: 480px) {
   .certifications-description {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .cert-overlay h6 {
@@ -166,5 +174,21 @@
   .certification-container .col-6 {
     flex: 0 0 100%;
     width: 50%;
+  }
+}
+
+@media (max-width: 451px) {
+  .certification-container {
+    margin-top: 12.9rem !important;
+  }
+}
+@media (min-width: 452px) and (max-width: 763px) {
+  .certification-container {
+    margin-top: 10.6rem !important;
+  }
+}
+@media (min-width: 764px) and (max-width: 827px) {
+  .certification-container {
+    margin-top: 9.6rem !important;
   }
 }

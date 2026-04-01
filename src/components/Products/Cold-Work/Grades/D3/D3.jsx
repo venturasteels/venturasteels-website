@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function D3() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleEnquiryClick = () => {
     navigate("/enquiry", {
@@ -21,21 +21,50 @@ const navigate = useNavigate();
       <p className="subtitle text-center">
         High-carbon, high-chromium tool steel with superior wear resistance.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="cold-work-standards-scroll-wrapper mb-4">
+        <div className="cold-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>Germany / Europe</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+                <td>India</td>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X210CrW12</td>
-                <td>HCHCR-D3</td>
-                <td>DIN 2080</td>
-                <td>AISI D3</td>
-                <td>AFNOR Z210W12-01</td>
-                <td>JIS SKD1</td>
+                <td>ASTM / AISI</td>
+                <td>DIN / EN</td>
+                <td>JIS</td>
+                <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
+                <td>IS</td>
+                <td>GOST</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
+                <td>D3</td>
+                <td>1.2080 / X210Cr12</td>
+                <td>SKD1</td>
+                <td>Cr12</td>
+                <td>BD3</td>
+                <td>Z200C12</td>
+                <td>D3 (as per AISI / DIN 1.2080)</td>
+                <td>Kh12</td>
               </tr>
             </tbody>
           </table>
@@ -54,52 +83,43 @@ const navigate = useNavigate();
             edges for sheet thicknesses up to 2 mm.
           </p>
         </div>
-        <div className="db6-img">
+        <div className="cold-work-img">
           <img
             src="/image/Cold Work Tool Steels/Cold Work - D3.png"
-            alt="DB6 Image"
+            alt="D3 Image"
+            loading="lazy"
             width={300}
           />
         </div>
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="cold-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center gap-5">
-          <div className="chemical-composition composition-table">
+        <div className="table-data d-flex justify-content-center">
+          <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <td>C</td>
+                  <td>Si</td>
+                  <td>Mn</td>
+                  <td>P</td>
+                  <td>S</td>
+                  <td>Cr</td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <th>Range</th>
                   <td>2.00-2.35</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.10-0.60</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>0.20-0.60</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>11.00-13.00</td>
                 </tr>
               </tbody>
@@ -185,7 +205,7 @@ const navigate = useNavigate();
       </section>
 
       {/* Thermal properties */}
-      <section className="thermal-properties">
+      <section className="coldwork-thermal-properties">
         <h2 className="thermal-section-title">Thermal Properties</h2>
 
         <div className="row">

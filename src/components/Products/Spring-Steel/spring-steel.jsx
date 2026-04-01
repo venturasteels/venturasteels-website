@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./spring-steel.css";
@@ -6,11 +6,29 @@ import "./spring-steel.css";
 const SpringSteel = () => {
   const location = useLocation();
   const [isGradeSelected, setIsGradeSelected] = useState(false);
+  const detailsRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const gradePattern =
       /^\/products\/spring-steel\/(en47|sup9|sae9254|en45|sae5160|52crmov4|52crv4|55si7)/;
-    setIsGradeSelected(gradePattern.test(location.pathname));
+
+    const isGrade = gradePattern.test(location.pathname);
+    setIsGradeSelected(isGrade);
+
+    // Scroll only on mobile when grade is selected
+    if (isGrade && window.innerWidth <= 768) {
+      setTimeout(() => {
+        const headerOffset = 80; // Adjust based on your navbar height
+        const elementPosition = detailsRef.current.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }, 150);
+    }
   }, [location.pathname]);
 
   return (
@@ -107,7 +125,7 @@ const SpringSteel = () => {
 
         <div className={`spring-steel-main ${isGradeSelected ? "active" : ""}`}>
           <div className="sidebar-wrapper">
-            <aside className="plastic-mould-sidebar">
+            <aside className="spring-steel-sidebar">
               <h3>Grades</h3>
               <ul>
                 <li>
@@ -200,7 +218,7 @@ const SpringSteel = () => {
             </aside>
           </div>
 
-          <section className="spring-steel-details">
+          <section className="spring-steel-details" ref={detailsRef}>
             <Outlet />
           </section>
         </div>

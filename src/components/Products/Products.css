@@ -1,200 +1,510 @@
+/* ===============================
+   HERO CAROUSEL BASE
+================================ */
+.hero-carousel,
+.hero-slide,
+.hero-slide img {
+  height: 100vh;
+}
+
 .hero-carousel {
   position: relative;
-  height: 75vh;
+  background: #000;
+}
+
+.hero-slide {
+  position: relative;
   overflow: hidden;
 }
 
-.hero-carousel .carousel-item {
-  height: 80vh;
-}
-
-.hero-carousel img {
+.hero-slide img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  transform: scale(1.05);
+  transition: transform 6s ease;
 }
 
-.carousel-overlay {
-  z-index: 2;
+.carousel-item.active .hero-slide img {
+  transform: scale(1);
 }
 
-.carousel-overlay {
+/* ===============================
+   INDUSTRIAL OVERLAY (REFINED)
+================================ */
+.hero-slide::after {
+  content: "";
   position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.6) 38%,
+    rgba(0, 0, 0, 0.28) 62%,
+    rgba(0, 0, 0, 0.05) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+/* ===============================
+   HERO CONTENT (FINISHING)
+================================ */
+.hero-overlay-premium {
+  position: absolute;
+  z-index: 2;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 7%;
+  transform: translateY(-50%);
+  max-width: 560px;
   color: #fff;
-  text-align: center;
-  animation: fadeInUp 1s ease forwards;
 }
 
-.carousel-overlay h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.hero-tag {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 40px;
+  font-size: 0.82rem;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  background: rgba(254, 119, 67, 0.2);
+  color: #fe8d37;
+  margin-bottom: 1.4rem;
 }
 
-.carousel-overlay p {
-  font-size: 1.25rem;
-  max-width: 600px;
-  margin: auto;
+/* Headline */
+.hero-overlay-premium h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.1rem;
 }
 
-.grades-data h2 {
-  color: #273f4f;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+/* Subtitle */
+.hero-overlay-premium p {
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: #dcdcdc;
+  max-width: 480px;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -40%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+/* ===============================
+   CTA BUTTON – PREMIUM FEEL
+================================ */
+.hero-cta {
+  margin-top: 2.2rem;
 }
 
-.product-grid {
-  padding: 4rem 0;
+.hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #fe8d37, #e8612f);
+  border-radius: 7px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(254, 119, 67, 0.25);
+  transition: all 0.35s ease;
 }
 
-.product-grid h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
-  color: #273f4f;
+.hero-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(254, 119, 67, 0.4);
+  color: #fff;
 }
 
-.row-product {
-  flex-wrap: wrap;
-  gap: 20px;
+/* ===============================
+   HERO CAROUSEL CONTROLS
+================================ */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  bottom: 3.25rem;
+  top: auto;
+  opacity: 1;
+  z-index: 5;
 }
-.product-card {
-  background: #ffffff;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  height: 100%;
+
+/* Center both buttons properly */
+.carousel-control-prev {
+  left: 50%;
+  transform: translateX(-160px);
+}
+
+.carousel-control-next {
+  right: 50%;
+  transform: translateX(160px);
+}
+
+.carousel-nav {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 1.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+/* Proper hover effect */
+.carousel-control-prev:hover .carousel-nav,
+.carousel-control-next:hover .carousel-nav {
+  background: #fe8d37;
+  border-color: #fe8d37;
+  transform: translateY(-2px);
 }
 
+/* ===============================
+   PAGINATION – CENTER RAIL
+================================ */
+.carousel-indicators {
+  bottom: 3.7rem;
+  margin: 0;
+  gap: 0;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 22px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 0;
+  transition: all 0.4s ease;
+}
+
+.carousel-indicators [data-bs-target]:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Active = rail highlight */
+.carousel-indicators .active {
+  width: 46px;
+  background: #fe8d37;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 992px) {
+  .hero-overlay-premium h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-overlay-premium {
+    left: 6%;
+    right: 6%;
+    max-width: unset;
+  }
+
+  .hero-overlay-premium h1 {
+    font-size: 2.1rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    bottom: 3.2rem;
+  }
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+  padding: 5.5rem 0;
+  background: #f6f8fb;
+}
+
+.product-grid h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #2f2b60;
+  margin-bottom: 3rem;
+}
+
+.row-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.2rem;
+}
+
+/* ===== PRODUCT GRID ===== */
+
+.product-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+/* Image Wrapper */
 .product-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  transition: transform 0.6s ease;
 }
 
-.product-card h5 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 1rem;
-  color: #273f4f;
+/* Footer */
+.product-card-footer {
+  padding: 1.4rem;
+  transition: all 0.3s ease;
 }
 
-/* Why Choose Ventura */
-.why-ventura {
-  padding: 4rem 0;
-  background-color: #f5f5f5;
-}
-
-.why-ventura h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #273f4f;
+.product-card-footer h5 {
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  color: #2f2b60;
+  margin-bottom: 6px;
 }
 
-.why-card {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-  height: 100%;
+.product-card-footer span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fe8d37;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.why-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+/* Arrow animation */
+.product-card-footer span::after {
+  content: " →";
+  transition: margin-left 0.3s ease;
 }
 
-.why-card i {
+.product-card:hover .product-card-footer span::after {
+  margin-left: 6px;
+}
+
+/* Image Zoom Effect */
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Subtle Gradient Overlay */
+.product-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(39, 63, 79, 0.25),
+    rgba(39, 63, 79, 0.05)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+/* Lift Effect */
+.product-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== WHY CHOOSE ===== */
+.why-ventura {
+  position: relative;
+  padding: 6rem 0;
+  background: url("/image/product-why-choose-ventura-section.jpg") center
+    center / cover no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+/* Dark overlay for readability */
+.why-ventura::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(39, 63, 79, 0.75);
+  z-index: -1;
+}
+
+/* Make text white on dark background */
+.why-ventura h2 {
+  color: #ffffff;
   font-size: 2.5rem;
-  color: #fe7743;
+  font-weight: 800;
+  margin-bottom: 3.5rem;
+}
+
+/* Card */
+.why-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(39, 63, 79, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+}
+
+/* Icon Background Circle */
+.why-card i {
+  font-size: 2.2rem;
+  color: #fe8d37;
+  background: rgba(254, 119, 67, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.3rem;
+  transition: all 0.4s ease;
+}
+
+/* Title */
+.why-card h6 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2f2b60;
+  margin: 0;
+}
+
+/* Hover Effects */
+.why-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  border-color: rgba(254, 119, 67, 0.4);
+}
+
+/* Icon animation on hover */
+.why-card:hover i {
+  background: #fe8d37;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/* Subtle top accent line */
+.why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px;
+  background: #fe8d37;
+  transition: width 0.4s ease;
+}
+
+.why-card:hover::before {
+  width: 100%;
+}
+
+/* ===== GRADES SECTION ===== */
+.grades-data {
+  padding: 6rem 0;
+  background: linear-gradient(to bottom, #f6f8fb, #ffffff);
+}
+
+/* Header Styling */
+.grades-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2f2b60;
+  position: relative;
+  display: inline-block;
   margin-bottom: 1rem;
 }
 
-.why-card h6 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #273f4f;
+/* Accent line */
+.grades-header h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #fe8d37;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  .carousel-overlay {
-    width: 100%;
-  }
-  /* product-grid */
-  .product-grid h2 {
-    font-size: 1.8rem;
-  }
-  .product-grid .col-6 {
-    width: 45%;
-  }
-  .product-grid .g-4 {
-    --bs-gutter-y: 0.7rem;
-  }
-  .product-card img {
-    height: 180px;
-  }
+.grades-header p {
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  color: #5f6f7a;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-  .product-card h5 {
-    font-size: 1rem;
-  }
+/* Table wrapper box */
+.grades-wrapper {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(39, 63, 79, 0.08);
+}
 
-  .why-card i {
-    font-size: 2rem;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .row-product {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-/* Responsive */
-@media (max-width: 767px) {
+
+@media (max-width: 576px) {
+  .row-product {
+    grid-template-columns: 1fr;
+  }
+
   .carousel-overlay h1 {
     font-size: 2rem;
   }
+}
 
-  .carousel-overlay p {
-    font-size: 1rem;
-    padding: 0px 10px;
+@media (max-width: 451px) {
+  .hotwork-container,
+  .coldwork-container,
+  .plastic-mould-container,
+  .alloy-steel-container,
+  .spring-steel-container,
+  .carbon-steel-container,
+  .boron-container {
+    margin-top: 12.4rem !important;
   }
-
-  .product-card img {
-    height: 180px;
+}
+@media (min-width: 452px) and (max-width: 763px) {
+  .hotwork-container,
+  .coldwork-container,
+  .plastic-mould-container,
+  .alloy-steel-container,
+  .spring-steel-container,
+  .carbon-steel-container,
+  .boron-container {
+    margin-top: 10.6rem !important;
   }
-
-  .product-card h5 {
-    font-size: 1rem;
+}
+@media (min-width: 764px) and (max-width: 827px) {
+  .hotwork-container,
+  .coldwork-container,
+  .plastic-mould-container,
+  .alloy-steel-container,
+  .spring-steel-container,
+  .carbon-steel-container,
+  .boron-container {
+    margin-top: 9.6rem !important;
   }
-
-  .why-card i {
-    font-size: 2rem;
+}
+@media (min-width: 769px) and (max-width: 950px) {
+  .overview {
+    flex-wrap: wrap;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import "./DB6.css";
+import "./hot-work-grade.css";
 
 export default function DB6() {
   const navigate = useNavigate();
@@ -20,18 +20,18 @@ export default function DB6() {
     <>
       <Helmet>
         <title>
-          DB6 / DIN 2714 / AISI L6 | Hot Work Tool Steel | Ventura Alloy &
-          Steels Pvt. Ltd.
+          DB6 / DIN 2714 / AISI L6 Hot Work Tool Steel – Chemical Composition,
+          Heat Treatment & Applications | Ventura Steels
         </title>
 
         <meta
           name="description"
-          content="DB6 / DIN 2714 (AISI L6) Hot Work Tool Steel with high toughness, wear resistance and impact strength. Chemical composition, heat treatment, applications, size range and properties. Ventura Alloy & Steels is a leading supplier of DB6 steel in India."
+          content="Buy DB6 / DIN 2714 / AISI L6 Hot Work Tool Steel from Ventura Steels. Explore chemical composition, heat treatment, size range, applications, and properties. Trusted supplier of DB6 steel in India."
         />
 
         <meta
           name="keywords"
-          content="DB6 steel, DIN 2714, AISI L6, DB6 chemical composition, DB6 heat treatment, hot work tool steel, Ventura Alloy and Steels, die steel DB6"
+          content="DB6 steel, DB6 hot work tool steel, DIN 2714 steel, AISI L6 steel, DB6 chemical composition, DB6 heat treatment, DB6 applications, DB6 size range, die steel DB6, Ventura Steels India, Ventura Alloy and Steels"
         />
 
         <link
@@ -48,10 +48,10 @@ export default function DB6() {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is DB6 / DIN 2714 steel?",
+      "name": "What is DB6 / DIN 2714 / AISI L6 steel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DB6 or DIN 2714 is a highly tough hot work tool steel used for forging dies, hammer dies, mould applications, and hot work tooling. It offers excellent impact resistance and wear resistance."
+        "text": "DB6, also known as DIN 2714 or AISI L6, is a high-quality hot work tool steel with excellent toughness, wear resistance, and impact strength. It is widely used for forging dies, hammer dies, mold applications, and hot work tooling."
       }
     },
     {
@@ -59,7 +59,31 @@ export default function DB6() {
       "name": "What is the chemical composition of DB6 steel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Typical composition: 0.50–0.60% C, 1.00–1.20% Cr, 1.50–1.80% Ni, 0.45–0.55% Mo, 0.65–0.95% Mn, and 0.07–0.12% V."
+        "text": "Typical chemical composition of DB6 steel: 0.50–0.60% C, 0.65–0.95% Mn, 0.10–0.40% Si, 1.00–1.20% Cr, 0.45–0.55% Mo, 1.50–1.80% Ni, 0.07–0.12% V, with max 0.03% P and S."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the typical applications of DB6 steel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DB6 steel is used for dies in drop and close die forging, hammer presses, die molds, shoe blocks, die holders, piston rods, bolsters, cranks, cassettes, plastic molds, shearing blades, and other hot work tooling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the heat treatment process for DB6 steel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DB6 steel is supplied either in pre-hardened condition or quenched and tempered. Typical hardening temperature is 840–900°C followed by oil or air quenching, then double tempering. Working hardness ranges from 360–430 BHN depending on shape and size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sizes and shapes are available for DB6 steel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DB6 steel is available in rounds with diameters from 102–710 mm and blocks with thickness 125–1000 mm and width 130–1600 mm. Customized sizes can be supplied on request."
       }
     }
   ]
@@ -144,29 +168,29 @@ export default function DB6() {
               level).
             </p>
             <p>
-              Utilized as standard die block steel for manufacturing passes on
-              of different kinds, press bites the dust, expulsion kicks the
+              `` Utilized as standard die block steel for manufacturing passes
+              on of different kinds, press bites the dust, expulsion kicks the
               bucket, retainer plates, heavily clad trim bites the dust, hot
               shear sharpened pieces of steels and instrument holder.
             </p>
           </div>
-          <div className="db6-img">
+          <div className="hot-work-img">
             <img
-              src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
-              alt="DB6 Hot Work Tool Steel Block"
+              src="/image/1.2714 Block.JPG"
+              alt="DB6 DIN 2714 Hot Work Steel Block for Dies and Tooling"
               loading="lazy"
-              width={350}
+              height={350}
             />
           </div>
         </section>
 
         {/* Chemical Composition */}
-        <section className="db6-composition">
+        <section className="hot-work-composition">
           <h2 className="mb-4 text-center">
-            Chemical Composition (Typical Analysis in %)
+            DB6 Chemical Composition (Typical Analysis in %)
           </h2>
           <div className="table-data d-flex justify-content-center">
-            <div className="db6-chemical-composition db6-composition-table table-responsive-custom">
+            <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
               <table>
                 <thead>
                   <tr>
@@ -203,7 +227,7 @@ export default function DB6() {
 
         {/* size range */}
         <section className="size-range">
-          <h2>Size Range</h2>
+          <h2 className="text-center">DB6 Hot Work Steel Size Range</h2>
           <table className="size-table">
             <thead>
               <tr>
@@ -230,7 +254,9 @@ export default function DB6() {
 
         {/* process route */}
         <section className="process-route mx-auto mt-3">
-          <h2>Process Route</h2>
+          <h2 className="text-center">
+            Process Route of DB6 Hot Work Tool Steel
+          </h2>
           <p className="text-muted text-center">
             Applicable for <strong>DB6 / DIN 2714 / AISI L6</strong>
           </p>
@@ -263,7 +289,7 @@ export default function DB6() {
 
         {/* Steel properties */}
         <section className="steel-properties">
-          <h2>Steel Properties</h2>
+          <h2>Steel Properties of DB6 Hot Work Tool Steel</h2>
           <p>
             The exceptional hot work pre-solidified tool steel has great
             toughness and high wear resistance. DB6 die steel is generally
@@ -277,7 +303,7 @@ export default function DB6() {
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications</h2>
+          <h2>Applications of DB6 Hot Work Tool Steel</h2>
           <p>
             Dies for specially drop and close die forgings for hammers &
             mechanical presses, die moulds, shoe blocks, die holder, piston
@@ -363,7 +389,7 @@ export default function DB6() {
 
         {/* heat treatment */}
         <section className="heat-treatment">
-          <h2 className="section-title">Heat Treatment</h2>
+          <h2 className="section-title">Heat Treatment for DB6 Steel</h2>
 
           <div className="row">
             {/* Basic Heat Treatment Data */}
@@ -523,25 +549,6 @@ export default function DB6() {
           <span>MOQ: 0.33 Tonnes</span>
         </div>
       </div>
-      <p className="text-center fs-4">
-        Explore more Hot Work Tool Steel grades like
-        <Link
-          to="/products/hot-work-steel/h13"
-          className="text-decoration-none text-muted"
-        >
-          {" "}
-          H13
-        </Link>
-        ,
-        <Link
-          to="/products/hot-work-steel/h21"
-          className="text-decoration-none text-muted"
-        >
-          {" "}
-          H21
-        </Link>
-        .
-      </p>
     </>
   );
 }

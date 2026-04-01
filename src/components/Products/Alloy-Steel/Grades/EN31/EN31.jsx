@@ -20,8 +20,8 @@ export default function EN31() {
       </p>
 
       {/* Standards / Equivalents */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
+      <div className="alloy-steel-standards-scroll-wrapper mb-4">
+        <div className="alloy-steel-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
@@ -72,14 +72,14 @@ export default function EN31() {
             tempered to achieve the desired mechanical properties.
           </p>
         </div>
-        <div className="db6-img d-flex">
+        <div className="alloy-steel-img d-flex">
           <img
             src="/image/Alloy Steels/EN 31 Rods.png"
             alt="EN31 Bearing Steel"
             width={220}
           />
         </div>
-        <div className="db6-img d-flex">
+        <div className="alloy-steel-img d-flex">
           <img
             src="/image/Alloy Steels/SAE 52100.png"
             alt="SAE 52100 Bearing Steel"
@@ -89,10 +89,10 @@ export default function EN31() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="alloy-steel-composition">
         <h3 className="mb-4 text-center">Chemical Composition (Typical, %)</h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="alloy-steel-chemical-composition alloy-steel-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>

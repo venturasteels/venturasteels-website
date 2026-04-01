@@ -58,7 +58,7 @@
   font-weight: 500;
   text-decoration: none;
   background-color: #fff;
-  color: #273f4f;
+  color: #2f2b60;
   transition: all 0.3s ease;
 }
 
@@ -109,17 +109,17 @@
 }
 
 .card-blue:hover {
-  background-color: #447d9b;
+  background-color: #2f2b60;
   color: white;
 }
 
 .card-dark:hover {
-  background-color: #273f4f;
+  background-color: #2f2b60;
   color: white;
 }
 
 .card-orange:hover {
-  background-color: #fe7743;
+  background-color: #fe8d37;
   color: white;
 }
 
@@ -131,7 +131,7 @@
 /* about-ventura */
 /* .about-section h2 {
   font-size: 2rem;
-  color: #273f4f;
+  color: #2f2b60;
 }
 .about-section p {
   font-size: 1.1rem;
@@ -139,26 +139,29 @@
 }
 .btn-color {
   color: #fff;
-  background-color: #fe7743;
+  background-color: #fe8d37;
 }
 .text-justify {
   text-align: justify;
 } */
 
 /* product section */
+.product-sec {
+  background: linear-gradient(180deg, #fff9f4, #fef3e9);
+}
 .product-container {
   width: 75%;
   margin: 0px auto;
   overflow: visible !important;
 }
 .product-container h2 {
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .product-container hr {
-  color: #273f4f;
+  color: #2f2b60;
   width: 10%;
-  border: 2px solid #273f4f;
+  border: 2px solid #2f2b60;
   opacity: 0.8;
   margin-left: auto;
   margin-right: auto;
@@ -167,7 +170,7 @@
 .heading-product {
   width: 120px;
   margin: 0px auto;
-  border: 2px solid #273f4f;
+  border: 2px solid #2f2b60;
   opacity: 0.82;
 }
 
@@ -236,7 +239,7 @@
 .swiper-button-next {
   width: 48px !important;
   height: 48px !important;
-  background: #273f4f;
+  background: #2f2b60;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 50%;
@@ -283,7 +286,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #273f4f !important;
+  background: #2f2b60 !important;
   width: 22px;
   opacity: 1 !important;
 }
@@ -296,19 +299,25 @@
 .product-view {
   margin: 0px auto;
   width: 60%;
-  border: 2px solid #fff;
+  background: #ffffff;
   padding: 0.55rem 0.5rem;
   font-weight: 500;
   text-decoration: none;
-  color: white;
+  color: #2f2b60;
+  border: none;
   transition: all 0.3s ease;
+}
+.product-view:hover {
+  background: #2f2b60;
+  color: #fff;
+  border: none;
 }
 
 /* Cutting Services
 :root {
-  --orange: #fe7743;
+  --orange: #fe8d37;
   --orange-dark: #d85f33;
-  --blue: #273f4f;
+  --blue: #2f2b60;
   --dark: #0f1d25;
   --light-gray: #f4f4f4;
 } */
@@ -402,18 +411,18 @@
 
 /* quality & infrastructure */
 .quality-infra {
-  background: #447d9b20;
+  background: linear-gradient(180deg, #f3f2fb, #e9e8f7);
 }
 
 .quality-infra h2 {
-  color: #273f4f;
+  color: #2f2b60;
   font-weight: 700;
 }
 
 .heading-line {
   width: 250px;
-  color: #273f4f;
-  border: 2px solid #273f4f;
+  color: #2f2b60;
+  border: 2px solid #2f2b60;
   opacity: 0.8;
   margin-left: auto;
   margin-right: auto;
@@ -421,7 +430,7 @@
 
 .quality-infra h5 {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 450;
   margin: 0px auto;
   width: 83%;
   color: #000;
@@ -446,17 +455,17 @@
 
 .quality-card .quality-link,
 .infras-card .infra-link {
-  background-color: #273f4f;
+  background-color: #2f2b60;
   border-radius: 7px;
 }
 .quality-card .quality-link:hover {
   background-color: transparent;
-  border: 1px solid #273f4f;
+  border: 1px solid #2f2b60;
 }
 
 .infras-card .infra-link:hover {
   background-color: transparent;
-  border: 1px solid #273f4f;
+  border: 1px solid #2f2b60;
 }
 
 .infras-card {
@@ -495,7 +504,7 @@
 }
 
 .why-ventura-section h2 {
-  color: #273f4f;
+  color: #2f2b60;
   font-size: 2rem;
 }
 .why-ventura-section .why-choose {
@@ -506,7 +515,7 @@
 .feature-box {
   background-color: #ffffff;
   padding: 0.75rem 1rem;
-  border-left: 4px solid #273f4f;
+  border-left: 4px solid #2f2b60;
   border-radius: 0.75rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
@@ -518,7 +527,7 @@
 }
 
 .icon-wrapper {
-  background-color: #fe7743;
+  background-color: #fe8d37;
   border-radius: 0.5rem;
   padding: 0.5rem 0.75rem;
   display: flex;
@@ -528,12 +537,12 @@
 
 /* trusted certificates  */
 .trusted-certificates {
-  background-color: #f8f9fa;
+  background: linear-gradient(180deg, #fff9f4, #fef3e9);
   padding: 70px 0;
 }
 
 .trusted-certificates h3 {
-  color: #273f4f;
+  color: #2f2b60;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -591,12 +600,12 @@
   font-weight: 500;
   padding: 10px 25px;
   transition: 0.3s ease;
-  border-color: #273f4f;
-  color: #273f4f;
+  border-color: #2f2b60;
+  color: #2f2b60;
 }
 
 .trusted-certificates .btn:hover {
-  background-color: #273f4f;
+  background-color: #2f2b60;
   color: #fff;
 }
 
@@ -681,7 +690,7 @@
 
 /* suppliers  */
 .suppliers-section {
-  background: linear-gradient(135deg, #f9fafc, #eef2f5);
+  background: linear-gradient(180deg, #f3f2fb, #e9e8f7);
   border-top: 1px solid #e3e7eb;
   border-bottom: 1px solid #e3e7eb;
 }
@@ -710,7 +719,7 @@
 .supplier-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(39, 63, 79, 0.15);
-  border-color: #447d9b;
+  border-color: #2f2b60;
 }
 
 /* Logo container */
@@ -902,8 +911,8 @@
     right: 12% !important;
   }
   .product-container {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 0.9rem !important;
   }
 
   /* cutting services */
@@ -956,7 +965,7 @@
   }
   .heading-line {
     width: 200px;
-    border: 1px solid #273f4f;
+    border: 1px solid #2f2b60;
   }
   .quality-infra h5 {
     width: 100%;

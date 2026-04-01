@@ -322,7 +322,7 @@ export default function Careers() {
             <Card className="why-join-card shadow-sm border-0">
               <div className="why-join-header text-center">
                 <img
-                  src="/image/logo-v.png"
+                  src="/image/Ventura New Logo.png"
                   alt="Ventura Logo"
                   height={54}
                   className="mb-3"

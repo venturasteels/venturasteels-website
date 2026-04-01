@@ -13,9 +13,7 @@ export default function SpringSteel52CrV4() {
   };
   return (
     <div className="grade-details">
-      <h2 className="text-center">
-        52CrV4 / 51CrV4 / AISI 4150
-      </h2>
+      <h2 className="text-center">52CrV4 / 51CrV4 / AISI 4150</h2>
       <p className="subtitle text-center">
         Chromium–vanadium alloy spring steel known for its excellent toughness,
         resilience, and fatigue strength — ideal for highly stressed spring
@@ -23,8 +21,8 @@ export default function SpringSteel52CrV4() {
       </p>
 
       {/* Standards*/}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
+      <div className="spring-steel-standards-scroll-wrapper mb-4">
+        <div className="spring-steel-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
@@ -75,25 +73,13 @@ export default function SpringSteel52CrV4() {
             very good balance of strength and ductility.
           </p>
         </div>
-        {/* <div className="db6-img d-flex">
-          <img
-            src="/image/Spring Steels/52CrV4 Round Bars.png"
-            alt="52CrV4 Spring Steel"
-            width={250}
-          />
-          <img
-            src="/image/Spring Steels/51CrV4 Flat Bars.png"
-            alt="51CrV4 Spring Steel"
-            width={250}
-          />
-        </div> */}
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="spring-steel-composition">
         <h3 className="mb-4 text-center">Chemical Composition (Typical, %)</h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="spring-steel-chemical-composition spring-steel-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>

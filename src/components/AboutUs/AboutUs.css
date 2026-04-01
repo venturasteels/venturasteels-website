@@ -1,5 +1,5 @@
 .about-hero {
-  height: 65vh;
+  height: 84vh;
   background: url("/image/aboutus-bg2.jpg") center/cover no-repeat;
   position: relative;
   overflow: hidden;
@@ -22,7 +22,7 @@
 .about-hero h1 {
   font-size: 3.2rem;
   font-weight: bold;
-  color: #fe7743;
+  color: #fe8d37;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -39,23 +39,23 @@
 }
 
 .who-we-are h2 {
-  color: #273f4f;
+  color: #2f2b60;
   font-size: 2.5rem;
 }
-.who-we-are p{
+.who-we-are p {
   font-size: 1rem;
 }
 .who-we-are .btn-primary {
-  background-color: #447d9b;
-  border-color: #447d9b;
+  background-color: #2f2b60;
+  border-color: #2f2b60;
   padding: 0.6rem 1.5rem;
   border-radius: 2rem;
   transition: all 0.3s ease;
 }
 
 .who-we-are .btn-primary:hover {
-  background-color: #fe7743;
-  border-color: #fe7743;
+  background-color: #fe8d37;
+  border-color: #fe8d37;
   color: #fff;
 }
 
@@ -71,11 +71,11 @@
 
 /* vision-mission */
 .vision-mission-modern {
-  background: #447d9b40;
+  background: #2f2b6040;
 }
 
 .vision-mission-modern h2 {
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .timeline {
@@ -92,7 +92,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #447d9b;
+  background: #2f2b60;
   transform: translateX(-50%);
 }
 
@@ -109,7 +109,7 @@
 }
 
 .timeline-icon {
-  background: #273f4f;
+  background: #2f2b60;
   color: #fff;
   border-radius: 50%;
   padding: 10px;
@@ -118,7 +118,7 @@
 }
 
 .timeline-item:nth-child(even) .timeline-icon {
-  background: #fe7743;
+  background: #fe8d37;
 }
 
 .timeline-content {
@@ -140,13 +140,13 @@
 }
 
 .timeline-content h4 {
-  color: #273f4f;
+  color: #2f2b60;
   margin-bottom: 1rem;
 }
 
 /* management-section */
 .management-section h2 {
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .management-section .card {
@@ -176,11 +176,11 @@
 }
 
 .bg-primary {
-  background-color: #447d9b !important;
+  background-color: #2f2b60 !important;
 }
 
 .bg-orange {
-  background-color: #fe7743 !important;
+  background-color: #fe8d37 !important;
 }
 
 .bg-success {
@@ -189,15 +189,17 @@
 
 /* team section */
 .our-team-section {
-  background-color: #273f4f10;
+  background-color: #2f2b6010;
 }
 .our-team-section h2 {
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .role-card {
   border-radius: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   background-color: #fff;
 }
 
@@ -219,11 +221,11 @@
 }
 
 .bg-primary {
-  background-color: #447d9b !important;
+  background-color: #2f2b60 !important;
 }
 
 .bg-orange {
-  background-color: #fe7743 !important;
+  background-color: #fe8d37 !important;
 }
 
 .bg-success {
@@ -235,7 +237,7 @@
 }
 
 .bg-secondary {
-  background-color: #273f4f !important;
+  background-color: #2f2b60 !important;
 }
 
 @media (max-width: 768px) {

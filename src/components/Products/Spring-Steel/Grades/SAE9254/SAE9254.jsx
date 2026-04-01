@@ -20,7 +20,7 @@ export default function SpringSteelSAE9254() {
       </p>
 
       {/* Standards / Equivalents */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
+      <div className="spring-steel-chemical-composition spring-steel-composition-table table-responsive-custom-standards-scroll-wrapper mb-4">
         <div className="hot-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
@@ -76,7 +76,7 @@ export default function SpringSteelSAE9254() {
             under severe working conditions.
           </p>
         </div>
-        <div className="db6-img d-flex">
+        <div className="spring-steel-img d-flex">
           <img
             src="/image/Spring Steels/Spring Steel Round Bars.png"
             alt="SAE 9254 Spring Steel"
@@ -86,12 +86,12 @@ export default function SpringSteelSAE9254() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="spring-steel-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis, %)
         </h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="spring-steel-chemical-composition spring-steel-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>

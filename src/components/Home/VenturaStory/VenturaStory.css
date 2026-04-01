@@ -13,15 +13,17 @@
   overflow: hidden;
 }
 
+/* ===== Overlay – Dark Blue Corporate Blend ===== */
+
 .ventura-overlay {
   width: 100%;
   min-height: 100vh;
   height: 100vh;
   background: linear-gradient(
     120deg,
-    rgba(15, 23, 42, 0.4),
-    rgba(15, 23, 42, 0.55),
-    rgba(0, 0, 0, 0.75)
+    rgba(47, 43, 96, 0.58),
+    rgba(49, 45, 100, 0.62),
+    rgba(47, 43, 96, 0.66)
   );
   display: flex;
   align-items: center;
@@ -42,34 +44,35 @@
 
 .stat-card {
   min-width: 180px;
-  padding: 20px 20px;
+  padding: 20px;
   border-radius: 18px;
   text-align: center;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.18),
-    rgba(255, 255, 255, 0.08)
+    rgba(255, 150, 58, 0.18),
+    rgba(245, 135, 52, 0.08)
   );
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  border: 1px solid rgba(255, 150, 58, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s ease;
 }
 
-/* B2B Hover – Subtle elevation */
+/* Hover – Elevated Authority */
 .stat-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.28),
-    rgba(255, 255, 255, 0.12)
+    rgba(255, 150, 58, 0.32),
+    rgba(245, 135, 52, 0.16)
   );
+  border-color: #ff963a;
 }
 
 .stat-card .icon {
   font-size: 22px;
-  color: #fe7743;
+  color: #ff963a;
   margin-bottom: 10px;
 }
 
@@ -82,7 +85,7 @@
 .stat-card .label {
   font-size: 14px;
   letter-spacing: 0.6px;
-  color: #d1d5db;
+  color: #dcdcff;
   margin-top: 6px;
 }
 
@@ -93,32 +96,34 @@
 .ventura-story-section h2 {
   font-size: clamp(27px, 3vw, 42px);
   letter-spacing: 0.4px;
+  color: #ffffff;
 }
 
 .ventura-story-section p.lead {
   font-size: 16px;
   line-height: 1.8;
-  color: #e5e7eb;
+  color: #e8e8ff;
   font-weight: 500;
   max-width: 880px;
   margin: 0 auto;
 }
 
 /* =====================================================
-   Why Choose – Authority Lines (UPDATED)
+   Why Choose – Corporate Authority Lines
 ===================================================== */
 
 .why-point {
   position: relative;
   padding: 22px 24px 22px 60px;
-  background: rgba(255, 255, 255, 0.03);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  /* background: rgba(255, 150, 58, 0.06); */
+  background: rgba(49, 45, 100, 0.46);
+  border-top: 1px solid rgba(255, 150, 58, 0.18);
+  border-bottom: 1px solid rgba(255, 150, 58, 0.18);
   transition: all 0.35s ease;
   overflow: hidden;
 }
 
-/* Signal line */
+/* Orange Signal Line */
 .why-point::before {
   content: "";
   position: absolute;
@@ -126,22 +131,26 @@
   top: 50%;
   width: 18px;
   height: 2px;
-  background: #fe7743;
+  background: linear-gradient(90deg, #fe8d37, #ff963a);
   transform: translateY(-50%);
   transition: width 0.35s ease;
 }
 
-/* Background reveal */
+/* Background Glow */
 .why-point::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(254, 119, 67, 0.08);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 141, 55, 0.12),
+    rgba(255, 150, 58, 0.05)
+  );
   opacity: 0;
   transition: opacity 0.35s ease;
 }
 
-/* Hover behavior */
+/* Hover Behavior */
 .why-point:hover {
   padding-left: 76px;
 }
@@ -159,29 +168,28 @@
   font-size: 15.5px;
   font-weight: 500;
   letter-spacing: 0.3px;
-  color: #f1f5f9;
+  color: #ffffff;
 }
 
 /* ===============================
-   Button Enhancement
+   Button – Strong Corporate CTA
 ================================ */
 
 .ventura-story-section .btn-outline-light {
   border-width: 2px;
   padding: 11px 28px;
   letter-spacing: 0.6px;
-  background-color: #fe7743;
-  border-color: #fe7743;
-  color: #fff;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(90deg, #fe8d37, #ff963a);
+  border: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 6px;
 }
 
 .ventura-story-section .btn-outline-light:hover {
-  background-color: #ee6129;
-  border-color: #da4307;
-  color: #fff;
+  background: linear-gradient(90deg, #312d64, #2f2b60);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(254, 119, 67, 0.45);
+  box-shadow: 0 12px 28px rgba(255, 150, 58, 0.45);
 }
 
 /* ===============================
@@ -191,208 +199,37 @@
 @media (max-width: 768px) {
   .ventura-story-section {
     background-attachment: scroll;
+    min-height: auto;
+    height: auto;
   }
 
   .ventura-overlay {
     min-height: auto;
-    padding: 80px 0;
-  }
-
-  .stats-container {
-    margin-bottom: 50px;
-  }
-  .why-point {
-    padding: 20px 20px 20px 52px;
-  }
-
-  .why-point:hover {
-    padding-left: 60px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .ventura-story-section {
     height: auto;
-    min-height: 100vh;
-  }
-  .ventura-overlay {
-    padding: 60px 0;
     flex-wrap: wrap;
-    height: auto;
-    min-height: 100vh;
+    justify-content: center;
+    padding: 60px 0;
   }
 
-  /* Headings */
-  .ventura-story-section h2 {
-    font-size: 28px;
-  }
-
-  .ventura-story-section p.lead {
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
-  /* Stats stack vertically */
   .stats-container {
     flex-direction: column;
     align-items: center;
     gap: 18px;
-    margin: 0px auto;
-  }
-
-  .stat-card {
-    width: 100%;
-    max-width: 280px;
-    padding: 20px 16px;
-  }
-
-  .stat-card .icon {
-    font-size: 24px;
-  }
-
-  .stat-card .value {
-    font-size: 24px;
-  }
-
-  .stat-card .label {
-    font-size: 13px;
-  }
-
-  /* Why choose – compact authority */
-  .why-point {
-    padding: 16px 16px 16px 44px;
-  }
-
-  .why-point span {
-    font-size: 14.5px;
-    line-height: 1.6;
-  }
-
-  .why-point::before {
-    left: 16px;
-    width: 14px;
-  }
-
-  /* Button */
-  .ventura-story-section .btn-outline-light {
-    padding: 10px 22px;
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  /* ===============================
-     Section & Overlay
-  =============================== */
-
-  .ventura-story-section {
-    min-height: auto;
-    height: auto;
-    background-attachment: scroll;
-  }
-
-  .ventura-overlay {
-    min-height: auto;
-    height: auto;
-    padding: 60px 0;
-  }
-
-  /* ===============================
-     Headings & Text
-  =============================== */
-
-  .ventura-story-section h2 {
-    font-size: 26px;
-    line-height: 1.3;
-    text-align: center;
-    margin-bottom: 14px;
-  }
-
-  .ventura-story-section p.lead {
-    font-size: 14.8px;
-    line-height: 1.65;
-    text-align: center;
-    padding: 0 14px;
-    margin-bottom: 26px;
-  }
-
-  /* ===============================
-     Stats – Vertical Authority Stack
-  =============================== */
-
-  .stats-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
     margin-bottom: 40px;
   }
 
   .stat-card {
     width: 100%;
-    max-width: 260px;
-    padding: 18px 16px;
-    border-radius: 14px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    max-width: 280px;
+    padding: 18px;
   }
-
-  .stat-card .icon {
-    font-size: 22px;
-    margin-bottom: 6px;
-  }
-
-  .stat-card .value {
-    font-size: 23px;
-  }
-
-  .stat-card .label {
-    font-size: 12.5px;
-    letter-spacing: 0.4px;
-  }
-
-  /* Disable hover effects on touch devices */
-  .stat-card:hover {
-    transform: none;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
-  }
-
-  /* ===============================
-     Why Choose – Clean Authority List
-  =============================== */
 
   .why-point {
-    padding: 14px 14px 14px 40px;
-    margin-bottom: 10px;
-    background: rgba(255, 255, 255, 0.04);
+    padding: 16px 16px 16px 44px;
   }
 
-  .why-point::before {
-    left: 14px;
-    width: 12px;
-  }
-
-  .why-point span {
-    font-size: 14px;
-    line-height: 1.55;
-  }
-
-  /* Remove hover shifts on mobile */
   .why-point:hover {
-    padding-left: 40px;
-  }
-
-  .why-point:hover::before {
-    width: 12px;
-  }
-
-  /* ===============================
-     Button – Thumb Friendly
-  =============================== */
-
-  .ventura-story-section .btn-outline-light {
-    padding: 10px 22px;
-    font-size: 14px;
-    border-radius: 6px;
-    box-shadow: 0 8px 20px rgba(254, 119, 67, 0.4);
+    padding-left: 44px;
   }
 }
 
@@ -406,6 +243,6 @@
   .ventura-overlay {
     min-height: auto;
     height: auto;
-    padding: 60px 0;
+    padding: 70px 0;
   }
 }

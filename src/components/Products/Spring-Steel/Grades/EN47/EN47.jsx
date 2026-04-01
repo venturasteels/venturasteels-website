@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./EN47.css";
+import "./spring-steel-grade.css";
 
 export default function SpringSteelEN47() {
   const navigate = useNavigate();
@@ -24,8 +24,8 @@ export default function SpringSteelEN47() {
       </p>
 
       {/* Standards / Equivalents */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
+      <div className="spring-steel-standards-scroll-wrapper mb-4">
+        <div className="spring-steel-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
@@ -77,7 +77,7 @@ export default function SpringSteelEN47() {
             springs, torsion bars, and shafts.
           </p>
         </div>
-        <div className="db6-img d-flex">
+        <div className="spring-steel-img d-flex">
           <img
             src="/image/Spring Steels/50CrV4 Round Bars.png"
             alt="50CrV4 Spring Steel"
@@ -92,10 +92,10 @@ export default function SpringSteelEN47() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="spring-steel-composition">
         <h3 className="mb-4 text-center">Chemical Composition (Typical, %)</h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="spring-steel-chemical-composition spring-steel-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>

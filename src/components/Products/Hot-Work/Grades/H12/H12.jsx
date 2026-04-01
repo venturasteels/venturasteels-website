@@ -18,21 +18,50 @@ export default function H12() {
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="hot-work-standards-scroll-wrapper mb-4">
+        <div className="hot-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>German / Europe</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+                <td>India</td>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X37CrMoW5-1 </td>
+                <td>ASTM / AISI</td>
+                <td>DIN / EN</td>
+                <td>JIS</td>
+                <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
+                <td>IS</td>
+                <td>GOST</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
                 <td>H12</td>
-                <td>DIN 2606</td>
-                <td>AISI H12</td>
-                <td>AFNOR 32CDV12-28</td>
-                <td>JIS SKD62</td>
+                <td>1.2605 / X35CrWMoV5-1</td>
+                <td>SKD62</td>
+                <td>4Cr5MoWVi</td>
+                <td>BH12</td>
+                <td>Z35CDWV5-1</td>
+                <td>H12 (as per AISI / DIN 1.2605)</td>
+                <td>4Kh5MF1S (4Х5МФ1С)</td>
               </tr>
             </tbody>
           </table>
@@ -56,91 +85,42 @@ export default function H12() {
             extrusion tooling and hot gripper dies.
           </p>
         </div>
-        {/* <div className="db6-img">
-          <img
-            src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
-            alt="DB6 Image"
-            width={300}
-          />
-        </div> */}
       </section>
 
       {/* Chemical Composition */}
-      <section className="db6-composition">
+      <section className="hot-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center gap-5">
-          <div className="db6-chemical-composition db6-composition-table">
+        <div className="table-data d-flex justify-content-center">
+          <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
                   <td>C</td>
-                  <td>0.30-0.40</td>
-                </tr>
-                <tr>
                   <td>Si</td>
-                  <td>0.80-1.25 </td>
-                </tr>
-                <tr>
+                  <td>Mn</td>
                   <td>P</td>
-                  <td>0.003 max</td>
-                </tr>
-                <tr>
+                  <td>S</td>
                   <td>Cr</td>
-                  <td>4.75-5.50</td>
-                </tr>
-                <tr>
                   <td>W</td>
-                  <td>1.00-1.70</td>
-                </tr>
-                <tr>
                   <td>Mo</td>
-                  <td>1.25-1.75</td>
-                </tr>
-                <tr>
-                  <td>Mo</td>
-                  <td>0.20-0.50</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="db6-name-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Country</th>
-                  <th>Standards</th>
-                  <th>Grades's Name</th>
+                  <td>V</td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>USA</td>
-                  <td>AISI / SAE</td>
-                  <td>H12 / T20812</td>
-                </tr>
-                <tr>
-                  <td>Germany</td>
-                  <td>DIN, WNr</td>
-                  <td>1.2605 / X35CrWMoV5</td>
-                </tr>
-                <tr>
-                  <td>Japan</td>
-                  <td>JIS G4404</td>
-                  <td>SKD62 </td>
-                </tr>
-                <tr>
-                  <td>British </td>
-                  <td>BS 4659</td>
-                  <td>BH12</td>
+                  <th>Range</th>
+                  <td>0.30-0.40</td>
+                  <td>0.80-1.25 </td>
+                  <td>0.20-0.60</td>
+                  <td>0.030 max</td>
+                  <td>0.030 max</td>
+                  <td>4.75-5.50</td>
+                  <td>1.00-1.70</td>
+                  <td>1.25-1.75</td>
+                  <td>0.20-0.50</td>
                 </tr>
               </tbody>
             </table>
@@ -162,9 +142,12 @@ export default function H12() {
       {/* applications */}
       <section className="applications">
         <h2>Applications</h2>
-        {/* <p>
-          This tool steel is used for hot press and mandrels, press die inserts and forging die, remarkable hot metal die casting tools, die-casting moulds for non-ferrous overwhelming metal pressure die-casting.
-        </p> */}
+        <ul>
+          <li>Excellent Resistance to Wear</li>
+          <li>High Strength at Elevated Temperature</li>
+          <li>Homogenizing with High Toughness.</li>
+          <li>Extra- Fine- Structure without Grain-Boundary Carbide </li>
+        </ul>
       </section>
 
       {/* Thermal properties */}

@@ -1,5 +1,6 @@
 /* Hot work detail section */
 .spring-steel-container {
+  margin-top: 8.2rem;
   background: #fff;
   padding: 2rem;
   color: #2c2c2c;
@@ -8,12 +9,12 @@
 .spring-steel-hero {
   text-align: justify;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #fe7743;
+  border-bottom: 2px solid #fe8d37;
 }
 
 .spring-steel-hero h1 {
   text-align: center;
-  color: #273f4f;
+  color: #2f2b60;
   font-size: 2.2rem;
 }
 
@@ -30,8 +31,8 @@
 .spring-steel-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
   position: relative;
@@ -44,20 +45,22 @@
   min-width: 50%;
   display: flex;
   justify-content: center;
-  transition: transform 1s ease-in-out, min-width 1s ease-in-out;
-  transform: translateX(50%);
+  transition:
+    transform 1s ease-in-out,
+    min-width 1s ease-in-out;
+  transform: none;
 }
 
 .spring-steel-main.active .sidebar-wrapper {
   min-width: 15%;
-  width: 18%;
-  transform: translateX(0);
+  width: 22%;
+  transform: none;
 }
 
 .spring-steel-sidebar {
   width: 100%;
-  background: #fe774310;
-  border: 1px solid #fe7743;
+  background: #fe8d3710;
+  border: 1px solid #fe8d37;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -78,16 +81,18 @@
 
 .spring-steel-sidebar li a {
   display: block;
-  color: #273f4f;
+  color: #2f2b60;
   padding: 0.5rem;
   margin-bottom: 0.3rem;
   text-decoration: none;
   border-radius: 6px;
-  transition: background 0.3s, transform 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s;
 }
 
 .spring-steel-sidebar li a:hover {
-  background: #fe774390;
+  background: #fe8d3790;
   color: #fff;
   font-weight: 500;
   transform: translateX(4px);
@@ -98,7 +103,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.5s ease-in-out;
-  max-width: 100%;
+  min-width: 70%;
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
@@ -112,12 +117,12 @@
 
 .active-grade {
   color: #fff !important;
-  background: #fe774390;
+  background: #fe8d3790;
   font-weight: 500;
   transform: translateX(4px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .spring-steel-main.active .sidebar-wrapper {
     display: flex;
     align-items: start;
@@ -132,9 +137,6 @@
 }
 
 @media (max-width: 768px) {
-  .spring-steel-container {
-    margin-top: 0rem;
-  }
   .why-ventura h2 {
     font-size: 1.8rem;
     margin-bottom: 1.8rem !important;
@@ -184,14 +186,9 @@
   }
   .spring-steel-sidebar {
     margin: 0px 20px;
+    width: 80%;
   }
-}
-@media (min-width: 769px) and (max-width: 1117px) {
-  .spring-steel-main.active .sidebar-wrapper {
-    width: 70%;
-  }
-  .overview {
-    width: 100%;
-    flex-wrap: wrap;
+  .spring-steel-container {
+    padding: 2rem 0rem !important;
   }
 }

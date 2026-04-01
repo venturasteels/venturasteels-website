@@ -1,9 +1,11 @@
-import React from "react";
+// SAME IMPORTS — no change
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import GradesTable from "./GradesTable/GradesTable";
-
 import "./Products.css";
 
 const heroImages = [
@@ -58,6 +60,10 @@ const whyChoose = [
 ];
 
 export default function ProductLanding() {
+  useEffect(() => {
+    AOS.init({ duration: 700, once: true });
+  }, []);
+
   return (
     <>
       <HelmetProvider>
@@ -65,82 +71,85 @@ export default function ProductLanding() {
           <title>Products | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Ventura ia a complete steel service center. Explore Ventura Alloy & Steels' wide range of premium Tool Steels, Alloy Steels, and Engineering Steels. We stock and supply Hot Work Steel, Cold Work Steel, Plastic Mould Steel, and more with cutting-edge machining facilities to meet diverse industrial needs across India."
-          />
-          <meta
-            name="keywords"
-            content="Tool Steels, Ventura Steels Products, Hot Work Steels, Cold Work Steels, Plastic Mould Steel, Spring Steel, Alloy Steel, Carbon Steel, Boron Steel, "
+            content="Explore Ventura Alloy & Steels’ complete range of Tool Steels, Alloy Steels and Engineering Steels with precision processing and reliable supply."
           />
           <link rel="canonical" href="https://venturasteels.com/products" />
         </Helmet>
       </HelmetProvider>
 
-      {/* Hero Section with Carousel */}
-      <section className="hero-carousel position-relative">
+      {/* ===== PREMIUM HERO CAROUSEL ===== */}
+      <section className="hero-carousel">
         <Carousel
           fade
-          interval={3000}
-          controls={false}
-          indicators={false}
+          interval={5200}
+          indicators
+          controls
           pause={false}
+          prevIcon={<span className="carousel-nav prev">‹</span>}
+          nextIcon={<span className="carousel-nav next">›</span>}
         >
           {heroImages.map((img, index) => (
             <Carousel.Item key={index}>
-              <img
-                className="d-block w-100"
-                src={img}
-                alt={`Slide ${index + 1}`}
-              />
+              <div className="hero-slide">
+                <img src={img} alt={`slide-${index}`} />
+
+                {/* Premium Overlay */}
+                <div className="hero-overlay-premium">
+                  <span className="hero-tag">
+                    Ventura - Complete Steel Service Center
+                  </span>
+
+                  <h1>Premium Tool & Alloy Steels by Ventura Steels</h1>
+
+                  <p>Stocking · Cutting · Machining · Reliable Supply</p>
+
+                  <div className="hero-cta">
+                    <Link to="/enquiry" className="hero-btn-primary">
+                      Send Enquiry
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </Carousel.Item>
           ))}
         </Carousel>
-
-        {/* Static Overlay Text */}
-        <div className="carousel-overlay text-center position-absolute top-50 start-50 translate-middle">
-          <h1 className="display-4 fw-bold text-white">
-            Your Trusted Steel Partner
-          </h1>
-          <p className="text-white">
-            Supplying Premium Tool Steels Across Industries
-          </p>
-          <a href="/enquiry" className="btn btn-outline-light btn-lg px-4 mt-4">
-            Enquire Now
-          </a>
-        </div>
       </section>
 
-      {/* Product Categories Grid */}
-      <section className="product-grid container py-5">
-        <h2 className="section-heading">Explore Our Product Categories</h2>
-        <div className="row-product d-flex g-4 justify-content-center">
-          {productCategories.map((cat, index) => (
-            <div className="col-6 col-md-4 col-lg-3" key={index}>
-              <Link to={cat.path} className="text-decoration-none">
-                <div className="product-card text-center">
-                  <img
-                    src={cat.image}
-                    alt={cat.title}
-                    className="img-fluid mb-3"
-                  />
+      {/* ===== PRODUCT GRID ===== */}
+      <section className="product-grid">
+        <div className="container"> 
+          <h2 className="text-center" data-aos="fade-up">Ventura's Product Categories</h2>
+
+          <div className="row-product">
+            {productCategories.map((cat, index) => (
+              <Link
+                key={index}
+                to={cat.path}
+                className="product-card"
+                data-aos="fade-up"
+                data-aos-delay={index * 80}
+              >
+                <img src={cat.image} alt={cat.title} />
+                <div className="product-card-footer">
                   <h5>{cat.title}</h5>
+                  <span>View Grades</span>
                 </div>
               </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Why Choose Ventura */}
-      <section className="why-ventura py-5">
+      {/* ===== WHY CHOOSE ===== */}
+      <section className="why-ventura">
         <div className="container">
-          <h2 className="section-heading text-center mb-5">
-            Why Choose Ventura?
-          </h2>
+          <h2 className="text-center mb-5">Why Choose Ventura</h2>
+
           <div className="row g-4 justify-content-center">
             {whyChoose.map((item, idx) => (
-              <div className="col-6 col-md-3 text-center" key={idx}>
-                <div className="why-card p-4">
-                  <i className={`bi ${item.icon} fs-1 mb-3`}></i>
+              <div className="col-6 col-md-3" key={idx}>
+                <div className="why-card">
+                  <i className={`bi ${item.icon}`}></i>
                   <h6>{item.title}</h6>
                 </div>
               </div>
@@ -149,11 +158,23 @@ export default function ProductLanding() {
         </div>
       </section>
 
-      {/* Grades data table */}
-      <div className="container grades-data my-5">
-        <h2 className="text-center mb-4">Our Product Grades</h2>
-        <GradesTable />
-      </div>
+      {/* ===== GRADES ===== */}
+<section className="grades-data">
+  <div className="container">
+    <div className="grades-header text-center">
+      <h2>Available Tool & Alloy Steel Grades at Ventura</h2>
+      <p>
+        Explore our wide range of Tool Steel and Alloy Steel grades
+        available in stock for immediate dispatch.
+      </p>
+    </div>
+
+    <div className="grades-wrapper">
+      <GradesTable />
+    </div>
+  </div>
+</section>
+
     </>
   );
 }

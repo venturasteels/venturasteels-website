@@ -6,7 +6,7 @@ import "./Infrastructure.css";
 
 const Infrastructure = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 900, once: true });
   }, []);
 
   const features = [
@@ -27,6 +27,16 @@ const Infrastructure = () => {
     "Simultaneous loading capacity for 5–7 vehicles",
   ];
 
+  const highlights = [
+    { icon: "bi-building", title: "72,000 Sq. Ft. Facility" },
+    {
+      icon: "bi-gear-wide-connected",
+      title: "Advanced Handling Equipment",
+    },
+    { icon: "bi-box-seam", title: "High-Capacity Storage" },
+    { icon: "bi-hammer", title: "Cutting-edge Machining" },
+  ];
+
   return (
     <>
       <HelmetProvider>
@@ -34,82 +44,76 @@ const Infrastructure = () => {
           <title>Infrastructure | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Discover Ventura Alloy & Steels' advanced infrastructure with modern stocking facilities in Mumbai and Rajkot, equipped with machining centers to deliver precision-engineered steel solutions."
+            content="Ventura Alloy & Steels infrastructure includes a 72,000 sq. ft. Mumbai stocking and machining center equipped with advanced cutting, storage, and testing facilities."
           />
-          <meta
-            name="keywords"
-            content="Ventura Steels Infrastructure, Steel Stocking Centers Mumbai, Steel Machining Bhiwandi, Alloy Steel Facilities, Tool Steel Processing, Steel Cutting Services, Steel Distribution India"
-          />
-          <link rel="canonical" href="https://venturasteels.com/infrastructure" />
         </Helmet>
       </HelmetProvider>
 
-      <section className="infrastructure-container pb-5">
-        {/* Video Banner */}
-        <div className="video-banner-infrastructure">
-          <video autoPlay loop muted className="bg-video w-100">
+      <section className="infra-page">
+        {/* HERO VIDEO */}
+        <div className="infra-hero">
+          <video autoPlay muted loop className="infra-video">
             <source
               src="/videoes/Website Infrastructure Page.mp4"
               type="video/mp4"
             />
-            Your browser does not support the video tag.
           </video>
 
-          <div className="overlay-infrastructure">
-            <h1 className="text-center">Infrastructure</h1>
-            <p className="text-center">
-              Our Mumbai – Stocking & Machining Center in Bhiwandi spans 72,000
-              sq. ft., equipped with advanced handling, cutting, and testing
-              facilities to ensure high precision, efficient operations, and
-              rapid dispatches.
-            </p>
+          <div className="infra-overlay">
+            <div
+              className="infra-hero-content text-center"
+              data-aos="fade-right"
+            >
+              <h1>Infrastructure</h1>
+
+              <p className="text-center">
+                Our Mumbai – Stocking & Machining Center in Bhiwandi spans
+                72,000 sq. ft., equipped with advanced handling, cutting, and
+                testing facilities to ensure high precision, efficient
+                operations, and rapid dispatches.
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Section Heading */}
-        <div className="text-center text-heading mt-5" data-aos="fade-up">
-          <h2 className="fw-bold">Mumbai – Stocking & Machining Center</h2>
-          <hr />
-          <p></p>
+        {/* HEADING */}
+        <div className="infra-heading text-center" data-aos="fade-up">
+          <h2>Mumbai – Stocking & Machining Center</h2>
+          <span></span>
         </div>
 
-        {/* Highlights */}
-        <section className="infrReliable. Scalable. Ready for the Future.a-highlights-section py-5">
-          <div className="container infra-highlights">
-            {[
-              { icon: "bi-building", title: "72,000 Sq. Ft. Facility" },
-              {
-                icon: "bi-gear-wide-connected",
-                title: "Advanced Handling Equipment",
-              },
-              { icon: "bi-box-seam", title: "High-Capacity Storage" },
-              { icon: "bi-hammer", title: "Cutting-edge Machining" },
-            ].map((item, idx) => (
+        {/* HIGHLIGHTS */}
+        <section className="infra-highlights">
+          <div className="container infra-highlight-grid">
+            {highlights.map((item, i) => (
               <div
-                className="infra-card"
-                key={idx}
+                className="infra-highlight-card"
+                key={i}
                 data-aos="zoom-in"
-                data-aos-delay={idx * 150}
+                data-aos-delay={i * 150}
               >
-                <i className={`bi ${item.icon}`}></i>
-                <h5 className="fw-bold mt-3">{item.title}</h5>
+                <div className="card-icon">
+                  <i className={`bi ${item.icon}`}></i>
+                </div>
+
+                <h5>{item.title}</h5>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Feature List */}
-        <section className="feature-list-section py-5">
-          <div className="container feature-container">
+        {/* FEATURES */}
+        <section className="infra-features">
+          <div className="container feature-grid">
             {features.map((feature, i) => (
               <div
-                className="features"
+                className="feature-item"
                 key={i}
                 data-aos="fade-up"
-                data-aos-delay={i * 50}
+                data-aos-delay={i * 40}
               >
                 <i className="bi bi-check-circle-fill"></i>
-                <span>{feature}</span>
+                <p>{feature}</p>
               </div>
             ))}
           </div>

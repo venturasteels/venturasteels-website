@@ -21,8 +21,8 @@ export default function P20() {
         weldability, and excellent polishability.
       </p>
       {/* standards  */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
+      <div className="plastic-mould-standards-scroll-wrapper mb-4">
+        <div className="plastic-mould-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
@@ -70,7 +70,7 @@ export default function P20() {
             streak texture making finishing easier.
           </p>
         </div>
-        <div className="db6-img">
+        <div className="plastic-mould-img">
           <img
             src="/image/Plastic Mould Steels/P 20 Flat bars.png"
             alt="DB6 Image"
@@ -80,12 +80,12 @@ export default function P20() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="plastic-mould-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="plastic-mould-chemical-composition plastic-mould-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
@@ -143,30 +143,6 @@ export default function P20() {
         </table>
       </section> */}
 
-      {/* process routes */}
-      {/* <section className="process-route mx-auto mt-3">
-        <h3>Process Route</h3>
-        <div className="process-flow">
-          <div className="step">EAF</div>
-          <span className="arrow">→</span>
-          <div className="step">LF</div>
-          <span className="arrow">→</span>
-          <div className="step">VD</div>
-          <span className="arrow">→</span>
-          <div className="step">CONTINUOUS CASTING / INGOT</div>
-          <span className="arrow">→</span>
-          <div className="step">FORGED / ROLLED</div>
-          <span className="arrow">→</span>
-          <div className="step">ANNEALED</div>
-          <span className="arrow">→</span>
-          <div className="step">MACHINED (Rounds / Flats)</div>
-          <span className="arrow">→</span>
-          <div className="step">PRE-HARDENED (Approx. 28–34 HRC)</div>
-          <span className="arrow">→</span>
-          <div className="step">FINISH MACHINED / POLISHED</div>
-        </div>
-      </section> */}
-
       {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>
@@ -194,7 +170,7 @@ export default function P20() {
       </section>
 
       {/* Thermal properties */}
-      <section className="hotwork-thermal-properties">
+      <section className="plasticmould-thermal-properties">
         <h2 className="thermal-section-title">Thermal Properties</h2>
 
         <div className="row">

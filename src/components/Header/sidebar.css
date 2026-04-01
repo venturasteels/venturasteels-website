@@ -1,0 +1,214 @@
+/* -----------------------------
+   SIDEBAR OVERLAY
+------------------------------ */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1040;
+}
+
+.sidebar-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* -----------------------------
+   SIDEBAR MAIN CONTAINER
+------------------------------ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #fff9f4, #fef3e9);
+  padding: 20px 20px 30px;
+  z-index: 1050;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Scrollable menu area */
+.sidebar-scroll {
+  overflow-y: auto;
+  width: 100%;
+  max-height: calc(100vh - 150px);
+  padding-right: 6px;
+}
+
+/* Custom Scrollbar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #2f2b6040;
+  border-radius: 10px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* -----------------------------
+   LOGO
+------------------------------ */
+.sidebar-logo {
+  height: 30px;
+  object-fit: contain;
+}
+
+/* -----------------------------
+   CLOSE BUTTON
+------------------------------ */
+/* .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.sidebar-close-btn {
+  position: absolute;
+  top: 5px;        
+  right: 5px;      
+  background: #ffffff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f2b60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.sidebar-close-btn:hover {
+  background: #fe8d37;
+  transform: rotate(90deg);
+} */
+/* -----------------------------
+   NAV LIST
+------------------------------ */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: #2f2b60;
+}
+
+.sidebar-item {
+  margin: 12px 0;
+}
+
+/* -----------------------------
+   SIDEBAR TILE (MAIN MENU ITEM)
+------------------------------ */
+.sidebar-tile {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  color: #2f2b60;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-tile:hover {
+  background: #fe8d37;
+  color: #2f2b60;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active main item */
+.sidebar-item.active .sidebar-tile {
+  background: #fe8d37;
+  color: #2f2b60;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   DROPDOWN ARROW ICON
+------------------------------ */
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* -----------------------------
+   SUBMENU (ANIMATED DROPDOWN)
+------------------------------ */
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease-in-out;
+  padding-left: 20px;
+}
+
+/* Submenu visible state is controlled by inline style */
+
+.submenu-item {
+  background: none;
+  border: none;
+  text-align: left;
+  color: #2f2b60;
+  padding: 10px 0;
+  width: 100%;
+  display: block;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submenu-item:hover {
+  opacity: 0.75;
+  transform: translateX(4px);
+}
+
+/* Active submenu item */
+.submenu-item.active-sub {
+  color: #fe8d37;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   OPEN DROPDOWN BUTTON STYLE
+------------------------------ */
+.dropdown-btn.open {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 14px rgba(39, 63, 79, 0.08);
+}

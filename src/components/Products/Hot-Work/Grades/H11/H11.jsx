@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import "./H11.css";
 
 export default function H11() {
   const navigate = useNavigate();
@@ -20,37 +19,49 @@ export default function H11() {
         <strong>H11</strong> / AISI H 11 / DIN 2343
       </h2>
       <p className="subtitle text-center">
-        Premium Hot Work Tool Steel with high toughness & wear resistance. 
+        Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="hot-work-standards-scroll-wrapper mb-4">
+        <div className="hot-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
-                  {" "}
-                  <strong>Country </strong>{" "}
+                  <strong>COUNTRY </strong>
                 </td>
-                <td>Germany</td>
                 <td>USA</td>
-                <td>France</td>
+                <td>Germany / Europe</td>
                 <td>Japan</td>
-                <td>UK</td>
                 <td>China</td>
+                <td>UK</td>
+                <td>France</td>
                 <td>Russia</td>
               </tr>
               <tr>
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>DIN / WNr</td>
-                <td>AISI</td>
-                <td>AFNOR</td>
+                <td>AISI / ASTM</td>
+                <td>DIN / EN</td>
                 <td>JIS</td>
-                <td>BS</td>
                 <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
                 <td>GOST</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
+                <td>H11</td>
+                <td>1.2343 / X37CrMoV5-1</td>
+                <td>SKD6</td>
+                <td>4Cr5MoSiV1</td>
+                <td>BH11</td>
+                <td>Z38CDV5-1</td>
+                <td>4Kh5MFS (4Х5МФС)</td>
               </tr>
             </tbody>
           </table>
@@ -105,105 +116,37 @@ export default function H11() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="h11-composition">
+      <section className="hot-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center gap-5">
-          <div className="h11-chemical-composition">
+          <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Si</th>
+                  <th>Mn</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Cr</th>
+                  <th>Mo</th>
+                  <th>V</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>Range</td>
                   <td>0.33-0.41</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.80-1.00</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>0.25-0.50</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td>0.003 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>4.80-5.50</td>
-                </tr>
-                <tr>
-                  <td>Mo</td>
                   <td>1.10-1.50</td>
-                </tr>
-                <tr>
-                  <td>V</td>
                   <td>0.30-0.50</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="h11-name-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Country</th>
-                  <th>Standards</th>
-                  <th>Grades's Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>USA</td>
-                  <td>AISI / SAE</td>
-                  <td>H11</td>
-                </tr>
-                <tr>
-                  <td>Europe</td>
-                  <td>En</td>
-                  <td>X37CrMoV5-1</td>
-                </tr>
-                <tr>
-                  <td>Germany</td>
-                  <td>DIN, WNr</td>
-                  <td>X38CrMoV5-1</td>
-                </tr>
-                <tr>
-                  <td>China</td>
-                  <td>GB</td>
-                  <td>4Cr5MoSiV </td>
-                </tr>
-                <tr>
-                  <td>Japan </td>
-                  <td>JIS</td>
-                  <td>SKD6</td>
-                </tr>
-                <tr>
-                  <td>India</td>
-                  <td>IS</td>
-                  <td>XT35Cr5Mo1V3</td>
-                </tr>
-                <tr>
-                  <td>R. of Korea</td>
-                  <td>KS</td>
-                  <td>STD 6</td>
-                </tr>
-                <tr>
-                  <td>Russia</td>
-                  <td>GOST</td>
-                  <td>4Ch5MFS</td>
                 </tr>
               </tbody>
             </table>
@@ -346,32 +289,34 @@ export default function H11() {
           <div className="col-md-6">
             <div className="property-card mb-3">
               <h4>Thermal Conductivity</h4>
-              <table className="table table-bordered ">
-                <thead>
-                  <tr>
-                    <th>Temperature (°C)</th>
-                    <th>W / (m*K) Annealed</th>
-                    <th>W / (m*K) Quenched & Tempered</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20</td>
-                    <td>29.8</td>
-                    <td>26.5</td>
-                  </tr>
-                  <tr>
-                    <td>350</td>
-                    <td>30.0</td>
-                    <td>27.4</td>
-                  </tr>
-                  <tr>
-                    <td>700</td>
-                    <td>35.5</td>
-                    <td>30.4</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="thermal-table-wrapper">
+                <table className="table table-bordered ">
+                  <thead>
+                    <tr>
+                      <th>Temperature (°C)</th>
+                      <th>W / (m*K) Annealed</th>
+                      <th>W / (m*K) Quenched & Tempered</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>20</td>
+                      <td>29.8</td>
+                      <td>26.5</td>
+                    </tr>
+                    <tr>
+                      <td>350</td>
+                      <td>30.0</td>
+                      <td>27.4</td>
+                    </tr>
+                    <tr>
+                      <td>700</td>
+                      <td>35.5</td>
+                      <td>30.4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

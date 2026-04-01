@@ -10,12 +10,12 @@ const Footer = () => {
         <div className="footer-cont">
           <div className="row g-4 footer-container">
             {/* Logo & Description */}
-            <div className="col-md-4">
-              <img
-                src="/image/logo-v.png"
+            <div className="col-md-2">
+              {/* <img
+                src="/image/Ventura New Logo Up.png"
                 alt="Ventura Steels"
-                className="mb-3 footer-logo rounded"
-              />
+                className="mb-3 footer-logo"
+              /> */}
               <h3>ISO 9001 Certified</h3>
               <p>Strict adherence to ISO 9001:2015 Quality Standards.</p>
               <p>
@@ -169,9 +169,9 @@ const Footer = () => {
             <div className="col-md-3">
               <h5 className="mb-3">Stocking & Machining Centre</h5>
               <p>
-                <i className="bi bi-geo-alt-fill"></i>
-                Gala no 3-4, Building no 200, Indian Oil Corporation, Mouje,
-                Gundavli (Mankoli-Pata), Dapoda Taluk, Bhiwandi-421302
+                <i className="bi bi-geo-alt-fill"></i> Gala no 3-4, Building no
+                200, Indian Oil Corporation, Mouje, Gundavli (Mankoli-Pata),
+                Dapoda Taluk, Bhiwandi-421302
               </p>
               <p>
                 Building No. 183, Gala No. 6 | Building No. 183, Gala No. 5 |

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import "./P20+Ni.css";
+import "./plastic-mould-grade.css";
 
 export default function P20Ni() {
   const navigate = useNavigate();
@@ -23,37 +23,38 @@ export default function P20Ni() {
         P20+Ni is a high-performance pre-hardened steel for durable, high-finish
         plastic moulds.
       </p>
+
       {/* standards  */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
+      <div className="plastic-mould-standards-scroll-wrapper mb-4">
+        <div className="plastic-mould-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
                   <strong>COUNTRY </strong>
                 </td>
-                <td>USA</td>
                 <td>Germany</td>
-                <td>International</td>
+                <td>USA</td>
                 <td>China</td>
+                <td>Japan</td>
               </tr>
               <tr>
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>AISI </td>
-                <td>DIN </td>
-                <td>ISO</td>
-                <td>GB </td>
+                <td>DIN EN ISO 4957</td>
+                <td>ASTM / AISI</td>
+                <td>GB</td>
+                <td>JIS G4404</td>
               </tr>
               <tr>
                 <td>
                   <strong>EQUIVALENT NAME</strong>
                 </td>
+                <td>1.2738 or 40CrMnNiMo 8-6-4</td>
                 <td>P20+Ni</td>
-                <td>1.2738</td>
-                <td>40CrMnNiMo 8-6-4</td>
-                <td> 3Cr2NiMo</td>
+                <td>3Cr2NiMo</td>
+                <td>PDS5S</td>
               </tr>
             </tbody>
           </table>
@@ -77,22 +78,22 @@ export default function P20Ni() {
             nitriding treatment to enhance its wear resistance.
           </p>
         </div>
-        <div className="db6-img">
+        <div className="plastic-mould-img">
           <img
             src="/image/Plastic Mould Steels/Plastic Mould Steel P20+N1 Flat Bar.png"
-            alt="DB6 Image"
+            alt="P20+Ni Image"
             width={250}
           />
         </div>
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="plastic-mould-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="plastic-mould-chemical-composition plastic-mould-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
@@ -153,7 +154,7 @@ export default function P20Ni() {
       </section> */}
 
       {/* process routes */}
-      <section className="process-route mx-auto mt-3">
+      <section className="process-route mt-3">
         <h3>Process Route</h3>
         <div className="process-flow">
           <div className="step">EAF</div>
@@ -209,7 +210,7 @@ export default function P20Ni() {
       </section>
 
       {/* Thermal properties */}
-      <section className="hotwork-thermal-properties">
+      <section className="plasticmould-thermal-properties">
         <h2 className="thermal-section-title">Thermal Properties</h2>
 
         <div className="row">

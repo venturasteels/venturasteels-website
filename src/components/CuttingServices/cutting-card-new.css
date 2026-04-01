@@ -40,7 +40,7 @@
   padding: 6px 14px;
   font-size: 15px;
   font-weight: 700;
-  color: #273f4fed;
+  color: #2f2b60ed;
   border-radius: 8px;
   letter-spacing: 0.6px;
 }
@@ -52,7 +52,7 @@
   top: 0;
   width: 6px;
   height: 100%;
-  background: linear-gradient(180deg, #fe7743, #447d9b);
+  background: linear-gradient(180deg, #fe8d37, #2f2b60);
   opacity: 0.6;
   transition: 0.4s ease;
 }
@@ -68,7 +68,7 @@
   right: 18px;
   width: 42px;
   height: 42px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,7 +77,7 @@
 }
 
 .cuttingCard:hover .cuttingCard-arrow {
-  background: #fe7743;
+  background: #fe8d37;
   color: #fff;
   transform: rotate(90deg) scale(1.15);
 }
@@ -88,7 +88,7 @@
   bottom: -100%;
   left: 0;
   width: 100%;
-  background: #273f4fed;
+  background: #2f2b60ed;
   padding: 20px 22px;
   color: white;
   transition: 0.45s ease;

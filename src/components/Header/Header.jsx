@@ -2,10 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate, useLocation } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaTimes, FaPaperPlane } from "react-icons/fa";
 import SearchBar from "../searchBar";
 import SmartEmailLink from "../SmartEmailLink";
 import "./Header.css";
+import "./sidebar.css";
+import "./navbar.css";
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -15,6 +17,20 @@ export default function Header() {
   const [hoveredGrade, setHoveredGrade] = useState(null);
   // hovered region (for highlight)
   const [hoveredRegion, setHoveredRegion] = useState(null);
+  // search bar
+  const [openSearch, setOpenSearch] = useState(false);
+  const [showSearchModal, setShowSearchModal] = useState(false);
+
+  // Close on ESC
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") {
+        setShowSearchModal(false);
+      }
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
   // Region tab state (if already present, don’t duplicate)
   // const [activeRegion, setActiveRegion] = useState("india");
@@ -414,23 +430,29 @@ export default function Header() {
       </div>
 
       {/* Navbar */}
-      <nav className="navbar navbar-dark bg-navbar d-lg-none">
-        <div className="container d-flex justify-content-between align-items-center">
+      <nav
+        className={`navbar navbar-light bg-navbar d-lg-none ${
+          hideTopBar ? "navbar-top" : ""
+        }`}
+      >
+        <div className="container-fluid d-flex align-items-center justify-content-between">
+          {/* Custom Toggler */}
           <button
-            className="navbar-toggler"
-            type="button"
+            className={`custom-toggler ${isSidebarOpen ? "active" : ""}`}
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           >
-            <span className="navbar-toggler-icon"></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-          <span className="navbar-brand mb-0 h1">
-            <img
-              src="/image/logo-v.png"
-              alt="Ventura logo"
-              className="border rounded"
-              height={50}
-            />
-          </span>
+
+          {/* Logo */}
+          <img
+            src="/image/Ventura New Logo Up.png"
+            alt="Ventura logo"
+            height={50}
+            className="navbar-logo"
+          />
         </div>
       </nav>
 
@@ -450,13 +472,13 @@ export default function Header() {
         {/* Header with Logo*/}
         <div className="sidebar-header d-flex justify-content-between align-items-center">
           <img
-            src="/image/Semi Circle Logo.jpg"
+            src="/image/Ventura New Logo Side.png"
             alt="Ventura Steels"
             className="sidebar-logo rounded mb-2"
           />
         </div>
 
-        <div
+        {/* <div
           className={`sidebar ${isSidebarOpen ? "open" : ""}`}
           ref={sidebarRef}
         >
@@ -466,159 +488,163 @@ export default function Header() {
               alt="Ventura Steels"
               className="sidebar-logo rounded mb-2"
             />
-          </div>
+          </div> */}
 
-          {/* Scrollable container */}
-          <div className="sidebar-scroll">
-            <ul className="sidebar-nav">
-              {/* SINGLE ITEMS */}
-              {[
-                { to: "/", text: "Home" },
-                { to: "/about", text: "About Us" },
-              ].map(({ to, text }) => (
-                <li
-                  key={to}
-                  className={`sidebar-item ${
-                    location.pathname === to ? "active" : ""
-                  }`}
-                >
-                  <button
-                    className="sidebar-tile"
-                    onClick={() => {
-                      handleNavClick(to);
-                      setIsSidebarOpen(false);
-                    }}
-                  >
-                    {text}
-                  </button>
-                </li>
-              ))}
-
-              {/* PRODUCTS DROPDOWN */}
-              <li className="sidebar-item">
+        {/* Scrollable container */}
+        <div className="sidebar-scroll">
+          <ul className="sidebar-nav">
+            {/* SINGLE ITEMS */}
+            {[
+              { to: "/", text: "Home" },
+              { to: "/about", text: "About Us" },
+            ].map(({ to, text }) => (
+              <li
+                key={to}
+                className={`sidebar-item ${
+                  location.pathname === to ? "active" : ""
+                }`}
+              >
                 <button
-                  className={`sidebar-tile dropdown-btn ${
-                    openDropdowns.products ? "open" : ""
-                  }`}
-                  onClick={() => toggleDropdown("products")}
-                >
-                  <span>Products</span>
-
-                  {/* SVG Arrow */}
-                  <svg
-                    className={`dropdown-arrow ${
-                      openDropdowns.products ? "rotate" : ""
-                    }`}
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path fill="white" d="M7 10l5 5 5-5z" />
-                  </svg>
-                </button>
-
-                {/* Animated Dropdown */}
-                <ul
-                  className="submenu"
-                  style={{
-                    maxHeight: openDropdowns.products ? "500px" : "0px",
+                  className="sidebar-tile"
+                  onClick={() => {
+                    handleNavClick(to);
+                    setIsSidebarOpen(false);
                   }}
                 >
-                  {[
-                    { to: "/products/hot-work-steel", text: "Hot Work Steel" },
-                    {
-                      to: "/products/cold-work-steel",
-                      text: "Cold Work Steel",
-                    },
-                    {
-                      to: "/products/plastic-mould-steel",
-                      text: "Plastic Mould Steel ",
-                    },
-                    {
-                      to: "/products/spring-steel",
-                      text: "Spring Steel",
-                    },
-                    { to: "/products/alloy-steel", text: "Alloy Steel" },
-                    { to: "/products/carbon-steel", text: "Carbon Steel" },
-                    { to: "/products/boron-steel", text: "Boron Steel" },
-                  ].map(({ to, text }) => (
-                    <li key={to}>
-                      <button
-                        className={`submenu-item ${
-                          location.pathname === to ? "active-sub" : ""
-                        }`}
-                        onClick={() => {
-                          handleNavClick(to);
-                          setIsSidebarOpen(false);
-                        }}
-                      >
-                        {text}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
+                  {text}
+                </button>
               </li>
+            ))}
 
-              {/* REMAINING ITEMS */}
-              {[
-                { to: "/quality", text: "Quality" },
-                { to: "/infrastructure", text: "Infrastructure" },
-                { to: "/cutting-services", text: "Cutting Services" },
-                { to: "/certifications", text: "Certifications" },
-                { to: "/enquiry", text: "Enquiry" },
-                { to: "/blogs", text: "Blogs" },
-                { to: "/career", text: "Careers" },
-                { to: "/contactUs", text: "Contact Us" },
-              ].map(({ to, text }) => (
-                <li
-                  key={to}
-                  className={`sidebar-item ${
-                    location.pathname === to ? "active" : ""
+            {/* PRODUCTS DROPDOWN */}
+            <li className="sidebar-item">
+              <button
+                className={`sidebar-tile dropdown-btn ${
+                  openDropdowns.products ? "open" : ""
+                }`}
+                onClick={() => toggleDropdown("products")}
+              >
+                <span>Products</span>
+
+                {/* SVG Arrow */}
+                <svg
+                  className={`dropdown-arrow ${
+                    openDropdowns.products ? "rotate" : ""
                   }`}
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
                 >
-                  <button
-                    className="sidebar-tile"
-                    onClick={() => {
-                      handleNavClick(to);
-                      setIsSidebarOpen(false);
-                    }}
-                  >
-                    {text}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  <path fill="#2f2b60" d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+
+              {/* Animated Dropdown */}
+              <ul
+                className="submenu"
+                style={{
+                  maxHeight: openDropdowns.products ? "500px" : "0px",
+                }}
+              >
+                {[
+                  { to: "/products/hot-work-steel", text: "Hot Work Steel" },
+                  {
+                    to: "/products/cold-work-steel",
+                    text: "Cold Work Steel",
+                  },
+                  {
+                    to: "/products/plastic-mould-steel",
+                    text: "Plastic Mould Steel ",
+                  },
+                  {
+                    to: "/products/spring-steel",
+                    text: "Spring Steel",
+                  },
+                  { to: "/products/alloy-steel", text: "Alloy Steel" },
+                  { to: "/products/carbon-steel", text: "Carbon Steel" },
+                  { to: "/products/boron-steel", text: "Boron Steel" },
+                ].map(({ to, text }) => (
+                  <li key={to}>
+                    <button
+                      className={`submenu-item ${
+                        location.pathname === to ? "active-sub" : ""
+                      }`}
+                      onClick={() => {
+                        handleNavClick(to);
+                        setIsSidebarOpen(false);
+                      }}
+                    >
+                      {text}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </li>
+
+            {/* REMAINING ITEMS */}
+            {[
+              { to: "/quality", text: "Quality" },
+              { to: "/infrastructure", text: "Infrastructure" },
+              { to: "/cutting-services", text: "Cutting Services" },
+              { to: "/certifications", text: "Certifications" },
+              { to: "/enquiry", text: "Enquiry" },
+              { to: "/blogs", text: "Blogs" },
+              { to: "/career", text: "Careers" },
+              { to: "/contactUs", text: "Contact Us" },
+            ].map(({ to, text }) => (
+              <li
+                key={to}
+                className={`sidebar-item ${
+                  location.pathname === to ? "active" : ""
+                }`}
+              >
+                <button
+                  className="sidebar-tile"
+                  onClick={() => {
+                    handleNavClick(to);
+                    setIsSidebarOpen(false);
+                  }}
+                >
+                  {text}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
+      {/* </div> */}
 
       {/* Desktop Nav */}
-      <nav className="bg-navbar d-none d-lg-block">
+      <nav
+        className={`bg-navbar d-none d-lg-flex ${
+          hideTopBar ? "navbar-top" : ""
+        }`}
+      >
         {/* middle logo */}
-        <div className="py-3 text-center d-flex align-items-center justify-content-center bg-white ">
+        <div className="text-center d-flex align-items-center justify-content-center ">
           <a href="/">
             <img
-              src="/image/ventura-logo.jpg"
+              src="/image/Ventura New Logo Side.png"
               alt="Ventura Logo"
               className=" "
-              height={60}
+              height={35}
             />
           </a>
         </div>
-        <div className="container-fluid d-flex gap-4 py-2 px-4 align-items-center justify-content-center navbar-section">
-          <a href="/" className="text-white text-decoration-none nav-link">
+        <div className=" d-flex gap-4 py-2 px-4 align-items-center justify-content-center navbar-section">
+          <a href="/" className=" text-decoration-none nav-link">
             Home
           </a>
           <button
             onClick={() => handleNavClick("/about")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
+            className=" text-decoration-none nav-link bg-transparent border-0"
           >
             About Us
           </button>
 
           <div className="nav-item dropdown position-static">
             <button
-              className="nav-link dropdown-toggle text-white"
+              className="nav-link dropdown-toggle "
               onClick={() => handleNavClick("/products")}
             >
               Products
@@ -634,253 +660,7 @@ export default function Header() {
                 >
                   Hot Work Steel ▸
                 </button>
-                {/* <div className="dropdown-menu sub-dropdown">
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/hot-work-steel/db6")
-                    }
-                    className="dropdown-item "
-                  >
-                    DB6 / DIN 1.2714 / AISI L6
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/hot-work-steel/h13")
-                    }
-                    className="dropdown-item "
-                  >
-                    H13 / AISI H13 / DIN 1.2344
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/hot-work-steel/h11")
-                    }
-                    className="dropdown-item "
-                  >
-                    H11 / AISI H 11 / DIN 1.2343
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/hot-work-steel/h21")
-                    }
-                    className="dropdown-item "
-                  >
-                    H21 / AISI H21 / DIN 1.2581
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/hot-work-steel/h10")
-                    }
-                    className="dropdown-item "
-                  >
-                    H10 / AISI H10 / DIN 1.2365 / SKD7
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/hot-work-steel/h12")
-                    }
-                    className="dropdown-item "
-                  >
-                    H12 / AISI H12 / DIN 1.2606
-                  </button>
-                </div> */}
-                {/* <div className="dropdown-menu sub-dropdown">
-                  REGION BUTTONS
-                  <div className="region-tabs">
-                    <button
-                      className={activeRegion === "india" ? "active" : ""}
-                      onClick={() => setActiveRegion("india")}
-                      title="India"
-                    >
-                      <img src="https://flagcdn.com/w40/in.png" alt="India" />
-                      <span>IN</span>
-                    </button>
 
-                    <button
-                      className={activeRegion === "europe" ? "active" : ""}
-                      onClick={() => setActiveRegion("europe")}
-                      title="Europe"
-                    >
-                      <img src="https://flagcdn.com/w40/eu.png" alt="Europe" />
-                      <span>EU</span>
-                    </button>
-
-                    <button
-                      className={activeRegion === "usa" ? "active" : ""}
-                      onClick={() => setActiveRegion("usa")}
-                      title="USA"
-                    >
-                      <img src="https://flagcdn.com/w40/us.png" alt="USA" />
-                      <span>US</span>
-                    </button>
-                  </div>
-
-                  GRADES
-                  <div className="region-content">
-                    INDIA
-                    {activeRegion === "india" && (
-                      <>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/db6")
-                          }
-                          className="dropdown-item"
-                        >
-                          DB6
-                        </button>
-
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h13")
-                          }
-                          className="dropdown-item"
-                        >
-                          H13
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h11")
-                          }
-                          className="dropdown-item"
-                        >
-                          H11
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h21")
-                          }
-                          className="dropdown-item"
-                        >
-                          H21
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h10")
-                          }
-                          className="dropdown-item"
-                        >
-                          H10
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h12")
-                          }
-                          className="dropdown-item"
-                        >
-                          H12
-                        </button>
-                      </>
-                    )}
-
-                    EUROPE
-                    {activeRegion === "europe" && (
-                      <>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/db6")
-                          }
-                          className="dropdown-item"
-                        >
-                          1.2714
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h13")
-                          }
-                          className="dropdown-item"
-                        >
-                          1.2344
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h11")
-                          }
-                          className="dropdown-item"
-                        >
-                          1.2343
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h21")
-                          }
-                          className="dropdown-item"
-                        >
-                          1.2581
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h10")
-                          }
-                          className="dropdown-item"
-                        >
-                          1.2365
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h12")
-                          }
-                          className="dropdown-item"
-                        >
-                          1.2606
-                        </button>
-                      </>
-                    )}
-
-                    USA
-                    {activeRegion === "usa" && (
-                      <>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/db6")
-                          }
-                          className="dropdown-item"
-                        >
-                          L6
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h13")
-                          }
-                          className="dropdown-item"
-                        >
-                          H13
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h11")
-                          }
-                          className="dropdown-item"
-                        >
-                          H11
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h21")
-                          }
-                          className="dropdown-item"
-                        >
-                          H21
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h10")
-                          }
-                          className="dropdown-item"
-                        >
-                          H10
-                        </button>
-                        <button
-                          onClick={() =>
-                            handleNavClick("/products/hot-work-steel/h12")
-                          }
-                          className="dropdown-item"
-                        >
-                          H12
-                        </button>
-                      </>
-                    )}
-                  </div>
-                </div> */}
                 <div className="dropdown-menu sub-dropdown">
                   <div className="region-tabs">
                     <button
@@ -1125,48 +905,7 @@ export default function Header() {
                 >
                   Cold Work Steel ▸
                 </button>
-                {/* <div className="dropdown-menu sub-dropdown">
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/cold-work-steel/d2")
-                    }
-                    className="dropdown-item "
-                  >
-                    D2 / 1.2379 / HCHCR D2
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/cold-work-steel/d3")
-                    }
-                    className="dropdown-item "
-                  >
-                    D3 / 1.2080 / HCHCR D3
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/cold-work-steel/d5")
-                    }
-                    className="dropdown-item "
-                  >
-                    D5 / Cr12MoV / 1.2601
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/cold-work-steel/a2")
-                    }
-                    className="dropdown-item "
-                  >
-                    A2 / 1.2363
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/cold-work-steel/o1")
-                    }
-                    className="dropdown-item "
-                  >
-                    O1 / 2510 / OHNS O1
-                  </button>
-                </div> */}
+
                 <div className="dropdown-menu sub-dropdown">
                   <div className="region-tabs">
                     <button
@@ -1381,32 +1120,7 @@ export default function Header() {
                 >
                   Plastic Mould Steel ▸
                 </button>
-                {/* <div className="dropdown-menu sub-dropdown">
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/plastic-mould-steel/p20ni")
-                    }
-                    className="dropdown-item"
-                  >
-                    P20+Ni / 1.2738
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/plastic-mould-steel/p20-1.2311")
-                    }
-                    className="dropdown-item "
-                  >
-                    P20 / 1.2311
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/plastic-mould-steel/1.2316")
-                    }
-                    className="dropdown-item "
-                  >
-                    1.2316
-                  </button>
-                </div> */}
+
                 <div className="dropdown-menu sub-dropdown">
                   <div className="region-tabs">
                     <button
@@ -1554,84 +1268,7 @@ export default function Header() {
                 >
                   Alloy Steel ▸
                 </button>
-                {/* <div className="dropdown-menu sub-dropdown">
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/20mncr5")
-                    }
-                    className="dropdown-item "
-                  >
-                    20MnCr5 / 16MnCr5
-                  </button>
-                  <button
-                    onClick={() => handleNavClick("/products/alloy-steel/en31")}
-                    className="dropdown-item "
-                  >
-                    EN 31 / SAE 52100 / 100Cr6
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/sae4140")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/sae1020")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 1020
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/41cr4")
-                    }
-                    className="dropdown-item "
-                  >
-                    41Cr4 / EN18 / 40Cr4B
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/en41b")
-                    }
-                    className="dropdown-item "
-                  >
-                    EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84
-                  </button>
-                  <button
-                    onClick={() => handleNavClick("/products/alloy-steel/en24")}
-                    className="dropdown-item "
-                  >
-                    EN 24 / 18CrNiMo6
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/sae4130")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE4130
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/en36c")
-                    }
-                    className="dropdown-item "
-                  >
-                    EN36C
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/alloy-steel/sae8620")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 8620 / EN353 / SAE 9310
-                  </button>
-                </div> */}
+
                 <div className="dropdown-menu sub-dropdown">
                   <div className="region-tabs">
                     <button
@@ -1877,72 +1514,7 @@ export default function Header() {
                 >
                   Spring Steel ▸
                 </button>
-                {/* <div className="dropdown-menu sub-dropdown">
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/en47")
-                    }
-                    className="dropdown-item "
-                  >
-                    EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/sup9")
-                    }
-                    className="dropdown-item "
-                  >
-                    SUP 9
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/sae9254")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 9254 / SUP 11A
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/en45")
-                    }
-                    className="dropdown-item "
-                  >
-                    EN45 / SAE 9260 / 60Si7
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/sae5160")
-                    }
-                    className="dropdown-item"
-                  >
-                    SAE 5160
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/52crmov4")
-                    }
-                    className="dropdown-item "
-                  >
-                    52CrMoV4 / 50Cr4MoV2
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/52crv4")
-                    }
-                    className="dropdown-item "
-                  >
-                    52CrV4 / 51CrV4 / AISI 4150
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/spring-steel/55si7")
-                    }
-                    className="dropdown-item "
-                  >
-                    55Si7 / 56Si7 / SAE 9255
-                  </button>
-                </div> */}
+
                 <div className="dropdown-menu sub-dropdown">
                   <div className="region-tabs">
                     <button
@@ -1997,9 +1569,6 @@ export default function Header() {
                       >
                         50CrV4 / 51CrV4
                       </span>
-                      {/* <span className="equiv-grade">
-                        &nbsp;(Equiv: 51CrV4, DIN 8159)
-                      </span> */}
 
                       {" / "}
                       <span
@@ -2159,86 +1728,7 @@ export default function Header() {
                 >
                   Carbon Steel ▸
                 </button>
-                {/* <div className="dropdown-menu sub-dropdown">
-                  <button
-                    onClick={() => handleNavClick("/products/carbon-steel/c45")}
-                    className="dropdown-item "
-                  >
-                    C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/sae1018")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 1018 / ASTM A36 / ASTM A29 / SAE 1137 / SAE 1138
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/st52.3")
-                    }
-                    className="dropdown-item "
-                  >
-                    ST 52.3
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/en1a")
-                    }
-                    className="dropdown-item "
-                  >
-                    EN 1A / EN 1A_PB / EN 1A_L / 230M07 PB
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/35c8")
-                    }
-                    className="dropdown-item "
-                  >
-                    35C8 / C35 / EN8 / SAE 1035 / 45C8
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/sae1541")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 1541 / EN 15
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/27c15")
-                    }
-                    className="dropdown-item "
-                  >
-                    27C15 / SAE 1527
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/sae1117")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 1117 / ASTM A108
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/en43bcr")
-                    }
-                    className="dropdown-item "
-                  >
-                    EN43BCr / SAE 1050 / EN43A
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/carbon-steel/sae1141")
-                    }
-                    className="dropdown-item "
-                  >
-                    SAE 1141
-                  </button>
-                </div> */}
+
                 <div className="dropdown-menu sub-dropdown">
                   <div className="region-tabs">
                     <button
@@ -2275,11 +1765,6 @@ export default function Header() {
                         handleNavClick("/products/carbon-steel/c45")
                       }
                     >
-                      {/* <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN9 / EN8 series
-                      </span> */}
                       <span
                         className={hoveredRegion === "IND" ? "active-part" : ""}
                       >
@@ -2477,32 +1962,7 @@ export default function Header() {
                 >
                   Boron Steel ▸
                 </button>
-                {/* <div className="dropdown-menu sub-dropdown">
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/boron-steel/10b21")
-                    }
-                    className="dropdown-item "
-                  >
-                    10B21
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/boron-steel/15b25")
-                    }
-                    className="dropdown-item"
-                  >
-                    15B25
-                  </button>
-                  <button
-                    onClick={() =>
-                      handleNavClick("/products/boron-steel/10b35")
-                    }
-                    className="dropdown-item "
-                  >
-                    10B35
-                  </button>
-                </div> */}
+
                 <div className="dropdown-menu sub-dropdown">
                   <div className="region-tabs">
                     <button
@@ -2513,13 +1973,6 @@ export default function Header() {
                       <span>IND</span>
                     </button>
 
-                    {/* <button
-                      onMouseEnter={() => setHoveredRegion("EU")}
-                      onMouseLeave={() => setHoveredRegion(null)}
-                    >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
-                      <span>EU</span>
-                    </button> */}
                     <button
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
@@ -2543,12 +1996,7 @@ export default function Header() {
                       >
                         20MnB4
                       </span>
-                      {/* {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        20MnB4
-                      </span> */}
+
                       {" / "}
                       <span
                         className={hoveredRegion === "US" ? "active-part" : ""}
@@ -2570,12 +2018,7 @@ export default function Header() {
                       >
                         25MnB4
                       </span>
-                      {/* {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        25MnB4
-                      </span> */}
+
                       {" / "}
                       <span
                         className={hoveredRegion === "US" ? "active-part" : ""}
@@ -2596,14 +2039,8 @@ export default function Header() {
                         className={hoveredRegion === "IND" ? "active-part" : ""}
                       >
                         35MnB4
-
                       </span>
-                      {/* {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        35MnB4
-                      </span> */}
+
                       {" / "}
                       <span
                         className={hoveredRegion === "US" ? "active-part" : ""}
@@ -2617,36 +2054,48 @@ export default function Header() {
             </div>
           </div>
 
-          <button
+          {/* <button
             onClick={() => handleNavClick("/quality")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
+            className="text-decoration-none nav-link bg-transparent border-0"
           >
             Quality
           </button>
           <button
             onClick={() => handleNavClick("/cutting-services")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
+            className="text-decoration-none nav-link bg-transparent border-0"
           >
             Cutting Services
           </button>
           <button
             onClick={() => handleNavClick("/infrastructure")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
+            className="text-decoration-none nav-link bg-transparent border-0"
           >
             Infrastructure
-          </button>
+          </button> */}
+          <div className="nav-dropdown">
+            <button className="nav-dropdown-btn">Capabilities</button>
+
+            <div className="nav-dropdown-menu">
+              <button onClick={() => handleNavClick("/quality")}>
+                Quality
+              </button>
+
+              <button onClick={() => handleNavClick("/cutting-services")}>
+                Cutting Services
+              </button>
+
+              <button onClick={() => handleNavClick("/infrastructure")}>
+                Infrastructure
+              </button>
+            </div>
+          </div>
           <button
             onClick={() => handleNavClick("/certifications")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
+            className="text-decoration-none nav-link bg-transparent border-0"
           >
             Certifications
           </button>
-          <button
-            onClick={() => handleNavClick("/enquiry")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
-          >
-            Enquiry
-          </button>
+
           {/* <button
             onClick={() => handleNavClick("/blogs")}
             className="text-white text-decoration-none nav-link bg-transparent border-0"
@@ -2655,32 +2104,57 @@ export default function Header() {
           </button> */}
           <button
             onClick={() => handleNavClick("/career")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
+            className="text-decoration-none nav-link bg-transparent border-0"
           >
             Careers
           </button>
           <button
             onClick={() => handleNavClick("/contact-us")}
-            className="text-white text-decoration-none nav-link bg-transparent border-0"
+            className="text-decoration-none nav-link bg-transparent border-0"
           >
             Contact Us
           </button>
 
-          {/* Search Bar */}
-          <div className="header-search d-flex align-items-center">
-            {/* Magnify Icon */}
-            <FaSearch
-              className="search-icon"
-              onClick={() => setShowSearch(!showSearch)}
-            />
+          <button
+            onClick={() => handleNavClick("/enquiry")}
+            className="enquiry-nav-btn"
+          >
+            <FaPaperPlane className="enquiry-nav-icon" />
+            Enquiry
+          </button>
 
-            {/* Search Bar */}
-            {showSearch && (
-              <div className="search-container">
-                <SearchBar data={productData} />
+          {/* Search Icon */}
+          <FaSearch
+            className="search-icon"
+            onClick={() => setShowSearchModal(true)}
+          />
+
+          {/* Modal */}
+          {showSearchModal && (
+            <div
+              className="search-overlay"
+              onClick={() => setShowSearchModal(false)}
+            >
+              <div
+                className="search-modal-box"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <FaTimes
+                  className="search-close"
+                  onClick={() => setShowSearchModal(false)}
+                />
+
+                <h3 className="search-heading">Search Products</h3>
+
+                <div className="search-input-wrapper">
+                  <SearchBar
+                    data={productData}
+                    onClose={() => setShowSearchModal(false)}
+                  />
+                </div>
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </nav>
     </>

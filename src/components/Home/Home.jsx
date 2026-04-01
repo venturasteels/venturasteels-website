@@ -292,63 +292,65 @@ const Home = () => {
       </section> */}
 
       {/* Products section */}
-      <div className="product-container py-5" ref={productsRef}>
-        <h2 className="text-center fw-bold mb-3">Product Types</h2>
-        <hr className="mb-5 text-center" />
+      <div className="product-sec">
+        <div className="product-container py-5" ref={productsRef}>
+          <h2 className="text-center fw-bold mb-3">Product Types</h2>
+          <hr className="mb-5 text-center" />
 
-        {productsInView && (
-          <div
-            className="product-swiper-wrapper"
-            onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-            onMouseLeave={() => swiperRef.current?.autoplay.start()}
-          >
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              onSwiper={(swiper) => (swiperRef.current = swiper)}
-              slidesPerView={"auto"}
-              spaceBetween={50}
-              autoplay={{
-                delay: 800,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              pagination={{ clickable: true }}
-              navigation={true}
-              breakpoints={{
-                0: { slidesPerView: 1, spaceBetween: 20 },
-                576: { slidesPerView: 2, spaceBetween: 25 },
-                768: { slidesPerView: 2.5, spaceBetween: 30 },
-                992: { slidesPerView: 3, spaceBetween: 35 },
-                1200: { slidesPerView: 3, spaceBetween: 40 },
-                1400: { slidesPerView: 4, spaceBetween: 40 },
-              }}
-              className="product-swiper"
+          {productsInView && (
+            <div
+              className="product-swiper-wrapper"
+              onMouseEnter={() => swiperRef.current?.autoplay.stop()}
+              onMouseLeave={() => swiperRef.current?.autoplay.start()}
             >
-              {products.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div className="product-tile" data-aos="zoom-in-down">
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      className="product-image"
-                      loading="lazy"
-                    />
-                    <div className="overlay-product">
-                      <h5 className="text-center">{item.title}</h5>
-                      <p className="text-center">{item.desc}</p>
-                      <a
-                        href={item.link}
-                        className="btn btn-outline-light product-view mt-2"
-                      >
-                        View Product
-                      </a>
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                slidesPerView={"auto"}
+                spaceBetween={50}
+                autoplay={{
+                  delay: 800,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                pagination={{ clickable: true }}
+                navigation={true}
+                breakpoints={{
+                  0: { slidesPerView: 1, spaceBetween: 20 },
+                  576: { slidesPerView: 2, spaceBetween: 25 },
+                  768: { slidesPerView: 2.5, spaceBetween: 30 },
+                  992: { slidesPerView: 3, spaceBetween: 35 },
+                  1200: { slidesPerView: 3, spaceBetween: 40 },
+                  1400: { slidesPerView: 4, spaceBetween: 40 },
+                }}
+                className="product-swiper"
+              >
+                {products.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="product-tile" data-aos="zoom-in-down">
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="product-image"
+                        loading="lazy"
+                      />
+                      <div className="overlay-product">
+                        <h5 className="text-center">{item.title}</h5>
+                        <p className="text-center">{item.desc}</p>
+                        <a
+                          href={item.link}
+                          className="btn btn-outline-light product-view mt-2"
+                        >
+                          View Product
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        )}
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* <section className="cutting-preview ">
@@ -615,6 +617,7 @@ const Home = () => {
               { logo: "/image/dongbe-logo.png" },
               { logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp" },
               { logo: "/image/taihe-suppliers-logo.png" },
+              { logo: "/image/suppliers-logo/baowu-logo.png" },
             ].map((supplier, idx) => (
               <div
                 key={idx}

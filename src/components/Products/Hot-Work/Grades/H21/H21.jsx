@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./H21.css";
 
 export default function H21() {
   const navigate = useNavigate();
@@ -19,21 +18,47 @@ export default function H21() {
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="hot-work-standards-scroll-wrapper mb-4">
+        <div className="hot-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>Germany</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X30WCrV-3</td>
+                <td>ASTM</td>
+                <td>DIN / W.Nr.</td>
+                <td>JIS</td>
+                <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
+                <td>GOST</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
                 <td>H21</td>
-                <td>DIN 2581</td>
-                <td>AISI H21</td>
-                <td>AFNOR 32CDV12-28</td>
-                <td>JIS SKD5</td>
+                <td>1.2581 or X30WCrV9-3</td>
+                <td>SKD5</td>
+                <td>3Cr2W8V</td>
+                <td>BH21</td>
+                <td>Z30WCrV9</td>
+                <td>3Kh2V8F</td>
               </tr>
             </tbody>
           </table>
@@ -64,100 +89,37 @@ export default function H21() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="h21-composition">
+      <section className="hot-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center gap-5">
-          <div className="h21-chemical-composition">
+        <div className="table-data d-flex justify-content-center">
+          <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Si</th>
+                  <th>Mn</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Cr</th>
+                  <th>W</th>
+                  <th>V</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>Range</td>
                   <td>0.26-0.36</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.15-0.25</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>0.20-0.40</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td> 0.003 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>3.00-3.75</td>
-                </tr>
-                <tr>
-                  <td>W</td>
                   <td>8.50-10.00</td>
-                </tr>
-                <tr>
-                  <td>V</td>
                   <td>0.30-0.60</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="h21-name-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Country</th>
-                  <th>Standards</th>
-                  <th>Grades's Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>USA</td>
-                  <td>AISI / SAE</td>
-                  <td>H21 / T20821</td>
-                </tr>
-                <tr>
-                  <td>France</td>
-                  <td>AFNOR</td>
-                  <td>X30WCrV9</td>
-                </tr>
-                <tr>
-                  <td>Germany</td>
-                  <td>DIN, WNr</td>
-                  <td>X30WCrV93 / 1.2581</td>
-                </tr>
-                <tr>
-                  <td>China</td>
-                  <td>GB</td>
-                  <td>3Cr2W8V </td>
-                </tr>
-                <tr>
-                  <td>Japan </td>
-                  <td>JIS</td>
-                  <td>SKD5</td>
-                </tr>
-                <tr>
-                  <td>England</td>
-                  <td>BS</td>
-                  <td>BH21</td>
-                </tr>
-                <tr>
-                  <td>Sweden</td>
-                  <td>SS</td>
-                  <td>2730</td>
                 </tr>
               </tbody>
             </table>

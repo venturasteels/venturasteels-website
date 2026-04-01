@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./D2.css";
+import "./cold-work-grade.css";
 
 export default function D2() {
   const navigate = useNavigate();
@@ -13,6 +13,7 @@ export default function D2() {
       },
     });
   };
+
   return (
     <div className="grade-details">
       <h2 className="text-center">
@@ -22,21 +23,50 @@ export default function D2() {
         High-carbon, high-chromium tool steel with wear resistance and
         toughness.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="cold-work-standards-scroll-wrapper mb-4">
+        <div className="cold-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>Germany / Europe</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+                <td>India</td>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X153CrMoV12</td>
-                <td>HCHCR-D2</td>
-                <td>DIN 2379</td>
-                <td>AISI D2</td>
-                <td>AFNOR Z160CDV12</td>
-                <td>JIS SKD10</td>
+                <td>ASTM / AISI</td>
+                <td>DIN / EN</td>
+                <td>JIS</td>
+                <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
+                <td>IS</td>
+                <td>GOST</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
+                <td>D2</td>
+                <td>1.2379 / X153CrMoV12</td>
+                <td>SKD11</td>
+                <td>Cr12MoV</td>
+                <td>BD2</td>
+                <td>Z160CDV12</td>
+                <td>D2 (as per AISI / DIN 1.2379)</td>
+                <td>Kh12MF (Х12МФ)</td>
               </tr>
             </tbody>
           </table>
@@ -57,65 +87,47 @@ export default function D2() {
             thicknesses up to 12 mm.
           </p>
         </div>
-        <div className="d2-img d-flex gap-3">
+        <div className="cold-work-img">
           <img
-            src="/image/Cold Work Tool Steels/D2 Round Bar.png"
+            src="/image/Cold Work Tool Steels/d2.jpeg"
             alt="D2 Image"
-            width={300}
-          />
-          <img
-            src="/image/Cold Work Tool Steels/Cold Work Steel 1.2379 Flat Bars.png"
-            alt="D2 Image"
-            width={300}
+            loading="lazy"
+            width={250}
           />
         </div>
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="cold-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center">
-          <div className="chemical-composition composition-table">
+          <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Si</th>
+                  <th>Mn</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Cr</th>
+                  <th>Mo</th>
+                  <th> V</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>Range</td>
                   <td>1.40-1.60</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.10-0.60</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>0.20-0.60</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>11.00-13.00</td>
-                </tr>
-                <tr>
-                  <td>Mo</td>
                   <td> 0.70-1.00</td>
-                </tr>
-                <tr>
-                  <td> V</td>
                   <td>0.80-1.20</td>
                 </tr>
               </tbody>
@@ -206,7 +218,7 @@ export default function D2() {
       </section>
 
       {/* Thermal properties */}
-      <section className="thermal-properties">
+      <section className="coldwork-thermal-properties">
         <h2 className="thermal-section-title">Thermal Properties</h2>
 
         <div className="row">

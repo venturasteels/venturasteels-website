@@ -1,13 +1,16 @@
 /* top-section */
+.enquiry-container {
+  margin-top: 8.2rem !important;
+}
 .enquiry-container h1 {
-  color: #fe7743;
+  color: #fe8d37;
 }
 .enquiry-container img {
   border-radius: 10px;
 }
 .horizontal-heading {
   width: 150px;
-  border: 2px solid #fe7743;
+  border: 2px solid #fe8d37;
   opacity: 0.8;
 }
 .enquiry-container p {
@@ -32,52 +35,56 @@
 .enquiry-form select,
 .enquiry-form textarea {
   border-radius: 8px;
-  border: 1px solid #fe774360;
+  border: 1px solid #fe8d3760;
   padding: 0.75rem 1rem;
   padding-left: 2.5rem;
   font-size: 16px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
   background-color: #fff;
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .enquiry-form input:focus,
 .enquiry-form select:focus,
 .enquiry-form textarea:focus {
-  border-color: #273f4f;
+  border-color: #2f2b60;
   box-shadow: 0 0 0 0.15rem rgba(57, 49, 133, 0.25);
   outline: none;
 }
 
 .enquiry-form select option {
   background-color: #fff;
-  color: #273f4f;
+  color: #2f2b60;
   padding: 0.5rem;
   font-size: 15px;
 }
 
 .enquiry-form select option:hover {
-  background-color: #fe774360;
+  background-color: #fe8d3760;
   color: #fff;
 }
 
 .enquiry-form button {
-  background-color: #fe7743 !important;
+  background-color: #fe8d37 !important;
   color: #fff !important;
   border: none;
   border-radius: 6px;
   padding: 0.6rem 2rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
   font-weight: 500;
 }
 
 .enquiry-form button:hover {
-  background-color: #447d9b;
+  background-color: #2f2b60;
   transform: translateY(-2px);
 }
 
 .enquiry-form h2 {
-  color: #fe7743;
+  color: #fe8d37;
   font-weight: 600;
   font-size: 28px;
   position: relative;
@@ -85,15 +92,15 @@
 }
 .line-hr {
   margin: 10px;
-  border: 0.75px solid #273f4f;
+  border: 0.75px solid #2f2b60;
   opacity: 0.78;
   text-align: center;
 }
-  
+
 .enquiry-form input::placeholder,
 .enquiry-form textarea::placeholder,
 .enquiry-form select {
-  color: #273f4f;
+  color: #2f2b60;
   font-weight: 400;
 }
 
@@ -102,7 +109,7 @@
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
-  color: #273f4f;
+  color: #2f2b60;
   font-size: 18px;
   pointer-events: none;
 }
@@ -131,30 +138,36 @@
 
 .form-check-input:checked + .form-check-label {
   font-weight: bold;
-  color: #fe7743;
+  color: #fe8d37;
 }
 .btn-outline-primary {
   margin-left: 20px;
   border-radius: 50px;
   padding: 0.5rem 1.5rem;
-  border-color: #fe7743;
-  color: #447d9b;
+  border-color: #fe8d37;
+  color: #2f2b60;
 }
 
 .btn-outline-primary:hover {
-  border-color: #fe7743 !important;
+  border-color: #fe8d37 !important;
 }
 
 .btn-outline-primary.active {
-  background-color: #fe7743 !important;
+  background-color: #fe8d37 !important;
   color: white;
-  border-color: #fe7743 !important;
+  border-color: #fe8d37 !important;
 }
 /* ok btn */
 @keyframes softPulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.6; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .confirm-hint {
@@ -192,5 +205,21 @@
   }
   .enquiry-form button {
     padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 451px) {
+  .enquiry-container {
+    margin-top: 13.9rem !important;
+  }
+}
+@media (min-width: 452px) and (max-width: 763px) {
+  .enquiry-container {
+    margin-top: 10.6rem !important;
+  }
+}
+@media (min-width: 764px) and (max-width: 827px) {
+  .enquiry-container {
+    margin-top: 9.6rem !important;
   }
 }

@@ -94,8 +94,8 @@ export default function Certifications() {
         </Helmet>
       </HelmetProvider>
 
-      <div className="container certification-container py-4">
-        <h2 className="text-center mb-4">Certifications</h2>
+      <div className="container certification-container py-4 ">
+        <h1 className="text-center mb-4">Certifications</h1>
         <p className="certifications-description text-muted">
           Our certifications reflect our dedication to quality, compliance and
           trustworthy sourcing, ensuring all materials we supply meet global

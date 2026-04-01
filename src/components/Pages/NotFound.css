@@ -1,0 +1,15 @@
+.page-not-found-section {
+  margin-top: 9rem;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .page-not-found-section {
+    margin-top: 11rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-not-found-section {
+    margin-top: 13rem;
+  }
+}

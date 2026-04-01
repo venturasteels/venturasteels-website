@@ -4,7 +4,7 @@
 }
 
 .grade-details h2 {
-  color: #273f4f;
+  color: #2f2b60;
   font-size: 2rem;
   margin-bottom: 0.3rem;
 }
@@ -35,13 +35,13 @@ section {
 /* grades details section ends */
 
 /* standards section */
-.hot-work-standards-scroll-wrapper {
+.alloy-steel-standards-scroll-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.hot-work-standards-inner-scroll {
+.alloy-steel-standards-inner-scroll {
   overflow-x: auto;
   width: 100%;
   max-width: 100%;
@@ -50,12 +50,12 @@ section {
 .standards-table {
   margin: 0px auto;
   border-collapse: collapse;
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .standards-table td {
   padding: 0.6rem;
-  border: 1px solid #fe774360;
+  border: 1px solid #fe8d3760;
   text-align: center;
   font-size: 14px;
   white-space: nowrap;
@@ -64,22 +64,22 @@ section {
 
 /* chemical composition */
 .table-responsive-custom {
-  width: 100%;
+  width: 70%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.db6-composition table {
+.alloy-steel-composition table {
   min-width: 800px;
   width: 100%;
   border-collapse: collapse;
 }
 
-.db6-composition-table th,
-.db6-composition-table td {
-  border: 1px solid #fe774360;
+.alloy-steel-composition-table th,
+.alloy-steel-composition-table td {
+  border: 1px solid #fe8d3760;
   text-align: center;
-  padding: 0.6rem !important;
+  padding: 0.4rem !important;
   white-space: nowrap;
 }
 
@@ -88,17 +88,17 @@ section {
 }
 
 .spec-block,
-.db6-composition table,
+.alloy-steel-composition table,
 .applications ul {
-  background: #447d9b20;
+  background: #2f2b6020;
   padding: 1rem;
   border-radius: 8px;
 }
 
 .spec-block h4,
-.db6-composition h3,
+.alloy-steel-composition h3,
 .applications h3 {
-  color: #273f4f;
+  color: #2f2b60;
   margin-bottom: 0.6rem;
 }
 
@@ -115,25 +115,11 @@ section {
 }
 
 .cta-block .btn {
-  background: #fe7743;
+  background: #fe8d37;
   border: none;
   padding: 0.6rem 1.8rem;
   border-radius: 6px;
 }
-.cta-block .btn:focus,
-.cta-block .btn:active,
-.cta-block .btn:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  background-color: #fe7743 !important;
-  border-color: #fe7743 !important;
-}
-
-.cta-block .btn:active {
-  transform: scale(0.97);
-  background-color: #e86636 !important;
-}
-
 .size-table {
   width: 100%;
   border-collapse: collapse;
@@ -143,44 +129,42 @@ section {
 .size-table th,
 .size-table td {
   padding: 0.8rem;
-  border: 1px solid #fe774360;
+  border: 1px solid #fe8d3760;
   text-align: left;
   font-size: 0.95rem;
 }
 
 .size-table th {
-  background-color: #447d9b20;
-  color: #273f4f;
+  background-color: #2f2b6020;
+  color: #2f2b60;
 }
 /* size-range ends*/
 
 /* process routes */
 .process-route h3 {
   text-align: center;
-  color: #273f4f;
+  color: #2f2b60;
   margin-bottom: 1rem;
 }
-.process-route p {
-  font-size: 1.1rem;
-}
+
 .process-flow {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: #447d9b20;
-  border: 1px solid #fe774360;
+  background: #2f2b6020;
+  border: 1px solid #fe8d3760;
   border-radius: 10px;
   padding: 1rem;
 }
-.hotwork-hero .step {
+.alloy-steel-hero .step {
   background: #fff;
   padding: 0.5rem 0.8rem;
   border-radius: 8px;
   border: 1px solid #ddd;
   font-size: 0.8rem;
-  color: #273f4f;
+  color: #2f2b60;
   font-weight: 500;
 }
 
@@ -194,15 +178,15 @@ section {
 .steel-properties {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #fe774320;
-  border-left: 4px solid #0f4c81;
+  background-color: #fe8d3720;
+  border-left: 4px solid #2f2b60;
   border-radius: 8px;
 }
 
 .steel-properties h2 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
-  color: #0f4c81;
+  color: #2f2b60;
 }
 
 .steel-properties p {
@@ -216,15 +200,15 @@ section {
 .applications {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #fe774320;
-  border-left: 4px solid #0f4c81;
+  background-color: #fe8d3720;
+  border-left: 4px solid #2f2b60;
   border-radius: 8px;
 }
 
 .applications h2 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
-  color: #0f4c81;
+  color: #2f2b60;
 }
 
 .applications p {
@@ -235,19 +219,19 @@ section {
 }
 
 /* thermal properties */
-.hotwork-thermal-properties {
+.alloysteel-thermal-properties {
   padding: 2rem;
-  background: #447d9b30;
+  background: #2f2b6030;
   border-radius: 10px;
   color: white;
 }
 
-.hotwork-thermal-properties .thermal-section-title {
+.alloysteel-thermal-properties .thermal-section-title {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .property-card {
@@ -255,8 +239,10 @@ section {
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: #273f4f;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #2f2b60;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .property-card:hover {
@@ -265,7 +251,7 @@ section {
 }
 
 .property-card h4 {
-  color: #447d9b;
+  color: #2f2b60;
   margin-bottom: 1rem;
 }
 
@@ -274,12 +260,12 @@ section {
 }
 
 .table thead {
-  background-color: #447d9b;
+  background-color: #2f2b60;
   color: white;
 }
 
 .table tbody tr:hover {
-  background-color: #fe7743;
+  background-color: #fe8d37;
   color: white;
 }
 
@@ -291,7 +277,7 @@ section {
 /* heat treatment */
 .heat-treatment {
   padding: 2rem;
-  background: linear-gradient(135deg, #273f4f, #447d9b);
+  background: linear-gradient(135deg, #2f2b60, #2f2b60);
   border-radius: 10px;
   color: white;
   margin-top: 2rem;
@@ -302,7 +288,7 @@ section {
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
-  color: #fe7743;
+  color: #fe8d37;
 }
 
 .heat-card {
@@ -310,8 +296,10 @@ section {
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: #273f4f;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #2f2b60;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .heat-card:hover {
@@ -320,12 +308,12 @@ section {
 }
 
 .table thead {
-  background-color: #447d9b;
+  background-color: #2f2b60;
   color: white;
 }
 
 .table tbody tr:hover {
-  background-color: #fe7743;
+  background-color: #fe8d37;
   color: white;
 }
 
@@ -340,13 +328,13 @@ section {
 }
 
 .stocking-partners .section-title {
-  color: #273f4f;
+  color: #2f2b60;
   font-weight: bold;
 }
 
 .stocking-partners .lead {
   font-size: 1.1rem;
-  color: #273f4f;
+  color: #2f2b60;
 }
 
 .stocking-partners .flag-img {
@@ -363,17 +351,17 @@ section {
 
 /* availability */
 .availability-info {
-  border-top: 2px solid #fe7743;
+  border-top: 2px solid #fe8d37;
   padding-top: 1rem;
 }
 
 .note-box {
   background: #f8f9fa;
-  border-left: 4px solid #273f4f;
+  border-left: 4px solid #2f2b60;
 }
 
 .note-title {
-  color: #273f4f;
+  color: #2f2b60;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -394,12 +382,12 @@ section {
   .standards-table {
     min-width: 80%;
     border-collapse: collapse;
-    color: #273f4f;
+    color: #2f2b60;
   }
 
   .standards-table td {
     padding: 0.4rem;
-    border: 1px solid #fe774360;
+    border: 1px solid #fe8d3760;
     text-align: center;
     font-size: 14px;
     white-space: nowrap;
@@ -429,8 +417,8 @@ section {
     padding: 0.6rem;
   }
 
-  .db6-chemical-composition,
-  .db6-name-table {
+  .alloy-steel-chemical-composition,
+  .alloy-steel-name-table {
     width: 100%;
     margin-bottom: 1rem;
   }
@@ -457,10 +445,10 @@ section {
   .subtitle {
     font-size: 1rem;
   }
-  .db6-composition th,
-  .db6-composition td {
+  .alloy-steel-composition th,
+  .alloy-steel-composition td {
     padding: 0.6rem;
-    border: 1px solid #fe774360;
+    border: 1px solid #fe8d3760;
     text-align: center;
     font-size: 14px;
   }
@@ -485,18 +473,18 @@ section {
     font-size: 0.85rem;
     padding: 0.4rem;
   }
-  .db6-chemical-composition {
+  .alloy-steel-chemical-composition {
     width: 100%;
   }
 
-  .db6-name-table {
+  .alloy-steel-name-table {
     width: 100%;
     margin: 0px auto;
   }
-  .db6-img {
+  .alloy-steel-img {
     text-align: center;
   }
-  .db6-img img {
+  .alloy-steel-img img {
     height: auto;
     width: 90%;
   }
@@ -535,9 +523,9 @@ section {
     width: 100%;
     max-width: 100%;
   }
-  .hotwork-container {
+  /* .hotwork-container {
     padding: 0rem !important;
-  }
+  } */
   .grade-details {
     padding: 0rem !important;
   }

@@ -20,8 +20,8 @@ export default function SpringSteel52CrMoV4() {
       </p>
 
       {/* Standards / Equivalents */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
+      <div className="spring-steel-standards-scroll-wrapper mb-4">
+        <div className="spring-steel-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
@@ -70,25 +70,13 @@ export default function SpringSteel52CrMoV4() {
             resistance.
           </p>
         </div>
-        {/* <div className="db6-img d-flex">
-          <img
-            src="/image/Spring Steels/52CrMoV4 Round Bar.png"
-            alt="52CrMoV4 Spring Steel"
-            width={250}
-          />
-          <img
-            src="/image/Spring Steels/50Cr4MoV2 Leaf Spring.png"
-            alt="50Cr4MoV2 Spring Steel"
-            width={250}
-          />
-        </div> */}
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="spring-steel-composition">
         <h3 className="mb-4 text-center">Chemical Composition (Typical, %)</h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="spring-steel-chemical-composition spring-steel-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
@@ -178,7 +166,7 @@ export default function SpringSteel52CrMoV4() {
           <span className="arrow">→</span>
           <div className="step">Quenching (Oil)</div>
           <span className="arrow">→</span>
-          <div classms="step">Tempering</div>
+          <div className="step">Tempering</div>
         </div>
 
         <div className="heat-card mt-4">

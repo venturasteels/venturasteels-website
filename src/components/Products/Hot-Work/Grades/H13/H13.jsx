@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import "./H13.css";
 
 export default function H13() {
   const navigate = useNavigate();
@@ -60,28 +59,53 @@ export default function H13() {
         </script>
       </Helmet>
       <div className="grade-details">
-        <h2 className="text-center">
+        <h1 className="text-center">
           <strong>H13 </strong> / AISI H13 / DIN 2344
-        </h2>
+        </h1>
         <p className="subtitle text-center">
           Premium Hot Work Tool Steel with high toughness & wear resistance.
         </p>
+
         {/* standards  */}
-        <div className="standards-scroll-wrapper mb-4">
-          <div className="standards-inner-scroll">
+        <div className="hot-work-standards-scroll-wrapper mb-4">
+          <div className="hot-work-standards-inner-scroll">
             <table className="standards-table">
               <tbody>
                 <tr>
                   <td>
+                    <strong>COUNTRY </strong>
+                  </td>
+                  <td>India</td>
+                  <td>USA</td>
+                  <td>Europe</td>
+                  <td>Germany</td>
+                  <td>China</td>
+                  <td>Japan</td>
+                  <td>Russia</td>
+                </tr>
+                <tr>
+                  <td>
                     <strong>STANDARDS</strong>
                   </td>
-                  <td>X40CrMoV5</td>
-                  <td>DB6</td>
+                  <td>IS</td>
+                  <td>AISI / SAE</td>
+                  <td>En</td>
+                  <td>DIN, WNr</td>
+                  <td>GB</td>
+                  <td>JIS</td>
+                  <td>GOST</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>EQUIVALENT NAME</strong>
+                  </td>
+                  <td>XT35Cr5MoV1</td>
                   <td>H13</td>
-                  <td>DIN 2344</td>
-                  <td>AISI H13</td>
-                  <td>AFNOR Z40CDV5</td>
-                  <td>JIS SKD61</td>
+                  <td>X40CrMoV5-1</td>
+                  <td>X40CrMoV5-1</td>
+                  <td>4Cr5MoSiV1</td>
+                  <td>SKD61</td>
+                  <td>4Ch4VMFS</td>
                 </tr>
               </tbody>
             </table>
@@ -89,7 +113,7 @@ export default function H13() {
         </div>
 
         {/* Overview */}
-        <section className="overview d-flex justify-content-center align-items-center gap-5">
+        <section className="overview d-flex justify-content-center align-items-center gap-5 ">
           <div className="overview-content">
             <p>
               SAE/AISI H13 is a high-performance tool steel that is comparable
@@ -126,7 +150,7 @@ export default function H13() {
               exact dimensional stability are best suited for H13 steel.
             </p>
           </div>
-          <div className="db6-img">
+          <div className="hot-work-img">
             <img
               src="/image/Hot Work Tool Steels/Hot Work Tool Steel H13 Round Bars.png"
               alt="DB6 Image"
@@ -136,105 +160,37 @@ export default function H13() {
         </section>
 
         {/* Chemical Composition */}
-        <section className="h13-composition">
-          <h3 className="mb-4 text-center">
-            Chemical Composition (Typical Analysis in %)
-          </h3>
-          <div className="table-data d-flex justify-content-center gap-5">
-            <div className="h13-chemical-composition">
+        <section className="hot-work-composition">
+          <h2 className="mb-4 text-center">
+            H13 Chemical Composition (Typical Analysis in %)
+          </h2>
+          <div className="table-data d-flex justify-content-center">
+            <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
               <table>
                 <thead>
                   <tr>
                     <th>Element</th>
-                    <th>Range</th>
+                    <th>C</th>
+                    <th>Si</th>
+                    <th>Mn</th>
+                    <th>P</th>
+                    <th>S</th>
+                    <th>Cr</th>
+                    <th>Mo</th>
+                    <th>V</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>C</td>
+                    <td>Range</td>
                     <td>0.35-0.45</td>
-                  </tr>
-                  <tr>
-                    <td>Si</td>
                     <td>0.90-1.20</td>
-                  </tr>
-                  <tr>
-                    <td>Mn</td>
                     <td>0.30-0.50</td>
-                  </tr>
-                  <tr>
-                    <td>P</td>
                     <td> 0.03</td>
-                  </tr>
-                  <tr>
-                    <td>S</td>
                     <td>0.004</td>
-                  </tr>
-                  <tr>
-                    <td>Cr</td>
                     <td>4.90-5.40</td>
-                  </tr>
-                  <tr>
-                    <td>Mo</td>
                     <td>1.20-1.75</td>
-                  </tr>
-                  <tr>
-                    <td>V</td>
                     <td>0.90-1.20</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="h13-name-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Country</th>
-                    <th>Standards</th>
-                    <th>Grades's Name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>USA</td>
-                    <td>AISI / SAE</td>
-                    <td>H13</td>
-                  </tr>
-                  <tr>
-                    <td>Europe</td>
-                    <td>En</td>
-                    <td>X40CrMoV5-1</td>
-                  </tr>
-                  <tr>
-                    <td>Germany</td>
-                    <td>DIN, WNr</td>
-                    <td>X40CrMoV5-1</td>
-                  </tr>
-                  <tr>
-                    <td>China</td>
-                    <td>GB</td>
-                    <td>4Cr5MoSiV1 </td>
-                  </tr>
-                  <tr>
-                    <td>Japan </td>
-                    <td>JIS</td>
-                    <td>SKD61</td>
-                  </tr>
-                  <tr>
-                    <td>India</td>
-                    <td>IS</td>
-                    <td>XT35Cr5MoV1</td>
-                  </tr>
-                  <tr>
-                    <td>R. of Korea</td>
-                    <td>KS</td>
-                    <td>STD 61</td>
-                  </tr>
-                  <tr>
-                    <td>Russia</td>
-                    <td>GOST</td>
-                    <td>4Ch4VMFS</td>
                   </tr>
                 </tbody>
               </table>
@@ -244,7 +200,7 @@ export default function H13() {
 
         {/* size-range */}
         <section className="size-range">
-          <h3>Size Range</h3>
+          <h2 className="text-center">H13 Hot Work Steel Size Range</h2>
           <table className="size-table">
             <thead>
               <tr>
@@ -254,11 +210,11 @@ export default function H13() {
             </thead>
             <tbody>
               <tr>
-                <td>ROUNDS </td>
+                <td>Rounds </td>
                 <td>10 to 500 MM DIA</td>
               </tr>
               <tr>
-                <td>FLATS </td>
+                <td>Flats </td>
                 <td>
                   Thickness: 20 - 400 MM MAX
                   <br />
@@ -271,7 +227,7 @@ export default function H13() {
 
         {/* process route */}
         <section className="process-route mx-auto mt-3">
-          <h3>Process Route</h3>
+          <h3>Process Route of H13 Hot Work Tool Steel</h3>
           <p className="text-muted text-center">
             Applicable for <strong>H13 / AISI H13 / DIN 2344</strong>
           </p>
@@ -302,7 +258,7 @@ export default function H13() {
 
         {/* Steel properties */}
         <section className="steel-properties">
-          <h2>Steel Properties</h2>
+          <h2>Steel Properties of H13 Hot Work Tool Steel</h2>
           <ul>
             <li>Great toughness</li>
             <li>Thermal conductivity</li>
@@ -316,7 +272,7 @@ export default function H13() {
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications</h2>
+          <h2>Applications of H13 Hot Work Tool Steel</h2>
           <p>
             This steel is especially used for ejector pins, tool holders and
             shrink work chucks. It is majorly widely utilized for manufacture of
@@ -329,7 +285,7 @@ export default function H13() {
         </section>
 
         {/* Thermal properties */}
-        <section className="thermal-properties">
+        <section className="hotwork-thermal-properties">
           <h2 className="thermal-section-title">Thermal Properties</h2>
 
           <div className="row">
@@ -380,32 +336,41 @@ export default function H13() {
             <div className="col-md-6">
               <div className="property-card mb-3">
                 <h4>Thermal Conductivity</h4>
-                <table className="table table-bordered ">
-                  <thead>
-                    <tr>
-                      <th>Temperature (°C)</th>
-                      <th>W / (m*K) Annealed</th>
-                      <th>W / (m*K) Quenched & Tempered</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>20</td>
-                      <td>27.1</td>
-                      <td>25.4</td>
-                    </tr>
-                    <tr>
-                      <td>350</td>
-                      <td>30.4</td>
-                      <td>27.7</td>
-                    </tr>
-                    <tr>
-                      <td>700</td>
-                      <td>33.2</td>
-                      <td>30.4</td>
-                    </tr>
-                  </tbody>
-                </table>
+
+                <div className="col-md-6">
+                  <div className="property-card mb-3">
+                    <h4>Thermal Conductivity</h4>
+
+                    <div className="thermal-table-wrapper">
+                      <table className="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Temperature (°C)</th>
+                            <th>W / (m*K) Annealed</th>
+                            <th>W / (m*K) Quenched & Tempered</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>20</td>
+                            <td>27.1</td>
+                            <td>25.4</td>
+                          </tr>
+                          <tr>
+                            <td>350</td>
+                            <td>30.4</td>
+                            <td>27.7</td>
+                          </tr>
+                          <tr>
+                            <td>700</td>
+                            <td>33.2</td>
+                            <td>30.4</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

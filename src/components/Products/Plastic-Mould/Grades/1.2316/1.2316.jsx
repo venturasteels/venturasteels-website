@@ -20,8 +20,8 @@ export default function PlasticMould2316() {
       </p>
 
       {/* Standards Table */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
+      <div className="plastic-mould-standards-scroll-wrapper mb-4">
+        <div className="plastic-mould-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
@@ -69,7 +69,7 @@ export default function PlasticMould2316() {
             typically ESR refined for superior cleanliness.
           </p>
         </div>
-        <div className="db6-img">
+        <div className="plastic-mould-img">
           <img
             src="/image/Plastic Mould Steels/Plastic Mould 3.png"
             alt="1.2316 Plastic Mould Steel"
@@ -79,12 +79,12 @@ export default function PlasticMould2316() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="plastic-composition">
+      <section className="plastic-mould-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center mx-auto">
-          <div className="plastic-chemical-composition plastic-composition-table table-responsive-custom">
+        <div className="table-data d-flex justify-content-center">
+          <div className="plastic-mould-chemical-composition plastic-mould-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>

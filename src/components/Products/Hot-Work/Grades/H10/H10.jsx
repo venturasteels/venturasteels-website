@@ -19,20 +19,47 @@ export default function H10() {
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="hot-work-standards-scroll-wrapper mb-4">
+        <div className="hot-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>Germany</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X210CrW12</td>
+                <td>ASTM A681</td>
+                <td>DIN 1.2365</td>
+                <td>JIS G4404</td>
+                <td>GB/T 1299</td>
+                <td>BS 4659</td>
+                <td>AFNOR</td>
+                <td>GOST</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
                 <td>H10</td>
-                <td>DIN 2365</td>
-                <td>AISI H10</td>
-                <td>AFNOR 32CDV12-28</td>
+                <td>32CrMoV12-28</td>
+                <td>SKD7</td>
+                <td>4Cr3Mo3SiV</td>
+                <td>BH10</td>
+                <td>32CDV12-28</td>
+                <td>3Kh3M3F</td>
               </tr>
             </tbody>
           </table>
@@ -51,95 +78,40 @@ export default function H10() {
             mandrels pass on supplements, massive metal die casting tools.
           </p>
         </div>
-        {/* <div className="db6-img">
-          <img
-            src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
-            alt="DB6 Image"
-            width={300}
-          />
-        </div> */}
       </section>
 
       {/* Chemical Composition */}
-      <section className="db6-composition">
+      <section className="hot-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
-        <div className="table-data d-flex justify-content-center gap-5">
-          <div className="db6-chemical-composition db6-composition-table">
+        <div className="table-data d-flex justify-content-center">
+          <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Si</th>
+                  <th>Mn</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Cr</th>
+                  <th>Mo</th>
+                  <th>V</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>Range</td>
                   <td>0.28-0.35</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.10-0.400000 </td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>0.20-0.40</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td>0.003 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>2.70-3.20</td>
-                </tr>
-                <tr>
-                  <td>Mo</td>
                   <td>2.50-3.00</td>
-                </tr>
-                <tr>
-                  <td>V</td>
                   <td>0.40 – 0.75</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="db6-name-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Country</th>
-                  <th>Standards</th>
-                  <th>Grades's Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>USA</td>
-                  <td>AISI / SAE</td>
-                  <td>H10 / T20810</td>
-                </tr>
-                <tr>
-                  <td>Germany</td>
-                  <td>DIN, WNr</td>
-                  <td>1.2365 / 32CrMoV12-28</td>
-                </tr>
-                <tr>
-                  <td>Japan</td>
-                  <td>JIS G4404</td>
-                  <td>SKD7 </td>
-                </tr>
-                <tr>
-                  <td>British </td>
-                  <td>BS 4659</td>
-                  <td>BH10</td>
                 </tr>
               </tbody>
             </table>

@@ -1,4 +1,4 @@
-body,
+/* body,
 p,
 h1,
 h2,
@@ -10,9 +10,11 @@ span {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-
-img,
+} */
+/* body {
+  margin-top: 7rem;
+} */
+/* img,
 .protected-img {
   pointer-events: none;
   -webkit-user-drag: none;
@@ -29,7 +31,7 @@ img,
   inset: 0;
   background: transparent;
   z-index: 2;
-}
+} */
 
 /* Remove Bootstrap primary flash on click */
 .btn,
@@ -48,7 +50,6 @@ img,
   border-color: inherit !important;
   color: inherit !important;
 }
-
 /* Hide reCAPTCHA badge everywhere */
 /* Hide badge by default */
 .grecaptcha-badge {

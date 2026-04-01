@@ -18,22 +18,44 @@ export default function A2() {
       <p className="subtitle text-center">
         Cold work tool steel with wear resistance and stability.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="cold-work-standards-scroll-wrapper mb-4">
+        <div className="cold-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>Germany / Europe</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X100CrMoV5</td>
+                <td>ASTM / AISI</td>
+                <td>DIN / EN</td>
+                <td>JIS</td>
+                <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
                 <td>A2</td>
-                <td>DIN 2363</td>
-                <td>AISI A2</td>
-                <td>AFNOR Z100CDV5</td>
-                <td>JIS SKD12</td>
-                <td>BS 4659 BA2</td>
+                <td>1.2363 / X100CrMoV5-1</td>
+                <td>SKD12</td>
+                <td>Cr5Mo1V</td>
+                <td>BA2</td>
+                <td>Z100CDV5</td>
               </tr>
             </tbody>
           </table>
@@ -52,60 +74,39 @@ export default function A2() {
             plastics handling.
           </p>
         </div>
-        <div className="d2-img d-flex gap-3">
-          <img
-            src="/image/Cold Work Tool Steels/a2 grade cold work steel.png"
-            alt="Cr12MoV"
-            width={250}
-          />
-        </div>
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="cold-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center">
-          <div className="chemical-composition composition-table">
+          <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Si</th>
+                  <th>Mn</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Cr</th>
+                  <th>Mo</th>
+                  <th> V</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>Range</td>
                   <td>0.95-1.05</td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.10-0.40</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>0.40-0.80</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>4.80-5.50</td>
-                </tr>
-                <tr>
-                  <td>Mo</td>
                   <td>0.90-1.20</td>
-                </tr>
-                <tr>
-                  <td> V</td>
                   <td>0.15-0.35</td>
                 </tr>
               </tbody>
@@ -115,7 +116,7 @@ export default function A2() {
       </section>
 
       {/* applications */}
-      <section className="applications">
+      <section className="steel-properties">
         <h2>Steel Properties</h2>
         <p>
           A2 Steel is equivalent of DIN 2363 and it provides extreme hardness
@@ -136,7 +137,7 @@ export default function A2() {
       </section>
 
       {/* Thermal properties */}
-      <section className="thermal-properties">
+      <section className="coldwork-thermal-properties">
         <h2 className="thermal-section-title">Physical Properties</h2>
         <div className="col-md-7 mx-auto">
           <div className="property-card mb-3">

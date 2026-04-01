@@ -19,21 +19,47 @@ export default function O1() {
         Durable oil-hardening cold work tool steel with excellent wear
         resistance and cutting-edge retention for general-purpose tooling.
       </p>
+
       {/* standards  */}
-      <div className="standards-scroll-wrapper mb-4">
-        <div className="standards-inner-scroll">
+      <div className="cold-work-standards-scroll-wrapper mb-4">
+        <div className="cold-work-standards-inner-scroll">
           <table className="standards-table">
             <tbody>
               <tr>
                 <td>
+                  <strong>COUNTRY </strong>
+                </td>
+                <td>USA</td>
+                <td>Germany / Europe</td>
+                <td>Japan</td>
+                <td>China</td>
+                <td>UK</td>
+                <td>France</td>
+                <td>India</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>100MnCrW4</td>
+                <td>ASTM / AISI</td>
+                <td>DIN / EN</td>
+                <td>JIS</td>
+                <td>GB</td>
+                <td>BS</td>
+                <td>AFNOR</td>
+                <td>IS</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>EQUIVALENT NAME</strong>
+                </td>
                 <td>O1</td>
-                <td>DIN 2510</td>
-                <td>AISI O1</td>
-                <td>AFNOR 90MWCV5</td>
-                <td>JIS SKS3</td>
+                <td>1.2510 / 100MnCrW4</td>
+                <td>SKS3</td>
+                <td>9CrWMn</td>
+                <td>BO1</td>
+                <td>100MnCrW4</td>
+                <td>OHNS / O1</td>
               </tr>
             </tbody>
           </table>
@@ -52,57 +78,38 @@ export default function O1() {
             oil hardening tool steel type supplied in the annealed condition.
           </p>
         </div>
-        {/* <div className="d2-img d-flex gap-3">
-          <img
-            src="/image/Cold Work Tool Steels/D2 Round Bar.png"
-            alt="D2 Image"
-            width={250}
-          />
-        </div> */}
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="cold-work-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center">
-          <div className="chemical-composition composition-table">
+          <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
             <table>
               <thead>
                 <tr>
                   <th>Element</th>
-                  <th>Range</th>
+                  <th>C</th>
+                  <th>Si</th>
+                  <th>Mn</th>
+                  <th>P</th>
+                  <th>S</th>
+                  <th>Cr</th>
+                  <th>W</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>Range</td>
                   <td>0.85-1.00 </td>
-                </tr>
-                <tr>
-                  <td>Si</td>
                   <td>0.15-0.35</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
                   <td>1.00-1.20</td>
-                </tr>
-                <tr>
-                  <td>P</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
                   <td>0.030 max</td>
-                </tr>
-                <tr>
-                  <td>Cr</td>
                   <td>0.50-0.70</td>
-                </tr>
-                <tr>
-                  <td>W</td>
-                  <td> 0.50-0.70</td>
+                  <td>0.50-0.70</td>
                 </tr>
               </tbody>
             </table>
@@ -158,7 +165,7 @@ export default function O1() {
       </section>
 
       {/* Thermal properties */}
-      <section className="thermal-properties">
+      <section className="coldwork-thermal-properties">
         <h2 className="thermal-section-title">Physical Properties</h2>
         <div className="row">
           <div className="col-md-6">

@@ -16,28 +16,43 @@ const AlloySteelEN24 = () => {
     <>
       <div className="grade-details">
         {/* Title */}
-        <h2 className="text-center">
-          EN 24 / 18CrNiMo6
-        </h2>
+        <h2 className="text-center">EN 24 / 18CrNiMo6</h2>
         <p className="subtitle text-center">
           Medium carbon low alloy steel offering high toughness, strength and
           fatigue resistance.
         </p>
 
         {/* Standards */}
-        <div className="standards-scroll-wrapper mb-4">
-          <div className="standards-inner-scroll">
+        <div className="alloy-steel-standards-scroll-wrapper mb-4">
+          <div className="alloy-steel-standards-inner-scroll">
             <table className="standards-table">
               <tbody>
                 <tr>
                   <td>
-                    <strong>STANDARDS</strong>
+                    <strong>COUNTRY</strong>
                   </td>
-                  <td>EN24</td>
-                  <td>AISI 4340</td>
-                  <td>DIN 1.6511</td>
+                  <td>USA</td>
+                  <td>Britain</td>
+                  <td>Britain</td>
+                  <td>Japan</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>STANDARD</strong>
+                  </td>
+                  <td>ASTM A29</td>
+                  <td>EN 10250</td>
                   <td>BS 970</td>
-                  <td>IS 4432</td>
+                  <td>JIS</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Equivalent Grades</strong>
+                  </td>
+                  <td>4340</td>
+                  <td>36CrNiMo4 / 1.6511</td>
+                  <td>EN24 / 817M40</td>
+                  <td>SNCM 439 / SNCM8</td>
                 </tr>
               </tbody>
             </table>
@@ -75,51 +90,37 @@ const AlloySteelEN24 = () => {
         </section>
 
         {/* Chemical Composition */}
-        <section className="composition">
+        <section className="alloy-steel-composition">
           <h3 className="mb-4 text-center">
             Chemical Composition (Typical Analysis in %)
           </h3>
 
           <div className="table-data d-flex justify-content-center">
-            <div className="chemical-composition composition-table">
+            <div className="alloy-steel-chemical-composition alloy-steel-composition-table table-responsive-custom">
               <table>
                 <thead>
                   <tr>
                     <th>Element</th>
-                    <th>Range</th>
+                    <td>C</td>
+                    <td>Mn</td>
+                    <td>Si</td>
+                    <td>P</td>
+                    <td>S</td>
+                    <td>Ni</td>
+                    <td>Cr</td>
+                    <td>Mo</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>C</td>
+                    <th>Range</th>
                     <td>0.38 – 0.43</td>
-                  </tr>
-                  <tr>
-                    <td>Mn</td>
                     <td>0.60 – 0.80</td>
-                  </tr>
-                  <tr>
-                    <td>Si</td>
                     <td>0.15 – 0.35</td>
-                  </tr>
-                  <tr>
-                    <td>P</td>
                     <td>0.035 max</td>
-                  </tr>
-                  <tr>
-                    <td>S</td>
                     <td>0.040 max</td>
-                  </tr>
-                  <tr>
-                    <td>Ni</td>
                     <td>1.65 – 2.00</td>
-                  </tr>
-                  <tr>
-                    <td>Cr</td>
                     <td>0.70 – 0.90</td>
-                  </tr>
-                  <tr>
-                    <td>Mo</td>
                     <td>0.20 – 0.30</td>
                   </tr>
                 </tbody>
@@ -151,11 +152,11 @@ const AlloySteelEN24 = () => {
         </section>
 
         {/* Thermal Properties */}
-        <section className="thermal-properties">
+        <section className="alloysteel-thermal-properties">
           <h2 className="thermal-section-title">Thermal Properties</h2>
 
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 mx-auto">
               <div className="property-card mb-3">
                 <h4>Thermal Conductivity</h4>
                 <table className="table table-bordered">

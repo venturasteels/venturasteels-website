@@ -12,7 +12,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #273f4f;
+  background-color: #2f2b60;
   color: #fff;
   border: none;
   font-size: 24px;
@@ -28,12 +28,12 @@
 }
 
 .floating-btn.main-btn:hover {
-  background-color: #fe7743;
+  background-color: #fe8d37;
   transform: scale(1.05);
 }
 
 .floating-btn.main-btn.active {
-  background-color: #fe7743;
+  background-color: #fe8d37;
   transform: rotate(90deg);
   animation: none;
 }
@@ -64,7 +64,7 @@
 }
 
 .floating-item {
-  background-color: #447d9b;
+   background: radial-gradient(circle, #fe8d37 40%, #2f2b60 100%);
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -92,7 +92,7 @@
 }
 
 .floating-label {
-  background-color: #273f4f;
+  background-color: #2f2b60;
   color: #fff;
   font-size: 13px;
   padding: 6px 10px;
