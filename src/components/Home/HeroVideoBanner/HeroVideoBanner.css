@@ -78,7 +78,7 @@
   position: relative;
   width: 100%;
   /* height: calc(100vh - var(--navbar-height)); */
-    height: 100vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -221,6 +221,7 @@
 @media screen and (max-width: 480px) {
   .hero-content {
     padding: 20px 16px;
+    justify-content: end;
     border-radius: 10px;
   }
   .hero-content h1 {
