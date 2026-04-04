@@ -53,7 +53,28 @@ export default function H13() {
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
   "material": "Hot Work Tool Steel",
-  "url": "https://venturasteels.com/products/hot-work-steel/h13"
+  "url": "https://venturasteels.com/products/hot-work-steel/h13",
+
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Material Grade",
+      "value": "H13 / AISI H13 / DIN 1.2344 / SKD61"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Form",
+      "value": "Round, Flat, Block"
+    }
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/hot-work-steel/h13"
+  }
 }
 `}
         </script>
