@@ -58,6 +58,7 @@ export default function H13() {
 `}
         </script>
       </Helmet>
+
       <div className="grade-details">
         <h1 className="text-center">
           <strong>H13 </strong> / AISI H13 / DIN 2344

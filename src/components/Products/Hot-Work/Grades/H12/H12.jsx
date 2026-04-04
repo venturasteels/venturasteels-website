@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function H12() {
   const navigate = useNavigate();
@@ -13,301 +14,359 @@ export default function H12() {
     });
   };
   return (
-    <div className="grade-details">
-      <h2 className="text-center">H12 / AISI H12 / DIN 1.2606</h2>
-      <p className="subtitle text-center">
-        Premium Hot Work Tool Steel with high toughness & wear resistance.
-      </p>
+    <>
+      <Helmet>
+        <title>
+          H12 / AISI H12 / DIN 1.2606 | Hot Work Tool Steel | Ventura Alloy &
+          Steels Pvt. Ltd.
+        </title>
 
-      {/* standards  */}
-      <div className="hot-work-standards-scroll-wrapper mb-4">
-        <div className="hot-work-standards-inner-scroll">
-          <table className="standards-table">
-            <tbody>
-              <tr>
-                <td>
-                  <strong>COUNTRY </strong>
-                </td>
-                <td>USA</td>
-                <td>German / Europe</td>
-                <td>Japan</td>
-                <td>China</td>
-                <td>UK</td>
-                <td>France</td>
-                <td>India</td>
-                <td>Russia</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>STANDARDS</strong>
-                </td>
-                <td>ASTM / AISI</td>
-                <td>DIN / EN</td>
-                <td>JIS</td>
-                <td>GB</td>
-                <td>BS</td>
-                <td>AFNOR</td>
-                <td>IS</td>
-                <td>GOST</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>EQUIVALENT NAME</strong>
-                </td>
-                <td>H12</td>
-                <td>1.2605 / X35CrWMoV5-1</td>
-                <td>SKD62</td>
-                <td>4Cr5MoWVi</td>
-                <td>BH12</td>
-                <td>Z35CDWV5-1</td>
-                <td>H12 (as per AISI / DIN 1.2605)</td>
-                <td>4Kh5MF1S (4Х5МФ1С)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <meta
+          name="description"
+          content="H12 / AISI H12 / DIN 1.2606 Hot Work Tool Steel known for excellent toughness, thermal fatigue resistance and high temperature strength. View chemical composition, heat treatment, hardness, applications and availability. Ventura Alloy & Steels is a trusted supplier of H12 steel in India."
+        />
 
-      {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
-        <div className="overview-content">
-          <p>
-            H12 Hot Work Die Steel could be a five-hitter Cr, general hot work
-            steel that is characterized by wonderful effect strength. It
-            contains less vanadium than the broadly utilized H13 hot work tool
-            steel, and furthermore the tungsten content gives higher temper
-            resistance. It has smart resistance to thermal fatigue cracking
-            (heat checking) and excellent resistance to gross cracking and
-            thermal shock once water cooled in commission. TLS H12 hot work tool
-            steel is normally prescribed for warm tooling applications wherever
-            most resistance from cracking is required. Such applications grasp
-            die casting, hot punches, hot shear cutting edges, shaping dies,
-            extrusion tooling and hot gripper dies.
-          </p>
-        </div>
-      </section>
+        <meta
+          name="keywords"
+          content="H12 steel, AISI H12, DIN 1.2606, H12 tool steel, hot work tool steel H12, chromium hot work steel, H12 chemical composition, H12 heat treatment, H12 hardness, H12 datasheet, H12 steel supplier India, 1.2606 steel, hot work die steel H12, H12 round bar, H12 flats, H12 blocks, forging die steel H12"
+        />
 
-      {/* Chemical Composition */}
-      <section className="hot-work-composition">
-        <h3 className="mb-4 text-center">
-          Chemical Composition (Typical Analysis in %)
-        </h3>
-        <div className="table-data d-flex justify-content-center">
-          <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
-            <table>
-              <thead>
-                <tr>
-                  <th>Element</th>
-                  <td>C</td>
-                  <td>Si</td>
-                  <td>Mn</td>
-                  <td>P</td>
-                  <td>S</td>
-                  <td>Cr</td>
-                  <td>W</td>
-                  <td>Mo</td>
-                  <td>V</td>
-                </tr>
-              </thead>
+        <link
+          rel="canonical"
+          href="https://venturasteels.com/products/hot-work-steel/h12"
+        />
+
+        {/* Product Schema for SEO */}
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "H12 Hot Work Tool Steel",
+  "description": "H12 / AISI H12 / DIN 1.2606 hot work tool steel with excellent toughness, thermal fatigue resistance and resistance to cracking, widely used in die casting and hot forming applications.",
+  "brand": {
+    "@type": "Organization",
+    "name": "Ventura Alloy & Steels Pvt. Ltd."
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Ventura Alloy & Steels Pvt. Ltd."
+  },
+  "material": "Hot Work Tool Steel",
+  "url": "https://venturasteels.com/products/hot-work-steel/h12",
+
+  "additionalProperty": [
+  {
+    "@type": "PropertyValue",
+    "name": "Material Grade",
+    "value": "H12 / 1.2606"
+  },
+  {
+    "@type": "PropertyValue",
+    "name": "Form",
+    "value": "Round"
+  }
+]
+}
+`}
+        </script>
+      </Helmet>
+      <div className="grade-details">
+        <h2 className="text-center">H12 / AISI H12 / DIN 1.2606</h2>
+        <p className="subtitle text-center">
+          Premium Hot Work Tool Steel with high toughness & wear resistance.
+        </p>
+
+        {/* standards  */}
+        <div className="hot-work-standards-scroll-wrapper mb-4">
+          <div className="hot-work-standards-inner-scroll">
+            <table className="standards-table">
               <tbody>
                 <tr>
-                  <th>Range</th>
-                  <td>0.30-0.40</td>
-                  <td>0.80-1.25 </td>
-                  <td>0.20-0.60</td>
-                  <td>0.030 max</td>
-                  <td>0.030 max</td>
-                  <td>4.75-5.50</td>
-                  <td>1.00-1.70</td>
-                  <td>1.25-1.75</td>
-                  <td>0.20-0.50</td>
+                  <td>
+                    <strong>COUNTRY </strong>
+                  </td>
+                  <td>USA</td>
+                  <td>German / Europe</td>
+                  <td>Japan</td>
+                  <td>China</td>
+                  <td>UK</td>
+                  <td>France</td>
+                  <td>India</td>
+                  <td>Russia</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>STANDARDS</strong>
+                  </td>
+                  <td>ASTM / AISI</td>
+                  <td>DIN / EN</td>
+                  <td>JIS</td>
+                  <td>GB</td>
+                  <td>BS</td>
+                  <td>AFNOR</td>
+                  <td>IS</td>
+                  <td>GOST</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>EQUIVALENT NAME</strong>
+                  </td>
+                  <td>H12</td>
+                  <td>1.2605 / X35CrWMoV5-1</td>
+                  <td>SKD62</td>
+                  <td>4Cr5MoWVi</td>
+                  <td>BH12</td>
+                  <td>Z35CDWV5-1</td>
+                  <td>H12 (as per AISI / DIN 1.2605)</td>
+                  <td>4Kh5MF1S (4Х5МФ1С)</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-      </section>
 
-      {/* Steel properties */}
-      <section className="steel-properties">
-        <h2>Steel Properties</h2>
-        <ul>
-          <li>Magnificent Resistance to Wear</li>
-          <li>High Strength at Elevated Temperature</li>
-          <li>Homogenizing with High Toughness</li>
-          <li>Additional Fine Structure without Grain-Boundary Carbide</li>
-        </ul>
-      </section>
-
-      {/* applications */}
-      <section className="applications">
-        <h2>Applications</h2>
-        <ul>
-          <li>Excellent Resistance to Wear</li>
-          <li>High Strength at Elevated Temperature</li>
-          <li>Homogenizing with High Toughness.</li>
-          <li>Extra- Fine- Structure without Grain-Boundary Carbide </li>
-        </ul>
-      </section>
-
-      {/* Thermal properties */}
-      <section className="thermal-properties">
-        <h2 className="thermal-section-title">Thermal Properties</h2>
-
-        <div className="row">
-          <div className="col-md-6">
-            <div className="property-card mb-3">
-              <h4>Coefficient of Thermal Expansion</h4>
-              <table className="table table-bordered ">
-                <thead>
-                  <tr>
-                    <th>Temperature (°C)</th>
-                    <th>10¯⁶ m / (m*K)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20-100</td>
-                    <td>11.7</td>
-                  </tr>
-                  <tr>
-                    <td>20-250</td>
-                    <td>12.4</td>
-                  </tr>
-                  <tr>
-                    <td>20-500</td>
-                    <td>12.9</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* heat treatment */}
-      <section className="heat-treatment">
-        <h2 className="section-title">Heat Treatment</h2>
-
-        <div className="row">
-          {/* Basic Heat Treatment Data */}
-          <div className="col-md-6">
-            <div className="heat-card mb-3">
-              <h4>Heat Treatment Steps</h4>
-              <table className="table table-bordered">
-                <tbody>
-                  <tr>
-                    <th>Soft Annealing °C</th>
-                    <td>820</td>
-                  </tr>
-                  <tr>
-                    <th>Cooling</th>
-                    <td>Furnace</td>
-                  </tr>
-                  <tr>
-                    <th>Hardness HB</th>
-                    <td>max. 240</td>
-                  </tr>
-                  <tr>
-                    <th>Hardening °C</th>
-                    <td>1030-1130</td>
-                  </tr>
-                  <tr>
-                    <th>Quenching</th>
-                    <td>Oil or Hot Bath 500-550°C</td>
-                  </tr>
-                  <tr>
-                    <th>Hardness after Quenching HRC</th>
-                    <td>57</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          {/* Tempering Data */}
-          <div className="col-md-6">
-            <div className="heat-card mb-3">
-              <h4>Tempering (°C after quenching)</h4>
-              <table className="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Temp (°C)</th>
-                    <th>HRC</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>100</td>
-                    <td>55</td>
-                  </tr>
-                  <tr>
-                    <td>210</td>
-                    <td>54</td>
-                  </tr>
-                  <tr>
-                    <td>300</td>
-                    <td>50</td>
-                  </tr>
-                  <tr>
-                    <td>400</td>
-                    <td>54.8</td>
-                  </tr>
-                  <tr>
-                    <td>500</td>
-                    <td>53</td>
-                  </tr>
-                  <tr>
-                    <td>600</td>
-                    <td>51</td>
-                  </tr>
-                  <tr>
-                    <td>700</td>
-                    <td>48</td>
-                  </tr>
-                  <tr>
-                    <td>800</td>
-                    <td>41</td>
-                  </tr>
-                  <tr>
-                    <td>900</td>
-                    <td>34</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Availability */}
-      <section className="availability-info my-4">
-        <div className="container">
-          <h4 className="mb-3">Availability</h4>
-          <p>
-            All grades of H12 / AISI H12 / DIN 1.2606 are available on
-            <strong> advance order</strong> basis on <strong>MOQ</strong> as per
-            size requirements.
-          </p>
-
-          <div className="note-box mt-3 p-3 rounded">
-            <h5 className="note-title">Additional Services</h5>
+        {/* Overview */}
+        <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
+          <div className="overview-content">
             <p>
-              We also source forgings as per the required grades, size, and
-              supply specifications. Additionally, we have an in-house cutting
-              facility to meet customized requirements.
+              H12 Hot Work Die Steel could be a five-hitter Cr, general hot work
+              steel that is characterized by wonderful effect strength. It
+              contains less vanadium than the broadly utilized H13 hot work tool
+              steel, and furthermore the tungsten content gives higher temper
+              resistance. It has smart resistance to thermal fatigue cracking
+              (heat checking) and excellent resistance to gross cracking and
+              thermal shock once water cooled in commission. TLS H12 hot work
+              tool steel is normally prescribed for warm tooling applications
+              wherever most resistance from cracking is required. Such
+              applications grasp die casting, hot punches, hot shear cutting
+              edges, shaping dies, extrusion tooling and hot gripper dies.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Get Quote CTA */}
-      <div className="cta-block">
-        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
-          Enquire Now
-        </button>
-        <span>MOQ: 5 Tonnes</span>
+        {/* Chemical Composition */}
+        <section className="hot-work-composition">
+          <h3 className="mb-4 text-center">
+            Chemical Composition (Typical Analysis in %)
+          </h3>
+          <div className="table-data d-flex justify-content-center">
+            <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Element</th>
+                    <td>C</td>
+                    <td>Si</td>
+                    <td>Mn</td>
+                    <td>P</td>
+                    <td>S</td>
+                    <td>Cr</td>
+                    <td>W</td>
+                    <td>Mo</td>
+                    <td>V</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Range</th>
+                    <td>0.30-0.40</td>
+                    <td>0.80-1.25 </td>
+                    <td>0.20-0.60</td>
+                    <td>0.030 max</td>
+                    <td>0.030 max</td>
+                    <td>4.75-5.50</td>
+                    <td>1.00-1.70</td>
+                    <td>1.25-1.75</td>
+                    <td>0.20-0.50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* Steel properties */}
+        <section className="steel-properties">
+          <h2>Steel Properties</h2>
+          <ul>
+            <li>Magnificent Resistance to Wear</li>
+            <li>High Strength at Elevated Temperature</li>
+            <li>Homogenizing with High Toughness</li>
+            <li>Additional Fine Structure without Grain-Boundary Carbide</li>
+          </ul>
+        </section>
+
+        {/* applications */}
+        <section className="applications">
+          <h2>Applications</h2>
+          <ul>
+            <li>Excellent Resistance to Wear</li>
+            <li>High Strength at Elevated Temperature</li>
+            <li>Homogenizing with High Toughness.</li>
+            <li>Extra- Fine- Structure without Grain-Boundary Carbide </li>
+          </ul>
+        </section>
+
+        {/* Thermal properties */}
+        <section className="thermal-properties">
+          <h2 className="thermal-section-title">Thermal Properties</h2>
+
+          <div className="row">
+            <div className="col-md-6">
+              <div className="property-card mb-3">
+                <h4>Coefficient of Thermal Expansion</h4>
+                <table className="table table-bordered ">
+                  <thead>
+                    <tr>
+                      <th>Temperature (°C)</th>
+                      <th>10¯⁶ m / (m*K)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>20-100</td>
+                      <td>11.7</td>
+                    </tr>
+                    <tr>
+                      <td>20-250</td>
+                      <td>12.4</td>
+                    </tr>
+                    <tr>
+                      <td>20-500</td>
+                      <td>12.9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* heat treatment */}
+        <section className="heat-treatment">
+          <h2 className="section-title">Heat Treatment</h2>
+
+          <div className="row">
+            {/* Basic Heat Treatment Data */}
+            <div className="col-md-6">
+              <div className="heat-card mb-3">
+                <h4>Heat Treatment Steps</h4>
+                <table className="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th>Soft Annealing °C</th>
+                      <td>820</td>
+                    </tr>
+                    <tr>
+                      <th>Cooling</th>
+                      <td>Furnace</td>
+                    </tr>
+                    <tr>
+                      <th>Hardness HB</th>
+                      <td>max. 240</td>
+                    </tr>
+                    <tr>
+                      <th>Hardening °C</th>
+                      <td>1030-1130</td>
+                    </tr>
+                    <tr>
+                      <th>Quenching</th>
+                      <td>Oil or Hot Bath 500-550°C</td>
+                    </tr>
+                    <tr>
+                      <th>Hardness after Quenching HRC</th>
+                      <td>57</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Tempering Data */}
+            <div className="col-md-6">
+              <div className="heat-card mb-3">
+                <h4>Tempering (°C after quenching)</h4>
+                <table className="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Temp (°C)</th>
+                      <th>HRC</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>100</td>
+                      <td>55</td>
+                    </tr>
+                    <tr>
+                      <td>210</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td>300</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td>400</td>
+                      <td>54.8</td>
+                    </tr>
+                    <tr>
+                      <td>500</td>
+                      <td>53</td>
+                    </tr>
+                    <tr>
+                      <td>600</td>
+                      <td>51</td>
+                    </tr>
+                    <tr>
+                      <td>700</td>
+                      <td>48</td>
+                    </tr>
+                    <tr>
+                      <td>800</td>
+                      <td>41</td>
+                    </tr>
+                    <tr>
+                      <td>900</td>
+                      <td>34</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Availability */}
+        <section className="availability-info my-4">
+          <div className="container">
+            <h4 className="mb-3">Availability</h4>
+            <p>
+              All grades of H12 / AISI H12 / DIN 1.2606 are available on
+              <strong> advance order</strong> basis on <strong>MOQ</strong> as
+              per size requirements.
+            </p>
+
+            <div className="note-box mt-3 p-3 rounded">
+              <h5 className="note-title">Additional Services</h5>
+              <p>
+                We also source forgings as per the required grades, size, and
+                supply specifications. Additionally, we have an in-house cutting
+                facility to meet customized requirements.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Get Quote CTA */}
+        <div className="cta-block">
+          <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+            Enquire Now
+          </button>
+          <span>MOQ: 5 Tonnes</span>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

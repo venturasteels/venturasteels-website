@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./hot-work-grade.css";
@@ -542,13 +540,23 @@ export default function DB6() {
         </section>
 
         {/* Get Quote CTA */}
-        <div className="cta-block">
-          <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+          <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>
+
+          <button
+            className=" weight-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#weightModal"
+          >
+            Calculate Weight
+          </button>
+
           <span>MOQ: 0.33 Tonnes</span>
         </div>
       </div>
+
     </>
   );
 }
