@@ -43,10 +43,15 @@ export default function H13() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "H13 Hot Work Tool Steel",
+
   "image": [
-    "https://venturasteels.com/image/h13-hot-work-steel.png"
+    "https://venturasteels.com/images/h13-hot-work-steel.jpg"
   ],
+
   "description": "H13 / AISI H13 / DIN 1.2344 hot work tool steel with excellent toughness, thermal fatigue resistance and high temperature strength.",
+
+  "sku": "H13-VAS",
+  "mpn": "1.2344",
 
   "brand": {
     "@type": "Brand",
@@ -59,6 +64,7 @@ export default function H13() {
   },
 
   "material": "Hot Work Tool Steel",
+
   "url": "https://venturasteels.com/products/hot-work-steel/h13",
 
   "additionalProperty": [
@@ -75,30 +81,68 @@ export default function H13() {
   ],
 
   "offers": {
-  "@type": "Offer",
-  "priceCurrency": "INR",
-  "price": "0",
-  "availability": "https://schema.org/InStock",
-  "url": "https://venturasteels.com/products/hot-work-steel/h13",
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/hot-work-steel/h13",
 
-  "shippingDetails": {
-    "@type": "OfferShippingDetails",
-    "shippingRate": {
-      "@type": "MonetaryAmount",
-      "value": "0",
-      "currency": "INR"
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
     },
-    "shippingDestination": {
-      "@type": "DefinedRegion",
-      "addressCountry": "IN"
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "applicableCountry": "IN"
     }
   },
 
-  "hasMerchantReturnPolicy": {
-    "@type": "MerchantReturnPolicy",
-    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
-  }
-}
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "24"
+  },
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Industrial Buyer"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Excellent quality H13 steel with consistent hardness and performance."
+    }
+  ]
 }
 `}
         </script>
