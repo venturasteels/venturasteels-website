@@ -75,12 +75,30 @@ export default function H13() {
   ],
 
   "offers": {
-    "@type": "Offer",
-    "priceCurrency": "INR",
-    "price": "0",
-    "availability": "https://schema.org/InStock",
-    "url": "https://venturasteels.com/products/hot-work-steel/h13"
+  "@type": "Offer",
+  "priceCurrency": "INR",
+  "price": "0",
+  "availability": "https://schema.org/InStock",
+  "url": "https://venturasteels.com/products/hot-work-steel/h13",
+
+  "shippingDetails": {
+    "@type": "OfferShippingDetails",
+    "shippingRate": {
+      "@type": "MonetaryAmount",
+      "value": "0",
+      "currency": "INR"
+    },
+    "shippingDestination": {
+      "@type": "DefinedRegion",
+      "addressCountry": "IN"
+    }
+  },
+
+  "hasMerchantReturnPolicy": {
+    "@type": "MerchantReturnPolicy",
+    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
   }
+}
 }
 `}
         </script>
