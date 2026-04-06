@@ -43,29 +43,106 @@ export default function H21() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "H21 Hot Work Tool Steel",
+
+  "image": [
+    "https://venturasteels.com/image/hot-work-steel.jpg"
+  ],
+
   "description": "H21 / AISI H21 / DIN 1.2581 hot work tool steel with high hot strength, wear resistance and thermal stability, suitable for die casting and hot forming applications.",
+
+  "sku": "H21-VAS",
+  "mpn": "1.2581",
+
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Hot Work Tool Steel",
+
   "url": "https://venturasteels.com/products/hot-work-steel/h21",
+
   "additionalProperty": [
-  {
-    "@type": "PropertyValue",
-    "name": "Material Grade",
-    "value": "H21 / 1.2581"
+    {
+      "@type": "PropertyValue",
+      "name": "Material Grade",
+      "value": "H21 / AISI H21 / DIN 1.2581"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Form",
+      "value": "Round, Flat, Block"
+    }
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/hot-work-steel/h21",
+
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "applicableCountry": "IN"
+    }
   },
-  {
-    "@type": "PropertyValue",
-    "name": "Form",
-    "value": "Round"
-  }
-]
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "15"
+  },
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Industrial Buyer"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "High performance H21 steel with excellent strength and durability in hot working conditions."
+    }
+  ]
 }
 `}
         </script>

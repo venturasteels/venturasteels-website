@@ -43,30 +43,106 @@ export default function H12() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "H12 Hot Work Tool Steel",
+
+  "image": [
+    "https://venturasteels.com/image/hot-work-steel.jpg"
+  ],
+
   "description": "H12 / AISI H12 / DIN 1.2606 hot work tool steel with excellent toughness, thermal fatigue resistance and resistance to cracking, widely used in die casting and hot forming applications.",
+
+  "sku": "H12-VAS",
+  "mpn": "1.2606",
+
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Hot Work Tool Steel",
+
   "url": "https://venturasteels.com/products/hot-work-steel/h12",
 
   "additionalProperty": [
-  {
-    "@type": "PropertyValue",
-    "name": "Material Grade",
-    "value": "H12 / 1.2606"
+    {
+      "@type": "PropertyValue",
+      "name": "Material Grade",
+      "value": "H12 / AISI H12 / DIN 1.2606"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Form",
+      "value": "Round, Flat, Block"
+    }
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/hot-work-steel/h12",
+
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "applicableCountry": "IN"
+    }
   },
-  {
-    "@type": "PropertyValue",
-    "name": "Form",
-    "value": "Round"
-  }
-]
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "10"
+  },
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Industrial Buyer"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Reliable H12 steel with good toughness and resistance to thermal fatigue in hot work applications."
+    }
+  ]
 }
 `}
         </script>

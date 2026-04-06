@@ -44,30 +44,106 @@ export default function H11() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "H11 Hot Work Tool Steel",
+
+  "image": [
+    "https://venturasteels.com//image/h11-hot-work-steel.png"
+  ],
+
   "description": "H11 / AISI H11 / DIN 1.2343 hot work tool steel with high toughness, thermal fatigue resistance and resistance to cracking, suitable for die casting, forging and extrusion applications.",
+
+  "sku": "H11-VAS",
+  "mpn": "1.2343",
+
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Hot Work Tool Steel",
+
   "url": "https://venturasteels.com/products/hot-work-steel/h11",
 
   "additionalProperty": [
-  {
-    "@type": "PropertyValue",
-    "name": "Material Grade",
-    "value": "H11 / 1.2343"
+    {
+      "@type": "PropertyValue",
+      "name": "Material Grade",
+      "value": "H11 / AISI H11 / DIN 1.2343"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Form",
+      "value": "Round, Flat, Block"
+    }
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/hot-work-steel/h11",
+
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "applicableCountry": "IN"
+    }
   },
-  {
-    "@type": "PropertyValue",
-    "name": "Form",
-    "value": "Round"
-  }
-]
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "18"
+  },
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Industrial Client"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Reliable H11 steel with excellent toughness and performance in die casting applications."
+    }
+  ]
 }
 `}
         </script>

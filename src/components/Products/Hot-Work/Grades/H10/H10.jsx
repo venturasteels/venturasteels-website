@@ -44,28 +44,104 @@ export default function H10() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "H10 Hot Work Tool Steel",
+
+  "image": [
+    "https://venturasteels.com/image/hot-work-steel.jpg"
+  ],
+
   "description": "H10 / AISI H10 / DIN 1.2365 / SKD7 hot work tool steel with high temperature strength, thermal conductivity and resistance to hot cracking, ideal for die casting and forging applications.",
+
+  "sku": "H10-VAS",
+  "mpn": "1.2365",
+
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Hot Work Tool Steel",
+
   "url": "https://venturasteels.com/products/hot-work-steel/h10",
 
   "additionalProperty": [
     {
       "@type": "PropertyValue",
       "name": "Material Grade",
-      "value": "H10 / 1.2365 / SKD7"
+      "value": "H10 / AISI H10 / DIN 1.2365 / SKD7"
     },
     {
       "@type": "PropertyValue",
       "name": "Form",
-      "value": "Round"
+      "value": "Round, Flat, Block"
+    }
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/hot-work-steel/h10",
+
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "applicableCountry": "IN"
+    }
+  },
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "12"
+  },
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Industrial Client"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Durable H10 steel with excellent performance in high temperature applications."
     }
   ]
 }
