@@ -43,15 +43,21 @@ export default function H13() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "H13 Hot Work Tool Steel",
+  "image": [
+    "https://venturasteels.com/image/h13-hot-work-steel.png"
+  ],
   "description": "H13 / AISI H13 / DIN 1.2344 hot work tool steel with excellent toughness, thermal fatigue resistance and high temperature strength.",
+
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Hot Work Tool Steel",
   "url": "https://venturasteels.com/products/hot-work-steel/h13",
 
