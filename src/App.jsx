@@ -18,7 +18,6 @@ import CuttingServices from "./components/CuttingServices/CuttingServices.jsx";
 import UniqueLoader from "./components/Loader/UniqueLoader.jsx";
 import { useState } from "react";
 
-// Employee Contact Details
 import KarunaSawant from "./EmployeeContactDetails/KARUNASAWANT/KARUNASAWANT.jsx";
 
 import "./App.css";
