@@ -18,6 +18,9 @@ import CuttingServices from "./components/CuttingServices/CuttingServices.jsx";
 import UniqueLoader from "./components/Loader/UniqueLoader.jsx";
 import { useState } from "react";
 
+// Employee Contact Details
+import KarunaSawant from "./EmployeeContactDetails/KARUNA SAWANT/KARUNA SAWANT.jsx";
+
 import "./App.css";
 // HotWork
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
@@ -102,25 +105,25 @@ ReactGA.initialize("G-PNNRG2K7VQ");
 
 const App = () => {
   // disable copy, right click and f12
-  useEffect(() => {
-    const handleContextMenu = (e) => e.preventDefault();
-    document.addEventListener("contextmenu", handleContextMenu);
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => e.preventDefault();
+  //   document.addEventListener("contextmenu", handleContextMenu);
 
-    const handleKeyDown = (e) => {
-      if (
-        (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
-        e.key === "F12"
-      ) {
-        e.preventDefault();
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown);
+  //   const handleKeyDown = (e) => {
+  //     if (
+  //       (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
+  //       e.key === "F12"
+  //     ) {
+  //       e.preventDefault();
+  //     }
+  //   };
+  //   document.addEventListener("keydown", handleKeyDown);
 
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //     document.removeEventListener("keydown", handleKeyDown);
+  //   };
+  // }, []);
 
   useEffect(() => {
     AOS.init({
@@ -164,6 +167,7 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/enquiry" element={<EnquiryForm />} />
           <Route path="/career" element={<Careers />} />
+          <Route path="/karuna-sawant" element={<KarunaSawant />} />
           {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/products/hot-work-steel" element={<HotWork />}>
             <Route path="db6" element={<DB6 />} />
