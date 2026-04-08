@@ -18,7 +18,8 @@ import CuttingServices from "./components/CuttingServices/CuttingServices.jsx";
 import UniqueLoader from "./components/Loader/UniqueLoader.jsx";
 import { useState } from "react";
 
-import KarunaSawant from "./EmployeeContactDetails/KARUNASAWANT/KARUNASAWANT.jsx";
+// Employee Contact Details
+import SawantKaruna from "./EmployeeContactDetails/KARUNASAWANT/KARUNASAWANT.jsx";
 
 import "./App.css";
 // HotWork
@@ -166,7 +167,7 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/enquiry" element={<EnquiryForm />} />
           <Route path="/career" element={<Careers />} />
-          <Route path="/karuna-sawant" element={<KarunaSawant />} />
+          <Route path="/karuna-sawant" element={<SawantKaruna />} />
           {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/products/hot-work-steel" element={<HotWork />}>
             <Route path="db6" element={<DB6 />} />

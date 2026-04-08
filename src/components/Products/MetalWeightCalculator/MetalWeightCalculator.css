@@ -1,0 +1,109 @@
+.calculator-card {
+  max-width: 650px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(47, 43, 96, 0.15);
+  border-top: 5px solid #fe8d37;
+}
+
+/* Title */
+.title {
+  color: #2f2b60;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #312d64;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #fe8d37;
+  box-shadow: 0 0 0 0.15rem rgba(254, 141, 55, 0.25);
+}
+
+/* Layout spacing */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Calculate Button */
+.calculate-btn {
+  background: linear-gradient(135deg, #fe8d37, #ff963a);
+  color: #fff;
+  border: none;
+  flex: 1;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.calculate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(254, 141, 55, 0.3);
+}
+
+/* Clear Button */
+.clear-btn {
+  background: #2f2b60;
+  color: #fff;
+  border: none;
+  flex: 1;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.clear-btn:hover {
+  background: #2f2b60;
+}
+
+/* RESULT BOX (Premium look) */
+.result-box {
+  margin-top: 30px;
+  text-align: center;
+  background: linear-gradient(135deg, #2f2b60, #312d64);
+  padding: 25px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.result-box p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.result-box h4 {
+  color: #ff963a;
+  font-size: 28px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+/* Shape dropdown highlight */
+select.form-control {
+  cursor: pointer;
+}
