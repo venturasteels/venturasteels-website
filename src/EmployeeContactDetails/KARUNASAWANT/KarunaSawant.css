@@ -1,0 +1,346 @@
+/* ================= WRAPPER ================= */
+.kpf-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fb, #eef1f8);
+  padding: 50px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+.kpf-container {
+  max-width: 1000px;
+  margin: 10rem auto;
+}
+
+/* ================= HEADER ================= */
+.kpf-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* MAIN CARD */
+.kpf-header-card {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 14px;
+  width: 100%;
+  /* max-width: 600px; */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #fe8d37;
+  transition: 0.3s;
+}
+
+.kpf-header-card:hover {
+  transform: translateY(-4px);
+}
+
+/* LOGO */
+.kpf-header-logo img {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* TEXT SIDE */
+.kpf-header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* NAME */
+.kpf-header-info h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #2f2b60;
+  margin-bottom: 10px;
+}
+
+.kpf-header-info h1 span {
+  color: #fe8d37;
+}
+.kpf-header-info h2 {
+  color: #fe8d37;
+  font-size: 19px;
+}
+
+/* ROLE */
+.kpf-header-info p {
+  margin-top: 6px;
+  font-size: 20px;
+  color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .kpf-header-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .kpf-header-logo img {
+    width: 100px;
+  }
+}
+
+/* ================= MAIN CARD ================= */
+.kpf-main-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid #fe8d37;
+}
+
+/* ================= HEADER ================= */
+.kpf-card-header {
+  margin-bottom: 20px;
+}
+
+.kpf-card-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #2f2b60;
+}
+
+.kpf-card-header p {
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: #f9fafc;
+  border-left: 4px solid #fe8d37;
+  border-radius: 6px;
+  color: #2f2b60;
+  font-weight: 500;
+}
+
+/* ================= TABLE ================= */
+.kpf-table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.kpf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* HEADER */
+.kpf-table thead {
+  background: #2f2b60;
+  color: #fff;
+}
+
+.kpf-table th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* BODY */
+.kpf-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+/* STRIPED ROWS (NEW - improves readability) */
+.kpf-table tbody tr:nth-child(even) {
+  background: #f9fafc;
+}
+
+/* HOVER */
+.kpf-table tbody tr:hover {
+  background: #f1f3f9;
+}
+
+/* ================= BADGES ================= */
+.stock {
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* READY */
+.stock.ready {
+  background: #e6f7ec;
+  color: #1e7e34;
+}
+
+/* ADVANCE */
+.stock.advance {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .kpf-main-card {
+    padding: 18px;
+  }
+
+  .kpf-table th,
+  .kpf-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+/* ================= CONTACT ================= */
+.kpf-contact {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.kpf-contact h3 {
+  font-weight: 700;
+  font-size: 27px;
+  color: #2f2b60; /* dark blue for professional look */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.kpf-contact h3::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #fe8d37;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+.kpf-contact h4 {
+  color: #fe8d37;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ================= CONTACT LINKS ================= */
+.kpf-contact .kpf-contact-details {
+  display: block;
+  text-decoration: none;
+  color: #312d64;
+  margin-bottom: 10px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* ================= BUTTONS ================= */
+.kpf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* ================= BUTTON BASE ================= */
+.kpf-actions a,
+.save-contact-btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: none; /* No hover animation */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= BUTTON COLORS ================= */
+/* Call Button */
+.kpf-actions a:nth-child(1) {
+  background: #2f2b60;
+}
+
+/* WhatsApp Button */
+.kpf-actions a:nth-child(2) {
+  background: #25d366;
+}
+
+/* Email Button */
+.kpf-actions a:nth-child(3) {
+  background: #fe8d37;
+}
+
+/* Save Contact Button */
+.save-contact-btn {
+  background: #2f2b60;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .kpf-actions {
+    flex-direction: column;
+  }
+
+  .kpf-actions a,
+  .save-contact-btn {
+    flex: 1;
+    padding: 16px 0;
+    font-size: 16px;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .kpf-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .kpf-actions {
+    flex-direction: column;
+  }
+
+  .kpf-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpf-container {
+    margin: 14rem auto;
+  }
+  .kpf-wrapper {
+    padding: 30px 15px;
+  }
+
+  .kpf-header h1 {
+    font-size: 22px;
+  }
+
+  .kpf-section h3 {
+    font-size: 16px;
+  }
+  .kpf-actions a,
+  .save-contact-btn {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  .kpf-contact {
+    text-align: center;
+  }
+
+  .kpf-contact h3 {
+    text-align: center;
+  }
+  .kpf-contact h4 {
+    text-align: center;
+  }
+}
