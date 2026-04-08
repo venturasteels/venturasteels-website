@@ -53,37 +53,37 @@ const Home = () => {
     {
       title: "Hot Work Steel",
       desc: "For high-temperature tools and dies.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051069/Hot_Work_Tool_Steel_1.2344_Round_Bars_iepksj.png",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472585/ventura-product-image/hot-work-steel/db6-hot-work-steel.jpg",
       link: "/products/hot-work-steel",
     },
     {
       title: "Cold Work Steel",
       desc: "Perfect for cutting & forming tools.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051164/Cold_Work_-_D2_md1s8f.png",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472640/ventura-product-image/cold-work-steel/Cr12MoV-round-bars.jpg",
       link: "/products/cold-work-steel",
-    },
-    {
-      title: "Spring Steel",
-      desc: "Flexible & strong for industrial use.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051209/EN_31_Rods_jmdbdq.png",
-      link: "/products/spring-steel",
-    },
-    {
-      title: "Alloy Steel",
-      desc: "Enhanced strength and corrosion resistance.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051248/EN_31_Round_Bars_fd49nw.png",
-      link: "/products/alloy-steel",
     },
     {
       title: "Plastic Mould Steel",
       desc: "Best suited for mould manufacturing.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051192/Plastic_Mould_2_houlpv.png",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473164/1.2738-Flat-Bars_wepy8v.jpg",
       link: "/products/plastic-mould-steel",
     },
     {
+      title: "Alloy Steel",
+      desc: "Enhanced strength and corrosion resistance.",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473371/20MnCr5-Round-Bars_h9tpe5.jpg",
+      link: "/products/alloy-steel",
+    },
+    {
+      title: "Spring Steel",
+      desc: "Flexible & strong for industrial use.",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473445/Wire-Rod-bundles-2_hrl2nw.jpg",
+      link: "/products/spring-steel",
+    },
+    {
       title: "Carbon Steel",
-      desc: "Durable for metal stamping dies.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051224/C45_Carbon_Steel_Round_Bars_zcwh1o.png",
+      desc: "Durable material for metal stamping dies",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473472/C45-Round-Bars_aejn7v.jpg",
       link: "/products/carbon-steel",
     },
     {
@@ -95,19 +95,46 @@ const Home = () => {
   ];
 
   const certificates = [
-    { src: "/image/certificate-logo/BSCIC-icon.png", alt: "BSCIC" },
-    { src: "/image/certificate-logo/cii-logo.jpeg", alt: "CII" },
     {
-      src: "/image/certificate-logo/tagma-india-logo1.png",
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775548449/bscic-logo-1_ijj6r3.png",
+      alt: "BSCIC",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775546005/cii-logo_vh6ozh.jpg",
+      alt: "CII",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775546009/tagma-india-logo1_yumaos.png",
       alt: "TAGMA INDIA",
     },
-    { src: "/image/certificate-logo/images.jpeg", alt: "AHK" },
-    { src: "/image/certificate-logo/Alucast-logo.png", alt: "ALUCAST" },
-    { src: "/image/certificate-logo/DISMA-logo.png", alt: "DISMA" },
-    { src: "/image/certificate-logo/MASSMA-logo.png", alt: "MASSMA" },
-    { src: "/image/certificate-logo/SUFI-logo.png", alt: "SUFI" },
-    { src: "/image/certificate-logo/TSSIA.png", alt: "TSSIA" },
-    { src: "/image/certificate-logo/AIFI-logo.png", alt: "AIFI" },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775546006/images_bnnz8b.jpg",
+      alt: "AHK",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775546005/Alucast-logo_ltozzz.png",
+      alt: "ALUCAST",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775547901/DISMA_Logo_njxznb.jpg",
+      alt: "DISMA",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775548210/massma-logo-new_fgmuad.png",
+      alt: "MASSMA",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775546006/SUFI-logo_yqons1.png",
+      alt: "SUFI",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775546012/TSSIA_eogdky.png",
+      alt: "TSSIA",
+    },
+    {
+      src: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775546004/AIFI-logo_wryfor.png",
+      alt: "AIFI",
+    },
   ];
 
   const carouselRef = useRef(null);
@@ -261,35 +288,6 @@ const Home = () => {
 
       {/* Industries we serve */}
       {/* <IndustriesSection /> */}
-
-      {/* about-ventura */}
-      {/* <section className="about-section py-5 bg-light">
-        <div className="container about-container">
-          <div className="row align-items-center ">
-            <div className="col-md-6" data-aos="fade-right">
-              <img
-                src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764048630/about-ventura_vl8wyv.jpg"
-                alt="About Ventura"
-                className="img-fluid rounded"
-                loading="lazy"
-              />
-            </div>
-            <div className="col-md-6 about-content" data-aos="fade-left">
-              <h2 className="fw-bold mb-3">About Ventura Alloys & Steels</h2>
-              <p className="text-muted text-justify">
-                Ventura Alloys & Steels, a leading supplier of premium tool
-                steel, die steel, and engineering steel, is well-known for its
-                large inventory, quick delivery, and unmatched customer service.
-                Since 2014, we have provided services to over 1,800 clients
-                globally.
-              </p>
-              <Link to="/about" className="btn btn-color mt-3">
-                Know More
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Products section */}
       <div className="product-sec">
@@ -448,7 +446,10 @@ const Home = () => {
           Quality & Infrastructure
         </h2>
         <hr className="heading-line mt-3 mb-2" data-aos="fade-right" />
-        <h5 className="text-center mt-4 mb-5" data-aos="fade-right">
+        <p
+          className="text-center desc-quality-infra mt-4 mb-5"
+          data-aos="fade-right"
+        >
           At Ventura Alloy, quality is our cornerstone and more than just a
           promise. Only reputable mills provide our steel materials, which are
           fully traceable and certified by third parties (EN, ASTM, DIN
@@ -456,7 +457,7 @@ const Home = () => {
           guarantee smooth logistics, a strong inventory, and timely dispatch
           from our corporate office in Mumbai and a strategically placed
           warehouse in Bhiwandi.
-        </h5>
+        </p>
 
         <div className="quality-infra-cards mb-5 pb-5 row justify-content-center g-4">
           {/* Quality Card */}
@@ -611,13 +612,27 @@ const Home = () => {
 
           <div className="suppliers-row d-flex justify-content-center align-items-center flex-wrap gap-4">
             {[
-              { logo: "/image/jsw-logo.png" },
-              { logo: "/image/logo-bhushan.png" },
-              { logo: "/image/RL-Logonew.png" },
-              { logo: "/image/dongbe-logo.png" },
-              { logo: "/image/Jiangsu-Zhuhong-Forging-Co-Ltd-.webp" },
-              { logo: "/image/taihe-suppliers-logo.png" },
-              { logo: "/image/suppliers-logo/baowu-logo.png" },
+              {
+                logo: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775552731/jsw-logo_ftfp5a.png",
+              },
+              {
+                logo: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775552732/logo-bhushan_hsbpn3.png",
+              },
+              {
+                logo: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775552731/RL-Logonew_p3fjrp.png",
+              },
+              {
+                logo: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775552731/dongbe-logo_uqqzlc.png",
+              },
+              {
+                logo: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775552730/Jiangsu-Zhuhong-Forging-Co-Ltd-_zhjgrx.webp",
+              },
+              {
+                logo: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775552731/taihe-suppliers-logo_zq7qkv.png",
+              },
+              {
+                logo: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775552756/baowu-logo_ernu8e.png",
+              },
             ].map((supplier, idx) => (
               <div
                 key={idx}

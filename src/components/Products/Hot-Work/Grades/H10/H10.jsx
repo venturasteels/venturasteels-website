@@ -148,8 +148,9 @@ export default function H10() {
 `}
         </script>
       </Helmet>
+
       <div className="grade-details">
-        <h2 className="text-center"> H10 / AISI H10 / DIN 1.2365 / SKD7</h2>
+        <h1 className="text-center"> H10 / AISI H10 / DIN 1.2365 / SKD7</h1>
         <p className="subtitle text-center">
           Premium Hot Work Tool Steel with high toughness & wear resistance.
         </p>
@@ -473,11 +474,20 @@ export default function H10() {
         </section>
 
         {/* Get Quote CTA */}
-        <div className="cta-block">
-          <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+          <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>
-          <span>MOQ: 5 Tonnes </span>
+
+          <button
+            className=" weight-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#weightModal"
+          >
+            Calculate Weight
+          </button>
+
+          <span>MOQ: 0.33 Tonnes</span>
         </div>
       </div>
     </>

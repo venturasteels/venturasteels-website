@@ -269,11 +269,21 @@ export default function PlasticMould2316() {
       </section>
 
       {/* Get Quote CTA */}
-      <div className="cta-block">
-        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+      {/* Get Quote CTA */}
+      <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <button onClick={handleEnquiryClick} className="btn btn-primary">
           Enquire Now
         </button>
-        <span>MOQ: 5 Tonnes</span>
+
+        <button
+          className=" weight-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#weightModal"
+        >
+          Calculate Weight
+        </button>
+
+        <span>MOQ: 25 Tonnes</span>
       </div>
     </div>
   );

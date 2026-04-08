@@ -122,8 +122,8 @@ const HeroVideoBanner = () => {
               data-aos-duration="1200"
               data-aos-easing="ease-out-cubic"
             >
-              <span className="hero-brand">Ventura</span> – A Complete Steel
-              Service Center.
+              <span className="hero-brand">Ventura</span> – Building complete
+              special steel solutions
             </h1>
             <p
               data-aos="fade-up"

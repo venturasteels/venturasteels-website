@@ -3,7 +3,7 @@
   animation: fadeInUp 0.6s ease forwards;
 }
 
-.grade-details h2 {
+.grade-details h1 {
   color: #2f2b60;
   font-size: 2rem;
   margin-bottom: 0.3rem;
@@ -119,6 +119,14 @@ section {
   padding: 0.6rem 1.8rem;
   border-radius: 6px;
 }
+
+.cta-block span {
+  background-color: #2f2b60;
+  padding: 0.6rem 0.9rem;
+  color: #fff;
+  border-radius: 6px;
+}
+
 .cta-block .btn:focus,
 .cta-block .btn:active,
 .cta-block .btn:focus-visible {
@@ -552,4 +560,71 @@ section {
     padding-left: calc(var(--bs-gutter-x) * 0);
     padding-bottom: 20px;
   }
+}
+
+/* Button */
+.weight-btn {
+  background: linear-gradient(135deg, #fe8d37, #ff963a);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Modal Container */
+.custom-modal {
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 25px 80px rgba(47, 43, 96, 0.25);
+}
+
+/* Header */
+.modal-header {
+  background: linear-gradient(135deg, #2f2b60, #312d64);
+  color: #fff;
+  padding: 16px 20px;
+  border-bottom: none;
+}
+
+/* Title */
+.modal-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Body */
+.modal-body {
+  padding: 30px;
+  background: #f8f9fc;
+}
+
+/* Backdrop */
+.modal {
+  z-index: 1055;
+}
+
+.modal-backdrop {
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* 🔥 CUSTOM CLOSE BUTTON */
+.btn-close {
+  filter: invert(1); /* makes it white */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-close:hover {
+  opacity: 1;
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Optional glow on hover */
+.btn-close:focus {
+  box-shadow: none;
 }

@@ -2,15 +2,11 @@
    MODERN B2B FOOTER – VENTURA
 ================================ */
 
-.footer-container{
+.footer-container {
   justify-content: center;
 }
 .site-footer {
-  background: linear-gradient(
-    135deg,
-    #2f2b60,
-    #312d64
-  );
+  background: linear-gradient(135deg, #2f2b60, #312d64);
   color: #e4e6ff;
   position: relative;
   padding-top: 70px;

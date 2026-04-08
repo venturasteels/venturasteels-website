@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import MetalWeightCalculator from "../MetalWeightCalculator/MetalWeightCalculator";
 import "./boron-steel.css";
 
 const Boron = () => {
@@ -146,6 +147,33 @@ const Boron = () => {
           <section className="boron-details">
             <Outlet />
           </section>
+        </div>
+      </div>
+
+      {/* metal weight calculator */}
+      <div
+        className="modal fade"
+        id="weightModal"
+        tabIndex="-1"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+          <div className="modal-content custom-modal">
+            <div className="modal-header">
+              <h5 className="modal-title">⚙️ Metal Weight Calculator</h5>
+
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div className="modal-body">
+              <MetalWeightCalculator />
+            </div>
+          </div>
         </div>
       </div>
     </>

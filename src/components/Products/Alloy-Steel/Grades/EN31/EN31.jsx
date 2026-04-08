@@ -83,7 +83,8 @@ export default function EN31() {
           <img
             src="/image/Alloy Steels/SAE 52100.png"
             alt="SAE 52100 Bearing Steel"
-            width={220} height={220}
+            width={220}
+            height={220}
           />
         </div>
       </section>
@@ -237,10 +238,19 @@ export default function EN31() {
       </section>
 
       {/* CTA */}
-      <div className="cta-block">
-        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+      <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <button onClick={handleEnquiryClick} className="btn btn-primary">
           Enquire Now
         </button>
+
+        <button
+          className=" weight-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#weightModal"
+        >
+          Calculate Weight
+        </button>
+
         <span>MOQ: 5 Tonnes</span>
       </div>
     </div>

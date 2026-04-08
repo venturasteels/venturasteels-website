@@ -319,8 +319,8 @@
 .why-ventura {
   position: relative;
   padding: 6rem 0;
-  background: url("/image/product-why-choose-ventura-section.jpg") center
-    center / cover no-repeat;
+  background: url("https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775555413/products-page/product-why-choose-ventura-section.jpg")
+    center center / cover no-repeat;
   background-attachment: fixed;
   z-index: 1;
 }

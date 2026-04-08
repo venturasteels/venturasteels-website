@@ -477,11 +477,20 @@ export default function D2() {
         </section>
 
         {/* Get Quote CTA */}
-        <div className="cta-block">
-          <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+          <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>
-          <span>MOQ: 200 kg</span>
+
+          <button
+            className=" weight-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#weightModal"
+          >
+            Calculate Weight
+          </button>
+
+          <span>MOQ: 10 Tonnes</span>
         </div>
       </div>
     </>

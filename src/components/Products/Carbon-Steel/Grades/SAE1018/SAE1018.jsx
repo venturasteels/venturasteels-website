@@ -262,12 +262,20 @@ export default function CarbonSteel1018() {
       </section>
 
       {/* CTA */}
-      <div className="cta-block">
-        <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+      <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <button onClick={handleEnquiryClick} className="btn btn-primary">
           Enquire Now
         </button>
 
-        <span>MOQ: 5 Tonnes</span>
+        <button
+          className=" weight-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#weightModal"
+        >
+          Calculate Weight
+        </button>
+
+        <span>MOQ: 15 Tonnes</span>
       </div>
     </div>
   );

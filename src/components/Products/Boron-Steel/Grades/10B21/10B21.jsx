@@ -70,8 +70,7 @@ export default function BoronSteel10B21() {
                   <td>20MnB4 / 1.5525</td>
                   <td>20MnB4</td>
                   <td>530A20B</td>
-                  <td>20MnB4
-</td>
+                  <td>20MnB4</td>
                 </tr>
               </tbody>
             </table>
@@ -253,19 +252,29 @@ export default function BoronSteel10B21() {
               <h5 className="note-title">Additional Services</h5>
 
               <p>
-                We also source forgings as per the required grades, size, and supply specifications. Additionally, we have an in-house cutting facility to meet customized requirements.
+                We also source forgings as per the required grades, size, and
+                supply specifications. Additionally, we have an in-house cutting
+                facility to meet customized requirements.
               </p>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <div className="cta-block">
-          <button onClick={handleEnquiryClick} className="btn btn-primary mt-3">
+        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+          <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>
 
-          <span>MOQ: 15 – 30 Tonnes</span>
+          <button
+            className=" weight-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#weightModal"
+          >
+            Calculate Weight
+          </button>
+
+          <span>MOQ: 15 - 30 Tonnes</span>
         </div>
       </div>
     </>

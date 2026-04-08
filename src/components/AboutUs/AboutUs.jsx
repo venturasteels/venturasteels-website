@@ -14,21 +14,23 @@ const managementData = [
   },
   {
     name: "Mr. Aashish Bharat Shah",
-    role: "Chairman & Director",
-    image: "/image/director.jpg",
+    role: "Managing Director",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775553383/Aashish_Shah3_ffitlk.png",
     color: "bg-orange",
     description:
       "Guides Ventura's expansion with a contemporary, client-focused vision.",
   },
   {
     name: "Mrs. Poonam Aashish Shah",
-    role: "Director",
+    role: "Whole Time Director",
     image: "/image/director.jpg",
     color: "bg-success",
     description:
       "Oversees marketing initiatives and leads the drive into international markets.",
   },
 ];
+``;
 
 const teamRoles = [
   { title: "Sourcing Agents", icon: "bi bi-person-check", color: "bg-primary" },
@@ -84,51 +86,59 @@ const AboutUs = () => {
         </section>
 
         {/* who we are */}
-        <section className="who-we-are py-5">
+        <section className="who-we-are-split">
           <div className="container">
             <div className="row align-items-center">
-              {/* Left Column - Text */}
-              <div className="col-md-6 mb-4 mb-md-0">
-                <h2 className="fw-bold mb-4 ">Who We Are</h2>
-                <p className=" text-muted text-justify">
-                  Under the leadership of Mr. Bharat Dipchand Shah, whose rich
-                  industry experience dates back to 1965, and the
-                  forward-looking guidance of Mr. Aashish Bharat Shah, Ventura
-                  Alloy & Steels was founded in 2014 with a vision to bring
-                  reliability, integrity, and technical excellence to the steel
-                  industry. Over the years, the company has grown into a trusted
-                  steel service centre and a leading supplier of specialty
-                  steels, valued for its commitment to quality and long-term
-                  partnerships.
-                </p>
-                <p className="text-muted text-justify">
-                  Our portfolio spans hot work, cold work, and plastic mould
-                  steels, along with a comprehensive range of carbon, boron,
-                  alloy, and spring steels, allowing us to cater to diverse
-                  industrial applications. Ventura is renowned for its quality
-                  standards, technical expertise, and efficient service,
-                  consistently delivering reliable, result-oriented solutions
-                  backed by modern facilities and strong infrastructure.
-                </p>
-                <p className="text-muted text-justify">
-                  Driven by a genuine customer-first approach, the company
-                  continues to expand its footprint, strengthen relationships,
-                  and reinforce its leadership within the industry—guided by a
-                  commitment to serve with trust, transparency, and
-                  unwavering dedication.
-                </p>
-                <a href="/infrastructure" className="btn btn-primary mt-3">
-                  Explore Our Facilities
-                </a>
+              {/* LEFT CONTENT */}
+              <div className="col-md-6">
+                <div className="who-content" data-aos="fade-right">
+                  <h2 className="fw-bold mb-4">Who We Are</h2>
+
+                  <p>
+                    Under the leadership of Mr. Bharat Dipchand Shah, whose rich
+                    industry experience dates back to 1965, and the
+                    forward-looking guidance of Mr. Aashish Bharat Shah, Ventura
+                    Alloy & Steels was founded in 2014 with a vision to bring
+                    reliability, integrity, and technical excellence to the
+                    steel industry. Over the years, the company has grown into a
+                    trusted steel service centre and a leading supplier of
+                    specialty steels, valued for its commitment to quality and
+                    long-term partnerships.
+                  </p>
+
+                  <p>
+                    Our portfolio spans hot work, cold work, and plastic mould
+                    steels, along with a comprehensive range of carbon, boron,
+                    alloy, and spring steels, allowing us to cater to diverse
+                    industrial applications. Ventura is renowned for its quality
+                    standards, technical expertise, and efficient service,
+                    consistently delivering reliable, result-oriented solutions
+                    backed by modern facilities and strong infrastructure.
+                  </p>
+
+                  <p>
+                    Driven by a genuine customer-first approach, the company
+                    continues to expand its footprint, strengthen relationships,
+                    and reinforce its leadership within the industry—guided by a
+                    commitment to serve with trust, transparency, and unwavering
+                    dedication.
+                  </p>
+
+                  <a href="/infrastructure" className="btn btn-explore mt-3">
+                    Explore Our Facilities
+                  </a>
+                </div>
               </div>
 
-              {/* Right Column - Image */}
-              <div className="col-md-6 text-center">
-                <img
-                  src="/image/about-us-img.jpg"
-                  alt="Ventura Steels industrial steel supplier in India – About Us page"
-                  className="img-fluid rounded shadow-lg"
-                />
+              {/* RIGHT IMAGE */}
+              <div className="col-md-6 position-relative">
+                <div className="image-wrapper" data-aos="fade-left">
+                  <img
+                    src="/image/about-us-img.jpg"
+                    alt="Ventura Steels"
+                    className="img-fluid main-img"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -204,28 +214,28 @@ const AboutUs = () => {
         </section>
 
         {/* management-section */}
-        <section className="management-section py-5">
+        <section className="management-section">
           <div className="container">
-            <h2 className="fw-bold text-center mb-5">Our Management </h2>
-            <div className="row g-4">
+            <h2 className="main-heading text-center ">Our Management</h2>
+
+            <div className="row justify-content-center management-cards mt-5 g-5">
               {managementData.map((member, idx) => (
-                <div
-                  className="col-md-4"
-                  key={idx}
-                  data-aos="fade-up"
-                  data-aos-delay={idx * 100}
-                >
-                  <div className="card shadow-sm h-100 border-0 position-relative">
-                    <div className={`color-bar ${member.color}`}></div>
-                    {/* <img
-                      src={member.image}
-                      alt={member.name}
-                      className="card-img-top profile-img"
-                    /> */}
-                    <div className="card-body text-center">
-                      <h5 className="fw-semibold mt-3">{member.name}</h5>
-                      <p className="small text-muted">{member.role}</p>
-                      <p className="small">{member.description}</p>
+                <div className="col-md-4 col-sm-6" key={idx}>
+                  <div className={`team-card ${idx === 1 ? "active" : ""}`}>
+                    {/* IMAGE */}
+                    <div className="team-img">
+                      <img src={member.image} alt={member.name} />
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="team-content">
+                      <span className="number">
+                        {String(idx + 1).padStart(2, "0")}
+                      </span>
+
+                      <h5>{member.name}</h5>
+                      <p className="role">{member.role}</p>
+                      <p className="desc">{member.description}</p>
                     </div>
                   </div>
                 </div>

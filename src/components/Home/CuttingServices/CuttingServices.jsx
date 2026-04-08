@@ -17,7 +17,7 @@ const CuttingServices = () => {
     <section className="cutting-hero-section mt-4">
       <video
         className="cutting-bg-video"
-        src="/videoes/cutting-services-bg.mp4"
+        src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto/v1775544894/Cutting-Services-Bg_k8ryjg.mp4"
         autoPlay
         muted
         loop

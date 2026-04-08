@@ -216,7 +216,7 @@
   bottom: 0;
   width: 100%;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
   color: white;
   transition: background 0.3s ease;
 }
@@ -225,6 +225,7 @@
   margin: 0;
   font-size: 1.3rem;
   font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .overlay-product p {
@@ -232,6 +233,7 @@
   font-size: 1.1rem;
   margin-top: 0.5rem;
   color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 /* ---- Premium Navigation Buttons ---- */
@@ -298,6 +300,7 @@
 }
 .product-view {
   margin: 0px auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.95);
   width: 60%;
   background: #ffffff;
   padding: 0.55rem 0.5rem;
@@ -312,102 +315,6 @@
   color: #fff;
   border: none;
 }
-
-/* Cutting Services
-:root {
-  --orange: #fe8d37;
-  --orange-dark: #d85f33;
-  --blue: #2f2b60;
-  --dark: #0f1d25;
-  --light-gray: #f4f4f4;
-} */
-
-/* Section */
-/* .cutting-preview {
-  margin: 110px auto;
-  padding: 65px 50px;
-  background: linear-gradient(135deg, #e9e9f7, #eef1f3);
-  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.06);
-  transition: 0.3s;
-}
-
-.cutting-preview:hover {
-  transform: translateY(-3px);
-} */
-
-/* Title + Text */
-/* .cutting-title {
-  font-size: 38px;
-  font-weight: 700;
-  color: var(--blue);
-  line-height: 1.2;
-}
-
-.cutting-desc {
-  margin-top: 14px;
-  font-size: 17px;
-  color: #444;
-  max-width: 520px;
-} */
-
-/* Premium Bullet List */
-/* .cutting-list {
-  margin-top: 25px;
-}
-
-.cutting-list-item {
-  display: flex;
-  align-items: center;
-  font-size: 17px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  color: #222;
-  letter-spacing: 0.2px;
-} */
-
-/* Icon → subtle luxury orange orb */
-/* .cutting-list-item .icon {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: radial-gradient(circle, var(--orange), #b64824);
-  border-radius: 50%;
-  margin-right: 10px;
-} */
-
-/* Button */
-/* .cutting-btn {
-  display: inline-block;
-  margin-top: 30px;
-  background: var(--orange);
-  padding: 14px 32px;
-  font-size: 17px;
-  font-weight: 600;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  transition: 0.35s;
-  box-shadow: 0 8px 18px rgba(254, 119, 67, 0.3);
-}
-
-.cutting-btn:hover {
-  background: var(--orange-dark);
-  box-shadow: 0 10px 28px rgba(254, 119, 67, 0.42);
-}
-
-.cutting-img-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 14px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-}
-
-.cutting-video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-} */
 
 /* quality & infrastructure */
 .quality-infra {
@@ -428,12 +335,11 @@
   margin-right: auto;
 }
 
-.quality-infra h5 {
+.quality-infra .desc-quality-infra {
   font-size: 17px;
-  font-weight: 450;
   margin: 0px auto;
   width: 83%;
-  color: #000;
+  color: #2f2b60;
 }
 
 .quality-card,
@@ -450,7 +356,7 @@
 }
 
 .quality-card {
-  background-image: url("https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764132579/quality-banner_b4cyqx.jpg");
+  background-image: url("https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775545534/quality_f7dmnm.jpg");
 }
 
 .quality-card .quality-link,
@@ -469,7 +375,7 @@
 }
 
 .infras-card {
-  background-image: url("https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764132431/infrastructure-4_gvgbb3.png");
+  background-image: url("https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775545529/infrastructure-42_zgy5gk.png");
 }
 
 .quality-card::before,
@@ -483,6 +389,7 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
 .quality-card:hover,
 .infras-card:hover {
   transform: translateY(-2px);
@@ -497,43 +404,9 @@
   height: 100%;
   width: 50%;
 }
-
-/*why choose ventura  */
-/* .why-ventura-section {
-  background-color: #f8f9fa;
+.card-overlay p {
+  text-shadow: 2px 2px 5px rgba(19, 17, 17, 0.9);
 }
-
-.why-ventura-section h2 {
-  color: #2f2b60;
-  font-size: 2rem;
-}
-.why-ventura-section .why-choose {
-  margin: 0px auto;
-  padding: 10px 0px;
-  width: 100%;
-}
-.feature-box {
-  background-color: #ffffff;
-  padding: 0.75rem 1rem;
-  border-left: 4px solid #2f2b60;
-  border-radius: 0.75rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-}
-
-.feature-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.icon-wrapper {
-  background-color: #fe8d37;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 /* trusted certificates  */
 .trusted-certificates {

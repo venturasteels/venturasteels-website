@@ -19,7 +19,7 @@ import UniqueLoader from "./components/Loader/UniqueLoader.jsx";
 import { useState } from "react";
 
 // Employee Contact Details
-import KarunaSawant from "./EmployeeContactDetails/KARUNASAWANT/KARUNASAWANT.jsx";
+import KarunaSawant from "./EmployeeContactDetails/KARUNASAWANT//KARUNASAWANT.jsx";
 
 import "./App.css";
 // HotWork

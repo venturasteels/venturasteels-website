@@ -6,9 +6,10 @@ const UniqueLoader = () => {
     <div className="loader-overlay">
       <div className="loader-box">
         <img
-          src="/image/Ventura New Logo Up.png"
-          alt="Ventura Steels"
+          src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1771221504/Ventura_New_Logo_Up_eu2bes.png"
+          alt="Ventura Steels Logo"
           className="loader-logo-img"
+          loading="lazy"
         />
 
         <div className="molten-container">

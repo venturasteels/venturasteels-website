@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
+import MetalWeightCalculator from "../MetalWeightCalculator/MetalWeightCalculator";
 import { Helmet } from "react-helmet-async";
 import "./cold-work.css";
 
@@ -7,11 +8,6 @@ const ColdWork = () => {
   const location = useLocation();
   const [isGradeSelected, setIsGradeSelected] = useState(false);
   const detailsRef = useRef(null);
-
-  // React.useEffect(() => {
-  //   const gradePattern = /^\/products\/cold-work-steel\/(d2|d3|d5|a2|o1)/;
-  //   setIsGradeSelected(gradePattern.test(location.pathname));
-  // }, [location.pathname]);
 
   useEffect(() => {
     const gradePattern = /^\/products\/cold-work-steel\/(d2|d3|d5|a2|o1)/;
@@ -211,6 +207,33 @@ const ColdWork = () => {
           <section className="coldwork-details" ref={detailsRef}>
             <Outlet />
           </section>
+        </div>
+      </div>
+
+      {/* metal weight calculator */}
+      <div
+        className="modal fade"
+        id="weightModal"
+        tabIndex="-1"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+          <div className="modal-content custom-modal">
+            <div className="modal-header">
+              <h5 className="modal-title">⚙️ Metal Weight Calculator</h5>
+
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div className="modal-body">
+              <MetalWeightCalculator />
+            </div>
+          </div>
         </div>
       </div>
     </>

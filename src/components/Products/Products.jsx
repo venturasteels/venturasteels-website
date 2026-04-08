@@ -6,48 +6,56 @@ import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import GradesTable from "./GradesTable/GradesTable";
+import MetalWeightCalculator from "./MetalWeightCalculator/MetalWeightCalculator";
 import "./Products.css";
 
 const heroImages = [
-  "/image/quality.jpg",
-  "/image/product.jpeg",
-  "/image/bg-product-img.jpg",
+  "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775555620/quality_hzvjli.jpg",
+  "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775555329/products-page/product.jpg",
+  "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775555329/products-page/bg-product-img.jpg",
 ];
 
 const productCategories = [
   {
     title: "Hot Work Steel",
-    image: "/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472585/ventura-product-image/hot-work-steel/db6-hot-work-steel.jpg",
     path: "/products/hot-work-steel",
   },
   {
     title: "Cold Work Steel",
-    image: "/image/Cold Work Tool Steels/D2 Round Bar.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472640/ventura-product-image/cold-work-steel/Cr12MoV-round-bars.jpg",
     path: "/products/cold-work-steel",
   },
   {
     title: "Plastic Mould Steel",
-    image: "/image/Plastic Mould Steels/P 20 Flat bars.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473164/1.2738-Flat-Bars_wepy8v.jpg",
     path: "/products/plastic-mould-steel",
   },
   {
-    title: "Spring Steel",
-    image: "/image/Alloy Steels/EN 31 Rods.png",
-    path: "/products/spring-steel",
-  },
-  {
     title: "Alloy Steel",
-    image: "/image/Alloy Steels/41Cr4 Alloy Steel Round Bars.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473371/20MnCr5-Round-Bars_h9tpe5.jpg",
     path: "/products/alloy-steel",
   },
   {
+    title: "Spring Steel",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473445/Wire-Rod-bundles-2_hrl2nw.jpg",
+    path: "/products/spring-steel",
+  },
+  {
     title: "Carbon Steel",
-    image: "/image/Carbon Steels/C45 Carbon Steel Round Bars.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473472/C45-Round-Bars_aejn7v.jpg",
     path: "/products/carbon-steel",
   },
   {
     title: "Boron Steel",
-    image: "/image/Boron Steels/15B25 Round bars.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051261/10B35_Boron_Steel_Round_Bars_mzkyft.png",
     path: "/products/boron-steel",
   },
 ];
@@ -117,8 +125,10 @@ export default function ProductLanding() {
 
       {/* ===== PRODUCT GRID ===== */}
       <section className="product-grid">
-        <div className="container"> 
-          <h2 className="text-center" data-aos="fade-up">Ventura's Product Categories</h2>
+        <div className="container">
+          <h2 className="text-center" data-aos="fade-up">
+            Ventura's Product Categories
+          </h2>
 
           <div className="row-product">
             {productCategories.map((cat, index) => (
@@ -159,22 +169,21 @@ export default function ProductLanding() {
       </section>
 
       {/* ===== GRADES ===== */}
-<section className="grades-data">
-  <div className="container">
-    <div className="grades-header text-center">
-      <h2>Available Tool & Alloy Steel Grades at Ventura</h2>
-      <p>
-        Explore our wide range of Tool Steel and Alloy Steel grades
-        available in stock for immediate dispatch.
-      </p>
-    </div>
+      <section className="grades-data">
+        <div className="container">
+          <div className="grades-header text-center">
+            <h2>Available Tool & Alloy Steel Grades at Ventura</h2>
+            <p>
+              Explore our wide range of Tool Steel and Alloy Steel grades
+              available in stock for immediate dispatch.
+            </p>
+          </div>
 
-    <div className="grades-wrapper">
-      <GradesTable />
-    </div>
-  </div>
-</section>
-
+          <div className="grades-wrapper">
+            <GradesTable />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
