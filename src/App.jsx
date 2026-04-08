@@ -19,7 +19,7 @@ import UniqueLoader from "./components/Loader/UniqueLoader.jsx";
 import { useState } from "react";
 
 // Employee Contact Details
-import SawantKaruna from "./EmployeeContactDetails/KARUNASAWANT/KARUNASAWANT.jsx";
+import KarunaSawant1 from "./EmployeeContact/KarunaSawant/KarunaSawan.jsx";
 
 import "./App.css";
 // HotWork
@@ -167,7 +167,7 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/enquiry" element={<EnquiryForm />} />
           <Route path="/career" element={<Careers />} />
-          <Route path="/karuna-sawant" element={<SawantKaruna />} />
+          <Route path="/karunasawant" element={<KarunaSawant1 />} />
           {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/products/hot-work-steel" element={<HotWork />}>
             <Route path="db6" element={<DB6 />} />

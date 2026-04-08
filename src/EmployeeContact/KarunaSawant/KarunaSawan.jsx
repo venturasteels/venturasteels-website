@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
-import "./KarunaSawant.css";
+import "./SawantKaruna.css";
 
-const SawantKaruna = () => {
+const KarunaSawant1 = () => {
   return (
     <div className="kpf-wrapper">
       <Helmet>
@@ -161,7 +161,7 @@ const SawantKaruna = () => {
   );
 };
 
-export default SawantKaruna;
+export default KarunaSawant1;
 
 const handleSaveContact = () => {
   const vCardData = `
