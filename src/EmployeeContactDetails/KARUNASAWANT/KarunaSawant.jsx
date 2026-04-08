@@ -25,17 +25,13 @@ const KarunaSawant = () => {
 
             {/* RIGHT - NAME */}
             <div className="kpf-header-info">
-              {/* <h1>
-                Karuna <span>Sawant</span>
-              </h1>
-              <p>Sales & Marketing</p> */}
               <h1>Spring Steel</h1>
               <h2>EN47 / 50CRV4 / 51CRV4 / SUP9 / SAE9254 / SAE 52100</h2>
             </div>
           </div>
         </div>
 
-        {/* GRADES + TABLE */}
+        {/* GRADES + TABLE Category */}
         <div className="kpf-section mb-5">
           <div className="kpf-main-card">
             {/* HEADER */}
@@ -154,9 +150,6 @@ const KarunaSawant = () => {
             <a href="mailto:karuna@venturasteels.com">Email</a>
 
             {/* NEW BUTTON */}
-            {/* <button onClick={handleSaveContact} className="save-contact-btn">
-              Save Contact
-            </button> */}
             {/* UPDATED BUTTON */}
             <a href="/karuna-sawant.vcf" className="save-contact-btn">
               Add to Contacts
@@ -182,7 +175,6 @@ TEL;TYPE=WORK:02235034328
 EMAIL:karuna@venturasteels.com
 END:VCARD
   `;
-
   const blob = new Blob([vCardData], { type: "text/vcard" });
   const url = window.URL.createObjectURL(blob);
 
