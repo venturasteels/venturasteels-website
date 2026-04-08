@@ -27,7 +27,7 @@ const SpecialHotWorkSteelContact = () => {
 
             {/* RIGHT - NAME */}
             <div className="kpf-header-info">
-              <h1>Special Hot Work Tool Steel</h1>
+              <h1>Hot Work Tool Steel</h1>
               <h2>1.2714 / DB6</h2>
             </div>
           </div>
