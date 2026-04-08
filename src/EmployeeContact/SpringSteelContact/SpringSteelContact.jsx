@@ -1,13 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
-import "./SawantKaruna.css";
+import "./SpringSteelContact.css";
 
-const KarunaSawant1 = () => {
+const SpringSteelContact = () => {
   return (
     <div className="kpf-wrapper">
       <Helmet>
-        <title>Karuna Sawant | Ventura Alloy and Steels Pvt. Ltd.</title>
+        <title>Ventura Spring Steel | Ventura Alloy and Steels Pvt. Ltd.</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -119,6 +119,7 @@ const KarunaSawant1 = () => {
         <div className="kpf-contact">
           <h3>Contact</h3>
           <h4>Karuna Sawant</h4>
+          <h5>EN47 / 50CRV4 / 51CRV4 / SUP9 / SAE9254 / SAE 52100</h5>
           <a href="tel:02235034328" className="kpf-contact-details">
             <FaPhone style={{ marginRight: "8px" }} />
             022-3503 4328
@@ -135,13 +136,6 @@ const KarunaSawant1 = () => {
             karuna@venturasteels.com
           </a>
 
-          {/* <div className="kpf-actions">
-            <a href="tel:918591313564">Call</a>
-            <a href="https://wa.me/918591313564" target="_blank">
-              WhatsApp
-            </a>
-            <a href="mailto:karuna@venturasteels.com">Email</a>
-          </div> */}
           <div className="kpf-actions">
             <a href="tel:918591313564">Call</a>
             <a href="https://wa.me/918591313564" target="_blank">
@@ -151,7 +145,7 @@ const KarunaSawant1 = () => {
 
             {/* UPDATED BUTTON */}
             <a
-              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775631059/EMPLOYEECONTACTDETAILS/karuna-sawant.vcf"
+              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649569/EMPLOYEECONTACTDETAILS/karuna-sawant.vcf"
               className="save-contact-btn"
               target="_blank"
               rel="noopener noreferrer"
@@ -165,23 +159,4 @@ const KarunaSawant1 = () => {
   );
 };
 
-export default KarunaSawant1;
-
-const handleSaveContact = () => {
-  const vCardData = `
-BEGIN:VCARD
-VERSION:3.0
-FN:Karuna Sawant
-ORG:Ventura Alloy and Steels Pvt. Ltd.
-TITLE:Sales & Marketing
-TEL;TYPE=CELL:918591313564
-TEL;TYPE=WORK:02235034328
-EMAIL:karuna@venturasteels.com
-END:VCARD
-  `;
-  const blob = new Blob([vCardData], { type: "text/vcard" });
-  const url = window.URL.createObjectURL(blob);
-
-  // Open instead of download
-  window.location.href = url;
-};
+export default SpringSteelContact;

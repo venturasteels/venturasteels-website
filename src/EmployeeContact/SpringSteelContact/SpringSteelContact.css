@@ -64,9 +64,12 @@
 .kpf-header-info h1 span {
   color: #fe8d37;
 }
+.kpf-header-info h3 {
+  color: #2f2b60;
+}
 .kpf-header-info h2 {
   color: #fe8d37;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 /* ROLE */
@@ -204,7 +207,7 @@
 .kpf-contact h3 {
   font-weight: 700;
   font-size: 27px;
-  color: #2f2b60; /* dark blue for professional look */
+  color: #2f2b60;
   position: relative;
   display: inline-block;
   padding-bottom: 6px;
@@ -224,7 +227,12 @@
 
 .kpf-contact h4 {
   color: #fe8d37;
-  font-size: 20px;
+  font-size: 21px;
+  font-weight: 600;
+}
+.kpf-contact h5 {
+  color: #2f2b60;
+  font-size: 18px;
   font-weight: 600;
 }
 

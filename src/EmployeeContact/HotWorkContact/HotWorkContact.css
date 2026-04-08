@@ -1,0 +1,137 @@
+/* ================= CONTAINER ================= */
+.kpf-contact-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* ================= CONTACT CARD ================= */
+.kpf-contact-container .kpf-contact {
+  flex: 1;
+  min-width: 280px;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid #fe8d37;
+  transition: 0.3s;
+}
+
+.kpf-contact-container .kpf-contact:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= HEADINGS ================= */
+.kpf-contact-container .kpf-contact h3 {
+  margin: 0;
+  font-size: 26px;
+  color: #2f2b60;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.kpf-contact-container .kpf-contact h4 {
+  margin: 5px 0 15px;
+  font-size: 18px;
+  color: #2f2b60;
+  font-weight: 700;
+}
+.kpf-contact-container .kpf-contact h5 {
+  margin: 5px 0 15px;
+  font-size: 16px;
+  color: #fe8d37;
+  font-weight: 700;
+}
+
+/* ================= CONTACT DETAILS ================= */
+.kpf-contact-container .kpf-contact-details {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.kpf-contact-container .kpf-contact-details:hover {
+  color: #fe8d37;
+  transform: translateX(4px);
+}
+
+/* ================= ACTION BUTTONS ================= */
+.kpf-contact-container .kpf-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.kpf-contact-container .kpf-actions a {
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+    justify-content: center;
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* CALL */
+.kpf-contact-container .kpf-actions a:nth-child(1) {
+  background: #2f2b60;
+}
+.kpf-contact-container .kpf-actions a:nth-child(1):hover {
+  background: #312d64;
+}
+
+/* WHATSAPP */
+.kpf-contact-container .kpf-actions a:nth-child(2) {
+  background: #25d366;
+}
+.kpf-contact-container .kpf-actions a:nth-child(2):hover {
+  background: #1ebe5d;
+}
+
+/* EMAIL */
+.kpf-contact-container .kpf-actions a:nth-child(3) {
+  background: #fe8d37;
+}
+.kpf-contact-container .kpf-actions a:nth-child(3):hover {
+  background: #f58734;
+}
+
+/* SAVE CONTACT BUTTON */
+.kpf-contact-container .save-contact-btn {
+  flex: 100%;
+  background: #fff;
+  color: #2f2b60 !important;
+
+  border: 1px solid #ddd;
+}
+
+.kpf-contact-container .save-contact-btn:hover {
+  background: #f9fafc;
+  border-color: #fe8d37;
+  color: #fe8d37 !important;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .kpf-contact-container {
+    flex-direction: column;
+  }
+
+  .kpf-contact-container .kpf-actions a {
+    flex: 100%;
+  }
+}

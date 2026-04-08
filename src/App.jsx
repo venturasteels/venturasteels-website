@@ -19,7 +19,13 @@ import UniqueLoader from "./components/Loader/UniqueLoader.jsx";
 import { useState } from "react";
 
 // Employee Contact Details
-import KarunaSawant1 from "./EmployeeContact/KarunaSawant/KarunaSawan.jsx";
+import AniketGogawale from "./EmployeeContact/ColdWorkContact/ColdWorkContact.jsx";
+import HotWorkContact from "./EmployeeContact/HotWorkContact/HotWorkContact.jsx";
+import SpringSteelContact from "./EmployeeContact/SpringSteelContact/SpringSteelContact.jsx";
+import PlasticMouldSteelContact from "./EmployeeContact/PlasticMouldSteelContact/PlasticMouldSteelContact.jsx";
+import SpecialHotWorkSteelContact from "./EmployeeContact/SpecialHotWorkSteelContact/SpecialHotWorkSteelContact.jsx";
+import CarbonAlloySteelContact from "./EmployeeContact/CarbonAlloySteelContact/CarbonAlloySteelContact.jsx";
+import ProductPortfolio from "./EmployeeContact/ProductPortfolio/ProductPortfolio.jsx";
 
 import "./App.css";
 // HotWork
@@ -167,7 +173,34 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/enquiry" element={<EnquiryForm />} />
           <Route path="/career" element={<Careers />} />
-          <Route path="/karunasawant" element={<KarunaSawant1 />} />
+          <Route
+            path="/connect/cold-work-steel-contact"
+            element={<AniketGogawale />}
+          />
+          <Route
+            path="/connect/hot-work-steel-contact"
+            element={<HotWorkContact />}
+          />
+          <Route
+            path="/connect/spring-steel-contact"
+            element={<SpringSteelContact />}
+          />
+          <Route
+            path="/connect/plastic-mould-steel-contact"
+            element={<PlasticMouldSteelContact />}
+          />
+          <Route
+            path="/connect/special-hot-work-steel-contact"
+            element={<SpecialHotWorkSteelContact />}
+          />
+          <Route
+            path="/connect/carbon-alloy-steel-contact"
+            element={<CarbonAlloySteelContact />}
+          />
+          <Route
+            path="/connect/product-portfolio"
+            element={<ProductPortfolio />}
+          />
           {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/products/hot-work-steel" element={<HotWork />}>
             <Route path="db6" element={<DB6 />} />
