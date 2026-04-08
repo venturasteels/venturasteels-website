@@ -149,10 +149,14 @@ const KarunaSawant1 = () => {
             </a>
             <a href="mailto:karuna@venturasteels.com">Email</a>
 
-            {/* NEW BUTTON */}
             {/* UPDATED BUTTON */}
-            <a href="/karuna-sawant.vcf" className="save-contact-btn">
-              Add to Contacts
+            <a
+              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775631059/EMPLOYEECONTACTDETAILS/karuna-sawant.vcf"
+              className="save-contact-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📥 Save Contact
             </a>
           </div>
         </div>
