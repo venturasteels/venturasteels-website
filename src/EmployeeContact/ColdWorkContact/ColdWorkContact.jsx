@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+import "./ColdWorkContact.css";
 
 const ColdWorkContact = () => {
   return (
@@ -189,7 +190,7 @@ const ColdWorkContact = () => {
         </div>
 
         {/* CONTACT */}
-        <div className="kpf-contact">
+        <div className="kpf-contact-cold">
           <h3>Contact</h3>
           <h4>ANIKET GOGAWALE</h4>
           <h5>D2 / D3 / CR12MOV</h5>

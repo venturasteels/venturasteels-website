@@ -103,7 +103,7 @@ const PlasticMouldSteelContact = () => {
         </div>
 
         {/* CONTACT */}
-        <div className="kpf-contact">
+        <div className="kpf-contact-cold">
           <h3>Contact</h3>
           <h4>NEHA DARJI-SHAIKH / HITESH SOLANKI </h4>
           <h5>1.2311 / 1.2738 / 1.2316</h5>
