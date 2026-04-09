@@ -7,7 +7,7 @@ const CarbonAlloySteelContact = () => {
     <div className="kpf-wrapper">
       <Helmet>
         <title>
-          Ventura Special Hot Work Tool Steel | Ventura Alloy and Steels Pvt.
+          Ventura Spring, Carbon and Alloy Steel | Ventura Alloy and Steels Pvt.
           Ltd.
         </title>
         <meta name="robots" content="noindex, nofollow" />

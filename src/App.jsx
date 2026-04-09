@@ -25,7 +25,7 @@ import HotWorkContact from "./EmployeeContact/HotWorkContact/HotWorkContact.jsx"
 import PlasticMouldSteelContact from "./EmployeeContact/PlasticMouldSteelContact/PlasticMouldSteelContact.jsx";
 // import SpecialHotWorkSteelContact from "./EmployeeContact/SpecialHotWorkSteelContact/SpecialHotWorkSteelContact.jsx";
 import CarbonAlloySteelContact from "./EmployeeContact/CarbonAlloySteelContact/CarbonAlloySteelContact.jsx";
-import ProductPortfolio from "./EmployeeContact/ProductPortfolio/ProductPortfolio.jsx";
+// import ProductPortfolio from "./EmployeeContact/ProductPortfolio/ProductPortfolio.jsx";
 
 import "./App.css";
 // HotWork
@@ -111,25 +111,25 @@ ReactGA.initialize("G-PNNRG2K7VQ");
 
 const App = () => {
   // disable copy, right click and f12
-  // useEffect(() => {
-  //   const handleContextMenu = (e) => e.preventDefault();
-  //   document.addEventListener("contextmenu", handleContextMenu);
+  useEffect(() => {
+    const handleContextMenu = (e) => e.preventDefault();
+    document.addEventListener("contextmenu", handleContextMenu);
 
-  //   const handleKeyDown = (e) => {
-  //     if (
-  //       (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
-  //       e.key === "F12"
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //   };
-  //   document.addEventListener("keydown", handleKeyDown);
+    const handleKeyDown = (e) => {
+      if (
+        (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
+        e.key === "F12"
+      ) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", handleContextMenu);
-  //     document.removeEventListener("keydown", handleKeyDown);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -197,10 +197,10 @@ const App = () => {
             path="/connect/spring-carbon-alloy-steel-contact"
             element={<CarbonAlloySteelContact />}
           />
-          <Route
+          {/* <Route
             path="/connect/product-portfolio"
             element={<ProductPortfolio />}
-          />
+          /> */}
           {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/products/hot-work-steel" element={<HotWork />}>
             <Route path="db6" element={<DB6 />} />
