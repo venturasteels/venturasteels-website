@@ -191,7 +191,8 @@ const ColdWorkContact = () => {
         {/* CONTACT */}
         <div className="kpf-contact">
           <h3>Contact</h3>
-          <h4>Ventura Cold Work Tool Steel</h4>
+          <h4>ANIKET GOGAWALE</h4>
+          <h5>D2 / D3 / CR12MOV</h5>
           <a href="tel:918591313569" className="kpf-contact-details">
             <FaPhone style={{ marginRight: "8px" }} />
             085913 13569

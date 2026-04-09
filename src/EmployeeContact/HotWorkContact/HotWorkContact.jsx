@@ -48,96 +48,229 @@ const HotWorkContact = () => {
                 <thead>
                   <tr>
                     <th>Grade</th>
-                    <th>Round Bar Size</th>
-                    <th>Flat Bar (Thickness)</th>
-                    <th>Flat Bar (Width)</th>
+                    <th>Form</th>
+                    <th>Size Range</th>
+                    <th>Thickness (MM)</th>
+                    <th>Width (MM)</th>
                     <th>MOQ</th>
                   </tr>
                 </thead>
 
                 <tbody>
+                  {/* ================= DB6 ================= */}
+                  <tr>
+                    <td>DB6</td>
+                    <td>Round Bar</td>
+                    <td>DIA 102 – 432</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>DB6</td>
+                    <td>Round Bar</td>
+                    <td>DIA 102 – 505</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>DB6</td>
+                    <td>Round Bar</td>
+                    <td>DIA 85 – 852+</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>DB6</td>
+                    <td>Round Bar</td>
+                    <td>DIA 132 – 810</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+
+                  <tr>
+                    <td>DB6</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
+                    <td>125 – 410</td>
+                    <td>260 – 410</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>DB6</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
+                    <td>210 – 405</td>
+                    <td>210 – 555</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>DB6</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
+                    <td>160 – 610</td>
+                    <td>210 – 1210</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+
+                  {/* ================= 1.2714 ================= */}
+                  <tr>
+                    <td>1.2714</td>
+                    <td>Round Bar</td>
+                    <td>DIA 102 – 452</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>1.2714</td>
+                    <td>Round Bar</td>
+                    <td>DIA 102 – 505</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>1.2714</td>
+                    <td>Round Bar</td>
+                    <td>DIA 85 – 810+</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>1.2714</td>
+                    <td>Round Bar</td>
+                    <td>DIA 132 – 710</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+
+                  <tr>
+                    <td>1.2714</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
+                    <td>125 – 410</td>
+                    <td>260 – 410</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>1.2714</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
+                    <td>210 – 405</td>
+                    <td>210 – 555</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>1.2714</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
+                    <td>160 – 610</td>
+                    <td>210 – 1210</td>
+                    <td>0.33 Ton</td>
+                  </tr>
+
+                  {/* ================= H13 ================= */}
                   <tr>
                     <td>H13</td>
+                    <td>Round Bar</td>
                     <td>DIA 36.5 – 132</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
-
                   <tr>
                     <td>H13</td>
+                    <td>Round Bar</td>
                     <td>DIA 142 – 412</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
 
+                  {/* ================= 1.2344 ================= */}
                   <tr>
                     <td>1.2344</td>
+                    <td>Round Bar</td>
                     <td>DIA 142 – 752</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>10 Ton</td>
+                  </tr>
+                  <tr>
+                    <td>1.2344</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
                     <td>25 – 150</td>
                     <td>65 – 505</td>
                     <td>10 Ton</td>
                   </tr>
-
                   <tr>
                     <td>1.2344</td>
-                    <td>DIA 142 – 752</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
                     <td>40 – 300</td>
                     <td>65 – 600</td>
                     <td>10 Ton</td>
                   </tr>
-
                   <tr>
                     <td>1.2344</td>
-                    <td>DIA 142 – 752</td>
+                    <td>Flat Bar</td>
+                    <td>-</td>
                     <td>45 – 500</td>
                     <td>150 – 1000</td>
                     <td>10 Ton</td>
                   </tr>
 
+                  {/* ================= OTHER GRADES ================= */}
                   <tr>
                     <td>H11</td>
+                    <td>Round Bar</td>
                     <td>DIA 40 – 412</td>
                     <td>-</td>
                     <td>-</td>
                     <td>5 Ton</td>
                   </tr>
-
                   <tr>
                     <td>1.2343</td>
+                    <td>Round Bar</td>
                     <td>DIA 40 – 412</td>
                     <td>-</td>
                     <td>-</td>
                     <td>5 Ton</td>
                   </tr>
-
                   <tr>
                     <td>H21</td>
+                    <td>Round Bar</td>
                     <td>DIA 40 – 412</td>
                     <td>-</td>
                     <td>-</td>
                     <td>5 Ton</td>
                   </tr>
-
                   <tr>
                     <td>H10</td>
+                    <td>Round Bar</td>
                     <td>DIA 40 – 412</td>
                     <td>-</td>
                     <td>-</td>
                     <td>5 Ton</td>
                   </tr>
-
                   <tr>
                     <td>1.2365</td>
+                    <td>Round Bar</td>
                     <td>DIA 40 – 412</td>
                     <td>-</td>
                     <td>-</td>
                     <td>5 Ton</td>
                   </tr>
-
                   <tr>
                     <td>H12</td>
+                    <td>Round Bar</td>
                     <td>DIA 40 – 412</td>
                     <td>-</td>
                     <td>-</td>
@@ -151,81 +284,160 @@ const HotWorkContact = () => {
 
         {/* CONTACT */}
         <div className="kpf-contact-container d-flex g-5">
-          <div className="kpf-contact">
-            <h3>Contact</h3>
-            <h4>SEEMA BANE-NAGVEKAR </h4>
-            <h5>H13 / 1.2344 & H-series</h5>
-            <a href="tel:02235034303 " className="kpf-contact-details">
-              <FaPhone style={{ marginRight: "8px" }} />
-              022 3503 4303
-            </a>
-            <a href="tel:918655668174" className="kpf-contact-details">
-              <FaPhone style={{ marginRight: "8px" }} />
-              086556 68174
-            </a>
-            <a
-              href="mailto:karuna@venturasteels.com"
-              className="kpf-contact-details"
-            >
-              <FaEnvelope style={{ marginRight: "8px" }} />
-              seema@venturasteels.com
-            </a>
+          <div className="kpf-contact-container d-flex flex-wrap gap-4">
+            {/* ANIL KANAL */}
+            <div className="kpf-contact">
+              <h3>Contact</h3>
+              <h4>ANIL KANAL</h4>
+              <h5>All Grades (Specially H-Series)</h5>
 
-            <div className="kpf-actions">
-              <a href="tel:918655668174">Call</a>
-              <a href="https://wa.me/918655668174" target="_blank">
-                WhatsApp
+              <a href="tel:02235034307" className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                022-3503 4307
               </a>
-              <a href="mailto:seema@venturasteels.com">Email</a>
-
-              {/* UPDATED BUTTON */}
+              <a href="tel:918591313561" className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                085913 13561
+              </a>
               <a
-                href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649571/EMPLOYEECONTACTDETAILS/seema.vcf"
-                className="save-contact-btn"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:anil@venturasteels.com"
+                className="kpf-contact-details"
               >
-                📥 Save Contact
+                <FaEnvelope style={{ marginRight: "8px" }} />
+                anil@venturasteels.com
               </a>
+
+              <div className="kpf-actions">
+                <a href="tel:918591313561">Call</a>
+                <a href="https://wa.me/918591313561" target="_blank">
+                  WhatsApp
+                </a>
+                <a href="mailto:anil@venturasteels.com">Email</a>
+                <a
+                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649569/EMPLOYEECONTACTDETAILS/anil.vcf"
+                  className="save-contact-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  📥 Save Contact
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="kpf-contact">
-            <h3>Contact</h3>
-            <h4>ANIL KANAL </h4>
-            <h5>All grades (Specially H-series)</h5>
-            <a href="tel:02235034307 " className="kpf-contact-details">
-              <FaPhone style={{ marginRight: "8px" }} />
-              022-3503 4307
-            </a>
-            <a href="tel:918591313561" className="kpf-contact-details">
-              <FaPhone style={{ marginRight: "8px" }} />
-              085913 13561
-            </a>
-            <a
-              href="mailto:anil@venturasteels.com"
-              className="kpf-contact-details"
-            >
-              <FaEnvelope style={{ marginRight: "8px" }} />
-              anil@venturasteels.com
-            </a>
-
-            <div className="kpf-actions">
-              <a href="tel:918591313564">Call</a>
-              <a href="https://wa.me/918591313564" target="_blank">
-                WhatsApp
+            <div className="kpf-contact">
+              <h3>Contact</h3>
+              <h4>SEEMA BANE-NAGVEKAR </h4>
+              <h5>H13 / 1.2344 & H-series</h5>
+              <a href="tel:02235034303 " className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                022 3503 4303
               </a>
-              <a href="mailto:anil@venturasteels.com">Email</a>
-
-              {/* UPDATED BUTTON */}
+              <a href="tel:918655668174" className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                086556 68174
+              </a>
               <a
-                href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649569/EMPLOYEECONTACTDETAILS/anil.vcf"
-                className="save-contact-btn"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:karuna@venturasteels.com"
+                className="kpf-contact-details"
               >
-                📥 Save Contact
+                <FaEnvelope style={{ marginRight: "8px" }} />
+                seema@venturasteels.com
               </a>
+
+              <div className="kpf-actions">
+                <a href="tel:918655668174">Call</a>
+                <a href="https://wa.me/918655668174" target="_blank">
+                  WhatsApp
+                </a>
+                <a href="mailto:seema@venturasteels.com">Email</a>
+
+                {/* UPDATED BUTTON */}
+                <a
+                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649571/EMPLOYEECONTACTDETAILS/seema.vcf"
+                  className="save-contact-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  📥 Save Contact
+                </a>
+              </div>
+            </div>
+
+            {/* PRATIK PATIL */}
+            <div className="kpf-contact">
+              <h3>Contact</h3>
+              <h4>PRATIK PATIL</h4>
+              <h5>1.2714 / DB6</h5>
+
+              <a href="tel:02235034311" className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                022-3503 4311
+              </a>
+              <a href="tel:917977097657" className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                079770 97657
+              </a>
+              <a
+                href="mailto:dispatch@venturasteels.com"
+                className="kpf-contact-details"
+              >
+                <FaEnvelope style={{ marginRight: "8px" }} />
+                dispatch@venturasteels.com
+              </a>
+
+              <div className="kpf-actions">
+                <a href="tel:917977097657">Call</a>
+                <a href="https://wa.me/917977097657" target="_blank">
+                  WhatsApp
+                </a>
+                <a href="mailto:dispatch@venturasteels.com">Email</a>
+                <a
+                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649572/EMPLOYEECONTACTDETAILS/pratik.vcf"
+                  className="save-contact-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  📥 Save Contact
+                </a>
+              </div>
+            </div>
+
+            {/* RAM BADADE */}
+            <div className="kpf-contact">
+              <h3>Contact</h3>
+              <h4>RAM BADADE</h4>
+              <h5>1.2714 / DB6</h5>
+
+              <a href="tel:02235034311" className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                022-3503 4311
+              </a>
+              <a href="tel:919324959833" className="kpf-contact-details">
+                <FaPhone style={{ marginRight: "8px" }} />
+                093249 59833
+              </a>
+              <a
+                href="mailto:ram@venturasteels.com"
+                className="kpf-contact-details"
+              >
+                <FaEnvelope style={{ marginRight: "8px" }} />
+                ram@venturasteels.com
+              </a>
+
+              <div className="kpf-actions">
+                <a href="tel:919324959833">Call</a>
+                <a href="https://wa.me/919324959833" target="_blank">
+                  WhatsApp
+                </a>
+                <a href="mailto:ram@venturasteels.com">Email</a>
+                <a
+                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649571/EMPLOYEECONTACTDETAILS/ram.vcf"
+                  className="save-contact-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  📥 Save Contact
+                </a>
+              </div>
             </div>
           </div>
         </div>

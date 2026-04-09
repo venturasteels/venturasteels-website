@@ -132,7 +132,7 @@ const PlasticMouldSteelContact = () => {
 
             {/* UPDATED BUTTON */}
             <a
-              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649568/EMPLOYEECONTACTDETAILS/neha-hitesh.vcf"
+              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649568/EMPLOYEECONTACTDETAILS/neha-hitesh.vcf/"
               className="save-contact-btn"
               target="_blank"
               rel="noopener noreferrer"

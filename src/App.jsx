@@ -21,9 +21,9 @@ import { useState } from "react";
 // Employee Contact Details
 import AniketGogawale from "./EmployeeContact/ColdWorkContact/ColdWorkContact.jsx";
 import HotWorkContact from "./EmployeeContact/HotWorkContact/HotWorkContact.jsx";
-import SpringSteelContact from "./EmployeeContact/SpringSteelContact/SpringSteelContact.jsx";
+// import SpringSteelContact from "./EmployeeContact/SpringSteelContact/SpringSteelContact.jsx";
 import PlasticMouldSteelContact from "./EmployeeContact/PlasticMouldSteelContact/PlasticMouldSteelContact.jsx";
-import SpecialHotWorkSteelContact from "./EmployeeContact/SpecialHotWorkSteelContact/SpecialHotWorkSteelContact.jsx";
+// import SpecialHotWorkSteelContact from "./EmployeeContact/SpecialHotWorkSteelContact/SpecialHotWorkSteelContact.jsx";
 import CarbonAlloySteelContact from "./EmployeeContact/CarbonAlloySteelContact/CarbonAlloySteelContact.jsx";
 import ProductPortfolio from "./EmployeeContact/ProductPortfolio/ProductPortfolio.jsx";
 
@@ -111,25 +111,25 @@ ReactGA.initialize("G-PNNRG2K7VQ");
 
 const App = () => {
   // disable copy, right click and f12
-  useEffect(() => {
-    const handleContextMenu = (e) => e.preventDefault();
-    document.addEventListener("contextmenu", handleContextMenu);
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => e.preventDefault();
+  //   document.addEventListener("contextmenu", handleContextMenu);
 
-    const handleKeyDown = (e) => {
-      if (
-        (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
-        e.key === "F12"
-      ) {
-        e.preventDefault();
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown);
+  //   const handleKeyDown = (e) => {
+  //     if (
+  //       (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
+  //       e.key === "F12"
+  //     ) {
+  //       e.preventDefault();
+  //     }
+  //   };
+  //   document.addEventListener("keydown", handleKeyDown);
 
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //     document.removeEventListener("keydown", handleKeyDown);
+  //   };
+  // }, []);
 
   useEffect(() => {
     AOS.init({
@@ -181,20 +181,20 @@ const App = () => {
             path="/connect/hot-work-steel-contact"
             element={<HotWorkContact />}
           />
-          <Route
+          {/* <Route
             path="/connect/spring-steel-contact"
             element={<SpringSteelContact />}
-          />
+          /> */}
           <Route
             path="/connect/plastic-mould-steel-contact"
             element={<PlasticMouldSteelContact />}
           />
-          <Route
+          {/* <Route
             path="/connect/special-hot-work-steel-contact"
             element={<SpecialHotWorkSteelContact />}
-          />
+          /> */}
           <Route
-            path="/connect/carbon-alloy-steel-contact"
+            path="/connect/spring-carbon-alloy-steel-contact"
             element={<CarbonAlloySteelContact />}
           />
           <Route

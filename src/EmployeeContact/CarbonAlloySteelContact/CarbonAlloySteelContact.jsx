@@ -27,8 +27,11 @@ const CarbonAlloySteelContact = () => {
 
             {/* RIGHT - NAME */}
             <div className="kpf-header-info">
-              <h1>Alloy and Carbon Steel</h1>
-              <h2>C45 / 20MNCR5 / SAE4140 / SAE1018 / ST52.3 / 42CRMO4</h2>
+              <h1>Spring, Carbon and Alloy Steel</h1>
+              <h2>
+                C45 / 20MNCR5 / SAE4140 / SAE1018 / ST52.3 / 42CRMO4/EN47 /
+                50CRV4 / 51CRV4 / SUP9 / SAE9254 / SAE 52100
+              </h2>
             </div>
           </div>
         </div>
@@ -51,7 +54,118 @@ const CarbonAlloySteelContact = () => {
                 </thead>
 
                 <tbody>
-                  {/* CARBON STEEL */}
+                  {/* ================= SPRING STEEL ================= */}
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>50CrV4 / EN47</td>
+                    <td>Round Bar</td>
+                    <td>16 – 90 MM</td>
+                    <td>250–300 kg</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>50CrV4 / EN47</td>
+                    <td>Wire Rod</td>
+                    <td>5.5 – 32 MM</td>
+                    <td>2200–3000 kg</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>51CrV4 / EN47</td>
+                    <td>Round Bar</td>
+                    <td>16 – 90 MM</td>
+                    <td>250–300 kg</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>51CrV4 / EN47</td>
+                    <td>Wire Rod</td>
+                    <td>5.5 – 32 MM</td>
+                    <td>2200–3000 kg</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>SUP 9</td>
+                    <td>Round Bar</td>
+                    <td>16 – 90 MM</td>
+                    <td>-</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>SUP 9</td>
+                    <td>Wire Rod</td>
+                    <td>10 – 30 MM</td>
+                    <td>2200–3000 kg</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>SAE 9254</td>
+                    <td>Round Bar</td>
+                    <td>16 – 90 MM</td>
+                    <td>-</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>SAE 9254</td>
+                    <td>Wire Rod</td>
+                    <td>10 – 30 MM</td>
+                    <td>2200–3000 kg</td>
+                    <td>
+                      <span className="stock ready">Ready</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>SAE 52100</td>
+                    <td>Round Bar</td>
+                    <td>25 – 90 MM</td>
+                    <td>5 Ton</td>
+                    <td>
+                      <span className="stock advance">Advance</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Spring Steel</td>
+                    <td>SAE 52100</td>
+                    <td>Wire Rod</td>
+                    <td>5.5 – 32 MM</td>
+                    <td>15 Tonnes</td>
+                    <td>
+                      <span className="stock advance">Advance</span>
+                    </td>
+                  </tr>
+
+                  {/* ================= CARBON STEEL ================= */}
                   <tr>
                     <td>Carbon Steel</td>
                     <td>C45</td>
@@ -85,7 +199,7 @@ const CarbonAlloySteelContact = () => {
                     </td>
                   </tr>
 
-                  {/* ALLOY STEEL */}
+                  {/* ================= ALLOY STEEL ================= */}
                   <tr>
                     <td>Alloy Steel</td>
                     <td>20MNCR5</td>
@@ -195,6 +309,44 @@ const CarbonAlloySteelContact = () => {
               {/* UPDATED BUTTON */}
               <a
                 href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649570/EMPLOYEECONTACTDETAILS/puja.vcf"
+                className="save-contact-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📥 Save Contact
+              </a>
+            </div>
+          </div>
+          <div className="kpf-contact">
+            <h3>Contact</h3>
+            <h4>Karuna Sawant</h4>
+            <h5>EN47 / 50CRV4 / 51CRV4 / SUP9 / SAE9254 / SAE 52100</h5>
+            <a href="tel:02235034328" className="kpf-contact-details">
+              <FaPhone style={{ marginRight: "8px" }} />
+              022-3503 4328
+            </a>
+            <a href="tel:918591313564" className="kpf-contact-details">
+              <FaPhone style={{ marginRight: "8px" }} />
+              085913 13564
+            </a>
+            <a
+              href="mailto:karuna@venturasteels.com"
+              className="kpf-contact-details"
+            >
+              <FaEnvelope style={{ marginRight: "8px" }} />
+              karuna@venturasteels.com
+            </a>
+
+            <div className="kpf-actions">
+              <a href="tel:918591313564">Call</a>
+              <a href="https://wa.me/918591313564" target="_blank">
+                WhatsApp
+              </a>
+              <a href="mailto:karuna@venturasteels.com">Email</a>
+
+              {/* UPDATED BUTTON */}
+              <a
+                href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649569/EMPLOYEECONTACTDETAILS/karuna-sawant.vcf"
                 className="save-contact-btn"
                 target="_blank"
                 rel="noopener noreferrer"

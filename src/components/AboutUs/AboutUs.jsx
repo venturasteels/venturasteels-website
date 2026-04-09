@@ -7,7 +7,7 @@ const managementData = [
   {
     name: "Mr. Bharat Dipchand Shah",
     role: "Director : Founder & Mentor",
-    image: "/image/director.jpg",
+    image: "/image/management/Bharat Shah34.png",
     color: "bg-primary",
     description:
       "A steel industry veteran whose extensive experience informs Ventura's enduring strategy and core values.  ",
@@ -24,7 +24,7 @@ const managementData = [
   {
     name: "Mrs. Poonam Aashish Shah",
     role: "Whole Time Director",
-    image: "/image/director.jpg",
+    image: "/image/management/Poonam Shah12.png",
     color: "bg-success",
     description:
       "Oversees marketing initiatives and leads the drive into international markets.",
