@@ -214,7 +214,7 @@ const AboutUs = () => {
         </section>
 
         {/* management-section */}
-        {/* <section className="management-section">
+        <section className="management-section">
           <div className="container">
             <h2 className="main-heading text-center ">Our Management</h2>
 
@@ -222,17 +222,17 @@ const AboutUs = () => {
               {managementData.map((member, idx) => (
                 <div className="col-md-4 col-sm-6" key={idx}>
                   <div className={`team-card ${idx === 1 ? "active" : ""}`}>
-                    IMAGE
+                    {/* IMAGE */}
                     <div className="team-img">
                       <img src={member.image} alt={member.name} />
                     </div>
 
-                    CONTENT
+                    {/* CONTENT */}
                     <div className="team-content">
                       <span className="number">
                         {String(idx + 1).padStart(2, "0")}
                       </span>
-
+                
                       <h5>{member.name}</h5>
                       <p className="role">{member.role}</p>
                       <p className="desc">{member.description}</p>
@@ -242,7 +242,7 @@ const AboutUs = () => {
               ))}
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* team-section */}
         <section className="our-team-section py-5">
