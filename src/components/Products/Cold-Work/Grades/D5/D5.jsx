@@ -68,7 +68,15 @@ export default function D5() {
       "name": "Form",
       "value": "Round, Flat"
     }
-  ]
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/cold-work-steel/d5"
+  }
 }
 `}
         </script>

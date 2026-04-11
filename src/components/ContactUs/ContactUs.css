@@ -1,5 +1,4 @@
 .contact-section {
-  margin-top: 7.2rem !important;
   padding: 60px 20px;
   background: linear-gradient(180deg, #fff9f4, #fef3e9);
 }
@@ -10,6 +9,7 @@
 }
 
 .contact-wrapper {
+  margin-top: 7.2rem !important;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
