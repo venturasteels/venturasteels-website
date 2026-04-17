@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import GradesTable from "./GradesTable/GradesTable";
 import MetalWeightCalculator from "./MetalWeightCalculator/MetalWeightCalculator";
+import { useLocation } from "react-router-dom";
 import "./Products.css";
 
 const heroImages = [
@@ -72,6 +73,19 @@ export default function ProductLanding() {
     AOS.init({ duration: 700, once: true });
   }, []);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 80); // delay ensures DOM is loaded
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <HelmetProvider>
@@ -81,6 +95,16 @@ export default function ProductLanding() {
             name="description"
             content="Explore Ventura Alloy & Steels’ complete range of Tool Steels, Alloy Steels and Engineering Steels with precision processing and reliable supply."
           />
+          <meta
+            name="description"
+            content="Explore Ventura Alloy & Steels Pvt. Ltd.’s complete range of Tool Steels, Alloy Steels, Carbon Steels, Spring Steels and Plastic Mould Steels. We offer precision machining, reliable stock availability, and fast delivery across India for industrial applications."
+          />
+
+          <meta
+            name="keywords"
+            content="tool steel supplier India, alloy steel supplier Mumbai, cold work steel, hot work steel, plastic mould steel, carbon steel, spring steel, engineering steel, steel round bars India, die steel supplier, industrial steel supplier, Ventura Steels"
+          />
+
           <link rel="canonical" href="https://venturasteels.com/products" />
         </Helmet>
       </HelmetProvider>
@@ -179,7 +203,7 @@ export default function ProductLanding() {
             </p>
           </div>
 
-          <div className="grades-wrapper">
+          <div id="grades-section" className="grades-wrapper">
             <GradesTable />
           </div>
         </div>

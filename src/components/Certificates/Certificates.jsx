@@ -82,14 +82,24 @@ export default function Certifications() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Certifications | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <title>
+            Certifications & Memberships | ISO 9001:2015 Certified Steel
+            Supplier India | Ventura Alloy & Steels Pvt. Ltd.
+          </title>
+
           <meta
             name="description"
-            content="Ventura Alloy & Steels Pvt. Ltd. is ISO 9001:2015 certified, demonstrating our commitment to quality, reliability, and global standards in steel supply and services."
+            content="Ventura Alloy & Steels Pvt. Ltd. holds ISO 9001:2015 certification and is a member of leading industry bodies like CII, IGCC, TAGMA, and AIFI. Our certifications reflect commitment to quality, reliability, and global standards in steel supply."
           />
+
           <meta
             name="keywords"
-            content="Ventura Steels Certifications, ISO 9001:2015 Steel Supplier, Certified Steel Stockist, Quality Certifications, Steel Industry Standards, Trusted Steel Supplier India"
+            content="ISO 9001:2015 steel company India, certified steel supplier Mumbai, Ventura Steels certifications, steel industry memberships India, CII IGCC TAGMA AIFI member, quality certified steel stockist"
+          />
+
+          <link
+            rel="canonical"
+            href="https://venturasteels.com/certifications"
           />
         </Helmet>
       </HelmetProvider>

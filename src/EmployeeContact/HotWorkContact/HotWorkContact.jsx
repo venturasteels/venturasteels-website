@@ -300,11 +300,11 @@ const HotWorkContact = () => {
                 085913 13561
               </a>
               <a
-                href="mailto:anil@venturasteels.com"
+                href="mailto:hotworksteel@venturasteels.com"
                 className="kpf-contact-details"
               >
                 <FaEnvelope style={{ marginRight: "8px" }} />
-                anil@venturasteels.com
+                hotworksteel@venturasteels.com
               </a>
 
               <div className="kpf-actions">
@@ -312,9 +312,9 @@ const HotWorkContact = () => {
                 <a href="https://wa.me/918591313561" target="_blank">
                   WhatsApp
                 </a>
-                <a href="mailto:anil@venturasteels.com">Email</a>
+                <a href="mailto:hotworksteel@venturasteels.com">Email</a>
                 <a
-                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649569/EMPLOYEECONTACTDETAILS/anil.vcf"
+                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1776403489/anil_wpekci.vcf"
                   className="save-contact-btn"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -336,7 +336,7 @@ const HotWorkContact = () => {
                 086556 68174
               </a>
               <a
-                href="mailto:karuna@venturasteels.com"
+                href="mailto:seema@venturasteels.com"
                 className="kpf-contact-details"
               >
                 <FaEnvelope style={{ marginRight: "8px" }} />
@@ -377,11 +377,11 @@ const HotWorkContact = () => {
                 079770 97657
               </a>
               <a
-                href="mailto:dispatch@venturasteels.com"
+                href="mailto:dieblock@venturasteels.com"
                 className="kpf-contact-details"
               >
                 <FaEnvelope style={{ marginRight: "8px" }} />
-                dispatch@venturasteels.com
+                dieblock@venturasteels.com
               </a>
 
               <div className="kpf-actions">
@@ -389,9 +389,9 @@ const HotWorkContact = () => {
                 <a href="https://wa.me/917977097657" target="_blank">
                   WhatsApp
                 </a>
-                <a href="mailto:dispatch@venturasteels.com">Email</a>
+                <a href="mailto:dieblock@venturasteels.com">Email</a>
                 <a
-                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649572/EMPLOYEECONTACTDETAILS/pratik.vcf"
+                  href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1776403490/pratik_poj4rg.vcf"
                   className="save-contact-btn"
                   target="_blank"
                   rel="noopener noreferrer"

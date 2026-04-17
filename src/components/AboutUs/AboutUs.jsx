@@ -24,7 +24,7 @@ const managementData = [
   {
     name: "Mrs. Poonam Aashish Shah",
     role: "Whole Time Director",
-    image: "/image/management/Poonam Shah12.png",
+    image: "/image/Poonam Shah12.png",
     color: "bg-success",
     description:
       "Oversees marketing initiatives and leads the drive into international markets.",

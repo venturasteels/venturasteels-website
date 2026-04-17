@@ -199,11 +199,11 @@ const ColdWorkContact = () => {
             085913 13569
           </a>
           <a
-            href="mailto:marketing@venturasteels.com"
+            href="mailto:cwtoolsteel@venturasteels.com"
             className="kpf-contact-details"
           >
             <FaEnvelope style={{ marginRight: "8px" }} />
-            marketing@venturasteels.com
+            cwtoolsteel@venturasteels.com
           </a>
 
           {/* <div className="kpf-actions">
@@ -218,11 +218,11 @@ const ColdWorkContact = () => {
             <a href="https://wa.me/918591313569" target="_blank">
               WhatsApp
             </a>
-            <a href="mailto:karuna@venturasteels.com">Email</a>
+            <a href="mailto:cwtoolsteel@venturasteels.com">Email</a>
 
             {/* UPDATED BUTTON */}
             <a
-              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775631059/EMPLOYEECONTACTDETAILS/karuna-sawant.vcf"
+              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1776403489/aniket_mlttkx.vcf"
               className="save-contact-btn"
               target="_blank"
               rel="noopener noreferrer"

@@ -13,7 +13,8 @@ const CarbonAlloySteelContact = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="kpf-container">0000
+      <div className="kpf-container">
+        0000
         {/* HEADER */}
         <div className="kpf-header">
           <div className="kpf-header-card">
@@ -35,7 +36,6 @@ const CarbonAlloySteelContact = () => {
             </div>
           </div>
         </div>
-
         {/* GRADES + TABLE Category */}
         <div className="kpf-section mb-5">
           <div className="kpf-main-card">
@@ -237,7 +237,6 @@ const CarbonAlloySteelContact = () => {
             </div>
           </div>
         </div>
-
         {/* CONTACT */}
         <div className="kpf-contact-container d-flex g-5">
           <div className="kpf-contact">
@@ -292,11 +291,11 @@ const CarbonAlloySteelContact = () => {
               08591313567
             </a>
             <a
-              href="mailto:enquiry@venturasteels.com"
+              href="mailto:inquiry@venturasteels.com"
               className="kpf-contact-details"
             >
               <FaEnvelope style={{ marginRight: "8px" }} />
-              enquiry@venturasteels.com
+              inquiry@venturasteels.com
             </a>
 
             <div className="kpf-actions">
@@ -304,11 +303,11 @@ const CarbonAlloySteelContact = () => {
               <a href="https://wa.me/918591313567" target="_blank">
                 WhatsApp
               </a>
-              <a href="mailto:enquiry@venturasteels.com">Email</a>
+              <a href="inquiry@venturasteels.com">Email</a>
 
               {/* UPDATED BUTTON */}
               <a
-                href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649570/EMPLOYEECONTACTDETAILS/puja.vcf"
+                href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1776403491/puja_mnrsej.vcf"
                 className="save-contact-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -330,11 +329,11 @@ const CarbonAlloySteelContact = () => {
               085913 13564
             </a>
             <a
-              href="mailto:karuna@venturasteels.com"
+              href="mailto:springsteel@venturasteels.com"
               className="kpf-contact-details"
             >
               <FaEnvelope style={{ marginRight: "8px" }} />
-              karuna@venturasteels.com
+              springsteel@venturasteels.com
             </a>
 
             <div className="kpf-actions">
@@ -342,11 +341,11 @@ const CarbonAlloySteelContact = () => {
               <a href="https://wa.me/918591313564" target="_blank">
                 WhatsApp
               </a>
-              <a href="mailto:karuna@venturasteels.com">Email</a>
+              <a href="mailto:springsteel@venturasteels.com">Email</a>
 
               {/* UPDATED BUTTON */}
               <a
-                href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649569/EMPLOYEECONTACTDETAILS/karuna-sawant.vcf"
+                href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1776403489/karuna-sawant_ajo8qp.vcf"
                 className="save-contact-btn"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -1,5 +1,6 @@
 import React from "react";
 import SmartEmailLink from "../SmartEmailLink";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -67,6 +68,11 @@ const Footer = () => {
                   <a href="/products" className="footer-link">
                     Products
                   </a>
+                </li>
+                <li>
+                  <Link to="/products#grades-section" className="footer-link">
+                    View Grades
+                  </Link>
                 </li>
                 <li>
                   <a href="/products/hot-work-steel" className="footer-link">

@@ -45,16 +45,22 @@ export default function D2() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "D2 Cold Work Tool Steel",
+  "image": "https://venturasteels.com/image/cold-work-steel/Cr12MoV-round-bars.JPEG",
   "description": "D2 / 1.2379 high carbon high chromium cold work tool steel with high wear resistance, excellent hardness and abrasion resistance, widely used in cutting, stamping and forming tools.",
+  
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Cold Work Tool Steel",
+  "category": "Cold Work Tool Steel",
+
   "url": "https://venturasteels.com/products/cold-work-steel/d2",
 
   "additionalProperty": [
@@ -72,10 +78,12 @@ export default function D2() {
 
   "offers": {
     "@type": "Offer",
+    "url": "https://venturasteels.com/products/cold-work-steel/d2",
     "priceCurrency": "INR",
     "price": "0",
+    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
-    "url": "https://venturasteels.com/products/cold-work-steel/d2"
+    "itemCondition": "https://schema.org/NewCondition"
   }
 }
 `}

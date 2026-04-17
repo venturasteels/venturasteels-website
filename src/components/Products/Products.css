@@ -453,6 +453,10 @@
   border: 1px solid rgba(39, 63, 79, 0.08);
 }
 
+#grades-section {
+  scroll-margin-top: 18rem;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
   .row-product {
@@ -481,6 +485,7 @@
     margin-top: 12.4rem !important;
   }
 }
+
 @media (min-width: 452px) and (max-width: 763px) {
   .hotwork-container,
   .coldwork-container,

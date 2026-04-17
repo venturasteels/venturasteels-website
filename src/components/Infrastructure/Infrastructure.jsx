@@ -44,7 +44,17 @@ const Infrastructure = () => {
           <title>Infrastructure | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Ventura Alloy & Steels infrastructure includes a 72,000 sq. ft. Mumbai stocking and machining center equipped with advanced cutting, storage, and testing facilities."
+            content="Explore Ventura Alloy & Steels Pvt. Ltd.’s 72,000 sq. ft. infrastructure facility in Bhiwandi, Mumbai. Equipped with advanced machining, CNC cutting, high-capacity storage, cranes, testing systems, and rapid dispatch capabilities for industrial steel solutions."
+          />
+
+          <meta
+            name="keywords"
+            content="steel infrastructure India, steel warehouse Mumbai, Bhiwandi steel facility, CNC machining facility India, steel storage capacity, industrial steel processing, cutting machines steel, bandsaw machines India, Ventura Steels infrastructure"
+          />
+
+          <link
+            rel="canonical"
+            href="https://venturasteels.com/infrastructure"
           />
         </Helmet>
       </HelmetProvider>

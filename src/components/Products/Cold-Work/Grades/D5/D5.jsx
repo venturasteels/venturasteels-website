@@ -45,16 +45,22 @@ export default function D5() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "D5 Cold Work Tool Steel",
+  "image": ""https://venturasteels.com/image/cold-work-steel/Cr12MoV-round-bars.JPEG"",
   "description": "D5 / Cr12MoV / 1.2601 cold work tool steel with high wear resistance, toughness and dimensional stability, suitable for thread rolling and forming applications.",
+  
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Cold Work Tool Steel",
+  "category": "Cold Work Tool Steel",
+
   "url": "https://venturasteels.com/products/cold-work-steel/d5",
 
   "additionalProperty": [
@@ -72,10 +78,12 @@ export default function D5() {
 
   "offers": {
     "@type": "Offer",
+    "url": "https://venturasteels.com/products/cold-work-steel/d5",
     "priceCurrency": "INR",
     "price": "0",
+    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
-    "url": "https://venturasteels.com/products/cold-work-steel/d5"
+    "itemCondition": "https://schema.org/NewCondition"
   }
 }
 `}

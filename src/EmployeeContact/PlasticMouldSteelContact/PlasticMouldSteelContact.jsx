@@ -116,11 +116,11 @@ const PlasticMouldSteelContact = () => {
             085913 13565
           </a>
           <a
-            href="mailto:neha@venturasteels.com"
+            href="mailto:p20@venturasteels.com"
             className="kpf-contact-details"
           >
             <FaEnvelope style={{ marginRight: "8px" }} />
-            neha@venturasteels.com
+            p20@venturasteels.com
           </a>
 
           <div className="kpf-actions">
@@ -128,11 +128,11 @@ const PlasticMouldSteelContact = () => {
             <a href="https://wa.me/918591313565" target="_blank">
               WhatsApp
             </a>
-            <a href="mailto:neha@venturasteels.com">Email</a>
+            <a href="mailto:p20@venturasteels.com">Email</a>
 
             {/* UPDATED BUTTON */}
             <a
-              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1775649568/EMPLOYEECONTACTDETAILS/neha-hitesh.vcf/"
+              href="https://res.cloudinary.com/dgujwx9r9/raw/upload/v1776403490/neha-hitesh_zf4nju.vcf"
               className="save-contact-btn"
               target="_blank"
               rel="noopener noreferrer"
