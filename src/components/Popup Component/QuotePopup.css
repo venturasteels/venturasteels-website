@@ -1,0 +1,154 @@
+/* Modal */
+.custom-popup .modal-content {
+  border-radius: 16px;
+  padding: 25px;
+  border: none;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* CLOSE BUTTON */
+.custom-close {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #2f2b60;
+}
+.custom-close:hover {
+  color: #fe8d37;
+}
+
+/* ICON */
+.popup-icon {
+  font-size: 28px;
+  background: #2f2b60;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -45px auto 10px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* TITLE */
+.popup-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2f2b60;
+  margin-bottom: 8px;
+}
+
+/* SUBTEXT */
+.popup-subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.custom-popup .form-control {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.custom-popup .form-control:focus {
+  border-color: #fe8d37;
+  box-shadow: 0 0 0 0.15rem rgba(254, 141, 55, 0.2);
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  background: #fe8d37;
+  border: none;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #fe8d37, #ff9f5a);
+  transform: translateY(-1px);
+}
+
+/* PRIVACY */
+.privacy-text {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #888;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  display: block;
+  margin-top: -6px;
+  margin-bottom: 6px;
+}
+
+.privacy-text {
+  font-size: 14px;
+  color: #273f4f;
+  margin-bottom: 6px;
+}
+
+/* Enquiry Button */
+.enquiry-btns {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: #2f2b60;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.enquiry-btns:hover {
+  background: #2f2b6090;
+  transform: translateY(-1px);
+}
+
+/* Optional: subtle border animation */
+.enquiry-btn::after {
+  content: "→";
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.enquiry-btn:hover::after {
+  transform: translateX(3px);
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .custom-popup .modal-content {
+    padding: 20px;
+  }
+
+  .popup-title {
+    font-size: 18px;
+  }
+}

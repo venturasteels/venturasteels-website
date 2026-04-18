@@ -7,7 +7,8 @@ const managementData = [
   {
     name: "Mr. Bharat Dipchand Shah",
     role: "Director : Founder & Mentor",
-    image: "/image/management/Bharat Shah34.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1776409878/Bharat_Shah34_adesmm.png",
     color: "bg-primary",
     description:
       "A steel industry veteran whose extensive experience informs Ventura's enduring strategy and core values.  ",
@@ -24,7 +25,8 @@ const managementData = [
   {
     name: "Mrs. Poonam Aashish Shah",
     role: "Whole Time Director",
-    image: "/image/Poonam Shah12.png",
+    image:
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1776412133/Poonam_Shah12_5_yiilpk.png",
     color: "bg-success",
     description:
       "Oversees marketing initiatives and leads the drive into international markets.",
@@ -232,7 +234,7 @@ const AboutUs = () => {
                       <span className="number">
                         {String(idx + 1).padStart(2, "0")}
                       </span>
-                
+
                       <h5>{member.name}</h5>
                       <p className="role">{member.role}</p>
                       <p className="desc">{member.description}</p>

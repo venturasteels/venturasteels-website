@@ -27,6 +27,9 @@ import PlasticMouldSteelContact from "./EmployeeContact/PlasticMouldSteelContact
 import CarbonAlloySteelContact from "./EmployeeContact/CarbonAlloySteelContact/CarbonAlloySteelContact.jsx";
 // import ProductPortfolio from "./EmployeeContact/ProductPortfolio/ProductPortfolio.jsx";
 
+// Popup Component
+import QuotePopup from "./components/Popup Component/Popup.jsx";
+
 import "./App.css";
 // HotWork
 import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
@@ -158,6 +161,7 @@ const App = () => {
   return (
     <>
       <Router>
+        <QuotePopup />
         <FloatingContact />
         <PageTrackerWrapper />
         <ScrollToTop />
