@@ -138,7 +138,7 @@ const QuotePopup = () => {
       // ============================
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_CAREER_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_CAREER_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_QUICKENQUIRY_TEMPLATE_ID,
         payload,
         import.meta.env.VITE_EMAILJS_CAREER_PUBLIC_KEY,
       );

@@ -182,7 +182,7 @@ const ContactUs = () => {
                       {field !== "message" ? (
                         <input
                           type={field === "email" ? "email" : "text"}
-                          name={field}  
+                          name={field}
                           placeholder={
                             field === "company"
                               ? "Company Name"
@@ -312,6 +312,18 @@ const ContactUs = () => {
                   </a>
                 </span>
               </p>
+              <div className="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4522814447635!2d72.8320894!3d19.2030152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c5f6f3b5db%3A0x165eb9f6f4e0b093!2sVENTURA%20ALLOY%20AND%20STEELS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1690467325220!5m2!1sen!2sin"
+                  width="100%"
+                  height="200"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  fetchpriority="low"
+                  title="Ventura Steels Location"
+                ></iframe>
+              </div>
 
               <h3 className="mt-4">
                 Stocking & Machining Centre – Bhiwandi, India
@@ -376,19 +388,6 @@ const ContactUs = () => {
                 <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                   <i className="bi bi-linkedin"></i>
                 </a>
-              </div>
-
-              <div className="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4522814447635!2d72.8320894!3d19.2030152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c5f6f3b5db%3A0x165eb9f6f4e0b093!2sVENTURA%20ALLOY%20AND%20STEELS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1690467325220!5m2!1sen!2sin"
-                  width="100%"
-                  height="200"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  fetchpriority="low"
-                  title="Ventura Steels Location"
-                ></iframe>
               </div>
             </div>
           </div>

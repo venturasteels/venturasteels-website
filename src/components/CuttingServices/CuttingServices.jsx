@@ -1,9 +1,18 @@
 import React from "react";
 import { useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./CuttingServices.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  FaCogs,
+  FaLayerGroup,
+  FaGripHorizontal,
+  FaStore,
+  FaRulerCombined,
+} from "react-icons/fa";
+
 // import CuttingCard from "./cutting-card";
 // import CuttingCardNew from "./cutting-card-new";
 
@@ -82,273 +91,234 @@ const CuttingServices = () => {
       aos: "fade-up",
     },
   ];
-
+  const servicesData = [
+    {
+      icon: <FaCogs />,
+      title: "Shank Cutting Services",
+      desc: "Precision cutting engineered for die makers and high-accuracy machining requirements.",
+      list: [
+        "Smooth, burr-free cutting",
+        "High-volume consistency",
+        "Fast turnaround for tooling",
+        "Ideal for Tool & Die steel",
+      ],
+    },
+    {
+      icon: <FaLayerGroup />,
+      title: "Plate Cutting Services",
+      desc: "CNC cutting for thick and high-hardness plates without metallurgical compromise.",
+      list: [
+        "Non-standard dimensions",
+        "Minimal heat-affected zone",
+        "Used in mould bases",
+      ],
+    },
+    {
+      icon: <FaGripHorizontal />,
+      title: "D-Cut Services (Round Bars)",
+      desc: "Flat-surface cutting for improved gripping and fixture support.",
+      list: [
+        "Custom width & depth",
+        "Ideal for fixtures",
+        "Consistent machining support",
+      ],
+    },
+    {
+      icon: <FaStore />,
+      title: "Retail Cutting Services",
+      desc: "Flexible cutting support with no minimum order quantity.",
+      list: [
+        "Single-piece cutting",
+        "Wide steel grade availability",
+        "Instant expert guidance",
+      ],
+    },
+    {
+      icon: <FaRulerCombined />,
+      title: "Length Cutting Services",
+      desc: "Accurate cutting for bars, rods, and flats used in production.",
+      list: [
+        "Clean, square edges",
+        "Batch & retail orders",
+        "CNC-ready material",
+      ],
+    },
+  ];
   return (
-    <div className="cutting-premium-page">
-      {/* HERO SECTION */}
-      <section className="cutting-hero">
-        <div className="cutting-overlay"></div>
-        <Container className="cuttings-content">
-          <Row>
-            <Col lg={8}>
-              <h1 className="hero-title" data-aos="fade-up">
-                Precision Cutting Services
-              </h1>
-              <p className="hero-sub" data-aos="fade-up" data-aos-delay="150">
-                Accuracy, reliability, and consistency — engineered for
-                industries that demand perfection.
-              </p>
-              <Button
-                className="hero-btn"
-                href="/enquiry"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                Request a Quote →
-              </Button>
+    <>
+      <HelmetProvider>
+        <Helmet>
+          <title>
+            Steel Cutting Services | CNC, Plate & Precision Cutting | Ventura
+            Steels
+          </title>
+
+          <meta
+            name="description"
+            content="Ventura Alloy & Steels Pvt. Ltd. offers high-precision steel cutting services including CNC plate cutting, round bar D-cut, shank cutting, and custom cut-to-size solutions with no MOQ. Serving industries across India."
+          />
+
+          <meta
+            name="keywords"
+            content="steel cutting services India, CNC cutting services Mumbai, plate cutting, round bar cutting, D cut steel, tool steel cutting, alloy steel cutting, cut to size steel India, industrial steel processing, Ventura Steels cutting services"
+          />
+
+          <link
+            rel="canonical"
+            href="https://venturasteels.com/cutting-services"
+          />
+        </Helmet>
+      </HelmetProvider>
+
+      <div className="cutting-premium-page">
+        <section className="cutting-hero">
+          {/* Background Video */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1776681789/Cutting/Screenshot_2026-04-20_161133.png"
+            className="hero-video"
+          >
+            <source
+              src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto/v1776663557/Machinery_Cutting_Video_unddhy.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          {/* Overlay */}
+          <div className="cutting-overlay"></div>
+
+          <Container className="cuttings-content">
+            <Row className="align-items-center">
+              {/* LEFT CONTENT */}
+              <Col lg={7}>
+                <h1 className="hero-title" data-aos="fade-up">
+                  Precision Cutting Services
+                </h1>
+
+                <p className="hero-sub" data-aos="fade-up" data-aos-delay="150">
+                  Accuracy, reliability, and consistency — engineered for
+                  industries that demand perfection.
+                </p>
+
+                <div
+                  className="hero-actions"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <Button className="hero-btn" href="/enquiry">
+                    Request a Quote →
+                  </Button>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+        {/* INTRO SECTION */}
+        <Container className="intro-section">
+          <Row className="align-items-center">
+            {/* LEFT CONTENT */}
+            <Col lg={6} data-aos="fade-right">
+              <div className="intro-content">
+                <span className="intro-tag">About Our Cutting Expertise</span>
+
+                <h2 className="intro-heading">
+                  Precision Meets <span>Performance</span>
+                </h2>
+
+                <p className="intro-text">
+                  At <strong>Ventura Alloy and Steel Private Limited</strong>,
+                  we blend high-grade steel expertise with advanced precision
+                  cutting to deliver ready-to-use material trusted across
+                  tooling, engineering, mould manufacturing, and
+                  high-performance production environments.
+                </p>
+
+                <p className="intro-text">
+                  From bulk orders to retail cutting — every cut is executed
+                  with tight tolerance control, speed, and consistency.
+                </p>
+              </div>
+            </Col>
+
+            {/* RIGHT IMAGE */}
+            <Col lg={6} data-aos="fade-left">
+              <div className="intro-image-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1776667053/cutting-bg-services_yb0ent.jpg"
+                  alt="Precision Cutting"
+                  className="intro-img"
+                />
+              </div>
             </Col>
           </Row>
         </Container>
-      </section>
 
-      {/* INTRO SECTION */}
-      <Container className="intro-section">
-        <Row className="align-items-center">
-          <Col lg={6} data-aos="fade-right">
-            <p className="intro-text">
-              At <strong>Ventura Alloy and Steel Private Limited</strong>, we
-              blend high-grade steel expertise with advanced precision cutting
-              to deliver ready-to-use material trusted across tooling,
-              engineering, mould manufacturing, and high-performance production
-              environments.
-            </p>
-            <p className="intro-text">
-              From bulk orders to retail cutting — every cut is executed with
-              tight tolerance control, speed, and consistency.
-            </p>
-          </Col>
-          <Col lg={6} data-aos="fade-left">
-            <div className="intro-img"></div>
-          </Col>
-        </Row>
-      </Container>
-
-      {/* HIGHLIGHT METRICS */}
-      {/* <section className="metrics">
-        <Container>
-          <Row className="text-center">
-            <Col md={4} data-aos="zoom-in" data-aos-delay="0">
-              <h2>±0.5 mm</h2>
-              <p>Tolerance Precision</p>
-            </Col>
-            <Col md={4} data-aos="zoom-in" data-aos-delay="150">
-              <h2>5000+</h2>
-              <p>Jobs Delivered Monthly</p>
-            </Col>
-            <Col md={4} data-aos="zoom-in" data-aos-delay="300">
-              <h2>27+ Grades</h2>
-              <p>Compatible Steel Materials</p>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-      <div className="full-dual-line"></div>
-
-      {/* SERVICE SECTIONS */}
-      {/* <div className="cutting-services-section">
-        <Container className="services-block">
-          {[
-            {
-              title: "Shank Cutting Services",
-              desc: "Engineered for die makers and machining professionals requiring accurate, repeatable precision cutting.",
-              list: [
-                "Smooth, burr-free cutting",
-                "High-volume consistency",
-                "Fast turnaround for urgent tooling",
-                "Ideal for Tool & Die steel",
-              ],
-              img: "/image/infrastructure-bg.png",
-            },
-            {
-              title: "Plate Cutting Services",
-              desc: "CNC cutting for thick, high-hardness material without compromising metallurgical integrity.",
-              list: [
-                "Non-standard & precision dimension capability",
-                "Minimal heat-affected zone",
-                "Used in mould bases & fabrication jobs",
-              ],
-              img: "/image/infrastructure-bg.png",
-            },
-            {
-              title: "D-Cut Services for Round Bars",
-              desc: "Customized flat-surface cutting for gripping and machining fixture requirements.",
-              list: [
-                "Custom width and depth",
-                "Ideal for tool holders & fixtures",
-                "Consistent machining support",
-              ],
-              img: "/image/infrastructure-bg.png",
-            },
-            {
-              title: "Retail Cutting Services",
-              desc: "No minimum order — flexible cutting for prototypes and maintenance units.",
-              list: [
-                "Single-piece or small batch cutting",
-                "Wide steel grade availability",
-                "Instant guidance and support",
-              ],
-              img: "/image/infrastructure-bg.png",
-            },
-            {
-              title: "Length Cutting Services",
-              desc: "Accurate length cutting for rods, bars, and flats used in production and inventory preparation.",
-              list: [
-                "Clean, square edges",
-                "Supports batch and retail orders",
-                "Suitable for CNC & fabrication shops",
-              ],
-              img: "/image/infrastructure-bg.png",
-            },
-          ].map((service, index) => (
+        {/* CUTTING SERVICES – CARD GRID */}
+        <div className="cutting-services-section">
+          <Container className="services-block">
+            {/* HEADER */}
             <div
-              className={`service-panel ${index % 2 === 1 ? "reverse" : ""}`}
-              key={index}
+              className="services-header text-center"
               data-aos="fade-up"
-              data-aos-delay={index * 150}
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
             >
-              <div
-                className="service-img-panel"
-                style={{ backgroundImage: `url(${service.img})` }}
-              >
-                <div className="service-img-overlay"></div>
-              </div>
-              <div className="service-content-panel">
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-desc">{service.desc}</p>
-                <ul className="service-list">
-                  {service.list.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+              <h2 className="services-heading">Advanced Cutting Services</h2>
+              <p className="services-sub">
+                Engineered precision cutting solutions tailored for industrial
+                applications.
+              </p>
             </div>
-          ))}
-        </Container>
-      </div> */}
-      {/* CUTTING SERVICES – CARD GRID */}
-      <div className="cutting-services-section">
-        <Container className="services-block">
-          <div className="services-grid">
-            {[
-              {
-                title: "Shank Cutting Services",
-                desc: "Precision cutting engineered for die makers and high-accuracy machining requirements.",
-                list: [
-                  "Smooth, burr-free cutting",
-                  "High-volume consistency",
-                  "Fast turnaround for tooling",
-                  "Ideal for Tool & Die steel",
-                ],
-              },
-              {
-                title: "Plate Cutting Services",
-                desc: "CNC cutting for thick and high-hardness plates without metallurgical compromise.",
-                list: [
-                  "Non-standard dimensions",
-                  "Minimal heat-affected zone",
-                  "Used in mould bases",
-                ],
-              },
-              {
-                title: "D-Cut Services (Round Bars)",
-                desc: "Flat-surface cutting for improved gripping, alignment, and fixture support.",
-                list: [
-                  "Custom width & depth",
-                  "Ideal for fixtures",
-                  "Consistent machining support",
-                ],
-              },
-              {
-                title: "Retail Cutting Services",
-                desc: "Flexible cutting support with no minimum order quantity.",
-                list: [
-                  "Single-piece cutting",
-                  "Wide steel grade availability",
-                  "Instant expert guidance",
-                ],
-              },
-              {
-                title: "Length Cutting Services",
-                desc: "Accurate length cutting for bars, rods, and flats used in production planning.",
-                list: [
-                  "Clean, square edges",
-                  "Batch & retail orders",
-                  "CNC-ready material",
-                ],
-              },
-            ].map((service, index) => (
-              <div
-                className="service-card"
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={index * 120}
-              >
-                <div className="service-card-accent"></div>
 
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-desc">{service.desc}</p>
+            {/* GRID */}
+            <div className="services-grid">
+              {servicesData.map((service, index) => (
+                <div
+                  className="service-card"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  {/* ICON */}
+                  <div className="service-icon">{service.icon}</div>
 
-                <ul className="service-list">
-                  {service.list.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+                  <h3 className="service-title">{service.title}</h3>
+                  <p className="service-desc">{service.desc}</p>
+
+                  <ul className="service-list">
+                    {service.list.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </div>
+
+        {/* FINAL CTA */}
+        <section className="cta-section" data-aos="fade-up">
+          <div className="cta-overlay"></div>
+
+          <div className="cta-content text-center">
+            <h2>Looking for Precision-Cut Steel?</h2>
+
+            <p>
+              Partner with Ventura for accurate cutting, consistent quality, and
+              dependable turnaround.
+            </p>
+
+            <Button className="cta-btn" href="/enquiry" data-aos="zoom-in">
+              Enquire Now →
+            </Button>
           </div>
-        </Container>
+        </section>
       </div>
-
-      {/* FINAL CTA */}
-      <section className="cta-section text-center" data-aos="fade-up">
-        <h2>Looking for Precision-Cut Steel?</h2>
-        <p>
-          Partner with Ventura for accurate cutting, consistent quality, and
-          dependable turnaround.
-        </p>
-
-        <Button
-          className="cta-btn"
-          href="/enquiry"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          Enquire Now
-        </Button>
-      </section>
-
-      {/* Cutting Services Layout2 */}
-      {/* <section className="container py-5">
-        <div className="container cutting-services-row">
-          <div className="row">
-            {data.map((item, index) => (
-              <CuttingCard key={index} {...item} />
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Cutting Services Layout3 */}
-      {/* <section className="container py-5">
-        <div className="container cutting-services-row">
-          <div className="row">
-            {data.map((item, index) => (
-              <CuttingCardNew key={index} {...item} />
-            ))}
-          </div>
-        </div>
-      </section> */}
-    </div>
+    </>
   );
 };
 

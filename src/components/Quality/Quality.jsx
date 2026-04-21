@@ -33,8 +33,18 @@ const Quality = () => {
       <section className="quality-hero ">
         {/* video-banner */}
         <div className="video-banner-quality">
-          <video autoPlay loop muted className="bg-video w-100">
-            <source src="/videoes/Website Quality Page.mp4" type="video/mp4" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="bg-video w-100"
+            poster="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1776664529/Screenshot_2026-04-20_111443_cofgvp.png"
+          >
+            <source
+              src="https://res.cloudinary.com/dgujwx9r9/video/upload/f_auto,q_auto/v1776663549/Quality_Page_rnpv40.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
 

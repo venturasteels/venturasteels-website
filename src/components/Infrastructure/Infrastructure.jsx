@@ -64,7 +64,7 @@ const Infrastructure = () => {
         <div className="infra-hero">
           <video autoPlay muted loop className="infra-video">
             <source
-              src="/videoes/Website Infrastructure Page.mp4"
+              src="/videoes/Website Infrastructure video.mp4"
               type="video/mp4"
             />
           </video>
