@@ -26,19 +26,19 @@ const productCategories = [
   {
     title: "Cold Work Steel",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472640/ventura-product-image/cold-work-steel/Cr12MoV-round-bars.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874996/1.2379_Flat_Bars_nkoszy.jpg",
     path: "/products/cold-work-steel",
   },
   {
     title: "Plastic Mould Steel",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473164/1.2738-Flat-Bars_wepy8v.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778568672/P20_Flat_Bars_xzt9sa.jpg",
     path: "/products/plastic-mould-steel",
   },
   {
     title: "Alloy Steel",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473371/20MnCr5-Round-Bars_h9tpe5.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778582107/SAE_4140_Round_Bars_-_4_acrkfn.jpg",
     path: "/products/alloy-steel",
   },
   {

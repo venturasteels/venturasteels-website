@@ -59,19 +59,19 @@ const Home = () => {
     {
       title: "Cold Work Steel",
       desc: "Perfect for cutting & forming tools.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472640/ventura-product-image/cold-work-steel/Cr12MoV-round-bars.jpg",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874996/1.2379_Flat_Bars_nkoszy.jpg",
       link: "/products/cold-work-steel",
     },
     {
       title: "Plastic Mould Steel",
       desc: "Best suited for mould manufacturing.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473164/1.2738-Flat-Bars_wepy8v.jpg",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778568672/P20_Flat_Bars_xzt9sa.jpg",
       link: "/products/plastic-mould-steel",
     },
     {
       title: "Alloy Steel",
       desc: "Enhanced strength and corrosion resistance.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473371/20MnCr5-Round-Bars_h9tpe5.jpg",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778582107/SAE_4140_Round_Bars_-_4_acrkfn.jpg",
       link: "/products/alloy-steel",
     },
     {
