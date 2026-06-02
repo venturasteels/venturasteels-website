@@ -149,11 +149,9 @@ export default function H13() {
       </Helmet>
 
       <div className="grade-details">
-        <h1 className="text-center">
-          <strong>H13 </strong> / AISI H13 / DIN 2344
-        </h1>
+        <h1 className="text-center">H13 / AISI H13 / DIN 2344</h1>
         <p className="subtitle text-center">
-          Premium Hot Work Tool Steel with high toughness & wear resistance.
+          Premium Hot Work Tool Steel - High Performance Chromium Hot-Work Grade
         </p>
 
         {/* standards  */}
@@ -171,6 +169,7 @@ export default function H13() {
                   <td>Germany</td>
                   <td>China</td>
                   <td>Japan</td>
+                  <td>R. of Korea</td>
                   <td>Russia</td>
                 </tr>
                 <tr>
@@ -183,6 +182,7 @@ export default function H13() {
                   <td>DIN, WNr</td>
                   <td>GB</td>
                   <td>JIS</td>
+                  <td>KS</td>
                   <td>GOST</td>
                 </tr>
                 <tr>
@@ -195,6 +195,7 @@ export default function H13() {
                   <td>X40CrMoV5-1</td>
                   <td>4Cr5MoSiV1</td>
                   <td>SKD61</td>
+                  <td>STD 61</td>
                   <td>4Ch4VMFS</td>
                 </tr>
               </tbody>
@@ -204,55 +205,54 @@ export default function H13() {
 
         {/* Overview */}
         <section className="overview d-flex justify-content-center align-items-center gap-5 ">
+          <div className="hot-work-img-2 d-flex">
+            <img
+              src="/image/hot-work-steel/1.2344 Flat Bars.JPEG"
+              alt="H13 tool steel, 1.2344 tool steel"
+              width={250}
+            />
+            <img
+              src="/image/hot-work-steel/1.2344 Round Bars - 4.JPG"
+              alt="H13 tool steel, 1.2344 tool steel"
+              width={250}
+            />
+          </div>
           <div className="overview-content">
             <p>
-              SAE/AISI H13 is a high-performance tool steel that is comparable
-              to DIN 1.2344, GB 4Cr5MoSiV1, and JIS SKD61. It has outstanding
-              toughness, heat resistance, and hardenability due to the presence
-              of chromium, molybdenum, and vanadium.
+              H13 / 1.2344 is a premium Chromium (Cr) - Molybdenum (Mo) -
+              Vanadium (V) Hot Work Tool Steel , globally recognised as the most
+              widely used grade in hot work tooling applications. It delivers an
+              exceptional combination of toughness, heat resistance, thermal
+              fatigue resistance, and wear performance, along with excellent
+              machinability, polishability, and minimal distortion during
+              hardening, making it the benchmark grade.
             </p>
-            <h4>Important attributes:</h4>
-            <ul>
-              <li>
-                High-temperature performance: Prevents thermal fatigue, hot
-                cracking, and softening.
-              </li>
-              <li>
-                Durability: combines high wear resistance, abrasion resistance,
-                and shock resistance.
-              </li>
-              <li>
-                Machinability and polishability: Easy machining and finishing
-                due to uniform structure.
-              </li>
-              <li>
-                ESR grade (H13 ESR): A refined, uniform steel with outstanding
-                micro-cleanliness that is perfect for high-temperature and
-                aluminum pressure die casting applications.
-              </li>
-              <li>
-                100% ultrasonic testing in accordance with NDT standards ensures
-                quality.
-              </li>
-            </ul>
             <p>
-              Applications needing strength, heat resistance, toughness, and
-              exact dimensional stability are best suited for H13 steel.
+              Vanadium and Molybdenum act as strengthening agents while the high
+              Chromium content resists softening at elevated temperatures —
+              delivering outstanding red hardness, shock and abrasion
+              resistance, and the ability to withstand rapid cooling cycles.
             </p>
-          </div>
-          <div className="hot-work-img">
-            <img
-              src="/image/Hot Work Tool Steels/Hot Work Tool Steel H13 Round Bars.png"
-              alt="DB6 Image"
-              width={300}
-            />
+            <p>
+              H13 delivers outstanding high-temperature performance which
+              describes a high-quality steel production route using EAF, LF, VD,
+              and ESR processes, followed by ingot formation, upsetting,
+              forging, annealing, and EFS. It ensures a minimum forging ratio of
+              7:1, controlled impurities (low phosphorus ≤0.015), and improved
+              durability. The material supports large dimensions up to 2000 mm
+              diameter and meets high cleanliness standards (8+, low
+              inclusions). Designed for critical applications, it is suitable
+              for OEM, aerospace, defence tooling, die casting, and large
+              forging dies, with strict inspection and quality targets for
+              superior performance.
+            </p>
           </div>
         </section>
 
         {/* Chemical Composition */}
         <section className="hot-work-composition">
           <h2 className="mb-4 text-center">
-            H13 Chemical Composition (Typical Analysis in %)
+            CHEMICAL COMPOSITION (TYPICAL ANALYSIS %)
           </h2>
           <div className="table-data d-flex justify-content-center">
             <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
@@ -272,13 +272,13 @@ export default function H13() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Range</td>
-                    <td>0.35-0.45</td>
+                    <td>Range(%)</td>
+                    <td>0.39-0.45</td>
                     <td>0.90-1.20</td>
                     <td>0.30-0.50</td>
-                    <td> 0.03</td>
-                    <td>0.004</td>
-                    <td>4.90-5.40</td>
+                    <td>≤ 0.020</td>
+                    <td>≤ 0.004</td>
+                    <td>5.0-5.40</td>
                     <td>1.20-1.75</td>
                     <td>0.90-1.20</td>
                   </tr>
@@ -288,100 +288,44 @@ export default function H13() {
           </div>
         </section>
 
-        {/* size-range */}
-        <section className="size-range">
-          <h2 className="text-center">H13 Hot Work Steel Size Range</h2>
-          <table className="size-table">
-            <thead>
-              <tr>
-                <th>Shape</th>
-                <th>Dimensions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Rounds </td>
-                <td>10 to 500 MM DIA</td>
-              </tr>
-              <tr>
-                <td>Flats </td>
-                <td>
-                  Thickness: 20 - 400 MM MAX
-                  <br />
-                  Width: 40 - 700 MM MAX
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        {/* process route */}
-        <section className="process-route mx-auto mt-3">
-          <h3>Process Route of H13 Hot Work Tool Steel</h3>
-          <p className="text-muted text-center">
-            Applicable for <strong>H13 / AISI H13 / DIN 2344</strong>
-          </p>
-          <div className="process-flow">
-            <div className="step">EAF</div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD</div>
-            <span className="arrow">→</span>
-            <div className="step">ESR</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGED</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED</div>
-            <span className="arrow">→</span>
-            <div className="step">
-              ROUGH TURNED FOR ROUNDS / MILLED FOR FLATS
-            </div>
-            <span className="arrow">→</span>
-            <div className="step">OIL / AIR QUENCHED</div>
-            <span className="arrow">→</span>
-            <div className="step">DOUBLE TEMPERED</div>
-            <span className="arrow">→</span>
-            <div className="step">MACHINED TO SIZE</div>
-          </div>
-        </section>
-
         {/* Steel properties */}
         <section className="steel-properties">
-          <h2>Steel Properties of H13 Hot Work Tool Steel</h2>
+          <h2>STEEL PROPERTIES</h2>
           <ul>
-            <li>Great toughness</li>
-            <li>Thermal conductivity</li>
-            <li>High hot-wear resistance</li>
-            <li>Hot tensile strength</li>
-            <li>Insusceptible for hot cracking (Hot Crack resistant)</li>
-            <li>Can be water-cooled to a restricted degree</li>
-            <li>High Hardenability</li>
+            <li>Superior toughness under repeated thermal cycling.</li>
+            <li>High thermal conductivity for effective heat management. </li>
+            <li>Outstanding hot-wear resistance for extended tool life.</li>
+            <li>Excellent hot tensile strength under loading. </li>
+            <li>Hot crack-resistant for reliable performance. </li>
+            <li>Can be water-cooled to a controlled degree. </li>
+            <li>High hardenability across section sizes.</li>
           </ul>
         </section>
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications of H13 Hot Work Tool Steel</h2>
-          <p>
-            This steel is especially used for ejector pins, tool holders and
-            shrink work chucks. It is majorly widely utilized for manufacture of
-            hot forging die & inserts, hot gripper dies, hot nut tools, hot
-            header dies, brass forging and pressing dies, hot forging aluminium
-            base dies, aluminium casting and extrusion dies, zinc die casting
-            dies, extrusion mandrels, cores, die holder blocks, hot press dies,
-            hot work punches, etc.
-          </p>
+          <h2>APPLICATIONS</h2>
+          <ul>
+            <li>Pressure die casting dies for light metals.</li>
+            <li>Metal extrusion tools, including Aluminium Extrusion Dies</li>
+            <li>Forging dies, including Aluminium and Copper Forging Dies. </li>
+            <li>Moulds, screws, and barrels for plastic processing.</li>
+            <li>Nitrided ejectors and ejector pins. </li>
+            <li>Hot shear blades.</li>
+            <li>Tool holders and shrink-ﬁt chucks. </li>
+            <li>Extrusion mandrels.</li>
+            <li>OEM, aerospace, and defence tooling.</li>
+          </ul>
         </section>
 
         {/* Thermal properties */}
         <section className="hotwork-thermal-properties">
-          <h2 className="thermal-section-title">Thermal Properties</h2>
+          <h2 className="thermal-section-title">THERMAL PROPERTIES</h2>
 
           <div className="row">
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Coefficient of Thermal Expansion</h4>
+                <h5>COEFFICIENT OF THERMAL EXPANSION</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -425,41 +369,35 @@ export default function H13() {
 
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Thermal Conductivity</h4>
+                <h5>THERMAL CONDUCTIVITY</h5>
 
-                <div className="col-md-6">
-                  <div className="property-card mb-3">
-                    <h4>Thermal Conductivity</h4>
-
-                    <div className="thermal-table-wrapper">
-                      <table className="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th>Temperature (°C)</th>
-                            <th>W / (m*K) Annealed</th>
-                            <th>W / (m*K) Quenched & Tempered</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>20</td>
-                            <td>27.1</td>
-                            <td>25.4</td>
-                          </tr>
-                          <tr>
-                            <td>350</td>
-                            <td>30.4</td>
-                            <td>27.7</td>
-                          </tr>
-                          <tr>
-                            <td>700</td>
-                            <td>33.2</td>
-                            <td>30.4</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+                <div className="thermal-table-wrapper">
+                  <table className="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Temperature (°C)</th>
+                        <th>W / (m*K) Annealed</th>
+                        <th>W / (m*K) Quenched & Tempered</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>20</td>
+                        <td>27.1</td>
+                        <td>25.4</td>
+                      </tr>
+                      <tr>
+                        <td>350</td>
+                        <td>30.4</td>
+                        <td>27.7</td>
+                      </tr>
+                      <tr>
+                        <td>700</td>
+                        <td>33.2</td>
+                        <td>30.4</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -474,7 +412,7 @@ export default function H13() {
             {/* Basic Heat Treatment Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Heat Treatment Steps</h4>
+                <h5>HEAT TREATMENT STEPS</h5>
                 <table className="table table-bordered">
                   <tbody>
                     <tr>
@@ -487,7 +425,7 @@ export default function H13() {
                     </tr>
                     <tr>
                       <th>Hardness HB</th>
-                      <td>max. 240</td>
+                      <td>≤ 240</td>
                     </tr>
                     <tr>
                       <th>Stress-Relief Annealing °C</th>
@@ -513,7 +451,7 @@ export default function H13() {
             {/* Tempering Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Tempering (°C after quenching)</h4>
+                <h5>TEMPERING (°C AFTER QUENCHING)</h5>
                 <table className="table table-bordered">
                   <thead>
                     <tr>
@@ -616,7 +554,7 @@ export default function H13() {
         </section>
 
         {/* Get Quote CTA */}
-        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
           <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>

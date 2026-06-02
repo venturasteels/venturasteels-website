@@ -10,7 +10,8 @@ const ColdWork = () => {
   const detailsRef = useRef(null);
 
   useEffect(() => {
-    const gradePattern = /^\/products\/cold-work-steel\/(d2|d3|d5|a2|o1)/;
+    const gradePattern =
+      /^\/products\/cold-work-steel\/(d2|d3|d5|sae52100|o1|a2|d6)/;
 
     const isGrade = gradePattern.test(location.pathname);
     setIsGradeSelected(isGrade);
@@ -125,23 +126,17 @@ const ColdWork = () => {
         <div className="coldwork-hero">
           <h1>Cold Work Tool Steels</h1>
           <p>
-            Cold work steels provide exceptional wear resistance and are
-            intended for low to medium temperature applications because of their
-            high carbide content. While dimensional changes during hardening are
-            kept to a minimum, high levels of carbon and chromium guarantee deep
-            hardening, which is further enhanced by trace amounts of tungsten
-            and molybdenum.
-          </p>
-          <p>
-            For cold processing of steel, cast iron, and non-ferrous metals,
-            such as cutting, bending, forming, coining, extrusion, wire drawing,
-            woodworking, ceramic pressing, pigment grinding, rock drilling,
-            paper cutting, and more, these steels are perfect.
-          </p>
-          <p>
-            In order to lower tooling costs, minimize maintenance, and minimize
-            downtime, we assist you in choosing the appropriate steel and heat
-            treatment.
+            Cold work tool steels are high-alloy steels engineered for tooling
+            operating at or near ambient temperatures, typically below 200°C,
+            where dimensional stability, wear resistance, and high compressive
+            strength are paramount. They are deﬁned by their ability to maintain
+            hardness and edge retention through heavy cutting, forming, and
+            blanking cycles without the thermal demands of hot work
+            applications. Chromium, Molybdenum, Vanadium, and Carbon work in
+            concert to deliver high hardenability, abrasion resistance, and
+            minimal distortion during heat treatment. This category encompasses
+            four grades, D2 (DIN 1.2379), D3, Cr12MoV, and SAE 52100, each
+            tailored to a distinct performance proﬁle.
           </p>
         </div>
 
@@ -157,7 +152,7 @@ const ColdWork = () => {
                       location.pathname.includes("d2") ? "active-grade" : ""
                     }
                   >
-                    <strong>D2 / 1.2379 </strong>/ HCHCR D2
+                    D2 / 1.2379 / HCHCR D2
                   </Link>
                 </li>
                 <li>
@@ -167,7 +162,7 @@ const ColdWork = () => {
                       location.pathname.includes("d3") ? "active-grade" : ""
                     }
                   >
-                    <strong>D3 / 1.2080 </strong> / HCHCR D3
+                    D3 / 1.2080 / HCHCR D3
                   </Link>
                 </li>
                 <li>
@@ -177,17 +172,19 @@ const ColdWork = () => {
                       location.pathname.includes("d5") ? "active-grade" : ""
                     }
                   >
-                    D5 / <strong> Cr12MoV </strong> / 1.2601
+                    D5 / Cr12MoV / 1.2601
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="a2"
+                    to="sae52100"
                     className={
-                      location.pathname.includes("a2") ? "active-grade" : ""
+                      location.pathname.includes("sae52100")
+                        ? "active-grade"
+                        : ""
                     }
                   >
-                    A2 / 1.2363
+                    SAE 52100 / 100Cr6 / 1.3505 / SUJ2
                   </Link>
                 </li>
                 <li>
@@ -197,7 +194,27 @@ const ColdWork = () => {
                       location.pathname.includes("o1") ? "active-grade" : ""
                     }
                   >
-                    O1 / 2510 / OHNS O1
+                    O1 / 1.2510 / OHNS O1 / 100MnCrW4 / SK53
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="a2"
+                    className={
+                      location.pathname.includes("a2") ? "active-grade" : ""
+                    }
+                  >
+                    A2 / 1.2363 / X100CrMoV5-1 / SKD12
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="d6"
+                    className={
+                      location.pathname.includes("d6") ? "active-grade" : ""
+                    }
+                  >
+                    D6 / X210CrW 12 / 1.2436
                   </Link>
                 </li>
               </ul>

@@ -209,11 +209,47 @@ export default function Careers() {
           <title>Careers | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Build your career with Ventura Alloy & Steels Pvt. Ltd. Explore opportunities to work with a leading steel supplier in India, fostering growth, innovation, and excellence."
+            content="Explore career opportunities at Ventura Steels. Join our growing team and build your future in alloy steel, industrial solutions, operations, sales, and engineering with opportunities for growth and impact."
           />
           <meta
             name="keywords"
-            content="Ventura Steels Careers, Steel Industry Jobs India, Alloy Steel Company Careers, Tool Steel Jobs, Engineering Steel Careers, Work with Ventura Steels, Job Openings Steel Supplier"
+            content="
+  Ventura Steels Careers,
+  Careers at Ventura Steels,
+  Ventura job openings,
+  Ventura hiring,
+  Work with Ventura Steels,
+  Ventura recruitment,
+  steel industry jobs India,
+  alloy steel company careers,
+  tool steel jobs,
+  engineering steel careers,
+  steel company jobs India,
+  industrial jobs India,
+  manufacturing jobs India,
+  steel supplier careers,
+  industrial career opportunities,
+
+  sales jobs steel industry,
+  operations jobs steel industry,
+  machining jobs India,
+  warehouse jobs India,
+  supply chain careers India,
+  industrial project jobs,
+  steel manufacturing careers,
+  steel processing jobs,
+
+  experienced professionals jobs,
+  career growth opportunities,
+  engineering recruitment India,
+  steel industry vacancies,
+  industrial company hiring,
+  B2B industry careers,
+  leadership opportunities,
+  work culture Ventura,
+  industrial workforce India,
+  apply for steel jobs India
+"
           />
           <link rel="canonical" href="https://venturasteels.com/career" />
         </Helmet>

@@ -82,11 +82,9 @@ export default function D3() {
       </Helmet>
 
       <div className="grade-details">
-        <h2 className="text-center">
-          <strong>D3 / 1.2080 </strong> / HCHCR D3
-        </h2>
+        <h1 className="text-center">D3 / 1.2080 / HCHCR D3</h1>
         <p className="subtitle text-center">
-          High-carbon, high-chromium tool steel with superior wear resistance.
+          High-Carbon, High-Chromium Tool Steel — Superior Wear Resistance
         </p>
 
         {/* standards  */}
@@ -98,40 +96,40 @@ export default function D3() {
                   <td>
                     <strong>COUNTRY </strong>
                   </td>
-                  <td>USA</td>
-                  <td>Germany / Europe</td>
-                  <td>Japan</td>
-                  <td>China</td>
-                  <td>UK</td>
-                  <td>France</td>
                   <td>India</td>
+                  <td>USA</td>
+                  <td>Europe</td>
+                  <td>Germany</td>
+                  <td>China</td>
+                  <td>Japan</td>
+                  <td>R. of Korea</td>
                   <td>Russia</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>STANDARDS</strong>
                   </td>
-                  <td>ASTM / AISI</td>
-                  <td>DIN / EN</td>
-                  <td>JIS</td>
-                  <td>GB</td>
-                  <td>BS</td>
-                  <td>AFNOR</td>
                   <td>IS</td>
+                  <td>ASTM / AISI</td>
+                  <td>EN</td>
+                  <td>DIN</td>
+                  <td>GB</td>
+                  <td>JIS</td>
+                  <td>KS</td>
                   <td>GOST</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>EQUIVALENT NAME</strong>
                   </td>
+                  <td>D3 (per AISI / DIN 1.2080)</td>
                   <td>D3</td>
-                  <td>1.2080 / X210Cr12</td>
-                  <td>SKD1</td>
+                  <td>X210Cr12</td>
+                  <td>1.2080 </td>
                   <td>Cr12</td>
-                  <td>BD3</td>
-                  <td>Z200C12</td>
-                  <td>D3 (as per AISI / DIN 1.2080)</td>
-                  <td>Kh12</td>
+                  <td>SKD1</td>
+                  <td>STD1</td>
+                  <td>Х12 (Kh12)</td>
                 </tr>
               </tbody>
             </table>
@@ -140,31 +138,49 @@ export default function D3() {
 
         {/* Overview */}
         <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3">
+          <div className="cold-work-img-1">
+            <img
+              src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874990/D3_Round_Bars_2_j4kkru.jpg"
+              alt="D3 grade image, 1.2080 grade, HCHCR D3 cold work tool steel grade"
+              loading="lazy"
+            />
+          </div>
           <div className="overview-content">
             <p>
-              Ventura Alloy and Steels Supplies and Stocks HCHCR D3 tool steel
-              in India and abroad. D3 Steel have 12% ledeburitic chromium tool
-              steel with great wear resistance. Basically it is used as cutting
-              tools for sheets up to 4 mm thickness, blanking dies for paper and
-              plastics, trimming dies, shear cutting edges and rotational shear
-              edges for sheet thicknesses up to 2 mm.
+              D3 alloy steel is heat treatable, a measure of corrosion
+              resistance when polished. Unlike other Group D steels (D2, D4, D5,
+              D7), D3 does not contain molybdenum and is oil-quenched rather
+              than air-hardened, which distinguishes it fundamentally within its
+              family.
             </p>
-          </div>
-          <div className="cold-work-img">
-            <img
-              src="/image/Cold Work Tool Steels/Cold Work - D3.png"
-              alt="D3 Image"
-              loading="lazy"
-              width={300}
-            />
+            <p>
+              Small sections may alternatively be gas quenched after vacuum
+              austenitization. This quenching characteristic makes D3 tools
+              comparatively more brittle during hardening, requiring careful
+              process control. However, D3 compensates with very high wear
+              resistance, good hardenability, and high compressive strength,
+              making it well-suited for long production runs involving hard and
+              abrasive materials.
+            </p>
+            <p>
+              Ultra-premium quality material outlines a steel manufacturing
+              process using EAF, LF (likely LV), VD, forging, and annealing,
+              with a minimum forging ratio of 5:1. The chemical composition
+              features high carbon and chromium content, ensuring hardness and
+              wear resistance, with controlled impurities (P & S ≤ 0.03). The
+              material is available in diameters from 100–710 MM, thickness
+              32–300 MM, and width 105–1000 MM. It meets quality levels of 5–8,
+              with inspection criteria based on size, and supports production
+              batches up to 35 MT.
+            </p>
           </div>
         </section>
 
         {/* Chemical Composition */}
-        <section className="cold-work-composition">
-          <h3 className="mb-4 text-center">
-            Chemical Composition (Typical Analysis in %)
-          </h3>
+        {/* <section className="cold-work-composition">
+          <h2 className="mb-4 text-center">
+            CHEMICAL COMPOSITION (TYPICAL ANALYSIS %)
+          </h2>
           <div className="table-data d-flex justify-content-center">
             <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
               <table>
@@ -193,92 +209,58 @@ export default function D3() {
               </table>
             </div>
           </div>
-        </section>
-
-        {/* size range */}
-        <section className="size-range">
-          <h3>Size Range</h3>
-          <table className="size-table">
-            <thead>
-              <tr>
-                <th>Shape</th>
-                <th>Dimensions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Rounds</td>
-                <td>8 - 450 mm | Square : 11 - 155 mm</td>
-              </tr>
-              <tr>
-                <td>Blocks</td>
-                <td>
-                  Thickness: 6 - 150 mm
-                  <br />
-                  Width: 20 – 505 mm
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        {/* process routes */}
-        <section className="process-route mt-3">
-          <h3>Process Route</h3>
-          <div className="process-flow">
-            <div className="step">EAF </div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD / VOD </div>
-            <span className="arrow">→</span>
-            <div className="step">ESR (Optional – Premium Grades)</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGING / ROLLING</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED (Soft Anneal / Spheroidize)</div>
-            <span className="arrow">→</span>
-            <div className="step">ROUGH TURNED / MILLED</div>
-            <span className="arrow">→</span>
-            <div className="step">HARDENED (Oil Quench)</div>
-            <span className="arrow">→</span>
-            <div className="step">DOUBLE / TRIPLE TEMPERED</div>
-            <span className="arrow">→</span>
-            <div className="step">FINISHED (Ground / Machined / Polished)</div>
-          </div>
-        </section>
+        </section> */}
 
         {/* Steel properties */}
         <section className="steel-properties">
-          <h2>Steel Properties</h2>
-          <p>
-            D3 Steel contains properties of High Carbon 2% and High chromium 12
-            % tool steel with high wear resistance ability. Its supply condition
-            is typically annealed to easy machining and its prescribed hardness
-            is 57-58 HRC after making the dies and tools.
-          </p>
+          <h2>STEEL PROPERTIES</h2>
+          <ul>
+            <li>
+              A high amount of chromium carbides gives excellent resistance to
+              wear and abrasion.
+            </li>
+            <li>High hardness levels can be achieved at lower temperatures.</li>
+            <li>
+              Mainly, oil hardening and vacuum heat treatment are used for
+              better control.
+            </li>
+            <li>
+              Shows very little distortion or size change during heat treatment.
+            </li>
+            <li>Difﬁcult to machine, around 25% of mild steel (AISI 1018).</li>
+            <li>Moderate to low toughness due to high carbide content.</li>
+          </ul>
         </section>
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications</h2>
-          <p>
-            HCHCR D3 tool steel is utilized in cold dies and tooling application
-            which requires high degree (level) of accuracy in hardening and
-            tempering. For example, dies drawing, forming cold rolls, blanking
-            dies for paper and plastics, powder metal tooling and blanking &
-            trimming dies, shear blades, ejector pins, cold die punches etc.
-          </p>
+          <h2>APPLICATIONS</h2>
+          <ul>
+            <li>Trimming and blanking dies for paper and plastics.</li>
+            <li>
+              Cutting tools, Long and round-section shear blades for sheet
+              thicknesses.{" "}
+            </li>
+            <li>
+              Complex blanking and forming tools for long production runs.
+            </li>
+            <li>Ejector pins and cold die punches. </li>
+            <li>Drawing dies and deep-drawing tools. </li>
+            <li>Woodworking & Stone pressing tools. </li>
+            <li>Pressure pads.</li>
+            <li>Highly wear-resistant plastic moulds. </li>
+            <li>Proﬁle rolls & cold forming rolls.</li>
+          </ul>
         </section>
 
         {/* Thermal properties */}
         <section className="coldwork-thermal-properties">
-          <h2 className="thermal-section-title">Thermal Properties</h2>
+          <h2 className="thermal-section-title">THERMAL PROPERTIES</h2>
 
           <div className="row">
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Coefficient of Thermal Expansion</h4>
+                <h5>COEFFICIENT OF THERMAL EXPANSION</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -322,7 +304,7 @@ export default function D3() {
 
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Thermal Conductivity</h4>
+                <h5>THERMAL CONDUCTIVITY</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -354,43 +336,85 @@ export default function D3() {
         <section className="heat-treatment">
           <h2 className="section-title">Heat Treatment</h2>
 
-          <div className="row-center">
+          <div className="row">
             {/* Basic Heat Treatment Data */}
-            <div className="col-md-8">
+            <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Heat Treatment Steps</h4>
+                <h5>HEAT TREATMENT STEPS</h5>
                 <table className="table table-bordered">
                   <tbody>
                     <tr>
                       <th>Soft Annealing °C</th>
-                      <td colSpan="2">810-850</td>
+                      <td>810-850</td>
                     </tr>
                     <tr>
                       <th>Cooling</th>
-                      <td colSpan="2">Furnace</td>
+                      <td>Furnace</td>
                     </tr>
                     <tr>
                       <th>Hardness HB</th>
-                      <td colSpan="2">max. 250</td>
+                      <td>≤ 250</td>
                     </tr>
                     <tr>
                       <th>Stress-relief Annealing °C</th>
-                      <td colSpan="2">approx. 670-720</td>
+                      <td>approx. 670-720</td>
                     </tr>
                     <tr>
-                      <th>Hardening °C</th>
+                      <th>Hardening °C (Oil)</th>
                       <td>940-970</td>
+                    </tr>
+                    <tr>
+                      <th>Hardening °C (Air Upto30 mm)</th>
                       <td>950-980</td>
                     </tr>
                     <tr>
                       <th>Quenching</th>
-                      <td>Oil</td>
-                      <td>Air (upto 30mm thickness)</td>
+                      <td>Oil / Air (upto 30mm thickness)</td>
                     </tr>
                     <tr>
                       <th>Hardness after quenching HRC</th>
                       <td>64.5</td>
-                      <td>64.5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Tempering Data */}
+            <div className="col-md-6">
+              <div className="heat-card mb-3">
+                <h5>TEMPERING (°C AFTER QUENCHING)</h5>
+                <table className="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Temp (°C)</th>
+                      <th>HRC</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>100</td>
+                      <td>63.5</td>
+                    </tr>
+                    <tr>
+                      <td>200</td>
+                      <td>61.5</td>
+                    </tr>
+                    <tr>
+                      <td>300</td>
+                      <td>58</td>
+                    </tr>
+                    <tr>
+                      <td>400</td>
+                      <td>57.5</td>
+                    </tr>
+                    <tr>
+                      <td>500</td>
+                      <td>55</td>
+                    </tr>
+                    <tr>
+                      <td>600</td>
+                      <td>47</td>
                     </tr>
                   </tbody>
                 </table>
@@ -423,7 +447,7 @@ export default function D3() {
         </section>
 
         {/* Availability */}
-        <section className="availability-info my-4">
+        {/* <section className="availability-info my-4">
           <div className="container">
             <h4 className="mb-3">Availability</h4>
             <p>
@@ -441,10 +465,10 @@ export default function D3() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Get Quote CTA */}
-        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
           <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>

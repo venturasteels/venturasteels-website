@@ -10,7 +10,7 @@ const CarbonSteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/carbon-steel\/(c45|sae1018|st52.3|en1a|35c8|sae1541|27c15|sae1117|en43bcr|sae1141)/;
+      /^\/products\/carbon-steel\/(sae1018|c45|st52.3|en1a-l&pb|en9)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -102,18 +102,17 @@ const CarbonSteel = () => {
         <div className="carbon-steel-hero">
           <h1>Carbon Steels</h1>
           <p>
-            Carbon steel is steel that gets most of its character from carbon,
-            with just small amounts of other elements like manganese, silicon,
-            sulphur, and phosphorus added to tweak its performance. The carbon
-            level is what really sets the type: low-carbon, or mild steel, is
-            soft, easy to shape, and great for welding; medium-carbon steel
-            balances strength and toughness; and high-carbon steel is extremely
-            hard and resistant to wear, though it can be brittle and tougher to
-            work with. Because of this flexibility, carbon steel has become one
-            of the most reliable and affordable materials around. It’s
-            everywhere—holding up buildings, running through pipelines, built
-            into cars, tools, heavy machines, and mining gear. In many ways,
-            it’s the material modern industry is built.
+            Carbon steels are iron-carbon alloys where carbon content, ranging
+            from low to medium, is the primary determinant of mechanical
+            properties, with Manganese, Silicon, and trace elements providing
+            supplementary strengthening. They are deﬁned by their versatility,
+            cost-effectiveness, and broad processability, spanning free-cutting
+            grades optimised for high-speed machining, structural grades
+            delivering reliable load-bearing performance, and medium-carbon
+            grades offering a dependable balance of strength, toughness, and
+            heat treatment response. This category encompasses four grades, C45
+            (EN8), SAE 1018, ST 52.3, and EN 1A, each tailored to a distinct
+            performance proﬁle.
           </p>
         </div>
 
@@ -124,16 +123,6 @@ const CarbonSteel = () => {
               <ul>
                 <li>
                   <Link
-                    to="c45"
-                    className={
-                      location.pathname.includes("c45") ? "active-grade" : ""
-                    }
-                  >
-                    C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="sae1018"
                     className={
                       location.pathname.includes("sae1018")
@@ -141,7 +130,18 @@ const CarbonSteel = () => {
                         : ""
                     }
                   >
-                    SAE 1018 / ASTM A36 / ASTM A29 / SAE 1137 / SAE 1138
+                    SAE 1018 / C18E / 1.0402 / S18C / ASTM A29
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="c45"
+                    className={
+                      location.pathname.includes("c45") ? "active-grade" : ""
+                    }
+                  >
+                    C45 / EN8 / EN8A / EN8D / EN8M / EN8DM / CK45 / AISI1045 /
+                    45C8 / 1.0503
                   </Link>
                 </li>
                 <li>
@@ -151,85 +151,29 @@ const CarbonSteel = () => {
                       location.pathname.includes("st52.3") ? "active-grade" : ""
                     }
                   >
-                    ST 52.3
+                    ST52.3 / S355J2G3 / S355JR / 1.057 / SM490A
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="en1a"
+                    to="en1a-l&pb"
                     className={
-                      location.pathname.includes("en1a") ? "active-grade" : ""
-                    }
-                  >
-                    EN 1A / EN 1A_PB / EN 1A_L / 230M07 PB
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="35c8"
-                    className={
-                      location.pathname.includes("35c8") ? "active-grade" : ""
-                    }
-                  >
-                    35C8 / C35 / EN8 / SAE 1035 / 45C8
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="sae1541"
-                    className={
-                      location.pathname.includes("sae1541")
+                      location.pathname.includes("en1a-l&pb")
                         ? "active-grade"
                         : ""
                     }
                   >
-                    SAE 1541 / EN 15
+                    EN1A-L&PB / 11SMnPb30 / 1.0718 / SUM22L / 230M07PB
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="27c15"
+                    to="en9"
                     className={
-                      location.pathname.includes("27c15") ? "active-grade" : ""
+                      location.pathname.includes("en9") ? "active-grade" : ""
                     }
                   >
-                    27C15 / SAE 1527
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="sae1117"
-                    className={
-                      location.pathname.includes("sae1117")
-                        ? "active-grade"
-                        : ""
-                    }
-                  >
-                    SAE 1117 / ASTM A108
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="en43bcr"
-                    className={
-                      location.pathname.includes("en43bcr")
-                        ? "active-grade"
-                        : ""
-                    }
-                  >
-                    EN43BCr / SAE 1050 / EN43A
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="sae1141"
-                    className={
-                      location.pathname.includes("sae1141")
-                        ? "active-grade"
-                        : ""
-                    }
-                  >
-                    SAE 1141
+                    EN9 / 1055 / 1.0535 / S55C
                   </Link>
                 </li>
               </ul>

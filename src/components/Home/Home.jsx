@@ -172,11 +172,49 @@ const Home = () => {
         <title>Home | Ventura Alloy and Steels Pvt. Ltd.</title>
         <meta
           name="description"
-          content="Ventura Alloy & Steels Pvt. Ltd. is a trusted special steel supplier in India offering alloy steel, tool steel, hot work steel, cold work steel, die steel, and engineering steels. Large ready stock, certified material, and nationwide delivery for automotive, aerospace, oil & gas, and industrial applications."
+          content="Ventura Alloys & Steels is a leading special steel supplier and stockist in India offering alloy steel, tool steel, hot work steel, cold work steel, precision cutting services, machining solutions, and certified industrial steel materials."
         />
         <meta
           name="keywords"
-          content="special steel supplier India, alloy steel supplier, tool steel supplier, hot work steel, cold work steel, die steel, plastic mould steel, spring steel, engineering steels, Ventura Steels"
+          content="
+  Ventura Steels,
+  Ventura Alloys and Steels,
+  special steel supplier India,
+  alloy steel supplier India,
+  tool steel supplier India,
+  engineering steel supplier,
+  industrial steel supplier,
+  steel stockist India,
+  steel distributor India,
+  steel manufacturer India,
+  special steel solutions,
+  alloy steel stockist,
+  tool steel stockist,
+  hot work steel,
+  cold work steel,
+  plastic mould steel,
+  spring steel,
+  carbon steel,
+  boron steel,
+  die steel supplier,
+  forged steel supplier,
+  round bar supplier,
+  steel blocks supplier,
+  precision cutting services,
+  CNC flame cutting,
+  steel machining services,
+  steel processing company,
+  ESR steel supplier,
+  high quality steel supplier,
+  certified steel supplier,
+  industrial raw material supplier,
+  steel warehouse Mumbai,
+  steel stockist Bhiwandi,
+  engineering material supplier,
+  steel for automotive industry,
+  steel for die and mould industry,
+  steel for manufacturing industry
+"
         />
         <meta name="author" content="Ventura Alloy and Steels Pvt. Ltd." />
         {/* Open Graph for Social Sharing */}

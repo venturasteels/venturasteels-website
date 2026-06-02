@@ -130,6 +130,7 @@
 }
 .badge {
   font-size: 18px;
+  text-wrap: auto;
 }
 .close-btn {
   color: white;

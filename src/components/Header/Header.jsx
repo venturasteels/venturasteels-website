@@ -397,8 +397,8 @@ export default function Header() {
 
             <span className="d-block mb-1">
               <SmartEmailLink
-                email="enquiry@venturasteels.com"
-                label="enquiry@venturasteels.com"
+                email="inquiry@venturasteels.com"
+                label="inquiry@venturasteels.com"
               />
             </span>
 
@@ -662,7 +662,7 @@ export default function Header() {
                 </button>
 
                 <div className="dropdown-menu sub-dropdown">
-                  <div className="region-tabs">
+                  {/* <div className="region-tabs">
                     <button
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
@@ -693,9 +693,9 @@ export default function Header() {
                       <img src="https://flagcdn.com/w20/cn.png" alt="China" />
                       <span>CN</span>
                     </button>
-                  </div>
+                  </div> */}
 
-                  <div className="grade-list">
+                  <div className="grade-list p-2">
                     <button
                       className="dropdown-item"
                       onMouseEnter={() => setHoveredGrade("db6")}
@@ -704,29 +704,7 @@ export default function Header() {
                         handleNavClick("/products/hot-work-steel/db6")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        DB6
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        DIN 1.2714
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI L6
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        5CrNiMo
-                      </span>
+                      DB6 / DIN 2714 / AISI L6
                     </button>
 
                     <button
@@ -737,29 +715,7 @@ export default function Header() {
                         handleNavClick("/products/hot-work-steel/h13")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        H13
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        DIN 1.2344
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI H13
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        4Cr5MoSiV1
-                      </span>
+                      H13 / AISI H13 / DIN 2344
                     </button>
 
                     <button
@@ -770,128 +726,31 @@ export default function Header() {
                         handleNavClick("/products/hot-work-steel/h11")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        H11
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        DIN 1.2343
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI H11
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        4Cr5MoSiV1
-                      </span>
+                      H11 / AISI H11 / DIN 2343
                     </button>
 
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("h21")}
+                      onMouseEnter={() => setHoveredGrade("1-2367-x38crmov5-3")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/hot-work-steel/h21")
+                        handleNavClick(
+                          "/products/hot-work-steel/1.2367-x38crmov5-3",
+                        )
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        H21
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        DIN 1.2581
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI H21
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        3Cr2W8V
-                      </span>
+                      1.2367 / X38CrMoV5-3
                     </button>
 
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("h10")}
+                      onMouseEnter={() => setHoveredGrade("1-8407")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/hot-work-steel/h10")
+                        handleNavClick("/products/hot-work-steel/1.8407")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        H10
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        DIN 1.2365
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI H10
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        4Cr3Mo3SiV
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("h12")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/hot-work-steel/h12")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        H12
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        DIN 1.2606
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI H12
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        4Cr5MoWVi
-                      </span>
+                      1.8407
                     </button>
                   </div>
                 </div>
@@ -907,7 +766,7 @@ export default function Header() {
                 </button>
 
                 <div className="dropdown-menu sub-dropdown">
-                  <div className="region-tabs">
+                  {/* <div className="region-tabs">
                     <button
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
@@ -939,9 +798,9 @@ export default function Header() {
                       <img src="https://flagcdn.com/w20/cn.png" alt="China" />
                       <span>CN</span>
                     </button>
-                  </div>
+                  </div> */}
 
-                  <div className="grade-list">
+                  <div className="grade-list p-2">
                     <button
                       className="dropdown-item "
                       onMouseEnter={() => setHoveredGrade("d2")}
@@ -950,29 +809,7 @@ export default function Header() {
                         handleNavClick("/products/cold-work-steel/d2")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        HCHCR D2
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2379
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI D2
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        Cr12MoV
-                      </span>
+                      D2 / 1.2379 / HCHCR D2
                     </button>
 
                     <button
@@ -983,29 +820,7 @@ export default function Header() {
                         handleNavClick("/products/cold-work-steel/d3")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        HCHCR D3
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2080
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI D3
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        Cr12
-                      </span>
+                      D3 / 1.2080 / HCHCR D3
                     </button>
 
                     <button
@@ -1016,62 +831,18 @@ export default function Header() {
                         handleNavClick("/products/cold-work-steel/d5")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        D5
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2601
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI D5
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        Cr12MoV1
-                      </span>
+                      D5 / Cr12MoV / 1.2601
                     </button>
 
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("a2")}
+                      onMouseEnter={() => setHoveredGrade("sae52100")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/cold-work-steel/a2")
+                        handleNavClick("/products/cold-work-steel/sae52100")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        A2
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2363
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI A2
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        Cr5Mo1V
-                      </span>
+                      SAE 52100 / 100Cr6 / 1.3505 / SUJ2
                     </button>
 
                     <button
@@ -1082,29 +853,29 @@ export default function Header() {
                         handleNavClick("/products/cold-work-steel/o1")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        OHNS O1
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2510
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI O1
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        9CrWMn
-                      </span>
+                      O1 / 1.2510 / OHNS O1 / 100MnCrW4 / SK53
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("a2")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/cold-work-steel/a2")
+                      }
+                    >
+                      A2 / 1.2363 / X100CrMoV5-1 / SKD12
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("d6")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/cold-work-steel/d6")
+                      }
+                    >
+                      D6 / X210CrW 12 / 1.2436
                     </button>
                   </div>
                 </div>
@@ -1122,7 +893,7 @@ export default function Header() {
                 </button>
 
                 <div className="dropdown-menu sub-dropdown">
-                  <div className="region-tabs">
+                  {/* <div className="region-tabs">
                     <button
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
@@ -1153,44 +924,11 @@ export default function Header() {
                       <img src="https://flagcdn.com/w20/cn.png" alt="China" />
                       <span>CN</span>
                     </button>
-                  </div>
+                  </div> */}
 
-                  <div className="grade-list">
+                  <div className="grade-list p-2">
                     <button
                       className="dropdown-item "
-                      onMouseEnter={() => setHoveredGrade("p20ni")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/plastic-mould-steel/p20ni")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        P20+Ni
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2738
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI P20+Ni
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        3Cr2NiMo
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
                       onMouseEnter={() => setHoveredGrade("p20-1.2311")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
@@ -1199,29 +937,18 @@ export default function Header() {
                         )
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        P20
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2311
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI P20
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        3Cr2Mo
-                      </span>
+                      P20 / 1.2311
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("p20ni")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/plastic-mould-steel/p20ni")
+                      }
+                    >
+                      P20+NI / 1.2738
                     </button>
 
                     <button
@@ -1229,32 +956,10 @@ export default function Header() {
                       onMouseEnter={() => setHoveredGrade("1.2316")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/plastic-mould-steel/1.2316")
+                        handleNavClick("/products/plastic-mould-steel/1-2316")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        P20
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        1.2316
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        P20
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "CN" ? "active-part" : ""}
-                      >
-                        4Cr5MoSiV
-                      </span>
+                      1.2316 / X36CrMo17
                     </button>
                   </div>
                 </div>
@@ -1270,7 +975,7 @@ export default function Header() {
                 </button>
 
                 <div className="dropdown-menu sub-dropdown">
-                  <div className="region-tabs">
+                  {/* <div className="region-tabs">
                     <button
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
@@ -1294,9 +999,9 @@ export default function Header() {
                       <img src="https://flagcdn.com/w20/us.png" alt="USA" />
                       <span>US</span>
                     </button>
-                  </div>
+                  </div> */}
 
-                  <div className="grade-list">
+                  <div className="grade-list p-2">
                     <button
                       className="dropdown-item "
                       onMouseEnter={() => setHoveredGrade("20mncr5")}
@@ -1305,44 +1010,7 @@ export default function Header() {
                         handleNavClick("/products/alloy-steel/20mncr5")
                       }
                     >
-                      <span
-                        className={
-                          hoveredRegion === "IND" || hoveredRegion === "EU"
-                            ? "active-part"
-                            : ""
-                        }
-                      >
-                        20MnCr5
-                      </span>
-                      {" / "}
-                      <span>16MnCr5</span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("en31")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/alloy-steel/en31")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN 31
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        100Cr6
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 52100
-                      </span>
+                      20MnCr5 / 16MnCr5
                     </button>
 
                     <button
@@ -1353,85 +1021,7 @@ export default function Header() {
                         handleNavClick("/products/alloy-steel/sae4140")
                       }
                     >
-                      {" "}
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN 19 / EN18A / EN18A-D
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        42CrMo4
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 4140
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sae1020")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/alloy-steel/sae1020")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1020
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("41cr4")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/alloy-steel/41cr4")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN18
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        41Cr4
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("en41b")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/alloy-steel/en41b")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN 41B
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        41CrV4
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI 4340
-                      </span>
+                      SAE 4140 / EN19 / 42CrMo4 / 1.7224 / SCM440
                     </button>
 
                     <button
@@ -1442,45 +1032,18 @@ export default function Header() {
                         handleNavClick("/products/alloy-steel/en24")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN 24
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        18CrNiMo6
-                      </span>
+                      EN24 / SAE 4340 / 34CrNiMo6 / 1.6582
                     </button>
+
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sae4130")}
+                      onMouseEnter={() => setHoveredGrade("en36")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/alloy-steel/sae4130")
+                        handleNavClick("/products/alloy-steel/en36")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE4130
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("en36c")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/alloy-steel/en36c")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN36C
-                      </span>
+                      EN36 / 14NiCr14 / 1.5752 / SNCM220
                     </button>
                     <button
                       className="dropdown-item"
@@ -1490,17 +1053,144 @@ export default function Header() {
                         handleNavClick("/products/alloy-steel/sae8620")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN353
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 8620 / SAE 9310
-                      </span>
+                      SAE 8620 / 20NiCrMo2-2
+                    </button>
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("sae4130")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/alloy-steel/sae4130")
+                      }
+                    >
+                      SAE 4130 / 25CrMo4 / 1.7218 / SCM430
+                    </button>
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("41cr4")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/alloy-steel/41cr4")
+                      }
+                    >
+                      41Cr4 / 1.7035 / SCr440 / EN18 / 40Cr4B
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("sae1020")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/alloy-steel/sae1020")
+                      }
+                    >
+                      SAE 1020 / C22E / 1.1151 / S20C
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("en353")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/alloy-steel/en353")
+                      }
+                    >
+                      EN353 / 1.6523
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Carbon Steel */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/carbon-steel")}
+                  className="dropdown-item"
+                >
+                  Carbon Steel ▸
+                </button>
+
+                <div className="dropdown-menu sub-dropdown">
+                  {/* <div className="region-tabs">
+                    <button
+                      onMouseEnter={() => setHoveredRegion("IND")}
+                      onMouseLeave={() => setHoveredRegion(null)}
+                    >
+                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <span>IND</span>
+                    </button>
+
+                    <button
+                      onMouseEnter={() => setHoveredRegion("EU")}
+                      onMouseLeave={() => setHoveredRegion(null)}
+                    >
+                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
+                      <span>EU</span>
+                    </button>
+
+                    <button
+                      onMouseEnter={() => setHoveredRegion("US")}
+                      onMouseLeave={() => setHoveredRegion(null)}
+                    >
+                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <span>US</span>
+                    </button>
+                  </div> */}
+
+                  <div className="grade-list p-2">
+                    <button
+                      className="dropdown-item "
+                      onMouseEnter={() => setHoveredGrade("sae1018")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/carbon-steel/sae1018")
+                      }
+                    >
+                      SAE 1018 / C18E / 1.0402 / S18C / ASTM A29
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("c45")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/carbon-steel/c45")
+                      }
+                    >
+                      C45 / EN8 / EN8A / EN8D / EN8M / EN8DM /CK45 / AISI 1045 /
+                      45C8 / 1.0503
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("st52.3")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/carbon-steel/st52.3")
+                      }
+                    >
+                      ST52.3 / S355J2G3 / S355JR / 1.057 / SM490A
+                    </button>
+
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("en1a-l&pb")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/carbon-steel/en1a-l&pb")
+                      }
+                    >
+                      EN1A-L & PB / 11SMnPb30 / 1.0718 / SUM22L / 230M07 PB
+                    </button>
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setHoveredGrade("en9")}
+                      onMouseLeave={() => setHoveredGrade(null)}
+                      onClick={() =>
+                        handleNavClick("/products/carbon-steel/en9")
+                      }
+                    >
+                      EN9 / 1055 / 1.0535 / S55C
                     </button>
                   </div>
                 </div>
@@ -1516,7 +1206,7 @@ export default function Header() {
                 </button>
 
                 <div className="dropdown-menu sub-dropdown">
-                  <div className="region-tabs">
+                  {/* <div className="region-tabs">
                     <button
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
@@ -1547,9 +1237,9 @@ export default function Header() {
                       <img src="https://flagcdn.com/w20/jp.png" alt="Japan" />
                       <span>JPN</span>
                     </button>
-                  </div>
+                  </div> */}
 
-                  <div className="grade-list">
+                  <div className="grade-list p-2">
                     <button
                       className="dropdown-item "
                       onMouseEnter={() => setHoveredGrade("en47")}
@@ -1558,45 +1248,7 @@ export default function Header() {
                         handleNavClick("/products/spring-steel/en47")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN 47
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        50CrV4 / 51CrV4
-                      </span>
-
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI 6150
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "JPN" ? "active-part" : ""}
-                      >
-                        SUP 10
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sup9")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/spring-steel/sup9")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "JPN" ? "active-part" : ""}
-                      >
-                        SUP 9
-                      </span>
+                      EN47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP10
                     </button>
 
                     <button
@@ -1607,355 +1259,46 @@ export default function Header() {
                         handleNavClick("/products/spring-steel/sae9254")
                       }
                     >
-                      {" "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 9254
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "JPN" ? "active-part" : ""}
-                      >
-                        SUP 11A
-                      </span>
+                      SAE 9254 / SUP11A / SUP1
                     </button>
 
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("en45")}
+                      onMouseEnter={() => setHoveredGrade("52CrMoV4")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/spring-steel/en45")
+                        handleNavClick("/products/spring-steel/52CrMoV4")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN45
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        60Si7
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 9260
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sae5160")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/spring-steel/sae5160")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 5160
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("52crmov4")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/spring-steel/52crmov4")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        52CrMoV4 / 50Cr4MoV2
-                      </span>
+                      52CrMoV4 / 50Cr4MoV2 / 50Cr4MoV4 / 1.770
                     </button>
 
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("52crv4")}
+                      onMouseEnter={() => setHoveredGrade("55Si7")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/spring-steel/52crv4")
+                        handleNavClick("/products/spring-steel/55Si7")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        52CrV4 / 51CrV4
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI 4150
-                      </span>
+                      55Si7 / 56Si7 / SAE 9255 / 1.5026
                     </button>
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("55si7")}
+                      onMouseEnter={() => setHoveredGrade("sup9")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/spring-steel/55si7")
+                        handleNavClick("/products/spring-steel/sup9")
                       }
                     >
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        55Si7 / 56Si7
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 9255
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Carbon Steel */}
-              <div className="dropdown-submenu">
-                <button
-                  onClick={() => handleNavClick("/products/carbon-steel")}
-                  className="dropdown-item"
-                >
-                  Carbon Steel ▸
-                </button>
-
-                <div className="dropdown-menu sub-dropdown">
-                  <div className="region-tabs">
-                    <button
-                      onMouseEnter={() => setHoveredRegion("IND")}
-                      onMouseLeave={() => setHoveredRegion(null)}
-                    >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
-                      <span>IND</span>
-                    </button>
-
-                    <button
-                      onMouseEnter={() => setHoveredRegion("EU")}
-                      onMouseLeave={() => setHoveredRegion(null)}
-                    >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
-                      <span>EU</span>
-                    </button>
-
-                    <button
-                      onMouseEnter={() => setHoveredRegion("US")}
-                      onMouseLeave={() => setHoveredRegion(null)}
-                    >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
-                      <span>US</span>
-                    </button>
-                  </div>
-
-                  <div className="grade-list">
-                    <button
-                      className="dropdown-item "
-                      onMouseEnter={() => setHoveredGrade("c45")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/c45")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN9 / EN8D
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        C45 / CK45
-                      </span>
-
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        AISI 1045
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sae1018")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/sae1018")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1018
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("st52.3")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/st52.3")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        ST 52.3
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("en1a")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/en1a")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN 1A
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        230M07 PB
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("35c8")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/35c8")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        35C8 / 45C8
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "EU" ? "active-part" : ""}
-                      >
-                        C35
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1035
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sae1541")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("products/carbon-steel/sae1541")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN 15
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1541
-                      </span>
-                    </button>
-
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("52crv4")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/27c15")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        27C15
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1527
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sae1117")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/sae1117")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1117
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("en43bcr")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("//products/carbon-steel/en43bcr")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "IND" ? "active-part" : ""}
-                      >
-                        EN43A / EN43BCr
-                      </span>
-                      {" / "}
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1050
-                      </span>
-                    </button>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("sae1117")}
-                      onMouseLeave={() => setHoveredGrade(null)}
-                      onClick={() =>
-                        handleNavClick("/products/carbon-steel/sae1141")
-                      }
-                    >
-                      <span
-                        className={hoveredRegion === "US" ? "active-part" : ""}
-                      >
-                        SAE 1141
-                      </span>
+                      SUP9
                     </button>
                   </div>
                 </div>
               </div>
 
               {/* Boron Steel */}
-              <div className="dropdown-submenu">
+              {/* <div className="dropdown-submenu">
                 <button
                   onClick={() => handleNavClick("/products/boron-steel")}
                   className="dropdown-item"
@@ -2050,7 +1393,7 @@ export default function Header() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

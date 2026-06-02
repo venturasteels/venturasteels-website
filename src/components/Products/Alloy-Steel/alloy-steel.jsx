@@ -10,7 +10,7 @@ const AlloySteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/alloy-steel\/(20mncr5|en31|sae4140|sae1020|41cr4|en41b|en24|sae4130|en36c|sae8620)/;
+      /^\/products\/alloy-steel\/(20mncr5|sae4140|en24|en36|sae8620|sae4130|41cr4|sae1020|en353)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -94,14 +94,18 @@ const AlloySteel = () => {
         <div className="alloy-steel-hero">
           <h1>Alloy Steels</h1>
           <p>
-            Alloy Steel is a derivative of carbon steel where element is added
-            or deleted to yield certain properties. Typically these properties
-            include machinability, wearability, and strength. An iron-based
-            mixture is considered to be an alloy steel when manganese is greater
-            than 0.165%, silicon over 0.5%, copper above 0.6%, or other minimum
-            quantities of alloying elements such as chromium, nickel,
-            molybdenum, or tungsten are present. Basically alloy steel is
-            classified into two groups: Low Alloy Steel and High Alloy Steel.
+            Alloy steels are engineering steels enhanced with deliberate
+            additions of alloying elements, Such as Chromium, Molybdenum,
+            Nickel, Manganese, and Vanadium, to achieve mechanical properties
+            beyond those of plain carbon steels. They are deﬁned by their
+            superior strength, toughness, hardenability, and fatigue resistance
+            across a wide range of heat-treated conditions. Carbon content and
+            alloying system determine the performance tier, from case-hardening
+            grades that combine hard surfaces with tough cores to
+            through-hardening grades that deliver high tensile strength
+            throughout. This category encompasses ﬁve grades: 20MnCr5 / 16MnCr5,
+            41Cr4, EN24, SAE 52100, SAE 1020, and SAE 4140, each tailored to a
+            distinct performance proﬁle.
           </p>
         </div>
 
@@ -124,16 +128,6 @@ const AlloySteel = () => {
                 </li>
                 <li>
                   <Link
-                    to="en31"
-                    className={
-                      location.pathname.includes("en31") ? "active-grade" : ""
-                    }
-                  >
-                    EN 31 / SAE 52100 / 100Cr6
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="sae4140"
                     className={
                       location.pathname.includes("sae4140")
@@ -141,39 +135,7 @@ const AlloySteel = () => {
                         : ""
                     }
                   >
-                    SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="sae1020"
-                    className={
-                      location.pathname.includes("sae1020")
-                        ? "active-grade"
-                        : ""
-                    }
-                  >
-                    SAE 1020
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="41cr4"
-                    className={
-                      location.pathname.includes("41cr4") ? "active-grade" : ""
-                    }
-                  >
-                    41Cr4 / EN18 / 40Cr4B
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="en41b"
-                    className={
-                      location.pathname.includes("en41b") ? "active-grade" : ""
-                    }
-                  >
-                    EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84
+                    SAE 4140 / EN19 / 42CrMo4 / 1.7224 / SCM440
                   </Link>
                 </li>
                 <li>
@@ -183,29 +145,17 @@ const AlloySteel = () => {
                       location.pathname.includes("en24") ? "active-grade" : ""
                     }
                   >
-                    EN 24 / 18CrNiMo6
+                    EN24 / SAE 4340 / 34CrNiMo6 / 1.6582
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="sae4130"
+                    to="en36"
                     className={
-                      location.pathname.includes("sae4130")
-                        ? "active-grade"
-                        : ""
+                      location.pathname.includes("en36") ? "active-grade" : ""
                     }
                   >
-                    SAE4130
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="en36c"
-                    className={
-                      location.pathname.includes("en36c") ? "active-grade" : ""
-                    }
-                  >
-                    EN36C
+                    EN36 / 14NiCr14 / 1.5752 / SNCM220
                   </Link>
                 </li>
                 <li>
@@ -217,7 +167,51 @@ const AlloySteel = () => {
                         : ""
                     }
                   >
-                    SAE 8620 / EN353 / SAE 9310
+                    SAE 8620 / 20NiCrMo2-2
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="sae4130"
+                    className={
+                      location.pathname.includes("sae4130")
+                        ? "active-grade"
+                        : ""
+                    }
+                  >
+                    SAE 4130 / 25CrMo4 / 1.7218 / SCM430
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="41cr4"
+                    className={
+                      location.pathname.includes("41cr4") ? "active-grade" : ""
+                    }
+                  >
+                    41Cr4 / 1.7035 / SCr440 / EN18 / 40Cr4B
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="sae1020"
+                    className={
+                      location.pathname.includes("sae1020")
+                        ? "active-grade"
+                        : ""
+                    }
+                  >
+                    SAE 1020 / C22E / 1.1151 / S20C
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="en353"
+                    className={
+                      location.pathname.includes("en353") ? "active-grade" : ""
+                    }
+                  >
+                    EN353 / 1.6523
                   </Link>
                 </li>
               </ul>

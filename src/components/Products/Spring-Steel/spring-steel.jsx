@@ -11,7 +11,7 @@ const SpringSteel = () => {
 
   useEffect(() => {
     const gradePattern =
-      /^\/products\/spring-steel\/(en47|sup9|sae9254|en45|sae5160|52crmov4|52crv4|55si7)/;
+      /^\/products\/spring-steel\/(en47|sae9254|52CrMoV4|55Si7|sup9)/;
 
     const isGrade = gradePattern.test(location.pathname);
     setIsGradeSelected(isGrade);
@@ -136,17 +136,7 @@ const SpringSteel = () => {
                       location.pathname.includes("en47") ? "active-grade" : ""
                     }
                   >
-                    EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="sup9"
-                    className={
-                      location.pathname.includes("sup9") ? "active-grade" : ""
-                    }
-                  >
-                    SUP 9
+                    EN47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP10
                   </Link>
                 </li>
                 <li>
@@ -158,61 +148,39 @@ const SpringSteel = () => {
                         : ""
                     }
                   >
-                    SAE 9254 / SUP 11A
+                    SAE 9254 / SUP11A / SUP1
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="en45"
+                    to="52CrMoV4"
                     className={
-                      location.pathname.includes("en45") ? "active-grade" : ""
-                    }
-                  >
-                    EN45 / SAE 9260 / 60Si7
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="sae5160"
-                    className={
-                      location.pathname.includes("sae5160")
+                      location.pathname.includes("52CrMoV4")
                         ? "active-grade"
                         : ""
                     }
                   >
-                    SAE 5160
+                    52CrMoV4 / 50Cr4MoV2 / 50Cr4MoV4 / 1.770
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="52crmov4"
+                    to="55Si7"
                     className={
-                      location.pathname.includes("52crmov4")
-                        ? "active-grade"
-                        : ""
+                      location.pathname.includes("55Si7") ? "active-grade" : ""
                     }
                   >
-                    52CrMoV4 / 50Cr4MoV2
+                    55Si7 / 56Si7 / SAE 9255 / 1.5026
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="52crv4"
+                    to="sup9"
                     className={
-                      location.pathname.includes("52crv4") ? "active-grade" : ""
+                      location.pathname.includes("sup9") ? "active-grade" : ""
                     }
                   >
-                    52CrV4 / 51CrV4 / AISI 4150
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="55si7"
-                    className={
-                      location.pathname.includes("55si7") ? "active-grade" : ""
-                    }
-                  >
-                    55Si7 / 56Si7 / SAE 9255
+                    SUP9
                   </Link>
                 </li>
               </ul>

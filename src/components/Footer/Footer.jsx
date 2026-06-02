@@ -211,8 +211,8 @@ const Footer = () => {
               <p>
                 <span className="d-block mb-1">
                   <SmartEmailLink
-                    email="enquiry@venturasteels.com"
-                    label="enquiry@venturasteels.com"
+                    email="inquiry@venturasteels.com"
+                    label="inquiry@venturasteels.com"
                     className="text-white footer-tap-link"
                   />
                 </span>

@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./hot-work-grade.css";
+import "../applications-properties.css";
+import "../cta-block.css";
+import "../weight-btn.css";
 
 export default function DB6() {
   const navigate = useNavigate();
@@ -91,11 +94,10 @@ export default function DB6() {
       </Helmet>
 
       <div className="grade-details">
-        <h1 className="text-center">
-          <strong>DB6 / DIN 2714 </strong> / AISI L6
-        </h1>
+        <h1 className="text-center">DB6 / DIN 2714 / AISI L6</h1>
         <p className="subtitle text-center">
-          Premium Hot Work Tool Steel with high toughness & wear resistance.
+          Premium Hot Work Tool Steel - Engineered for High Toughness & Superior
+          Wear Resistance
         </p>
         {/* standards  */}
         <div className="hot-work-standards-scroll-wrapper mb-4">
@@ -107,13 +109,12 @@ export default function DB6() {
                     <strong>COUNTRY </strong>
                   </td>
                   <td>India</td>
+                  <td>USA</td>
                   <td>Europe</td>
                   <td>Germany</td>
-                  <td>USA</td>
-                  <td>France</td>
-                  <td>Japan</td>
-                  <td>UK</td>
                   <td>China</td>
+                  <td>Japan</td>
+                  <td>R. of Korea</td>
                   <td>Russia</td>
                 </tr>
                 <tr>
@@ -121,30 +122,26 @@ export default function DB6() {
                     <strong>STANDARDS</strong>
                   </td>
                   <td>IS</td>
+                  <td>AISI / SAE</td>
                   <td>En</td>
-                  <td>DIN / WNr</td>
-                  <td>AISI</td>
-                  <td>AFNOR</td>
-                  <td>JIS</td>
-                  <td>BS</td>
+                  <td>DIN, WNr</td>
                   <td>GB</td>
+                  <td>JIS</td>
+                  <td>KS</td>
                   <td>GOST</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>EQUIVALENT NAME</strong>
                   </td>
-                  <td>
-                    DB6 or directly <br /> as 55CrNiMoV7
-                  </td>
+                  <td>T55Ni7Cr4Mo5V1 / T55NiCrMo3</td>
+                  <td>A681 L6</td>
                   <td>55NiCrMoV7</td>
-                  <td>1.2714 / X38CrMoV5-1</td>
-                  <td>L6</td>
-                  <td>55NCDV7</td>
-                  <td>SKT4</td>
-                  <td>BH224-5</td>
+                  <td>56NiCrMoV7</td>
                   <td>5CrNiMo</td>
-                  <td>5KHNM</td>
+                  <td>SKT4</td>
+                  <td>STF4</td>
+                  <td>4KH5MF1S</td>
                 </tr>
               </tbody>
             </table>
@@ -152,40 +149,51 @@ export default function DB6() {
         </div>
 
         {/* Overview */}
-        <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3">
-          <div className="overview-content">
-            <p>
-              Ventura Alloy and Steels Stocks and Supplies Die Block Steel DB6 /
-              DIN 2714 in India and abroad. DB6 tool steel is an extreme pass on
-              steel with high treating resistance and great through-solidifying
-              properties. Its nickel substance has it uncommonly effect safe – a
-              highly recommendable element for vast mallet & press bites the
-              dust alike. This evaluation is generally supplied in toughened
-              condition or extinguished and tempered to 1300 N/mm² & a working
-              hardness of 370 to 410 HB (round) or 355 to 400 HB (square,
-              level).
-            </p>
-            <p>
-              `` Utilized as standard die block steel for manufacturing passes
-              on of different kinds, press bites the dust, expulsion kicks the
-              bucket, retainer plates, heavily clad trim bites the dust, hot
-              shear sharpened pieces of steels and instrument holder.
-            </p>
-          </div>
-          <div className="hot-work-img">
+        <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3 pt-3">
+          <div className="hot-work-img-1">
             <img
               src="/image/1.2714 Block.JPG"
               alt="DB6 DIN 2714 Hot Work Steel Block for Dies and Tooling"
               loading="lazy"
-              height={350}
             />
+          </div>
+          <div className="overview-content">
+            <p>
+              Grade DB6 / DIN 2714 / AISI L6 is a premium Hot Work Tool Steel as
+              per German Standard, alloyed with Chromium, Nickel, Molybdenum,
+              and Vanadium. It offers an exceptional combination of high
+              hardness, superior toughness, and outstanding wear resistance —
+              making it one of the most trusted grades in the tool and die
+              industry.
+            </p>
+            <p>
+              Die blocks are processed through a stringent route of extra
+              forging reduction, upsetting (stamping 3 times), and double
+              tempering — ensuring exceptional steel cleanliness, full internal
+              soundness, and consistent mechanical properties throughout the
+              entire section. The ﬁnest grain size of 7+ and strict UT standards
+              ensure complete internal soundness, from surface to core,
+              delivering a die block that is cleaner, tougher, and built to
+              outlast in the most demanding applications.
+            </p>
+            <p>
+              Ventura’s ultra-premium standard quality material describes a
+              multi-stage steel manufacturing process including EAF, LF, VD,
+              upsetting, forging, annealing, rough turning, oil quenching,
+              double tempering, and triple stamping. It maintains a minimum
+              forging ratio of 7:1 with speciﬁed chemical composition ranges.
+              The product dimensions include thickness from 155–1200 mm, width
+              from 205–2000 mm, and diameters up to 1550 mm. Additional
+              parameters include quality grading (7+), inspection criteria based
+              on weight, and batch capacities ranging from 35 MT to 120 MT.
+            </p>
           </div>
         </section>
 
         {/* Chemical Composition */}
         <section className="hot-work-composition">
           <h2 className="mb-4 text-center">
-            DB6 Chemical Composition (Typical Analysis in %)
+            CHEMICAL COMPOSITION (TYPICAL ANALYSIS %)
           </h2>
           <div className="table-data d-flex justify-content-center">
             <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
@@ -194,11 +202,11 @@ export default function DB6() {
                   <tr>
                     <th>Element</th>
                     <th>C</th>
-                    <th>Mn</th>
                     <th>Si</th>
-                    <th>Cr</th>
+                    <th>Mn</th>
                     <th>P</th>
                     <th>S</th>
+                    <th>Cr</th>
                     <th>Mo</th>
                     <th>Ni</th>
                     <th>V</th>
@@ -206,13 +214,13 @@ export default function DB6() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Range</td>
+                    <td>Range(%)</td>
                     <td>0.50 – 0.60</td>
-                    <td>0.65 – 0.95</td>
                     <td>0.10 – 0.40</td>
-                    <td>1.00 – 1.20</td>
-                    <td>Max 0.03</td>
-                    <td>Max 0.03</td>
+                    <td>0.60 – 0.95</td>
+                    <td>≤ 0.025</td>
+                    <td>≤ 0.025</td>
+                    <td>0.90 - 1.20</td>
                     <td>0.45 – 0.55</td>
                     <td>1.50 – 1.80</td>
                     <td>0.07 – 0.12</td>
@@ -224,34 +232,157 @@ export default function DB6() {
         </section>
 
         {/* size range */}
-        <section className="size-range">
-          <h2 className="text-center">DB6 Hot Work Steel Size Range</h2>
+        {/* <section className="size-range">
+          <h2 className="text-center">PROCESS AND SIZE RANGE</h2>
           <table className="size-table">
             <thead>
               <tr>
-                <th>Shape</th>
-                <th>Dimensions</th>
+                <th>Material Type</th>
+                <th>Standard Quality</th>
+                <th>Refined Quality Imported</th>
+                <th>
+                  Ventura's Ultra-Premium Imported (Equivalent to European
+                  Standard)
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Rounds</td>
-                <td>Diameter: 102 - 710 mm</td>
+                <td>
+                  <strong>Process Route</strong>
+                </td>
+                <td>
+                  EF + LF +VD+ FORGED+ ANNEALED+ ROUGH TURNED+ OIL QUENCHED &
+                  DOUBLE TEMPERED
+                </td>
+                <td>
+                  EAF + LF +VD+ UPSET (STAMPING 2 TIMES) + FORGED+ ANNEALED+
+                  ROUGH TURNED+ OIL QUENCHED & DOUBLE TEMPERED
+                </td>
+                <td>
+                  EAF + LF +VD+ UPSET (STAMPING 3 TIMES) + FORGED+ ANNEALED+
+                  ROUGH TURNED+ OIL QUENCHED & DOUBLE TEMPERED
+                </td>
               </tr>
               <tr>
-                <td>Blocks</td>
                 <td>
-                  Thickness: 125 – 1000 mm
-                  <br />
-                  Width: 130 – 1600 mm
+                  <strong>Forging Ratio</strong>{" "}
+                </td>
+                <td>Min 4:1</td>
+                <td>Min 5:1</td>
+                <td>Min 7:1</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong> Ni(%)</strong>
+                </td>
+                <td>1.5 - 1.8</td>
+                <td>1.5 - 1.9</td>
+                <td>1.55 -1.80</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Mo(%)</strong>
+                </td>
+                <td>0.45 -0.55</td>
+                <td>0.50 - 0.55</td>
+                <td>0.50 - 0.55</td>
+              </tr>
+              <tr>
+                <td rowSpan="3" className="left-header">
+                  <strong>Size Capacity</strong>
+                </td>
+
+                <td className="top-header">Ø102-505 MM</td>
+                <td className="top-header">Ø142-710 MM</td>
+                <td className="top-header">Upto Ø1550 MM</td>
+              </tr>
+
+              <tr>
+                <td>Thickness: 125 - 450 MM</td>
+                <td>Thickness: 155 - 710 MM</td>
+                <td>Thickness: 155 - 1200 MM</td>
+              </tr>
+
+              <tr>
+                <td>Width: 210 - 600 MM</td>
+                <td>Width: 205 - 1000 MM</td>
+                <td>Width: 205 - 2000 MM</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Grain Size</strong>
+                </td>
+                <td>6-7</td>
+                <td>6-8</td>
+                <td>7+</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Ultra Quality</strong>
+                </td>
+                <td>
+                  D/d -4 MM FBH <br />
+                  (target 3 MM)
+                </td>
+                <td>D/d-3 MM FBH</td>
+                <td>
+                  Below 20 MT: E/e <br />
+                  applicable 20 MT & above: D/d
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Smelting Furnace Capacity</strong>
+                </td>
+                <td>7-8 MT</td>
+                <td>15 -18 MT</td>
+                <td>
+                  35 MT <br />
+                  120 MT
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Recommended Industries</strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>General engineering & fabrication</li>
+                    <li> Small to mid-scale forging units</li>
+                    <li>Automotive (non-critical components)</li>
+                    <li>Agricultural equipment manufacturing</li>
+                    <li>Hand tools & basic die applications</li>
+                    <li>Low-volume die casting /forging shops</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Automotive OEM & Tier-1suppliers</li>
+                    <li>Co MMercial vehicle manufacturing</li>
+                    <li>Forging industry (medium to heavy duty)</li>
+                    <li>Aluminum die casting (mid-size components)</li>
+                    <li>Oil & gas components (non-critical)</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Automotive OEM (critical safety components)</li>
+                    <li>Aerospace & defense tooling</li>
+                    <li>Heavy forging & press shops</li>
+                    <li>Large aluminum/magnesium die casting</li>
+                    <li>High-pressure die casting (HPDC)</li>
+                    <li>Oil & gas (critical/high stress components)</li>
+                    <li>Power generation & heavy engineering</li>
+                  </ul>
                 </td>
               </tr>
             </tbody>
           </table>
-        </section>
+        </section> */}
 
         {/* process route */}
-        <section className="process-route mx-auto mt-3">
+        {/* <section className="process-route mx-auto mt-3">
           <h2 className="text-center">
             Process Route of DB6 Hot Work Tool Steel
           </h2>
@@ -283,41 +414,59 @@ export default function DB6() {
               ROUGH TURNED FOR ROUNDS / MILLED FOR FLATS
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Steel properties */}
         <section className="steel-properties">
-          <h2>Steel Properties of DB6 Hot Work Tool Steel</h2>
-          <p>
-            The exceptional hot work pre-solidified tool steel has great
-            toughness and high wear resistance. DB6 die steel is generally
-            provided in hard, quenched, tempered, and annealed condition, and in
-            strengthened condition in exceptional cases. Normally its working
-            hardness is
-            <strong> 360–430 BHN</strong>. This steel grade is the updated type
-            of DIN 2713 for higher efficiency and performance.
-          </p>
+          <h2>STEEL PROPERTIES</h2>
+          <ul>
+            <li>
+              Achieves high hardness after heat treatment, typically around
+              58–62 HRC.
+            </li>
+            <li>
+              Offers very high wear resistance due to the presence of hard
+              chromium carbides.
+            </li>
+            <li>
+              Has excellent hardenability and can be air or oil hardened, with
+              effective hardening in large sections.
+            </li>
+            <li>
+              Shows low distortion during quenching, maintaining good
+              dimensional accuracy.
+            </li>
+            <li>Has moderate resistance to softening during tempering.</li>
+          </ul>
         </section>
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications of DB6 Hot Work Tool Steel</h2>
-          <p>
-            Dies for specially drop and close die forgings for hammers &
-            mechanical presses, die moulds, shoe blocks, die holder, piston
-            rods, bolster, cranks, cassettes, plastic moulds, shearing blades,
-            tools, etc.
-          </p>
+          <h2>APPLICATIONS</h2>
+          <ul>
+            <li>Forming dies, Cold punching, and blanking dies. </li>
+            <li>Trimming and piping dies.</li>
+            <li>Deep drawing and drawing dies.</li>
+            <li>Complex shape dies under arduous working conditions. </li>
+            <li>Thread rolling dies.</li>
+            <li>Circular saws and precision cutting tools. </li>
+            <li>Standards, gauges, and measuring tools.</li>
+            <li>Cold moulds requiring heavy load and bulk production.</li>
+            <li>
+              Wear-resistant components requiring high hardenability and
+              toughness.
+            </li>
+          </ul>
         </section>
 
         {/* Thermal properties */}
         <section className="hotwork-thermal-properties">
-          <h2 className="thermal-section-title">Thermal Properties</h2>
+          <h2 className="thermal-section-title">THERMAL PROPERTIES</h2>
 
           <div className="row">
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Coefficient of Thermal Expansion</h4>
+                <h5>COEFFICIENT OF THERMAL EXPANSION</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -357,7 +506,7 @@ export default function DB6() {
 
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Thermal Conductivity</h4>
+                <h5>THERMAL CONDUCTIVITY</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -368,15 +517,15 @@ export default function DB6() {
                   <tbody>
                     <tr>
                       <td>20</td>
-                      <td>35.0</td>
+                      <td>35</td>
                     </tr>
                     <tr>
                       <td>350</td>
-                      <td>39.0</td>
+                      <td>39</td>
                     </tr>
                     <tr>
                       <td>700</td>
-                      <td>36.0</td>
+                      <td>36</td>
                     </tr>
                   </tbody>
                 </table>
@@ -387,38 +536,46 @@ export default function DB6() {
 
         {/* heat treatment */}
         <section className="heat-treatment">
-          <h2 className="section-title">Heat Treatment for DB6 Steel</h2>
+          <h2 className="section-title">Heat Treatment</h2>
 
           <div className="row">
             {/* Basic Heat Treatment Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Heat Treatment Steps</h4>
+                <h5>HEAT TREATMENT STEPS</h5>
                 <table className="table table-bordered">
                   <tbody>
                     <tr>
                       <th>Soft Annealing °C</th>
-                      <td>650-710</td>
+                      <td colSpan="2">650 - 710</td>
                     </tr>
+
                     <tr>
                       <th>Cooling</th>
-                      <td>Furnace</td>
+                      <td colSpan="2">Furnace</td>
                     </tr>
+
                     <tr>
                       <th>Hardness HB</th>
-                      <td>max. 240</td>
+                      <td colSpan="2">≤ 240</td>
                     </tr>
+
                     <tr>
                       <th>Hardening °C</th>
-                      <td>840-880 / 860-900</td>
+                      <td>840 - 880</td>
+                      <td>860 - 900</td>
                     </tr>
+
                     <tr>
                       <th>Quenching</th>
-                      <td>Oil / Air</td>
+                      <td>Oil</td>
+                      <td>Air</td>
                     </tr>
+
                     <tr>
                       <th>Hardness after Quenching HRC</th>
-                      <td>57 / 55</td>
+                      <td>57</td>
+                      <td>55</td>
                     </tr>
                   </tbody>
                 </table>
@@ -428,7 +585,7 @@ export default function DB6() {
             {/* Tempering Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Tempering (°C after quenching)</h4>
+                <h5>TEMPERING (°C AFTER QUENCHING)</h5>
                 <table className="table table-bordered">
                   <thead>
                     <tr>
@@ -519,7 +676,7 @@ export default function DB6() {
         </section>
 
         {/* Availability */}
-        <section className="availability-info my-4">
+        {/* <section className="availability-info my-4">
           <div className="container">
             <h4 className="mb-3">Availability</h4>
             <p>
@@ -537,10 +694,10 @@ export default function DB6() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Get Quote CTA */}
-        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
           <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>
@@ -556,7 +713,6 @@ export default function DB6() {
           <span>MOQ: 0.33 Tonnes</span>
         </div>
       </div>
-
     </>
   );
 }

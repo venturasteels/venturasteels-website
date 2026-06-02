@@ -19,56 +19,52 @@ import { useLocation } from "react-router-dom";
 
 const productOptions = {
   "Hot Work Steel": [
-    "DB6 / DIN 1.2714 / AISI L6",
-    "H13 / AISI H13 / DIN 1.2344",
-    "H11 / AISI H 11 / DIN 1.2343",
-    "H21 / AISI H21 / DIN 1.2581",
-    "H10 / AISI H10 / DIN 1.2365 / SKD7",
-    "H12 / AISI H12 / DIN 1.2606",
+    "DB6 / DIN 2714 / AISI L6",
+    "H13 / AISI H13 / DIN 2344",
+    "H11 / AISI H11 / DIN 2343",
+    "1.2367 / X38CrMoV5-3",
+    "1.8407",
   ],
   "Cold Work Steel": [
     "D2 / 1.2379 / HCHCR D2",
     "D3 / 1.2080 / HCHCR D3",
     "D5 / Cr12MoV / 1.2601",
-    "A2 / 1.2363",
-    "O1/ 2510 / OHNS O1",
+    "SAE 52100 / 100Cr6 / 1.3505 / SUJ2",
+    "O1 / 1.2510 / OHNS O1 / 100MnCrW4 / SK53",
+    "A2 / 1.2363 / X100CrMoV5-1 / SKD12",
+    "D6 / X210CrW 12 / 1.2436",
   ],
-  "Plastic Mould Steel": ["P20+Ni / 1.2738", " P20 / 1.2311", "1.2316"],
-  "Spring Steel": [
-    "EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10",
-    "SUP 9",
-    "SAE 9254 / SUP 11A",
-    "EN 31 / SAE 52100 / 100Cr6",
-    "EN45 / SAE 9260 / 60Si7",
-    "SAE 5160",
-    "52CrMoV4 / 50Cr4MoV2 ",
-    "52CrV4 / 51CrV4 / AISI 4150 ",
-    "55Si7 / 56Si7 / SAE 9255 ",
+  "Plastic Mould Steel": [
+    "P20 / 1.2311",
+    "P20+NI / 1.2738",
+    "1.2316 / X36CrMo17",
   ],
   "Alloy Steel": [
     "20MnCr5 / 16MnCr5",
-    "SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D",
-    "SAE 1020",
-    "41Cr4 / EN18 / 40Cr4B ",
-    "EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84 ",
-    "EN 24 / 18CrNiMo6 ",
-    "SAE4130 ",
-    "EN36C ",
-    "SAE 8620 / EN353 / SAE 9310 ",
+    "SAE 4140 / EN19 / 42CrMo4 / 1.7224 / SCM440",
+    "EN24 / SAE 4340 / 34CrNiMo6 / 1.6582",
+    "EN36 / 14NiCr14 / 1.5752 / SNCM220",
+    "SAE 8620 / 20NiCrMo2-2",
+    "SAE 4130 / 25CrMo4 / 1.7218 / SCM430",
+    "41Cr4 / 1.7035 / SCr440 / EN18 / 40Cr4B",
+    "SAE 1020 / C22E / 1.1151 / S20C ",
+    "EN353 / 1.6523",
   ],
   "Carbon Steel": [
-    "C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045",
-    "SAE 1018 / ASTM A36 / ASTM A29 / SAE 1137 / SAE 1138",
-    "ST 52.3",
-    "EN 1A / EN 1A_PB / EN 1A_L / 230M07 PB",
-    "35C8 / C35 / EN8 / SAE 1035 / 45C8 ",
-    "SAE 1541 / EN 15 ",
-    "27C15 / SAE 1527 ",
-    "SAE 1117 / ASTM A108 ",
-    "EN43BCr / SAE 1050 / EN43A ",
-    "SAE 1141 ",
+    "SAE 1018 / C18E / 1.0402 / S18C / ASTM A29",
+    "C45 / EN8 / EN8A / EN8D / EN8M / EN8DM /CK45 / AISI 1045 / 45C8 / 1.0503",
+    "ST52.3 / S355J2G3 / S355JR / 1.057 / SM490A",
+    "EN1A-L & PB / 11SMnPb30 / 1.0718 / SUM22L / 230M07 PB",
+    "EN9 / 1055 / 1.0535 / S55C",
   ],
-  "Boron Steel": ["10B21", "15B25", "10B35"],
+  "Spring Steel": [
+    "EN47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP10",
+    "SAE 9254 / SUP11A / SUP1",
+    "52CrMoV4 / 50Cr4MoV2 / 50Cr4MoV4 / 1.770",
+    "55Si7 / 56Si7 / SAE 9255 / 1.5026",
+    "SUP9",
+  ],
+  // "Boron Steel": ["10B21", "15B25", "10B35"],
 };
 
 export default function EnquiryForm() {
@@ -422,7 +418,50 @@ export default function EnquiryForm() {
           />
           <meta
             name="keywords"
-            content="Ventura Steels Enquiry, Steel Enquiry Form, Alloy Steel Supplier India, Tool Steel Enquiry, Engineering Steel Quote, Steel Stockist Contact, Industrial Steel Solutions"
+            content="
+  Ventura Steels Enquiry,
+  Ventura steel quote request,
+  Steel Enquiry Form,
+  Contact steel supplier India,
+  steel quotation request,
+  alloy steel enquiry,
+  tool steel enquiry,
+  engineering steel quote,
+  steel stockist contact,
+  industrial steel solutions,
+
+  special steel enquiry India,
+  industrial steel supplier India,
+  B2B steel supplier India,
+  steel sourcing India,
+  custom steel requirements,
+  steel procurement solutions,
+
+  alloy steel supplier India,
+  tool steel supplier India,
+  hot work steel supplier,
+  cold work steel supplier,
+  plastic mould steel supplier,
+  spring steel supplier,
+  carbon steel supplier,
+  boron steel supplier,
+  die steel supplier,
+
+  steel grades enquiry,
+  steel round bars supplier,
+  steel blocks supplier,
+  custom steel dimensions,
+  steel quantity enquiry,
+  technical steel support,
+  steel material sourcing,
+  industrial raw material supplier,
+
+  request steel quote online,
+  bulk steel order India,
+  custom steel specifications,
+  certified steel inventory,
+  urgent steel sourcing
+"
           />
           <link rel="canonical" href="https://venturasteels.com/enquiry" />
         </Helmet>

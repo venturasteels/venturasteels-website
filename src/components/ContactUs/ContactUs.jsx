@@ -146,13 +146,52 @@ const ContactUs = () => {
 
           <meta
             name="description"
-            content="Contact Ventura Alloy & Steels Pvt. Ltd., a trusted alloy and tool steel supplier in India. Reach us for enquiries, quotations, and industrial steel solutions."
+            content="Contact Ventura Alloy & Steels Pvt. Ltd. for alloy steel, tool steel, hot work steel, cold work steel and industrial steel enquiries. Reach our Mumbai Head Office and Bhiwandi Stocking & Machining Center."
           />
 
-          {/* Keywords are optional now, but kept clean for legacy support */}
           <meta
             name="keywords"
-            content="Ventura Steels contact, Ventura Alloy & Steels Pvt Ltd, steel supplier India contact, alloy steel enquiry, tool steel supplier contact, industrial steel supplier India, Ventura Steels Mumbai office"
+            content="
+  Ventura Steels contact,
+  Ventura Alloy and Steels Pvt Ltd,
+  Contact Ventura Steels,
+  Ventura Steels Mumbai office,
+  Ventura Steels Bhiwandi,
+  steel supplier India contact,
+  alloy steel enquiry,
+  tool steel supplier contact,
+  industrial steel supplier India,
+
+  steel suppliers near me,
+  steel supplier Mumbai,
+  alloy steel supplier Mumbai,
+  spring steel supplier Mumbai,
+  steel dealers in Mumbai,
+  carbon steel supplier India,
+  boron steel supplier India,
+
+  special steel supplier Mumbai,
+  tool steel supplier Mumbai,
+  engineering steel supplier Mumbai,
+  hot work steel supplier India,
+  cold work steel supplier India,
+  die steel supplier Mumbai,
+  plastic mould steel supplier India,
+
+  steel stockist Mumbai,
+  steel stockist Bhiwandi,
+  steel warehouse Bhiwandi,
+  industrial steel solutions India,
+  steel enquiry India,
+  steel quotation request,
+  B2B steel supplier India,
+
+  alloy steel stockist Mumbai,
+  steel machining center Mumbai,
+  steel service center India,
+  precision steel supplier India,
+  steel distributor India
+"
           />
 
           <link rel="canonical" href="https://venturasteels.com/contact-us" />
@@ -363,8 +402,8 @@ const ContactUs = () => {
               <p>
                 <span className="d-block mb-1">
                   <SmartEmailLink
-                    email="enquiry@venturasteels.com"
-                    label="enquiry@venturasteels.com"
+                    email="inquiry@venturasteels.com"
+                    label="inquiry@venturasteels.com"
                     className="text-muted"
                   />
                 </span>

@@ -2,6 +2,9 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./cold-work-grade.css";
+import "../applications-properties.css";
+import "../cta-block.css";
+import "../weight-btn.css";
 
 export default function D2() {
   const navigate = useNavigate();
@@ -9,7 +12,7 @@ export default function D2() {
   const handleEnquiryClick = () => {
     navigate("/enquiry", {
       state: {
-        selectedGrade: "D2 / 1.2379 / HCHCR D2 ",
+        selectedGrade: "D2 / 1.2379 / HCHCR D2",
         selectedProduct: "Cold Work Steel",
       },
     });
@@ -89,13 +92,12 @@ export default function D2() {
 `}
         </script>
       </Helmet>
+      
       <div className="grade-details">
-        <h2 className="text-center">
-          <strong>D2 / 1.2379 </strong> / HCHCR D2
-        </h2>
+        <h1 className="text-center">D2 / 1.2379 / HCHCR D2</h1>
         <p className="subtitle text-center">
-          High-carbon, high-chromium tool steel with wear resistance and
-          toughness.
+          High-Carbon, High-Chromium Tool Steel — Maximum Wear Resistance &
+          Toughness
         </p>
 
         {/* standards  */}
@@ -107,40 +109,40 @@ export default function D2() {
                   <td>
                     <strong>COUNTRY </strong>
                   </td>
-                  <td>USA</td>
-                  <td>Germany / Europe</td>
-                  <td>Japan</td>
-                  <td>China</td>
-                  <td>UK</td>
-                  <td>France</td>
                   <td>India</td>
+                  <td>USA</td>
+                  <td>Europe</td>
+                  <td>Germany</td>
+                  <td>China</td>
+                  <td>Japan</td>
+                  <td>R. of Korea</td>
                   <td>Russia</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>STANDARDS</strong>
                   </td>
-                  <td>ASTM / AISI</td>
-                  <td>DIN / EN</td>
-                  <td>JIS</td>
-                  <td>GB</td>
-                  <td>BS</td>
-                  <td>AFNOR</td>
                   <td>IS</td>
+                  <td>ASTM / AISI</td>
+                  <td>EN</td>
+                  <td>DIN</td>
+                  <td>GB</td>
+                  <td>JIS</td>
+                  <td>KS</td>
                   <td>GOST</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>EQUIVALENT NAME</strong>
                   </td>
+                  <td>HCHCR D2</td>
                   <td>D2</td>
-                  <td>1.2379 / X153CrMoV12</td>
-                  <td>SKD11</td>
+                  <td>X153CrMoV12</td>
+                  <td>1.2379</td>
                   <td>Cr12MoV</td>
-                  <td>BD2</td>
-                  <td>Z160CDV12</td>
-                  <td>D2 (as per AISI / DIN 1.2379)</td>
-                  <td>Kh12MF (Х12МФ)</td>
+                  <td>SKD11</td>
+                  <td>STD11</td>
+                  <td>Х12МФ (Kh12MF)</td>
                 </tr>
               </tbody>
             </table>
@@ -149,32 +151,53 @@ export default function D2() {
 
         {/* Overview */}
         <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3">
+          <div className="cold-work-img-2 d-flex">
+            <img
+              src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874983/1.2379_Flat_Bars_ikvsrj.jpg"
+              alt="D2 grade image, 1.2379 grade, HCHCR D2 cold work garde image"
+              loading="lazy"
+            />
+            <img
+              src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874990/1.2379_Round_Bars_hiyhsk.jpg"
+              alt="D2 grade image, 1.2379 grade, HCHCR D2 cold work garde image"
+              loading="lazy"
+            />
+          </div>
           <div className="overview-content">
             <p>
-              Ventura Alloy and Steels Supplies and Stocks HCHCR D2 steel in
-              India and abroad. D2 steel is an air hardening, high-carbon,
-              high-chromium tool steel. It has high wear and abrasion resistant
-              properties. It is heat treatable and will offer a hardness in the
-              range 55-62 HRC, and is machinable in the annealed condition. It
-              tends to be used as threading rolls and dies, icy trimming,
-              cutting & stamping tools for sheet thickness up to 6mm, accuracy
-              cutting instruments for sheet thicknesses up to 12 mm.
+              D2, a high-carbon, high-chromium, air-hardening cold work tool
+              steel, is also designated as DIN 1.2379. It belongs to the
+              ledeburitic 12% chromium steel family and is alloyed with
+              molybdenum and vanadium, which together deliver an exceptional
+              combination of wear resistance, toughness, dimensional stability,
+              and high hardenability.
             </p>
-          </div>
-          <div className="cold-work-img">
-            <img
-              src="/image/Cold Work Tool Steels/d2.jpeg"
-              alt="D2 Image"
-              loading="lazy"
-              width={250}
-            />
+            <p>
+              Its high chromium content imparts modest corrosion resistance,
+              particularly when polished. D2 also supports supplementary
+              nitriding after special heat treatment, further extending surface
+              hardness and service life. With a more balanced composition than
+              D3, this steel is the preferred choice for demanding, long-run
+              tooling over traditional oil-hardening grades.
+            </p>
+            <p>
+              Ventura’s ultra-premium quality material describes a steel
+              manufacturing process involving EAF, LF, VD, ESR, upsetting,
+              forging, and annealing, with a minimum forging ratio of 5:1. The
+              chemical composition includes controlled levels of carbon,
+              chromium, molybdenum, and vanadium for strength and durability.
+              The material is available in diameters from 70–750 MM, thickness
+              32–605 MM, and width 155–1200 MM. It meets quality levels of 6–8,
+              with inspection standards based on size, and supports production
+              batches of up to 35 MT.
+            </p>
           </div>
         </section>
 
         {/* Chemical Composition */}
-        <section className="cold-work-composition">
+        {/* <section className="cold-work-composition">
           <h3 className="mb-4 text-center">
-            Chemical Composition (Typical Analysis in %)
+            CHEMICAL COMPOSITION (TYPICAL ANALYSIS %)
           </h3>
           <div className="table-data d-flex justify-content-center">
             <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
@@ -208,98 +231,62 @@ export default function D2() {
               </table>
             </div>
           </div>
-        </section>
-
-        {/* size range */}
-        <section className="size-range">
-          <h3>Size Range</h3>
-          <table className="size-table">
-            <thead>
-              <tr>
-                <th>Shape</th>
-                <th>Dimensions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Rounds</td>
-                <td>20 to 450 MM | SQUARE – 50 to 155 MM</td>
-              </tr>
-              <tr>
-                <td>Blocks</td>
-                <td>
-                  Thickness: 20 - 150 mm
-                  <br />
-                  Width: 40 – 450 mm
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        {/* process routes */}
-        <section className="process-route mt-3">
-          <h3>Process Route</h3>
-          <div className="process-flow">
-            <div className="step">EAF </div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD / VOD </div>
-            <span className="arrow">→</span>
-            <div className="step">ESR (Optional – Premium Grades)</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGING / ROLLING</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED (Soft Anneal / Spheroidize)</div>
-            <span className="arrow">→</span>
-            <div className="step">ROUGH TURNED / MILLED</div>
-            <span className="arrow">→</span>
-            <div className="step">HARDENED (Oil Quench)</div>
-            <span className="arrow">→</span>
-            <div className="step">DOUBLE / TRIPLE TEMPERED</div>
-            <span className="arrow">→</span>
-            <div className="step">FINISHED (Ground / Machined / Polished)</div>
-          </div>
-        </section>
+        </section> */}
 
         {/* Steel properties */}
         <section className="steel-properties">
-          <h2>Steel Properties</h2>
+          <h2>STEEL PROPERTIES</h2>
           <ul>
-            <li>High Carbon High Chromium contents.</li>
             <li>
-              High wear resistant and toughness due to Vanadium addition of
-              0.90%.
+              High carbon and high chromium composition deliver industry-leading
+              wear resistance.
+            </li>
+            <li>Vanadium addition of 0.90% signiﬁcantly enhances toughness.</li>
+            <li>
+              Supplied in annealed condition — achieves 57–62 HRC after
+              hardening, and annealed hardness ranges between 200–225 HB.
             </li>
             <li>
-              Supply condition is an Annealed which offer hardness to reach
-              57-59 HRC.
+              Fully machinable in the annealed state for ease of fabrication.
             </li>
-            <li>Machinable in annealed condition.</li>
-            <li>Better than D3 steel due to high alloy properties.</li>
+            <li>
+              Superior alloy composition makes it a reliable upgrade over D3
+              steel.
+            </li>
           </ul>
         </section>
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications</h2>
-          <p>
-            HCHCR D2 cold work tool steel can be utilized for cold stamping or
-            forming dies, cold forming rolls, slitters, shear blades, tools,
-            chipper knives, tyre shredders, punches, trimming, cutting threading
-            dies, stamping tools and more.
-          </p>
+          <h2>APPLICATIONS</h2>
+          <ul>
+            <li>Cold stamping and forming dies, cold forming rolls.</li>
+            <li>Cold extrusion and cold tri MMing tools.</li>
+            <li>
+              Slitters, shear blades, chipper knives, tyre shredders, punches,
+              trimming dies, cutting and threading dies, and stamping tools.
+            </li>
+            <li>Thread rolling rolls and dies. </li>
+            <li>Precision cutting instruments.</li>
+            <li>Cold pilger mandrels and circular shear blades. </li>
+            <li>Deep-drawing tools and pressure pads.</li>
+            <li>Small shearing and cutting moulds. </li>
+            <li>Screw rolled and slapper moulds.</li>
+            <li>Highly wear-resistant plastic moulds.</li>
+            <li>
+              ESR (Electro Slag Remelted) high-compression tooling components.
+            </li>
+          </ul>
         </section>
 
         {/* Thermal properties */}
         <section className="coldwork-thermal-properties">
-          <h2 className="thermal-section-title">Thermal Properties</h2>
+          <h2 className="thermal-section-title">THERMAL PROPERTIES</h2>
 
           <div className="row">
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Coefficient of Thermal Expansion</h4>
+                <h5>COEFFICIENT OF THERMAL EXPANSION</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -331,7 +318,7 @@ export default function D2() {
 
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Thermal Conductivity</h4>
+                <h5>THERMAL CONDUCTIVITY</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -367,7 +354,7 @@ export default function D2() {
             {/* Basic Heat Treatment Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Heat Treatment Steps</h4>
+                <h5>HEAT TREATMENT STEPS</h5>
                 <table className="table table-bordered">
                   <tbody>
                     <tr>
@@ -380,7 +367,7 @@ export default function D2() {
                     </tr>
                     <tr>
                       <th>Hardness HB</th>
-                      <td>max. 250</td>
+                      <td>≤ 250</td>
                     </tr>
                     <tr>
                       <th>Stress-relief Annealing °C</th>
@@ -394,10 +381,6 @@ export default function D2() {
                       <th>Quenching</th>
                       <td>Air, Oil, Salt Bath 500-550°C</td>
                     </tr>
-                    <tr>
-                      <th>Hardness after quenching HRC</th>
-                      <td>63</td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -406,7 +389,7 @@ export default function D2() {
             {/* Tempering Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Tempering (°C after quenching)</h4>
+                <h5>TEMPERING (°C AFTER QUENCHING)</h5>
                 <table className="table table-bordered">
                   <thead>
                     <tr>
@@ -472,7 +455,7 @@ export default function D2() {
         </section>
 
         {/* Availability */}
-        <section className="availability-info my-4">
+        {/* <section className="availability-info my-4">
           <div className="container">
             <h4 className="mb-3">Availability</h4>
             <p>
@@ -490,10 +473,10 @@ export default function D2() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Get Quote CTA */}
-        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
           <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>

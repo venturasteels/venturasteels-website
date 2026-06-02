@@ -11,7 +11,7 @@ const HotWork = () => {
 
   useEffect(() => {
     const gradePattern =
-      /^\/products\/hot-work-steel\/(db6|h13|h11|h21|h10|h12)/;
+      /^\/products\/hot-work-steel\/(db6|h13|h11|1.2367-x38crmov5-3|1.8407)/;
 
     const isGrade = gradePattern.test(location.pathname);
     setIsGradeSelected(isGrade);
@@ -117,14 +117,17 @@ const HotWork = () => {
         <div className="hotwork-hero">
           <h1>Hot Work Tool Steels</h1>
           <p>
-            These hot die steels are compatible with heat. They are highly known
-            for great wear resistance, heat conductivity, hardness and
-            robustness at increased temperatures. These tool steels have
-            enhanced features and prove highly useful due to decreased Sulphur
-            levels. They are used where operating temperatures of the tool steel
-            may reach levels where resistance to softening, heat checking and
-            shock is important. It has high heat resistance and medium wear
-            resistance, Distortion in hardening is low.
+            Hot work tool steels are high-alloy steels engineered for tooling
+            subjected to elevated temperatures, typically 300°C to 700°C,
+            combined with mechanical stress, thermal cycling, and abrasive
+            contact with hot metals. They retain hardness, strength, and
+            toughness at working temperatures while resisting thermal fatigue,
+            heat checking, and hot wear. Chromium, Molybdenum, Vanadium, and
+            Nickel work in concert to deliver red hardness, oxidation
+            resistance, ﬁne grain structure, and deep hardenability. This
+            category encompasses three primary grades, DB6 (DIN 2714 / AISI L6),
+            H13 (DIN1.2344), and H11 (DIN 1.2343), each tailored to a distinct
+            performance proﬁle.
           </p>
         </div>
 
@@ -140,7 +143,7 @@ const HotWork = () => {
                       location.pathname.includes("db6") ? "active-grade" : ""
                     }
                   >
-                    <strong> DB6 / DIN 2714 </strong>/ AISI L6
+                    DB6 / DIN 2714 / AISI L6
                   </Link>
                 </li>
                 <li>
@@ -150,7 +153,7 @@ const HotWork = () => {
                       location.pathname.includes("h13") ? "active-grade" : ""
                     }
                   >
-                    <strong>H13 </strong> / AISI H 13 / DIN 2344
+                    H13 / AISI H 13 / DIN 2344
                   </Link>
                 </li>
                 <li>
@@ -160,37 +163,29 @@ const HotWork = () => {
                       location.pathname.includes("h11") ? "active-grade" : ""
                     }
                   >
-                    <strong>H11 </strong> / AISI H 11 / DIN 2343
+                    H11 / AISI H 11 / DIN 2343
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="h21"
+                    to="1.2367-x38crmov5-3"
                     className={
-                      location.pathname.includes("h21") ? "active-grade" : ""
+                      location.pathname.includes("1.2367-x38crmov5-3")
+                        ? "active-grade"
+                        : ""
                     }
                   >
-                    H21 / AISI H21 / DIN 1.2581
+                    1.2367 / X38CrMoV5-3
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="h10"
+                    to="1.8407"
                     className={
-                      location.pathname.includes("h10") ? "active-grade" : ""
+                      location.pathname.includes("1.8407") ? "active-grade" : ""
                     }
                   >
-                    H10 / AISI H10 / DIN 1.2365 / SKD7
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="h12"
-                    className={
-                      location.pathname.includes("h12") ? "active-grade" : ""
-                    }
-                  >
-                    H12 / AISI H12 / DIN 1.2606
+                    1.8407
                   </Link>
                 </li>
               </ul>

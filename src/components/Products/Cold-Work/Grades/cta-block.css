@@ -1,0 +1,42 @@
+.cta-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cta-block .btn {
+  background: #fe8d37;
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 6px;
+}
+
+.cta-block span {
+  background-color: #2f2b60;
+  padding: 0.6rem 0.9rem;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.cta-block .btn:focus,
+.cta-block .btn:active,
+.cta-block .btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #fe8d37 !important;
+  border-color: #fe8d37 !important;
+}
+
+.cta-block .btn:active {
+  transform: scale(0.97);
+  background-color: #e86636 !important;
+}
+
+@media (max-width: 768px) {
+  .cta-block {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

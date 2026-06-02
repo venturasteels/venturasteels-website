@@ -102,7 +102,70 @@ export default function ProductLanding() {
 
           <meta
             name="keywords"
-            content="tool steel supplier India, alloy steel supplier Mumbai, cold work steel, hot work steel, plastic mould steel, carbon steel, spring steel, engineering steel, steel round bars India, die steel supplier, industrial steel supplier, Ventura Steels"
+            content="
+  Ventura Steels products,
+  Ventura steel grades,
+  tool steel supplier India,
+  alloy steel supplier India,
+  alloy steel supplier Mumbai,
+  special steel supplier India,
+  industrial steel supplier,
+  engineering steel supplier,
+  steel stockist India,
+  steel round bars supplier,
+  steel blocks supplier,
+  precision steel solutions,
+
+  hot work tool steel,
+  cold work tool steel,
+  plastic mould steel,
+  alloy steel,
+  carbon steel,
+  spring steel,
+  boron steel,
+  die steel supplier,
+  mould steel supplier,
+
+  H13 steel supplier,
+  H11 tool steel,
+  DB6 steel supplier,
+  D2 steel supplier,
+  D3 steel supplier,
+  D5 steel supplier,
+  O1 steel supplier,
+  A2 steel supplier,
+  P20 steel supplier,
+  P20+Ni steel supplier,
+
+  EN19 steel supplier,
+  SAE4140 supplier,
+  42CrMo4 supplier,
+  SCM440 steel supplier,
+  EN24 steel supplier,
+  SAE4340 supplier,
+  34CrNiMo6 supplier,
+  EN36 steel supplier,
+  SAE8620 supplier,
+  20MnCr5 supplier,
+  16MnCr5 supplier,
+
+  EN8 steel supplier,
+  CK45 supplier,
+  C45 steel supplier,
+  SAE1018 supplier,
+  EN9 steel supplier,
+  S355J2G3 steel supplier,
+
+  EN47 spring steel,
+  SUP9 steel supplier,
+  SUP11 supplier,
+  50CrV4 steel supplier,
+
+  tool steel grades India,
+  alloy steel grades India,
+  steel grades supplier Mumbai,
+  industrial raw material supplier
+"
           />
 
           <link rel="canonical" href="https://venturasteels.com/products" />

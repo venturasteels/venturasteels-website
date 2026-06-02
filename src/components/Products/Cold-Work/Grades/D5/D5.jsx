@@ -91,13 +91,10 @@ export default function D5() {
       </Helmet>
 
       <div className="grade-details">
-        <h2 className="text-center">
-          D5 / <strong>Cr12MoV </strong> / 1.2601
-        </h2>
+        <h1 className="text-center">D5 / Cr12MoV / 1.2601</h1>
         <p className="subtitle text-center">
-          High-carbon, high-chromium tool steel with good wear resistance,
-          toughness, and stability, suitable for thread rolling and cold work
-          dies.
+          High-Carbon, High-Chromium Tool Steel — Good Wear Resistance,
+          Toughness & Stability
         </p>
 
         {/* standards  */}
@@ -109,40 +106,40 @@ export default function D5() {
                   <td>
                     <strong>COUNTRY </strong>
                   </td>
-                  <td>USA</td>
-                  <td>Germany / Europe</td>
-                  <td>Japan</td>
-                  <td>China</td>
-                  <td>UK</td>
-                  <td>France</td>
                   <td>India</td>
+                  <td>USA</td>
+                  <td>Europe</td>
+                  <td>Germany</td>
+                  <td>China</td>
+                  <td>Japan</td>
+                  <td>R. of Korea</td>
                   <td>Russia</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>STANDARDS</strong>
                   </td>
-                  <td>ASTM / AISI</td>
-                  <td>DIN / EN</td>
-                  <td>JIS</td>
-                  <td>GB</td>
-                  <td>BS</td>
-                  <td>AFNOR</td>
                   <td>IS</td>
+                  <td>ASTM / AISI</td>
+                  <td>EN</td>
+                  <td>DIN</td>
+                  <td>GB</td>
+                  <td>JIS</td>
+                  <td>KS</td>
                   <td>GOST</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>EQUIVALENT NAME</strong>
                   </td>
-                  <td>D5</td>
-                  <td>1.2601 / X165CrMoV12</td>
-                  <td>SKD2</td>
-                  <td>Cr12MoV1</td>
-                  <td>BD5</td>
-                  <td>Z160CDV12-1</td>
                   <td>KNL D2 / D5 (as per AISI / DIN 1.2601)</td>
-                  <td>Kh12MF1 (Х12МФ1)</td>
+                  <td>D5</td>
+                  <td>X165CrMoV12</td>
+                  <td>1.2601</td>
+                  <td>Cr12MoV1</td>
+                  <td>SKD2</td>
+                  <td>STD11</td>
+                  <td>Х12МФ / Kh12MF1</td>
                 </tr>
               </tbody>
             </table>
@@ -151,25 +148,50 @@ export default function D5() {
 
         {/* Overview */}
         <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
+          <div className="cold-work-img-1">
+            <img
+              src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874984/Cr12MoV_Round_Bars_neftmw.jpg"
+              alt="D5 grade, Cr12MoV grade image, 1.2601 cold work tool steel grade"
+              loading="lazy"
+            />
+          </div>
           <div className="overview-content">
             <p>
-              Ventura Alloy and Steels Supplies and Stocks HCHCR D5 steel in
-              India and abroad. D5 steel is an air hardening, high-carbon,
-              high-chromium tool steel.
+              Cr12MoV is a ledeburitic cold work tool steel developed as an
+              improved variant of Cr12 steel. Its name broadly reﬂects its key
+              alloying system—high chromium (~12%) along with molybdenum and
+              vanadium additions. The addition of molybdenum and vanadium, along
+              with slightly modiﬁed carbon content, improves toughness, carbide
+              distribution, and resistance to cracking, while maintaining
+              excellent wear resistance.
             </p>
-          </div>
-          <div className="cold-work-img">
-            <img
-              src="/image/Cold Work Tool Steels/Cold Work steel - Cr12Mov.png"
-              alt="Cr12MoV"
-              loading="lazy"
-              width={250}
-            />
+            <p>
+              Cr12MoV exhibits very high wear resistance, signiﬁcantly higher
+              than plain carbon and low-alloy tool steels, along with excellent
+              hardenability, high compressive strength, and good dimensional
+              stability with minimal distortion during heat treatment. It can be
+              effectively hardened in large sections, with good
+              through-hardening capability depending on quenching conditions.
+              The steel forms a martensitic matrix with dispersed carbides after
+              heat treatment, providing high hardness and strength, while
+              carbide size and distribution play a critical role in toughness.
+            </p>
+            <p>
+              Ultra-premium quality material deﬁnes a steel manufacturing
+              process using EAF, LF (LV), VD, forging, and annealing, with a
+              minimum forging ratio of 5:1. The chemical composition includes
+              balanced carbon, chromium, molybdenum, and vanadium for enhanced
+              strength, toughness, and wear resistance, with low impurity levels
+              (P & S ≤ 0.03). The material is available in diameters from
+              100–710 MM, thickness 32–300 MM, and width 105–1000 MM. It meets
+              quality levels of 5–8, with inspection standards based on size,
+              and supports batch production up to 35 MT.
+            </p>
           </div>
         </section>
 
         {/* Chemical Composition */}
-        <section className="cold-work-composition">
+        {/* <section className="cold-work-composition">
           <h3 className="mb-4 text-center">
             Chemical Composition (Typical Analysis in %)
           </h3>
@@ -205,116 +227,172 @@ export default function D5() {
               </table>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* size range */}
-        <section className="size-range">
-          <h3>Size Range</h3>
-          <table className="size-table">
-            <thead>
-              <tr>
-                <th>Shape</th>
-                <th>Dimensions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Rounds</td>
-                <td>20 to 450 MM | SQUARE – 50 to 155 MM</td>
-              </tr>
-              <tr>
-                <td>Blocks</td>
-                <td>
-                  Thickness: 20 - 150 mm
-                  <br />
-                  Width: 40 – 450 mm
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        {/* process routes */}
-        <section className="process-route">
-          <h3>Process Route</h3>
-          <div className="process-flow">
-            <div className="step">EAF</div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD / VOD </div>
-            <span className="arrow">→</span>
-            <div className="step">ESR (Optional – Premium Grades)</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGING / ROLLING</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED (Soft Anneal / Spheroidize)</div>
-            <span className="arrow">→</span>
-            <div className="step">ROUGH TURNED / MILLED</div>
-            <span className="arrow">→</span>
-            <div className="step">HARDENED (Oil Quench)</div>
-            <span className="arrow">→</span>
-            <div className="step">DOUBLE / TRIPLE TEMPERED</div>
-            <span className="arrow">→</span>
-            <div className="step">FINISHED (Ground / Machined / Polished)</div>
-          </div>
+        {/* Steel properties */}
+        <section className="steel-properties">
+          <h2>STEEL PROPERTIES</h2>
+          <ul>
+            <li>
+              Pre-solidiﬁed tool steel delivers outstanding toughness and high
+              wear resistance.
+            </li>
+            <li>
+              Supplied in pre-hardened, quenched, tempered, and annealed
+              conditions (typically 38–42 HRC or 370-410 BHN).
+            </li>
+            <li>
+              Updated version of DIN 2713, engineered for higher efﬁciency and
+              performance.
+            </li>
+            <li>Delivers enhanced performance and longer die life.</li>
+            <li>
+              Due to elevated nickel content, it withstands heavy mechanical
+              shock and high-impact loading.
+            </li>
+          </ul>
         </section>
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications</h2>
-          <p>
-            Applications of D5 steels include thread rolling, blanking or
-            forming dies operating at temperatures below 482°C (900°F).
-          </p>
+          <h2>APPLICATIONS</h2>
+          <ul>
+            <li>Drop forging dies & closed die forgings & Forging Dies.</li>
+            <li>Hammer & mechanical press dies.</li>
+            <li>Die moulds & die holders, Punches.</li>
+            <li>Shoe blocks & bolsters.</li>
+            <li>Ton rods & cranks.</li>
+            <li>Cassettes & cartridges.</li>
+            <li>Piston Rods & Cranks.</li>
+            <li>Plastic injection moulds.</li>
+            <li>Heavy Engineering Tooling.</li>
+            <li>Shearing blades & cutting tools.</li>
+          </ul>
+        </section>
+
+        {/* Thermal properties */}
+        <section className="coldwork-thermal-properties">
+          <h2 className="thermal-section-title">THERMAL PROPERTIES</h2>
+
+          <div className="row">
+            <div className="col-md-6">
+              <div className="property-card mb-3">
+                <h5>COEFFICIENT OF THERMAL EXPANSION</h5>
+                <table className="table table-bordered ">
+                  <thead>
+                    <tr>
+                      <th>Temperature (°C)</th>
+                      <th>10¯⁶ m / (m*K)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>20-100</td>
+                      <td>10.4</td>
+                    </tr>
+                    <tr>
+                      <td>20-200</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>20-300</td>
+                      <td>11.5</td>
+                    </tr>
+                    <tr>
+                      <td>20-400</td>
+                      <td>11.9</td>
+                    </tr>
+                    <tr>
+                      <td>20-500</td>
+                      <td>12.3</td>
+                    </tr>
+                    <tr>
+                      <td>20-600</td>
+                      <td>12.6</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="col-md-6">
+              <div className="property-card mb-3">
+                <h5>THERMAL CONDUCTIVITY</h5>
+                <table className="table table-bordered ">
+                  <thead>
+                    <tr>
+                      <th>Temperature (°C)</th>
+                      <th>W / (m*K)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>20</td>
+                      <td>16.6</td>
+                    </tr>
+                    <tr>
+                      <td>350</td>
+                      <td>20.5</td>
+                    </tr>
+                    <tr>
+                      <td>700</td>
+                      <td>24.3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* heat treatment */}
-        <div className="heat-treatment my-4">
-          <h3 className="section-title">Heat Treatment Data</h3>
-          <Table bordered hover responsive className="text-center align-middle">
-            <thead className="custom-header">
-              <tr>
-                <th>Process</th>
-                <th>Temperature Range</th>
-                <th>Details / Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Preheating</td>
-                <td>815 °C (1500 °F)</td>
-                <td>Heat very slowly before raising temperature further</td>
-              </tr>
-              <tr>
-                <td>Hardening (Austenitizing)</td>
-                <td>1009 °C (1850 °F)</td>
-                <td>
-                  Hold for 20–45 minutes, then <strong>air quench</strong>
-                </td>
-              </tr>
-              <tr>
-                <td>Forging</td>
-                <td>1065 °C (1950 °F) → 926 °C (1700 °F)</td>
-                <td>Do not forge below 926 °C (1700 °F)</td>
-              </tr>
-              <tr>
-                <td>Annealing</td>
-                <td>886 °C (1627 °F)</td>
-                <td>Slow furnace cooling at ≤ 4 °C (40 °F) per hour</td>
-              </tr>
-              <tr>
-                <td>Tempering</td>
-                <td>204 °C (400 °F) → 537 °C (1000 °F)</td>
-                <td>
-                  Rockwell C Hardness: <br />
-                  <strong>61 HRC</strong> at 204 °C <br />
-                  <strong>54 HRC</strong> at 537 °C
-                </td>
-              </tr>
-            </tbody>
-          </Table>
-        </div>
+        <section className="heat-treatment">
+          <h2 className="section-title">Heat Treatment</h2>
+
+          <div className="row">
+            {/* Basic Heat Treatment Data */}
+            <div className="">
+              <div className="heat-card mb-3">
+                <table className="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th>Process</th>
+                      <th>Temperature Range</th>
+                      <th>Details / Notes</th>
+                    </tr>
+                    <tr>
+                      <td>Preheating</td>
+                      <td>815 °C (1500 °F)</td>
+                      <td>
+                        Heat very slowly before raising the temperature further
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Hardening (Austenitizing)</td>
+                      <td>1009 °C (1850 °F)</td>
+                      <td>Hold for 20–45 minutes, then air quench</td>
+                    </tr>
+                    <tr>
+                      <td>Forging</td>
+                      <td>1065 °C + 926 °C</td>
+                      <td>Do not forge below 926 °C (1700 °F)</td>
+                    </tr>
+                    <tr>
+                      <td>Annealing</td>
+                      <td>886 °C (1627 °F)</td>
+                      <td>Slow furnace cooling at ≤ 4 °C (40 °F) per hour</td>
+                    </tr>
+                    <tr>
+                      <td>Tempering</td>
+                      <td>204 °C – 537 °C</td>
+                      <td>61 HRC at 204 °C; 54 HRC at 537 °C</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* stocking partner */}
         <section className="stocking-partners py-5">
@@ -334,7 +412,7 @@ export default function D5() {
         </section>
 
         {/* Availability */}
-        <section className="availability-info my-4">
+        {/* <section className="availability-info my-4">
           <div className="container">
             <h4 className="mb-3">Availability</h4>
             <p>
@@ -352,10 +430,10 @@ export default function D5() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Get Quote CTA */}
-        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
           <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>

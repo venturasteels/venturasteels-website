@@ -24,7 +24,7 @@ const QuotePopup = () => {
 
     const timer = setTimeout(() => {
       setShow(true);
-    }, 2000);
+    }, 20000);
 
     return () => clearTimeout(timer);
   }, [hasClosed]);

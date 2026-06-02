@@ -21,11 +21,51 @@ const Quality = () => {
         <title>Quality | Ventura Alloy & Steels Pvt. Ltd.</title>
         <meta
           name="description"
-          content="Ventura Alloy & Steels Pvt. Ltd. is ISO 9001:2015 certified, ensuring strict quality control, precision machining, and reliable steel solutions that meet global standards."
+          content="Ventura Steels follows strict quality standards with ISO 9001:2015 certification, in-house testing facilities, material verification, inspection processes, and comprehensive quality assurance for reliable steel solutions."
         />
         <meta
           name="keywords"
-          content="Ventura Steels Quality, ISO 9001:2015 Certified Steel Supplier, Quality Assurance, Steel Testing, Alloy Steel Quality, Tool Steel Standards, Steel Inspection, Reliable Steel Supplier India"
+          content="
+  Ventura Steels Quality,
+  Ventura Quality Assurance,
+  Ventura Steel Certification,
+  ISO 9001:2015 Certified Steel Supplier,
+  ISO certified steel supplier India,
+  quality steel supplier India,
+  quality assurance steel industry,
+  steel quality standards,
+  certified steel supplier,
+
+  steel testing,
+  alloy steel quality,
+  tool steel standards,
+  steel inspection,
+  steel quality control,
+  steel material testing,
+  steel certification process,
+  steel testing laboratory,
+  in-house testing lab,
+  steel hardness testing,
+  ultrasonic steel testing,
+  spectrometer testing,
+  mechanical testing steel,
+  chemical testing steel,
+
+  steel traceability,
+  quality management system,
+  steel quality process,
+  steel verification process,
+  certified material supplier,
+  test certificate steel supplier,
+  comprehensive test reports,
+  steel quality compliance,
+  industrial quality assurance,
+
+  reliable steel supplier India,
+  precision steel solutions,
+  industrial steel supplier,
+  quality approved steel products
+"
         />
         <link rel="canonical" href="https://venturasteels.com/quality" />
       </Helmet>

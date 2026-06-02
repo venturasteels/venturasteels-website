@@ -11,7 +11,7 @@ const PlasticMould = () => {
 
   useEffect(() => {
     const gradePattern =
-      /^\/products\/plastic-mould-steel\/(p20ni|p20-1.2311|1.2316)/;
+      /^\/products\/plastic-mould-steel\/(p20-1.2311|p20ni|1-2316)/;
 
     const isGrade = gradePattern.test(location.pathname);
     setIsGradeSelected(isGrade);
@@ -115,19 +115,18 @@ const PlasticMould = () => {
         <div className="plastic-mould-hero">
           <h1>Plastic Mould Steels</h1>
           <p>
-            P20 Tool Steel is a widely used plastic mould steel designed for
-            applications such as injection moulding and zinc die-casting. With a
-            carbon content of 0.36–0.40% and alloying elements including
-            chromium and nickel, it combines strength, toughness, and excellent
-            polishability. These properties make it ideal for producing moulds
-            that require a superior surface finish and long-lasting performance.
-          </p>
-          <p>
-            Supplied in a range of pre-hardened conditions, P20 eliminates the
-            need for additional heat treatment, reducing processing time and
-            cost. Its versatility and durability make it the preferred choice
-            for automotive, consumer goods, packaging, and industrial
-            mould-making, where precision and consistency are essential.
+            Plastic mould steels are specially alloyed tool steels engineered
+            for injection moulding, compression moulding, and die-casting
+            tooling, where dimensional precision, surface ﬁnish quality, and
+            long service life are paramount. They are deﬁned by their excellent
+            polishability, machinability, and toughness, enabling complex cavity
+            geometries and premium cosmetic surfaces. Chromium, Molybdenum, and
+            Nickel work in concert to deliver through-hardening, wear
+            resistance, and uniform hardness across large section sizes. Most
+            grades are supplied pre-hardened, eliminating post-machining heat
+            treatment and minimising distortion. This category encompasses P20
+            (DIN 1.2311) and P20+Ni (DIN 1.2738), each tailored to a distinct
+            performance proﬁle.
           </p>
         </div>
 
@@ -138,16 +137,6 @@ const PlasticMould = () => {
             <aside className="plastic-mould-sidebar">
               <h3>Grades</h3>
               <ul>
-                <li>
-                  <Link
-                    to="p20ni"
-                    className={
-                      location.pathname.includes("p20ni") ? "active-grade" : ""
-                    }
-                  >
-                    P20+Ni / 1.2738
-                  </Link>
-                </li>
                 <li>
                   <Link
                     to="p20-1.2311"
@@ -162,12 +151,22 @@ const PlasticMould = () => {
                 </li>
                 <li>
                   <Link
-                    to="1.2316"
+                    to="p20ni"
                     className={
-                      location.pathname.includes("1.2316") ? "active-grade" : ""
+                      location.pathname.includes("p20ni") ? "active-grade" : ""
                     }
                   >
-                    1.2316
+                    P20+NI / 1.2738
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="1-2316"
+                    className={
+                      location.pathname.includes("1-2316") ? "active-grade" : ""
+                    }
+                  >
+                    1.2316 / X36CrMo17
                   </Link>
                 </li>
               </ul>

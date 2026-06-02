@@ -104,7 +104,41 @@ export default function Certifications() {
 
           <meta
             name="keywords"
-            content="ISO 9001:2015 steel company India, certified steel supplier Mumbai, Ventura Steels certifications, steel industry memberships India, CII IGCC TAGMA AIFI member, quality certified steel stockist"
+            content="
+  Ventura Steels certifications,
+  Ventura quality certifications,
+  ISO 9001:2015 steel company India,
+  ISO certified steel supplier India,
+  certified steel supplier Mumbai,
+  quality certified steel stockist,
+  steel certification India,
+  steel quality compliance,
+  industrial certification steel supplier,
+
+  steel industry memberships India,
+  certified steel company India,
+  quality assurance certification,
+  global steel standards,
+  quality approved steel supplier,
+  trusted steel supplier India,
+
+  CII member steel company,
+  AIFI member India,
+  TAGMA member India,
+  IGCC member India,
+  BSIC certification,
+  steel association memberships,
+  industry recognized steel supplier,
+  accredited steel supplier India,
+
+  steel quality standards,
+  compliance certified steel company,
+  certified industrial steel supplier,
+  steel supplier with certifications,
+  steel testing and compliance,
+  reliable steel stockist India,
+  trusted steel sourcing
+"
           />
 
           <link

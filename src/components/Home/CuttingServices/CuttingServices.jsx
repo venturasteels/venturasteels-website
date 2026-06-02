@@ -15,6 +15,8 @@ const CuttingServices = () => {
   }, []);
 
   return (
+
+    
     <section className="cutting-hero-section mt-4">
       <video
         className="cutting-bg-video"

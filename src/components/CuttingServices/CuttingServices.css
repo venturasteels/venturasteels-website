@@ -275,7 +275,7 @@
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.16),
     /* 🔥 softer */ transparent
   );
   transform: rotate(25deg);

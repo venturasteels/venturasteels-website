@@ -160,7 +160,48 @@ const CuttingServices = () => {
 
           <meta
             name="keywords"
-            content="steel cutting services India, CNC cutting services Mumbai, plate cutting, round bar cutting, D cut steel, tool steel cutting, alloy steel cutting, cut to size steel India, industrial steel processing, Ventura Steels cutting services"
+            content="
+  Ventura Steels cutting services,
+  Ventura precision cutting,
+  steel cutting services India,
+  precision cutting services India,
+  CNC cutting services Mumbai,
+  industrial cutting services,
+  steel processing services,
+  cut to size steel India,
+  steel machining services,
+  precision steel solutions,
+
+  plate cutting services,
+  round bar cutting services,
+  D cut steel services,
+  steel block cutting,
+  retail steel cutting,
+  custom steel cutting,
+  precision steel cutting,
+  industrial steel processing,
+  steel preparation services,
+  heavy duty cutting services,
+
+  tool steel cutting,
+  alloy steel cutting,
+  hot work steel cutting,
+  cold work steel cutting,
+  plastic mould steel cutting,
+  engineering steel cutting,
+  carbon steel cutting,
+  spring steel cutting,
+
+  CNC flame cutting,
+  precision machining services,
+  steel fabrication preparation,
+  industrial cutting solutions,
+  steel cutting company Mumbai,
+  steel stock and cutting services,
+  high tolerance steel cutting,
+  ready to use steel material,
+  steel cutting supplier India
+"
           />
 
           <link

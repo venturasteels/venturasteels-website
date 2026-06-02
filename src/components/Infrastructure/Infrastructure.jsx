@@ -44,12 +44,48 @@ const Infrastructure = () => {
           <title>Infrastructure | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Explore Ventura Alloy & Steels Pvt. Ltd.’s 72,000 sq. ft. infrastructure facility in Bhiwandi, Mumbai. Equipped with advanced machining, CNC cutting, high-capacity storage, cranes, testing systems, and rapid dispatch capabilities for industrial steel solutions."
+            content="Explore Ventura Steels' Mumbai Stocking & Machining Center in Bhiwandi spanning 72,000 sq. ft. with advanced storage, cutting, handling, machining, testing facilities and rapid dispatch capabilities."
           />
 
           <meta
             name="keywords"
-            content="steel infrastructure India, steel warehouse Mumbai, Bhiwandi steel facility, CNC machining facility India, steel storage capacity, industrial steel processing, cutting machines steel, bandsaw machines India, Ventura Steels infrastructure"
+            content="
+  Ventura Steels infrastructure,
+  Ventura stocking and machining center,
+  steel infrastructure India,
+  steel warehouse Mumbai,
+  steel stockist Bhiwandi,
+  Bhiwandi steel facility,
+  Mumbai stocking center,
+  steel machining center India,
+  industrial steel warehouse,
+
+  72000 sq ft steel facility,
+  steel storage capacity,
+  steel stocking facility,
+  industrial storage solutions,
+  steel distribution center,
+  rapid steel dispatch,
+  industrial logistics steel,
+
+  CNC machining facility India,
+  steel cutting facility,
+  precision steel processing,
+  steel handling systems,
+  industrial steel processing,
+  steel processing infrastructure,
+  material handling equipment,
+  cutting machines steel,
+  bandsaw machines India,
+  steel testing facility,
+  advanced machining center,
+
+  steel stock and supply India,
+  high capacity steel warehouse,
+  steel inventory management,
+  industrial steel solutions,
+  precision steel operations
+"
           />
 
           <link

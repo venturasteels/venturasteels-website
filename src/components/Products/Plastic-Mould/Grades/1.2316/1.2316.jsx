@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function PlasticMould2316() {
   const navigate = useNavigate();
@@ -6,285 +7,295 @@ export default function PlasticMould2316() {
   const handleEnquiryClick = () => {
     navigate("/enquiry", {
       state: {
-        selectedGrade: "1.2316",
+        selectedGrade: "1.2316 / X36CrMo17",
         selectedProduct: "Plastic Mould Steel",
       },
     });
   };
   return (
-    <div className="grade-details">
-      <h2 className="text-center">1.2316</h2>
-      <p className="subtitle text-center">
-        1.2316 is a high-chromium, corrosion-resistant plastic mould steel with
-        excellent polishability and wear resistance.
-      </p>
+    <>
+      <Helmet>
+        <title>
+          1.2316 / X36CrMo17 | Plastic Mold Tool Steel | Ventura Alloy & Steels
+          Pvt. Ltd.
+        </title>
 
-      {/* Standards Table */}
-      <div className="plastic-mould-standards-scroll-wrapper mb-4">
-        <div className="plastic-mould-standards-inner-scroll">
-          <table className="standards-table">
-            <tbody>
-              <tr>
-                <td>
-                  <strong>COUNTRY</strong>
-                </td>
-                <td>USA</td>
-                <td>Germany / Europe</td>
-                <td>Japan</td>
-                <td>China</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>STANDARDS</strong>
-                </td>
-                <td>AISI</td>
-                <td>DIN / EN</td>
-                <td>JIS</td>
-                <td>GB</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>EQUIVALENT NAME</strong>
-                </td>
-                <td>420 ESR</td>
-                <td>1.2316 / X38CrMo16</td>
-                <td>SUS420J2</td>
-                <td>4Cr13</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <meta
+          name="description"
+          content="1.2316 / X36CrMo17 stainless plastic mold tool steel with excellent corrosion resistance, polishability and toughness. ESR refined and vacuum-degassed for high cleanliness, ideal for medical, food-grade and transparent plastic mould applications."
+        />
 
-      {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3">
-        <div className="overview-content">
-          <p>
-            1.2316 plastic mould steel is a corrosion-resistant stainless tool
-            steel containing approximately 16% chromium. It provides excellent
-            polishability, good wear resistance, and high toughness. The steel
-            is supplied in pre-hardened or hardened and tempered condition, and
-            is ideal for use in plastic moulds requiring good surface finish and
-            resistance to corrosive polymer gases. It is vacuum-degassed and
-            typically ESR refined for superior cleanliness.
-          </p>
-        </div>
-        <div className="plastic-mould-img">
-          <img
-            src="/image/Plastic Mould Steels/Plastic Mould 3.png"
-            alt="1.2316 Plastic Mould Steel"
-            width={210}
-          />
-        </div>
-      </section>
+        <meta
+          name="keywords"
+          content="1.2316 steel, X36CrMo17 steel, stainless mold steel, plastic mold tool steel, corrosion resistant mold steel, ESR refined tool steel, vacuum degassed steel, 1.2316 applications, 1.2316 chemical composition, plastic injection mold steel, transparent mould steel, medical mold steel, food grade mold steel, hot runner mold steel"
+        />
 
-      {/* Chemical Composition */}
-      <section className="plastic-mould-composition">
-        <h3 className="mb-4 text-center">
-          Chemical Composition (Typical Analysis in %)
-        </h3>
-        <div className="table-data d-flex justify-content-center">
-          <div className="plastic-mould-chemical-composition plastic-mould-composition-table table-responsive-custom">
-            <table>
+        <link
+          rel="canonical"
+          href="https://venturasteels.com/products/plastic-mold-steel/1-2316"
+        />
+
+        {/* Product Schema for SEO */}
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "1.2316 / X36CrMo17 Stainless Plastic Mold Tool Steel",
+
+  "image": [
+    "https://venturasteels.com/image/1-2316-stainless-mold-steel.png"
+  ],
+
+  "description": "1.2316 / X36CrMo17 is a stainless plastic mold tool steel containing approximately 16% chromium, offering exceptional corrosion resistance, polishability and toughness. Vacuum-degassed and ESR refined for superior cleanliness, it is ideal for high-polish plastic moulds, medical components, food-grade moulds and hot runner systems.",
+
+  "sku": "12316-VAS",
+  "mpn": "1.2316",
+
+  "brand": {
+    "@type": "Brand",
+    "name": "Ventura Alloy & Steels Pvt. Ltd."
+  },
+
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Ventura Alloy & Steels Pvt. Ltd."
+  },
+
+  "material": "Stainless Plastic Mold Tool Steel",
+
+  "url": "https://venturasteels.com/products/plastic-mold-steel/1-2316",
+
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Material Grade",
+      "value": "1.2316 / X36CrMo17"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chromium Content",
+      "value": "Approximately 16%"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Condition",
+      "value": "Pre-Hardened or Hardened & Tempered"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Manufacturing Quality",
+      "value": "Vacuum-Degassed and ESR Refined"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Key Features",
+      "value": "Excellent corrosion resistance, polishability, wear resistance and toughness"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Size Range - Rounds",
+      "value": "Ø 40 to 200 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Size Range - Flats",
+      "value": "Thickness 20 to 120 mm & Width 205 to 605 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MOQ Basis",
+      "value": "Available on Minimum Order Quantity Basis"
+    }
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/plastic-mold-steel/1-2316",
+
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "applicableCountry": "IN"
+    }
+  },
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "20"
+  },
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Industrial Client"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Excellent stainless mold steel with superior corrosion resistance and mirror polish finish for precision moulding applications."
+    }
+  ]
+}
+`}
+        </script>
+      </Helmet>
+
+      <div className="grade-details">
+        <h1 className="text-center">1.2316 / X36CrMo17</h1>
+        <p className="subtitle text-center">
+          High-Chromium Corrosion-Resistant Plastic Mould Steel — Mirror Finish
+          Capability
+        </p>
+
+        {/* Overview */}
+        <section className="overview d-flex justify-content-center align-items-center gap-5 mb-3 pt-3">
+          <div className="plastic-mould-img-1">
+            <img
+              src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778581393/1.2316_PLASTIC_qtgje6.jpg"
+              alt="1.2316 / X36CrMo17 Plastic grade"
+              loading="lazy"
+            />
+          </div>
+          <div className="overview-content">
+            <p>
+              1.2316 is a stainless tool steel containing approximately 16%
+              chromium. It provides exceptional polishability, good wear
+              resistance, and high toughness. Supplied in pre-hardened or
+              hardened-and-tempered condition, 1.2316 is engineered for plastic
+              moulds that require excellent surface ﬁnish and corrosion
+              resistance to aggressive polymer gases. It is vacuum-degassed and
+              typically ESR reﬁned for outstanding cleanliness.
+            </p>
+          </div>
+        </section>
+
+        {/* Chemical Composition */}
+        <section className="plastic-mould-composition">
+          <h2 className="mb-4 text-center">
+            CHEMICAL COMPOSITION (TYPICAL ANALYSIS %)
+          </h2>
+          <div className="table-data d-flex justify-content-center">
+            <div className="plastic-mould-chemical-composition plastic-mould-composition-table table-responsive-custom">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Element</th>
+                    <th>C</th>
+                    <th>Si</th>
+                    <th>Mn</th>
+                    <th>Cr</th>
+                    <th>Mo</th>
+                    <th>V</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Range(%)</td>
+                    <td>0.33-0.45</td>
+                    <td>≤ 1.00</td>
+                    <td>≤ 1.00</td>
+                    <td>15.0-17.0</td>
+                    <td>1.00-1.20</td>
+                    <td>≤ 0.10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/*size range */}
+        <div className="process-section">
+          <h3 className="section-title">Size Range : MOQ BASIS</h3>
+
+          <div className="size-table-wrapper">
+            <table className="size-table">
               <thead>
                 <tr>
-                  <th>Element</th>
-                  <th>C</th>
-                  <th>Si</th>
-                  <th>Mn</th>
-                  <th>Cr</th>
-                  <th>Mo</th>
-                  <th>V</th>
+                  <th>Product Type</th>
+                  <th>Size Details</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Range</td>
-                  <td>0.33–0.45</td>
-                  <td>≤1.00</td>
-                  <td>≤1.00</td>
-                  <td>15.00–17.00</td>
-                  <td>1.00–1.20</td>
-                  <td>≤0.10</td>
+                  <td>Rounds</td>
+                  <td>Ø 40 - 200 MM</td>
+                </tr>
+                <tr>
+                  <td>Flats</td>
+                  <td>Thickness 20 - 120 MM & Width 205 - 605 MM </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-      </section>
 
-      {/* Process Route */}
-      <section className="process-route mx-auto mt-3">
-        <h3>Process Route</h3>
-        <div className="process-flow">
-          <div className="step">EAF</div>
-          <span className="arrow">→</span>
-          <div className="step">LF</div>
-          <span className="arrow">→</span>
-          <div className="step">VD / ESR</div>
-          <span className="arrow">→</span>
-          <div className="step">FORGED / ROLLED</div>
-          <span className="arrow">→</span>
-          <div className="step">ANNEALED / PRE-HARDENED</div>
-          <span className="arrow">→</span>
-          <div className="step">MACHINED / POLISHED</div>
-        </div>
-      </section>
-
-      {/* Steel Properties */}
-      <section className="steel-properties">
-        <h2>Steel Properties</h2>
-        <ul>
-          <li>Excellent corrosion and wear resistance</li>
-          <li>Good polishability and mirror finish capability</li>
-          <li>Good dimensional stability during hardening</li>
-          <li>
-            Suitable for moulds processing corrosive plastics (PVC, acetate,
-            etc.)
-          </li>
-          <li>Vacuum-degassed and ESR refined for high purity</li>
-          <li>Good toughness and machinability</li>
-        </ul>
-      </section>
-
-      {/* Applications */}
-      <section className="applications">
-        <h2>Applications</h2>
-        <p>
-          Used in the manufacture of plastic moulds for corrosive plastics (e.g.
-          PVC), transparent moulds requiring high surface polish, medical and
-          food-grade components, hot runner systems, and die casting tools.
-        </p>
-      </section>
-
-      {/* Heat Treatment */}
-      <section className="heat-treatment">
-        <h2 className="section-title">Heat Treatment</h2>
-
-        <div className="row">
-          <div className="col-md-6">
-            <div className="heat-card mb-3">
-              <h4>Heat Treatment Steps</h4>
-              <table className="table table-bordered">
-                <tbody>
-                  <tr>
-                    <th>Annealing (°C)</th>
-                    <td>740–770</td>
-                  </tr>
-                  <tr>
-                    <th>Cooling</th>
-                    <td>Furnace to 600°C, then air</td>
-                  </tr>
-                  <tr>
-                    <th>Hardening (°C)</th>
-                    <td>1000–1040</td>
-                  </tr>
-                  <tr>
-                    <th>Quenching</th>
-                    <td>Oil or air</td>
-                  </tr>
-                  <tr>
-                    <th>Tempering (°C)</th>
-                    <td>180–300 (2 hours minimum)</td>
-                  </tr>
-                  <tr>
-                    <th>Typical Hardness</th>
-                    <td>48–52 HRC</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="col-md-6">
-            <div className="heat-card mb-3">
-              <h4>Tempering Data</h4>
-              <table className="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Temp (°C)</th>
-                    <th>HRC</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>200</td>
-                    <td>52</td>
-                  </tr>
-                  <tr>
-                    <td>300</td>
-                    <td>50</td>
-                  </tr>
-                  <tr>
-                    <td>400</td>
-                    <td>48</td>
-                  </tr>
-                  <tr>
-                    <td>500</td>
-                    <td>45</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stocking Partners */}
-      <section className="stocking-partners py-5">
-        <div className="container text-center">
-          <h2 className="section-title mb-4">Stocking Partners</h2>
-          <p className="lead">
-            We keep the materials from <strong>India</strong> and
-            <strong> Europe</strong>.
-          </p>
-          <div className="partner-flags mt-4">
-            <img
-              src="/image/india-flag.png"
-              alt="India Flag"
-              className="flag-img mx-3"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Availability */}
-      <section className="availability-info my-4">
-        <div className="container">
-          <h4 className="mb-3">Availability</h4>
+        {/* Applications */}
+        <section className="applications">
+          <h2>APPLICATIONS</h2>
           <p>
-            <strong>Grades in Bold (e.g. 1.2316)</strong> are kept in stock and
-            supplied on a regular basis. <br />
-            Other grades are available on <strong>advance order</strong> as per
-            size and quantity requirements.
+            Used for plastic moulds handling corrosive materials. These tools
+            suit high-polish transparent moulds, medical and food-grade
+            components, and hot runner systems, offering excellent corrosion
+            resistance, surface ﬁnish, and durability in precision moulding
+            applications.
           </p>
-          <div className="note-box mt-3 p-3 rounded">
-            <h5 className="note-title">Additional Services</h5>
-            <p>
-              We provide cutting as per customer requirement, forging sourcing,
-              and heat treatment on request for precision mould applications.
-            </p>
-          </div>
+        </section>
+
+        {/* Get Quote CTA */}
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
+          <button onClick={handleEnquiryClick} className="btn btn-primary">
+            Enquire Now
+          </button>
+
+          <button
+            className=" weight-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#weightModal"
+          >
+            Calculate Weight
+          </button>
+
+          <span>MOQ: 25 Tonnes</span>
         </div>
-      </section>
-
-      {/* Get Quote CTA */}
-      {/* Get Quote CTA */}
-      <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
-        <button onClick={handleEnquiryClick} className="btn btn-primary">
-          Enquire Now
-        </button>
-
-        <button
-          className=" weight-btn"
-          data-bs-toggle="modal"
-          data-bs-target="#weightModal"
-        >
-          Calculate Weight
-        </button>
-
-        <span>MOQ: 25 Tonnes</span>
       </div>
-    </div>
+    </>
   );
 }

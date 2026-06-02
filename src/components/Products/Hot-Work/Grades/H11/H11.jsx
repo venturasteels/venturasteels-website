@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import "../process-section.css";
 
 export default function H11() {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ export default function H11() {
   const handleEnquiryClick = () => {
     navigate("/enquiry", {
       state: {
-        selectedGrade: "H11 / AISI H 11 / DIN 2343",
+        selectedGrade: "H11 / AISI H11 / DIN 1.2343 ",
         selectedProduct: "Hot Work Steel",
       },
     });
@@ -148,12 +148,12 @@ export default function H11() {
 `}
         </script>
       </Helmet>
+
       <div className="grade-details">
-        <h1 className="text-center">
-          <strong>H11</strong> / AISI H 11 / DIN 2343
-        </h1>
+        <h1 className="text-center">H11 / AISI H11 / DIN 2343</h1>
         <p className="subtitle text-center">
-          Premium Hot Work Tool Steel with high toughness & wear resistance.
+          Premium Hot Work Tool Steel — Engineered for High Toughness & Superior
+          Wear Resistance
         </p>
 
         {/* standards  */}
@@ -165,36 +165,39 @@ export default function H11() {
                   <td>
                     <strong>COUNTRY </strong>
                   </td>
+                  <td>India</td>
                   <td>USA</td>
-                  <td>Germany / Europe</td>
-                  <td>Japan</td>
+                  <td>Europe</td>
+                  <td>Germany</td>
                   <td>China</td>
-                  <td>UK</td>
-                  <td>France</td>
+                  <td>Japan</td>
+                  <td>R. of Korea</td>
                   <td>Russia</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>STANDARDS</strong>
                   </td>
-                  <td>AISI / ASTM</td>
-                  <td>DIN / EN</td>
-                  <td>JIS</td>
+                  <td>IS</td>
+                  <td>AISI / SAE</td>
+                  <td>En</td>
+                  <td>DIN, WNr</td>
                   <td>GB</td>
-                  <td>BS</td>
-                  <td>AFNOR</td>
+                  <td>JIS</td>
+                  <td>KS</td>
                   <td>GOST</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>EQUIVALENT NAME</strong>
                   </td>
+                  <td>XT35Cr5Mo1V3/</td>
                   <td>H11</td>
-                  <td>1.2343 / X37CrMoV5-1</td>
-                  <td>SKD6</td>
+                  <td>X37CrMoV5-1</td>
+                  <td>1.2343 </td>
                   <td>4Cr5MoSiV1</td>
-                  <td>BH11</td>
-                  <td>Z38CDV5-1</td>
+                  <td>SKD6</td>
+                  <td>STD6</td>
                   <td>4Kh5MFS (4Х5МФС)</td>
                 </tr>
               </tbody>
@@ -203,58 +206,41 @@ export default function H11() {
         </div>
 
         {/* Overview */}
-        <section className="overview d-flex justify-content-center align-items-center gap-5">
+        <section className="overview d-flex justify-content-center align-items-center gap-5 ">
+          <div className="hot-work-img-1">
+            <img
+              src="/image/hot-work-steel/2343-hot-work-steel.jpeg"
+              alt="H11 tool steel, 1.2343 tool steel"
+              loading="lazy"
+            />
+          </div>
           <div className="overview-content">
             <p>
-              AISI H11 tool steel, a 5% chromium hot-work steel with exceptional
-              impact toughness, is stocked and supplied by Ventura Alloy &
-              Steels. According to ASTM A681 and AISI classification, H11 is a
-              member of the H-series of chromium hot-work steels (H1–H19).
+              H11 is a chromium-based hot work tool steel classiﬁed under the
+              "H" family of the AISI classiﬁcation system. It is a widely used
+              steel within the H-series, and can be air-hardened depending on
+              furnace and quenching control with minimal distortion.
             </p>
-            <h4>Important attributes:</h4>
-            <ul>
-              <li>
-                High toughness: Superior impact resistance with marginally lower
-                wear resistance due to less vanadium than H13.
-              </li>
-              <li>
-                Deep hardening: Heat-treatable steel that air-hardens with
-                little size change.
-              </li>
-              <li>
-                Thermal resistance: Outstanding defense against thermal shock,
-                thermal fatigue, and gross cracking, even when water cooling is
-                used.
-              </li>
-              <li>
-                Durability: Outstanding resistance to hot cracking, stiffness,
-                and heat conductivity.
-              </li>
-              <li>
-                Applications: Perfect for shrink-fit chucks, ejector pins, and
-                apparatus holders.
-              </li>
-            </ul>
             <p>
-              For components needing toughness, durability, and thermal
-              stability in hot-work applications, H11 is the recommended option.
+              Chemically, H11 is a 5% chromium alloy steel (also designated as
+              1.2343 under DIN standards). Compared to the closely related H13,
+              H11 contains less vanadium , which gives superior toughness at a
+              modest trade-off in wear resistance and temper resistance. Its
+              balanced alloy composition — delivering high hot tensile strength,
+              excellent resistance to thermal fatigue cracking and thermal
+              shock, and good thermal conductivity. It can even be water-cooled
+              to a limited extent during service, which is rare among hot work
+              steels.
             </p>
-          </div>
-          <div className="db6-img">
-            <img
-              src="/image/Hot Work Tool Steels/H 11 Hot Work Tool Steel Round Bars.png"
-              alt="DB6 Image"
-              width={300}
-            />
           </div>
         </section>
 
         {/* Chemical Composition */}
         <section className="hot-work-composition">
-          <h3 className="mb-4 text-center">
-            Chemical Composition (Typical Analysis in %)
-          </h3>
-          <div className="table-data d-flex justify-content-center gap-5">
+          <h2 className="mb-4 text-center">
+            CHEMICAL COMPOSITION (TYPICAL ANALYSIS %)
+          </h2>
+          <div className="table-data d-flex justify-content-center">
             <div className="hot-work-chemical-composition hot-work-composition-table table-responsive-custom">
               <table>
                 <thead>
@@ -272,15 +258,15 @@ export default function H11() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Range</td>
-                    <td>0.33-0.41</td>
-                    <td>0.80-1.00</td>
-                    <td>0.25-0.50</td>
-                    <td>0.003 max</td>
-                    <td>0.030max</td>
-                    <td>4.80-5.50</td>
-                    <td>1.10-1.50</td>
-                    <td>0.30-0.50</td>
+                    <td>Range(%)</td>
+                    <td>0.33–0.41</td>
+                    <td>0.80–1.00</td>
+                    <td>0.25–0.50</td>
+                    <td>≤ 0.003</td>
+                    <td>≤ 0.030</td>
+                    <td>4.80–5.50</td>
+                    <td>1.10–1.50</td>
+                    <td>0.30–0.50</td>
                   </tr>
                 </tbody>
               </table>
@@ -288,99 +274,105 @@ export default function H11() {
           </div>
         </section>
 
-        {/* size-range */}
-        <section className="size-range">
-          <h3>Size Range</h3>
-          <table className="size-table">
-            <thead>
-              <tr>
-                <th>Shape</th>
-                <th>Dimensions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ROUNDS </td>
-                <td>71 to 300 MM DIA</td>
-              </tr>
-              <tr>
-                <td>FLATS </td>
-                <td>
-                  Thickness: 20 to 400 MM MAX
-                  <br />
-                  Width: 40 to 700 MM MAX
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        {/* process route and size range */}
+        <div className="process-section">
+          {/* PROCESS ROUTE */}
+          <h3 className="section-title">Process Route</h3>
 
-        {/* process route */}
-        <section className="process-route mx-auto mt-3">
-          <h3>Process Route</h3>
-          <p className="text-muted text-center">
-            Applicable for <strong>H11 / AISI H11 / DIN 2343</strong>
-          </p>
           <div className="process-flow">
-            <div className="step">EAF</div>
-            <span className="arrow">→</span>
-            <div className="step">LF</div>
-            <span className="arrow">→</span>
-            <div className="step">VD</div>
-            <span className="arrow">→</span>
-            <div className="step">ESR</div>
-            <span className="arrow">→</span>
-            <div className="step">FORGED</div>
-            <span className="arrow">→</span>
-            <div className="step">ANNEALED</div>
-            <span className="arrow">→</span>
-            <div className="step">
-              ROUGH TURNED FOR ROUNDS / MILLED FOR FLATS
-            </div>
-            <span className="arrow">→</span>
-            <div className="step">OIL / AIR QUENCHED</div>
-            <span className="arrow">→</span>
-            <div className="step">DOUBLE TEMPERED</div>
-            <span className="arrow">→</span>
-            <div className="step">MACHINED TO SIZE</div>
+            {[
+              "EAF",
+              "LF",
+              "VD",
+              "ESR",
+              "UPSET",
+              "FORGED",
+              "ANNEALED",
+              "ROUGH TURNED / MILLED",
+              "OIL / AIR QUENCHED",
+              "DOUBLE TEMPERED",
+            ].map((step, index) => (
+              <div key={index} className="process-step">
+                <span>{step}</span>
+                {index !== 9 && <div className="arrow">→</div>}
+              </div>
+            ))}
           </div>
-        </section>
+
+          {/* SIZE RANGE */}
+          <h3 className="section-title mt-4">Size Range</h3>
+
+          <div className="size-table-wrapper">
+            <table className="size-table">
+              <thead>
+                <tr>
+                  <th>Product Type</th>
+                  <th>Size Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rolled Rounds</td>
+                  <td>Ø 32 – 132 MM</td>
+                </tr>
+                <tr>
+                  <td>Rolled Flats</td>
+                  <td>Thickness 16 – 50 MM & Width 100 – 1200 MM</td>
+                </tr>
+                <tr>
+                  <td>Forged Rounds</td>
+                  <td>Upto Ø 1500 MM</td>
+                </tr>
+                <tr>
+                  <td>Forged Flats</td>
+                  <td>Thickness 150 – 1200 MM & Width 200 – 1500 MM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
         {/* Steel properties */}
         <section className="steel-properties">
-          <h2>Steel Properties</h2>
+          <h2>STEEL PROPERTIES</h2>
           <ul>
-            <li>Contains 5% Chromium</li>
-            <li>Greater strength</li>
-            <li>High toughness</li>
-            <li>Best thermal physical phenomenon</li>
-            <li>Resistant to hot cracking</li>
+            <li>Deep Hardening & Thermal Resistance.</li>
+            <li>Contains 5% Chromium for outstanding hot-work performance. </li>
+            <li>Superior strength and toughness under thermal cycling.</li>
+            <li>Resistant to hot cracking under sustained loading.</li>
             <li>
-              Gives fundamental necessities to long tool life in press forging,
-              die-casting, extrusion processes etc.
+              Delivers the fundamental properties required for long tool life in
+              press forging.
             </li>
           </ul>
         </section>
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications</h2>
-          <p>
-            This grade isn’t utilized for typical applications in the area of
-            hot-work steels, yet additionally useful for tool holders, bridge
-            kind tools, ejector pins, liner holders, hot work punches, forging
-            dies, and shrink work chucks.
-          </p>
+          <h2>APPLICATIONS</h2>
+          <ul>
+            <li>Tool & liner holders & bridge-type tools. </li>
+            <li>Pressure die casting dies for light metals. </li>
+            <li>Metal extrusion tools.</li>
+            <li>Forging dies and hot punches.</li>
+            <li>Moulds, screws, and barrels for plastic processing.</li>
+            <li>Shrink-ﬁt chucks and shrink rings.</li>
+            <li>Hot shear blades.</li>
+            <li>Ejector pins and tool holders.</li>
+            <li>
+              Aerospace structural components, such as aircraft landing gear.
+            </li>
+          </ul>
         </section>
 
         {/* Thermal properties */}
-        <section className="thermal-properties">
-          <h2 className="thermal-section-title">Thermal Properties</h2>
+        <section className="hotwork-thermal-properties">
+          <h2 className="thermal-section-title">THERMAL PROPERTIES</h2>
 
           <div className="row">
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Coefficient of Thermal Expansion</h4>
+                <h5>COEFFICIENT OF THERMAL EXPANSION</h5>
                 <table className="table table-bordered ">
                   <thead>
                     <tr>
@@ -424,9 +416,10 @@ export default function H11() {
 
             <div className="col-md-6">
               <div className="property-card mb-3">
-                <h4>Thermal Conductivity</h4>
+                <h5>THERMAL CONDUCTIVITY</h5>
+
                 <div className="thermal-table-wrapper">
-                  <table className="table table-bordered ">
+                  <table className="table table-bordered">
                     <thead>
                       <tr>
                         <th>Temperature (°C)</th>
@@ -442,7 +435,7 @@ export default function H11() {
                       </tr>
                       <tr>
                         <td>350</td>
-                        <td>30.0</td>
+                        <td>30</td>
                         <td>27.4</td>
                       </tr>
                       <tr>
@@ -466,7 +459,7 @@ export default function H11() {
             {/* Basic Heat Treatment Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Heat Treatment Steps</h4>
+                <h5>HEAT TREATMENT STEPS</h5>
                 <table className="table table-bordered">
                   <tbody>
                     <tr>
@@ -479,7 +472,7 @@ export default function H11() {
                     </tr>
                     <tr>
                       <th>Hardness HB</th>
-                      <td>max. 230</td>
+                      <td>≤ 230</td>
                     </tr>
                     <tr>
                       <th>Stress-Relief Annealing °C</th>
@@ -487,7 +480,7 @@ export default function H11() {
                     </tr>
                     <tr>
                       <th>Hardening °C</th>
-                      <td>1000-1030</td>
+                      <td>1030-1030</td>
                     </tr>
                     <tr>
                       <th>Quenching</th>
@@ -505,7 +498,7 @@ export default function H11() {
             {/* Tempering Data */}
             <div className="col-md-6">
               <div className="heat-card mb-3">
-                <h4>Tempering (°C after quenching)</h4>
+                <h5>TEMPERING (°C AFTER QUENCHING)</h5>
                 <table className="table table-bordered">
                   <thead>
                     <tr>
@@ -602,7 +595,7 @@ export default function H11() {
         </section>
 
         {/* Get Quote CTA */}
-        <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
           <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>

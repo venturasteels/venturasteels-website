@@ -61,13 +61,53 @@ const AboutUs = () => {
       <HelmetProvider>
         <Helmet>
           <title>About Us | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <title>
+            About Ventura Steels | Leading Special Steel Supplier in India
+          </title>
+
           <meta
             name="description"
-            content="Ventura Steels is a trusted special steel supplier in India. We stock alloy steel, tool steel, hot work steel, cold work steel, and plastic mould steel with machining centers in Mumbai and Rajkot, serving automotive, aerospace, oil & gas, and engineering industries."
+            content="Learn about Ventura Alloys & Steels Pvt. Ltd., a trusted special steel supplier and complete steel service center in India. Discover our leadership, infrastructure, vision, mission, quality standards, and expertise in alloy, tool, and engineering steels."
           />
           <meta
             name="keywords"
-            content="About Ventura Steels, About Ventura Alloy And Steels Pvt. Ltd.,  Ventura Steels, Complete steel service center, Special steel supplier India, Alloy steel stockist, Tool steel supplier India, Engineering steel distributor, Die & mould steel supplier, Hot work steel stockist, Cold work steel supplier, Plastic mould steel supplier, Steel machining center Mumbai,  Automotive steel supplier India"
+            content="
+  About Ventura Steels,
+  About Ventura Alloys and Steels Pvt Ltd,
+  Ventura Steels India,
+  Ventura Alloy and Steels,
+  steel company India,
+  special steel company India,
+  special steel supplier India,
+  complete steel service center,
+  steel stockist India,
+  alloy steel stockist,
+  tool steel supplier India,
+  engineering steel distributor,
+  industrial steel solutions,
+  trusted steel supplier India,
+  steel processing company,
+  steel machining center Mumbai,
+  steel warehouse Bhiwandi,
+  precision steel solutions,
+  die and mould steel supplier,
+  hot work steel stockist,
+  cold work steel supplier,
+  plastic mould steel supplier,
+  automotive steel supplier India,
+  steel cutting services,
+  steel manufacturing solutions,
+  steel infrastructure India,
+  ISO certified steel supplier,
+  steel company Mumbai,
+  steel supplier Bhiwandi,
+  industrial raw material supplier,
+  Ventura management team,
+  Ventura leadership,
+  Ventura vision mission values,
+  Ventura infrastructure,
+  Ventura quality standards
+"
           />
           <link rel="canonical" href="https://venturasteels.com/about" />
         </Helmet>

@@ -8,7 +8,7 @@ export default function A2() {
   const handleEnquiryClick = () => {
     navigate("/enquiry", {
       state: {
-        selectedGrade: "A2 / 1.2363 ",
+        selectedGrade: "A2 / 1.2363 / X100CrMoV5-1 / SKD12 ",
         selectedProduct: "Cold Work Steel",
       },
     });
@@ -17,53 +17,155 @@ export default function A2() {
     <>
       <Helmet>
         <title>
-          A2 / 1.2363 | Cold Work Tool Steel | Ventura Alloy & Steels Pvt. Ltd.
+          A2 / 1.2363 / X100CrMoV5-1 / SKD12 | Cold Work Tool Steel | Ventura
+          Alloy & Steels Pvt. Ltd.
         </title>
 
         <meta
           name="description"
-          content="A2 / 1.2363 cold work tool steel known for excellent dimensional stability, high wear resistance and toughness. Ideal for cutting tools, dies, moulds and stamping applications."
+          content="A2 / 1.2363 / X100CrMoV5-1 / SKD12 cold work tool steel with excellent dimensional stability, wear resistance and toughness. Ideal for dies, punches, shear blades, gauges and precision cold work tooling applications."
         />
 
         <meta
           name="keywords"
-          content="A2 steel, 1.2363 steel, cold work tool steel A2, A2 chemical composition, A2 heat treatment, A2 hardness, A2 datasheet, A2 steel supplier India, SKD12 equivalent, Cr5Mo1V steel, A2 round bar, A2 flats, die steel"
+          content="A2 steel, 1.2363 steel, X100CrMoV5-1, SKD12 tool steel, A2 cold work tool steel, air hardening steel, A2 tool steel supplier India, A2 chemical composition, A2 applications, A2 hardness, shear blade steel, die steel, punch steel, precision tooling steel, forged A2 steel, rolled flats and rounds"
         />
 
         <link
           rel="canonical"
-          href="https://venturasteels.com/products/cold-work-steel/a2"
+          href="https://venturasteels.com/products/cold-work-steel/a2-1-2363"
         />
 
-        {/* Product Schema */}
+        {/* Product Schema for SEO */}
         <script type="application/ld+json">
           {`
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "A2 Cold Work Tool Steel",
-  "description": "A2 / 1.2363 cold work tool steel with high wear resistance, toughness and excellent dimensional stability, widely used in cutting tools, dies and mould applications.",
+  "name": "A2 / 1.2363 / X100CrMoV5-1 / SKD12 Cold Work Tool Steel",
+
+  "image": [
+    "https://venturasteels.com/image/a2-cold-work-tool-steel.png"
+  ],
+
+  "description": "A2 / 1.2363 / X100CrMoV5-1 / SKD12 is a cold work tool steel offering excellent dimensional stability during heat treatment along with high wear resistance and toughness. Widely used for dies, punches, shear blades, gauges and precision cold work tooling applications.",
+
+  "sku": "A2-VAS",
+  "mpn": "1.2363",
+
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "material": "Cold Work Tool Steel",
+
   "url": "https://venturasteels.com/products/cold-work-steel/a2",
 
   "additionalProperty": [
     {
       "@type": "PropertyValue",
       "name": "Material Grade",
-      "value": "A2 / 1.2363 / SKD12 / X100CrMoV5-1"
+      "value": "A2 / 1.2363 / X100CrMoV5-1 / SKD12"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Key Features",
+      "value": "Excellent dimensional stability, wear resistance and toughness"
     },
     {
       "@type": "PropertyValue",
       "name": "Form",
-      "value": "Round, Flat, Block"
+      "value": "Rolled Rounds, Rolled Flats, Forged Rounds, Forged Flats"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Size Range - Rolled Rounds",
+      "value": "Ø 20 to 65 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Size Range - Rolled Flats",
+      "value": "Thickness 8 to 65 mm & Width 21 to 1200 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Size Range - Forged Rounds",
+      "value": "Ø 70 to 450 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Size Range - Forged Flats",
+      "value": "Thickness 32 to 300 mm & Width 105 to 810 mm"
+    }
+  ],
+
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://venturasteels.com/products/cold-work-steel/a2",
+
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "applicableCountry": "IN"
+    }
+  },
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "21"
+  },
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Industrial Client"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Excellent A2 tool steel with superior dimensional stability and wear resistance for precision tooling applications."
     }
   ]
 }
@@ -72,73 +174,28 @@ export default function A2() {
       </Helmet>
 
       <div className="grade-details">
-        <h2 className="text-center">A2 / 1.2363 </h2>
+        <h1 className="text-center">A2 / 1.2363 / X100CrMoV5-1 / SKD12 </h1>
         <p className="subtitle text-center">
-          Cold work tool steel with wear resistance and stability.
+          Cold Work Tool Steel — Wear Resistance & Dimensional Stability
         </p>
 
-        {/* standards  */}
-        <div className="cold-work-standards-scroll-wrapper mb-4">
-          <div className="cold-work-standards-inner-scroll">
-            <table className="standards-table">
-              <tbody>
-                <tr>
-                  <td>
-                    <strong>COUNTRY </strong>
-                  </td>
-                  <td>USA</td>
-                  <td>Germany / Europe</td>
-                  <td>Japan</td>
-                  <td>China</td>
-                  <td>UK</td>
-                  <td>France</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>STANDARDS</strong>
-                  </td>
-                  <td>ASTM / AISI</td>
-                  <td>DIN / EN</td>
-                  <td>JIS</td>
-                  <td>GB</td>
-                  <td>BS</td>
-                  <td>AFNOR</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>EQUIVALENT NAME</strong>
-                  </td>
-                  <td>A2</td>
-                  <td>1.2363 / X100CrMoV5-1</td>
-                  <td>SKD12</td>
-                  <td>Cr5Mo1V</td>
-                  <td>BA2</td>
-                  <td>Z100CDV5</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
         {/* Overview */}
-        <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
-          <div className="overview-content">
+        <section className=" d-flex w-100 justify-content-center align-items-center gap-5 ">
+          <div className="pt-3">
             <p>
-              Ventura Alloy and Steels supplies & stocks A2 Steel in India and
-              abroad. A2 Steel has greater dimensional stability during heat
-              treatment and high wear resistance and strength (potency). It is
-              primarily utilized in cutting instruments, shear razor sharp
-              edges, rolls, cold pilger mandrels, cold stamping devices, moulds
-              for plastics handling.
+              A2 delivers superior dimensional stability during heat treatment,
+              combined with high wear resistance and strength. It is primarily
+              used in cutting instruments, shear blades, rolls, cold pilger
+              mandrels, cold stamping devices, and plastic processing moulds.
             </p>
           </div>
         </section>
 
         {/* Chemical Composition */}
         <section className="cold-work-composition">
-          <h3 className="mb-4 text-center">
-            Chemical Composition (Typical Analysis in %)
-          </h3>
+          <h2 className="mb-4 text-center">
+            CHEMICAL COMPOSITION (TYPICAL ANALYSIS %)
+          </h2>
           <div className="table-data d-flex justify-content-center">
             <div className="cold-work-chemical-composition cold-work-composition-table table-responsive-custom">
               <table>
@@ -161,8 +218,8 @@ export default function A2() {
                     <td>0.95-1.05</td>
                     <td>0.10-0.40</td>
                     <td>0.40-0.80</td>
-                    <td>0.030 max</td>
-                    <td>0.030 max</td>
+                    <td>≤ 0.030</td>
+                    <td>≤ 0.030</td>
                     <td>4.80-5.50</td>
                     <td>0.90-1.20</td>
                     <td>0.15-0.35</td>
@@ -173,148 +230,53 @@ export default function A2() {
           </div>
         </section>
 
-        {/* applications */}
-        <section className="steel-properties">
-          <h2>Steel Properties</h2>
-          <p>
-            A2 Steel is equivalent of DIN 2363 and it provides extreme hardness
-            after heat treatment with great dimensional stability. It is heat
-            treatable and offers hardness in the range of 53-63 HRC.
-          </p>
-        </section>
+        {/*size range */}
+        <div className="process-section">
+          <h3 className="section-title">Size Range</h3>
+
+          <div className="size-table-wrapper">
+            <table className="size-table">
+              <thead>
+                <tr>
+                  <th>Product Type</th>
+                  <th>Size Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rolled Rounds</td>
+                  <td>Ø 20 to 65 MM</td>
+                </tr>
+                <tr>
+                  <td>Rolled Flats</td>
+                  <td>Thickness 8 to 65 MM & Width 21 to 1200 MM </td>
+                </tr>
+                <tr>
+                  <td>Forged Rounds</td>
+                  <td>Ø 70 to 450 MM</td>
+                </tr>
+                <tr>
+                  <td>Forged Flats</td>
+                  <td>Thickness 32 to 300 MM & Width 105 to 810 MM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
         {/* applications */}
         <section className="applications">
-          <h2>Applications</h2>
+          <h2>APPLICATIONS</h2>
           <p>
-            A2 Steel is mainly used for cutting tools, shear blades, rolls, cold
-            mandrels, moulds for plastics processing, cold stamping tools,
-            blanking tools, trim dies, punch dies, forming dies, stamping dies
-            etc.
+            Used for dies, punches, shear blades, gauges, and forming tools. It
+            offers good wear resistance, toughness, and dimensional stability,
+            making it ideal for precision cold work and medium-duty tooling
+            applications.
           </p>
         </section>
 
-        {/* Thermal properties */}
-        <section className="coldwork-thermal-properties">
-          <h2 className="thermal-section-title">Physical Properties</h2>
-          <div className="col-md-7 mx-auto">
-            <div className="property-card mb-3">
-              <h4>Thermal Conductivity</h4>
-              <table className="table table-bordered ">
-                <thead>
-                  <tr>
-                    <th>Temperature (°C)</th>
-                    <th>W / (m*K)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20</td>
-                    <td>15.9</td>
-                  </tr>
-                  <tr>
-                    <td>350</td>
-                    <td>26.8</td>
-                  </tr>
-                  <tr>
-                    <td>700</td>
-                    <td>29.8</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        {/* heat treatment */}
-        <section className="heat-treatment">
-          <h2 className="section-title">Heat Treatment</h2>
-
-          <div className="row">
-            {/* Basic Heat Treatment Data */}
-            <div className="col-md-6">
-              <div className="heat-card mb-3">
-                <h4>Heat Treatment Steps</h4>
-                <table className="table table-bordered">
-                  <tbody>
-                    <tr>
-                      <th>Soft Annealing °C</th>
-                      <td>810-850</td>
-                    </tr>
-                    <tr>
-                      <th>Cooling</th>
-                      <td>Furnace</td>
-                    </tr>
-                    <tr>
-                      <th>Hardness HB</th>
-                      <td>max. 232</td>
-                    </tr>
-                    <tr>
-                      <th>Stress-relief Annealing °C</th>
-                      <td>approx. 650</td>
-                    </tr>
-                    <tr>
-                      <th>Hardening °C</th>
-                      <td>930-970</td>
-                    </tr>
-                    <tr>
-                      <th>Quenching</th>
-                      <td>Air, Oil, Salt Bath 500-550°C</td>
-                    </tr>
-                    <tr>
-                      <th>Hardness after quenching HRC</th>
-                      <td>63</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Tempering Data */}
-            <div className="col-md-6">
-              <div className="heat-card mb-3">
-                <h4>Tempering (°C after quenching)</h4>
-                <table className="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Temp (°C)</th>
-                      <th>HRC</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>100</td>
-                      <td>64</td>
-                    </tr>
-                    <tr>
-                      <td>200</td>
-                      <td>63</td>
-                    </tr>
-                    <tr>
-                      <td>300</td>
-                      <td>60</td>
-                    </tr>
-                    <tr>
-                      <td>400</td>
-                      <td>58</td>
-                    </tr>
-                    <tr>
-                      <td>500</td>
-                      <td>59</td>
-                    </tr>
-                    <tr>
-                      <td>600</td>
-                      <td>53</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Availability */}
-        <section className="availability-info my-4">
+        {/* <section className="availability-info my-4">
           <div className="container">
             <h4 className="mb-3">Availability</h4>
             <p>
@@ -332,10 +294,10 @@ export default function A2() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Get Quote CTA */}
-         <div className="cta-block d-flex gap-3 align-items-center flex-wrap">
+        <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
           <button onClick={handleEnquiryClick} className="btn btn-primary">
             Enquire Now
           </button>

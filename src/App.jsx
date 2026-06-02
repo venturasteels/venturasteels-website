@@ -36,6 +36,8 @@ import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
 import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
 import H13 from "./components/Products/Hot-Work/Grades/H13/H13.jsx";
 import H11 from "./components/Products/Hot-Work/Grades/H11/H11.jsx";
+import HotWork12367 from "./components/Products/Hot-Work/Grades/1.2367/1.2367.jsx";
+import HotWork18407 from "./components/Products/Hot-Work/Grades/1.8407/1.8407.jsx";
 import H21 from "./components/Products/Hot-Work/Grades/H21/H21.jsx";
 import H10 from "./components/Products/Hot-Work/Grades/H10/H10.jsx";
 import H12 from "./components/Products/Hot-Work/Grades/H12/H12.jsx";
@@ -51,8 +53,10 @@ import ColdWork from "./components/Products/Cold-Work/cold-work.jsx";
 import D2 from "./components/Products/Cold-Work/Grades/D2/D2.jsx";
 import D3 from "./components/Products/Cold-Work/Grades/D3/D3.jsx";
 import D5 from "./components/Products/Cold-Work/Grades/D5/D5.jsx";
+import SAE52100 from "./components/Products/Cold-Work/Grades/SAE52100/SAE52100.jsx";
 import A2 from "./components/Products/Cold-Work/Grades/A2/A2.jsx";
 import O1 from "./components/Products/Cold-Work/Grades/O1/O1.jsx";
+import D6 from "./components/Products/Cold-Work/Grades/D6/D6.jsx";
 
 // Plastic Mould
 import PlaticMould from "./components/Products/Plastic-Mould/plastic-mould.jsx";
@@ -76,19 +80,23 @@ import SpringSteel55Si7 from "./components/Products/Spring-Steel/Grades/55Si7/55
 import AlloySteel from "./components/Products/Alloy-Steel/alloy-steel.jsx";
 import AlloySteel20MnCr5 from "./components/Products/Alloy-Steel/Grades/20MnCr5/20MnCr5.jsx";
 import AlloySteelSAE4140 from "./components/Products/Alloy-Steel/Grades/SAE4140/SAE4140.jsx";
+import AlloySteelEN24 from "./components/Products/Alloy-Steel/Grades/EN24/EN24.jsx";
+import AlloySteelEN36 from "./components/Products/Alloy-Steel/Grades/EN36/EN36.jsx";
 import AlloySteelSAE1020 from "./components/Products/Alloy-Steel/Grades/SAE1020/SAE1020.jsx";
 import AlloySteel41Cr4 from "./components/Products/Alloy-Steel/Grades/41Cr4/41Cr4.jsx";
 import AlloySteelEN41B from "./components/Products/Alloy-Steel/Grades/EN41B/EN41B.jsx";
-import AlloySteelEN24 from "./components/Products/Alloy-Steel/Grades/EN24/EN24.jsx";
 import AlloySteelSAE4130 from "./components/Products/Alloy-Steel/Grades/SAE4130/SAE4130.jsx";
 import AlloySteelEN36C from "./components/Products/Alloy-Steel/Grades/EN36C/EN36C.jsx";
 import AlloySteelSAE8620 from "./components/Products/Alloy-Steel/Grades/SAE8620/SAE8620.jsx";
+import EN353 from "./components/Products/Alloy-Steel/Grades/EN353/EN353.jsx";
 
 // Carbon Steel
 import CarbonSteel from "./components/Products/Carbon-Steel/carbon-steel.jsx";
 import CarbonSteelC45 from "./components/Products/Carbon-Steel/Grades/C45/C45.jsx";
 import CarbonSteelSAE1018 from "./components/Products/Carbon-Steel/Grades/SAE1018/SAE1018.jsx";
 import CarbonSteelST52 from "./components/Products/Carbon-Steel/Grades/ST52.3/ST52.3.jsx";
+import CarbonSteelEN1ALPB from "./components/Products/Carbon-Steel/Grades/EN1A-L&PB/EN1A-L.jsx";
+import CarbonSteelEN9 from "./components/Products/Carbon-Steel/Grades/EN9/EN9.jsx";
 import CarbonSteelEN1A from "./components/Products/Carbon-Steel/Grades/EN1A/EN1A.jsx";
 import CarbonSteel35C8 from "./components/Products/Carbon-Steel/Grades/35C8/35C8.jsx";
 import CarbonSteelSAE1541 from "./components/Products/Carbon-Steel/Grades/SAE1541/SAE1541.jsx";
@@ -114,25 +122,25 @@ ReactGA.initialize("G-PNNRG2K7VQ");
 
 const App = () => {
   // disable copy, right click and f12
-  useEffect(() => {
-    const handleContextMenu = (e) => e.preventDefault();
-    document.addEventListener("contextmenu", handleContextMenu);
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => e.preventDefault();
+  //   document.addEventListener("contextmenu", handleContextMenu);
 
-    const handleKeyDown = (e) => {
-      if (
-        (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
-        e.key === "F12"
-      ) {
-        e.preventDefault();
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown);
+  //   const handleKeyDown = (e) => {
+  //     if (
+  //       (e.ctrlKey && ["u", "s", "p", "c"].includes(e.key.toLowerCase())) ||
+  //       e.key === "F12"
+  //     ) {
+  //       e.preventDefault();
+  //     }
+  //   };
+  //   document.addEventListener("keydown", handleKeyDown);
 
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //     document.removeEventListener("keydown", handleKeyDown);
+  //   };
+  // }, []);
 
   useEffect(() => {
     AOS.init({
@@ -203,13 +211,15 @@ const App = () => {
           />
           {/* <Route
             path="/connect/product-portfolio"
-            element={<ProductPortfolio />}
+            element={<ProductPortfolio />}g
           /> */}
           {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/products/hot-work-steel" element={<HotWork />}>
             <Route path="db6" element={<DB6 />} />
             <Route path="h13" element={<H13 />} />
             <Route path="h11" element={<H11 />} />
+            <Route path="1.2367-x38crmov5-3" element={<HotWork12367 />} />
+            <Route path="1.8407" element={<HotWork18407 />} />
             <Route path="h21" element={<H21 />} />
             <Route path="h10" element={<H10 />} />
             <Route path="h12" element={<H12 />} />
@@ -218,13 +228,15 @@ const App = () => {
             <Route path="d2" element={<D2 />} />
             <Route path="d3" element={<D3 />} />
             <Route path="d5" element={<D5 />} />
+            <Route path="sae52100" element={<SAE52100 />} />
             <Route path="a2" element={<A2 />} />
             <Route path="o1" element={<O1 />} />
+            <Route path="d6" element={<D6 />} />
           </Route>
           <Route path="/products/plastic-mould-steel" element={<PlaticMould />}>
             <Route path="p20ni" element={<P20Ni />} />
             <Route path="p20-1.2311" element={<P20 />} />
-            <Route path="1.2316" element={<PlasticMould2316 />} />
+            <Route path="1-2316" element={<PlasticMould2316 />} />
           </Route>
           <Route path="/products/spring-steel" element={<SpringSteel />}>
             <Route path="en47" element={<SpringSteelEN47 />} />
@@ -238,20 +250,25 @@ const App = () => {
           </Route>
           <Route path="/products/alloy-steel" element={<AlloySteel />}>
             <Route path="20mncr5" element={<AlloySteel20MnCr5 />} />
-            <Route path="en31" element={<EN31 />} />
+
             <Route path="sae4140" element={<AlloySteelSAE4140 />} />
+            <Route path="en24" element={<AlloySteelEN24 />} />
+            <Route path="en36" element={<AlloySteelEN36 />} />
             <Route path="sae1020" element={<AlloySteelSAE1020 />} />
             <Route path="41cr4" element={<AlloySteel41Cr4 />} />
             <Route path="en41b" element={<AlloySteelEN41B />} />
-            <Route path="en24" element={<AlloySteelEN24 />} />
+            <Route path="en31" element={<EN31 />} />
             <Route path="sae4130" element={<AlloySteelSAE4130 />} />
             <Route path="en36C" element={<AlloySteelEN36C />} />
             <Route path="sae8620" element={<AlloySteelSAE8620 />} />
+            <Route path="en353" element={<EN353 />} />
           </Route>
           <Route path="/products/carbon-steel" element={<CarbonSteel />}>
             <Route path="c45" element={<CarbonSteelC45 />} />
             <Route path="sae1018" element={<CarbonSteelSAE1018 />} />
             <Route path="st52.3" element={<CarbonSteelST52 />} />
+            <Route path="en1a-l&pb" element={<CarbonSteelEN1ALPB />} />
+            <Route path="en9" element={<CarbonSteelEN9 />} />
             <Route path="en1a" element={<CarbonSteelEN1A />} />
             <Route path="35c8" element={<CarbonSteel35C8 />} />
             <Route path="sae1541" element={<CarbonSteelSAE1541 />} />
