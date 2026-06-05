@@ -20,7 +20,8 @@ const gradesData = [
         name: "1.2367 / X38CrMoV5-3",
         link: "/products/hot-work-steel/1.2367-x38crmov5-3",
       },
-      { name: "1.8407", link: "/products/hot-work-steel/1.8407" },
+      // { name: "1.8407", link: "/products/hot-work-steel/1.8407" },
+      // url removed
     ],
   },
   // Cold Work

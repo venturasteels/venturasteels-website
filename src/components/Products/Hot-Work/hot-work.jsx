@@ -178,7 +178,7 @@ const HotWork = () => {
                     1.2367 / X38CrMoV5-3
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     to="1.8407"
                     className={
@@ -187,7 +187,8 @@ const HotWork = () => {
                   >
                     1.8407
                   </Link>
-                </li>
+                </li> */}
+                {/* url removed */}
               </ul>
             </aside>
           </div>

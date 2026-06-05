@@ -742,7 +742,7 @@ export default function Header() {
                       1.2367 / X38CrMoV5-3
                     </button>
 
-                    <button
+                    {/* <button
                       className="dropdown-item"
                       onMouseEnter={() => setHoveredGrade("1-8407")}
                       onMouseLeave={() => setHoveredGrade(null)}
@@ -751,7 +751,8 @@ export default function Header() {
                       }
                     >
                       1.8407
-                    </button>
+                    </button> */}
+                    {/* url removed */}
                   </div>
                 </div>
               </div>

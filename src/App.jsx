@@ -219,7 +219,8 @@ const App = () => {
             <Route path="h13" element={<H13 />} />
             <Route path="h11" element={<H11 />} />
             <Route path="1.2367-x38crmov5-3" element={<HotWork12367 />} />
-            <Route path="1.8407" element={<HotWork18407 />} />
+            {/* <Route path="1.8407" element={<HotWork18407 />} /> */}
+            {/* url removed */}
             <Route path="h21" element={<H21 />} />
             <Route path="h10" element={<H10 />} />
             <Route path="h12" element={<H12 />} />

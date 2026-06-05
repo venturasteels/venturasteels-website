@@ -23,7 +23,8 @@ const productOptions = {
     "H13 / AISI H13 / DIN 2344",
     "H11 / AISI H11 / DIN 2343",
     "1.2367 / X38CrMoV5-3",
-    "1.8407",
+    // "1.8407",
+    // url removed
   ],
   "Cold Work Steel": [
     "D2 / 1.2379 / HCHCR D2",
