@@ -53,12 +53,12 @@ const productCategories = [
       "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775473472/C45-Round-Bars_aejn7v.jpg",
     path: "/products/carbon-steel",
   },
-  {
-    title: "Boron Steel",
-    image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051261/10B35_Boron_Steel_Round_Bars_mzkyft.png",
-    path: "/products/boron-steel",
-  },
+  // {
+  //   title: "Boron Steel",
+  //   image:
+  //     "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1764051261/10B35_Boron_Steel_Round_Bars_mzkyft.png",
+  //   path: "/products/boron-steel",
+  // },
 ];
 
 const whyChoose = [
