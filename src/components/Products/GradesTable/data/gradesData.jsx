@@ -126,7 +126,7 @@ const gradesData = [
       },
       {
         name: "EN1A-L & PB / 11SMnPb30 / 1.0718 / SUM22L / 230M07 PB",
-        link: "/products/carbon-steel/en1a-l&pb",
+        link: "/products/carbon-steel/en1a-l-pb",
       },
       {
         name: "EN9 / 1055 / 1.0535 / S55C",

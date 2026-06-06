@@ -1175,10 +1175,10 @@ export default function Header() {
 
                     <button
                       className="dropdown-item"
-                      onMouseEnter={() => setHoveredGrade("en1a-l&pb")}
+                      onMouseEnter={() => setHoveredGrade("en1a-l-pb")}
                       onMouseLeave={() => setHoveredGrade(null)}
                       onClick={() =>
-                        handleNavClick("/products/carbon-steel/en1a-l&pb")
+                        handleNavClick("/products/carbon-steel/en1a-l-pb")
                       }
                     >
                       EN1A-L & PB / 11SMnPb30 / 1.0718 / SUM22L / 230M07 PB

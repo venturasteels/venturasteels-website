@@ -10,7 +10,7 @@ const CarbonSteel = () => {
 
   React.useEffect(() => {
     const gradePattern =
-      /^\/products\/carbon-steel\/(sae1018|c45|st52.3|en1a-l&pb|en9)/;
+      /^\/products\/carbon-steel\/(sae1018|c45|st52.3|en1a-l-pb|en9)/;
     setIsGradeSelected(gradePattern.test(location.pathname));
   }, [location.pathname]);
 
@@ -156,9 +156,9 @@ const CarbonSteel = () => {
                 </li>
                 <li>
                   <Link
-                    to="en1a-l&pb"
+                    to="en1a-l-pb"
                     className={
-                      location.pathname.includes("en1a-l&pb")
+                      location.pathname.includes("en1a-l-pb")
                         ? "active-grade"
                         : ""
                     }

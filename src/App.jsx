@@ -268,7 +268,7 @@ const App = () => {
             <Route path="c45" element={<CarbonSteelC45 />} />
             <Route path="sae1018" element={<CarbonSteelSAE1018 />} />
             <Route path="st52.3" element={<CarbonSteelST52 />} />
-            <Route path="en1a-l&pb" element={<CarbonSteelEN1ALPB />} />
+            <Route path="en1a-l-pb" element={<CarbonSteelEN1ALPB />} />
             <Route path="en9" element={<CarbonSteelEN9 />} />
             <Route path="en1a" element={<CarbonSteelEN1A />} />
             <Route path="35c8" element={<CarbonSteel35C8 />} />
