@@ -278,11 +278,11 @@ const App = () => {
             <Route path="en43bcr" element={<CarbonSteelEN43BCr />} />
             <Route path="sae1141" element={<CarbonSteelSAE1141 />} />
           </Route>
-          <Route path="/products/boron-steel" element={<Boron />}>
+          {/* <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10b21" element={<Boron10B21 />} />
             <Route path="15b25" element={<Boron15B25 />} />
             <Route path="10b35" element={<Boron10B35 />} />
-          </Route>
+          </Route> */}
           <Route path="/products/automotive" element={<Automotive />} />
           <Route path="/products/aerospace" element={<Aerospace />} />
           <Route path="/products/tooling" element={<Tooling />} />
