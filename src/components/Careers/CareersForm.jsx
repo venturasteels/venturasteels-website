@@ -56,13 +56,32 @@ export default function CareerApplicationModal({
   //Simple Frontend Validation
   const validate = () => {
     let newErrors = {};
-    if (!formData.position) newErrors.position = "Position is required";
-    if (!formData.name.trim()) newErrors.name = "Full name is required";
-    if (!formData.email) newErrors.email = "Email is required";
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
-    else if (!/\S+@\S+\.\S+/.test(formData.email))
+    if (!formData.position) {
+      newErrors.position = "Position is required";
+    }
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Full name is required";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Invalid email format";
-    // if (!formData.resume) newErrors.resume = "Resume is required";
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
+    if (!formData.resume) {
+      newErrors.resume = "Resume is required";
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -251,6 +270,8 @@ export default function CareerApplicationModal({
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
+                  isInvalid={!!errors.phone}
+                  placeholder="Enter 10-digit mobile number"
                 />
               </Form.Group>
             </div>
@@ -258,28 +279,36 @@ export default function CareerApplicationModal({
 
           {/* SECTION 3 – MESSAGE */}
           <div className="form-section">
-            <h6 className="section-heading">Additional Information</h6>
+            <h6 className="section-heading">Message *</h6>
 
             <Form.Control
               as="textarea"
               name="message"
               rows={3}
-              placeholder="Brief note (optional)"
+              placeholder="Brief note"
               value={formData.message}
               onChange={handleChange}
+              isInvalid={!!errors.message}
             />
+            <Form.Control.Feedback type="invalid">
+              {errors.message}
+            </Form.Control.Feedback>
           </div>
 
           {/* SECTION 4 – DOCUMENT */}
           <div className="form-section">
-            <h6 className="section-heading">Resume Upload</h6>
+            <h6 className="section-heading">Resume Upload *</h6>
 
             <Form.Control
               type="file"
               name="resume"
               accept=".pdf,.doc,.docx"
               onChange={handleFileChange}
+              isInvalid={!!errors.resume}
             />
+            <Form.Control.Feedback type="invalid">
+              {errors.resume}
+            </Form.Control.Feedback>
             <small className="text-muted">
               Accepted formats: PDF, DOC, DOCX (Max 2 MB)
             </small>

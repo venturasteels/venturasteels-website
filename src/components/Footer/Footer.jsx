@@ -153,7 +153,7 @@ const Footer = () => {
                     className="text-decoration-none text-white px-1 footer-tap-link"
                     title="Call Ventura Steels Office"
                   >
-                    9324959833
+                    +91 9324959833
                   </a>
                 </span>
               </p>
