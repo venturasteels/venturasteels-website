@@ -107,11 +107,11 @@ const Footer = () => {
                     Carbon Steel
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/products/boron-steel" className="footer-link">
                     Boron Steel
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 

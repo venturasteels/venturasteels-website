@@ -288,18 +288,45 @@ export default function Careers() {
       </HelmetProvider>
 
       <div className="careers-container container pb-5 recaptcha-page">
-        {/* Intro Section */}
-        <div className="w-100 mb-5 careers-banner" data-aos="fade-down">
-          <img
-            src="/image/career-bg2.jpg"
-            alt="Careers Banner Image"
-            className="img-fluid"
-          />
+        {/* HERO SECTION */}
+        <div className="careers-banner">
+          <div className="career-banner-wrapper">
+            <img
+              src="/image/career-bg610.png"
+              alt="Careers Banner"
+              className="career-banner-img"
+            />
+
+            {/* CUSTOM DIVIDER */}
+            <svg
+              className="career-divider"
+              viewBox="0 0 1440 180"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="
+          M0,40
+          C200,150
+          400,170
+          720,120
+          C1000,80
+          1200,50
+          1440,30
+          L1440,180
+          L0,180
+          Z
+        "
+                fill="#fdf5ef"
+              />
+            </svg>
+          </div>
         </div>
+
+        {/* CARD SECTION */}
         <Card
-          className="careers-intro shadow-sm border-0 mb-5"
-          data-aos="fade-up"
-          data-aos-delay="100"
+          className="careers-intro border-0"
+          // data-aos="fade-up"
+          // data-aos-delay="100"
         >
           <Card.Body>
             <Row>
@@ -308,7 +335,7 @@ export default function Careers() {
                   Careers at Ventura Steels
                 </h2>
                 <p
-                  className="text-muted fs-5"
+                  className="text-muted "
                   data-aos="fade-right"
                   data-aos-delay="100"
                 >
@@ -316,6 +343,7 @@ export default function Careers() {
                   We hire for growth, craftsmanship and impact.
                 </p>
               </Col>
+
               <Col
                 md={3}
                 className="text-end careers-stats"
@@ -326,6 +354,7 @@ export default function Careers() {
                   <span className="stat-number">15+</span>
                   <span className="stat-label">Years</span>
                 </div>
+
                 <div>
                   <span className="stat-number">70+</span>
                   <span className="stat-label">Employees</span>

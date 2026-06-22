@@ -1,13 +1,82 @@
-.careers-banner img {
+/* ==================================
+   CAREERS HERO
+================================== */
+
+.careers-banner {
+  margin-bottom: 0 !important;
+}
+
+.career-banner-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-top: 8.2rem;
+  line-height: 0;
+}
+
+.career-banner-img {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* Shared Divider */
+
+.career-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 140px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .career-banner-img {
+    height: 40vh;
+  }
+
+  .career-divider {
+    height: 80px;
+  }
+
+  .careers-intro .card-body {
+    padding: 2rem;
+  }
+
+  .careers-intro h2 {
+    font-size: 2rem;
+  }
+
+  .careers-stats {
+    text-align: left !important;
+    margin-top: 20px;
+  }
+}
+
+/* .careers-banner img {
   margin-top: 8.2rem !important;
   height: 60vh;
   width: 100%;
-}
-/* intro section */
+  object-fit: contain;
+} */
+
+/* ==================================
+   INTRO SECTION
+================================== */
+
 .careers-intro {
-  background: linear-gradient(135deg, #fe8d3720, #ffffff);
-  border-radius: 12px;
-  padding: 2rem;
+  margin-bottom: 5rem;
+  margin-top: -2px !important;
+  background: #fdf5ef !important;
+  border-radius: 0 0 30px 30px !important;
+  overflow: hidden;
+  box-shadow: 0 15px 25px -10px rgba(0, 0, 0, 0.12);
+}
+
+.careers-intro .card-body {
+  padding: 1.5rem 2.5rem 2.5rem;
 }
 
 .careers-intro h2 {
@@ -17,19 +86,26 @@
 }
 
 .careers-intro p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.careers-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .careers-stats .stat-number {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #fe8d37;
 }
 
 .careers-stats .stat-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #666;
+  margin-left: 4px;
 }
 
 /* job listings */
@@ -429,13 +505,35 @@ button.btn-success:hover {
 }
 
 @media screen and (max-width: 560px) {
-  .careers-banner img {
+  .career-banner-wrapper {
     height: 35vh;
     margin-top: 10px;
   }
+}
 
-  .careers-banner {
-    margin-bottom: 1.98rem !important;
+@media screen and (max-width: 480px) {
+  .careers-heading {
+    margin-bottom: 2rem;
+  }
+
+  .careers-intro {
+    margin-bottom: 2.5rem;
+  }
+  .careers-intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .careers-intro p {
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+
+  .careers-stats .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .careers-stats .stat-label {
+    font-size: 0.87rem;
   }
 }
 
@@ -553,17 +651,17 @@ button.btn-success:hover {
 }
 
 @media (max-width: 451px) {
-  .careers-banner img {
+  .career-banner-wrapper {
     margin-top: 13.9rem !important;
   }
 }
 @media (min-width: 452px) and (max-width: 763px) {
-  .careers-banner img {
-    margin-top: 10.6rem !important;
+  .career-banner-wrapper {
+    margin-top: 12rem !important;
   }
 }
 @media (min-width: 764px) and (max-width: 827px) {
-  .careers-banner img {
+  .career-banner-wrapper {
     margin-top: 9.6rem !important;
   }
 }

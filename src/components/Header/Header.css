@@ -49,6 +49,26 @@
 }
 
 /* dropdown menu */
+.nav-item.dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.nav-item.dropdown .nav-link::after {
+  content: "";
+  margin-left: 6px;
+  border: 5px solid transparent;
+  border-top-color: #2f2b60;
+  display: inline-block;
+  transition: 0.3s;
+  vertical-align: middle;
+  position: relative;
+  top: 3px;
+}
+
+.nav-item.dropdown:hover .nav-link::after {
+  transform: rotate(180deg);
+}
+
 .dropdown-menu {
   opacity: 0;
   visibility: hidden;
@@ -125,6 +145,10 @@
   margin-bottom: 3px;
   border-bottom: 2px solid #fe8d37;
   border-radius: 7px;
+  white-space: normal !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
 }
 
 .dropdown-item:hover {
@@ -192,27 +216,6 @@
 }
 
 /* ===============================
-   GRADE ROWS
-================================ */
-/* .dropdown-menu.sub-dropdown .dropdown-item {
-  width: 100%;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 500;
-  color: #2f2b60;
-  padding: 10px 12px;
-  margin-bottom: 6px;
-  border-radius: 6px;
-  background: #fafafa;
-  transition: all 0.2s ease;
-} */
-
-/* Subtle row hover */
-/* .dropdown-menu.sub-dropdown .dropdown-item:hover {
-  background: #f3f3f3;
-} */
-
-/* ===============================
    TEXT PART HIGHLIGHT
 ================================ */
 .dropdown-menu.sub-dropdown .active-part {
@@ -233,60 +236,6 @@
   background: #fe8d37;
   border-radius: 6px;
 }
-
-/* REGION TABS INSIDE SUB DROPDOWN */
-/* .region-tabs {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 8px;
-}
-
-.region-tabs button {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  padding: 6px 4px;
-  border: 1px solid #ddd;
-  background: #f8f8f8;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.region-tabs button img {
-  width: 22px;
-  height: 16px;
-  object-fit: cover;
-}
-
-.region-tabs button span {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #2f2b60;
-} */
-
-/* Hover */
-/* .region-tabs button:hover {
-  background: #fe8d37;
-  border-color: #fe8d37;
-}
-
-.region-tabs button:hover span {
-  color: #fff;
-} */
-
-/* Active */
-/* .region-tabs button.active {
-  background: #fe8d37;
-  border-color: #fe8d37;
-}
-
-.region-tabs button.active span {
-  color: #fff;
-} */
 
 .dropdown-item.hover-active {
   background-color: #fe8d37;
@@ -327,7 +276,7 @@
   content: "";
   margin-left: 6px;
   border: 5px solid transparent;
-  border-top-color: #fe8d37;
+  border-top-color: #2f2b60;
   display: inline-block;
   transition: 0.3s;
 }
@@ -341,14 +290,13 @@
 ================================= */
 .nav-dropdown-menu {
   position: absolute;
-  top: 130%;
+  top: 100%;
   left: 0;
   min-width: 220px;
-  padding: 10px;
-  border-radius: 12px;
-  background: #2f2b60;
+  padding: 12px;
+  background: #ffffff;
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -373,15 +321,17 @@
   width: 100%;
   background: transparent;
   border: none;
-  color: #fff;
+  color: #2f2b60;
   text-align: left;
-  padding: 10px 14px;
-  font-size: 15px;
+  border-bottom: 2px solid #fe8d37;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 7px;
   cursor: pointer;
   transition: all 0.25s ease;
 }
+
 @media (max-width: 1237px) {
   .nav-dropdown-btn {
     font-size: 16px;
@@ -390,10 +340,8 @@
 
 /* Hover (clean highlight) */
 .nav-dropdown-menu button:hover {
-  /* background: rgba(254, 141, 55, 0.15);
-  color: #fe8d37; */
   background: #fe8d37;
-  transform: translateX(4px);
+  color: #fff;
 }
 
 /* Active */
