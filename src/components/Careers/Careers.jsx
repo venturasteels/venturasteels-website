@@ -292,7 +292,7 @@ export default function Careers() {
         <div className="careers-banner">
           <div className="career-banner-wrapper">
             <img
-              src="/image/career-bg610.png"
+              src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1782126053/careers-background_frzdh8.jpg"
               alt="Careers Banner"
               className="career-banner-img"
             />
