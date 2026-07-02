@@ -8,73 +8,73 @@ const certificates = [
   {
     title: "ALUCAST (Life Member)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829424/alucast_certificate-1_q9nrul.png",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829424/alucast_certificate-1_q9nrul.png",
     description:
       "Life Member (Corporate) of Aluminium Casters’ Association, India.",
   },
   {
     title: "AIFI (2026–2027)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829442/AIFI_CERTIFICATE_OF_MEMBERSHIP_updated_qjxy0l.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829442/AIFI_CERTIFICATE_OF_MEMBERSHIP_updated_qjxy0l.jpg",
     description:
       "Associate Member of the Association of Indian Forging Industry.",
   },
   {
     title: "BSCIC ISO 9001:2015 (2024–2027)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829430/BSCIC-ISO_n5qkly.png",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829430/BSCIC-ISO_n5qkly.png",
     description:
       "Certified for Quality Management System – Importer & Stockist of Alloy & Die Steels.",
   },
   {
     title: "IGCC (2025)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829431/AHK-membership_noeskw.png",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829431/AHK-membership_noeskw.png",
     description: "Member of the Indo-German Chamber of Commerce (IGCC).",
   },
   {
     title: "CII (2025)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829428/CII-membership_cxbqqi.png",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829428/CII-membership_cxbqqi.png",
     description: "Member of the Confederation of Indian Industry (CII).",
   },
   {
     title: "TAGMA India Membership",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829424/TAGMA-updated_wqlhnx.png",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1782987508/TAGMA_MEMBERSHIP_2026-27_page-0001_gzrkfu.jpg",
     description:
       "Membership certificate for Ventura Alloy And Steels Pvt. Ltd., Mumbai (2025–2026).",
   },
   {
     title: "DISMA Life Membership",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829432/DISMA_umxs8o.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829432/DISMA_umxs8o.jpg",
     description:
       "Life Membership certificate from The Darukhana Iron Steel & Scrap Merchants Association.",
   },
   {
     title: "MASSMA Life Membership",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829431/MASSMA-2_bymnix.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829431/MASSMA-2_bymnix.jpg",
     description:
       "Life Membership certificate from the Metal and Stainless Steel Merchants’ Association.",
   },
   {
     title: "TSSIA (Life Member)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829426/TSSIA-Membership_p7rca3.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829426/TSSIA-Membership_p7rca3.jpg",
     description: "Life Member of Thane Small Scale Industries Association.",
   },
   {
     title: "Steel Chamber of India (Permanent Member)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829431/SCI_i7yhcb.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829431/SCI_i7yhcb.jpg",
     description: "Permanent Member of the Steel Chamber of India.",
   },
   {
     title: "SUFI (2016)",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/v1778829423/SUFI_muvv0x.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778829423/SUFI_muvv0x.jpg",
     description: "Member of the Steel Users Federation of India (SUFI).",
   },
 ];
