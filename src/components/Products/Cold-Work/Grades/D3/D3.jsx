@@ -39,22 +39,26 @@ export default function D3() {
 
         {/* Product Schema for SEO */}
         <script type="application/ld+json">
-          {`
-{
+          {`{
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "D3 Cold Work Tool Steel",
   "description": "D3 / 1.2080 high carbon high chromium cold work tool steel with extremely high wear resistance and hardness, ideal for cutting, blanking and forming applications.",
+  "image": "https://your-image-url.com/d3.webp",
+  "url": "https://venturasteels.com/products/cold-work-steel/d3",
+  "sku": "D3",
+  "category": "Cold Work Tool Steel",
+  "material": "Cold Work Tool Steel",
+
   "brand": {
-    "@type": "Organization",
+    "@type": "Brand",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
+
   "manufacturer": {
     "@type": "Organization",
     "name": "Ventura Alloy & Steels Pvt. Ltd."
   },
-  "material": "Cold Work Tool Steel",
-  "url": "https://venturasteels.com/products/cold-work-steel/d3",
 
   "additionalProperty": [
     {
@@ -71,10 +75,9 @@ export default function D3() {
 
   "offers": {
     "@type": "Offer",
+    "url": "https://venturasteels.com/products/cold-work-steel/d3",
     "priceCurrency": "INR",
-    "price": "0",
-    "availability": "https://schema.org/InStock",
-    "url": "https://venturasteels.com/products/cold-work-steel/d3"
+    "availability": "https://schema.org/InStock"
   }
 }
 `}

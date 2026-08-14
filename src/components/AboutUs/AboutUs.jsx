@@ -266,7 +266,13 @@ const AboutUs = () => {
                   <div className={`team-card ${idx === 1 ? "active" : ""}`}>
                     {/* IMAGE */}
                     <div className="team-img">
-                      <img src={member.image} alt={member.name} />
+                      <img
+                        src={member.image}
+                        alt={`${member.name} - ${member.position} | Ventura Steels Management
+                        `}
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
 
                     {/* CONTENT */}

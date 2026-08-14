@@ -296,7 +296,6 @@ export default function Careers() {
               alt="Careers Banner"
               className="career-banner-img"
             />
-
             {/* CUSTOM DIVIDER */}
             <svg
               className="career-divider"
@@ -318,7 +317,7 @@ export default function Careers() {
         "
                 fill="#fdf5ef"
               />
-            </svg>
+            </svg> 
           </div>
         </div>
 
@@ -366,8 +365,8 @@ export default function Careers() {
               </Col>
             </Row>
           </Card.Body>
-        </Card>
-
+        </Card>    
+                               
         {/* job listings */}
         <Row>
           {/* Job Listings */}

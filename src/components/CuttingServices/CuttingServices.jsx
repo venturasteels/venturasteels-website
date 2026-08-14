@@ -291,6 +291,8 @@ const CuttingServices = () => {
                 <img
                   src="https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1776667053/cutting-bg-services_yb0ent.jpg"
                   alt="Precision Cutting"
+                  loading="lazy"
+                  decoding="async"
                   className="intro-img"
                 />
               </div>

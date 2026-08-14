@@ -17,7 +17,13 @@ const CuttingCard = ({ title, img, desc, list, aos }) => {
 
           {/* Image */}
           <div className="cutting-pro-img-wrap">
-            <img src={img} alt={title} className="cutting-pro-img" />
+            <img
+              src={img}
+              alt={title}
+              loading="lazy"
+              decoding="async"
+              className="cutting-pro-img"
+            />
 
             {/* Magnetic Arrow */}
             <div className="cutting-pro-arrow magnet-target">

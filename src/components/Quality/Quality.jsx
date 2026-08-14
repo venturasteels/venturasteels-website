@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useState } from "react";
 import "./Quality.css";
 import AOS from "aos";
 import { Link } from "react-router-dom";
@@ -14,6 +15,8 @@ const Quality = () => {
       offset: 100,
     });
   }, []);
+
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -175,111 +178,6 @@ const Quality = () => {
         </div>
       </section>
 
-      {/* QUALITY PROCESS - B2B PREMIUM VERSION */}
-      {/* <section className="quality-process-section py-5">
-  <div className="container">
-    <div className="text-center mb-5" data-aos="fade-up">
-      <h2 className="fw-bold text-dark-blue section-heading">
-        Our <span className="text-orange">Quality Process</span>
-      </h2>
-      <p className="text-muted mt-2">
-        Every stage of our process is designed for precision, traceability, and consistency.
-      </p>
-      <div className="underline mx-auto mt-3"></div>
-    </div>
-
-    <div className="timeline">
-      {[
-        {
-          step: "01",
-          title: "Material Sourcing",
-          desc: "Raw materials procured from globally trusted and reputed mills with full traceability.",
-        },
-        {
-          step: "02",
-          title: "Testing & Verification",
-          desc: "In-house spectrometer, hardness, and micro-structure tests ensure metallurgical integrity.",
-        },
-        {
-          step: "03",
-          title: "Certification",
-          desc: "QAP-approved test certificates are issued for each batch before dispatch.",
-        },
-        {
-          step: "04",
-          title: "Final Dispatch",
-          desc: "Materials packed and inspected per client requirements to guarantee delivery quality.",
-        },
-      ].map((item, index) => (
-        <div
-          key={index}
-          className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
-          data-aos="fade-up"
-          data-aos-delay={index * 200}
-        >
-          <div className="timeline-content">
-            <div className="step-number">{item.step}</div>
-            <h5>{item.title}</h5>
-            <p>{item.desc}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section> */}
-      {/* QUALITY PROCESS – MODERN HORIZONTAL FLOW */}
-      {/* <section className="quality-process-modern py-5">
-        <div className="container">
-          <div className="text-center mb-5" data-aos="fade-up">
-            <h2 className="fw-bold text-dark-blue">
-              Our <span className="text-orange">Quality Process</span>
-            </h2>
-            <p className="text-muted mt-2">
-              A streamlined, precision-driven process ensuring reliability and
-              excellence in every batch.
-            </p>
-            <div className="underline mx-auto mt-3"></div>
-          </div>
-
-          <div className="process-flow">
-            {[
-              {
-                icon: "bi-box-seam",
-                title: "Material Sourcing",
-                desc: "Procured from reputed mills with complete traceability.",
-              },
-              {
-                icon: "bi-search",
-                title: "Testing & Verification",
-                desc: "Hardness, microstructure & spectrometer tests performed in-house.",
-              },
-              {
-                icon: "bi-file-earmark-check",
-                title: "Certification",
-                desc: "QAP-approved reports and certificates accompany each batch.",
-              },
-              {
-                icon: "bi-truck",
-                title: "Final Dispatch",
-                desc: "Inspected, packed, and delivered as per client’s exact specifications.",
-              },
-            ].map((item, index) => (
-              <div
-                className="process-card"
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={index * 200}
-              >
-                <div className="icon-circle">
-                  <i className={`bi ${item.icon}`}></i>
-                </div>
-                <h5>{item.title}</h5>
-                <p>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
       {/* QUALITY PROCESS - PIPELINE STYLE */}
       <section className="quality-pipeline py-5">
         <div className="container">
@@ -357,17 +255,51 @@ const Quality = () => {
               className="col-lg-5 col-md-6 text-center"
               data-aos="fade-right"
             >
-              <div className="certificate-quality-image position-relative mx-auto">
+              <div
+                className="certificate-quality-image position-relative mx-auto"
+                onClick={() => setShowModal(true)}
+                style={{ cursor: "pointer" }}
+              >
                 <img
                   src="/image/certificates/BSCIC-ISO.png"
                   alt="BSCIC ISO 9001 Certificate"
                   className="img-fluid certificate-quality-img"
+                  loading="lazy"
                 />
+
                 <div className="certificate-overlay">
                   <i className="bi bi-zoom-in"></i>
                 </div>
               </div>
             </div>
+
+            {showModal && (
+              <div
+                className="modal fade show d-block"
+                tabIndex="-1"
+                onClick={() => setShowModal(false)}
+                style={{ backgroundColor: "rgba(0,0,0,0.8)" }}
+              >
+                <div
+                  className="modal-dialog modal-dialog-centered modal-xl"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <div className="modal-content border-0 bg-transparent">
+                    <button
+                      type="button"
+                      className="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                      onClick={() => setShowModal(false)}
+                    ></button>
+
+                    <img
+                      src="/image/certificates/BSCIC-ISO.png"
+                      alt="BSCIC ISO 9001 Certificate"
+                      className="img-fluid rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* RIGHT: Description */}
             <div

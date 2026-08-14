@@ -226,7 +226,12 @@ export default function ProductLanding() {
                 data-aos="fade-up"
                 data-aos-delay={index * 80}
               >
-                <img src={cat.image} alt={cat.title} />
+                <img
+                  src={cat.image}
+                  alt={`${cat.title} Ventura Steels Products`}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="product-card-footer">
                   <h5>{cat.title}</h5>
                   <span>View Grades</span>

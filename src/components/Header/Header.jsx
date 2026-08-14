@@ -760,7 +760,7 @@ export default function Header() {
         "leaf spring steel",
         "coil spring steel",
       ],
-    }
+    },
   ];
 
   const [showSearch, setShowSearch] = useState(false);
@@ -871,6 +871,8 @@ export default function Header() {
           <img
             src="/image/Ventura New Logo Up.png"
             alt="Ventura logo"
+            loading="lazy"
+            decoding="async"
             height={50}
             className="navbar-logo"
           />
@@ -895,6 +897,8 @@ export default function Header() {
           <img
             src="/image/Ventura New Logo Side.png"
             alt="Ventura Steels"
+            loading="lazy"
+            decoding="async"
             className="sidebar-logo rounded mb-2"
           />
         </div>
@@ -907,6 +911,8 @@ export default function Header() {
             <img
               src="/image/Semi Circle Logo.jpg"
               alt="Ventura Steels"
+              loading="lazy"
+              decoding="async"
               className="sidebar-logo rounded mb-2"
             />
           </div> */}
@@ -1047,6 +1053,8 @@ export default function Header() {
             <img
               src="/image/Ventura New Logo Side.png"
               alt="Ventura Logo"
+              loading="lazy"
+              decoding="async"
               className=" "
               height={35}
             />
@@ -1088,7 +1096,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <img
+                        src="https://flagcdn.com/w20/in.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="India"
+                      />
                       <span>IND</span>
                     </button>
 
@@ -1096,7 +1109,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("EU")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
+                      <img
+                        src="https://flagcdn.com/w20/eu.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Europe"
+                      />
                       <span>EU</span>
                     </button>
 
@@ -1104,7 +1122,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <img
+                        src="https://flagcdn.com/w20/us.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="USA"
+                      />
                       <span>US</span>
                     </button>
                   </div>
@@ -1238,7 +1261,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <img
+                        src="https://flagcdn.com/w20/in.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="India"
+                      />
                       <span>IND</span>
                     </button>
 
@@ -1246,7 +1274,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("EU")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
+                      <img
+                        src="https://flagcdn.com/w20/eu.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Europe"
+                      />
                       <span>EU</span>
                     </button>
 
@@ -1254,7 +1287,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <img
+                        src="https://flagcdn.com/w20/us.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="USA"
+                      />
                       <span>US</span>
                     </button>
 
@@ -1262,7 +1300,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("JPN")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" />
+                      <img
+                        src="https://flagcdn.com/w40/jp.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Japan"
+                      />
                       <span>JPN</span>
                     </button>
                   </div>
@@ -1477,7 +1520,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <img
+                        src="https://flagcdn.com/w20/in.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="India"
+                      />
                       <span>IND</span>
                     </button>
 
@@ -1485,7 +1533,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("EU")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
+                      <img
+                        src="https://flagcdn.com/w20/eu.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Europe"
+                      />
                       <span>EU</span>
                     </button>
 
@@ -1493,7 +1546,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <img
+                        src="https://flagcdn.com/w20/us.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="USA"
+                      />
                       <span>US</span>
                     </button>
                   </div>
@@ -1580,7 +1638,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <img
+                        src="https://flagcdn.com/w20/in.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="India"
+                      />
                       <span>IND</span>
                     </button>
 
@@ -1588,7 +1651,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("EU")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
+                      <img
+                        src="https://flagcdn.com/w20/eu.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Europe"
+                      />
                       <span>EU</span>
                     </button>
 
@@ -1596,7 +1664,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <img
+                        src="https://flagcdn.com/w20/us.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="USA"
+                      />
                       <span>US</span>
                     </button>
 
@@ -1604,7 +1677,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("JPN")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" />
+                      <img
+                        src="https://flagcdn.com/w40/jp.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Japan"
+                      />
                       <span>JPN</span>
                     </button>
                   </div>
@@ -1853,7 +1931,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <img
+                        src="https://flagcdn.com/w20/in.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="India"
+                      />
                       <span>IND</span>
                     </button>
 
@@ -1861,7 +1944,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("EU")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
+                      <img
+                        src="https://flagcdn.com/w20/eu.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Europe"
+                      />
                       <span>EU</span>
                     </button>
 
@@ -1869,7 +1957,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <img
+                        src="https://flagcdn.com/w20/us.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="USA"
+                      />
                       <span>US</span>
                     </button>
 
@@ -1877,7 +1970,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("JPN")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" />
+                      <img
+                        src="https://flagcdn.com/w40/jp.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Japan"
+                      />
                       <span>JPN</span>
                     </button>
                   </div>
@@ -2036,7 +2134,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <img
+                        src="https://flagcdn.com/w20/in.png"
+                        alt="India"
+                        loading="lazy"
+                        decoding="async"
+                      />
                       <span>IND</span>
                     </button>
 
@@ -2044,7 +2147,12 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("EU")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/eu.png" alt="Europe" />
+                      <img
+                        src="https://flagcdn.com/w20/eu.png"
+                        alt="Europe"
+                        loading="lazy"
+                        decoding="async"
+                      />
                       <span>EU</span>
                     </button>
 
@@ -2052,14 +2160,24 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <img
+                        src="https://flagcdn.com/w20/us.png"
+                        alt="USA"
+                        loading="lazy"
+                        decoding="async"
+                      />
                       <span>US</span>
                     </button>
                     <button
                       onMouseEnter={() => setHoveredRegion("JPN")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/jp.png" alt="Japan" />
+                      <img
+                        src="https://flagcdn.com/w20/jp.png"
+                        alt="Japan"
+                        loading="lazy"
+                        decoding="async"
+                      />
                       <span>JPN</span>
                     </button>
                   </div>
@@ -2188,7 +2306,10 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("IND")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/in.png" alt="India" />
+                      <img src="https://flagcdn.com/w20/in.png" 
+                      alt="India"
+                      loading="lazy"
+                      decoding="async" />
                       <span>IND</span>
                     </button>
 
@@ -2196,7 +2317,10 @@ export default function Header() {
                       onMouseEnter={() => setHoveredRegion("US")}
                       onMouseLeave={() => setHoveredRegion(null)}
                     >
-                      <img src="https://flagcdn.com/w20/us.png" alt="USA" />
+                      <img src="https://flagcdn.com/w20/us.png" 
+                      alt="USA"
+                      loading="lazy"
+                      decoding="async" />
                       <span>US</span>
                     </button>
                   </div>

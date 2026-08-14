@@ -112,264 +112,12 @@
     text-align: center;
   }
   .icon-box {
-    margin-bottom: 10px;
+    margin: 0px auto;
+  }
+  .divider-line {
+    margin: 0px auto;
   }
 }
-
-/* ========== Quality Process (Timeline Layout) ========== */
-/* .quality-process-section {
-  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.text-orange {
-  color: #fe8d37;
-}
-
-.text-dark-blue {
-  color: #2f2b60;
-}
-
-.underline {
-  width: 80px;
-  height: 3px;
-  background: #fe8d37;
-  border-radius: 3px;
-}
-
-.timeline {
-  position: relative;
-  margin-top: 40px;
-  padding-left: 0;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  background: rgba(68, 125, 155, 0.2);
-  border-radius: 3px;
-  z-index: 1;
-}
-
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 20px 40px;
-  z-index: 2;
-}
-
-.timeline-item.left {
-  left: 0;
-  text-align: right;
-}
-
-.timeline-item.right {
-  left: 50%;
-  text-align: left;
-}
-
-.timeline-content {
-  background: #fff;
-  border-radius: 12px;
-  padding: 25px 20px;
-  position: relative;
-  box-shadow: 0 6px 15px rgba(39, 63, 79, 0.08);
-  border: 1px solid #e7ecef;
-  transition: all 0.3s ease;
-}
-
-.timeline-item.left .timeline-content::after,
-.timeline-item.right .timeline-content::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  width: 15px;
-  height: 15px;
-  background: #fe8d37;
-  border-radius: 50%;
-  z-index: 3;
-}
-
-.timeline-item.left .timeline-content::after {
-  right: -8px;
-}
-
-.timeline-item.right .timeline-content::after {
-  left: -8px;
-}
-
-.timeline-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(39, 63, 79, 0.15);
-  border-color: #fe8d37;
-}
-
-.step-number {
-  width: 55px;
-  height: 55px;
-  background: linear-gradient(135deg, #2f2b60, #2f2b60);
-  color: #fff;
-  border-radius: 50%;
-  line-height: 55px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 12px;
-  display: inline-block;
-}
-
-.timeline-content h5 {
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #2f2b60;
-}
-
-.timeline-content p {
-  font-size: 0.95rem;
-  color: #6c757d;
-} */
-
-/* ========== Responsive ========== */
-/* @media (max-width: 991px) {
-  .timeline::before {
-    left: 8px;
-  }
-
-  .timeline-item {
-    width: 100%;
-    padding-left: 30px;
-    text-align: left !important;
-  }
-
-  .timeline-item.left,
-  .timeline-item.right {
-    left: 0;
-  }
-
-  .timeline-content::after {
-    left: -6px !important;
-  }
-} */
-/* ========== Quality Process (Modern Horizontal Flow) ========== */
-/* .quality-process-modern {
-  background: linear-gradient(180deg, #ffffff, #f7f9fb);
-  position: relative;
-  overflow: hidden;
-}
-
-.text-orange {
-  color: #fe8d37;
-}
-.text-dark-blue {
-  color: #2f2b60;
-}
-
-.underline {
-  width: 80px;
-  height: 3px;
-  background: #fe8d37;
-  border-radius: 3px;
-}
-
-.process-flow {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  position: relative;
-  margin-top: 40px;
-}
-
-.process-card {
-  background: #fff;
-  flex: 1 1 22%;
-  min-width: 230px;
-  margin: 15px;
-  border-radius: 14px;
-  text-align: center;
-  padding: 35px 25px;
-  border: 1px solid #e1e6ea;
-  box-shadow: 0 6px 12px rgba(39, 63, 79, 0.08);
-  transition: all 0.4s ease;
-  position: relative;
-}
-
-.process-card::after {
-  content: "";
-  position: absolute;
-  right: -40px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #fe8d37, #2f2b60);
-  opacity: 0.8;
-}
-
-.process-card:last-child::after {
-  display: none;
-}
-
-.icon-circle {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #2f2b60, #2f2b60);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  color: #fff;
-  font-size: 1.8rem;
-  transition: all 0.4s ease;
-  box-shadow: 0 6px 15px rgba(68, 125, 155, 0.3);
-}
-
-.process-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 25px rgba(39, 63, 79, 0.15);
-  border-color: #fe8d37;
-}
-.process-card:hover .icon-circle {
-  background: linear-gradient(135deg, #fe8d37, #2f2b60);
-}
-
-.process-card h5 {
-  font-weight: 600;
-  color: #2f2b60;
-  margin-bottom: 10px;
-}
-.process-card p {
-  color: #6c757d;
-  font-size: 0.95rem;
-} */
-
-/* ===== Responsive ===== */
-/* @media (max-width: 992px) {
-  .process-flow {
-    justify-content: center;
-  }
-  .process-card {
-    flex: 1 1 45%;
-  }
-  .process-card::after {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
-  .process-card {
-    flex: 1 1 100%;
-  }
-} */
 
 /* ========== Quality Process - Pipeline Layout ========== */
 .quality-pipeline {
@@ -543,10 +291,16 @@
   background: #fff;
   box-shadow: 0 8px 25px rgba(68, 125, 155, 0.15);
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 .certificate-quality-image:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 30px rgba(68, 125, 155, 0.25);
+}
+
+.modal-content img {
+  max-height: 90vh;
+  object-fit: contain;
 }
 
 .certificate-quality-img {
@@ -659,7 +413,7 @@
 
   .certificate-wrapper {
     flex-direction: column;
-    gap: 2rem;   
+    gap: 2rem;
   }
 
   .certificate-img {

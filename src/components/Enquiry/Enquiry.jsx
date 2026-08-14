@@ -501,6 +501,8 @@ export default function EnquiryForm() {
               src="/image/enquiry-card.jpg"
               alt="Steel Enquiry"
               className="img-fluid"
+              loading="lazy"
+              decoding="async"
               style={{ maxHeight: "340px" }}
             />
           </div>

@@ -15,6 +15,8 @@ const Footer = () => {
               {/* <img
                 src="/image/Ventura New Logo Up.png"
                 alt="Ventura Steels"
+                loading="lazy"
+                decoding="async"
                 className="mb-3 footer-logo"
               /> */}
               <h3>ISO 9001 Certified</h3>
@@ -214,7 +216,7 @@ const Footer = () => {
                     email="inquiry@venturasteels.com"
                     label="inquiry@venturasteels.com"
                     className="text-white footer-tap-link"
-                  />
+                  /> 
                 </span>
               </p>
             </div>
