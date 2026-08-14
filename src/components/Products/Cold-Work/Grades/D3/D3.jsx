@@ -40,47 +40,39 @@ export default function D3() {
         {/* Product Schema for SEO */}
         <script type="application/ld+json">
           {`{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "D3 Cold Work Tool Steel",
-  "description": "D3 / 1.2080 high carbon high chromium cold work tool steel with extremely high wear resistance and hardness, ideal for cutting, blanking and forming applications.",
-  "image": "https://your-image-url.com/d3.webp",
-  "url": "https://venturasteels.com/products/cold-work-steel/d3",
-  "sku": "D3",
-  "category": "Cold Work Tool Steel",
-  "material": "Cold Work Tool Steel",
-
-  "brand": {
-    "@type": "Brand",
-    "name": "Ventura Alloy & Steels Pvt. Ltd."
-  },
-
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Ventura Alloy & Steels Pvt. Ltd."
-  },
-
-  "additionalProperty": [
-    {
-      "@type": "PropertyValue",
-      "name": "Material Grade",
-      "value": "D3 / 1.2080 / SKD1 / Cr12"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "Form",
-      "value": "Round, Flat"
-    }
-  ],
-
-  "offers": {
-    "@type": "Offer",
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "D3 Cold Work Tool Steel",
+    "description": "D3 / 1.2080 high carbon high chromium cold work tool steel with extremely high wear resistance and hardness, ideal for cutting, blanking and forming applications.",
+    "image": "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874990/D3_Round_Bars_2_j4kkru.jpg",
     "url": "https://venturasteels.com/products/cold-work-steel/d3",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock"
-  }
-}
-`}
+    "sku": "D3",
+    "category": "Cold Work Tool Steel",
+    "material": "Cold Work Tool Steel",
+
+    "brand": {
+      "@type": "Brand",
+      "name": "Ventura Alloy & Steels Pvt. Ltd."
+    },
+
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "Ventura Alloy & Steels Pvt. Ltd."
+    },
+
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Material Grade",
+        "value": "D3 / 1.2080 / SKD1 / Cr12"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Form",
+        "value": "Round, Flat"
+      }
+    ]
+  }`}
         </script>
       </Helmet>
 
