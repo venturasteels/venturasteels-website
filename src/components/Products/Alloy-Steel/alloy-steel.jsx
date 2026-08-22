@@ -111,7 +111,7 @@ const AlloySteel = () => {
 
         <div className={`alloy-steel-main ${isGradeSelected ? "active" : ""}`}>
           <div className="sidebar-wrapper">
-            <aside className="plastic-mould-sidebar">
+            <aside className="alloy-steel-sidebar">
               <h3>Grades</h3>
               <ul>
                 <li>

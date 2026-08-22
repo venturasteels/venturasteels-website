@@ -527,7 +527,7 @@ const Home = () => {
               <div className="card-overlay d-flex flex-column justify-content-center align-items-start p-4">
                 <h4 className="fw-semibold fs-2 mb-2">Infrastructure</h4>
                 <p className="fs-6">
-                  Our 72,000-square-foot headquarters in Bhiwandi is equipped
+                  Our 1,10,000-square-foot headquarters in Bhiwandi is equipped
                   with 10,000 tons of dedicated storage space, dual EOT cranes
                   (5-ton and 25-ton capacities).
                 </p>

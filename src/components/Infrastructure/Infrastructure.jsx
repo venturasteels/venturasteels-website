@@ -28,7 +28,7 @@ const Infrastructure = () => {
   ];
 
   const highlights = [
-    { icon: "bi-building", title: "72,000 Sq. Ft. Facility" },
+    { icon: "bi-building", title: "1,10,000 Sq. Ft. Facility" },
     {
       icon: "bi-gear-wide-connected",
       title: "Advanced Handling Equipment",
@@ -44,7 +44,7 @@ const Infrastructure = () => {
           <title>Infrastructure | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Explore Ventura Steels' Mumbai Stocking & Machining Center in Bhiwandi spanning 72,000 sq. ft. with advanced storage, cutting, handling, machining, testing facilities and rapid dispatch capabilities."
+            content="Explore Ventura Steels' Mumbai Stocking & Machining Center in Bhiwandi spanning 1,10,000 sq. ft. with advanced storage, cutting, handling, machining, testing facilities and rapid dispatch capabilities."
           />
 
           <meta
@@ -60,7 +60,7 @@ const Infrastructure = () => {
   steel machining center India,
   industrial steel warehouse,
 
-  72000 sq ft steel facility,
+  110000 sq ft steel facility,
   steel storage capacity,
   steel stocking facility,
   industrial storage solutions,
@@ -114,7 +114,7 @@ const Infrastructure = () => {
 
               <p className="text-center">
                 Our Mumbai – Stocking & Machining Center in Bhiwandi spans
-                72,000 sq. ft., equipped with advanced handling, cutting, and
+                1,10,000 sq. ft., equipped with advanced handling, cutting, and
                 testing facilities to ensure high precision, efficient
                 operations, and rapid dispatches.
               </p>

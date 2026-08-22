@@ -53,8 +53,8 @@
 
 .carbon-steel-main.active .sidebar-wrapper {
   min-width: 15%;
-  width: 23%;
-  transform: none; 
+  width: 18%;
+  transform: none;
 }
 
 .carbon-steel-sidebar {
@@ -73,12 +73,18 @@
   text-align: left;
 }
 
+/* .carbon-steel-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} */
 .carbon-steel-sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
-
 .carbon-steel-sidebar li a {
   display: block;
   color: #2f2b60;
@@ -189,9 +195,11 @@
   }
   .carbon-steel-sidebar {
     margin: 0px 20px;
-    width: 75%;
   }
   .carbon-steel-container {
     padding: 2rem 0rem !important;
+  }
+  .carbon-steel-main {
+    display: block;
   }
 }
