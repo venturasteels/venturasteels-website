@@ -355,8 +355,8 @@ const CuttingServices = () => {
               dependable turnaround.
             </p>
 
-            <Button className="cta-btn" href="/enquiry" data-aos="zoom-in">
-              Enquire Now →
+            <Button className="cta-btn" href="/inquiry" data-aos="zoom-in">
+              Inquire Now →
             </Button>
           </div>
         </section>

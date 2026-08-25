@@ -8,8 +8,8 @@ import "../weight-btn.css";
 export default function DB6() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "DB6 / 2714 / AISI L6",
         selectedProduct: "Hot Work Steel",
@@ -698,8 +698,8 @@ export default function DB6() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

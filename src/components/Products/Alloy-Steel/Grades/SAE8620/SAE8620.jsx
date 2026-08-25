@@ -5,8 +5,8 @@ import { Helmet } from "react-helmet-async";
 export default function AlloySteel8620Family() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "SAE 8620 / 20NiCrMo2-2",
         selectedProduct: "Alloy Steel",
@@ -288,8 +288,8 @@ export default function AlloySteel8620Family() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

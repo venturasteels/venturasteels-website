@@ -199,8 +199,8 @@ export default function ProductLanding() {
                   <p>Stocking · Cutting · Machining · Reliable Supply</p>
 
                   <div className="hero-cta">
-                    <Link to="/enquiry" className="hero-btn-primary">
-                      Send Enquiry
+                    <Link to="/inquiry" className="hero-btn-primary">
+                      Send Inquiry
                     </Link>
                   </div>
                 </div>

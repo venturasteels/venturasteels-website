@@ -8,8 +8,8 @@ import "../weight-btn.css";
 export default function CarbonSteelC45() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade:
           "C45 / EN8 / EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045 / 45C8 / 1.0503",
@@ -538,8 +538,8 @@ export default function CarbonSteelC45() {
 
         {/* CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

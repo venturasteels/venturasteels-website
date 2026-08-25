@@ -28,13 +28,13 @@ const FloatingContact = () => {
 
       {/* Floating Menu */}
       <div className={`floating-menu ${open ? "open" : ""}`}>
-        {/* Enquiry */}
+        {/* Inquiry */}
         <div className="floating-item-wrapper">
-          <span className="floating-label">Enquiry</span>
+          <span className="floating-label">Inquiry</span>
           <a
             href="/enquiry"
             className="floating-item enquiry-f-btn"
-            aria-label="Enquiry"
+            aria-label="Inquiry"
           >
             <FaClipboardList />
           </a>

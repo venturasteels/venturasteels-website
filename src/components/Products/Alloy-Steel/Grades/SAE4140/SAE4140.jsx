@@ -5,8 +5,8 @@ import { Helmet } from "react-helmet-async";
 export default function AlloySteelSAE4140() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "SAE 4140 / EN19 / 42CrMo4 / 1.7225 / SCM440",
         selectedProduct: "Alloy Steel",
@@ -499,8 +499,8 @@ export default function AlloySteelSAE4140() {
 
         {/* CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

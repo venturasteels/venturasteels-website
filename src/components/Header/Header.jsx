@@ -1014,7 +1014,7 @@ export default function Header() {
               { to: "/infrastructure", text: "Infrastructure" },
               { to: "/cutting-services", text: "Cutting Services" },
               { to: "/certifications", text: "Certifications" },
-              { to: "/enquiry", text: "Enquiry" },
+              { to: "/inquiry", text: "Inquiry" },
               // { to: "/blogs", text: "Blogs" },
               { to: "/career", text: "Careers" },
               { to: "/contactUs", text: "Contact Us" },
@@ -2459,11 +2459,11 @@ export default function Header() {
           </button>
 
           <button
-            onClick={() => handleNavClick("/enquiry")}
+            onClick={() => handleNavClick("/inquiry")}
             className="enquiry-nav-btn"
           >
             <FaPaperPlane className="enquiry-nav-icon" />
-            Enquiry
+            Inquiry
           </button>
 
           {/* Search Icon */}

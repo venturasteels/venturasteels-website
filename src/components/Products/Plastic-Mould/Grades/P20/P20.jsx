@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet-async";
 export default function P20() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "P20 / 1.2311",
         selectedProduct: "Plastic Mould Steel",
@@ -501,8 +501,8 @@ export default function P20() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

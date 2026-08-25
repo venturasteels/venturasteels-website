@@ -6,8 +6,8 @@ import "../process-section.css";
 export default function H11() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "H11 / AISI H11 / DIN 1.2343 ",
         selectedProduct: "Hot Work Steel",
@@ -596,8 +596,8 @@ export default function H11() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

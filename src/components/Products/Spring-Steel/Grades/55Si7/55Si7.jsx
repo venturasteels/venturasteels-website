@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet-async";
 export default function SpringSteel55Si7() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "55Si7 / 56Si7 / SAE 9255 / 1.5026",
         selectedProduct: "Spring Steel",
@@ -285,8 +285,8 @@ export default function SpringSteel55Si7() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

@@ -146,7 +146,7 @@ const QuotePopup = () => {
       // ============================
       // ✅ SUCCESS
       // ============================
-      alert("✅ Enquiry submitted successfully!");
+      alert("✅ Inquiry submitted successfully!");
 
       setFormData({
         name: "",
@@ -178,7 +178,7 @@ const QuotePopup = () => {
         <div className="popup-icon">📄</div>
 
         {/*  TITLE */}
-        <h3 className="popup-title">Ventura Steels Quick Enquiry</h3>
+        <h3 className="popup-title">Ventura Steels Quick Inquiry</h3>
 
         {/* 💡 SUBTEXT */}
         <p className="popup-subtext">
@@ -247,15 +247,15 @@ const QuotePopup = () => {
 
           {/* Button */}
           <Button type="submit" className="submit-btn" disabled={loading}>
-            {loading ? "Submitting..." : "SUBMIT ENQUIRY"}
+            {loading ? "Submitting..." : "SUBMIT INQUIRY"}
           </Button>
 
           <p className="privacy-text">
-            Have detailed requirements? Fill out our complete enquiry form.
+            Have detailed requirements? Fill out our complete inquiry form.
           </p>
 
           <button className="enquiry-btns" onClick={() => navigate("/enquiry")}>
-            Go to Enquiry
+            Go to Inquiry
           </button>
         </Form>
       </Modal.Body>

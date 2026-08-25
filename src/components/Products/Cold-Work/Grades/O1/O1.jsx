@@ -5,8 +5,8 @@ import { Helmet } from "react-helmet-async";
 export default function O1() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "O1 / 1.2510 / OHNS O1 / 100MnCrW4 / SK53",
         selectedProduct: "Cold Work Steel",
@@ -313,8 +313,8 @@ export default function O1() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

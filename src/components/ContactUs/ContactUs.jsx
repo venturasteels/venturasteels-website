@@ -299,8 +299,8 @@ const ContactUs = () => {
                     For detailed product enquiries, please use our dedicated
                     enquiry form.
                   </p>
-                  <a href="/enquiry" className="enquiry-btn">
-                    Product Enquiry – Alloy & Tool Steel
+                  <a href="/inquiry" className="enquiry-btn">
+                    Product Inquiry – Alloy & Tool Steel
                   </a>
                 </div>
               </section>

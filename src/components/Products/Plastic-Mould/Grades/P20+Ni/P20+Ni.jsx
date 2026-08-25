@@ -10,8 +10,8 @@ import "../weight-btn.css";
 export default function P20Ni() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "P20+Ni / 1.2738",
         selectedProduct: "Plastic Mould Steel",
@@ -537,8 +537,8 @@ export default function P20Ni() {
 
          {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

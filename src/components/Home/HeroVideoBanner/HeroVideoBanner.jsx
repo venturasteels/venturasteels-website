@@ -135,14 +135,14 @@ const HeroVideoBanner = () => {
               strength, and reliability you can trust.
             </p>
             <a
-              href="/enquiry"
+              href="/inquiry"
               className="hero-cta-btn"
               data-aos="fade-up"
               data-aos-delay="900"
               data-aos-duration="1200"
               data-aos-easing="ease-out-cubic"
             >
-              Enquire Now →
+              Inquire Now →
             </a>
           </div>
         </div>

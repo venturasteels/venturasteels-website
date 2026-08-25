@@ -5,8 +5,8 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 export default function H13() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "H13 / AISI H13 / DIN 2344",
         selectedProduct: "Hot Work Steel",
@@ -555,8 +555,8 @@ export default function H13() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

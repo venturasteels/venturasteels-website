@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet-async";
 export default function PlasticMould2316() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "1.2316 / X36CrMo17",
         selectedProduct: "Plastic Mould Steel",
@@ -281,8 +281,8 @@ export default function PlasticMould2316() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

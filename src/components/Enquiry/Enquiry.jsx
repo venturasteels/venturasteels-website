@@ -412,7 +412,7 @@ export default function EnquiryForm() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Enquiry | Ventura Alloy & Steels Pvt. Ltd.</title>
+          <title>Inquiry | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
             content="Send us your enquiry for premium Tool Steels, Alloy Steels, and Engineering Steels. Ventura Alloy & Steels Pvt. Ltd. ensures quick responses and customized solutions to meet your industrial needs."
@@ -420,9 +420,9 @@ export default function EnquiryForm() {
           <meta
             name="keywords"
             content="
-  Ventura Steels Enquiry,
+  Ventura Steels Inquiry,
   Ventura steel quote request,
-  Steel Enquiry Form,
+  Steel Inquiry Form,
   Contact steel supplier India,
   steel quotation request,
   alloy steel enquiry,
@@ -499,7 +499,7 @@ export default function EnquiryForm() {
           <div className="col-md-6 text-center" data-aos="fade-left">
             <img
               src="/image/enquiry-card.jpg"
-              alt="Steel Enquiry"
+              alt="Steel Inquiry"
               className="img-fluid"
               loading="lazy"
               decoding="async"
@@ -513,7 +513,7 @@ export default function EnquiryForm() {
           data-aos="fade-up"
           id="enquiry-form-section"
         >
-          <h2 className="text-center">Enquiry Form</h2>
+          <h2 className="text-center">Inquiry Form</h2>
           <hr className="line-hr mb-5 text-center" />
 
           <form onSubmit={handleSubmit}>
@@ -694,7 +694,7 @@ export default function EnquiryForm() {
                 <textarea
                   name="message"
                   rows="4"
-                  placeholder="Enquiry Message / Quantity / Custom Specs"
+                  placeholder="Inquiry Message / Quantity / Custom Specs"
                   className={`form-control ps-5 ${
                     errors.message ? "is-invalid" : ""
                   }`}
@@ -732,7 +732,7 @@ export default function EnquiryForm() {
                       Submitting...
                     </>
                   ) : (
-                    "Submit Enquiry"
+                    "Submit Inquiry"
                   )}
                 </button>
               </div>
@@ -890,7 +890,7 @@ const InfoModal = ({ show, type, message, onClose }) => {
     <div className="modal-backdrop">
       <div className="modal-container">
         <h2 style={{ color: isSuccess ? "#28a745" : "#dc3545" }}>
-          {isSuccess ? "Enquiry Submitted!" : "Submission Failed"}
+          {isSuccess ? "Inquiry Submitted!" : "Submission Failed"}
         </h2>
         <p style={{ whiteSpace: "pre-wrap" }}>{message}</p>
         <button className="btn btn-primary mt-3" onClick={onClose}>

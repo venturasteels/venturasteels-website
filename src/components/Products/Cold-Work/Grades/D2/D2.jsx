@@ -9,8 +9,8 @@ import "../weight-btn.css";
 export default function D2() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "D2 / 1.2379 / HCHCR D2",
         selectedProduct: "Cold Work Steel",
@@ -92,7 +92,7 @@ export default function D2() {
 `}
         </script>
       </Helmet>
-      
+
       <div className="grade-details">
         <h1 className="text-center">D2 / 1.2379 / HCHCR D2</h1>
         <p className="subtitle text-center">
@@ -477,8 +477,8 @@ export default function D2() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button

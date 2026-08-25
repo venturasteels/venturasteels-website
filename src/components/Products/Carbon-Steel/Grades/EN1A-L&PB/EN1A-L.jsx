@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet-async";
 export default function CarbonSteelEN1ALPB() {
   const navigate = useNavigate();
 
-  const handleEnquiryClick = () => {
-    navigate("/enquiry", {
+  const handleInquiryClick = () => {
+    navigate("/inquiry", {
       state: {
         selectedGrade: "EN1A-L & PB / 11SMnPb30 / 1.0718 / SUM22L / 230M07 PB",
         selectedProduct: "Carbon Steel",
@@ -274,8 +274,8 @@ export default function CarbonSteelEN1ALPB() {
 
         {/* Get Quote CTA */}
         <div className="cta-block d-flex justify-content-center gap-3 align-items-center flex-wrap">
-          <button onClick={handleEnquiryClick} className="btn btn-primary">
-            Enquire Now
+          <button onClick={handleInquiryClick} className="btn btn-primary">
+            Inquire Now
           </button>
 
           <button
