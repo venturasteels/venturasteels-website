@@ -20,19 +20,19 @@ const productCategories = [
   {
     title: "Hot Work Steel",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472585/ventura-product-image/hot-work-steel/db6-hot-work-steel.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1788154957/1.2344_Flat_Bars_nqpwcg.jpg",
     path: "/products/hot-work-steel",
   },
   {
     title: "Cold Work Steel",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874996/1.2379_Flat_Bars_nkoszy.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1788155242/IMG_1392_eis1n7.jpg",
     path: "/products/cold-work-steel",
   },
   {
     title: "Plastic Mould Steel",
     image:
-      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778568672/P20_Flat_Bars_xzt9sa.jpg",
+      "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1781588661/plastic-2311_qlojox.jpg",
     path: "/products/plastic-mould-steel",
   },
   {

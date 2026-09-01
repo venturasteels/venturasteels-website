@@ -53,19 +53,19 @@ const Home = () => {
     {
       title: "Hot Work Steel",
       desc: "For high-temperature tools and dies.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1775472585/ventura-product-image/hot-work-steel/db6-hot-work-steel.jpg",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1788154957/1.2344_Flat_Bars_nqpwcg.jpg",
       link: "/products/hot-work-steel",
     },
     {
       title: "Cold Work Steel",
       desc: "Perfect for cutting & forming tools.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1777874996/1.2379_Flat_Bars_nkoszy.jpg",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1788155242/IMG_1392_eis1n7.jpg",
       link: "/products/cold-work-steel",
     },
     {
       title: "Plastic Mould Steel",
       desc: "Best suited for mould manufacturing.",
-      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1778568672/P20_Flat_Bars_xzt9sa.jpg",
+      img: "https://res.cloudinary.com/dgujwx9r9/image/upload/f_auto,q_auto/v1781588661/plastic-2311_qlojox.jpg",
       link: "/products/plastic-mould-steel",
     },
     {
